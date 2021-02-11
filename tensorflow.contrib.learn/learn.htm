@@ -1,0 +1,1855 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>learn - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.learn</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.learn/BaseEstimator.htm">BaseEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ClusterConfig.htm">ClusterConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNClassifier.htm">DNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNEstimator.htm">DNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedClassifier.htm">DNNLinearCombinedClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedEstimator.htm">DNNLinearCombinedEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedRegressor.htm">DNNLinearCombinedRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNRegressor.htm">DNNRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm">DynamicRnnEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Environment.htm">Environment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Estimator.htm">Estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Evaluable.htm">Evaluable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Experiment.htm">Experiment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ExportStrategy.htm">ExportStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/GraphRewriteSpec.htm">GraphRewriteSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Head.htm">Head</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IBaseEstimator.htm">IBaseEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IClusterConfig.htm">IClusterConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNClassifier.htm">IDNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNEstimator.htm">IDNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedClassifier.htm">IDNNLinearCombinedClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedEstimator.htm">IDNNLinearCombinedEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedRegressor.htm">IDNNLinearCombinedRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNRegressor.htm">IDNNRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDynamicRnnEstimator.htm">IDynamicRnnEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEnvironment.htm">IEnvironment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEstimator.htm">IEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEvaluable.htm">IEvaluable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IExperiment.htm">IExperiment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IExportStrategy.htm">IExportStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IGraphRewriteSpec.htm">IGraphRewriteSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IHead.htm">IHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IInputFnOps.htm">IInputFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IKMeansClustering.htm">IKMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearClassifier.htm">ILinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearEstimator.htm">ILinearEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearRegressor.htm">ILinearRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IMetricKey.htm">IMetricKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IMetricSpec.htm">IMetricSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IModeKeys.htm">IModeKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IModelFnOps.htm">IModelFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/INotFittedError.htm">INotFittedError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/InputFnOps.htm">InputFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IPredictionKey.htm">IPredictionKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IPredictionType.htm">IPredictionType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IProblemType.htm">IProblemType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IRunConfig.htm">IRunConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ISKCompat.htm">ISKCompat</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ISVM.htm">ISVM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ITaskType.htm">ITaskType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ITrainable.htm">ITrainable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/KMeansClustering.htm">KMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/learn.htm" class="current">learn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearClassifier.htm">LinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearEstimator.htm">LinearEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearRegressor.htm">LinearRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/MetricKey.htm">MetricKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/MetricSpec.htm">MetricSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ModeKeys.htm">ModeKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ModelFnOps.htm">ModelFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/NotFittedError.htm">NotFittedError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/PredictionKey.htm">PredictionKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/PredictionType.htm">PredictionType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ProblemType.htm">ProblemType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/RunConfig.htm">RunConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/SKCompat.htm">SKCompat</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/SVM.htm">SVM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/TaskType.htm">TaskType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Trainable.htm">Trainable</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> learn</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.learn</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#binary_svm_head">binary_svm_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#binary_svm_head_dyn">binary_svm_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#build_default_serving_input_fn">build_default_serving_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#build_default_serving_input_fn_dyn">build_default_serving_input_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#build_parsing_serving_input_fn">build_parsing_serving_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#build_parsing_serving_input_fn_dyn">build_parsing_serving_input_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#evaluate">evaluate</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#evaluate">evaluate</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#evaluate_dyn">evaluate_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#export_estimator">export_estimator</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#export_estimator_dyn">export_estimator_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_data">extract_dask_data</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_data">extract_dask_data</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_data_dyn">extract_dask_data_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_labels">extract_dask_labels</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_labels_dyn">extract_dask_labels_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_data">extract_pandas_data</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_data">extract_pandas_data</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_data_dyn">extract_pandas_data_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_labels">extract_pandas_labels</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_labels_dyn">extract_pandas_labels_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_matrix">extract_pandas_matrix</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_matrix_dyn">extract_pandas_matrix_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#generator_input_fn">generator_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#generator_input_fn">generator_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#generator_input_fn_dyn">generator_input_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer">infer</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_dyn">infer_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input">infer_real_valued_columns_from_input</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input">infer_real_valued_columns_from_input</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input_dyn">infer_real_valued_columns_from_input_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input_fn">infer_real_valued_columns_from_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input_fn_dyn">infer_real_valued_columns_from_input_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#LogisticRegressor">LogisticRegressor</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#LogisticRegressor_dyn">LogisticRegressor_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#loss_only_head">loss_only_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#loss_only_head_dyn">loss_only_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#make_export_strategy">make_export_strategy</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#make_export_strategy">make_export_strategy</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#make_export_strategy">make_export_strategy</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#make_export_strategy_dyn">make_export_strategy_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_class_head">multi_class_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_class_head">multi_class_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_class_head">multi_class_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_class_head">multi_class_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_class_head_dyn">multi_class_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_head">multi_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_head_dyn">multi_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_label_head">multi_label_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_label_head_dyn">multi_label_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#no_op_train_fn">no_op_train_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#no_op_train_fn">no_op_train_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#no_op_train_fn">no_op_train_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#no_op_train_fn_dyn">no_op_train_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#numpy_input_fn">numpy_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#numpy_input_fn_dyn">numpy_input_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#pandas_input_fn">pandas_input_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#pandas_input_fn_dyn">pandas_input_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#poisson_regression_head">poisson_regression_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#poisson_regression_head_dyn">poisson_regression_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#queue_parsed_features">queue_parsed_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#queue_parsed_features">queue_parsed_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#queue_parsed_features">queue_parsed_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#queue_parsed_features">queue_parsed_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#queue_parsed_features_dyn">queue_parsed_features_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_examples">read_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_examples">read_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_examples">read_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_examples">read_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_examples_dyn">read_batch_examples_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_features">read_batch_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_features">read_batch_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_features_dyn">read_batch_features_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_record_features">read_batch_record_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_record_features_dyn">read_batch_record_features_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples">read_keyed_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples">read_keyed_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples">read_keyed_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples">read_keyed_batch_examples</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_dyn">read_keyed_batch_examples_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_shared_queue">read_keyed_batch_examples_shared_queue</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_shared_queue">read_keyed_batch_examples_shared_queue</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_shared_queue">read_keyed_batch_examples_shared_queue</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_shared_queue">read_keyed_batch_examples_shared_queue</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_shared_queue_dyn">read_keyed_batch_examples_shared_queue_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features">read_keyed_batch_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features">read_keyed_batch_features</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features_dyn">read_keyed_batch_features_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features_shared_queue">read_keyed_batch_features_shared_queue</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features_shared_queue">read_keyed_batch_features_shared_queue</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features_shared_queue_dyn">read_keyed_batch_features_shared_queue_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#regression_head">regression_head</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#regression_head_dyn">regression_head_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_feeds">run_feeds</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_feeds">run_feeds</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_feeds_dyn">run_feeds_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_feeds_dyn">run_feeds_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_n">run_n</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_n_dyn">run_n_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#train">train</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#train">train</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#train_dyn">train_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#binary_svm_head_fn">binary_svm_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#build_default_serving_input_fn_fn">build_default_serving_input_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#build_parsing_serving_input_fn_fn">build_parsing_serving_input_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#evaluate_fn">evaluate_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#export_estimator_fn">export_estimator_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_data_fn">extract_dask_data_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_dask_labels_fn">extract_dask_labels_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_data_fn">extract_pandas_data_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_labels_fn">extract_pandas_labels_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#extract_pandas_matrix_fn">extract_pandas_matrix_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#generator_input_fn_fn">generator_input_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_fn">infer_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input_fn_">infer_real_valued_columns_from_input_fn_</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#infer_real_valued_columns_from_input_fn_fn">infer_real_valued_columns_from_input_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#LogisticRegressor_fn">LogisticRegressor_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#loss_only_head_fn">loss_only_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#make_export_strategy_fn">make_export_strategy_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_class_head_fn">multi_class_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_head_fn">multi_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#multi_label_head_fn">multi_label_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#no_op_train_fn_fn">no_op_train_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#numpy_input_fn_fn">numpy_input_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#pandas_input_fn_fn">pandas_input_fn_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#poisson_regression_head_fn">poisson_regression_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#queue_parsed_features_fn">queue_parsed_features_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_examples_fn">read_batch_examples_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_features_fn">read_batch_features_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_batch_record_features_fn">read_batch_record_features_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_fn">read_keyed_batch_examples_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_examples_shared_queue_fn">read_keyed_batch_examples_shared_queue_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features_fn">read_keyed_batch_features_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#read_keyed_batch_features_shared_queue_fn">read_keyed_batch_features_shared_queue_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#regression_head_fn">regression_head_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_feeds_fn">run_feeds_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#run_n_fn">run_n_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#train_fn">train_fn</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#HAS_DASK">HAS_DASK</a></li>
+				<li><a href="../tensorflow.contrib.learn/learn.htm#HAS_PANDAS">HAS_PANDAS</a></li>
+			</ul>
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="binary_svm_head" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn.head/_BinarySvmHead.htm">_BinarySvmHead</a> <strong>binary_svm_head</strong>(<span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.object">object</span> head_name, <span title="System.object">object</span> thresholds)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="binary_svm_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>binary_svm_head_dyn</strong>(<span title="System.object">object</span> label_name, <span title="System.object">object</span> weight_column_name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> enable_centered_bias, <span title="System.object">object</span> head_name, <span title="System.object">object</span> thresholds)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build_default_serving_input_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_default_serving_input_fn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <span title="System.object">object</span> default_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build_default_serving_input_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_default_serving_input_fn_dyn</strong>(<span title="System.object">object</span> features, <span title="System.object">object</span> default_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build_parsing_serving_input_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_parsing_serving_input_fn</strong>(<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> feature_spec, <span title="System.object">object</span> default_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build_parsing_serving_input_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_parsing_serving_input_fn_dyn</strong>(<span title="System.object">object</span> feature_spec, <span title="System.object">object</span> default_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="evaluate" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>evaluate</strong>(<span title="System.object">object</span> graph, <span title="System.Byte[]">Byte[]</span> output_dir, <span title="System.object">object</span> checkpoint_path, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> eval_dict, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> update_op, <span title="System.object">object</span> global_step_tensor, <span title="System.string">string</span> supervisor_master, <span title="System.int">int</span> log_every_steps, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> feed_fn, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> max_steps)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="evaluate" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>evaluate</strong>(<span title="System.object">object</span> graph, <span title="System.string">string</span> output_dir, <span title="System.object">object</span> checkpoint_path, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> eval_dict, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> update_op, <span title="System.object">object</span> global_step_tensor, <span title="System.string">string</span> supervisor_master, <span title="System.int">int</span> log_every_steps, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> feed_fn, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> max_steps)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="evaluate_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>evaluate_dyn</strong>(<span title="System.object">object</span> graph, <span title="System.object">object</span> output_dir, <span title="System.object">object</span> checkpoint_path, <span title="System.object">object</span> eval_dict, <span title="System.object">object</span> update_op, <span title="System.object">object</span> global_step_tensor, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> supervisor_master, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> log_every_steps, <span title="System.object">object</span> feed_fn, <span title="System.object">object</span> max_steps)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="export_estimator" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>export_estimator</strong>(<span title="System.object">object</span> estimator, <span title="System.object">object</span> export_dir, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> signature_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> input_fn, <span title="System.int">int</span> default_batch_size, <span title="System.object">object</span> exports_to_keep)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="export_estimator_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>export_estimator_dyn</strong>(<span title="System.object">object</span> estimator, <span title="System.object">object</span> export_dir, <span title="System.object">object</span> signature_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> input_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> default_batch_size, <span title="System.object">object</span> exports_to_keep)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_dask_data" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_dask_data</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_dask_data" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_dask_data</strong>(<span title="System.object">object</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_dask_data_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_dask_data_dyn</strong>(<span title="System.object">object</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_dask_labels" class="method">
+		<h4>
+			<span title="System.Nullable<ValueTuple<object, object>>">Nullable&lt;ValueTuple&lt;object, object&gt;&gt;</span> <strong>extract_dask_labels</strong>(<span title="System.Nullable<ValueTuple<object, object>>">Nullable&lt;ValueTuple&lt;object, object&gt;&gt;</span> labels)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_dask_labels_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_dask_labels_dyn</strong>(<span title="System.object">object</span> labels)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_data" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_pandas_data</strong>(<span title="System.object">object</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_data" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_pandas_data</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_data_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_pandas_data_dyn</strong>(<span title="System.object">object</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_labels" class="method">
+		<h4>
+			<span title="System.Nullable<ValueTuple<object, object>>">Nullable&lt;ValueTuple&lt;object, object&gt;&gt;</span> <strong>extract_pandas_labels</strong>(<span title="System.Nullable<ValueTuple<object, object>>">Nullable&lt;ValueTuple&lt;object, object&gt;&gt;</span> labels)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_labels_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_pandas_labels_dyn</strong>(<span title="System.object">object</span> labels)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_matrix" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>extract_pandas_matrix</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_pandas_matrix_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_pandas_matrix_dyn</strong>(<span title="System.object">object</span> data)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generator_input_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generator_input_fn</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> x, <span title="System.string">string</span> target_key, <span title="System.int">int</span> batch_size, <span title="System.int">int</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.object">object</span> pad_value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generator_input_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generator_input_fn</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> x, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> target_key, <span title="System.int">int</span> batch_size, <span title="System.int">int</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.object">object</span> pad_value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generator_input_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generator_input_fn_dyn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> target_key, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> batch_size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> shuffle, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_threads, <span title="System.object">object</span> pad_value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>infer</strong>(<span title="System.object">object</span> restore_checkpoint_path, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> output_dict, <span title="System.Collections.Generic.IDictionary<object, double>">IDictionary&lt;object, double&gt;</span> feed_dict)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>infer_dyn</strong>(<span title="System.object">object</span> restore_checkpoint_path, <span title="System.object">object</span> output_dict, <span title="System.object">object</span> feed_dict)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>infer_real_valued_columns_from_input</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> x)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>infer_real_valued_columns_from_input</strong>(<a href="../numpy/ndarray.htm">ndarray</a> x)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>infer_real_valued_columns_from_input_dyn</strong>(<span title="System.object">object</span> x)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input_fn" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<_RealValuedColumn>">IList&lt;_RealValuedColumn&gt;</span> <strong>infer_real_valued_columns_from_input_fn</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> input_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>infer_real_valued_columns_from_input_fn_dyn</strong>(<span title="System.object">object</span> input_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="LogisticRegressor" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn/Estimator.htm">Estimator</a> <strong>LogisticRegressor</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> model_fn, <span title="System.object">object</span> thresholds, <span title="System.object">object</span> model_dir, <span title="System.object">object</span> config, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> feature_engineering_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="LogisticRegressor_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>LogisticRegressor_dyn</strong>(<span title="System.object">object</span> model_fn, <span title="System.object">object</span> thresholds, <span title="System.object">object</span> model_dir, <span title="System.object">object</span> config, <span title="System.object">object</span> feature_engineering_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="loss_only_head" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn.head/_LossOnlyHead.htm">_LossOnlyHead</a> <strong>loss_only_head</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss_fn, <span title="System.string">string</span> head_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="loss_only_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>loss_only_head_dyn</strong>(<span title="System.object">object</span> loss_fn, <span title="System.object">object</span> head_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_export_strategy" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn/ExportStrategy.htm">ExportStrategy</a> <strong>make_export_strategy</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> serving_input_fn, <span title="System.string">string</span> default_output_alternative_key, <span title="System.Collections.Generic.IDictionary<string, string>">IDictionary&lt;string, string&gt;</span> assets_extra, <span title="System.bool">bool</span> as_text, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> exports_to_keep, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> strip_default_attrs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_export_strategy" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn/ExportStrategy.htm">ExportStrategy</a> <strong>make_export_strategy</strong>(<a href="../tensorflow_estimator.python.estimator.estimator/Estimator.htm">Estimator</a> serving_input_fn, <span title="System.string">string</span> default_output_alternative_key, <span title="System.Collections.Generic.IDictionary<string, string>">IDictionary&lt;string, string&gt;</span> assets_extra, <span title="System.bool">bool</span> as_text, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> exports_to_keep, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> strip_default_attrs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_export_strategy" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn/ExportStrategy.htm">ExportStrategy</a> <strong>make_export_strategy</strong>(<a href="../tensorflow.contrib.learn/Evaluable.htm">Evaluable</a> serving_input_fn, <span title="System.string">string</span> default_output_alternative_key, <span title="System.Collections.Generic.IDictionary<string, string>">IDictionary&lt;string, string&gt;</span> assets_extra, <span title="System.bool">bool</span> as_text, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> exports_to_keep, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> strip_default_attrs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_export_strategy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>make_export_strategy_dyn</strong>(<span title="System.object">object</span> serving_input_fn, <span title="System.object">object</span> default_output_alternative_key, <span title="System.object">object</span> assets_extra, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> as_text, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> exports_to_keep, <span title="System.object">object</span> strip_default_attrs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_class_head" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_class_head</strong>(<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> n_classes, <span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.int">int</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> metric_class_ids, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss_fn, <span title="System.Collections.Generic.IEnumerable<Byte[]>">IEnumerable&lt;Byte[]&gt;</span> label_keys)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_class_head" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_class_head</strong>(<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> n_classes, <span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.int">int</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> metric_class_ids, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss_fn, <span title="System.ValueTuple<string, string, string>">ValueTuple&lt;string, string, string&gt;</span> label_keys)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_class_head" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_class_head</strong>(<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> n_classes, <span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.string">string</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> metric_class_ids, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss_fn, <span title="System.Collections.Generic.IEnumerable<Byte[]>">IEnumerable&lt;Byte[]&gt;</span> label_keys)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_class_head" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_class_head</strong>(<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> n_classes, <span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.string">string</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> metric_class_ids, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss_fn, <span title="System.ValueTuple<string, string, string>">ValueTuple&lt;string, string, string&gt;</span> label_keys)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_class_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_class_head_dyn</strong>(<span title="System.object">object</span> n_classes, <span title="System.object">object</span> label_name, <span title="System.object">object</span> weight_column_name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> enable_centered_bias, <span title="System.object">object</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.object">object</span> metric_class_ids, <span title="System.object">object</span> loss_fn, <span title="System.object">object</span> label_keys)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_head" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn.head/_MultiHead.htm">_MultiHead</a> <strong>multi_head</strong>(<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> heads, <span title="System.Nullable<ValueTuple<int, double>>">Nullable&lt;ValueTuple&lt;int, double&gt;&gt;</span> loss_weights)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_head_dyn</strong>(<span title="System.object">object</span> heads, <span title="System.object">object</span> loss_weights)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_label_head" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn.head/_MultiLabelHead.htm">_MultiLabelHead</a> <strong>multi_label_head</strong>(<span title="System.int">int</span> n_classes, <span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.string">string</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> metric_class_ids, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_label_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_label_head_dyn</strong>(<span title="System.object">object</span> n_classes, <span title="System.object">object</span> label_name, <span title="System.object">object</span> weight_column_name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> enable_centered_bias, <span title="System.object">object</span> head_name, <span title="System.object">object</span> thresholds, <span title="System.object">object</span> metric_class_ids, <span title="System.object">object</span> loss_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="no_op_train_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>no_op_train_fn</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> loss)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="no_op_train_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>no_op_train_fn</strong>(<span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> loss)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="no_op_train_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>no_op_train_fn</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> loss)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="no_op_train_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>no_op_train_fn_dyn</strong>(<span title="System.object">object</span> loss)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="numpy_input_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>numpy_input_fn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <span title="System.int">int</span> batch_size, <span title="System.int">int</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="numpy_input_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>numpy_input_fn_dyn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> batch_size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> shuffle, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_threads)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="pandas_input_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>pandas_input_fn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <span title="System.int">int</span> batch_size, <span title="System.int">int</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.string">string</span> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="pandas_input_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>pandas_input_fn_dyn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> batch_size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> shuffle, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="poisson_regression_head" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn.head/_RegressionHead.htm">_RegressionHead</a> <strong>poisson_regression_head</strong>(<span title="System.object">object</span> label_name, <span title="System.object">object</span> weight_column_name, <span title="System.int">int</span> label_dimension, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.object">object</span> head_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="poisson_regression_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>poisson_regression_head_dyn</strong>(<span title="System.object">object</span> label_name, <span title="System.object">object</span> weight_column_name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> label_dimension, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> enable_centered_bias, <span title="System.object">object</span> head_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="queue_parsed_features" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>queue_parsed_features</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> parsed_features, <span title="System.Collections.Generic.IEnumerable<SparseTensor>">IEnumerable&lt;SparseTensor&gt;</span> keys, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_enqueue_threads, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="queue_parsed_features" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>queue_parsed_features</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> parsed_features, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> keys, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_enqueue_threads, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="queue_parsed_features" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>queue_parsed_features</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> parsed_features, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> keys, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_enqueue_threads, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="queue_parsed_features" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>queue_parsed_features</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> parsed_features, <a href="../tensorflow/SparseTensor.htm">SparseTensor</a> keys, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_enqueue_threads, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="queue_parsed_features_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>queue_parsed_features_dyn</strong>(<span title="System.object">object</span> parsed_features, <span title="System.object">object</span> keys, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> feature_queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_enqueue_threads, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_examples</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_examples</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_examples</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_examples</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_examples_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_examples_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> reader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> read_batch_size, <span title="System.object">object</span> parse_fn, <span title="System.object">object</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_features" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>read_batch_features</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.int">int</span> num_enqueue_threads, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> read_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_features" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>read_batch_features</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.int">int</span> num_enqueue_threads, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> read_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_features_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_features_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <span title="System.object">object</span> reader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> feature_queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader_num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_enqueue_threads, <span title="System.object">object</span> parse_fn, <span title="System.object">object</span> name, <span title="System.object">object</span> read_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_record_features" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>read_batch_record_features</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <span title="System.bool">bool</span> randomize_input, <span title="System.object">object</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_record_features_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_record_features_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader_num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> reader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> read_batch_size, <span title="System.object">object</span> parse_fn, <span title="System.object">object</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_shared_queue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples_shared_queue</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_shared_queue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples_shared_queue</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_shared_queue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples_shared_queue</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_shared_queue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples_shared_queue</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> num_threads, <span title="System.int">int</span> read_batch_size, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_shared_queue_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_examples_shared_queue_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> reader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> read_batch_size, <span title="System.object">object</span> parse_fn, <span title="System.object">object</span> name, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>read_keyed_batch_features</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_enqueue_threads, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> read_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>read_keyed_batch_features</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_enqueue_threads, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name, <span title="System.object">object</span> read_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_features_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <span title="System.object">object</span> reader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader_num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> feature_queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_enqueue_threads, <span title="System.object">object</span> parse_fn, <span title="System.object">object</span> name, <span title="System.object">object</span> read_batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features_shared_queue" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>read_keyed_batch_features_shared_queue</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.object">object</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_queue_runners, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features_shared_queue" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>read_keyed_batch_features_shared_queue</strong>(<span title="System.string">string</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <span title="System.object">object</span> reader, <span title="System.bool">bool</span> randomize_input, <span title="System.object">object</span> num_epochs, <span title="System.int">int</span> queue_capacity, <span title="System.int">int</span> reader_num_threads, <span title="System.int">int</span> feature_queue_capacity, <span title="System.int">int</span> num_queue_runners, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> parse_fn, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features_shared_queue_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_keyed_batch_features_shared_queue_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <span title="System.object">object</span> reader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader_num_threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> feature_queue_capacity, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_queue_runners, <span title="System.object">object</span> parse_fn, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="regression_head" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn.head/_RegressionHead.htm">_RegressionHead</a> <strong>regression_head</strong>(<span title="System.string">string</span> label_name, <span title="System.string">string</span> weight_column_name, <span title="System.int">int</span> label_dimension, <span title="System.bool">bool</span> enable_centered_bias, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> head_name, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> link_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="regression_head_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>regression_head_dyn</strong>(<span title="System.object">object</span> label_name, <span title="System.object">object</span> weight_column_name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> label_dimension, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> enable_centered_bias, <span title="System.object">object</span> head_name, <span title="System.object">object</span> link_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="run_feeds" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>run_feeds</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="run_feeds" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>run_feeds</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="run_feeds_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>run_feeds_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="run_feeds_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>run_feeds_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="run_n" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>run_n</strong>(<span title="System.object">object</span> output_dict, <span title="System.object">object</span> feed_dict, <span title="System.object">object</span> restore_checkpoint_path, <span title="System.int">int</span> n)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="run_n_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>run_n_dyn</strong>(<span title="System.object">object</span> output_dict, <span title="System.object">object</span> feed_dict, <span title="System.object">object</span> restore_checkpoint_path, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> n)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="train" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>train</strong>(<span title="System.object">object</span> graph, <span title="System.string">string</span> output_dir, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> train_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> loss_op, <span title="System.object">object</span> global_step_tensor, <span title="System.object">object</span> init_op, <span title="System.object">object</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn, <span title="System.int">int</span> log_every_steps, <span title="System.bool">bool</span> supervisor_is_chief, <span title="System.string">string</span> supervisor_master, <span title="System.int">int</span> supervisor_save_model_secs, <span title="System.int">int</span> keep_checkpoint_max, <span title="System.int">int</span> supervisor_save_summaries_steps, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> feed_fn, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> steps, <span title="System.bool">bool</span> fail_on_nan_loss, <span title="System.Collections.Generic.IEnumerable<BaseMonitor>">IEnumerable&lt;BaseMonitor&gt;</span> monitors, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> max_steps)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="train" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>train</strong>(<span title="System.object">object</span> graph, <span title="System.Byte[]">Byte[]</span> output_dir, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> train_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> loss_op, <span title="System.object">object</span> global_step_tensor, <span title="System.object">object</span> init_op, <span title="System.object">object</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn, <span title="System.int">int</span> log_every_steps, <span title="System.bool">bool</span> supervisor_is_chief, <span title="System.string">string</span> supervisor_master, <span title="System.int">int</span> supervisor_save_model_secs, <span title="System.int">int</span> keep_checkpoint_max, <span title="System.int">int</span> supervisor_save_summaries_steps, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> feed_fn, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> steps, <span title="System.bool">bool</span> fail_on_nan_loss, <span title="System.Collections.Generic.IEnumerable<BaseMonitor>">IEnumerable&lt;BaseMonitor&gt;</span> monitors, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> max_steps)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="train_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>train_dyn</strong>(<span title="System.object">object</span> graph, <span title="System.object">object</span> output_dir, <span title="System.object">object</span> train_op, <span title="System.object">object</span> loss_op, <span title="System.object">object</span> global_step_tensor, <span title="System.object">object</span> init_op, <span title="System.object">object</span> init_feed_dict, <span title="System.object">object</span> init_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> log_every_steps, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> supervisor_is_chief, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> supervisor_master, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> supervisor_save_model_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> keep_checkpoint_max, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> supervisor_save_summaries_steps, <span title="System.object">object</span> feed_fn, <span title="System.object">object</span> steps, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> fail_on_nan_loss, <span title="System.object">object</span> monitors, <span title="System.object">object</span> max_steps)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="binary_svm_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>binary_svm_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="build_default_serving_input_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>build_default_serving_input_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="build_parsing_serving_input_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>build_parsing_serving_input_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="evaluate_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>evaluate_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="export_estimator_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>export_estimator_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extract_dask_data_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>extract_dask_data_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extract_dask_labels_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>extract_dask_labels_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extract_pandas_data_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>extract_pandas_data_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extract_pandas_labels_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>extract_pandas_labels_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extract_pandas_matrix_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>extract_pandas_matrix_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="generator_input_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>generator_input_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="infer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>infer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>infer_real_valued_columns_from_input_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="infer_real_valued_columns_from_input_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>infer_real_valued_columns_from_input_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="LogisticRegressor_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>LogisticRegressor_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="loss_only_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>loss_only_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_export_strategy_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_export_strategy_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="multi_class_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>multi_class_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="multi_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>multi_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="multi_label_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>multi_label_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="no_op_train_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>no_op_train_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="numpy_input_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>numpy_input_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="pandas_input_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>pandas_input_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="poisson_regression_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>poisson_regression_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="queue_parsed_features_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>queue_parsed_features_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_batch_examples_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_batch_examples_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_batch_features_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_batch_features_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_batch_record_features_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_batch_record_features_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_keyed_batch_examples_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_examples_shared_queue_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_keyed_batch_examples_shared_queue_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_keyed_batch_features_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_keyed_batch_features_shared_queue_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_keyed_batch_features_shared_queue_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="regression_head_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>regression_head_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="run_feeds_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>run_feeds_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="run_n_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>run_n_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="train_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>train_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="HAS_DASK" class="method">
+    <h4>bool <strong>HAS_DASK</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.bool">bool</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="HAS_PANDAS" class="method">
+    <h4>bool <strong>HAS_PANDAS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.bool">bool</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>TFRecordDataset - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.data</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.data/Dataset.htm">Dataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/DatasetSpec.htm">DatasetSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/FixedLengthRecordDataset.htm">FixedLengthRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IDataset.htm">IDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IDatasetSpec.htm">IDatasetSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IFixedLengthRecordDataset.htm">IFixedLengthRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IIterator.htm">IIterator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IOptions.htm">IOptions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/Iterator.htm">Iterator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/ITextLineDataset.htm">ITextLineDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/ITFRecordDataset.htm">ITFRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/Options.htm">Options</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/TextLineDataset.htm">TextLineDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/TFRecordDataset.htm" class="current">TFRecordDataset</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> TFRecordDataset</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.data</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.data/ITFRecordDataset.htm">ITFRecordDataset</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A `Dataset` comprising records from one or more TFRecord files. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#concatenate">concatenate</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#flat_map">flat_map</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#make_initializable_iterator">make_initializable_iterator</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#map">map</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#map">map</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#map_dyn">map_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#map_with_legacy_function_dyn">map_with_legacy_function_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#padded_batch_dyn">padded_batch_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#prefetch">prefetch</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#prefetch">prefetch</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#prefetch_dyn">prefetch_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#element_spec">element_spec</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#element_spec_dyn">element_spec_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#output_classes">output_classes</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#output_classes_dyn">output_classes_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#output_shapes">output_shapes</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#output_shapes_dyn">output_shapes_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#output_types">output_types</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#output_types_dyn">output_types_dyn</a></li>
+				<li><a href="../tensorflow.data/TFRecordDataset.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="concatenate" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>concatenate</strong>(<a href="../tensorflow.data/Dataset.htm">Dataset</a> dataset)
+		</h4>
+		<div class="content">Creates a `Dataset` by concatenating the given dataset with this dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code> dataset
+						</dt>
+						<dd>`Dataset` to be concatenated. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]
+            b = Dataset.range(4, 8)  # ==> [ 4, 5, 6, 7 ] <p></p> # The input dataset and dataset to be concatenated should have the same
+# nested structures and output types.
+# c = Dataset.range(8, 14).batch(2)  # ==> [ [8, 9], [10, 11], [12, 13] ]
+# d = Dataset.from_tensor_slices([14.0, 15.0, 16.0])
+# a.concatenate(c) and a.concatenate(d) would result in error. <p></p> a.concatenate(b)  # ==> [ 1, 2, 3, 4, 5, 6, 7 ] </pre>
+</div>
+		</div>
+	</div>
+	<div id="flat_map" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>flat_map</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> map_func)
+		</h4>
+		<div class="content">Maps `map_func` across this dataset and flattens the result. <p></p> Use `flat_map` if you want to make sure that the order of your dataset
+stays the same. For example, to flatten a dataset of batches into a
+dataset of their elements:
+`tf.data.Dataset.interleave()` is a generalization of `flat_map`, since
+`flat_map` produces the same output as
+`tf.data.Dataset.interleave(cycle_length=1)` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> map_func
+						</dt>
+						<dd>A function mapping a dataset element to a dataset. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.from_tensor_slices([ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]) <p></p> a.flat_map(lambda x: Dataset.from_tensor_slices(x + 1)) # ==>
+#  [ 2, 3, 4, 5, 6, 7, 8, 9, 10 ] </pre>
+</div>
+		</div>
+	</div>
+	<div id="make_initializable_iterator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Iterator.htm">Iterator</a> <strong>make_initializable_iterator</strong>(<span title="System.string">string</span> shared_name)
+		</h4>
+		<div class="content">Creates an `Iterator` for enumerating the elements of this dataset. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `for... in dataset:` to iterate over a dataset. If using <a href="..\..\tf\estimator.md"><code>tf.estimator</code></a>, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_initializable_iterator(dataset)`. <p></p> Note: The returned iterator will be in an uninitialized state,
+and you must run the `iterator.initializer` operation before using it: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> shared_name
+						</dt>
+						<dd>(Optional.) If non-empty, the returned iterator will be
+shared under the given name across multiple sessions that share the same
+devices (e.g. when using a remote server). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Iterator.htm">Iterator</a></code>
+					</dt>
+					<dd>An `Iterator` over the elements of this dataset. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset =...
+            iterator = dataset.make_initializable_iterator()
+            #...
+            sess.run(iterator.initializer) </pre>
+</div>
+		</div>
+	</div>
+	<div id="map" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> map_func, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_parallel_calls)
+		</h4>
+		<div class="content">Maps `map_func` across the elements of this dataset. <p></p> This transformation applies `map_func` to each element of this dataset, and
+returns a new dataset containing the transformed elements, in the same
+order as they appeared in the input.
+The input signature of `map_func` is determined by the structure of each
+element in this dataset.
+The value or values returned by `map_func` determine the structure of each
+element in the returned dataset.
+`map_func` can accept as arguments and return any type of dataset element. <p></p> Note that irrespective of the context in which `map_func` is defined (eager
+vs. graph), tf.data traces the function and executes it as a graph. To use
+Python code inside of the function you have two options: <p></p> 1) Rely on AutoGraph to convert Python code into an equivalent graph
+computation. The downside of this approach is that AutoGraph can convert
+some but not all Python code. <p></p> 2) Use <a href="..\..\tf\py_function.md"><code>tf.py_function</code></a>, which allows you to write arbitrary Python code but
+will generally result in worse performance than 1). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> map_func
+						</dt>
+						<dd>A function mapping a dataset element to another dataset element. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> num_parallel_calls
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>,
+representing the number elements to process asynchronously in parallel.
+If not specified, elements will be processed sequentially. If the value
+<a href="..\..\tf\data\experimental\AUTOTUNE.md"><code>tf.data.experimental.AUTOTUNE</code></a> is used, then the number of parallel
+calls is set dynamically based on available CPU. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.range(1, 6)  # ==> [ 1, 2, 3, 4, 5 ] <p></p> a.map(lambda x: x + 1)  # ==> [ 2, 3, 4, 5, 6 ] </pre>
+</div>
+		</div>
+	</div>
+	<div id="map" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map</strong>(<span title="System.object">object</span> map_func, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_parallel_calls)
+		</h4>
+		<div class="content">Maps `map_func` across the elements of this dataset. <p></p> This transformation applies `map_func` to each element of this dataset, and
+returns a new dataset containing the transformed elements, in the same
+order as they appeared in the input.
+The input signature of `map_func` is determined by the structure of each
+element in this dataset.
+The value or values returned by `map_func` determine the structure of each
+element in the returned dataset.
+`map_func` can accept as arguments and return any type of dataset element. <p></p> Note that irrespective of the context in which `map_func` is defined (eager
+vs. graph), tf.data traces the function and executes it as a graph. To use
+Python code inside of the function you have two options: <p></p> 1) Rely on AutoGraph to convert Python code into an equivalent graph
+computation. The downside of this approach is that AutoGraph can convert
+some but not all Python code. <p></p> 2) Use <a href="..\..\tf\py_function.md"><code>tf.py_function</code></a>, which allows you to write arbitrary Python code but
+will generally result in worse performance than 1). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> map_func
+						</dt>
+						<dd>A function mapping a dataset element to another dataset element. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> num_parallel_calls
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>,
+representing the number elements to process asynchronously in parallel.
+If not specified, elements will be processed sequentially. If the value
+<a href="..\..\tf\data\experimental\AUTOTUNE.md"><code>tf.data.experimental.AUTOTUNE</code></a> is used, then the number of parallel
+calls is set dynamically based on available CPU. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.range(1, 6)  # ==> [ 1, 2, 3, 4, 5 ] <p></p> a.map(lambda x: x + 1)  # ==> [ 2, 3, 4, 5, 6 ] </pre>
+</div>
+		</div>
+	</div>
+	<div id="map_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_dyn</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> num_parallel_calls)
+		</h4>
+		<div class="content">Maps `map_func` across the elements of this dataset. <p></p> This transformation applies `map_func` to each element of this dataset, and
+returns a new dataset containing the transformed elements, in the same
+order as they appeared in the input.
+The input signature of `map_func` is determined by the structure of each
+element in this dataset.
+The value or values returned by `map_func` determine the structure of each
+element in the returned dataset.
+`map_func` can accept as arguments and return any type of dataset element. <p></p> Note that irrespective of the context in which `map_func` is defined (eager
+vs. graph), tf.data traces the function and executes it as a graph. To use
+Python code inside of the function you have two options: <p></p> 1) Rely on AutoGraph to convert Python code into an equivalent graph
+computation. The downside of this approach is that AutoGraph can convert
+some but not all Python code. <p></p> 2) Use <a href="..\..\tf\py_function.md"><code>tf.py_function</code></a>, which allows you to write arbitrary Python code but
+will generally result in worse performance than 1). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> map_func
+						</dt>
+						<dd>A function mapping a dataset element to another dataset element. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_parallel_calls
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>,
+representing the number elements to process asynchronously in parallel.
+If not specified, elements will be processed sequentially. If the value
+<a href="..\..\tf\data\experimental\AUTOTUNE.md"><code>tf.data.experimental.AUTOTUNE</code></a> is used, then the number of parallel
+calls is set dynamically based on available CPU. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.range(1, 6)  # ==> [ 1, 2, 3, 4, 5 ] <p></p> a.map(lambda x: x + 1)  # ==> [ 2, 3, 4, 5, 6 ] </pre>
+</div>
+		</div>
+	</div>
+	<div id="map_with_legacy_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_with_legacy_function_dyn</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> num_parallel_calls)
+		</h4>
+		<div class="content">Maps `map_func` across the elements of this dataset. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map() <p></p> NOTE: This is an escape hatch for existing uses of `map` that do not work
+with V2 functions. New uses are strongly discouraged and existing uses
+should migrate to `map` as this method will be removed in V2. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> map_func
+						</dt>
+						<dd>A function mapping a nested structure of tensors (having shapes
+and types defined by `self.output_shapes` and `self.output_types`) to
+another nested structure of tensors. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_parallel_calls
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>,
+representing the number elements to process asynchronously in parallel.
+If not specified, elements will be processed sequentially. If the value
+<a href="..\..\tf\data\experimental\AUTOTUNE.md"><code>tf.data.experimental.AUTOTUNE</code></a> is used, then the number of parallel
+calls is set dynamically based on available CPU. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="padded_batch_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>padded_batch_dyn</strong>(<span title="System.object">object</span> batch_size, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> drop_remainder)
+		</h4>
+		<div class="content">Combines consecutive elements of this dataset into padded batches. <p></p> This transformation combines multiple consecutive elements of the input
+dataset into a single element. <p></p> Like <a href="..\..\tf\data\Dataset\batch.md"><code>tf.data.Dataset.batch</code></a>, the components of the resulting element will
+have an additional outer dimension, which will be `batch_size` (or
+`N % batch_size` for the last element if `batch_size` does not divide the
+number of input elements `N` evenly and `drop_remainder` is `False`). If
+your program depends on the batches having the same outer dimension, you
+should set the `drop_remainder` argument to `True` to prevent the smaller
+batch from being produced. <p></p> Unlike <a href="..\..\tf\data\Dataset\batch.md"><code>tf.data.Dataset.batch</code></a>, the input elements to be batched may have
+different shapes, and this transformation will pad each component to the
+respective shape in `padding_shapes`. The `padding_shapes` argument
+determines the resulting shape for each dimension of each component in an
+output element: <p></p> * If the dimension is a constant (e.g. `tf.compat.v1.Dimension(37)`), the
+component
+will be padded out to that length in that dimension.
+* If the dimension is unknown (e.g. `tf.compat.v1.Dimension(None)`), the
+component
+will be padded out to the maximum length of all elements in that
+dimension. <p></p> See also <a href="..\..\tf\data\experimental\dense_to_sparse_batch.md"><code>tf.data.experimental.dense_to_sparse_batch</code></a>, which combines
+elements that may have different shapes into a <a href="..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> batch_size
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+consecutive elements of this dataset to combine in a single batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> padded_shapes
+						</dt>
+						<dd>A nested structure of <a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> or <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> vector
+tensor-like objects representing the shape to which the respective
+component of each input element should be padded prior to batching. Any
+unknown dimensions (e.g. `tf.compat.v1.Dimension(None)` in a
+<a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> or `-1` in a tensor-like object) will be padded to the
+maximum size of that dimension in each batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> padding_values
+						</dt>
+						<dd>(Optional.) A nested structure of scalar-shaped
+<a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the padding values to use for the respective
+components.  Defaults are `0` for numeric types and the empty string for
+string types. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> drop_remainder
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\bool.md"><code>tf.bool</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing
+whether the last batch should be dropped in the case it has fewer than
+`batch_size` elements; the default behavior is not to drop the smaller
+batch. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prefetch" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>prefetch</strong>(<span title="System.int">int</span> buffer_size)
+		</h4>
+		<div class="content">Creates a `Dataset` that prefetches elements from this dataset. <p></p> Note: Like other `Dataset` methods, prefetch operates on the
+elements of the input dataset. It has no concept of examples vs. batches.
+`examples.prefetch(2)` will prefetch two elements (2 examples),
+while `examples.batch(20).prefetch(2)` will prefetch 2 elements
+(2 batches, of 20 examples each). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> buffer_size
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the maximum
+number of elements that will be buffered when prefetching. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prefetch" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>prefetch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> buffer_size)
+		</h4>
+		<div class="content">Creates a `Dataset` that prefetches elements from this dataset. <p></p> Note: Like other `Dataset` methods, prefetch operates on the
+elements of the input dataset. It has no concept of examples vs. batches.
+`examples.prefetch(2)` will prefetch two elements (2 examples),
+while `examples.batch(20).prefetch(2)` will prefetch 2 elements
+(2 batches, of 20 examples each). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> buffer_size
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the maximum
+number of elements that will be buffered when prefetching. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prefetch_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>prefetch_dyn</strong>(<span title="System.object">object</span> buffer_size)
+		</h4>
+		<div class="content">Creates a `Dataset` that prefetches elements from this dataset. <p></p> Note: Like other `Dataset` methods, prefetch operates on the
+elements of the input dataset. It has no concept of examples vs. batches.
+`examples.prefetch(2)` will prefetch two elements (2 examples),
+while `examples.batch(20).prefetch(2)` will prefetch 2 elements
+(2 batches, of 20 examples each). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> buffer_size
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the maximum
+number of elements that will be buffered when prefetching. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="element_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="element_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_classes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_classes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_classes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_classes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shapes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shapes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shapes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shapes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_types" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_types</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_types_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_types_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>tpu_estimator - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow_estimator.python.estimator.tpu.tpu_estimator</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_CapturedObject.htm">_CapturedObject</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_CapturingContext.htm">_CapturingContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.htm">_InputPipeline</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.IInputsStructureRecorder.htm">_InputPipeline.IInputsStructureRecorder</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.InputsStructureRecorder.htm">_InputPipeline.InputsStructureRecorder</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_Inputs.htm">_Inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputsWithStoppingSignals.htm">_InputsWithStoppingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_ModelFnWrapper.htm">_ModelFnWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OpQueueContext.htm">_OpQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OpSignalOnceQueueContext.htm">_OpSignalOnceQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OutfeedHostCall.htm">_OutfeedHostCall</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OutfeedHostCallHook.htm">_OutfeedHostCallHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_PaddingSignals.htm">_PaddingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_SetEvalIterationsHook.htm">_SetEvalIterationsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_SIGNAL.htm">_SIGNAL</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_StoppingPredictHook.htm">_StoppingPredictHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_StopSignals.htm">_StopSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_TPUStopAtStepHook.htm">_TPUStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/BatchConfig.htm">BatchConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm">CatchInvalidHostcallFunctions</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ExamplesPerSecondHook.htm">ExamplesPerSecondHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ExportSavedModelApiVersion.htm">ExportSavedModelApiVersion</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_CapturedObject.htm">I_CapturedObject</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_CapturingContext.htm">I_CapturingContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_InputPipeline.htm">I_InputPipeline</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_Inputs.htm">I_Inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_InputsWithStoppingSignals.htm">I_InputsWithStoppingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_ModelFnWrapper.htm">I_ModelFnWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OpQueueContext.htm">I_OpQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OpSignalOnceQueueContext.htm">I_OpSignalOnceQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OutfeedHostCall.htm">I_OutfeedHostCall</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OutfeedHostCallHook.htm">I_OutfeedHostCallHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_PaddingSignals.htm">I_PaddingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_SetEvalIterationsHook.htm">I_SetEvalIterationsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_SIGNAL.htm">I_SIGNAL</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_StoppingPredictHook.htm">I_StoppingPredictHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_StopSignals.htm">I_StopSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_TPUStopAtStepHook.htm">I_TPUStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IBatchConfig.htm">IBatchConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ICatchInvalidHostcallFunctions.htm">ICatchInvalidHostcallFunctions</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IExamplesPerSecondHook.htm">IExamplesPerSecondHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IInstallSignalHandlerHook.htm">IInstallSignalHandlerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/InstallSignalHandlerHook.htm">InstallSignalHandlerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IPeriodicLogger.htm">IPeriodicLogger</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITensorPacker.htm">ITensorPacker</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUEstimator.htm">ITPUEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUEstimatorSpec.htm">ITPUEstimatorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUInfeedOutfeedSessionHook.htm">ITPUInfeedOutfeedSessionHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUInfeedOutfeedSessionHookForPrediction.htm">ITPUInfeedOutfeedSessionHookForPrediction</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/PeriodicLogger.htm">PeriodicLogger</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TensorPacker.htm">TensorPacker</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm" class="current">tpu_estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUEstimator.htm">TPUEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUEstimatorSpec.htm">TPUEstimatorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUInfeedOutfeedSessionHook.htm">TPUInfeedOutfeedSessionHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUInfeedOutfeedSessionHookForPrediction.htm">TPUInfeedOutfeedSessionHookForPrediction</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> tpu_estimator</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow_estimator.python.estimator.tpu.tpu_estimator</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#call_computation">call_computation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#call_computation_dyn">call_computation_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#export_estimator_savedmodel">export_estimator_savedmodel</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#export_estimator_savedmodel_dyn">export_estimator_savedmodel_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_broadcast_enqueue_ops_fn">generate_broadcast_enqueue_ops_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_broadcast_enqueue_ops_fn_dyn">generate_broadcast_enqueue_ops_fn_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_core_enqueue_ops_fn_for_host">generate_per_core_enqueue_ops_fn_for_host</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_core_enqueue_ops_fn_for_host_dyn">generate_per_core_enqueue_ops_fn_for_host_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_host_enqueue_ops_fn_for_host">generate_per_host_enqueue_ops_fn_for_host</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_host_enqueue_ops_fn_for_host_dyn">generate_per_host_enqueue_ops_fn_for_host_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_host_v2_enqueue_ops_fn_for_host">generate_per_host_v2_enqueue_ops_fn_for_host</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_host_v2_enqueue_ops_fn_for_host_dyn">generate_per_host_v2_enqueue_ops_fn_for_host_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#inference_on_tpu">inference_on_tpu</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#inference_on_tpu_dyn">inference_on_tpu_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#model_fn_inference_on_tpu">model_fn_inference_on_tpu</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#model_fn_inference_on_tpu">model_fn_inference_on_tpu</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#model_fn_inference_on_tpu">model_fn_inference_on_tpu</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#model_fn_inference_on_tpu">model_fn_inference_on_tpu</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#model_fn_inference_on_tpu_dyn">model_fn_inference_on_tpu_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_CapturedObject_fn">_CapturedObject_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_CapturingContext_fn">_CapturingContext_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_InputPipeline_fn">_InputPipeline_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_Inputs_fn">_Inputs_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_InputsWithStoppingSignals_fn">_InputsWithStoppingSignals_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_ModelFnWrapper_fn">_ModelFnWrapper_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_OpQueueContext_fn">_OpQueueContext_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_OpSignalOnceQueueContext_fn">_OpSignalOnceQueueContext_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_OutfeedHostCall_fn">_OutfeedHostCall_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_OutfeedHostCallHook_fn">_OutfeedHostCallHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_PaddingSignals_fn">_PaddingSignals_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_SetEvalIterationsHook_fn">_SetEvalIterationsHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_SIGNAL_fn">_SIGNAL_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_StoppingPredictHook_fn">_StoppingPredictHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_StopSignals_fn">_StopSignals_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#_TPUStopAtStepHook_fn">_TPUStopAtStepHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#BatchConfig_fn">BatchConfig_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#call_computation_fn">call_computation_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#CatchInvalidHostcallFunctions_fn">CatchInvalidHostcallFunctions_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#ExamplesPerSecondHook_fn">ExamplesPerSecondHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#export_estimator_savedmodel_fn">export_estimator_savedmodel_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#ExportSavedModelApiVersion_fn">ExportSavedModelApiVersion_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_broadcast_enqueue_ops_fn_fn">generate_broadcast_enqueue_ops_fn_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_core_enqueue_ops_fn_for_host_fn">generate_per_core_enqueue_ops_fn_for_host_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_host_enqueue_ops_fn_for_host_fn">generate_per_host_enqueue_ops_fn_for_host_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#generate_per_host_v2_enqueue_ops_fn_for_host_fn">generate_per_host_v2_enqueue_ops_fn_for_host_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#inference_on_tpu_fn">inference_on_tpu_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#InstallSignalHandlerHook_fn">InstallSignalHandlerHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#model_fn_inference_on_tpu_fn">model_fn_inference_on_tpu_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#PeriodicLogger_fn">PeriodicLogger_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#TensorPacker_fn">TensorPacker_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#TPUEstimator_fn">TPUEstimator_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#TPUEstimatorSpec_fn">TPUEstimatorSpec_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#TPUInfeedOutfeedSessionHook_fn">TPUInfeedOutfeedSessionHook_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm#TPUInfeedOutfeedSessionHookForPrediction_fn">TPUInfeedOutfeedSessionHookForPrediction_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="call_computation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>call_computation</strong>(<span title="System.object">object</span> computation_inputs, <span title="System.object">object</span> computation, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call_computation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>call_computation_dyn</strong>(<span title="System.object">object</span> computation_inputs, <span title="System.object">object</span> computation, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="export_estimator_savedmodel" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>export_estimator_savedmodel</strong>(<span title="System.object">object</span> estimator, <span title="System.object">object</span> export_dir_base, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> serving_input_receiver_fn, <span title="System.object">object</span> assets_extra, <span title="System.bool">bool</span> as_text, <span title="System.object">object</span> checkpoint_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="export_estimator_savedmodel_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>export_estimator_savedmodel_dyn</strong>(<span title="System.object">object</span> estimator, <span title="System.object">object</span> export_dir_base, <span title="System.object">object</span> serving_input_receiver_fn, <span title="System.object">object</span> assets_extra, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> as_text, <span title="System.object">object</span> checkpoint_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_broadcast_enqueue_ops_fn" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, _CapturedObject, object>">ValueTuple&lt;object, _CapturedObject, object&gt;</span> <strong>generate_broadcast_enqueue_ops_fn</strong>(<span title="System.object">object</span> ctx, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> input_fn, <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.InputsStructureRecorder.htm">_InputPipeline.InputsStructureRecorder</a> inputs_structure_recorder, <span title="System.object">object</span> num_hosts)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_broadcast_enqueue_ops_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generate_broadcast_enqueue_ops_fn_dyn</strong>(<span title="System.object">object</span> ctx, <span title="System.object">object</span> input_fn, <span title="System.object">object</span> inputs_structure_recorder, <span title="System.object">object</span> num_hosts)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_per_core_enqueue_ops_fn_for_host" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, _CapturedObject>">ValueTuple&lt;object, _CapturedObject&gt;</span> <strong>generate_per_core_enqueue_ops_fn_for_host</strong>(<span title="System.object">object</span> ctx, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> input_fn, <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.InputsStructureRecorder.htm">_InputPipeline.InputsStructureRecorder</a> inputs_structure_recorder, <span title="System.object">object</span> host_device, <span title="System.int">int</span> host_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_per_core_enqueue_ops_fn_for_host_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generate_per_core_enqueue_ops_fn_for_host_dyn</strong>(<span title="System.object">object</span> ctx, <span title="System.object">object</span> input_fn, <span title="System.object">object</span> inputs_structure_recorder, <span title="System.object">object</span> host_device, <span title="System.object">object</span> host_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_per_host_enqueue_ops_fn_for_host" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, _CapturedObject, object>">ValueTuple&lt;object, _CapturedObject, object&gt;</span> <strong>generate_per_host_enqueue_ops_fn_for_host</strong>(<span title="System.object">object</span> ctx, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> input_fn, <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.InputsStructureRecorder.htm">_InputPipeline.InputsStructureRecorder</a> inputs_structure_recorder, <span title="System.object">object</span> batch_axis, <span title="System.object">object</span> device, <span title="System.int">int</span> host_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_per_host_enqueue_ops_fn_for_host_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generate_per_host_enqueue_ops_fn_for_host_dyn</strong>(<span title="System.object">object</span> ctx, <span title="System.object">object</span> input_fn, <span title="System.object">object</span> inputs_structure_recorder, <span title="System.object">object</span> batch_axis, <span title="System.object">object</span> device, <span title="System.object">object</span> host_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_per_host_v2_enqueue_ops_fn_for_host" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, _CapturedObject, object>">ValueTuple&lt;object, _CapturedObject, object&gt;</span> <strong>generate_per_host_v2_enqueue_ops_fn_for_host</strong>(<span title="System.object">object</span> ctx, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> input_fn, <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.InputsStructureRecorder.htm">_InputPipeline.InputsStructureRecorder</a> inputs_structure_recorder, <span title="System.object">object</span> device, <span title="System.int">int</span> host_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="generate_per_host_v2_enqueue_ops_fn_for_host_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>generate_per_host_v2_enqueue_ops_fn_for_host_dyn</strong>(<span title="System.object">object</span> ctx, <span title="System.object">object</span> input_fn, <span title="System.object">object</span> inputs_structure_recorder, <span title="System.object">object</span> device, <span title="System.object">object</span> host_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="inference_on_tpu" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inference_on_tpu</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs_to_tpu, <span title="System.object">object</span> num_batch_threads, <span title="System.object">object</span> max_batch_size, <span title="System.object">object</span> batch_timeout_micros, <span title="System.object">object</span> allowed_batch_sizes, <span title="System.int">int</span> max_enqueued_batches)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="inference_on_tpu_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inference_on_tpu_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs_to_tpu, <span title="System.object">object</span> num_batch_threads, <span title="System.object">object</span> max_batch_size, <span title="System.object">object</span> batch_timeout_micros, <span title="System.object">object</span> allowed_batch_sizes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_enqueued_batches)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="model_fn_inference_on_tpu" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_inference_on_tpu</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> model_fn, <span title="System.Collections.Generic.IEnumerable<_DatasetInitializerHook>">IEnumerable&lt;_DatasetInitializerHook&gt;</span> features, <span title="System.object">object</span> labels, <span title="System.object">object</span> config, <span title="System.object">object</span> params, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="model_fn_inference_on_tpu" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_inference_on_tpu</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> model_fn, <span title="System.object">object</span> features, <span title="System.Collections.Generic.IEnumerable<_DatasetInitializerHook>">IEnumerable&lt;_DatasetInitializerHook&gt;</span> labels, <span title="System.object">object</span> config, <span title="System.object">object</span> params, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="model_fn_inference_on_tpu" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_inference_on_tpu</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> model_fn, <span title="System.object">object</span> features, <span title="System.object">object</span> labels, <span title="System.object">object</span> config, <span title="System.object">object</span> params, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="model_fn_inference_on_tpu" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_inference_on_tpu</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> model_fn, <span title="System.Collections.Generic.IEnumerable<_DatasetInitializerHook>">IEnumerable&lt;_DatasetInitializerHook&gt;</span> features, <span title="System.Collections.Generic.IEnumerable<_DatasetInitializerHook>">IEnumerable&lt;_DatasetInitializerHook&gt;</span> labels, <span title="System.object">object</span> config, <span title="System.object">object</span> params, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="model_fn_inference_on_tpu_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_inference_on_tpu_dyn</strong>(<span title="System.object">object</span> model_fn, <span title="System.object">object</span> features, <span title="System.object">object</span> labels, <span title="System.object">object</span> config, <span title="System.object">object</span> params, <span title="System.object">object</span> batch_config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="_CapturedObject_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_CapturedObject_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_CapturingContext_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_CapturingContext_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_InputPipeline_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_InputPipeline_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_Inputs_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_Inputs_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_InputsWithStoppingSignals_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_InputsWithStoppingSignals_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_ModelFnWrapper_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_ModelFnWrapper_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_OpQueueContext_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_OpQueueContext_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_OpSignalOnceQueueContext_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_OpSignalOnceQueueContext_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_OutfeedHostCall_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_OutfeedHostCall_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_OutfeedHostCallHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_OutfeedHostCallHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_PaddingSignals_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_PaddingSignals_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_SetEvalIterationsHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SetEvalIterationsHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_SIGNAL_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SIGNAL_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_StoppingPredictHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_StoppingPredictHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_StopSignals_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_StopSignals_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_TPUStopAtStepHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_TPUStopAtStepHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="BatchConfig_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>BatchConfig_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="call_computation_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>call_computation_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="CatchInvalidHostcallFunctions_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>CatchInvalidHostcallFunctions_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ExamplesPerSecondHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ExamplesPerSecondHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="export_estimator_savedmodel_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>export_estimator_savedmodel_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ExportSavedModelApiVersion_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ExportSavedModelApiVersion_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="generate_broadcast_enqueue_ops_fn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>generate_broadcast_enqueue_ops_fn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="generate_per_core_enqueue_ops_fn_for_host_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>generate_per_core_enqueue_ops_fn_for_host_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="generate_per_host_enqueue_ops_fn_for_host_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>generate_per_host_enqueue_ops_fn_for_host_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="generate_per_host_v2_enqueue_ops_fn_for_host_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>generate_per_host_v2_enqueue_ops_fn_for_host_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inference_on_tpu_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>inference_on_tpu_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="InstallSignalHandlerHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>InstallSignalHandlerHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn_inference_on_tpu_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>model_fn_inference_on_tpu_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PeriodicLogger_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>PeriodicLogger_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TensorPacker_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TensorPacker_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TPUEstimator_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TPUEstimator_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TPUEstimatorSpec_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TPUEstimatorSpec_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TPUInfeedOutfeedSessionHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TPUInfeedOutfeedSessionHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TPUInfeedOutfeedSessionHookForPrediction_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TPUInfeedOutfeedSessionHookForPrediction_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

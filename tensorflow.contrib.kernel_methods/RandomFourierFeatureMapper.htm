@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>RandomFourierFeatureMapper - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.kernel_methods</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/IKernelLinearClassifier.htm">IKernelLinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/IRandomFourierFeatureMapper.htm">IRandomFourierFeatureMapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/kernel_methods.htm">kernel_methods</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm">KernelLinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm" class="current">RandomFourierFeatureMapper</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> RandomFourierFeatureMapper</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.kernel_methods</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.kernel_methods.python.mappers.dense_kernel_mapper/DenseKernelMapper.htm">DenseKernelMapper</a>, <a href="../tensorflow.contrib.kernel_methods/IRandomFourierFeatureMapper.htm">IRandomFourierFeatureMapper</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Class that implements Random Fourier Feature Mapping (RFFM) in TensorFlow. <p></p> The RFFM mapping is used to approximate the Gaussian (RBF) kernel:
+$$(exp(-||x-y||_2^2 / (2 * \sigma^2))$$ <p></p> The implementation of RFFM is based on the following paper:
+"Random Features for Large-Scale Kernel Machines" by Ali Rahimi and Ben Recht.
+(link: https://people.eecs.berkeley.edu/~brecht/papers/07.rah.rec.nips.pdf) <p></p> The mapping uses a matrix \\(\Omega \in R^{d x D}\\) and a bias vector
+\\(b \in R^D\\) where \\(d\\) is the input dimension (number of dense input
+features) and \\(D\\) is the output dimension (i.e., dimension of the feature
+space the input is mapped to). Each entry of \\(\Omega\\) is sampled i.i.d.
+from a (scaled) Gaussian distribution and each entry of \\(b\\) is sampled
+independently and uniformly from [0, \\(2 * \pi\\)]. <p></p> For a single input feature vector \\(x \in R^d\\), its RFFM is defined as:
+$$\sqrt(2/D) * cos(x * \Omega + b)$$ <p></p> where \\(cos\\) is the element-wise cosine function and \\(x, b\\) are
+represented as row vectors. The aforementioned paper shows that the linear
+kernel of RFFM-mapped vectors approximates the Gaussian kernel of the initial
+vectors. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#map">map</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#map_dyn">map_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#input_dim">input_dim</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#input_dim_dyn">input_dim_dyn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#name">name</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#output_dim">output_dim</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#output_dim_dyn">output_dim_dyn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="map" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>map</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input_tensor)
+		</h4>
+		<div class="content">Maps each row of input_tensor using random Fourier features. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> input_tensor
+						</dt>
+						<dd>a `Tensor` containing input features. It's shape is
+[batch_size, self._input_dim]. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of shape [batch_size, self._output_dim] containing RFFM-mapped
+features. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="map_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_dyn</strong>(<span title="System.object">object</span> input_tensor)
+		</h4>
+		<div class="content">Maps each row of input_tensor using random Fourier features. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> input_tensor
+						</dt>
+						<dd>a `Tensor` containing input features. It's shape is
+[batch_size, self._input_dim]. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor` of shape [batch_size, self._output_dim] containing RFFM-mapped
+features. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="input_dim" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>input_dim</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dim_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dim_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">Returns a name for the `RandomFourierFeatureMapper` instance. <p></p> If the name provided in the constructor is `None`, then the object's unique
+id is returned. 
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns a name for the `RandomFourierFeatureMapper` instance. <p></p> If the name provided in the constructor is `None`, then the object's unique
+id is returned. 
+
+		</div>
+	</div>
+	<div id="output_dim" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>output_dim</strong> get; 
+		</h4>
+		<div class="content">Returns the output dimension of the mapping. 
+
+		</div>
+	</div>
+	<div id="output_dim_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dim_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns the output dimension of the mapping. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

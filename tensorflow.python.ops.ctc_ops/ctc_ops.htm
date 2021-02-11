@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>ctc_ops - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.ops.ctc_ops</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm" class="current">ctc_ops</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> ctc_ops</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.ops.ctc_ops</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_and_grad">ctc_loss_and_grad</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_and_grad">ctc_loss_and_grad</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_and_grad">ctc_loss_and_grad</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_and_grad_dyn">ctc_loss_and_grad_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_dense">ctc_loss_dense</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_dense">ctc_loss_dense</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_dense">ctc_loss_dense</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_dense_dyn">ctc_loss_dense_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_state_log_probs">ctc_state_log_probs</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_state_log_probs">ctc_state_log_probs</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_state_log_probs">ctc_state_log_probs</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_state_log_probs_dyn">ctc_state_log_probs_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse">dense_labels_to_sparse</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse_dyn">dense_labels_to_sparse_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_and_grad_fn">ctc_loss_and_grad_fn</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_loss_dense_fn">ctc_loss_dense_fn</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#ctc_state_log_probs_fn">ctc_state_log_probs_fn</a></li>
+				<li><a href="../tensorflow.python.ops.ctc_ops/ctc_ops.htm#dense_labels_to_sparse_fn">dense_labels_to_sparse_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="ctc_loss_and_grad" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>ctc_loss_and_grad</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logits, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> label_length, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logit_length, <span title="System.Nullable<ValueTuple<object>>">Nullable&lt;ValueTuple&lt;object&gt;&gt;</span> unique)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_and_grad" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>ctc_loss_and_grad</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logits, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> label_length, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> logit_length, <span title="System.Nullable<ValueTuple<object>>">Nullable&lt;ValueTuple&lt;object&gt;&gt;</span> unique)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_and_grad" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>ctc_loss_and_grad</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logits, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> label_length, <a href="../numpy/ndarray.htm">ndarray</a> logit_length, <span title="System.Nullable<ValueTuple<object>>">Nullable&lt;ValueTuple&lt;object&gt;&gt;</span> unique)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_and_grad_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ctc_loss_and_grad_dyn</strong>(<span title="System.object">object</span> logits, <span title="System.object">object</span> labels, <span title="System.object">object</span> label_length, <span title="System.object">object</span> logit_length, <span title="System.object">object</span> unique)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_dense" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ctc_loss_dense</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logits, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> label_length, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logit_length, <span title="System.bool">bool</span> logits_time_major, <span title="System.object">object</span> unique, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> blank_index, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_dense" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ctc_loss_dense</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logits, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> label_length, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> logit_length, <span title="System.bool">bool</span> logits_time_major, <span title="System.object">object</span> unique, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> blank_index, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_dense" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ctc_loss_dense</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logits, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> label_length, <a href="../numpy/ndarray.htm">ndarray</a> logit_length, <span title="System.bool">bool</span> logits_time_major, <span title="System.object">object</span> unique, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> blank_index, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_loss_dense_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ctc_loss_dense_dyn</strong>(<span title="System.object">object</span> labels, <span title="System.object">object</span> logits, <span title="System.object">object</span> label_length, <span title="System.object">object</span> logit_length, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> logits_time_major, <span title="System.object">object</span> unique, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> blank_index, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_state_log_probs" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object>">ValueTuple&lt;Tensor, object&gt;</span> <strong>ctc_state_log_probs</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> seq_lengths, <span title="System.int">int</span> max_seq_length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_state_log_probs" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object>">ValueTuple&lt;Tensor, object&gt;</span> <strong>ctc_state_log_probs</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> seq_lengths, <a href="../tensorflow/Dimension.htm">Dimension</a> max_seq_length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_state_log_probs" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object>">ValueTuple&lt;Tensor, object&gt;</span> <strong>ctc_state_log_probs</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> seq_lengths, <a href="../tensorflow/TensorShape.htm">TensorShape</a> max_seq_length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ctc_state_log_probs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ctc_state_log_probs_dyn</strong>(<span title="System.object">object</span> seq_lengths, <span title="System.object">object</span> max_seq_length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> dense, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> dense, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> dense, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> dense, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> dense, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> dense, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> dense, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>dense_labels_to_sparse</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> dense, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dense_labels_to_sparse_dyn</strong>(<span title="System.object">object</span> dense, <span title="System.object">object</span> length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="ctc_loss_and_grad_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ctc_loss_and_grad_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ctc_loss_dense_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ctc_loss_dense_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ctc_state_log_probs_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ctc_state_log_probs_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dense_labels_to_sparse_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>dense_labels_to_sparse_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

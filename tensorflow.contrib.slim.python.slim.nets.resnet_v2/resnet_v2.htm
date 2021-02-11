@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>resnet_v2 - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.slim.python.slim.nets.resnet_v2</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm" class="current">resnet_v2</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> resnet_v2</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.slim.python.slim.nets.resnet_v2</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_">resnet_v2_</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_">resnet_v2_</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2__dyn">resnet_v2__dyn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_101">resnet_v2_101</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_101_dyn">resnet_v2_101_dyn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_152">resnet_v2_152</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_152_dyn">resnet_v2_152_dyn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_200">resnet_v2_200</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_200_dyn">resnet_v2_200_dyn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_50">resnet_v2_50</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_50_dyn">resnet_v2_50_dyn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_block">resnet_v2_block</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_block_dyn">resnet_v2_block_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#bottleneck_fn">bottleneck_fn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2__fn">resnet_v2__fn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_101_fn">resnet_v2_101_fn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_152_fn">resnet_v2_152_fn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_200_fn">resnet_v2_200_fn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_50_fn">resnet_v2_50_fn</a></li>
+				<li><a href="../tensorflow.contrib.slim.python.slim.nets.resnet_v2/resnet_v2.htm#resnet_v2_block_fn">resnet_v2_block_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="resnet_v2_" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_</strong>(<span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> inputs, <span title="System.Collections.Generic.IEnumerable<Block>">IEnumerable&lt;Block&gt;</span> blocks, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_classes, <span title="System.bool">bool</span> is_training, <span title="System.bool">bool</span> global_pool, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> output_stride, <span title="System.bool">bool</span> include_root_block, <span title="System.object">object</span> reuse, <span title="System.string">string</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<Block>">IEnumerable&lt;Block&gt;</span> blocks, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_classes, <span title="System.bool">bool</span> is_training, <span title="System.bool">bool</span> global_pool, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> output_stride, <span title="System.bool">bool</span> include_root_block, <span title="System.object">object</span> reuse, <span title="System.string">string</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2__dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2__dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> blocks, <span title="System.object">object</span> num_classes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> global_pool, <span title="System.object">object</span> output_stride, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> include_root_block, <span title="System.object">object</span> reuse, <span title="System.object">object</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_101" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, PythonClassContainer>">ValueTuple&lt;object, PythonClassContainer&gt;</span> <strong>resnet_v2_101</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <span title="System.bool">bool</span> is_training, <span title="System.bool">bool</span> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <span title="System.string">string</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_101_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_101_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_152" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, PythonClassContainer>">ValueTuple&lt;object, PythonClassContainer&gt;</span> <strong>resnet_v2_152</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <span title="System.bool">bool</span> is_training, <span title="System.bool">bool</span> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <span title="System.string">string</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_152_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_152_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_200" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, PythonClassContainer>">ValueTuple&lt;object, PythonClassContainer&gt;</span> <strong>resnet_v2_200</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <span title="System.bool">bool</span> is_training, <span title="System.bool">bool</span> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <span title="System.string">string</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_200_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_200_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_50" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>resnet_v2_50</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <span title="System.bool">bool</span> is_training, <span title="System.bool">bool</span> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <span title="System.string">string</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_50_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_50_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> num_classes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> global_pool, <span title="System.object">object</span> output_stride, <span title="System.object">object</span> reuse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_block" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.slim.python.slim.nets.resnet_utils/Block.htm">Block</a> <strong>resnet_v2_block</strong>(<span title="System.string">string</span> scope, <span title="System.int">int</span> base_depth, <span title="System.int">int</span> num_units, <span title="System.int">int</span> stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="resnet_v2_block_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resnet_v2_block_dyn</strong>(<span title="System.object">object</span> scope, <span title="System.object">object</span> base_depth, <span title="System.object">object</span> num_units, <span title="System.object">object</span> stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="bottleneck_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>bottleneck_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resnet_v2__fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resnet_v2__fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resnet_v2_101_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resnet_v2_101_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resnet_v2_152_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resnet_v2_152_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resnet_v2_200_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resnet_v2_200_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resnet_v2_50_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resnet_v2_50_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resnet_v2_block_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resnet_v2_block_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

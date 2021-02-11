@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>NextQueuedSequenceBatch - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.training</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.training/_SequenceInputWrapper.htm">_SequenceInputWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/GreedyLoadBalancingStrategy.htm">GreedyLoadBalancingStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/HParams.htm">HParams</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/I_SequenceInputWrapper.htm">I_SequenceInputWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/IGreedyLoadBalancingStrategy.htm">IGreedyLoadBalancingStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/IHParams.htm">IHParams</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/INextQueuedSequenceBatch.htm">INextQueuedSequenceBatch</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/IRandomStrategy.htm">IRandomStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/ISequenceQueueingStateSaver.htm">ISequenceQueueingStateSaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/ISummaryAtEndHook.htm">ISummaryAtEndHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/ITuner.htm">ITuner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm" class="current">NextQueuedSequenceBatch</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/RandomStrategy.htm">RandomStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/SequenceQueueingStateSaver.htm">SequenceQueueingStateSaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/SummaryAtEndHook.htm">SummaryAtEndHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/training.htm">training</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.training/Tuner.htm">Tuner</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> NextQueuedSequenceBatch</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.training</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.training/INextQueuedSequenceBatch.htm">INextQueuedSequenceBatch</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">NextQueuedSequenceBatch stores deferred SequenceQueueingStateSaver data. <p></p> This class is instantiated by `SequenceQueueingStateSaver` and is accessible
+via its `next_batch` property. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#save_state">save_state</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#save_state_dyn">save_state_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#state">state</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#state_dyn">state_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#batch_size">batch_size</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#batch_size_dyn">batch_size_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#context">context</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#context_dyn">context_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#insertion_index">insertion_index</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#insertion_index_dyn">insertion_index_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#key">key</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#key_dyn">key_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#length">length</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#length_dyn">length_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#next_key">next_key</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#next_key_dyn">next_key_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#sequence">sequence</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#sequence_count">sequence_count</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#sequence_count_dyn">sequence_count_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#sequence_dyn">sequence_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#sequences">sequences</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#sequences_dyn">sequences_dyn</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#total_length">total_length</a></li>
+				<li><a href="../tensorflow.contrib.training/NextQueuedSequenceBatch.htm#total_length_dyn">total_length_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="save_state" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_state</strong>(<span title="System.string">string</span> state_name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Returns an op to save the current batch of state `state_name`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> state_name
+						</dt>
+						<dd>string, matches a key provided in `initial_states`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>A `Tensor`.
+Its type must match that of `initial_states[state_name].dtype`.
+If we had at input: <p></p> ```python
+initial_states[state_name].get_shape() == [d1, d2,...]
+``` <p></p> then the shape of `value` must match: <p></p> ```python
+tf.shape(value) == [batch_size, d1, d2,...]
+``` 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>string (optional).  The name scope for newly created ops. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A control flow op that stores the new state of each entry into
+the state saver.  This op must be run for every iteration that
+accesses data from the state saver (otherwise the state saver
+will never progress through its states and run out of capacity). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="save_state_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_state_dyn</strong>(<span title="System.object">object</span> state_name, <span title="System.object">object</span> value, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Returns an op to save the current batch of state `state_name`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> state_name
+						</dt>
+						<dd>string, matches a key provided in `initial_states`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value
+						</dt>
+						<dd>A `Tensor`.
+Its type must match that of `initial_states[state_name].dtype`.
+If we had at input: <p></p> ```python
+initial_states[state_name].get_shape() == [d1, d2,...]
+``` <p></p> then the shape of `value` must match: <p></p> ```python
+tf.shape(value) == [batch_size, d1, d2,...]
+``` 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>string (optional).  The name scope for newly created ops. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A control flow op that stores the new state of each entry into
+the state saver.  This op must be run for every iteration that
+accesses data from the state saver (otherwise the state saver
+will never progress through its states and run out of capacity). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="state" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>state</strong>(<span title="System.string">string</span> state_name)
+		</h4>
+		<div class="content">Returns batched state tensors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> state_name
+						</dt>
+						<dd>string, matches a key provided in `initial_states`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor`: a batched set of states, either initial states (if this is
+the first run of the given example), or a value as stored during
+a previous iteration via `save_state` control flow.
+Its type is the same as `initial_states["state_name"].dtype`.
+If we had at input: <p></p> ```python
+initial_states[state_name].get_shape() == [d1, d2,...],
+``` <p></p> then <p></p> ```python
+state(state_name).get_shape() == [batch_size, d1, d2,...]
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="state_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>state_dyn</strong>(<span title="System.object">object</span> state_name)
+		</h4>
+		<div class="content">Returns batched state tensors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> state_name
+						</dt>
+						<dd>string, matches a key provided in `initial_states`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor`: a batched set of states, either initial states (if this is
+the first run of the given example), or a value as stored during
+a previous iteration via `save_state` control flow.
+Its type is the same as `initial_states["state_name"].dtype`.
+If we had at input: <p></p> ```python
+initial_states[state_name].get_shape() == [d1, d2,...],
+``` <p></p> then <p></p> ```python
+state(state_name).get_shape() == [batch_size, d1, d2,...]
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="batch_size" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>batch_size</strong> get; 
+		</h4>
+		<div class="content">The batch_size of the given batch. <p></p> Usually, this is the batch_size requested when initializing the SQSS, but
+if allow_small_batch=True this will become smaller when inputs are
+exhausted. 
+
+		</div>
+	</div>
+	<div id="batch_size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_size_dyn</strong> get; 
+		</h4>
+		<div class="content">The batch_size of the given batch. <p></p> Usually, this is the batch_size requested when initializing the SQSS, but
+if allow_small_batch=True this will become smaller when inputs are
+exhausted. 
+
+		</div>
+	</div>
+	<div id="context" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> <strong>context</strong> get; 
+		</h4>
+		<div class="content">A dict mapping keys of `input_context` to batched context. 
+
+		</div>
+	</div>
+	<div id="context_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>context_dyn</strong> get; 
+		</h4>
+		<div class="content">A dict mapping keys of `input_context` to batched context. 
+
+		</div>
+	</div>
+	<div id="insertion_index" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>insertion_index</strong> get; 
+		</h4>
+		<div class="content">The insertion indices of the examples (when they were first added). <p></p> These indices start with the value -2**63 and increase with every
+call to the prefetch op.  Each whole example gets its own insertion
+index, and this is used to prioritize the example so that its truncated
+segments appear in adjacent iterations, even if new examples are inserted
+by the prefetch op between iterations. 
+
+		</div>
+	</div>
+	<div id="insertion_index_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>insertion_index_dyn</strong> get; 
+		</h4>
+		<div class="content">The insertion indices of the examples (when they were first added). <p></p> These indices start with the value -2**63 and increase with every
+call to the prefetch op.  Each whole example gets its own insertion
+index, and this is used to prioritize the example so that its truncated
+segments appear in adjacent iterations, even if new examples are inserted
+by the prefetch op between iterations. 
+
+		</div>
+	</div>
+	<div id="key" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>key</strong> get; 
+		</h4>
+		<div class="content">The key names of the given truncated unrolled examples. <p></p> The format of the key is:
+where `original_key` is the unique key read in by the prefetcher. 
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>"%05d_of_%05d:%s" % (sequence, sequence_count, original_key) </pre>
+</div>
+		</div>
+	</div>
+	<div id="key_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>key_dyn</strong> get; 
+		</h4>
+		<div class="content">The key names of the given truncated unrolled examples. <p></p> The format of the key is:
+where `original_key` is the unique key read in by the prefetcher. 
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>"%05d_of_%05d:%s" % (sequence, sequence_count, original_key) </pre>
+</div>
+		</div>
+	</div>
+	<div id="length" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>length</strong> get; 
+		</h4>
+		<div class="content">The lengths of the given truncated unrolled examples. <p></p> For initial iterations, for which `sequence * num_unroll < length`,
+this number is `num_unroll`.  For the remainder,
+this number is between `0` and `num_unroll`. 
+
+		</div>
+	</div>
+	<div id="length_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>length_dyn</strong> get; 
+		</h4>
+		<div class="content">The lengths of the given truncated unrolled examples. <p></p> For initial iterations, for which `sequence * num_unroll < length`,
+this number is `num_unroll`.  For the remainder,
+this number is between `0` and `num_unroll`. 
+
+		</div>
+	</div>
+	<div id="next_key" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>next_key</strong> get; 
+		</h4>
+		<div class="content">The key names of the next (in iteration) truncated unrolled examples. <p></p> The format of the key is:
+if `sequence + 1 < sequence_count`, otherwise:
+where `original_key` is the unique key read in by the prefetcher. 
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>"%05d_of_%05d:%s" % (sequence + 1, sequence_count, original_key) </pre>
+</div>
+		</div>
+	</div>
+	<div id="next_key_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>next_key_dyn</strong> get; 
+		</h4>
+		<div class="content">The key names of the next (in iteration) truncated unrolled examples. <p></p> The format of the key is:
+if `sequence + 1 < sequence_count`, otherwise:
+where `original_key` is the unique key read in by the prefetcher. 
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>"%05d_of_%05d:%s" % (sequence + 1, sequence_count, original_key) </pre>
+</div>
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sequence" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sequence</strong> get; 
+		</h4>
+		<div class="content">An int32 vector, length `batch_size`: the sequence index of each entry. <p></p> When an input is split up, the sequence values
+```
+0, 1,..., sequence_count - 1
+```
+are assigned to each split. 
+
+		</div>
+	</div>
+	<div id="sequence_count" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sequence_count</strong> get; 
+		</h4>
+		<div class="content">An int32 vector, length `batch_size`: the sequence count of each entry. <p></p> When an input is split up, the number of splits is equal to:
+`padded_length / num_unroll`.  This is the sequence_count. 
+
+		</div>
+	</div>
+	<div id="sequence_count_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sequence_count_dyn</strong> get; 
+		</h4>
+		<div class="content">An int32 vector, length `batch_size`: the sequence count of each entry. <p></p> When an input is split up, the number of splits is equal to:
+`padded_length / num_unroll`.  This is the sequence_count. 
+
+		</div>
+	</div>
+	<div id="sequence_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sequence_dyn</strong> get; 
+		</h4>
+		<div class="content">An int32 vector, length `batch_size`: the sequence index of each entry. <p></p> When an input is split up, the sequence values
+```
+0, 1,..., sequence_count - 1
+```
+are assigned to each split. 
+
+		</div>
+	</div>
+	<div id="sequences" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> <strong>sequences</strong> get; 
+		</h4>
+		<div class="content">A dict mapping keys of `input_sequences` to split and rebatched data. 
+
+		</div>
+	</div>
+	<div id="sequences_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sequences_dyn</strong> get; 
+		</h4>
+		<div class="content">A dict mapping keys of `input_sequences` to split and rebatched data. 
+
+		</div>
+	</div>
+	<div id="total_length" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>total_length</strong> get; 
+		</h4>
+		<div class="content">The lengths of the original (non-truncated) unrolled examples. 
+
+		</div>
+	</div>
+	<div id="total_length_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>total_length_dyn</strong> get; 
+		</h4>
+		<div class="content">The lengths of the original (non-truncated) unrolled examples. 
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

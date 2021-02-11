@@ -1,0 +1,1766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>MirroredStrategy - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distribute</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distribute/CrossDeviceOps.htm">CrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/HierarchicalCopyAllReduce.htm">HierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ICrossDeviceOps.htm">ICrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IHierarchicalCopyAllReduce.htm">IHierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputContext.htm">IInputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputReplicationMode.htm">IInputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IMirroredStrategy.htm">IMirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/INcclAllReduce.htm">INcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputContext.htm">InputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputReplicationMode.htm">InputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IOneDeviceStrategy.htm">IOneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReduceOp.htm">IReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReductionToOneDevice.htm">IReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReplicaContext.htm">IReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategy.htm">IStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategyExtended.htm">IStrategyExtended</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/MirroredStrategy.htm" class="current">MirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/NcclAllReduce.htm">NcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/OneDeviceStrategy.htm">OneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReductionToOneDevice.htm">ReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReplicaContext.htm">ReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/Strategy.htm">Strategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/StrategyExtended.htm">StrategyExtended</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> MirroredStrategy</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distribute</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distribute/Strategy.htm">Strategy</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distribute/IMirroredStrategy.htm">IMirroredStrategy</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Mirrors vars to distribute across multiple devices and machines. <p></p> This strategy uses one replica per device and sync replication for its
+multi-GPU version. <p></p> To use `MirroredStrategy` with multiple workers, please refer to
+`tf.distribute.MultiWorkerMirroredStrategy`. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#colocate_vars_with">colocate_vars_with</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#colocate_vars_with_dyn">colocate_vars_with_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#configure">configure</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#configure_dyn">configure_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_distribute_dataset">experimental_distribute_dataset</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_distribute_dataset_dyn">experimental_distribute_dataset_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_distribute_datasets_from_function">experimental_distribute_datasets_from_function</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_distribute_datasets_from_function_dyn">experimental_distribute_datasets_from_function_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results">experimental_local_results</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results">experimental_local_results</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results">experimental_local_results</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results">experimental_local_results</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results">experimental_local_results</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results">experimental_local_results</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_local_results_dyn">experimental_local_results_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_make_numpy_dataset">experimental_make_numpy_dataset</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_make_numpy_dataset">experimental_make_numpy_dataset</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_make_numpy_dataset_dyn">experimental_make_numpy_dataset_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run">experimental_run</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run">experimental_run</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run">experimental_run</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run">experimental_run</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run_dyn">experimental_run_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run_v2">experimental_run_v2</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run_v2">experimental_run_v2</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run_v2">experimental_run_v2</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#experimental_run_v2_dyn">experimental_run_v2_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#group">group</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#group_dyn">group_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#scope">scope</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#scope_dyn">scope_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#unwrap">unwrap</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#unwrap_dyn">unwrap_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#update_config_proto">update_config_proto</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#update_config_proto_dyn">update_config_proto_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#extended">extended</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#extended_dyn">extended_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#num_replicas_in_sync">num_replicas_in_sync</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#num_replicas_in_sync_dyn">num_replicas_in_sync_dyn</a></li>
+				<li><a href="../tensorflow.distribute/MirroredStrategy.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="colocate_vars_with" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>colocate_vars_with</strong>(<span title="System.object">object</span> colocate_with_variable)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="colocate_vars_with_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>colocate_vars_with_dyn</strong>(<span title="System.object">object</span> colocate_with_variable)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="configure" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>configure</strong>(<span title="System.object">object</span> session_config, <span title="System.Collections.Generic.IDictionary<string, IEnumerable<string>>">IDictionary&lt;string, IEnumerable&lt;string&gt;&gt;</span> cluster_spec, <span title="System.string">string</span> task_type, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> task_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="configure_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>configure_dyn</strong>(<span title="System.object">object</span> session_config, <span title="System.object">object</span> cluster_spec, <span title="System.object">object</span> task_type, <span title="System.object">object</span> task_id)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_distribute_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_distribute_dataset</strong>(<span title="System.object">object</span> dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_distribute_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_distribute_dataset_dyn</strong>(<span title="System.object">object</span> dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_distribute_datasets_from_function" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_distribute_datasets_from_function</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> dataset_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_distribute_datasets_from_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_distribute_datasets_from_function_dyn</strong>(<span title="System.object">object</span> dataset_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results</strong>(<span title="System.object">object</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results</strong>(<span title="System.int">int</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results</strong>(<span title="System.ValueTuple<int, object, double>">ValueTuple&lt;int, object, double&gt;</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_local_results_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_local_results_dyn</strong>(<span title="System.object">object</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_make_numpy_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_make_numpy_dataset</strong>(<a href="../numpy/ndarray.htm">ndarray</a> numpy_input)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_make_numpy_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_make_numpy_dataset</strong>(<a href="../numpy/ndarray.htm">ndarray</a> numpy_input, <span title="System.object">object</span> session)
+		</h4>
+		<div class="content">Makes a tf.data.Dataset for input provided via a numpy array. <p></p> This avoids adding `numpy_input` as a large constant in the graph,
+and copies the data to the machine or machines that will be processing
+the input. <p></p> Note that you will likely need to use
+tf.distribute.Strategy.experimental_distribute_dataset
+with the returned dataset to further distribute it with the strategy. <p></p> Example:
+```
+numpy_input = np.ones([10], dtype=np.float32)
+dataset = strategy.experimental_make_numpy_dataset(numpy_input)
+dist_dataset = strategy.experimental_distribute_dataset(dataset)
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../numpy/ndarray.htm">ndarray</a></code> numpy_input
+						</dt>
+						<dd>A nest of NumPy input arrays that will be converted into a
+dataset. Note that lists of Numpy arrays are stacked, as that is normal
+<a href="..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> behavior. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> session
+						</dt>
+						<dd>(TensorFlow v1.x graph execution only) A session used for
+initialization. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A <a href="..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> representing `numpy_input`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_make_numpy_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_make_numpy_dataset_dyn</strong>(<span title="System.object">object</span> numpy_input)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_run" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run</strong>(<span title="System.object">object</span> fn, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> input_iterator)
+		</h4>
+		<div class="content">Runs ops in `fn` on each replica, with inputs from `input_iterator`. <p></p> DEPRECATED: This method is not available in TF 2.x. Please switch
+to using `experimental_run_v2` instead. <p></p> When eager execution is enabled, executes ops specified by `fn` on each
+replica. Otherwise, builds a graph to execute the ops on each replica. <p></p> Each replica will take a single, different input from the inputs provided by
+one `get_next` call on the input iterator. <p></p> `fn` may call `tf.distribute.get_replica_context()` to access members such
+as `replica_id_in_sync_group`. <p></p> IMPORTANT: Depending on the <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> implementation being
+used, and whether eager execution is enabled, `fn` may be called one or more
+times (once for each replica). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>The function to run. The inputs to the function must match the outputs
+of `input_iterator.get_next()`. The output must be a <a href="..\..\tf\nest.md"><code>tf.nest</code></a> of
+`Tensor`s. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span></code> input_iterator
+						</dt>
+						<dd>(Optional) input iterator from which the inputs are taken. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across replicas. The structure of the return
+value is the same as the return value from `fn`. Each element in the
+structure can either be `PerReplica` (if the values are unsynchronized),
+`Mirrored` (if the values are kept in sync), or `Tensor` (if running on a
+single replica). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_run" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run</strong>(<span title="System.object">object</span> fn, <span title="System.ValueTuple<double, IEnumerable<object>>">ValueTuple&lt;double, IEnumerable&lt;object&gt;&gt;</span> input_iterator)
+		</h4>
+		<div class="content">Runs ops in `fn` on each replica, with inputs from `input_iterator`. <p></p> DEPRECATED: This method is not available in TF 2.x. Please switch
+to using `experimental_run_v2` instead. <p></p> When eager execution is enabled, executes ops specified by `fn` on each
+replica. Otherwise, builds a graph to execute the ops on each replica. <p></p> Each replica will take a single, different input from the inputs provided by
+one `get_next` call on the input iterator. <p></p> `fn` may call `tf.distribute.get_replica_context()` to access members such
+as `replica_id_in_sync_group`. <p></p> IMPORTANT: Depending on the <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> implementation being
+used, and whether eager execution is enabled, `fn` may be called one or more
+times (once for each replica). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>The function to run. The inputs to the function must match the outputs
+of `input_iterator.get_next()`. The output must be a <a href="..\..\tf\nest.md"><code>tf.nest</code></a> of
+`Tensor`s. 
+						</dd>
+						<dt>
+							<code><span title="System.ValueTuple<double, IEnumerable<object>>">ValueTuple&lt;double, IEnumerable&lt;object&gt;&gt;</span></code> input_iterator
+						</dt>
+						<dd>(Optional) input iterator from which the inputs are taken. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across replicas. The structure of the return
+value is the same as the return value from `fn`. Each element in the
+structure can either be `PerReplica` (if the values are unsynchronized),
+`Mirrored` (if the values are kept in sync), or `Tensor` (if running on a
+single replica). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_run" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run</strong>(<span title="System.object">object</span> fn, <a href="../tensorflow.python.distribute.distribute_lib/_DefaultDistributionExtended.DefaultInputIterator.htm">_DefaultDistributionExtended.DefaultInputIterator</a> input_iterator)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_run" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run</strong>(<span title="System.object">object</span> fn, <a href="../tensorflow.python.distribute.input_lib/DatasetIterator.htm">DatasetIterator</a> input_iterator)
+		</h4>
+		<div class="content">Runs ops in `fn` on each replica, with inputs from `input_iterator`. <p></p> DEPRECATED: This method is not available in TF 2.x. Please switch
+to using `experimental_run_v2` instead. <p></p> When eager execution is enabled, executes ops specified by `fn` on each
+replica. Otherwise, builds a graph to execute the ops on each replica. <p></p> Each replica will take a single, different input from the inputs provided by
+one `get_next` call on the input iterator. <p></p> `fn` may call `tf.distribute.get_replica_context()` to access members such
+as `replica_id_in_sync_group`. <p></p> IMPORTANT: Depending on the <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> implementation being
+used, and whether eager execution is enabled, `fn` may be called one or more
+times (once for each replica). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>The function to run. The inputs to the function must match the outputs
+of `input_iterator.get_next()`. The output must be a <a href="..\..\tf\nest.md"><code>tf.nest</code></a> of
+`Tensor`s. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.input_lib/DatasetIterator.htm">DatasetIterator</a></code> input_iterator
+						</dt>
+						<dd>(Optional) input iterator from which the inputs are taken. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across replicas. The structure of the return
+value is the same as the return value from `fn`. Each element in the
+structure can either be `PerReplica` (if the values are unsynchronized),
+`Mirrored` (if the values are kept in sync), or `Tensor` (if running on a
+single replica). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_run_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run_dyn</strong>(<span title="System.object">object</span> fn, <span title="System.object">object</span> input_iterator)
+		</h4>
+		<div class="content">Runs ops in `fn` on each replica, with inputs from `input_iterator`. <p></p> DEPRECATED: This method is not available in TF 2.x. Please switch
+to using `experimental_run_v2` instead. <p></p> When eager execution is enabled, executes ops specified by `fn` on each
+replica. Otherwise, builds a graph to execute the ops on each replica. <p></p> Each replica will take a single, different input from the inputs provided by
+one `get_next` call on the input iterator. <p></p> `fn` may call `tf.distribute.get_replica_context()` to access members such
+as `replica_id_in_sync_group`. <p></p> IMPORTANT: Depending on the <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> implementation being
+used, and whether eager execution is enabled, `fn` may be called one or more
+times (once for each replica). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>The function to run. The inputs to the function must match the outputs
+of `input_iterator.get_next()`. The output must be a <a href="..\..\tf\nest.md"><code>tf.nest</code></a> of
+`Tensor`s. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> input_iterator
+						</dt>
+						<dd>(Optional) input iterator from which the inputs are taken. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across replicas. The structure of the return
+value is the same as the return value from `fn`. Each element in the
+structure can either be `PerReplica` (if the values are unsynchronized),
+`Mirrored` (if the values are kept in sync), or `Tensor` (if running on a
+single replica). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_run_v2" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run_v2</strong>(<a href="../tensorflow.python.ops.template/Template.htm">Template</a> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">See base class. 
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_run_v2" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run_v2</strong>(<span title="System.object">object</span> fn, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">See base class. 
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_run_v2" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run_v2</strong>(<a href="../tensorflow.python.ops.template/Template.htm">Template</a> fn, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">See base class. 
+
+
+
+
+		</div>
+	</div>
+	<div id="experimental_run_v2_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run_v2_dyn</strong>(<span title="System.object">object</span> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.object">object</span> kwargs)
+		</h4>
+		<div class="content">See base class. 
+
+
+
+
+		</div>
+	</div>
+	<div id="group" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group</strong>(<span title="System.object">object</span> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="group_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_dyn</strong>(<span title="System.object">object</span> value, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.object">object</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.object">object</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> value, <span title="System.object">object</span> axis)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> value
+						</dt>
+						<dd>A "per replica" value, e.g. returned by `experimental_run_v2` to
+be combined into a single tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>Specifies the dimension to reduce along within each
+replica's tensor. Should typically be set to the batch dimension, or
+`None` to only reduce across replicas (e.g. if the tensor has no batch
+dimension). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="unwrap" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>unwrap</strong>(<span title="System.object">object</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="unwrap_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>unwrap_dyn</strong>(<span title="System.object">object</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="update_config_proto" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_config_proto</strong>(<span title="System.object">object</span> config_proto)
+		</h4>
+		<div class="content">Returns a copy of `config_proto` modified for use with this strategy. <p></p> DEPRECATED: This method is not available in TF 2.x. <p></p> The updated config has something needed to run a strategy, e.g.
+configuration to run collective ops, or device filters to improve
+distributed training performance. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> config_proto
+						</dt>
+						<dd>a <a href="..\..\tf\ConfigProto.md"><code>tf.ConfigProto</code></a> object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The updated copy of the `config_proto`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="update_config_proto_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_config_proto_dyn</strong>(<span title="System.object">object</span> config_proto)
+		</h4>
+		<div class="content">Returns a copy of `config_proto` modified for use with this strategy. <p></p> DEPRECATED: This method is not available in TF 2.x. <p></p> The updated config has something needed to run a strategy, e.g.
+configuration to run collective ops, or device filters to improve
+distributed training performance. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> config_proto
+						</dt>
+						<dd>a <a href="..\..\tf\ConfigProto.md"><code>tf.ConfigProto</code></a> object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The updated copy of the `config_proto`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="extended" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extended</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extended_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extended_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_replicas_in_sync" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_replicas_in_sync</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_replicas_in_sync_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_replicas_in_sync_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

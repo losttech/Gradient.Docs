@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>ReplicaContext - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distribute</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distribute/CrossDeviceOps.htm">CrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/HierarchicalCopyAllReduce.htm">HierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ICrossDeviceOps.htm">ICrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IHierarchicalCopyAllReduce.htm">IHierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputContext.htm">IInputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputReplicationMode.htm">IInputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IMirroredStrategy.htm">IMirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/INcclAllReduce.htm">INcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputContext.htm">InputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputReplicationMode.htm">InputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IOneDeviceStrategy.htm">IOneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReduceOp.htm">IReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReductionToOneDevice.htm">IReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReplicaContext.htm">IReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategy.htm">IStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategyExtended.htm">IStrategyExtended</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/MirroredStrategy.htm">MirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/NcclAllReduce.htm">NcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/OneDeviceStrategy.htm">OneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReductionToOneDevice.htm">ReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReplicaContext.htm" class="current">ReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/Strategy.htm">Strategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/StrategyExtended.htm">StrategyExtended</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> ReplicaContext</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distribute</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distribute/IReplicaContext.htm">IReplicaContext</a>, <a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary"><a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> API when in a replica context. <p></p> You can use <a href="..\..\tf\distribute\get_replica_context.md"><code>tf.distribute.get_replica_context</code></a> to get an instance of
+`ReplicaContext`. This should be inside your replicated step function, such
+as in a <a href="..\..\tf\distribute\MirroredStrategy\experimental_run_v2.md"><code>tf.distribute.Strategy.experimental_run_v2</code></a> call. 
+			</div>
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#devices">devices</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#devices_dyn">devices_dyn</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#num_replicas_in_sync">num_replicas_in_sync</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#num_replicas_in_sync_dyn">num_replicas_in_sync_dyn</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#replica_id_in_sync_group">replica_id_in_sync_group</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#replica_id_in_sync_group_dyn">replica_id_in_sync_group_dyn</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#strategy">strategy</a></li>
+				<li><a href="../tensorflow.distribute/ReplicaContext.htm#strategy_dyn">strategy_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="devices" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>devices</strong> get; 
+		</h4>
+		<div class="content">The devices this replica is to be executed on, as a tuple of strings. 
+
+		</div>
+	</div>
+	<div id="devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>devices_dyn</strong> get; 
+		</h4>
+		<div class="content">The devices this replica is to be executed on, as a tuple of strings. 
+
+		</div>
+	</div>
+	<div id="num_replicas_in_sync" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_replicas_in_sync</strong> get; 
+		</h4>
+		<div class="content">Returns number of replicas over which gradients are aggregated. 
+
+		</div>
+	</div>
+	<div id="num_replicas_in_sync_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_replicas_in_sync_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns number of replicas over which gradients are aggregated. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="replica_id_in_sync_group" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replica_id_in_sync_group</strong> get; 
+		</h4>
+		<div class="content">Returns the id of the replica being defined. <p></p> This identifies the replica that is part of a sync group. Currently we
+assume that all sync groups contain the same number of replicas. The value
+of the replica id can range from 0 to `num_replica_in_sync` - 1. 
+
+		</div>
+	</div>
+	<div id="replica_id_in_sync_group_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replica_id_in_sync_group_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns the id of the replica being defined. <p></p> This identifies the replica that is part of a sync group. Currently we
+assume that all sync groups contain the same number of replicas. The value
+of the replica id can range from 0 to `num_replica_in_sync` - 1. 
+
+		</div>
+	</div>
+	<div id="strategy" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>strategy</strong> get; 
+		</h4>
+		<div class="content">The current <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> object. 
+
+		</div>
+	</div>
+	<div id="strategy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>strategy_dyn</strong> get; 
+		</h4>
+		<div class="content">The current <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> object. 
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

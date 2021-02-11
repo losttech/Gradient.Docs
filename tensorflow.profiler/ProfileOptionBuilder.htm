@@ -1,0 +1,1462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>ProfileOptionBuilder - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.profiler</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.profiler/IProfileOptionBuilder.htm">IProfileOptionBuilder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.profiler/IProfiler.htm">IProfiler</a>
+        </li>
+				<li>
+            <a href="../tensorflow.profiler/ProfileOptionBuilder.htm" class="current">ProfileOptionBuilder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.profiler/Profiler.htm">Profiler</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> ProfileOptionBuilder</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.profiler</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.profiler/IProfileOptionBuilder.htm">IProfileOptionBuilder</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Option Builder for Profiling API. <p></p> For tutorial on the options, see
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Users can use pre-built options:
+            opts = (
+                tf.profiler.ProfileOptionBuilder.trainable_variables_parameter()) <p></p> # Or, build your own options:
+opts = (tf.compat.v1.profiler.ProfileOptionBuilder()
+   .with_max_depth(10)
+   .with_min_micros(1000)
+   .select(['accelerator_micros'])
+   .with_stdout_output()
+   .build() <p></p> # Or customize the pre-built options:
+opts = (tf.compat.v1.profiler.ProfileOptionBuilder(
+    tf.profiler.ProfileOptionBuilder.time_and_memory())
+   .with_displaying_options(show_name_regexes=['.*rnn.*'])
+   .build()) <p></p> # Finally, profiling with the options:
+_ = tf.compat.v1.profiler.profile(tf.compat.v1.get_default_graph(),
+                        run_meta=run_meta,
+                        cmd='scope',
+                        options=opts) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#account_displayed_op_only">account_displayed_op_only</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#account_displayed_op_only_dyn">account_displayed_op_only_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#float_operation">float_operation</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#float_operation_dyn">float_operation_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#order_by">order_by</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#order_by_dyn">order_by_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#select">select</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#select_dyn">select_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#time_and_memory">time_and_memory</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#time_and_memory_dyn">time_and_memory_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#trainable_variables_parameter">trainable_variables_parameter</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#trainable_variables_parameter_dyn">trainable_variables_parameter_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_accounted_types">with_accounted_types</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_accounted_types_dyn">with_accounted_types_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_empty_output">with_empty_output</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_empty_output_dyn">with_empty_output_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_file_output">with_file_output</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_file_output_dyn">with_file_output_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_max_depth">with_max_depth</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_max_depth_dyn">with_max_depth_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_execution_time">with_min_execution_time</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_execution_time_dyn">with_min_execution_time_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_float_operations">with_min_float_operations</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_float_operations_dyn">with_min_float_operations_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_memory">with_min_memory</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_memory_dyn">with_min_memory_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_occurrence">with_min_occurrence</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_occurrence_dyn">with_min_occurrence_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_parameters">with_min_parameters</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_min_parameters_dyn">with_min_parameters_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_node_names">with_node_names</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_node_names_dyn">with_node_names_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_pprof_output">with_pprof_output</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_pprof_output_dyn">with_pprof_output_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_stdout_output">with_stdout_output</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_stdout_output_dyn">with_stdout_output_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_step">with_step</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_step_dyn">with_step_dyn</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_timeline_output">with_timeline_output</a></li>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#with_timeline_output_dyn">with_timeline_output_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.profiler/ProfileOptionBuilder.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="account_displayed_op_only" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>account_displayed_op_only</strong>(<span title="System.bool">bool</span> is_true)
+		</h4>
+		<div class="content">Whether only account the statistics of displayed profiler nodes. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.bool">bool</span></code> is_true
+						</dt>
+						<dd>If true, only account statistics of nodes eventually
+displayed by the outputs.
+Otherwise, a node's statistics are accounted by its parents
+as long as it's types match 'account_type_regexes', even if
+it is hidden from the output, say, by hide_name_regexes. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="account_displayed_op_only_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>account_displayed_op_only_dyn</strong>(<span title="System.object">object</span> is_true)
+		</h4>
+		<div class="content">Whether only account the statistics of displayed profiler nodes. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> is_true
+						</dt>
+						<dd>If true, only account statistics of nodes eventually
+displayed by the outputs.
+Otherwise, a node's statistics are accounted by its parents
+as long as it's types match 'account_type_regexes', even if
+it is hidden from the output, say, by hide_name_regexes. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="order_by" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>order_by</strong>(<span title="System.string">string</span> attribute)
+		</h4>
+		<div class="content">Order the displayed profiler nodes based on a attribute. <p></p> Supported attribute includes micros, bytes, occurrence, params, etc.
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> attribute
+						</dt>
+						<dd>An attribute the profiler node has. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="order_by_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>order_by_dyn</strong>(<span title="System.object">object</span> attribute)
+		</h4>
+		<div class="content">Order the displayed profiler nodes based on a attribute. <p></p> Supported attribute includes micros, bytes, occurrence, params, etc.
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> attribute
+						</dt>
+						<dd>An attribute the profiler node has. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="select" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>select</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> attributes)
+		</h4>
+		<div class="content">Select the attributes to display. <p></p> See https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
+for supported attributes. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> attributes
+						</dt>
+						<dd>A list of attribute the profiler node has. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="select_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>select_dyn</strong>(<span title="System.object">object</span> attributes)
+		</h4>
+		<div class="content">Select the attributes to display. <p></p> See https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
+for supported attributes. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> attributes
+						</dt>
+						<dd>A list of attribute the profiler node has. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_accounted_types" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_accounted_types</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> account_type_regexes)
+		</h4>
+		<div class="content">Selectively counting statistics based on node types. <p></p> Here, 'types' means the profiler nodes' properties. Profiler by default
+consider device name (e.g. /job:xx/.../device:GPU:0) and operation type
+(e.g. MatMul) as profiler nodes' properties. User can also associate
+customized 'types' to profiler nodes through OpLogProto proto. <p></p> For example, user can select profiler nodes placed on gpu:0 with:
+`account_type_regexes=['.*gpu:0.*']` <p></p> If none of a node's properties match the specified regexes, the node is
+not displayed nor accounted. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> account_type_regexes
+						</dt>
+						<dd>A list of regexes specifying the types. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_accounted_types_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_accounted_types_dyn</strong>(<span title="System.object">object</span> account_type_regexes)
+		</h4>
+		<div class="content">Selectively counting statistics based on node types. <p></p> Here, 'types' means the profiler nodes' properties. Profiler by default
+consider device name (e.g. /job:xx/.../device:GPU:0) and operation type
+(e.g. MatMul) as profiler nodes' properties. User can also associate
+customized 'types' to profiler nodes through OpLogProto proto. <p></p> For example, user can select profiler nodes placed on gpu:0 with:
+`account_type_regexes=['.*gpu:0.*']` <p></p> If none of a node's properties match the specified regexes, the node is
+not displayed nor accounted. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> account_type_regexes
+						</dt>
+						<dd>A list of regexes specifying the types. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_empty_output" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_empty_output</strong>()
+		</h4>
+		<div class="content">Do not generate side-effect outputs. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_empty_output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_empty_output_dyn</strong>()
+		</h4>
+		<div class="content">Do not generate side-effect outputs. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_file_output" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_file_output</strong>(<span title="System.object">object</span> outfile)
+		</h4>
+		<div class="content">Print the result to a file. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_file_output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_file_output_dyn</strong>(<span title="System.object">object</span> outfile)
+		</h4>
+		<div class="content">Print the result to a file. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_max_depth" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_max_depth</strong>(<span title="System.int">int</span> max_depth)
+		</h4>
+		<div class="content">Set the maximum depth of display. <p></p> The depth depends on profiling view. For 'scope' view, it's the
+depth of name scope hierarchy (tree), for 'op' view, it's the number
+of operation types (list), etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> max_depth
+						</dt>
+						<dd>Maximum depth of the data structure to display. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_max_depth_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_max_depth_dyn</strong>(<span title="System.object">object</span> max_depth)
+		</h4>
+		<div class="content">Set the maximum depth of display. <p></p> The depth depends on profiling view. For 'scope' view, it's the
+depth of name scope hierarchy (tree), for 'op' view, it's the number
+of operation types (list), etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> max_depth
+						</dt>
+						<dd>Maximum depth of the data structure to display. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_execution_time" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_min_execution_time</strong>(<span title="System.int">int</span> min_micros, <span title="System.int">int</span> min_accelerator_micros, <span title="System.int">int</span> min_cpu_micros)
+		</h4>
+		<div class="content">Only show profiler nodes consuming no less than 'min_micros'. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> min_micros
+						</dt>
+						<dd>Only show profiler nodes with execution time
+no less than this. It sums accelerator and cpu times. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_accelerator_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on accelerator (e.g. GPU). 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_cpu_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on cpu. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_execution_time_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_min_execution_time_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_micros, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_accelerator_micros, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_cpu_micros)
+		</h4>
+		<div class="content">Only show profiler nodes consuming no less than 'min_micros'. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_micros
+						</dt>
+						<dd>Only show profiler nodes with execution time
+no less than this. It sums accelerator and cpu times. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_accelerator_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on accelerator (e.g. GPU). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_cpu_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on cpu. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_float_operations" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_min_float_operations</strong>(<span title="System.object">object</span> min_float_ops)
+		</h4>
+		<div class="content">Only show profiler nodes consuming no less than 'min_float_ops'. <p></p> Please see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
+on the caveats of calculating float operations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> min_float_ops
+						</dt>
+						<dd>Only show profiler nodes with float operations
+no less than this. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_float_operations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_min_float_operations_dyn</strong>(<span title="System.object">object</span> min_float_ops)
+		</h4>
+		<div class="content">Only show profiler nodes consuming no less than 'min_float_ops'. <p></p> Please see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
+on the caveats of calculating float operations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> min_float_ops
+						</dt>
+						<dd>Only show profiler nodes with float operations
+no less than this. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_memory" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_min_memory</strong>(<span title="System.int">int</span> min_bytes, <span title="System.int">int</span> min_peak_bytes, <span title="System.int">int</span> min_residual_bytes, <span title="System.int">int</span> min_output_bytes)
+		</h4>
+		<div class="content">Only show profiler nodes consuming no less than 'min_bytes'. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> min_bytes
+						</dt>
+						<dd>Only show profiler nodes requested to allocate no less bytes
+than this. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_peak_bytes
+						</dt>
+						<dd>Only show profiler nodes using no less than this bytes
+at peak (high watermark). For profiler nodes consist of multiple
+graph nodes, it sums the graph nodes' peak_bytes. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_residual_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than
+this bytes not being de-allocated after Compute() ends. For
+profiler nodes consist of multiple graph nodes, it sums the
+graph nodes' residual_bytes. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_output_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than this bytes
+output. The output are not necessarily allocated by this profiler
+nodes. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_memory_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_min_memory_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_bytes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_peak_bytes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_residual_bytes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_output_bytes)
+		</h4>
+		<div class="content">Only show profiler nodes consuming no less than 'min_bytes'. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_bytes
+						</dt>
+						<dd>Only show profiler nodes requested to allocate no less bytes
+than this. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_peak_bytes
+						</dt>
+						<dd>Only show profiler nodes using no less than this bytes
+at peak (high watermark). For profiler nodes consist of multiple
+graph nodes, it sums the graph nodes' peak_bytes. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_residual_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than
+this bytes not being de-allocated after Compute() ends. For
+profiler nodes consist of multiple graph nodes, it sums the
+graph nodes' residual_bytes. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_output_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than this bytes
+output. The output are not necessarily allocated by this profiler
+nodes. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_occurrence" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_min_occurrence</strong>(<span title="System.int">int</span> min_occurrence)
+		</h4>
+		<div class="content">Only show profiler nodes including no less than 'min_occurrence' graph nodes. <p></p> A "node" means a profiler output node, which can be a python line
+(code view), an operation type (op view), or a graph node
+(graph/scope view). A python line includes all graph nodes created by that
+line, while an operation type includes all graph nodes of that type. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> min_occurrence
+						</dt>
+						<dd>Only show nodes including no less than this. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_occurrence_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_min_occurrence_dyn</strong>(<span title="System.object">object</span> min_occurrence)
+		</h4>
+		<div class="content">Only show profiler nodes including no less than 'min_occurrence' graph nodes. <p></p> A "node" means a profiler output node, which can be a python line
+(code view), an operation type (op view), or a graph node
+(graph/scope view). A python line includes all graph nodes created by that
+line, while an operation type includes all graph nodes of that type. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> min_occurrence
+						</dt>
+						<dd>Only show nodes including no less than this. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_parameters" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_min_parameters</strong>(<span title="System.object">object</span> min_params)
+		</h4>
+		<div class="content">Only show profiler nodes holding no less than 'min_params' parameters. <p></p> 'Parameters' normally refers the weights of in TensorFlow variables.
+It reflects the 'capacity' of models. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> min_params
+						</dt>
+						<dd>Only show profiler nodes holding number parameters
+no less than this. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_min_parameters_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_min_parameters_dyn</strong>(<span title="System.object">object</span> min_params)
+		</h4>
+		<div class="content">Only show profiler nodes holding no less than 'min_params' parameters. <p></p> 'Parameters' normally refers the weights of in TensorFlow variables.
+It reflects the 'capacity' of models. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> min_params
+						</dt>
+						<dd>Only show profiler nodes holding number parameters
+no less than this. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_node_names" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_node_names</strong>(<span title="System.object">object</span> start_name_regexes, <span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> show_name_regexes, <span title="System.object">object</span> hide_name_regexes, <span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> trim_name_regexes)
+		</h4>
+		<div class="content">Regular expressions used to select profiler nodes to display. <p></p> After 'with_accounted_types' is evaluated, 'with_node_names' are
+evaluated as follows: <p></p> For a profile data structure, profiler first finds the profiler
+nodes matching 'start_name_regexes', and starts displaying profiler
+nodes from there. Then, if a node matches 'show_name_regexes' and
+doesn't match 'hide_name_regexes', it's displayed. If a node matches
+'trim_name_regexes', profiler stops further searching that branch. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> start_name_regexes
+						</dt>
+						<dd>list of node name regexes to start displaying. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> show_name_regexes
+						</dt>
+						<dd>list of node names regexes to display. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> hide_name_regexes
+						</dt>
+						<dd>list of node_names regexes that should be hidden. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> trim_name_regexes
+						</dt>
+						<dd>list of node name regexes from where to stop. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_node_names_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_node_names_dyn</strong>(<span title="System.object">object</span> start_name_regexes, <span title="System.object">object</span> show_name_regexes, <span title="System.object">object</span> hide_name_regexes, <span title="System.object">object</span> trim_name_regexes)
+		</h4>
+		<div class="content">Regular expressions used to select profiler nodes to display. <p></p> After 'with_accounted_types' is evaluated, 'with_node_names' are
+evaluated as follows: <p></p> For a profile data structure, profiler first finds the profiler
+nodes matching 'start_name_regexes', and starts displaying profiler
+nodes from there. Then, if a node matches 'show_name_regexes' and
+doesn't match 'hide_name_regexes', it's displayed. If a node matches
+'trim_name_regexes', profiler stops further searching that branch. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> start_name_regexes
+						</dt>
+						<dd>list of node name regexes to start displaying. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> show_name_regexes
+						</dt>
+						<dd>list of node names regexes to display. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> hide_name_regexes
+						</dt>
+						<dd>list of node_names regexes that should be hidden. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> trim_name_regexes
+						</dt>
+						<dd>list of node name regexes from where to stop. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_pprof_output" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_pprof_output</strong>(<span title="System.object">object</span> pprof_file)
+		</h4>
+		<div class="content">Generate a pprof profile gzip file. <p></p> To use the pprof file:
+pprof -png --nodecount=100 --sample_index=1 <pprof_file> 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> pprof_file
+						</dt>
+						<dd>filename for output, usually suffixed with.pb.gz. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_pprof_output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_pprof_output_dyn</strong>(<span title="System.object">object</span> pprof_file)
+		</h4>
+		<div class="content">Generate a pprof profile gzip file. <p></p> To use the pprof file:
+pprof -png --nodecount=100 --sample_index=1 <pprof_file> 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> pprof_file
+						</dt>
+						<dd>filename for output, usually suffixed with.pb.gz. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_stdout_output" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_stdout_output</strong>()
+		</h4>
+		<div class="content">Print the result to stdout. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_stdout_output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_stdout_output_dyn</strong>()
+		</h4>
+		<div class="content">Print the result to stdout. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_step" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_step</strong>(<span title="System.int">int</span> step)
+		</h4>
+		<div class="content">Which profile step to use for profiling. <p></p> The 'step' here refers to the step defined by `Profiler.add_step()` API. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> step
+						</dt>
+						<dd>When multiple steps of profiles are available, select which step's
+profile to use. If -1, use average of all available steps. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_step_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_step_dyn</strong>(<span title="System.object">object</span> step)
+		</h4>
+		<div class="content">Which profile step to use for profiling. <p></p> The 'step' here refers to the step defined by `Profiler.add_step()` API. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> step
+						</dt>
+						<dd>When multiple steps of profiles are available, select which step's
+profile to use. If -1, use average of all available steps. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>self 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="with_timeline_output" class="method">
+		<h4>
+			<a href="../tensorflow.profiler/ProfileOptionBuilder.htm">ProfileOptionBuilder</a> <strong>with_timeline_output</strong>(<span title="System.object">object</span> timeline_file)
+		</h4>
+		<div class="content">Generate a timeline json file. 
+
+
+
+
+		</div>
+	</div>
+	<div id="with_timeline_output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>with_timeline_output_dyn</strong>(<span title="System.object">object</span> timeline_file)
+		</h4>
+		<div class="content">Generate a timeline json file. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="float_operation" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> <strong>float_operation</strong>()
+		</h4>
+		<div class="content">Options used to profile float operations. <p></p> Please see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
+on the caveats of calculating float operations. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code>
+					</dt>
+					<dd>A dict of profiling options. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="float_operation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>float_operation_dyn</strong>()
+		</h4>
+		<div class="content">Options used to profile float operations. <p></p> Please see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
+on the caveats of calculating float operations. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A dict of profiling options. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="time_and_memory" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>time_and_memory</strong>(<span title="System.int">int</span> min_micros, <span title="System.int">int</span> min_bytes, <span title="System.int">int</span> min_accelerator_micros, <span title="System.int">int</span> min_cpu_micros, <span title="System.int">int</span> min_peak_bytes, <span title="System.int">int</span> min_residual_bytes, <span title="System.int">int</span> min_output_bytes)
+		</h4>
+		<div class="content">Show operation time and memory consumptions. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> min_micros
+						</dt>
+						<dd>Only show profiler nodes with execution time
+no less than this. It sums accelerator and cpu times. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_bytes
+						</dt>
+						<dd>Only show profiler nodes requested to allocate no less bytes
+than this. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_accelerator_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on accelerator (e.g. GPU). 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_cpu_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on cpu. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_peak_bytes
+						</dt>
+						<dd>Only show profiler nodes using no less than this bytes
+at peak (high watermark). For profiler nodes consist of multiple
+graph nodes, it sums the graph nodes' peak_bytes. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_residual_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than
+this bytes not being de-allocated after Compute() ends. For
+profiler nodes consist of multiple graph nodes, it sums the
+graph nodes' residual_bytes. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> min_output_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than this bytes
+output. The output are not necessarily allocated by this profiler
+nodes. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code>
+					</dt>
+					<dd>A dict of profiling options. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="time_and_memory_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>time_and_memory_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_micros, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_bytes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_accelerator_micros, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_cpu_micros, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_peak_bytes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_residual_bytes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_output_bytes)
+		</h4>
+		<div class="content">Show operation time and memory consumptions. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_micros
+						</dt>
+						<dd>Only show profiler nodes with execution time
+no less than this. It sums accelerator and cpu times. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_bytes
+						</dt>
+						<dd>Only show profiler nodes requested to allocate no less bytes
+than this. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_accelerator_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on accelerator (e.g. GPU). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_cpu_micros
+						</dt>
+						<dd>Only show profiler nodes spend no less than
+this time on cpu. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_peak_bytes
+						</dt>
+						<dd>Only show profiler nodes using no less than this bytes
+at peak (high watermark). For profiler nodes consist of multiple
+graph nodes, it sums the graph nodes' peak_bytes. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_residual_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than
+this bytes not being de-allocated after Compute() ends. For
+profiler nodes consist of multiple graph nodes, it sums the
+graph nodes' residual_bytes. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> min_output_bytes
+						</dt>
+						<dd>Only show profiler nodes have no less than this bytes
+output. The output are not necessarily allocated by this profiler
+nodes. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A dict of profiling options. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="trainable_variables_parameter" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> <strong>trainable_variables_parameter</strong>()
+		</h4>
+		<div class="content">Options used to profile trainable variable parameters. <p></p> Normally used together with 'scope' view. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code>
+					</dt>
+					<dd>A dict of profiling options. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="trainable_variables_parameter_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_parameter_dyn</strong>()
+		</h4>
+		<div class="content">Options used to profile trainable variable parameters. <p></p> Normally used together with 'scope' view. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A dict of profiling options. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

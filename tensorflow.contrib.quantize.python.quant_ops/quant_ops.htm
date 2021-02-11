@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>quant_ops - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.quantize.python.quant_ops</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm" class="current">quant_ops</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> quant_ops</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.quantize.python.quant_ops</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#FixedQuantize">FixedQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#FixedQuantize_dyn">FixedQuantize_dyn</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#LastValueQuantize">LastValueQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#LastValueQuantize">LastValueQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#LastValueQuantize">LastValueQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#LastValueQuantize_dyn">LastValueQuantize_dyn</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#MovingAvgQuantize">MovingAvgQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#MovingAvgQuantize">MovingAvgQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#MovingAvgQuantize">MovingAvgQuantize</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#MovingAvgQuantize_dyn">MovingAvgQuantize_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#FixedQuantize_fn">FixedQuantize_fn</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#LastValueQuantize_fn">LastValueQuantize_fn</a></li>
+				<li><a href="../tensorflow.contrib.quantize.python.quant_ops/quant_ops.htm#MovingAvgQuantize_fn">MovingAvgQuantize_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="FixedQuantize" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>FixedQuantize</strong>(<span title="System.object">object</span> inputs, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.object">object</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="FixedQuantize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>FixedQuantize_dyn</strong>(<span title="System.object">object</span> inputs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_min, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_max, <span title="System.object">object</span> scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="LastValueQuantize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>LastValueQuantize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> per_channel, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.string">string</span> vars_collection, <span title="System.string">string</span> name_prefix, <span title="System.object">object</span> reuse, <span title="System.bool">bool</span> is_training, <span title="System.int">int</span> num_bits, <span title="System.bool">bool</span> narrow_range, <span title="System.bool">bool</span> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="LastValueQuantize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>LastValueQuantize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> per_channel, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.string">string</span> vars_collection, <span title="System.string">string</span> name_prefix, <span title="System.object">object</span> reuse, <span title="System.object">object</span> is_training, <span title="System.int">int</span> num_bits, <span title="System.bool">bool</span> narrow_range, <span title="System.bool">bool</span> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="LastValueQuantize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>LastValueQuantize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> per_channel, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.string">string</span> vars_collection, <span title="System.string">string</span> name_prefix, <span title="System.object">object</span> reuse, <span title="System.string">string</span> is_training, <span title="System.int">int</span> num_bits, <span title="System.bool">bool</span> narrow_range, <span title="System.bool">bool</span> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="LastValueQuantize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>LastValueQuantize_dyn</strong>(<span title="System.object">object</span> inputs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> per_channel, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_min, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_max, <span title="System.object">object</span> vars_collection, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name_prefix, <span title="System.object">object</span> reuse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_bits, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> narrow_range, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="MovingAvgQuantize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>MovingAvgQuantize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> per_channel, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.double">double</span> ema_decay, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vars_collection, <span title="System.string">string</span> name_prefix, <span title="System.object">object</span> reuse, <span title="System.bool">bool</span> is_training, <span title="System.int">int</span> num_bits, <span title="System.bool">bool</span> narrow_range, <span title="System.bool">bool</span> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="MovingAvgQuantize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>MovingAvgQuantize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> per_channel, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.double">double</span> ema_decay, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vars_collection, <span title="System.string">string</span> name_prefix, <span title="System.object">object</span> reuse, <span title="System.object">object</span> is_training, <span title="System.int">int</span> num_bits, <span title="System.bool">bool</span> narrow_range, <span title="System.bool">bool</span> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="MovingAvgQuantize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>MovingAvgQuantize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> per_channel, <span title="System.double">double</span> init_min, <span title="System.double">double</span> init_max, <span title="System.double">double</span> ema_decay, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vars_collection, <span title="System.string">string</span> name_prefix, <span title="System.object">object</span> reuse, <span title="System.string">string</span> is_training, <span title="System.int">int</span> num_bits, <span title="System.bool">bool</span> narrow_range, <span title="System.bool">bool</span> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="MovingAvgQuantize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>MovingAvgQuantize_dyn</strong>(<span title="System.object">object</span> inputs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> per_channel, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_min, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_max, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ema_decay, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vars_collection, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name_prefix, <span title="System.object">object</span> reuse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_bits, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> narrow_range, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> symmetric)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="FixedQuantize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>FixedQuantize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="LastValueQuantize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>LastValueQuantize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="MovingAvgQuantize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>MovingAvgQuantize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

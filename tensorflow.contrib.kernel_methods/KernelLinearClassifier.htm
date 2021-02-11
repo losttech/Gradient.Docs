@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>KernelLinearClassifier - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.kernel_methods</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/IKernelLinearClassifier.htm">IKernelLinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/IRandomFourierFeatureMapper.htm">IRandomFourierFeatureMapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/kernel_methods.htm">kernel_methods</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm" class="current">KernelLinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.kernel_methods/RandomFourierFeatureMapper.htm">RandomFourierFeatureMapper</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> KernelLinearClassifier</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.kernel_methods</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.contrib.kernel_methods.python.kernel_estimators/_KernelEstimator.htm">_KernelEstimator</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.kernel_methods/IKernelLinearClassifier.htm">IKernelLinearClassifier</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Linear classifier using kernel methods as feature preprocessing. <p></p> It trains a linear model after possibly mapping initial input features into
+a mapped space using explicit kernel mappings. Due to the kernel mappings,
+training a linear classifier in the mapped (output) space can detect
+non-linearities in the input space. <p></p> The user can provide a list of kernel mappers to be applied to all or a subset
+of existing feature_columns. This way, the user can effectively provide 2
+types of feature columns: <p></p> * those passed as elements of feature_columns in the classifier's constructor
+* those appearing as a key of the kernel_mappers dict. <p></p> If a column appears in feature_columns only, no mapping is applied to it. If
+it appears as a key in kernel_mappers, the corresponding kernel mappers are
+applied to it. Note that it is possible that a column appears in both places.
+Currently kernel_mappers are supported for _RealValuedColumns only. <p></p> Example usage:
+```
+real_column_a = real_valued_column(name='real_column_a',...)
+sparse_column_b = sparse_column_with_hash_bucket(...)
+kernel_mappers = {real_column_a : [RandomFourierFeatureMapper(...)]}
+optimizer =... <p></p> # real_column_a is used as a feature in both its initial and its transformed
+# (mapped) form. sparse_column_b is not affected by kernel mappers.
+kernel_classifier = KernelLinearClassifier(
+feature_columns=[real_column_a, sparse_column_b],
+model_dir=...,
+optimizer=optimizer,
+kernel_mappers=kernel_mappers) <p></p> # real_column_a is used as a feature in its transformed (mapped) form only.
+# sparse_column_b is not affected by kernel mappers.
+kernel_classifier = KernelLinearClassifier(
+feature_columns=[sparse_column_b],
+model_dir=...,
+optimizer=optimizer,
+kernel_mappers=kernel_mappers) <p></p> # Input builders
+def train_input_fn: # returns x, y
+...
+def eval_input_fn: # returns x, y
+... <p></p> kernel_classifier.fit(input_fn=train_input_fn)
+kernel_classifier.evaluate(input_fn=eval_input_fn)
+kernel_classifier.predict(...)
+``` <p></p> Input of `fit` and `evaluate` should have following features, otherwise there
+will be a `KeyError`: <p></p> * if `weight_column_name` is not `None`, a feature with
+`key=weight_column_name` whose value is a `Tensor`.
+* for each `column` in `feature_columns`:
+- if `column` is a `SparseColumn`, a feature with `key=column.name`
+whose `value` is a `SparseTensor`.
+- if `column` is a `WeightedSparseColumn`, two features: the first with
+`key` the id column name, the second with `key` the weight column name.
+Both features' `value` must be a `SparseTensor`.
+- if `column` is a `RealValuedColumn`, a feature with `key=column.name`
+whose `value` is a `Tensor`. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#config">config</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#config_dyn">config_dyn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#model_dir">model_dir</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#model_dir_dyn">model_dir_dyn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#model_fn">model_fn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#model_fn_dyn">model_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm">KernelLinearClassifier</a> <strong>NewDyn</strong>(<span title="System.object">object</span> feature_columns, <span title="System.object">object</span> model_dir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> n_classes, <span title="System.object">object</span> weight_column_name, <span title="System.object">object</span> optimizer, <span title="System.object">object</span> kernel_mappers, <span title="System.object">object</span> config)
+		</h4>
+		<div class="content">Construct a `KernelLinearClassifier` estimator object. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> feature_columns
+						</dt>
+						<dd>An iterable containing all the feature columns used by
+the model. All items in the set should be instances of classes derived
+from `FeatureColumn`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> model_dir
+						</dt>
+						<dd>Directory to save model parameters, graph etc. This can also be
+used to load checkpoints from the directory into an estimator to
+continue training a previously saved model. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> n_classes
+						</dt>
+						<dd>number of label classes. Default is binary classification.
+Note that class labels are integers representing the class index (i.e.
+values from 0 to n_classes-1). For arbitrary label values (e.g. string
+labels), convert to class indices first. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> weight_column_name
+						</dt>
+						<dd>A string defining feature column name representing
+weights. It is used to down weight or boost examples during training. It
+will be multiplied by the loss of the example. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> optimizer
+						</dt>
+						<dd>The optimizer used to train the model. If specified, it should
+be an instance of `tf.Optimizer`. If `None`, the Ftrl optimizer is used
+by default. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> kernel_mappers
+						</dt>
+						<dd>Dictionary of kernel mappers to be applied to the input
+features before training a (linear) model. Keys are feature columns and
+values are lists of mappers to be applied to the corresponding feature
+column. Currently only _RealValuedColumns are supported and therefore
+all mappers should conform to the `DenseKernelMapper` interface (see
+./mappers/dense_kernel_mapper.py). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>`RunConfig` object to configure the runtime settings. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.contrib.kernel_methods/KernelLinearClassifier.htm">KernelLinearClassifier</a></code>
+					</dt>
+					<dd>A `KernelLinearClassifier` estimator. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>model_dir</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

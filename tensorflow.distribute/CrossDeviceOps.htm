@@ -1,0 +1,1618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>CrossDeviceOps - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distribute</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distribute/CrossDeviceOps.htm" class="current">CrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/HierarchicalCopyAllReduce.htm">HierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ICrossDeviceOps.htm">ICrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IHierarchicalCopyAllReduce.htm">IHierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputContext.htm">IInputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputReplicationMode.htm">IInputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IMirroredStrategy.htm">IMirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/INcclAllReduce.htm">INcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputContext.htm">InputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputReplicationMode.htm">InputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IOneDeviceStrategy.htm">IOneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReduceOp.htm">IReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReductionToOneDevice.htm">IReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReplicaContext.htm">IReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategy.htm">IStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategyExtended.htm">IStrategyExtended</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/MirroredStrategy.htm">MirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/NcclAllReduce.htm">NcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/OneDeviceStrategy.htm">OneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReductionToOneDevice.htm">ReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReplicaContext.htm">ReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/Strategy.htm">Strategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/StrategyExtended.htm">StrategyExtended</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> CrossDeviceOps</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distribute</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distribute/ICrossDeviceOps.htm">ICrossDeviceOps</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Base class for cross-device reduction and broadcasting algorithms. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#batch_reduce">batch_reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#batch_reduce">batch_reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#batch_reduce_dyn">batch_reduce_dyn</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#batch_reduce_implementation">batch_reduce_implementation</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#batch_reduce_implementation">batch_reduce_implementation</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#batch_reduce_implementation_dyn">batch_reduce_implementation_dyn</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast">broadcast</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast">broadcast</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast">broadcast</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast_dyn">broadcast_dyn</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast_implementation">broadcast_implementation</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast_implementation">broadcast_implementation</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#broadcast_implementation_dyn">broadcast_implementation_dyn</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce">reduce</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce_dyn">reduce_dyn</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce_implementation">reduce_implementation</a></li>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#reduce_implementation_dyn">reduce_implementation_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/CrossDeviceOps.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="batch_reduce" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>batch_reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">Reduce PerReplica objects in a batch. <p></p> Reduce each first element in `value_destination_pairs` to each second
+element which indicates the destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value_destination_pairs
+						</dt>
+						<dd>a list or a tuple of tuples of PerReplica objects
+(or tensors with device set if there is one device) and destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>a list of Mirrored objects. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="batch_reduce" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>batch_reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">Reduce PerReplica objects in a batch. <p></p> Reduce each first element in `value_destination_pairs` to each second
+element which indicates the destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value_destination_pairs
+						</dt>
+						<dd>a list or a tuple of tuples of PerReplica objects
+(or tensors with device set if there is one device) and destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>a list of Mirrored objects. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="batch_reduce_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_reduce_dyn</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">Reduce PerReplica objects in a batch. <p></p> Reduce each first element in `value_destination_pairs` to each second
+element which indicates the destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value_destination_pairs
+						</dt>
+						<dd>a list or a tuple of tuples of PerReplica objects
+(or tensors with device set if there is one device) and destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a list of Mirrored objects. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="batch_reduce_implementation" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>batch_reduce_implementation</strong>(<span title="System.object">object</span> reduce_op, <span title="System.Collections.Generic.IEnumerable<ValueTuple<PerReplica, object>>">IEnumerable&lt;ValueTuple&lt;PerReplica, object&gt;&gt;</span> value_destination_pairs)
+		</h4>
+		<div class="content">Implementation of reduce PerReplica objects in a batch. <p></p> Reduce each first element in `value_destination_pairs` to each second
+element which indicates the destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<ValueTuple<PerReplica, object>>">IEnumerable&lt;ValueTuple&lt;PerReplica, object&gt;&gt;</span></code> value_destination_pairs
+						</dt>
+						<dd>a list or a tuple of tuples of PerReplica objects
+(or tensors with device set if there is one device) and destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>a list of Mirrored objects. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="batch_reduce_implementation" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>batch_reduce_implementation</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">Implementation of reduce PerReplica objects in a batch. <p></p> Reduce each first element in `value_destination_pairs` to each second
+element which indicates the destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value_destination_pairs
+						</dt>
+						<dd>a list or a tuple of tuples of PerReplica objects
+(or tensors with device set if there is one device) and destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>a list of Mirrored objects. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="batch_reduce_implementation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_reduce_implementation_dyn</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">Implementation of reduce PerReplica objects in a batch. <p></p> Reduce each first element in `value_destination_pairs` to each second
+element which indicates the destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> value_destination_pairs
+						</dt>
+						<dd>a list or a tuple of tuples of PerReplica objects
+(or tensors with device set if there is one device) and destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a list of Mirrored objects. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast</strong>(<span title="System.ValueTuple<double, int>">ValueTuple&lt;double, int&gt;</span> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<double, int>">ValueTuple&lt;double, int&gt;</span></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast</strong>(<a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast_dyn</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast_implementation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast_implementation</strong>(<span title="System.ValueTuple<double, int>">ValueTuple&lt;double, int&gt;</span> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Implementation of broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<double, int>">ValueTuple&lt;double, int&gt;</span></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast_implementation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast_implementation</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Implementation of broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast_implementation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast_implementation_dyn</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Implementation of broadcast the `tensor` to destinations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>the tensor to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the broadcast destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.object">object</span> reduce_op, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.object">object</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<span title="System.string">string</span> reduce_op, <span title="System.object">object</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> per_replica_value, <span title="System.string">string</span> destinations)
+		</h4>
+		<div class="content">Reduce `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_dyn</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> per_replica_value, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Reduce `value` across replicas. <p></p> Given a per-replica value returned by `experimental_run_v2`, say a
+per-example loss, the batch will be divided across all the replicas.  This
+function allows you to aggregate across replicas and optionally also across
+batch elements.  For example, if you have a global batch size of 8 and 2
+replicas, values for examples `[0, 1, 2, 3]` will be on replica 0 and
+`[4, 5, 6, 7]` will be on replica 1. By default, `reduce` will just
+aggregate across replicas, returning `[0+4, 1+5, 2+6, 3+7]`. This is useful
+when each replica is computing a scalar or some other value that doesn't
+have a "batch" dimension (like a gradient). More often you will want to
+aggregate across the global batch, which you can get by specifying the batch
+dimension as the `axis`, typically `axis=0`. In this case it would return a
+scalar `0+1+2+3+4+5+6+7`. <p></p> If there is a last partial batch, you will need to specify an axis so
+that the resulting shape is consistent across replicas. So if the last
+batch has size 6 and it is divided into [0, 1, 2, 3] and [4, 5], you
+would get a shape mismatch unless you specify `axis=0`. If you specify
+<a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>, using `axis=0` will use the correct
+denominator of 6. Contrast this with computing `reduce_mean` to get a
+scalar value on each replica and this function to average those means,
+which will weigh some values `1/8` and others `1/4`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>A <a href="..\..\tf\distribute\ReduceOp.md"><code>tf.distribute.ReduceOp</code></a> value specifying how values should
+be combined. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> per_replica_value
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce_implementation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_implementation</strong>(<span title="System.object">object</span> reduce_op, <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> per_replica_value, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">The implementation of reduce of `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce_implementation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_implementation_dyn</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> per_replica_value, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">The implementation of reduce of `per_replica_value` to `destinations`. <p></p> It runs the reduction operation defined by `reduce_op` and put the
+result on `destinations`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_op
+						</dt>
+						<dd>Indicates how per_replica_value will be reduced. Accepted
+values are <a href="..\..\tf\distribute\ReduceOp\SUM.md"><code>tf.distribute.ReduceOp.SUM</code></a>, <a href="..\..\tf\distribute\ReduceOp\MEAN.md"><code>tf.distribute.ReduceOp.MEAN</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> per_replica_value
+						</dt>
+						<dd>a PerReplica object or a tensor with device set. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>the reduction destinations. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a Mirrored object. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>LossScaleOptimizer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.mixed_precision.experimental</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/ILossScaleOptimizer.htm">ILossScaleOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/IPolicy.htm">IPolicy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm" class="current">LossScaleOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm">Policy</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> LossScaleOptimizer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.mixed_precision.experimental</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.mixed_precision.experimental/ILossScaleOptimizer.htm">ILossScaleOptimizer</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">An optimizer that applies loss scaling. <p></p> Loss scaling is a process that multiplies the loss by a multiplier called the
+loss scale, and divides each gradient by the same multiplier. The pseudocode
+for this process is: <p></p> ```
+loss =...
+loss *= loss_scale
+grads = gradients(loss, vars)
+grads /= loss_scale
+``` <p></p> Mathematically, loss scaling has no effect, but can help avoid numerical
+underflow in intermediate gradients when float16 tensors are used. By
+multiplying the loss, each intermediate gradient will have the same multiplier
+applied. <p></p> The loss scale can either be a fixed constant, chosen by the user, or be
+dynamically determined. Dynamically determining the loss scale is convenient
+as a loss scale does not have to be explicitly chosen. However it reduces
+performance. <p></p> This optimizer wraps another optimizer and applies loss scaling to it via a
+`LossScale`. Loss scaling is applied whenever gradients are
+computed, either through `minimize()` or `get_gradients()`. The loss scale is
+updated via `LossScale.update()` whenever gradients are applied, either
+through `minimize()` or `apply_gradients()`.
+If a <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a> is used to compute gradients instead of
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, the loss
+and gradients must be scaled manually. This can be done by calling
+`LossScaleOptimizer.get_scaled_loss` before passing the loss to
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>, and `LossScaleOptimizer.get_unscaled_gradients` after
+computing the gradients with <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>opt = tf.keras.optimizers.SGD(0.1)
+            opt = tf.keras.mixed_precision.experimental.LossScaleOptimizer(opt, "dynamic")
+            # 'minimize' applies loss scaling to the loss and updates the loss sale.
+            opt.minimize(loss_fn) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_scaled_loss">get_scaled_loss</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_scaled_loss">get_scaled_loss</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_scaled_loss">get_scaled_loss</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_scaled_loss_dyn">get_scaled_loss_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_unscaled_gradients">get_unscaled_gradients</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_unscaled_gradients">get_unscaled_gradients</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#get_unscaled_gradients_dyn">get_unscaled_gradients_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#clipnorm">clipnorm</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#clipvalue">clipvalue</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#iterations">iterations</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#iterations_dyn">iterations_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#learning_rate">learning_rate</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#learning_rate_dyn">learning_rate_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#loss_scale">loss_scale</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#loss_scale_dyn">loss_scale_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#lr">lr</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#lr_dyn">lr_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="get_scaled_loss" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_scaled_loss</strong>(<span title="System.int">int</span> loss)
+		</h4>
+		<div class="content">Scales the loss by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to scale the loss before
+passing the loss to <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_unscaled_gradients` should also be called.
+See the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for
+an example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> loss
+						</dt>
+						<dd>The loss, which will be multiplied by the loss scale. Can either be
+a tensor or a callable returning a tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`loss` multiplied by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_scaled_loss" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_scaled_loss</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> loss)
+		</h4>
+		<div class="content">Scales the loss by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to scale the loss before
+passing the loss to <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_unscaled_gradients` should also be called.
+See the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for
+an example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> loss
+						</dt>
+						<dd>The loss, which will be multiplied by the loss scale. Can either be
+a tensor or a callable returning a tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`loss` multiplied by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_scaled_loss" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_scaled_loss</strong>(<span title="System.object">object</span> loss)
+		</h4>
+		<div class="content">Scales the loss by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to scale the loss before
+passing the loss to <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_unscaled_gradients` should also be called.
+See the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for
+an example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>The loss, which will be multiplied by the loss scale. Can either be
+a tensor or a callable returning a tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`loss` multiplied by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_scaled_loss_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_scaled_loss_dyn</strong>(<span title="System.object">object</span> loss)
+		</h4>
+		<div class="content">Scales the loss by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to scale the loss before
+passing the loss to <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_unscaled_gradients` should also be called.
+See the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for
+an example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>The loss, which will be multiplied by the loss scale. Can either be
+a tensor or a callable returning a tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`loss` multiplied by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_unscaled_gradients" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_unscaled_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads)
+		</h4>
+		<div class="content">Unscales the gradients by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to unscale the gradients
+after computing them with <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_scaled_loss` should also be called. See
+the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for an
+example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads
+						</dt>
+						<dd>A list of tensors, each which will be divided by the loss scale.
+Can have None values, which are ignored. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A new list the same size as `grads`, where every non-None value in `grads`
+is divided by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_unscaled_gradients" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_unscaled_gradients</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> grads)
+		</h4>
+		<div class="content">Unscales the gradients by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to unscale the gradients
+after computing them with <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_scaled_loss` should also be called. See
+the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for an
+example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> grads
+						</dt>
+						<dd>A list of tensors, each which will be divided by the loss scale.
+Can have None values, which are ignored. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A new list the same size as `grads`, where every non-None value in `grads`
+is divided by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_unscaled_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_unscaled_gradients_dyn</strong>(<span title="System.object">object</span> grads)
+		</h4>
+		<div class="content">Unscales the gradients by the loss scale. <p></p> This method is only needed if you compute gradients manually, e.g. with
+<a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. In that case, call this method to unscale the gradients
+after computing them with <a href="..\..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a>. If you use
+`LossScaleOptimizer.minimize` or `LossScaleOptimizer.get_gradients`, loss
+scaling is automatically applied and this method is unneeded. <p></p> If this method is called, `get_scaled_loss` should also be called. See
+the <a href="..\..\..\..\tf\keras\mixed_precision\experimental\LossScaleOptimizer.md"><code>tf.keras.mixed_precision.experimental.LossScaleOptimizer</code></a> doc for an
+example. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> grads
+						</dt>
+						<dd>A list of tensors, each which will be divided by the loss scale.
+Can have None values, which are ignored. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new list the same size as `grads`, where every non-None value in `grads`
+is divided by `LossScaleOptimizer.loss_scale()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="clipnorm" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipnorm</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="clipvalue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipvalue</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations</strong> get; set;
+		</h4>
+		<div class="content">Variable. The number of training steps this Optimizer has run. 
+
+		</div>
+	</div>
+	<div id="iterations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations_dyn</strong> get; set;
+		</h4>
+		<div class="content">Variable. The number of training steps this Optimizer has run. 
+
+		</div>
+	</div>
+	<div id="learning_rate" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>learning_rate</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="learning_rate_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>learning_rate_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="loss_scale" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>loss_scale</strong> get; 
+		</h4>
+		<div class="content">The `LossScale` instance associated with this optimizer. 
+
+		</div>
+	</div>
+	<div id="loss_scale_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>loss_scale_dyn</strong> get; 
+		</h4>
+		<div class="content">The `LossScale` instance associated with this optimizer. 
+
+		</div>
+	</div>
+	<div id="lr" class="method">
+		<h4>
+			<span title="System.double">double</span> <strong>lr</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="lr_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>lr_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

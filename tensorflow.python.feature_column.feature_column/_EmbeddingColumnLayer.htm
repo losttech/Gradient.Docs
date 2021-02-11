@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>_EmbeddingColumnLayer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.feature_column.feature_column</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_BiasLayer.htm">_BiasLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_BucketizedColumn.htm">_BucketizedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_CategoricalColumn.htm">_CategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_CrossedColumn.htm">_CrossedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_DenseColumn.htm">_DenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumn.htm">_EmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm" class="current">_EmbeddingColumnLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_FCLinearWrapper.htm">_FCLinearWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_FeatureColumn.htm">_FeatureColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_HashedCategoricalColumn.htm">_HashedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_IdentityCategoricalColumn.htm">_IdentityCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_IndicatorColumn.htm">_IndicatorColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_LazyBuilder.htm">_LazyBuilder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_LinearModel.htm">_LinearModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_NumericColumn.htm">_NumericColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_SequenceCategoricalColumn.htm">_SequenceCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_SequenceDenseColumn.htm">_SequenceDenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_SharedEmbeddingColumn.htm">_SharedEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_VocabularyFileCategoricalColumn.htm">_VocabularyFileCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_VocabularyListCategoricalColumn.htm">_VocabularyListCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_WeightedCategoricalColumn.htm">_WeightedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/feature_column.htm">feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_BiasLayer.htm">I_BiasLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_BucketizedColumn.htm">I_BucketizedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_CategoricalColumn.htm">I_CategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_CrossedColumn.htm">I_CrossedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_DenseColumn.htm">I_DenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_EmbeddingColumn.htm">I_EmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_EmbeddingColumnLayer.htm">I_EmbeddingColumnLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_FCLinearWrapper.htm">I_FCLinearWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_FeatureColumn.htm">I_FeatureColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_HashedCategoricalColumn.htm">I_HashedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_IdentityCategoricalColumn.htm">I_IdentityCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_IndicatorColumn.htm">I_IndicatorColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_LazyBuilder.htm">I_LazyBuilder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_LinearModel.htm">I_LinearModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_NumericColumn.htm">I_NumericColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_SequenceCategoricalColumn.htm">I_SequenceCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_SequenceDenseColumn.htm">I_SequenceDenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_SharedEmbeddingColumn.htm">I_SharedEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_VocabularyFileCategoricalColumn.htm">I_VocabularyFileCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_VocabularyListCategoricalColumn.htm">I_VocabularyListCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_WeightedCategoricalColumn.htm">I_WeightedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/IInputLayer.htm">IInputLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/InputLayer.htm">InputLayer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> _EmbeddingColumnLayer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.feature_column.feature_column</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.layers/Layer.htm">Layer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.python.feature_column.feature_column/I_EmbeddingColumnLayer.htm">I_EmbeddingColumnLayer</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#set_weight_collections">set_weight_collections</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#set_weight_collections_dyn">set_weight_collections_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#activity_regularizer">activity_regularizer</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#activity_regularizer_dyn">activity_regularizer_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#built">built</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#dynamic">dynamic</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#dynamic_dyn">dynamic_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#inbound_nodes">inbound_nodes</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#inbound_nodes_dyn">inbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input">input</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_dyn">input_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_mask">input_mask</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_mask_dyn">input_mask_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_shape">input_shape</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_shape_dyn">input_shape_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_spec">input_spec</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#input_spec_dyn">input_spec_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#metrics">metrics</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#metrics_dyn">metrics_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#name">name</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#outbound_nodes">outbound_nodes</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#outbound_nodes_dyn">outbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#output">output</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#output_dyn">output_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#output_mask">output_mask</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#output_mask_dyn">output_mask_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#output_shape">output_shape</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#output_shape_dyn">output_shape_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#scope_name">scope_name</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#scope_name_dyn">scope_name_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#stateful">stateful</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#supports_masking">supports_masking</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="set_weight_collections" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_weight_collections</strong>(<span title="System.object">object</span> weight_collections)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_weight_collections_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_weight_collections_dyn</strong>(<span title="System.object">object</span> weight_collections)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm">_EmbeddingColumnLayer</a> <strong>NewDyn</strong>(<span title="System.object">object</span> embedding_shape, <span title="System.object">object</span> initializer, <span title="System.object">object</span> weight_collections, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> trainable, <span title="System.object">object</span> name, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="activity_regularizer" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>activity_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activity_regularizer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="built" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>built</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>dynamic</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dynamic_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Node>">IList&lt;Node&gt;</span> <strong>inbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>metrics</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>metrics_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>outbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>output</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>scope_name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope_name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="stateful" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>stateful</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="supports_masking" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>supports_masking</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

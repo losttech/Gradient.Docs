@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Adamax - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.optimizers</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adadelta.htm">Adadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adagrad.htm">Adagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adam.htm">Adam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adamax.htm" class="current">Adamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Ftrl.htm">Ftrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdadelta.htm">IAdadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdagrad.htm">IAdagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdam.htm">IAdam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdamax.htm">IAdamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IFtrl.htm">IFtrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/INadam.htm">INadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IRMSprop.htm">IRMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/ISGD.htm">ISGD</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Nadam.htm">Nadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/OptimizerExtensions.htm">OptimizerExtensions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/RMSprop.htm">RMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/SGD.htm">SGD</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Adamax</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.optimizers</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.optimizers/IAdamax.htm">IAdamax</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Optimizer that implements the Adamax algorithm. <p></p> It is a variant of Adam based on the infinity norm.
+Default parameters follow those provided in the paper.
+Adamax is sometimes superior to adam, specially in models with embeddings. <p></p> References
+see Section 7 of [Kingma et al., 2014](http://arxiv.org/abs/1412.6980)
+([pdf](http://arxiv.org/pdf/1412.6980.pdf)). 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#clipnorm">clipnorm</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#clipvalue">clipvalue</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#epsilon">epsilon</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#iterations">iterations</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#iterations_dyn">iterations_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adamax.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.keras.optimizers/Adamax.htm">Adamax</a> <strong>NewDyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> beta_1, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> beta_2, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> epsilon, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Construct a new Adamax optimizer. <p></p> Initialization: <p></p> ```
+m_0 <- 0 (Initialize initial 1st moment vector)
+v_0 <- 0 (Initialize the exponentially weighted infinity norm)
+t <- 0 (Initialize timestep)
+``` <p></p> The update rule for `variable` with gradient `g` uses an optimization
+described at the end of section 7.1 of the paper: <p></p> ```
+t <- t + 1 <p></p> m_t <- beta1 * m_{t-1} + (1 - beta1) * g
+v_t <- max(beta2 * v_{t-1}, abs(g))
+variable <- variable - learning_rate / (1 - beta1^t) * m_t / (v_t + epsilon)
+``` <p></p> Similar to AdamOptimizer, the epsilon is added for numerical stability
+(especially to get rid of division by zero when v_t = 0). <p></p> Contrast to AdamOptimizer, the sparse implementation of this algorithm
+(used when the gradient is an IndexedSlices object, typically because of
+<a href="..\..\..\tf\gather.md"><code>tf.gather</code></a> or an embedding lookup in the forward pass) only updates
+variable slices and corresponding `m_t`, `v_t` terms when that part of
+the variable was used in the forward pass. This means that the sparse
+behavior is contrast to the dense behavior (similar to some momentum
+implementations which ignore momentum unless a variable slice was actually
+used). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> learning_rate
+						</dt>
+						<dd>A Tensor or a floating point value.  The learning rate. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> beta_1
+						</dt>
+						<dd>A float value or a constant float tensor. The exponential decay
+rate for the 1st moment estimates. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> beta_2
+						</dt>
+						<dd>A float value or a constant float tensor. The exponential decay
+rate for the exponentially weighted infinity norm. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> epsilon
+						</dt>
+						<dd>A small constant for numerical stability. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Optional name for the operations created when applying gradients.
+Defaults to "Adamax". 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>keyword arguments. Allowed to be {`clipnorm`, `clipvalue`, `lr`,
+`decay`}. `clipnorm` is clip gradients by norm; `clipvalue` is clip
+gradients by value, `decay` is included for backward compatibility to
+allow time inverse decay of learning rate. `lr` is included for backward
+compatibility, recommended to use `learning_rate` instead. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="clipnorm" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipnorm</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="clipvalue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipvalue</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="epsilon" class="method">
+		<h4>
+			<span title="System.double">double</span> <strong>epsilon</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

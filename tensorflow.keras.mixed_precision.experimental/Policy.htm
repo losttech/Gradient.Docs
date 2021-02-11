@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Policy - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.mixed_precision.experimental</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/ILossScaleOptimizer.htm">ILossScaleOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/IPolicy.htm">IPolicy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/LossScaleOptimizer.htm">LossScaleOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm" class="current">Policy</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Policy</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.mixed_precision.experimental</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.mixed_precision.experimental/IPolicy.htm">IPolicy</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A dtype policy for a Keras layer. <p></p> A dtype policy determines dtype-related aspects of a layer, such as its
+computation and variable dtypes. Each layer has a policy. Policies can be
+passed to the 'dtype' argument of layer constructors, or a global policy can
+be set with 'tf.keras.mixed_precision.experimental.set_policy'. A layer will
+default to the global policy if no policy is passed to it's constructor. <p></p> For most models, each layer will have the same computation dtype and variable
+dtype, which will typically be float32. However, when mixed precision
+training is used, most layers will instead have a float16 computation dtype
+and a float32 variable dtype. See [this
+link](https://docs.nvidia.com/deeplearning/sdk/mixed-precision-training/index.html)
+for more information on mixed precision training. When the variable dtype does
+not match the computation dtype, variables will be automatically casted to the
+computation dtype to avoid type errors. <p></p> Policies also have a <a href="..\..\..\..\tf\train\experimental\LossScale.md"><code>tf.train.experimental.LossScale</code></a> instance, which is used
+by Models to performance loss scaling. Layers which are not Models ignore
+the loss scale. <p></p> Policies are constructed by passing a string to the constructor, e.g.
+`tf.keras.mixed_precision.experimental.Policy('float32')`. The string
+determines the compute and variable dtypes. Currently, it can be one of
+in one of the following forms: <p></p> * Any dtype name, such as 'float32' or 'float64'. Both the variable and
+compute dtypes will be that dtype.
+* '<dtype>_with_float32_vars', where <dtype> is any dtype. The compute dtype
+will be <dtype>, while the variable dtype is float32. This can be used for
+mixed precision, which uses float16 or bfloat16 for most computations, and
+float32 for variables, but it is recommended to use the 'mixed_float16' or
+'mixed_bfloat16' policies instead.
+* 'mixed_float16' or 'mixed_bfloat16': Similar to
+'float16_with_float32_vars' or 'bfloat16_with_float32_vars' respectively.
+'mixed_float16' is identical to 'float16_with_float32_vars' except the
+loss_scale is dynamic by default. 'mixed_bfloat16' is currently identical
+to 'bfloat16_with_float32_vars'. More changes may be added to these mixed
+policies in the future, to further differentiate them from
+[b]float16_with_float32_vars. <p></p> ### How to use mixed precision in layers with Policies <p></p> To use mixed precision in a model, the 'mixed_float16' policy can
+be used. <a href="..\..\..\..\tf\keras\mixed_precision\experimental\set_policy.md"><code>tf.keras.mixed_precision.experimental.set_policy</code></a> can be used to set
+the default policy for layers if no policy is passed to them.
+Alternatively, the policy can be passed to individual layers instead of
+setting the global policy with `set_policy`:
+As the above example shows, strings can be directly passed to layer
+constructors in the `dtype` argument instead of policies, but only if the
+string is convertible to a dtype. <p></p> ### The deprecated "infer" policy <p></p> In addition to a dtype or "<dtype>_with_float32_vars", a policy can also be
+"infer". This Policy is deprecated, and it is not recommended. When a layer
+has an infer policy, it will infer the computation and variable dtype from
+the first input the first time the layer is called. <p></p> Once the layer is called for the first time, the layer's policy will change to
+the dtype of the first input. <p></p> Similarly to "infer", there is a deprecated "infer_with_float32_vars" policy
+that infers the compute dtype, but not the variable dtype. <p></p> In TensorFlow 1, only the "infer" and "infer_with_float32_vars" policies are
+available. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>tf.keras.mixed_precision.experimental.set_policy('mixed_float16')
+            model = tf.keras.models.Sequential(
+                tf.keras.layers.Input((100,)),
+                # Dense layers use global policy of 'mixed_float16', which does
+                # computations in float16 while keeping variables in float32.
+                tf.keras.layers.Dense(10),
+                tf.keras.layers.Dense(10),
+                # Softmax should be done in float32 for numeric stability. We pass
+                # dtype='float32' to use float32 instead of the global policy.
+                tf.keras.layers.Activation('Softmax', dtype='float32')
+            )
+            model.fit(...)  # Train `model` </pre>
+</div>
+			</div>
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#compute_dtype">compute_dtype</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#compute_dtype_dyn">compute_dtype_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#loss_scale">loss_scale</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#loss_scale_dyn">loss_scale_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#name">name</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#should_cast_variables">should_cast_variables</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#should_cast_variables_dyn">should_cast_variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#variable_dtype">variable_dtype</a></li>
+				<li><a href="../tensorflow.keras.mixed_precision.experimental/Policy.htm#variable_dtype_dyn">variable_dtype_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="compute_dtype" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>compute_dtype</strong> get; 
+		</h4>
+		<div class="content">The compute dtype of this policy. <p></p> This is the dtype layers will do their computations in. <p></p> If this is None, the policy is "infer" or "infer_with_float32_vars" and
+`variable_dtype` is either None or float32 respectively. <p></p> Note that even if the compute dtype is float16 or bfloat16, hardware devices
+may not do individual adds, multiplies, and other fundamental operations in
+[b]float16, but instead may do some of them in float32 for numeric
+stability. The compute dtype is the dtype of the inputs and outputs of the
+TensorFlow ops that the layer executes. Internally, many TensorFlow ops will
+do certain internal calculations in float32, or some other device-internal
+intermediate format with higher precision than [b]float16, to increase
+numeric stability. <p></p> For example, a <a href="..\..\..\..\tf\keras\layers\Dense.md"><code>tf.keras.layers.Dense</code></a> layer, when run on a GPU with a
+float16 compute dtype, will pass float16 inputs to tf.matmul. But, tf.matmul
+will do use float32 intermediate math. The performance benefit of float16 is
+still apparent, due to increased memory bandwidth and the fact GPUs have
+specialized hardware for computating matmuls on float16 while still keeping
+intermediate computations in float32. 
+
+		</div>
+	</div>
+	<div id="compute_dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">The compute dtype of this policy. <p></p> This is the dtype layers will do their computations in. <p></p> If this is None, the policy is "infer" or "infer_with_float32_vars" and
+`variable_dtype` is either None or float32 respectively. <p></p> Note that even if the compute dtype is float16 or bfloat16, hardware devices
+may not do individual adds, multiplies, and other fundamental operations in
+[b]float16, but instead may do some of them in float32 for numeric
+stability. The compute dtype is the dtype of the inputs and outputs of the
+TensorFlow ops that the layer executes. Internally, many TensorFlow ops will
+do certain internal calculations in float32, or some other device-internal
+intermediate format with higher precision than [b]float16, to increase
+numeric stability. <p></p> For example, a <a href="..\..\..\..\tf\keras\layers\Dense.md"><code>tf.keras.layers.Dense</code></a> layer, when run on a GPU with a
+float16 compute dtype, will pass float16 inputs to tf.matmul. But, tf.matmul
+will do use float32 intermediate math. The performance benefit of float16 is
+still apparent, due to increased memory bandwidth and the fact GPUs have
+specialized hardware for computating matmuls on float16 while still keeping
+intermediate computations in float32. 
+
+		</div>
+	</div>
+	<div id="loss_scale" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>loss_scale</strong> get; 
+		</h4>
+		<div class="content">Returns the loss scale of this Policy. 
+
+		</div>
+	</div>
+	<div id="loss_scale_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>loss_scale_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns the loss scale of this Policy. 
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">Returns the name of this policy. 
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns the name of this policy. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="should_cast_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>should_cast_variables</strong> get; 
+		</h4>
+		<div class="content">Returns True if variables should be casted. <p></p> This is true if the variable dtype is not the same as the compute dtype. 
+
+		</div>
+	</div>
+	<div id="should_cast_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>should_cast_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns True if variables should be casted. <p></p> This is true if the variable dtype is not the same as the compute dtype. 
+
+		</div>
+	</div>
+	<div id="variable_dtype" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>variable_dtype</strong> get; 
+		</h4>
+		<div class="content">The variable dtype of this policy. <p></p> This is the dtype layers will create their variables in, unless a layer
+explicit chooses a different dtype. If this is different than
+`Policy.compute_dtype` and both are non-None, Layers will cast variables to
+the compute dtype to avoid type errors. <p></p> If this is None, the policy is "infer" and the `compute_dtype` is also None.
+If `compute_dtype` is None, this is either None or float32. 
+
+		</div>
+	</div>
+	<div id="variable_dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variable_dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">The variable dtype of this policy. <p></p> This is the dtype layers will create their variables in, unless a layer
+explicit chooses a different dtype. If this is different than
+`Policy.compute_dtype` and both are non-None, Layers will cast variables to
+the compute dtype to avoid type errors. <p></p> If this is None, the policy is "infer" and the `compute_dtype` is also None.
+If `compute_dtype` is None, this is either None or float32. 
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

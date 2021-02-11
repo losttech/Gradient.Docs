@@ -1,0 +1,2716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>tf.linalg - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow/AggregationMethod.htm">AggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulator.htm">ConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulatorBase.htm">ConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/constant_initializer.htm">constant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/CriticalSection.htm">CriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DeviceSpec.htm">DeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Dimension.htm">Dimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DType.htm">DType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FIFOQueue.htm">FIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenFeature.htm">FixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLengthRecordReader.htm">FixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenSequenceFeature.htm">FixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_normal_initializer.htm">glorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_uniform_initializer.htm">glorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GradientTape.htm">GradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.htm">Graph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph._ControlDependenciesController.htm">Graph._ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.I_ControlDependenciesController.htm">Graph.I_ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GraphKeys.htm">GraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/HeadingAxes.htm">HeadingAxes</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IAggregationMethod.htm">IAggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulator.htm">IConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulatorBase.htm">IConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iconstant_initializer.htm">Iconstant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ICriticalSection.htm">ICriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IdentityReader.htm">IdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDeviceSpec.htm">IDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDimension.htm">IDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDType.htm">IDType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFIFOQueue.htm">IFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenFeature.htm">IFixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLengthRecordReader.htm">IFixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenSequenceFeature.htm">IFixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_normal_initializer.htm">Iglorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_uniform_initializer.htm">Iglorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGradientTape.htm">IGradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraph.htm">IGraph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraphKeys.htm">IGraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIdentityReader.htm">IIdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlices.htm">IIndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlicesSpec.htm">IIndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IInteractiveSession.htm">IInteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILazyLoader.htm">ILazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILMDBReader.htm">ILMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IModule.htm">IModule</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iname_scope.htm">Iname_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlicesSpec.htm">IndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/InteractiveSession.htm">InteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iones_initializer.htm">Iones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOperation.htm">IOperation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOpError.htm">IOpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOptionalSpec.htm">IOptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iorthogonal_initializer.htm">Iorthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPaddingFIFOQueue.htm">IPaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPriorityQueue.htm">IPriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IQueueBase.htm">IQueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensor.htm">IRaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensorSpec.htm">IRaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_normal_initializer.htm">Irandom_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_uniform_initializer.htm">Irandom_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRandomShuffleQueue.htm">IRandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IReaderBase.htm">IReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRegisterGradient.htm">IRegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISession.htm">ISession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseConditionalAccumulator.htm">ISparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseFeature.htm">ISparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensor.htm">ISparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorSpec.htm">ISparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorValue.htm">ISparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensor.htm">ITensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArray.htm">ITensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArraySpec.htm">ITensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorShape.htm">ITensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorSpec.htm">ITensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITextLineReader.htm">ITextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITFRecordReader.htm">ITFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Itruncated_normal_initializer.htm">Itruncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITypeSpec.htm">ITypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IUnconnectedGradients.htm">IUnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iuniform_unit_scaling_initializer.htm">Iuniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariable.htm">IVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariable_scope.htm">Ivariable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariableScope.htm">IVariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariance_scaling_initializer.htm">Ivariance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVarLenFeature.htm">IVarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IWholeFileReader.htm">IWholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Izeros_initializer.htm">Izeros_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LazyLoader.htm">LazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LMDBReader.htm">LMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Module.htm">Module</a>
+        </li>
+				<li>
+            <a href="../tensorflow/name_scope.htm">name_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ones_initializer.htm">ones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.htm">Operation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation._InputList.htm">Operation._InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.I_InputList.htm">Operation.I_InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OpError.htm">OpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OptionalSpec.htm">OptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/orthogonal_initializer.htm">orthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PaddingFIFOQueue.htm">PaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PriorityQueue.htm">PriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/QueueBase.htm">QueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensorSpec.htm">RaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_normal_initializer.htm">random_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_uniform_initializer.htm">random_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RandomShuffleQueue.htm">RandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ReaderBase.htm">ReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RegisterGradient.htm">RegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Session.htm">Session</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseConditionalAccumulator.htm">SparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseFeature.htm">SparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensor.htm">SparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorSpec.htm">SparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorValue.htm">SparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor.htm">Tensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor`1.htm">Tensor&lt;T&gt;</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArray.htm">TensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArraySpec.htm">TensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimension.htm">TensorDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimensionSlice.htm">TensorDimensionSlice</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorShape.htm">TensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorSpec.htm">TensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TextLineReader.htm">TextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.htm">tf</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.audio.htm">tf.audio</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.htm">tf.autograph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.experimental.htm">tf.autograph.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.bitwise.htm">tf.bitwise</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.compat.htm">tf.compat</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.htm">tf.config</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.experimental.htm">tf.config.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.optimizer.htm">tf.config.optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.threading.htm">tf.config.threading</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.htm">tf.data</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.experimental.htm">tf.data.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.debugging.htm">tf.debugging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distribute.htm">tf.distribute</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distributions.htm">tf.distributions</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.errors.htm">tf.errors</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.htm">tf.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.experimental.htm">tf.estimator.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.export.htm">tf.estimator.export</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.inputs.htm">tf.estimator.inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.experimental.htm">tf.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.feature_column.htm">tf.feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.gfile.htm">tf.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.graph_util.htm">tf.graph_util</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.image.htm">tf.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.initializers.htm">tf.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.htm">tf.io</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.gfile.htm">tf.io.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.htm">tf.keras</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.activations.htm">tf.keras.activations</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.htm">tf.keras.applications</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.densenet.htm">tf.keras.applications.densenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.imagenet_utils.htm">tf.keras.applications.imagenet_utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_resnet_v2.htm">tf.keras.applications.inception_resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_v3.htm">tf.keras.applications.inception_v3</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet.htm">tf.keras.applications.mobilenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet_v2.htm">tf.keras.applications.mobilenet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.nasnet.htm">tf.keras.applications.nasnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet.htm">tf.keras.applications.resnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet_v2.htm">tf.keras.applications.resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg16.htm">tf.keras.applications.vgg16</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg19.htm">tf.keras.applications.vgg19</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.xception.htm">tf.keras.applications.xception</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.backend.htm">tf.keras.backend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.constraints.htm">tf.keras.constraints</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.htm">tf.keras.datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.boston_housing.htm">tf.keras.datasets.boston_housing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar10.htm">tf.keras.datasets.cifar10</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar100.htm">tf.keras.datasets.cifar100</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.fashion_mnist.htm">tf.keras.datasets.fashion_mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.imdb.htm">tf.keras.datasets.imdb</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.mnist.htm">tf.keras.datasets.mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.reuters.htm">tf.keras.datasets.reuters</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.estimator.htm">tf.keras.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.experimental.htm">tf.keras.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.initializers.htm">tf.keras.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.layers.htm">tf.keras.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.losses.htm">tf.keras.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.metrics.htm">tf.keras.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.htm">tf.keras.mixed_precision</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.experimental.htm">tf.keras.mixed_precision.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.models.htm">tf.keras.models</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.htm">tf.keras.optimizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.schedules.htm">tf.keras.optimizers.schedules</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.htm">tf.keras.preprocessing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.image.htm">tf.keras.preprocessing.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.regularizers.htm">tf.keras.regularizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.utils.htm">tf.keras.utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.htm">tf.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.experimental.htm">tf.layers.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.linalg.htm" class="current">tf.linalg</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.htm">tf.lite</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.htm">tf.lite.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.htm">tf.lite.experimental.microfrontend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.htm">tf.lite.experimental.microfrontend.python</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.ops.htm">tf.lite.experimental.microfrontend.python.ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.nn.htm">tf.lite.experimental.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.logging.htm">tf.logging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.losses.htm">tf.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.math.htm">tf.math</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.metrics.htm">tf.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nest.htm">tf.nest</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nn.htm">tf.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.profiler.htm">tf.profiler</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.quantization.htm">tf.quantization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.ragged.htm">tf.ragged</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.htm">tf.random</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.experimental.htm">tf.random.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.resource_loader.htm">tf.resource_loader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.htm">tf.saved_model</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.main_op.htm">tf.saved_model.main_op</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sets.htm">tf.sets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.signal.htm">tf.signal</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sparse.htm">tf.sparse</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.strings.htm">tf.strings</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.htm">tf.summary</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.experimental.htm">tf.summary.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sysconfig.htm">tf.sysconfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.test.htm">tf.test</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.htm">tf.tpu</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.experimental.htm">tf.tpu.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.htm">tf.train</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.experimental.htm">tf.train.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.user_ops.htm">tf.user_ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.htm">tf.xla</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.experimental.htm">tf.xla.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TFRecordReader.htm">TFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/truncated_normal_initializer.htm">truncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TypeSpec.htm">TypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/UnconnectedGradients.htm">UnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/uniform_unit_scaling_initializer.htm">uniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Variable.htm">Variable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variable_scope.htm">variable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableAggregation.htm">VariableAggregation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableScope.htm">VariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variance_scaling_initializer.htm">variance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VarLenFeature.htm">VarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/WholeFileReader.htm">WholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/zeros_initializer.htm">zeros_initializer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> tf.linalg</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.linalg.htm#adjoint">adjoint</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#expm">expm</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#expm_dyn">expm_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#logdet">logdet</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#logdet_dyn">logdet_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#lu">lu</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#lu_dyn">lu_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#matrix_rank">matrix_rank</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#matrix_rank_dyn">matrix_rank_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#matvec">matvec</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#matvec_dyn">matvec_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize_dyn">normalize_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#pinv">pinv</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#pinv_dyn">pinv_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_matmul">tridiagonal_matmul</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_matmul">tridiagonal_matmul</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_matmul">tridiagonal_matmul</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_matmul_dyn">tridiagonal_matmul_dyn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_solve">tridiagonal_solve</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_solve">tridiagonal_solve</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_solve_dyn">tridiagonal_solve_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.linalg.htm#adjoint_fn">adjoint_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#expm_fn">expm_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#logdet_fn">logdet_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#lu_fn">lu_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#matrix_rank_fn">matrix_rank_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#matvec_fn">matvec_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#normalize_fn">normalize_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#pinv_fn">pinv_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_matmul_fn">tridiagonal_matmul_fn</a></li>
+				<li><a href="../tensorflow/tf.linalg.htm#tridiagonal_solve_fn">tridiagonal_solve_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="adjoint" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>adjoint</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> matrix, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Transposes the last two dimensions of and conjugates tensor `matrix`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> matrix
+						</dt>
+						<dd>A `Tensor`. Must be `float16`, `float32`, `float64`, `complex64`,
+or `complex128` with shape `[..., M, M]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>The adjoint (a.k.a. Hermitian transpose a.k.a. conjugate transpose) of
+matrix. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>x = tf.constant([[1 + 1j, 2 + 2j, 3 + 3j],
+                             [4 + 4j, 5 + 5j, 6 + 6j]])
+            tf.linalg.adjoint(x)  # [[1 - 1j, 4 - 4j],
+                                  #  [2 - 2j, 5 - 5j],
+                                  #  [3 - 3j, 6 - 6j]] </pre>
+</div>
+		</div>
+	</div>
+	<div id="expm" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>expm</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Computes the matrix exponential of one or more square matrices. <p></p> exp(A) = \sum_{n=0}^\infty A^n/n! <p></p> The exponential is computed using a combination of the scaling and squaring
+method and the Pade approximation. Details can be found in:
+Nicholas J. Higham, "The scaling and squaring method for the matrix
+exponential revisited," SIAM J. Matrix Anal. Applic., 26:1179-1193, 2005. <p></p> The input is a tensor of shape `[..., M, M]` whose inner-most 2 dimensions
+form square matrices. The output is a tensor of the same shape as the input
+containing the exponential for all input submatrices `[..., :, :]`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> input
+						</dt>
+						<dd>A `Tensor`. Must be `float16`, `float32`, `float64`, `complex64`, or
+`complex128` with shape `[..., M, M]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>the matrix exponential of the input. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="expm_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>expm_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Computes the matrix exponential of one or more square matrices. <p></p> exp(A) = \sum_{n=0}^\infty A^n/n! <p></p> The exponential is computed using a combination of the scaling and squaring
+method and the Pade approximation. Details can be found in:
+Nicholas J. Higham, "The scaling and squaring method for the matrix
+exponential revisited," SIAM J. Matrix Anal. Applic., 26:1179-1193, 2005. <p></p> The input is a tensor of shape `[..., M, M]` whose inner-most 2 dimensions
+form square matrices. The output is a tensor of the same shape as the input
+containing the exponential for all input submatrices `[..., :, :]`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> input
+						</dt>
+						<dd>A `Tensor`. Must be `float16`, `float32`, `float64`, `complex64`, or
+`complex128` with shape `[..., M, M]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>the matrix exponential of the input. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="logdet" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>logdet</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> matrix, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Computes log of the determinant of a hermitian positive definite matrix. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> matrix
+						</dt>
+						<dd>A `Tensor`. Must be `float16`, `float32`, `float64`, `complex64`,
+or `complex128` with shape `[..., M, M]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op`.  Defaults to `logdet`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The natural log of the determinant of `matrix`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Compute the determinant of a matrix while reducing the chance of over- or
+            underflow:
+            A =... # shape 10 x 10
+            det = tf.exp(tf.linalg.logdet(A))  # scalar </pre>
+</div>
+		</div>
+	</div>
+	<div id="logdet_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>logdet_dyn</strong>(<span title="System.object">object</span> matrix, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Computes log of the determinant of a hermitian positive definite matrix. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> matrix
+						</dt>
+						<dd>A `Tensor`. Must be `float16`, `float32`, `float64`, `complex64`,
+or `complex128` with shape `[..., M, M]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name to give this `Op`.  Defaults to `logdet`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The natural log of the determinant of `matrix`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Compute the determinant of a matrix while reducing the chance of over- or
+            underflow:
+            A =... # shape 10 x 10
+            det = tf.exp(tf.linalg.logdet(A))  # scalar </pre>
+</div>
+		</div>
+	</div>
+	<div id="lu" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>lu</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> output_idx_type, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Computes the LU decomposition of one or more square matrices. <p></p> The input is a tensor of shape `[..., M, M]` whose inner-most 2 dimensions
+form square matrices. <p></p> The input has to be invertible. <p></p> The output consists of two tensors LU and P containing the LU decomposition
+of all input submatrices `[..., :, :]`. LU encodes the lower triangular and
+upper triangular factors. <p></p> For each input submatrix of shape `[M, M]`, L is a lower triangular matrix of
+shape `[M, M]` with unit diagonal whose entries correspond to the strictly lower
+triangular part of LU. U is a upper triangular matrix of shape `[M, M]` whose
+entries correspond to the upper triangular part, including the diagonal, of LU. <p></p> P represents a permutation matrix encoded as a list of indices each between `0`
+and `M-1`, inclusive. If P_mat denotes the permutation matrix corresponding to
+P, then the L, U and P satisfies P_mat * input = L * U. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> input
+						</dt>
+						<dd>A `Tensor`. Must be one of the following types: `float64`, `float32`, `half`, `complex64`, `complex128`.
+A tensor of shape `[..., M, M]` whose inner-most 2 dimensions form matrices of
+size `[M, M]`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> output_idx_type
+						</dt>
+						<dd>An optional <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> from: `tf.int32, tf.int64`. Defaults to <a href="..\..\tf\dtypes\int32.md"><code>tf.int32</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A tuple of `Tensor` objects (lu, p). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="lu_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>lu_dyn</strong>(<span title="System.object">object</span> input, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> output_idx_type, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Computes the LU decomposition of one or more square matrices. <p></p> The input is a tensor of shape `[..., M, M]` whose inner-most 2 dimensions
+form square matrices. <p></p> The input has to be invertible. <p></p> The output consists of two tensors LU and P containing the LU decomposition
+of all input submatrices `[..., :, :]`. LU encodes the lower triangular and
+upper triangular factors. <p></p> For each input submatrix of shape `[M, M]`, L is a lower triangular matrix of
+shape `[M, M]` with unit diagonal whose entries correspond to the strictly lower
+triangular part of LU. U is a upper triangular matrix of shape `[M, M]` whose
+entries correspond to the upper triangular part, including the diagonal, of LU. <p></p> P represents a permutation matrix encoded as a list of indices each between `0`
+and `M-1`, inclusive. If P_mat denotes the permutation matrix corresponding to
+P, then the L, U and P satisfies P_mat * input = L * U. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> input
+						</dt>
+						<dd>A `Tensor`. Must be one of the following types: `float64`, `float32`, `half`, `complex64`, `complex128`.
+A tensor of shape `[..., M, M]` whose inner-most 2 dimensions form matrices of
+size `[M, M]`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> output_idx_type
+						</dt>
+						<dd>An optional <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> from: `tf.int32, tf.int64`. Defaults to <a href="..\..\tf\dtypes\int32.md"><code>tf.int32</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A tuple of `Tensor` objects (lu, p). 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="matrix_rank" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>matrix_rank</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> a, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tol, <span title="System.bool">bool</span> validate_args, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Compute the matrix rank of one or more matrices. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> a
+						</dt>
+						<dd>(Batch of) `float`-like matrix-shaped `Tensor`(s) which are to be
+pseudo-inverted. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> tol
+						</dt>
+						<dd>Threshold below which the singular value is counted as 'zero'.
+Default value: `None` (i.e., `eps * max(rows, cols) * max(singular_val)`). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> validate_args
+						</dt>
+						<dd>When `True`, additional assertions might be embedded in the
+graph.
+Default value: `False` (i.e., no graph assertions are added). 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prefixed to ops created by this function.
+Default value: 'matrix_rank'. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="matrix_rank_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>matrix_rank_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> tol, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> validate_args, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Compute the matrix rank of one or more matrices. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> a
+						</dt>
+						<dd>(Batch of) `float`-like matrix-shaped `Tensor`(s) which are to be
+pseudo-inverted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tol
+						</dt>
+						<dd>Threshold below which the singular value is counted as 'zero'.
+Default value: `None` (i.e., `eps * max(rows, cols) * max(singular_val)`). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> validate_args
+						</dt>
+						<dd>When `True`, additional assertions might be embedded in the
+graph.
+Default value: `False` (i.e., no graph assertions are added). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>Python `str` prefixed to ops created by this function.
+Default value: 'matrix_rank'. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="matvec" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>matvec</strong>(<a href="../numpy/ndarray.htm">ndarray</a> a, <a href="../numpy/ndarray.htm">ndarray</a> b, <span title="System.bool">bool</span> transpose_a, <span title="System.bool">bool</span> adjoint_a, <span title="System.bool">bool</span> a_is_sparse, <span title="System.bool">bool</span> b_is_sparse, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Multiplies matrix `a` by vector `b`, producing `a` * `b`. <p></p> The matrix `a` must, following any transpositions, be a tensor of rank >= 2,
+and we must have `shape(b) = shape(a)[:-2] + [shape(a)[-1]]`. <p></p> Both `a` and `b` must be of the same type. The supported types are:
+`float16`, `float32`, `float64`, `int32`, `complex64`, `complex128`. <p></p> Matrix `a` can be transposed or adjointed (conjugated and transposed) on
+the fly by setting one of the corresponding flag to `True`. These are `False`
+by default. <p></p> If one or both of the inputs contain a lot of zeros, a more efficient
+multiplication algorithm can be used by setting the corresponding
+`a_is_sparse` or `b_is_sparse` flag to `True`. These are `False` by default.
+This optimization is only available for plain matrices/vectors (rank-2/1
+tensors) with datatypes `bfloat16` or `float32`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../numpy/ndarray.htm">ndarray</a></code> a
+						</dt>
+						<dd>`Tensor` of type `float16`, `float32`, `float64`, `int32`, `complex64`,
+`complex128` and rank > 1. 
+						</dd>
+						<dt>
+							<code><a href="../numpy/ndarray.htm">ndarray</a></code> b
+						</dt>
+						<dd>`Tensor` with same type and rank = `rank(a) - 1`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_a
+						</dt>
+						<dd>If `True`, `a` is transposed before multiplication. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> adjoint_a
+						</dt>
+						<dd>If `True`, `a` is conjugated and transposed before
+multiplication. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> a_is_sparse
+						</dt>
+						<dd>If `True`, `a` is treated as a sparse matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> b_is_sparse
+						</dt>
+						<dd>If `True`, `b` is treated as a sparse matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of the same type as `a` and `b` where each inner-most vector is
+the product of the corresponding matrices in `a` and vectors in `b`, e.g. if
+all transpose or adjoint attributes are `False`: <p></p> `output`[..., i] = sum_k (`a`[..., i, k] * `b`[..., k]), for all indices i. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># 2-D tensor `a`
+            # [[1, 2, 3],
+            #  [4, 5, 6]]
+            a = tf.constant([1, 2, 3, 4, 5, 6], shape=[2, 3]) <p></p> # 1-D tensor `b`
+# [7, 9, 11]
+b = tf.constant([7, 9, 11], shape=[3]) <p></p> # `a` * `b`
+# [ 58,  64]
+c = tf.matvec(a, b) <p></p> <p></p> # 3-D tensor `a`
+# [[[ 1,  2,  3],
+#   [ 4,  5,  6]],
+#  [[ 7,  8,  9],
+#   [10, 11, 12]]]
+a = tf.constant(np.arange(1, 13, dtype=np.int32),
+                shape=[2, 2, 3]) <p></p> # 2-D tensor `b`
+# [[13, 14, 15],
+#  [16, 17, 18]]
+b = tf.constant(np.arange(13, 19, dtype=np.int32),
+                shape=[2, 3]) <p></p> # `a` * `b`
+# [[ 86, 212],
+#  [410, 563]]
+c = tf.matvec(a, b) </pre>
+</div>
+		</div>
+	</div>
+	<div id="matvec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>matvec_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> b, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose_a, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> adjoint_a, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> a_is_sparse, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> b_is_sparse, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Multiplies matrix `a` by vector `b`, producing `a` * `b`. <p></p> The matrix `a` must, following any transpositions, be a tensor of rank >= 2,
+and we must have `shape(b) = shape(a)[:-2] + [shape(a)[-1]]`. <p></p> Both `a` and `b` must be of the same type. The supported types are:
+`float16`, `float32`, `float64`, `int32`, `complex64`, `complex128`. <p></p> Matrix `a` can be transposed or adjointed (conjugated and transposed) on
+the fly by setting one of the corresponding flag to `True`. These are `False`
+by default. <p></p> If one or both of the inputs contain a lot of zeros, a more efficient
+multiplication algorithm can be used by setting the corresponding
+`a_is_sparse` or `b_is_sparse` flag to `True`. These are `False` by default.
+This optimization is only available for plain matrices/vectors (rank-2/1
+tensors) with datatypes `bfloat16` or `float32`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> a
+						</dt>
+						<dd>`Tensor` of type `float16`, `float32`, `float64`, `int32`, `complex64`,
+`complex128` and rank > 1. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> b
+						</dt>
+						<dd>`Tensor` with same type and rank = `rank(a) - 1`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> transpose_a
+						</dt>
+						<dd>If `True`, `a` is transposed before multiplication. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> adjoint_a
+						</dt>
+						<dd>If `True`, `a` is conjugated and transposed before
+multiplication. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> a_is_sparse
+						</dt>
+						<dd>If `True`, `a` is treated as a sparse matrix. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> b_is_sparse
+						</dt>
+						<dd>If `True`, `b` is treated as a sparse matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>Name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor` of the same type as `a` and `b` where each inner-most vector is
+the product of the corresponding matrices in `a` and vectors in `b`, e.g. if
+all transpose or adjoint attributes are `False`: <p></p> `output`[..., i] = sum_k (`a`[..., i, k] * `b`[..., k]), for all indices i. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># 2-D tensor `a`
+            # [[1, 2, 3],
+            #  [4, 5, 6]]
+            a = tf.constant([1, 2, 3, 4, 5, 6], shape=[2, 3]) <p></p> # 1-D tensor `b`
+# [7, 9, 11]
+b = tf.constant([7, 9, 11], shape=[3]) <p></p> # `a` * `b`
+# [ 58,  64]
+c = tf.matvec(a, b) <p></p> <p></p> # 3-D tensor `a`
+# [[[ 1,  2,  3],
+#   [ 4,  5,  6]],
+#  [[ 7,  8,  9],
+#   [10, 11, 12]]]
+a = tf.constant(np.arange(1, 13, dtype=np.int32),
+                shape=[2, 2, 3]) <p></p> # 2-D tensor `b`
+# [[13, 14, 15],
+#  [16, 17, 18]]
+b = tf.constant(np.arange(13, 19, dtype=np.int32),
+                shape=[2, 3]) <p></p> # `a` * `b`
+# [[ 86, 212],
+#  [410, 563]]
+c = tf.matvec(a, b) </pre>
+</div>
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>normalize</strong>(<span title="System.object">object</span> tensor, <span title="System.double">double</span> ord, <span title="System.int">int</span> axis, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><span title="System.double">double</span></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>normalize</strong>(<span title="System.object">object</span> tensor, <span title="System.double">double</span> ord, <span title="System.Nullable<ValueTuple<int, int>>">Nullable&lt;ValueTuple&lt;int, int&gt;&gt;</span> axis, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><span title="System.double">double</span></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple<int, int>>">Nullable&lt;ValueTuple&lt;int, int&gt;&gt;</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>normalize</strong>(<span title="System.object">object</span> tensor, <span title="System.string">string</span> ord, <span title="System.int">int</span> axis, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>normalize</strong>(<span title="System.object">object</span> tensor, <span title="System.string">string</span> ord, <span title="System.Nullable<ValueTuple<int, int>>">Nullable&lt;ValueTuple&lt;int, int&gt;&gt;</span> axis, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple<int, int>>">Nullable&lt;ValueTuple&lt;int, int&gt;&gt;</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>normalize</strong>(<span title="System.object">object</span> tensor, <span title="System.int">int</span> ord, <span title="System.Nullable<ValueTuple<int, int>>">Nullable&lt;ValueTuple&lt;int, int&gt;&gt;</span> axis, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple<int, int>>">Nullable&lt;ValueTuple&lt;int, int&gt;&gt;</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>normalize</strong>(<span title="System.object">object</span> tensor, <span title="System.int">int</span> ord, <span title="System.int">int</span> axis, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>normalize_dyn</strong>(<span title="System.object">object</span> tensor, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ord, <span title="System.object">object</span> axis, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Normalizes `tensor` along dimension `axis` using specified norm. <p></p> This uses <a href="..\..\tf\norm.md"><code>tf.linalg.norm</code></a> to compute the norm along `axis`. <p></p> This function can compute several different vector norms (the 1-norm, the
+Euclidean or 2-norm, the inf-norm, and in general the p-norm for p > 0) and
+matrix norms (Frobenius, 1-norm, 2-norm and inf-norm). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>`Tensor` of types `float32`, `float64`, `complex64`, `complex128` 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> ord
+						</dt>
+						<dd>Order of the norm. Supported values are `'fro'`, `'euclidean'`, `1`,
+`2`, `np.inf` and any positive real number yielding the corresponding
+p-norm. Default is `'euclidean'` which is equivalent to Frobenius norm if
+`tensor` is a matrix and equivalent to 2-norm for vectors.
+Some restrictions apply: a) The Frobenius norm `'fro'` is not defined for
+vectors, b) If axis is a 2-tuple (matrix norm), only `'euclidean'`,
+'`fro'`, `1`, `2`, `np.inf` are supported. See the description of `axis`
+on how to compute norms for a batch of vectors or matrices stored in a
+tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> axis
+						</dt>
+						<dd>If `axis` is `None` (the default), the input is considered a vector
+and a single vector norm is computed over the entire set of values in the
+tensor, i.e. `norm(tensor, ord=ord)` is equivalent to
+`norm(reshape(tensor, [-1]), ord=ord)`. If `axis` is a Python integer, the
+input is considered a batch of vectors, and `axis` determines the axis in
+`tensor` over which to compute vector norms. If `axis` is a 2-tuple of
+Python integers it is considered a batch of matrices and `axis` determines
+the axes in `tensor` over which to compute a matrix norm.
+Negative indices are supported. Example: If you are passing a tensor that
+can be either a matrix or a batch of matrices at runtime, pass
+`axis=[-2,-1]` instead of `axis=None` to make sure that matrix norms are
+computed. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>The name of the op. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="pinv" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>pinv</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> a, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rcond, <span title="System.bool">bool</span> validate_args, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Compute the Moore-Penrose pseudo-inverse of one or more matrices. <p></p> Calculate the [generalized inverse of a matrix](
+https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) using its
+singular-value decomposition (SVD) and including all large singular values. <p></p> The pseudo-inverse of a matrix `A`, is defined as: 'the matrix that 'solves'
+[the least-squares problem] `A @ x = b`,' i.e., if `x_hat` is a solution, then
+`A_pinv` is the matrix such that `x_hat = A_pinv @ b`. It can be shown that if
+`U @ Sigma @ V.T = A` is the singular value decomposition of `A`, then
+`A_pinv = V @ inv(Sigma) U^T`. [(Strang, 1980)][1] <p></p> This function is analogous to [`numpy.linalg.pinv`](
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.pinv.html).
+It differs only in default value of `rcond`. In `numpy.linalg.pinv`, the
+default `rcond` is `1e-15`. Here the default is
+`10. * max(num_rows, num_cols) * np.finfo(dtype).eps`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> a
+						</dt>
+						<dd>(Batch of) `float`-like matrix-shaped `Tensor`(s) which are to be
+pseudo-inverted. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> rcond
+						</dt>
+						<dd>`Tensor` of small singular value cutoffs.  Singular values smaller
+(in modulus) than `rcond` * largest_singular_value (again, in modulus) are
+set to zero. Must broadcast against `tf.shape(a)[:-2]`.
+Default value: `10. * max(num_rows, num_cols) * np.finfo(a.dtype).eps`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> validate_args
+						</dt>
+						<dd>When `True`, additional assertions might be embedded in the
+graph.
+Default value: `False` (i.e., no graph assertions are added). 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prefixed to ops created by this function.
+Default value: 'pinv'. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="pinv_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>pinv_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> rcond, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> validate_args, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Compute the Moore-Penrose pseudo-inverse of one or more matrices. <p></p> Calculate the [generalized inverse of a matrix](
+https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) using its
+singular-value decomposition (SVD) and including all large singular values. <p></p> The pseudo-inverse of a matrix `A`, is defined as: 'the matrix that 'solves'
+[the least-squares problem] `A @ x = b`,' i.e., if `x_hat` is a solution, then
+`A_pinv` is the matrix such that `x_hat = A_pinv @ b`. It can be shown that if
+`U @ Sigma @ V.T = A` is the singular value decomposition of `A`, then
+`A_pinv = V @ inv(Sigma) U^T`. [(Strang, 1980)][1] <p></p> This function is analogous to [`numpy.linalg.pinv`](
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.pinv.html).
+It differs only in default value of `rcond`. In `numpy.linalg.pinv`, the
+default `rcond` is `1e-15`. Here the default is
+`10. * max(num_rows, num_cols) * np.finfo(dtype).eps`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> a
+						</dt>
+						<dd>(Batch of) `float`-like matrix-shaped `Tensor`(s) which are to be
+pseudo-inverted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> rcond
+						</dt>
+						<dd>`Tensor` of small singular value cutoffs.  Singular values smaller
+(in modulus) than `rcond` * largest_singular_value (again, in modulus) are
+set to zero. Must broadcast against `tf.shape(a)[:-2]`.
+Default value: `10. * max(num_rows, num_cols) * np.finfo(a.dtype).eps`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> validate_args
+						</dt>
+						<dd>When `True`, additional assertions might be embedded in the
+graph.
+Default value: `False` (i.e., no graph assertions are added). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>Python `str` prefixed to ops created by this function.
+Default value: 'pinv'. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="tridiagonal_matmul" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>tridiagonal_matmul</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> diagonals, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <span title="System.string">string</span> diagonals_format, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Multiplies tridiagonal matrix by matrix. <p></p> `diagonals` is representation of 3-diagonal NxN matrix, which depends on
+`diagonals_format`. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> If `sequence` format, `diagonals` is list or tuple of three tensors:
+`[superdiag, maindiag, subdiag]`, each having shape [..., M]. Last element
+of `superdiag` first element of `subdiag` are ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `sequence` format is recommended as the one with the best performance. <p></p> `rhs` is matrix to the right of multiplication. It has shape `[..., M, N]`. <p></p> Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M, N] and with the same dtype as `diagonals`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> diagonals_format
+						</dt>
+						<dd>one of `sequence`, or `compact`. Default is `compact`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M, N] containing the result of multiplication. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>superdiag = tf.constant([-1, -1, 0], dtype=tf.float64)
+            maindiag = tf.constant([2, 2, 2], dtype=tf.float64)
+            subdiag = tf.constant([0, -1, -1], dtype=tf.float64)
+            diagonals = [superdiag, maindiag, subdiag]
+            rhs = tf.constant([[1, 1], [1, 1], [1, 1]], dtype=tf.float64)
+            x = tf.linalg.tridiagonal_matmul(diagonals, rhs, diagonals_format='sequence') </pre>
+</div>
+		</div>
+	</div>
+	<div id="tridiagonal_matmul" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>tridiagonal_matmul</strong>(<span title="System.ValueTuple<IGraphNodeBase, object, object>">ValueTuple&lt;IGraphNodeBase, object, object&gt;</span> diagonals, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <span title="System.string">string</span> diagonals_format, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Multiplies tridiagonal matrix by matrix. <p></p> `diagonals` is representation of 3-diagonal NxN matrix, which depends on
+`diagonals_format`. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> If `sequence` format, `diagonals` is list or tuple of three tensors:
+`[superdiag, maindiag, subdiag]`, each having shape [..., M]. Last element
+of `superdiag` first element of `subdiag` are ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `sequence` format is recommended as the one with the best performance. <p></p> `rhs` is matrix to the right of multiplication. It has shape `[..., M, N]`. <p></p> Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<IGraphNodeBase, object, object>">ValueTuple&lt;IGraphNodeBase, object, object&gt;</span></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M, N] and with the same dtype as `diagonals`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> diagonals_format
+						</dt>
+						<dd>one of `sequence`, or `compact`. Default is `compact`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M, N] containing the result of multiplication. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>superdiag = tf.constant([-1, -1, 0], dtype=tf.float64)
+            maindiag = tf.constant([2, 2, 2], dtype=tf.float64)
+            subdiag = tf.constant([0, -1, -1], dtype=tf.float64)
+            diagonals = [superdiag, maindiag, subdiag]
+            rhs = tf.constant([[1, 1], [1, 1], [1, 1]], dtype=tf.float64)
+            x = tf.linalg.tridiagonal_matmul(diagonals, rhs, diagonals_format='sequence') </pre>
+</div>
+		</div>
+	</div>
+	<div id="tridiagonal_matmul" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>tridiagonal_matmul</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> diagonals, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <span title="System.string">string</span> diagonals_format, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Multiplies tridiagonal matrix by matrix. <p></p> `diagonals` is representation of 3-diagonal NxN matrix, which depends on
+`diagonals_format`. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> If `sequence` format, `diagonals` is list or tuple of three tensors:
+`[superdiag, maindiag, subdiag]`, each having shape [..., M]. Last element
+of `superdiag` first element of `subdiag` are ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `sequence` format is recommended as the one with the best performance. <p></p> `rhs` is matrix to the right of multiplication. It has shape `[..., M, N]`. <p></p> Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M, N] and with the same dtype as `diagonals`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> diagonals_format
+						</dt>
+						<dd>one of `sequence`, or `compact`. Default is `compact`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M, N] containing the result of multiplication. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>superdiag = tf.constant([-1, -1, 0], dtype=tf.float64)
+            maindiag = tf.constant([2, 2, 2], dtype=tf.float64)
+            subdiag = tf.constant([0, -1, -1], dtype=tf.float64)
+            diagonals = [superdiag, maindiag, subdiag]
+            rhs = tf.constant([[1, 1], [1, 1], [1, 1]], dtype=tf.float64)
+            x = tf.linalg.tridiagonal_matmul(diagonals, rhs, diagonals_format='sequence') </pre>
+</div>
+		</div>
+	</div>
+	<div id="tridiagonal_matmul_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tridiagonal_matmul_dyn</strong>(<span title="System.object">object</span> diagonals, <span title="System.object">object</span> rhs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> diagonals_format, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Multiplies tridiagonal matrix by matrix. <p></p> `diagonals` is representation of 3-diagonal NxN matrix, which depends on
+`diagonals_format`. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> If `sequence` format, `diagonals` is list or tuple of three tensors:
+`[superdiag, maindiag, subdiag]`, each having shape [..., M]. Last element
+of `superdiag` first element of `subdiag` are ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `sequence` format is recommended as the one with the best performance. <p></p> `rhs` is matrix to the right of multiplication. It has shape `[..., M, N]`. <p></p> Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M, N] and with the same dtype as `diagonals`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> diagonals_format
+						</dt>
+						<dd>one of `sequence`, or `compact`. Default is `compact`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M, N] containing the result of multiplication. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>superdiag = tf.constant([-1, -1, 0], dtype=tf.float64)
+            maindiag = tf.constant([2, 2, 2], dtype=tf.float64)
+            subdiag = tf.constant([0, -1, -1], dtype=tf.float64)
+            diagonals = [superdiag, maindiag, subdiag]
+            rhs = tf.constant([[1, 1], [1, 1], [1, 1]], dtype=tf.float64)
+            x = tf.linalg.tridiagonal_matmul(diagonals, rhs, diagonals_format='sequence') </pre>
+</div>
+		</div>
+	</div>
+	<div id="tridiagonal_solve" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>tridiagonal_solve</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> diagonals, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <span title="System.string">string</span> diagonals_format, <span title="System.bool">bool</span> transpose_rhs, <span title="System.bool">bool</span> conjugate_rhs, <span title="System.string">string</span> name, <span title="System.bool">bool</span> partial_pivoting)
+		</h4>
+		<div class="content">Solves tridiagonal systems of equations. <p></p> The input can be supplied in various formats: `matrix`, `sequence` and
+`compact`, specified by the `diagonals_format` arg. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> In `sequence` format, `diagonals` are supplied as a tuple or list of three
+tensors of shapes `[..., N]`, `[..., M]`, `[..., N]` representing
+superdiagonals, diagonals, and subdiagonals, respectively. `N` can be either
+`M-1` or `M`; in the latter case, the last element of superdiagonal and the
+first element of subdiagonal will be ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `compact` format is recommended as the one with best performance. In case
+you need to cast a tensor into a compact format manually, use <a href="..\..\tf\gather_nd.md"><code>tf.gather_nd</code></a>.
+An example for a tensor of shape [m, m]:
+Regardless of the `diagonals_format`, `rhs` is a tensor of shape `[..., M]` or
+`[..., M, K]`. The latter allows to simultaneously solve K systems with the
+same left-hand sides and K different right-hand sides. If `transpose_rhs`
+is set to `True` the expected shape is `[..., M]` or `[..., K, M]`. <p></p> The batch dimensions, denoted as `...`, must be the same in `diagonals` and
+`rhs`. <p></p> The output is a tensor of the same shape as `rhs`: either `[..., M]` or
+`[..., M, K]`. <p></p> The op isn't guaranteed to raise an error if the input matrix is not
+invertible. <a href="..\..\tf\debugging\check_numerics.md"><code>tf.debugging.check_numerics</code></a> can be applied to the output to
+detect invertibility problems. <p></p> **Note**: with large batch sizes, the computation on the GPU may be slow, if
+either `partial_pivoting=True` or there are multiple right-hand sides
+(`K > 1`). If this issue arises, consider if it's possible to disable pivoting
+and have `K = 1`, or, alternatively, consider using CPU. <p></p> On CPU, solution is computed via Gaussian elimination with or without partial
+pivoting, depending on `partial_pivoting` parameter. On GPU, Nvidia's cuSPARSE
+library is used: https://docs.nvidia.com/cuda/cusparse/index.html#gtsv 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as
+`diagonals`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> diagonals_format
+						</dt>
+						<dd>one of `matrix`, `sequence`, or `compact`. Default is
+`compact`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_rhs
+						</dt>
+						<dd>If `True`, `rhs` is transposed before solving (has no effect
+if the shape of rhs is [..., M]). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> conjugate_rhs
+						</dt>
+						<dd>If `True`, `rhs` is conjugated before solving. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> partial_pivoting
+						</dt>
+						<dd>whether to perform partial pivoting. `True` by default.
+Partial pivoting makes the procedure more stable, but slower. Partial
+pivoting is unnecessary in some cases, including diagonally dominant and
+symmetric positive definite matrices (see e.g. theorem 9.12 in [1]). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M] or [..., M, K] containing the solutions. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>rhs = tf.constant([...])
+            matrix = tf.constant([[...]])
+            m = matrix.shape[0]
+            dummy_idx = [0, 0]  # An arbitrary element to use as a dummy
+            indices = [[[i, i + 1] for i in range(m - 1)] + [dummy_idx],  # Superdiagonal
+                     [[i, i] for i in range(m)],                          # Diagonal
+                     [dummy_idx] + [[i + 1, i] for i in range(m - 1)]]    # Subdiagonal
+            diagonals=tf.gather_nd(matrix, indices)
+            x = tf.linalg.tridiagonal_solve(diagonals, rhs) </pre>
+</div>
+		</div>
+	</div>
+	<div id="tridiagonal_solve" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>tridiagonal_solve</strong>(<span title="System.ValueTuple<IGraphNodeBase, object, object>">ValueTuple&lt;IGraphNodeBase, object, object&gt;</span> diagonals, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <span title="System.string">string</span> diagonals_format, <span title="System.bool">bool</span> transpose_rhs, <span title="System.bool">bool</span> conjugate_rhs, <span title="System.string">string</span> name, <span title="System.bool">bool</span> partial_pivoting)
+		</h4>
+		<div class="content">Solves tridiagonal systems of equations. <p></p> The input can be supplied in various formats: `matrix`, `sequence` and
+`compact`, specified by the `diagonals_format` arg. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> In `sequence` format, `diagonals` are supplied as a tuple or list of three
+tensors of shapes `[..., N]`, `[..., M]`, `[..., N]` representing
+superdiagonals, diagonals, and subdiagonals, respectively. `N` can be either
+`M-1` or `M`; in the latter case, the last element of superdiagonal and the
+first element of subdiagonal will be ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `compact` format is recommended as the one with best performance. In case
+you need to cast a tensor into a compact format manually, use <a href="..\..\tf\gather_nd.md"><code>tf.gather_nd</code></a>.
+An example for a tensor of shape [m, m]:
+Regardless of the `diagonals_format`, `rhs` is a tensor of shape `[..., M]` or
+`[..., M, K]`. The latter allows to simultaneously solve K systems with the
+same left-hand sides and K different right-hand sides. If `transpose_rhs`
+is set to `True` the expected shape is `[..., M]` or `[..., K, M]`. <p></p> The batch dimensions, denoted as `...`, must be the same in `diagonals` and
+`rhs`. <p></p> The output is a tensor of the same shape as `rhs`: either `[..., M]` or
+`[..., M, K]`. <p></p> The op isn't guaranteed to raise an error if the input matrix is not
+invertible. <a href="..\..\tf\debugging\check_numerics.md"><code>tf.debugging.check_numerics</code></a> can be applied to the output to
+detect invertibility problems. <p></p> **Note**: with large batch sizes, the computation on the GPU may be slow, if
+either `partial_pivoting=True` or there are multiple right-hand sides
+(`K > 1`). If this issue arises, consider if it's possible to disable pivoting
+and have `K = 1`, or, alternatively, consider using CPU. <p></p> On CPU, solution is computed via Gaussian elimination with or without partial
+pivoting, depending on `partial_pivoting` parameter. On GPU, Nvidia's cuSPARSE
+library is used: https://docs.nvidia.com/cuda/cusparse/index.html#gtsv 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<IGraphNodeBase, object, object>">ValueTuple&lt;IGraphNodeBase, object, object&gt;</span></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as
+`diagonals`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> diagonals_format
+						</dt>
+						<dd>one of `matrix`, `sequence`, or `compact`. Default is
+`compact`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_rhs
+						</dt>
+						<dd>If `True`, `rhs` is transposed before solving (has no effect
+if the shape of rhs is [..., M]). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> conjugate_rhs
+						</dt>
+						<dd>If `True`, `rhs` is conjugated before solving. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> partial_pivoting
+						</dt>
+						<dd>whether to perform partial pivoting. `True` by default.
+Partial pivoting makes the procedure more stable, but slower. Partial
+pivoting is unnecessary in some cases, including diagonally dominant and
+symmetric positive definite matrices (see e.g. theorem 9.12 in [1]). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M] or [..., M, K] containing the solutions. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>rhs = tf.constant([...])
+            matrix = tf.constant([[...]])
+            m = matrix.shape[0]
+            dummy_idx = [0, 0]  # An arbitrary element to use as a dummy
+            indices = [[[i, i + 1] for i in range(m - 1)] + [dummy_idx],  # Superdiagonal
+                     [[i, i] for i in range(m)],                          # Diagonal
+                     [dummy_idx] + [[i + 1, i] for i in range(m - 1)]]    # Subdiagonal
+            diagonals=tf.gather_nd(matrix, indices)
+            x = tf.linalg.tridiagonal_solve(diagonals, rhs) </pre>
+</div>
+		</div>
+	</div>
+	<div id="tridiagonal_solve_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tridiagonal_solve_dyn</strong>(<span title="System.object">object</span> diagonals, <span title="System.object">object</span> rhs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> diagonals_format, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose_rhs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> conjugate_rhs, <span title="System.object">object</span> name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> partial_pivoting)
+		</h4>
+		<div class="content">Solves tridiagonal systems of equations. <p></p> The input can be supplied in various formats: `matrix`, `sequence` and
+`compact`, specified by the `diagonals_format` arg. <p></p> In `matrix` format, `diagonals` must be a tensor of shape `[..., M, M]`, with
+two inner-most dimensions representing the square tridiagonal matrices.
+Elements outside of the three diagonals will be ignored. <p></p> In `sequence` format, `diagonals` are supplied as a tuple or list of three
+tensors of shapes `[..., N]`, `[..., M]`, `[..., N]` representing
+superdiagonals, diagonals, and subdiagonals, respectively. `N` can be either
+`M-1` or `M`; in the latter case, the last element of superdiagonal and the
+first element of subdiagonal will be ignored. <p></p> In `compact` format the three diagonals are brought together into one tensor
+of shape `[..., 3, M]`, with last two dimensions containing superdiagonals,
+diagonals, and subdiagonals, in order. Similarly to `sequence` format,
+elements `diagonals[..., 0, M-1]` and `diagonals[..., 2, 0]` are ignored. <p></p> The `compact` format is recommended as the one with best performance. In case
+you need to cast a tensor into a compact format manually, use <a href="..\..\tf\gather_nd.md"><code>tf.gather_nd</code></a>.
+An example for a tensor of shape [m, m]:
+Regardless of the `diagonals_format`, `rhs` is a tensor of shape `[..., M]` or
+`[..., M, K]`. The latter allows to simultaneously solve K systems with the
+same left-hand sides and K different right-hand sides. If `transpose_rhs`
+is set to `True` the expected shape is `[..., M]` or `[..., K, M]`. <p></p> The batch dimensions, denoted as `...`, must be the same in `diagonals` and
+`rhs`. <p></p> The output is a tensor of the same shape as `rhs`: either `[..., M]` or
+`[..., M, K]`. <p></p> The op isn't guaranteed to raise an error if the input matrix is not
+invertible. <a href="..\..\tf\debugging\check_numerics.md"><code>tf.debugging.check_numerics</code></a> can be applied to the output to
+detect invertibility problems. <p></p> **Note**: with large batch sizes, the computation on the GPU may be slow, if
+either `partial_pivoting=True` or there are multiple right-hand sides
+(`K > 1`). If this issue arises, consider if it's possible to disable pivoting
+and have `K = 1`, or, alternatively, consider using CPU. <p></p> On CPU, solution is computed via Gaussian elimination with or without partial
+pivoting, depending on `partial_pivoting` parameter. On GPU, Nvidia's cuSPARSE
+library is used: https://docs.nvidia.com/cuda/cusparse/index.html#gtsv 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> diagonals
+						</dt>
+						<dd>A `Tensor` or tuple of `Tensor`s describing left-hand sides. The
+shape depends of `diagonals_format`, see description above. Must be
+`float32`, `float64`, `complex64`, or `complex128`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> rhs
+						</dt>
+						<dd>A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as
+`diagonals`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> diagonals_format
+						</dt>
+						<dd>one of `matrix`, `sequence`, or `compact`. Default is
+`compact`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> transpose_rhs
+						</dt>
+						<dd>If `True`, `rhs` is transposed before solving (has no effect
+if the shape of rhs is [..., M]). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> conjugate_rhs
+						</dt>
+						<dd>If `True`, `rhs` is conjugated before solving. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name to give this `Op` (optional). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> partial_pivoting
+						</dt>
+						<dd>whether to perform partial pivoting. `True` by default.
+Partial pivoting makes the procedure more stable, but slower. Partial
+pivoting is unnecessary in some cases, including diagonally dominant and
+symmetric positive definite matrices (see e.g. theorem 9.12 in [1]). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor` of shape [..., M] or [..., M, K] containing the solutions. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>rhs = tf.constant([...])
+            matrix = tf.constant([[...]])
+            m = matrix.shape[0]
+            dummy_idx = [0, 0]  # An arbitrary element to use as a dummy
+            indices = [[[i, i + 1] for i in range(m - 1)] + [dummy_idx],  # Superdiagonal
+                     [[i, i] for i in range(m)],                          # Diagonal
+                     [dummy_idx] + [[i + 1, i] for i in range(m - 1)]]    # Subdiagonal
+            diagonals=tf.gather_nd(matrix, indices)
+            x = tf.linalg.tridiagonal_solve(diagonals, rhs) </pre>
+</div>
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="adjoint_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>adjoint_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="expm_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>expm_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="logdet_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>logdet_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="lu_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>lu_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="matrix_rank_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>matrix_rank_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="matvec_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>matvec_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="normalize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>normalize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="pinv_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>pinv_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tridiagonal_matmul_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>tridiagonal_matmul_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tridiagonal_solve_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>tridiagonal_solve_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

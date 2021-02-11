@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>CrossShardOptimizer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.tpu</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.tpu/CrossShardOptimizer.htm" class="current">CrossShardOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.tpu/ICrossShardOptimizer.htm">ICrossShardOptimizer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> CrossShardOptimizer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.tpu</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.train/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.tpu/ICrossShardOptimizer.htm">ICrossShardOptimizer</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">An optimizer that averages gradients across TPU shards. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#compute_gradients_dyn">compute_gradients_dyn</a></li>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.tpu/CrossShardOptimizer.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<span title="System.object">object</span> loss, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> var_list, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Compute gradients of "loss" for the variables in "var_list". <p></p> This simply wraps the compute_gradients() from the real optimizer. The
+gradients will be aggregated in the apply_gradients() so that user can
+modify the gradients like clipping with per replica global norm if needed.
+The global norm with aggregated gradients can be bad as one replica's huge
+gradients can hurt the gradients from other replicas. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKey.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Keyword arguments for compute_gradients(). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<span title="System.object">object</span> loss, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> var_list, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Compute gradients of "loss" for the variables in "var_list". <p></p> This simply wraps the compute_gradients() from the real optimizer. The
+gradients will be aggregated in the apply_gradients() so that user can
+modify the gradients like clipping with per replica global norm if needed.
+The global norm with aggregated gradients can be bad as one replica's huge
+gradients can hurt the gradients from other replicas. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKey.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Keyword arguments for compute_gradients(). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> var_list, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Compute gradients of "loss" for the variables in "var_list". <p></p> This simply wraps the compute_gradients() from the real optimizer. The
+gradients will be aggregated in the apply_gradients() so that user can
+modify the gradients like clipping with per replica global norm if needed.
+The global norm with aggregated gradients can be bad as one replica's huge
+gradients can hurt the gradients from other replicas. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKey.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Keyword arguments for compute_gradients(). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> var_list, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Compute gradients of "loss" for the variables in "var_list". <p></p> This simply wraps the compute_gradients() from the real optimizer. The
+gradients will be aggregated in the apply_gradients() so that user can
+modify the gradients like clipping with per replica global norm if needed.
+The global norm with aggregated gradients can be bad as one replica's huge
+gradients can hurt the gradients from other replicas. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKey.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Keyword arguments for compute_gradients(). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.object">object</span> var_list, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Compute gradients of "loss" for the variables in "var_list". <p></p> This simply wraps the compute_gradients() from the real optimizer. The
+gradients will be aggregated in the apply_gradients() so that user can
+modify the gradients like clipping with per replica global norm if needed.
+The global norm with aggregated gradients can be bad as one replica's huge
+gradients can hurt the gradients from other replicas. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKey.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Keyword arguments for compute_gradients(). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.tpu/CrossShardOptimizer.htm">CrossShardOptimizer</a> <strong>NewDyn</strong>(<span title="System.object">object</span> opt, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reduction, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name, <span title="System.object">object</span> group_assignment)
+		</h4>
+		<div class="content">Construct a new cross-shard optimizer. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> opt
+						</dt>
+						<dd>An existing `Optimizer` to encapsulate. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> reduction
+						</dt>
+						<dd>The reduction to apply to the shard losses. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Optional name prefix for the operations created when applying
+gradients. Defaults to "CrossShardOptimizer". 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape
+[num_groups, num_replicas_per_group] which describles how to apply
+optimizer to subgroups. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

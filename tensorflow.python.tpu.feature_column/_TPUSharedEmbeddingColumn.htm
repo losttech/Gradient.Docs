@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>_TPUSharedEmbeddingColumn - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.tpu.feature_column</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/_TPUBaseEmbeddingColumn.htm">_TPUBaseEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/_TPUEmbeddingColumn.htm">_TPUEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm" class="current">_TPUSharedEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/feature_column.htm">feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/I_TPUBaseEmbeddingColumn.htm">I_TPUBaseEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/I_TPUEmbeddingColumn.htm">I_TPUEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/I_TPUSharedEmbeddingColumn.htm">I_TPUSharedEmbeddingColumn</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> _TPUSharedEmbeddingColumn</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.tpu.feature_column</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.tpu.feature_column/_TPUBaseEmbeddingColumn.htm">_TPUBaseEmbeddingColumn</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.python.tpu.feature_column/I_TPUSharedEmbeddingColumn.htm">I_TPUSharedEmbeddingColumn</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#categorical_column">categorical_column</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#ckpt_to_load_from">ckpt_to_load_from</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#combiner">combiner</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#dimension">dimension</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#initializer">initializer</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#max_norm">max_norm</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#name">name</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#shared_embedding_collection_name">shared_embedding_collection_name</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#tensor_name_in_ckpt">tensor_name_in_ckpt</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#TensorSequenceLengthPair">TensorSequenceLengthPair</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#TensorSequenceLengthPair_dyn">TensorSequenceLengthPair_dyn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm#trainable">trainable</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm">_TPUSharedEmbeddingColumn</a> <strong>NewDyn</strong>(<span title="System.object">object</span> categorical_column, <span title="System.object">object</span> dimension, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> combiner, <span title="System.object">object</span> initializer, <span title="System.object">object</span> shared_embedding_collection_name, <span title="System.object">object</span> ckpt_to_load_from, <span title="System.object">object</span> tensor_name_in_ckpt, <span title="System.object">object</span> max_norm, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> trainable, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_sequence_length, <span title="System.object">object</span> learning_rate_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="categorical_column" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>categorical_column</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ckpt_to_load_from" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ckpt_to_load_from</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="combiner" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>combiner</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dimension" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dimension</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initializer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initializer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="max_norm" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>max_norm</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shared_embedding_collection_name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shared_embedding_collection_name</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tensor_name_in_ckpt" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tensor_name_in_ckpt</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TensorSequenceLengthPair" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>TensorSequenceLengthPair</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TensorSequenceLengthPair_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>TensorSequenceLengthPair_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

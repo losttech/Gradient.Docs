@@ -1,0 +1,1239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>PeepholeLSTMCell - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.experimental</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.experimental/CosineDecay.htm">CosineDecay</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/CosineDecayRestarts.htm">CosineDecayRestarts</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/ICosineDecay.htm">ICosineDecay</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/ICosineDecayRestarts.htm">ICosineDecayRestarts</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/ILinearCosineDecay.htm">ILinearCosineDecay</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/ILinearModel.htm">ILinearModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/INoisyLinearCosineDecay.htm">INoisyLinearCosineDecay</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/IPeepholeLSTMCell.htm">IPeepholeLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/ISequenceFeatures.htm">ISequenceFeatures</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/IWideDeepModel.htm">IWideDeepModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/LinearCosineDecay.htm">LinearCosineDecay</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/LinearModel.htm">LinearModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/NoisyLinearCosineDecay.htm">NoisyLinearCosineDecay</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm" class="current">PeepholeLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/SequenceFeatures.htm">SequenceFeatures</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.experimental/WideDeepModel.htm">WideDeepModel</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> PeepholeLSTMCell</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.experimental</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.layers/LSTMCell.htm">LSTMCell</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.experimental/IPeepholeLSTMCell.htm">IPeepholeLSTMCell</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Equivalent to LSTMCell class but adds peephole connections. <p></p> Peephole connections allow the gates to utilize the previous internal state as
+well as the previous hidden state (which is what LSTMCell is limited to).
+This allows PeepholeLSTMCell to better learn precise timings over LSTMCell. <p></p> From [Gers et al.](http://www.jmlr.org/papers/volume3/gers02a/gers02a.pdf): <p></p> "We find that LSTM augmented by 'peephole connections' from its internal
+cells to its multiplicative gates can learn the fine distinction between
+sequences of spikes spaced either 50 or 49 time steps apart without the help
+of any short training exemplars." <p></p> The peephole implementation is based on: <p></p> [Long short-term memory recurrent neural network architectures for
+large scale acoustic modeling.
+](https://research.google.com/pubs/archive/43905.pdf) <p></p> Example: <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Create 2 PeepholeLSTMCells
+            peephole_lstm_cells = [PeepholeLSTMCell(size) for size in [128, 256]]
+            # Create a layer composed sequentially of the peephole LSTM cells.
+            layer = RNN(peephole_lstm_cells)
+            input = keras.Input((timesteps, input_dim))
+            output = layer(input) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#build">build</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#build">build</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#build">build</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#build">build</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#build">build</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#call">call</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell">get_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell">get_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell">get_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell">get_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell">get_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell">get_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_dropout_mask_for_cell_dyn">get_dropout_mask_for_cell_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_recurrent_dropout_mask_for_cell">get_recurrent_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_recurrent_dropout_mask_for_cell">get_recurrent_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_recurrent_dropout_mask_for_cell">get_recurrent_dropout_mask_for_cell</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#get_recurrent_dropout_mask_for_cell_dyn">get_recurrent_dropout_mask_for_cell_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#reset_dropout_mask">reset_dropout_mask</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#reset_dropout_mask_dyn">reset_dropout_mask_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#reset_recurrent_dropout_mask">reset_recurrent_dropout_mask</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#reset_recurrent_dropout_mask_dyn">reset_recurrent_dropout_mask_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#activation">activation</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#activity_regularizer">activity_regularizer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#activity_regularizer_dyn">activity_regularizer_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#bias">bias</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#bias_constraint">bias_constraint</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#bias_initializer">bias_initializer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#bias_regularizer">bias_regularizer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#built">built</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#dropout">dropout</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#dynamic">dynamic</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#dynamic_dyn">dynamic_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#forget_gate_peephole_weights">forget_gate_peephole_weights</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#implementation">implementation</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#inbound_nodes">inbound_nodes</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#inbound_nodes_dyn">inbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input">input</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_dyn">input_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_gate_peephole_weights">input_gate_peephole_weights</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_mask">input_mask</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_mask_dyn">input_mask_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_shape">input_shape</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_shape_dyn">input_shape_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_spec">input_spec</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#input_spec_dyn">input_spec_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#kernel">kernel</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#kernel_constraint">kernel_constraint</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#kernel_initializer">kernel_initializer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#kernel_regularizer">kernel_regularizer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#metrics">metrics</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#metrics_dyn">metrics_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#name">name</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#outbound_nodes">outbound_nodes</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#outbound_nodes_dyn">outbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output">output</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_dyn">output_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_gate_peephole_weights">output_gate_peephole_weights</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_mask">output_mask</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_mask_dyn">output_mask_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_shape">output_shape</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_shape_dyn">output_shape_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#output_size">output_size</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#recurrent_activation">recurrent_activation</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#recurrent_constraint">recurrent_constraint</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#recurrent_dropout">recurrent_dropout</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#recurrent_initializer">recurrent_initializer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#recurrent_kernel">recurrent_kernel</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#recurrent_regularizer">recurrent_regularizer</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#state_size">state_size</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#stateful">stateful</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#supports_masking">supports_masking</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#unit_forget_bias">unit_forget_bias</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#units">units</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#use_bias">use_bias</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="build" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>build</strong>(<a href="../numpy/int32.htm">int32</a> input_shape)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>build</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> input_shape)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>build</strong>(<span title="System.ValueTuple<int, object>">ValueTuple&lt;int, object&gt;</span> input_shape)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>build</strong>(<span title="System.ValueTuple<Nullable<int>>">ValueTuple&lt;Nullable&lt;int&gt;&gt;</span> input_shape)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="build" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>build</strong>(<a href="../tensorflow/Dimension.htm">Dimension</a> input_shape)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> states, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.object">object</span> states, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> states, <span title="System.bool">bool</span> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> states, <span title="System.bool">bool</span> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> states, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> states, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> states, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> states, <span title="System.bool">bool</span> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> states, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> states, <span title="System.bool">bool</span> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> states, <span title="System.bool">bool</span> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.object">object</span> states, <span title="System.bool">bool</span> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.bool">bool</span> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.int">int</span> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.int">int</span> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.bool">bool</span> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_dropout_mask_for_cell_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_dropout_mask_for_cell_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_recurrent_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_recurrent_dropout_mask_for_cell</strong>(<span title="System.ValueTuple<object, object, object, object>">ValueTuple&lt;object, object, object, object&gt;</span> inputs, <span title="System.bool">bool</span> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_recurrent_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_recurrent_dropout_mask_for_cell</strong>(<span title="System.ValueTuple<object, object, object, object>">ValueTuple&lt;object, object, object, object&gt;</span> inputs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_recurrent_dropout_mask_for_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_recurrent_dropout_mask_for_cell</strong>(<span title="System.ValueTuple<object, object, object, object>">ValueTuple&lt;object, object, object, object&gt;</span> inputs, <span title="System.int">int</span> training, <span title="System.int">int</span> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_recurrent_dropout_mask_for_cell_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_recurrent_dropout_mask_for_cell_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> count)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reset_dropout_mask" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>reset_dropout_mask</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reset_dropout_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reset_dropout_mask_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reset_recurrent_dropout_mask" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>reset_recurrent_dropout_mask</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reset_recurrent_dropout_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reset_recurrent_dropout_mask_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.keras.experimental/PeepholeLSTMCell.htm">PeepholeLSTMCell</a> <strong>NewDyn</strong>(<span title="System.object">object</span> units, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> activation, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> recurrent_activation, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_bias, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> kernel_initializer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> recurrent_initializer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> bias_initializer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> unit_forget_bias, <span title="System.object">object</span> kernel_regularizer, <span title="System.object">object</span> recurrent_regularizer, <span title="System.object">object</span> bias_regularizer, <span title="System.object">object</span> kernel_constraint, <span title="System.object">object</span> recurrent_constraint, <span title="System.object">object</span> bias_constraint, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> dropout, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> recurrent_dropout, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> implementation, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="activation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activation</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>activity_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activity_regularizer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bias" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bias</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bias_constraint" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bias_constraint</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bias_initializer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bias_initializer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bias_regularizer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bias_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="built" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>built</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dropout" class="method">
+		<h4>
+			<span title="System.double">double</span> <strong>dropout</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>dynamic</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dynamic_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="forget_gate_peephole_weights" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>forget_gate_peephole_weights</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="implementation" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>implementation</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Node>">IList&lt;Node&gt;</span> <strong>inbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_gate_peephole_weights" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_gate_peephole_weights</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="kernel" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>kernel</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="kernel_constraint" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>kernel_constraint</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="kernel_initializer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>kernel_initializer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="kernel_regularizer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>kernel_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>metrics</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>metrics_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>outbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>output</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_gate_peephole_weights" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_gate_peephole_weights</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_size" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>output_size</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="recurrent_activation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>recurrent_activation</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="recurrent_constraint" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>recurrent_constraint</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="recurrent_dropout" class="method">
+		<h4>
+			<span title="System.double">double</span> <strong>recurrent_dropout</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="recurrent_initializer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>recurrent_initializer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="recurrent_kernel" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>recurrent_kernel</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="recurrent_regularizer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>recurrent_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="state_size" class="method">
+		<h4>
+			<a href="../tensorflow.python.training.tracking.data_structures/NoDependency.htm">NoDependency</a> <strong>state_size</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="stateful" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>stateful</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="supports_masking" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>supports_masking</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="unit_forget_bias" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>unit_forget_bias</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="units" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>units</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="use_bias" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>use_bias</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>model_analyzer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.tfprof.model_analyzer</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm" class="current">model_analyzer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> model_analyzer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.tfprof.model_analyzer</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#advise">advise</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#advise_dyn">advise_dyn</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#print_model_analysis">print_model_analysis</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#print_model_analysis_dyn">print_model_analysis_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#advise_fn">advise_fn</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#FLOAT_OPS_OPTIONS">FLOAT_OPS_OPTIONS</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#FLOAT_OPS_OPTIONS_dyn">FLOAT_OPS_OPTIONS_dyn</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#PRINT_ALL_TIMING_MEMORY">PRINT_ALL_TIMING_MEMORY</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#PRINT_ALL_TIMING_MEMORY_dyn">PRINT_ALL_TIMING_MEMORY_dyn</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#print_model_analysis_fn">print_model_analysis_fn</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#TRAINABLE_VARS_PARAMS_STAT_OPTIONS">TRAINABLE_VARS_PARAMS_STAT_OPTIONS</a></li>
+				<li><a href="../tensorflow.contrib.tfprof.model_analyzer/model_analyzer.htm#TRAINABLE_VARS_PARAMS_STAT_OPTIONS_dyn">TRAINABLE_VARS_PARAMS_STAT_OPTIONS_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="advise" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>advise</strong>(<span title="System.object">object</span> graph, <span title="System.object">object</span> run_meta, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> tfprof_options)
+		</h4>
+		<div class="content">Auto profile and advise. <p></p> Builds profiles and automatically check anomalies of various
+aspects. For more details:
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/README.md 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> graph
+						</dt>
+						<dd>tf.Graph. If None and eager execution is not enabled, use
+default graph. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> run_meta
+						</dt>
+						<dd>optional tensorflow.RunMetadata proto. It is necessary to
+to support run time information profiling, such as time and memory. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> tfprof_options
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Returns AdviceProto proto 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="advise_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>advise_dyn</strong>(<span title="System.object">object</span> graph, <span title="System.object">object</span> run_meta, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> tfprof_options)
+		</h4>
+		<div class="content">Auto profile and advise. <p></p> Builds profiles and automatically check anomalies of various
+aspects. For more details:
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/README.md 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> graph
+						</dt>
+						<dd>tf.Graph. If None and eager execution is not enabled, use
+default graph. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> run_meta
+						</dt>
+						<dd>optional tensorflow.RunMetadata proto. It is necessary to
+to support run time information profiling, such as time and memory. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> tfprof_options
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Returns AdviceProto proto 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="print_model_analysis" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>print_model_analysis</strong>(<span title="System.object">object</span> graph, <span title="System.object">object</span> run_meta, <span title="System.object">object</span> op_log, <span title="System.string">string</span> tfprof_cmd, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> tfprof_options)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="print_model_analysis_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>print_model_analysis_dyn</strong>(<span title="System.object">object</span> graph, <span title="System.object">object</span> run_meta, <span title="System.object">object</span> op_log, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> tfprof_cmd, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> tfprof_options)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="advise_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>advise_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="FLOAT_OPS_OPTIONS" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> <strong>FLOAT_OPS_OPTIONS</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="FLOAT_OPS_OPTIONS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>FLOAT_OPS_OPTIONS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PRINT_ALL_TIMING_MEMORY" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> <strong>PRINT_ALL_TIMING_MEMORY</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PRINT_ALL_TIMING_MEMORY_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PRINT_ALL_TIMING_MEMORY_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="print_model_analysis_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>print_model_analysis_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TRAINABLE_VARS_PARAMS_STAT_OPTIONS" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> <strong>TRAINABLE_VARS_PARAMS_STAT_OPTIONS</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TRAINABLE_VARS_PARAMS_STAT_OPTIONS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>TRAINABLE_VARS_PARAMS_STAT_OPTIONS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

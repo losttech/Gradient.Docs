@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>SequenceEnqueuer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.utils</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.utils/CustomObjectScope.htm">CustomObjectScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/GeneratorEnqueuer.htm">GeneratorEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/HDF5Matrix.htm">HDF5Matrix</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/ICustomObjectScope.htm">ICustomObjectScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IGeneratorEnqueuer.htm">IGeneratorEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IHDF5Matrix.htm">IHDF5Matrix</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IOrderedEnqueuer.htm">IOrderedEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IProgbar.htm">IProgbar</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/ISequence.htm">ISequence</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/ISequenceEnqueuer.htm">ISequenceEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/OrderedEnqueuer.htm">OrderedEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/Progbar.htm">Progbar</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/Sequence.htm">Sequence</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/SequenceEnqueuer.htm" class="current">SequenceEnqueuer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> SequenceEnqueuer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.utils</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.utils/ISequenceEnqueuer.htm">ISequenceEnqueuer</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Base class to enqueue inputs. <p></p> The task of an Enqueuer is to use parallelism to speed up preprocessing.
+This is done with processes or threads. <p></p> Example:
+The `enqueuer.get()` should be an infinite stream of datas. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>enqueuer = SequenceEnqueuer(...)
+            enqueuer.start()
+            datas = enqueuer.get()
+            for data in datas:
+                # Use the inputs; training, evaluating, predicting.
+                #... stop sometime.
+            enqueuer.close() </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#is_running">is_running</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#is_running_dyn">is_running_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#start">start</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#start_dyn">start_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#stop">stop</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#stop_dyn">stop_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#executor_fn">executor_fn</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#queue">queue</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#run_thread">run_thread</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#sequence">sequence</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#stop_signal">stop_signal</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#uid">uid</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#use_multiprocessing">use_multiprocessing</a></li>
+				<li><a href="../tensorflow.keras.utils/SequenceEnqueuer.htm#workers">workers</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="is_running" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>is_running</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="is_running_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_running_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="start" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>start</strong>(<span title="System.int">int</span> workers, <span title="System.int">int</span> max_queue_size)
+		</h4>
+		<div class="content">Starts the handler's workers. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> workers
+						</dt>
+						<dd>Number of workers. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_queue_size
+						</dt>
+						<dd>queue size
+(when full, workers could block on `put()`) 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="start_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>start_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> workers, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_queue_size)
+		</h4>
+		<div class="content">Starts the handler's workers. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> workers
+						</dt>
+						<dd>Number of workers. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_queue_size
+						</dt>
+						<dd>queue size
+(when full, workers could block on `put()`) 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="stop" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>stop</strong>(<span title="System.object">object</span> timeout)
+		</h4>
+		<div class="content">Stops running threads and wait for them to exit, if necessary. <p></p> Should be called by the same thread which called `start()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> timeout
+						</dt>
+						<dd>maximum time to wait on `thread.join()` 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>stop_dyn</strong>(<span title="System.object">object</span> timeout)
+		</h4>
+		<div class="content">Stops running threads and wait for them to exit, if necessary. <p></p> Should be called by the same thread which called `start()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> timeout
+						</dt>
+						<dd>maximum time to wait on `thread.join()` 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="executor_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>executor_fn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="queue" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> <strong>queue</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="run_thread" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> <strong>run_thread</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sequence" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sequence</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="stop_signal" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> <strong>stop_signal</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="uid" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>uid</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="use_multiprocessing" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>use_multiprocessing</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="workers" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>workers</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

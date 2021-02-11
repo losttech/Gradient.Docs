@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Coordinator - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.train</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.train/AdadeltaOptimizer.htm">AdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradDAOptimizer.htm">AdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradOptimizer.htm">AdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdamOptimizer.htm">AdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Checkpoint.htm">Checkpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointManager.htm">CheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverHook.htm">CheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverListener.htm">CheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ChiefSessionCreator.htm">ChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ClusterSpec.htm">ClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Coordinator.htm" class="current">Coordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ExponentialMovingAverage.htm">ExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FeedFnHook.htm">FeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FinalOpsHook.htm">FinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FtrlOptimizer.htm">FtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GlobalStepWaiterHook.htm">GlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GradientDescentOptimizer.htm">GradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdadeltaOptimizer.htm">IAdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradDAOptimizer.htm">IAdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradOptimizer.htm">IAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdamOptimizer.htm">IAdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpoint.htm">ICheckpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointManager.htm">ICheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverHook.htm">ICheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverListener.htm">ICheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IChiefSessionCreator.htm">IChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IClusterSpec.htm">IClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICoordinator.htm">ICoordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IExponentialMovingAverage.htm">IExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFeedFnHook.htm">IFeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFinalOpsHook.htm">IFinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFtrlOptimizer.htm">IFtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGlobalStepWaiterHook.htm">IGlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGradientDescentOptimizer.htm">IGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILoggingTensorHook.htm">ILoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILooperThread.htm">ILooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMomentumOptimizer.htm">IMomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMonitoredSession.htm">IMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanTensorHook.htm">INanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProfilerHook.htm">IProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalAdagradOptimizer.htm">IProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalGradientDescentOptimizer.htm">IProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IQueueRunner.htm">IQueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IRMSPropOptimizer.htm">IRMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISaver.htm">ISaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IScaffold.htm">IScaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISecondOrStepTimer.htm">ISecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IServer.htm">IServer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionCreator.htm">ISessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionManager.htm">ISessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunArgs.htm">ISessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunContext.htm">ISessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunHook.htm">ISessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunValues.htm">ISessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISingularMonitoredSession.htm">ISingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStepCounterHook.htm">IStepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStopAtStepHook.htm">IStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISummarySaverHook.htm">ISummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISupervisor.htm">ISupervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISyncReplicasOptimizer.htm">ISyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IVocabInfo.htm">IVocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IWorkerSessionCreator.htm">IWorkerSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LoggingTensorHook.htm">LoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LooperThread.htm">LooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MomentumOptimizer.htm">MomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MonitoredSession.htm">MonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanTensorHook.htm">NanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProfilerHook.htm">ProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalAdagradOptimizer.htm">ProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalGradientDescentOptimizer.htm">ProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/QueueRunner.htm">QueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/RMSPropOptimizer.htm">RMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Saver.htm">Saver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Scaffold.htm">Scaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SecondOrStepTimer.htm">SecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Server.htm">Server</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionCreator.htm">SessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionManager.htm">SessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunArgs.htm">SessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunContext.htm">SessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunHook.htm">SessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunValues.htm">SessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SingularMonitoredSession.htm">SingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StepCounterHook.htm">StepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StopAtStepHook.htm">StopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SummarySaverHook.htm">SummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Supervisor.htm">Supervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SyncReplicasOptimizer.htm">SyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/train.htm">train</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/VocabInfo.htm">VocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/WorkerSessionCreator.htm">WorkerSessionCreator</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Coordinator</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.train</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.train/ICoordinator.htm">ICoordinator</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A coordinator for threads. <p></p> This class implements a simple mechanism to coordinate the termination of a
+set of threads. <p></p> #### Usage:
+Any of the threads can call `coord.request_stop()` to ask for all the threads
+to stop.  To cooperate with the requests, each thread must check for
+`coord.should_stop()` on a regular basis.  `coord.should_stop()` returns
+`True` as soon as `coord.request_stop()` has been called. <p></p> A typical thread running with a coordinator will do something like:
+#### Exception handling: <p></p> A thread can report an exception to the coordinator as part of the
+`request_stop()` call.  The exception will be re-raised from the
+`coord.join()` call. <p></p> Thread code:
+Main code:
+To simplify the thread implementation, the Coordinator provides a
+context handler `stop_on_exception()` that automatically requests a stop if
+an exception is raised.  Using the context handler the thread code above
+can be written as:
+#### Grace period for stopping: <p></p> After a thread has called `coord.request_stop()` the other threads have a
+fixed time to stop, this is called the 'stop grace period' and defaults to 2
+minutes.  If any of the threads is still alive after the grace period expires
+`coord.join()` raises a RuntimeError reporting the laggards. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Create a coordinator.
+            coord = Coordinator()
+            # Start a number of threads, passing the coordinator to each of them.
+           ...start thread 1...(coord,...)
+           ...start thread N...(coord,...)
+            # Wait for all the threads to terminate.
+            coord.join(threads) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.train/Coordinator.htm#clear_stop_dyn">clear_stop_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#join">join</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#join">join</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#join_dyn">join_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#raise_requested_exception">raise_requested_exception</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#raise_requested_exception_dyn">raise_requested_exception_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#register_thread">register_thread</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#register_thread">register_thread</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#register_thread_dyn">register_thread_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#request_stop">request_stop</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#request_stop_dyn">request_stop_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#should_stop_dyn">should_stop_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#stop_on_exception_dyn">stop_on_exception_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#wait_for_stop">wait_for_stop</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#wait_for_stop_dyn">wait_for_stop_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.train/Coordinator.htm#joined">joined</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#joined_dyn">joined_dyn</a></li>
+				<li><a href="../tensorflow.train/Coordinator.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="clear_stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clear_stop_dyn</strong>()
+		</h4>
+		<div class="content">Clears the stop flag. <p></p> After this is called, calls to `should_stop()` will return `False`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="join" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>join</strong>(<span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span> threads, <span title="System.double">double</span> stop_grace_period_secs, <span title="System.bool">bool</span> ignore_live_threads)
+		</h4>
+		<div class="content">Wait for threads to terminate. <p></p> This call blocks until a set of threads have terminated.  The set of thread
+is the union of the threads passed in the `threads` argument and the list
+of threads that registered with the coordinator by calling
+`Coordinator.register_thread()`. <p></p> After the threads stop, if an `exc_info` was passed to `request_stop`, that
+exception is re-raised. <p></p> Grace period handling: When `request_stop()` is called, threads are given
+'stop_grace_period_secs' seconds to terminate.  If any of them is still
+alive after that period expires, a `RuntimeError` is raised.  Note that if
+an `exc_info` was passed to `request_stop()` then it is raised instead of
+that `RuntimeError`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span></code> threads
+						</dt>
+						<dd>List of `threading.Threads`. The started threads to join in
+addition to the registered threads. 
+						</dd>
+						<dt>
+							<code><span title="System.double">double</span></code> stop_grace_period_secs
+						</dt>
+						<dd>Number of seconds given to threads to stop after
+`request_stop()` has been called. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> ignore_live_threads
+						</dt>
+						<dd>If `False`, raises an error if any of the threads are
+still alive after `stop_grace_period_secs`. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="join" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>join</strong>(<span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span> threads, <span title="System.int">int</span> stop_grace_period_secs, <span title="System.bool">bool</span> ignore_live_threads)
+		</h4>
+		<div class="content">Wait for threads to terminate. <p></p> This call blocks until a set of threads have terminated.  The set of thread
+is the union of the threads passed in the `threads` argument and the list
+of threads that registered with the coordinator by calling
+`Coordinator.register_thread()`. <p></p> After the threads stop, if an `exc_info` was passed to `request_stop`, that
+exception is re-raised. <p></p> Grace period handling: When `request_stop()` is called, threads are given
+'stop_grace_period_secs' seconds to terminate.  If any of them is still
+alive after that period expires, a `RuntimeError` is raised.  Note that if
+an `exc_info` was passed to `request_stop()` then it is raised instead of
+that `RuntimeError`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span></code> threads
+						</dt>
+						<dd>List of `threading.Threads`. The started threads to join in
+addition to the registered threads. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> stop_grace_period_secs
+						</dt>
+						<dd>Number of seconds given to threads to stop after
+`request_stop()` has been called. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> ignore_live_threads
+						</dt>
+						<dd>If `False`, raises an error if any of the threads are
+still alive after `stop_grace_period_secs`. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="join_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>join_dyn</strong>(<span title="System.object">object</span> threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> stop_grace_period_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ignore_live_threads)
+		</h4>
+		<div class="content">Wait for threads to terminate. <p></p> This call blocks until a set of threads have terminated.  The set of thread
+is the union of the threads passed in the `threads` argument and the list
+of threads that registered with the coordinator by calling
+`Coordinator.register_thread()`. <p></p> After the threads stop, if an `exc_info` was passed to `request_stop`, that
+exception is re-raised. <p></p> Grace period handling: When `request_stop()` is called, threads are given
+'stop_grace_period_secs' seconds to terminate.  If any of them is still
+alive after that period expires, a `RuntimeError` is raised.  Note that if
+an `exc_info` was passed to `request_stop()` then it is raised instead of
+that `RuntimeError`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> threads
+						</dt>
+						<dd>List of `threading.Threads`. The started threads to join in
+addition to the registered threads. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> stop_grace_period_secs
+						</dt>
+						<dd>Number of seconds given to threads to stop after
+`request_stop()` has been called. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> ignore_live_threads
+						</dt>
+						<dd>If `False`, raises an error if any of the threads are
+still alive after `stop_grace_period_secs`. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="raise_requested_exception" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>raise_requested_exception</strong>()
+		</h4>
+		<div class="content">If an exception has been passed to `request_stop`, this raises it. 
+
+
+
+
+		</div>
+	</div>
+	<div id="raise_requested_exception_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>raise_requested_exception_dyn</strong>()
+		</h4>
+		<div class="content">If an exception has been passed to `request_stop`, this raises it. 
+
+
+
+
+		</div>
+	</div>
+	<div id="register_thread" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>register_thread</strong>(<a href="../tensorflow.train/LooperThread.htm">LooperThread</a> thread)
+		</h4>
+		<div class="content">Register a thread to join. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.train/LooperThread.htm">LooperThread</a></code> thread
+						</dt>
+						<dd>A Python thread to join. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="register_thread" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>register_thread</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> thread)
+		</h4>
+		<div class="content">Register a thread to join. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> thread
+						</dt>
+						<dd>A Python thread to join. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="register_thread_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>register_thread_dyn</strong>(<span title="System.object">object</span> thread)
+		</h4>
+		<div class="content">Register a thread to join. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> thread
+						</dt>
+						<dd>A Python thread to join. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="request_stop" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>request_stop</strong>(<span title="System.Exception">Exception</span> ex)
+		</h4>
+		<div class="content">Request that the coordinator stop the threads. <p></p> See `Coordinator.request_stop()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Exception">Exception</span></code> ex
+						</dt>
+						<dd>Optional `Exception`, or Python `exc_info` tuple as returned by
+`sys.exc_info()`.  If this is the first call to `request_stop()` the
+corresponding exception is recorded and re-raised from `join()`. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="request_stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>request_stop_dyn</strong>(<span title="System.object">object</span> ex)
+		</h4>
+		<div class="content">Request that the coordinator stop the threads. <p></p> See `Coordinator.request_stop()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> ex
+						</dt>
+						<dd>Optional `Exception`, or Python `exc_info` tuple as returned by
+`sys.exc_info()`.  If this is the first call to `request_stop()` the
+corresponding exception is recorded and re-raised from `join()`. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="should_stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>should_stop_dyn</strong>()
+		</h4>
+		<div class="content">Check if the coordinator was told to stop. <p></p> See `Coordinator.should_stop()`. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>True if the coordinator was told to stop, False otherwise. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="stop_on_exception_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>stop_on_exception_dyn</strong>()
+		</h4>
+		<div class="content">Context handler to stop the supervisor when an exception is raised. <p></p> See `Coordinator.stop_on_exception()`. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A context handler. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="wait_for_stop" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>wait_for_stop</strong>(<span title="System.Nullable<double>">Nullable&lt;double&gt;</span> timeout)
+		</h4>
+		<div class="content">Wait till the Coordinator is told to stop. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Nullable<double>">Nullable&lt;double&gt;</span></code> timeout
+						</dt>
+						<dd>Float.  Sleep for up to that many seconds waiting for
+should_stop() to become True. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.bool">bool</span></code>
+					</dt>
+					<dd>True if the Coordinator is told stop, False if the timeout expired. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="wait_for_stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>wait_for_stop_dyn</strong>(<span title="System.object">object</span> timeout)
+		</h4>
+		<div class="content">Wait till the Coordinator is told to stop. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> timeout
+						</dt>
+						<dd>Float.  Sleep for up to that many seconds waiting for
+should_stop() to become True. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>True if the Coordinator is told stop, False if the timeout expired. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="joined" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>joined</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="joined_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>joined_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

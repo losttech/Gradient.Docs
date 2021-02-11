@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Multinomial - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distributions</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distributions/Bernoulli.htm">Bernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Beta.htm">Beta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Categorical.htm">Categorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Dirichlet.htm">Dirichlet</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/DirichletMultinomial.htm">DirichletMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Distribution.htm">Distribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Exponential.htm">Exponential</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Gamma.htm">Gamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IBernoulli.htm">IBernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IBeta.htm">IBeta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ICategorical.htm">ICategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDirichlet.htm">IDirichlet</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDirichletMultinomial.htm">IDirichletMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDistribution.htm">IDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IExponential.htm">IExponential</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IGamma.htm">IGamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ILaplace.htm">ILaplace</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IMultinomial.htm">IMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/INormal.htm">INormal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IRegisterKL.htm">IRegisterKL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IReparameterizationType.htm">IReparameterizationType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IStudentT.htm">IStudentT</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IUniform.htm">IUniform</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Laplace.htm">Laplace</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Multinomial.htm" class="current">Multinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Normal.htm">Normal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/RegisterKL.htm">RegisterKL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ReparameterizationType.htm">ReparameterizationType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/StudentT.htm">StudentT</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Uniform.htm">Uniform</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Multinomial</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distributions</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distributions/Distribution.htm">Distribution</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distributions/IMultinomial.htm">IMultinomial</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Multinomial distribution. <p></p> This Multinomial distribution is parameterized by `probs`, a (batch of)
+length-`K` `prob` (probability) vectors (`K > 1`) such that
+`tf.reduce_sum(probs, -1) = 1`, and a `total_count` number of trials, i.e.,
+the number of trials per draw from the Multinomial. It is defined over a
+(batch of) length-`K` vector `counts` such that
+`tf.reduce_sum(counts, -1) = total_count`. The Multinomial is identically the
+Binomial distribution when `K = 2`. <p></p> #### Mathematical Details <p></p> The Multinomial is a distribution over `K`-class counts, i.e., a length-`K`
+vector of non-negative integer `counts = n = [n_0,..., n_{K-1}]`. <p></p> The probability mass function (pmf) is, <p></p> ```none
+pmf(n; pi, N) = prod_j (pi_j)**n_j / Z
+Z = (prod_j n_j!) / N!
+``` <p></p> where:
+* `probs = pi = [pi_0,..., pi_{K-1}]`, `pi_j > 0`, `sum_j pi_j = 1`,
+* `total_count = N`, `N` a positive integer,
+* `Z` is the normalization constant, and,
+* `N!` denotes `N` factorial. <p></p> Distribution parameters are automatically broadcast in all functions; see
+examples for details. <p></p> #### Pitfalls <p></p> The number of classes, `K`, must not exceed:
+- the largest integer representable by `self.dtype`, i.e.,
+`2**(mantissa_bits+1)` (IEE754),
+- the maximum `Tensor` index, i.e., `2**31-1`. <p></p> In other words,
+Note: This condition is validated only when `self.validate_args = True`. <p></p> #### Examples <p></p> Create a 3-class distribution, with the 3rd class is most likely to be drawn,
+using logits.
+Create a 3-class distribution, with the 3rd class is most likely to be drawn.
+The distribution functions can be evaluated on counts.
+Create a 2-batch of 3-class distributions. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>K <= min(2**31-1, {
+              tf.float16: 2**11,
+              tf.float32: 2**24,
+              tf.float64: 2**53 }[param.dtype]) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#allow_nan_stats">allow_nan_stats</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#allow_nan_stats_dyn">allow_nan_stats_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#batch_shape">batch_shape</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#batch_shape_dyn">batch_shape_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#event_shape">event_shape</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#event_shape_dyn">event_shape_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#logits">logits</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#logits_dyn">logits_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#name">name</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#parameters">parameters</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#parameters_dyn">parameters_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#probs">probs</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#probs_dyn">probs_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#reparameterization_type">reparameterization_type</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#reparameterization_type_dyn">reparameterization_type_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#total_count">total_count</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#total_count_dyn">total_count_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#validate_args">validate_args</a></li>
+				<li><a href="../tensorflow.distributions/Multinomial.htm#validate_args_dyn">validate_args_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.distributions/Multinomial.htm">Multinomial</a> <strong>NewDyn</strong>(<span title="System.object">object</span> total_count, <span title="System.object">object</span> logits, <span title="System.object">object</span> probs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> validate_args, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> allow_nan_stats, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Construct Student's t distributions. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of <a href="..\..\tf\distributions.md"><code>tf.distributions</code></a>. <p></p> The distributions have degree of freedom `df`, mean `loc`, and scale
+`scale`. <p></p> The parameters `df`, `loc`, and `scale` must be shaped in a way that
+supports broadcasting (e.g. `df + loc + scale` is a valid operation). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> total_count
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> logits
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> probs
+						</dt>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> validate_args
+						</dt>
+						<dd>Python `bool`, default `False`. When `True` distribution
+parameters are checked for validity despite possibly degrading runtime
+performance. When `False` invalid inputs may silently render incorrect
+outputs. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> allow_nan_stats
+						</dt>
+						<dd>Python `bool`, default `True`. When `True`,
+statistics (e.g., mean, mode, variance) use the value "`NaN`" to
+indicate the result is undefined. When `False`, an exception is raised
+if one or more of the statistic's batch members are undefined. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` name prefixed to Ops created by this class. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="allow_nan_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="allow_nan_stats_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>batch_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>event_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>event_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="logits" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>logits</strong> get; 
+		</h4>
+		<div class="content">Vector of coordinatewise logits. 
+
+		</div>
+	</div>
+	<div id="logits_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>logits_dyn</strong> get; 
+		</h4>
+		<div class="content">Vector of coordinatewise logits. 
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>parameters</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameters_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="probs" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>probs</strong> get; 
+		</h4>
+		<div class="content">Probability of drawing a `1` in that coordinate. 
+
+		</div>
+	</div>
+	<div id="probs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>probs_dyn</strong> get; 
+		</h4>
+		<div class="content">Probability of drawing a `1` in that coordinate. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="total_count" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>total_count</strong> get; 
+		</h4>
+		<div class="content">Number of trials used to construct a sample. 
+
+		</div>
+	</div>
+	<div id="total_count_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>total_count_dyn</strong> get; 
+		</h4>
+		<div class="content">Number of trials used to construct a sample. 
+
+		</div>
+	</div>
+	<div id="validate_args" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="validate_args_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

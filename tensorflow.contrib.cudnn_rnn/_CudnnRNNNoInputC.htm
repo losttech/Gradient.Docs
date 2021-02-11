@@ -1,0 +1,1127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>_CudnnRNNNoInputC - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.cudnn_rnn</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNN.htm">_CudnnRNN</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm" class="current">_CudnnRNNNoInputC</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/cudnn_rnn.htm">cudnn_rnn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnCompatibleGRUCell.htm">CudnnCompatibleGRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnCompatibleLSTMCell.htm">CudnnCompatibleLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnGRU.htm">CudnnGRU</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnGRUSaveable.htm">CudnnGRUSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnLSTM.htm">CudnnLSTM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnLSTMSaveable.htm">CudnnLSTMSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnParamsFormatConverterGRU.htm">CudnnParamsFormatConverterGRU</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnParamsFormatConverterLSTM.htm">CudnnParamsFormatConverterLSTM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnParamsFormatConverterRelu.htm">CudnnParamsFormatConverterRelu</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnParamsFormatConverterTanh.htm">CudnnParamsFormatConverterTanh</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnRNNRelu.htm">CudnnRNNRelu</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnRNNReluSaveable.htm">CudnnRNNReluSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnRNNTanh.htm">CudnnRNNTanh</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/CudnnRNNTanhSaveable.htm">CudnnRNNTanhSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/I_CudnnRNN.htm">I_CudnnRNN</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/I_CudnnRNNNoInputC.htm">I_CudnnRNNNoInputC</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnCompatibleGRUCell.htm">ICudnnCompatibleGRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnCompatibleLSTMCell.htm">ICudnnCompatibleLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnGRU.htm">ICudnnGRU</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnGRUSaveable.htm">ICudnnGRUSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnLSTM.htm">ICudnnLSTM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnLSTMSaveable.htm">ICudnnLSTMSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnParamsFormatConverterGRU.htm">ICudnnParamsFormatConverterGRU</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnParamsFormatConverterLSTM.htm">ICudnnParamsFormatConverterLSTM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnParamsFormatConverterRelu.htm">ICudnnParamsFormatConverterRelu</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnParamsFormatConverterTanh.htm">ICudnnParamsFormatConverterTanh</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnRNNRelu.htm">ICudnnRNNRelu</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnRNNReluSaveable.htm">ICudnnRNNReluSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnRNNTanh.htm">ICudnnRNNTanh</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.cudnn_rnn/ICudnnRNNTanhSaveable.htm">ICudnnRNNTanhSaveable</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> _CudnnRNNNoInputC</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.cudnn_rnn</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNN.htm">_CudnnRNN</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.cudnn_rnn/I_CudnnRNNNoInputC.htm">I_CudnnRNNNoInputC</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#call">call</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#activity_regularizer">activity_regularizer</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#activity_regularizer_dyn">activity_regularizer_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#built">built</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#canonical_bias_shapes">canonical_bias_shapes</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#canonical_bias_shapes_dyn">canonical_bias_shapes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#canonical_weight_shapes">canonical_weight_shapes</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#canonical_weight_shapes_dyn">canonical_weight_shapes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#direction">direction</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#direction_dyn">direction_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#dynamic">dynamic</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#dynamic_dyn">dynamic_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#inbound_nodes">inbound_nodes</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#inbound_nodes_dyn">inbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input">input</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_dyn">input_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_mask">input_mask</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_mask_dyn">input_mask_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_mode">input_mode</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_mode_dyn">input_mode_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_shape">input_shape</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_shape_dyn">input_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_size">input_size</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_size_dyn">input_size_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_spec">input_spec</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#input_spec_dyn">input_spec_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#kernel">kernel</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#metrics">metrics</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#metrics_dyn">metrics_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#name">name</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#num_dirs">num_dirs</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#num_dirs_dyn">num_dirs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#num_layers">num_layers</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#num_layers_dyn">num_layers_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#num_units">num_units</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#num_units_dyn">num_units_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#outbound_nodes">outbound_nodes</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#outbound_nodes_dyn">outbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#output">output</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#output_dyn">output_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#output_mask">output_mask</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#output_mask_dyn">output_mask_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#output_shape">output_shape</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#output_shape_dyn">output_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#rnn_mode">rnn_mode</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#rnn_mode_dyn">rnn_mode_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#saveable">saveable</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#saveable_dyn">saveable_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#scope_name">scope_name</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#scope_name_dyn">scope_name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#stateful">stateful</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#supports_masking">supports_masking</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.contrib.cudnn_rnn/_CudnnRNNNoInputC.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <span title="System.int">int</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> initial_state, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <span title="System.int">int</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> initial_state, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> initial_state, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> initial_state, <span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <span title="System.int">int</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <span title="System.Collections.Generic.IEnumerable<PythonClassContainer>">IEnumerable&lt;PythonClassContainer&gt;</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> initial_state, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> initial_state, <span title="System.int">int</span> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="call" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>call</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> inputs, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> initial_state, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths, <span title="System.bool">bool</span> time_major, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> training)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="activity_regularizer" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>activity_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activity_regularizer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="built" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>built</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="canonical_bias_shapes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>canonical_bias_shapes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="canonical_bias_shapes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>canonical_bias_shapes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="canonical_weight_shapes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>canonical_weight_shapes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="canonical_weight_shapes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>canonical_weight_shapes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="direction" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>direction</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="direction_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>direction_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>dynamic</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dynamic_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Node>">IList&lt;Node&gt;</span> <strong>inbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mode" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>input_mode</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mode_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mode_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_size" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>input_size</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_size_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec" class="method">
+		<h4>
+			<a href="../tensorflow.layers/InputSpec.htm">InputSpec</a> <strong>input_spec</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="kernel" class="method">
+		<h4>
+			<a href="../tensorflow.python.ops.variables/PartitionedVariable.htm">PartitionedVariable</a> <strong>kernel</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>metrics</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>metrics_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_dirs" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_dirs</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_dirs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_dirs_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_layers" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_layers</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_layers_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_layers_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_units" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_units</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_units_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_units_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>outbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>output</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rnn_mode" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>rnn_mode</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rnn_mode_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rnn_mode_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="saveable" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>saveable</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="saveable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>saveable_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>scope_name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope_name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="stateful" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>stateful</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="supports_masking" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>supports_masking</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,2718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>SessionManager - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.train</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.train/AdadeltaOptimizer.htm">AdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradDAOptimizer.htm">AdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradOptimizer.htm">AdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdamOptimizer.htm">AdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Checkpoint.htm">Checkpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointManager.htm">CheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverHook.htm">CheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverListener.htm">CheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ChiefSessionCreator.htm">ChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ClusterSpec.htm">ClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Coordinator.htm">Coordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ExponentialMovingAverage.htm">ExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FeedFnHook.htm">FeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FinalOpsHook.htm">FinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FtrlOptimizer.htm">FtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GlobalStepWaiterHook.htm">GlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GradientDescentOptimizer.htm">GradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdadeltaOptimizer.htm">IAdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradDAOptimizer.htm">IAdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradOptimizer.htm">IAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdamOptimizer.htm">IAdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpoint.htm">ICheckpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointManager.htm">ICheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverHook.htm">ICheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverListener.htm">ICheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IChiefSessionCreator.htm">IChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IClusterSpec.htm">IClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICoordinator.htm">ICoordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IExponentialMovingAverage.htm">IExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFeedFnHook.htm">IFeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFinalOpsHook.htm">IFinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFtrlOptimizer.htm">IFtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGlobalStepWaiterHook.htm">IGlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGradientDescentOptimizer.htm">IGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILoggingTensorHook.htm">ILoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILooperThread.htm">ILooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMomentumOptimizer.htm">IMomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMonitoredSession.htm">IMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanTensorHook.htm">INanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProfilerHook.htm">IProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalAdagradOptimizer.htm">IProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalGradientDescentOptimizer.htm">IProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IQueueRunner.htm">IQueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IRMSPropOptimizer.htm">IRMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISaver.htm">ISaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IScaffold.htm">IScaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISecondOrStepTimer.htm">ISecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IServer.htm">IServer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionCreator.htm">ISessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionManager.htm">ISessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunArgs.htm">ISessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunContext.htm">ISessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunHook.htm">ISessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunValues.htm">ISessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISingularMonitoredSession.htm">ISingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStepCounterHook.htm">IStepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStopAtStepHook.htm">IStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISummarySaverHook.htm">ISummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISupervisor.htm">ISupervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISyncReplicasOptimizer.htm">ISyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IVocabInfo.htm">IVocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IWorkerSessionCreator.htm">IWorkerSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LoggingTensorHook.htm">LoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LooperThread.htm">LooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MomentumOptimizer.htm">MomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MonitoredSession.htm">MonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanTensorHook.htm">NanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProfilerHook.htm">ProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalAdagradOptimizer.htm">ProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalGradientDescentOptimizer.htm">ProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/QueueRunner.htm">QueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/RMSPropOptimizer.htm">RMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Saver.htm">Saver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Scaffold.htm">Scaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SecondOrStepTimer.htm">SecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Server.htm">Server</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionCreator.htm">SessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionManager.htm" class="current">SessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunArgs.htm">SessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunContext.htm">SessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunHook.htm">SessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunValues.htm">SessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SingularMonitoredSession.htm">SingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StepCounterHook.htm">StepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StopAtStepHook.htm">StopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SummarySaverHook.htm">SummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Supervisor.htm">Supervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SyncReplicasOptimizer.htm">SyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/train.htm">train</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/VocabInfo.htm">VocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/WorkerSessionCreator.htm">WorkerSessionCreator</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> SessionManager</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.train</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.train/ISessionManager.htm">ISessionManager</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Training helper that restores from checkpoint and creates session. <p></p> This class is a small wrapper that takes care of session creation and
+checkpoint recovery. It also provides functions that to facilitate
+coordination among multiple training threads or processes. <p></p> * Checkpointing trained variables as the training progresses.
+* Initializing variables on startup, restoring them from the most recent
+checkpoint after a crash, or wait for checkpoints to become available. <p></p> ### Usage:
+`prepare_session()` initializes or restores a model. It requires `init_op`
+and `saver` as an argument. <p></p> A second process could wait for the model to be ready by doing the following:
+`wait_for_session()` waits for a model to be initialized by other processes. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>with tf.Graph().as_default():
+              ...add operations to the graph...
+              # Create a SessionManager that will checkpoint the model in '/tmp/mydir'.
+              sm = SessionManager()
+              sess = sm.prepare_session(master, init_op, saver, checkpoint_dir)
+              # Use the session to train the graph.
+              while True:
+                sess.run(<my_train_op>) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.train/SessionManager.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session">prepare_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#prepare_session_dyn">prepare_session_dyn</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#recover_session">recover_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#recover_session_dyn">recover_session_dyn</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#wait_for_session">wait_for_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#wait_for_session">wait_for_session</a></li>
+				<li><a href="../tensorflow.train/SessionManager.htm#wait_for_session_dyn">wait_for_session_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.train/SessionManager.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> init_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> init_op, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> init_op, <span title="System.int">int</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../tensorflow/Operation.htm">Operation</a> init_op, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Operation.htm">Operation</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> init_op, <a href="../tensorflow.train/Saver.htm">Saver</a> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.train/Saver.htm">Saver</a></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../tensorflow/Operation.htm">Operation</a> init_op, <span title="System.int">int</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Operation.htm">Operation</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_op, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../tensorflow/Operation.htm">Operation</a> init_op, <a href="../tensorflow.train/Saver.htm">Saver</a> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Operation.htm">Operation</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.train/Saver.htm">Saver</a></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_op, <span title="System.int">int</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> init_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_op, <a href="../tensorflow.train/Saver.htm">Saver</a> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.train/Saver.htm">Saver</a></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> init_op, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.int">int</span> init_op, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> init_op, <span title="System.int">int</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.int">int</span> init_op, <span title="System.int">int</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> init_op, <a href="../tensorflow.train/Saver.htm">Saver</a> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.train/Saver.htm">Saver</a></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.int">int</span> init_op, <a href="../tensorflow.train/Saver.htm">Saver</a> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.train/Saver.htm">Saver</a></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <a href="../tensorflow/Operation.htm">Operation</a> init_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Operation.htm">Operation</a></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_session</strong>(<span title="System.string">string</span> master, <span title="System.int">int</span> init_op, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> init_feed_dict, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_session_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>prepare_session_dyn</strong>(<span title="System.object">object</span> master, <span title="System.object">object</span> init_op, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> wait_for_checkpoint, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_wait_secs, <span title="System.object">object</span> config, <span title="System.object">object</span> init_feed_dict, <span title="System.object">object</span> init_fn)
+		</h4>
+		<div class="content">Creates a `Session`. Makes sure the model is ready to be used. <p></p> Creates a `Session` on 'master'. If a `saver` object is passed in, and
+`checkpoint_dir` points to a directory containing valid checkpoint
+files, then it will try to recover the model from checkpoint. If
+no checkpoint files are available, and `wait_for_checkpoint` is
+`True`, then the process would check every `recovery_wait_secs`,
+up to `max_wait_secs`, for recovery to succeed. <p></p> If the model cannot be recovered successfully then it is initialized by
+running the `init_op` and calling `init_fn` if they are provided.
+The `local_init_op` is also run after init_op and init_fn, regardless of
+whether the model was recovered successfully, but only if
+`ready_for_local_init_op` passes. <p></p> If the model is recovered from a checkpoint it is assumed that all
+global variables have been initialized, in particular neither `init_op`
+nor `init_fn` will be executed. <p></p> It is an error if the model cannot be recovered and no `init_op`
+or `init_fn` or `local_init_op` are passed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_op
+						</dt>
+						<dd>Optional `Operation` used to initialize the model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_feed_dict
+						</dt>
+						<dd>Optional dictionary that maps `Tensor` objects to feed
+values.  This feed dictionary is passed to the session `run()` call when
+running the init op. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Session` object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="recover_session" class="method">
+		<h4>
+			<span title="System.ValueTuple<Session, bool>">ValueTuple&lt;Session, bool&gt;</span> <strong>recover_session</strong>(<span title="System.string">string</span> master, <a href="../tensorflow.train/Saver.htm">Saver</a> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.object">object</span> config)
+		</h4>
+		<div class="content">Creates a `Session`, recovering if possible. <p></p> Creates a new session on 'master'.  If the session is not initialized
+and can be recovered from a checkpoint, recover it. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.train/Saver.htm">Saver</a></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<Session, bool>">ValueTuple&lt;Session, bool&gt;</span></code>
+					</dt>
+					<dd>A pair (sess, initialized) where 'initialized' is `True` if
+the session could be recovered and initialized, `False` otherwise. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="recover_session_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>recover_session_dyn</strong>(<span title="System.object">object</span> master, <span title="System.object">object</span> saver, <span title="System.object">object</span> checkpoint_dir, <span title="System.object">object</span> checkpoint_filename_with_path, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> wait_for_checkpoint, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_wait_secs, <span title="System.object">object</span> config)
+		</h4>
+		<div class="content">Creates a `Session`, recovering if possible. <p></p> Creates a new session on 'master'.  If the session is not initialized
+and can be recovered from a checkpoint, recover it. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> saver
+						</dt>
+						<dd>A `Saver` object used to restore a model. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>Path to the checkpoint files. The latest checkpoint in the
+dir will be used to restore. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>Full file name path to the checkpoint file. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether to wait for checkpoint to become available. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for checkpoints to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A pair (sess, initialized) where 'initialized' is `True` if
+the session could be recovered and initialized, `False` otherwise. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="wait_for_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>wait_for_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> config, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_wait_secs)
+		</h4>
+		<div class="content">Creates a new `Session` and waits for model to be ready. <p></p> Creates a new `Session` on 'master'.  Waits for the model to be
+initialized or recovered from a checkpoint.  It's expected that
+another thread or process will make the model ready, and that this
+is intended to be used by threads/processes that participate in a
+distributed training configuration where a different thread/process
+is responsible for initializing or recovering the model being trained. <p></p> NB: The amount of time this method waits for the session is bounded
+by max_wait_secs. By default, this function will wait indefinitely. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional ConfigProto proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for the session to become available. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session`. May be None if the operation exceeds the timeout
+specified by config.operation_timeout_in_ms. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="wait_for_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>wait_for_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> config, <span title="System.int">int</span> max_wait_secs)
+		</h4>
+		<div class="content">Creates a new `Session` and waits for model to be ready. <p></p> Creates a new `Session` on 'master'.  Waits for the model to be
+initialized or recovered from a checkpoint.  It's expected that
+another thread or process will make the model ready, and that this
+is intended to be used by threads/processes that participate in a
+distributed training configuration where a different thread/process
+is responsible for initializing or recovering the model being trained. <p></p> NB: The amount of time this method waits for the session is bounded
+by max_wait_secs. By default, this function will wait indefinitely. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional ConfigProto proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for the session to become available. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A `Session`. May be None if the operation exceeds the timeout
+specified by config.operation_timeout_in_ms. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="wait_for_session_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>wait_for_session_dyn</strong>(<span title="System.object">object</span> master, <span title="System.object">object</span> config, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_wait_secs)
+		</h4>
+		<div class="content">Creates a new `Session` and waits for model to be ready. <p></p> Creates a new `Session` on 'master'.  Waits for the model to be
+initialized or recovered from a checkpoint.  It's expected that
+another thread or process will make the model ready, and that this
+is intended to be used by threads/processes that participate in a
+distributed training configuration where a different thread/process
+is responsible for initializing or recovering the model being trained. <p></p> NB: The amount of time this method waits for the session is bounded
+by max_wait_secs. By default, this function will wait indefinitely. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional ConfigProto proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for the session to become available. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Session`. May be None if the operation exceeds the timeout
+specified by config.operation_timeout_in_ms. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.train/SessionManager.htm">SessionManager</a> <strong>NewDyn</strong>(<span title="System.object">object</span> local_init_op, <span title="System.object">object</span> ready_op, <span title="System.object">object</span> ready_for_local_init_op, <span title="System.object">object</span> graph, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> recovery_wait_secs, <span title="System.object">object</span> local_init_run_options)
+		</h4>
+		<div class="content">Creates a SessionManager. <p></p> The `local_init_op` is an `Operation` that is run always after a new session
+was created. If `None`, this step is skipped. <p></p> The `ready_op` is an `Operation` used to check if the model is ready.  The
+model is considered ready if that operation returns an empty 1D string
+tensor. If the operation returns a non empty 1D string tensor, the elements
+are concatenated and used to indicate to the user why the model is not
+ready. <p></p> The `ready_for_local_init_op` is an `Operation` used to check if the model
+is ready to run local_init_op.  The model is considered ready if that
+operation returns an empty 1D string tensor. If the operation returns a non
+empty 1D string tensor, the elements are concatenated and used to indicate
+to the user why the model is not ready. <p></p> If `ready_op` is `None`, the model is not checked for readiness. <p></p> `recovery_wait_secs` is the number of seconds between checks that
+the model is ready.  It is used by processes to wait for a model to
+be initialized or restored.  Defaults to 30 seconds. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> local_init_op
+						</dt>
+						<dd>An `Operation` run immediately after session creation.
+Usually used to initialize tables and local variables. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> ready_op
+						</dt>
+						<dd>An `Operation` to check if the model is initialized. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> ready_for_local_init_op
+						</dt>
+						<dd>An `Operation` to check if the model is ready
+to run local_init_op. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> graph
+						</dt>
+						<dd>The `Graph` that the model will use. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> recovery_wait_secs
+						</dt>
+						<dd>Seconds between checks for the model to be ready. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> local_init_run_options
+						</dt>
+						<dd>RunOptions to be passed to session.run when
+executing the local_init_op. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

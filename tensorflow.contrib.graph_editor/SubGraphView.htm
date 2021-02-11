@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>SubGraphView - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.graph_editor</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/_RerouteMode.htm">_RerouteMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/_TmpInfo.htm">_TmpInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ControlOutputs.htm">ControlOutputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/graph_editor.htm">graph_editor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/I_RerouteMode.htm">I_RerouteMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/I_TmpInfo.htm">I_TmpInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/IControlOutputs.htm">IControlOutputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/IListView.htm">IListView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ISubGraphView.htm">ISubGraphView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ITransformer.htm">ITransformer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ITransformerInfo.htm">ITransformerInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ListView.htm">ListView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/SubGraphView.htm" class="current">SubGraphView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/Transformer.htm">Transformer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/TransformerInfo.htm">TransformerInfo</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> SubGraphView</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.graph_editor</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.graph_editor/ISubGraphView.htm">ISubGraphView</a>, <a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A subgraph view on an existing <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>. <p></p> An instance of this class is a subgraph view on an existing <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>.
+"subgraph" means that it can represent part of the whole <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>.
+"view" means that it only provides a passive observation and do not to act
+on the <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>. Note that in this documentation, the term "subgraph" is
+often used as substitute to "subgraph view". <p></p> A subgraph contains: <p></p> * a list of input tensors, accessible via the `inputs` property.
+* a list of output tensors, accessible via the `outputs` property.
+* and the operations in between, accessible via the "ops" property. <p></p> An subgraph can be seen as a function F(i0, i1,...) -> o0, o1,... It is a
+function which takes as input some input tensors and returns as output some
+output tensors. The computation that the function performs is encoded in the
+operations of the subgraph. <p></p> The tensors (input or output) can be of two kinds: <p></p> - connected: a connected tensor connects to at least one operation contained
+in the subgraph. One example is a subgraph representing a single operation
+and its inputs and outputs: all the input and output tensors of the op
+are "connected".
+- passthrough: a passthrough tensor does not connect to any operation
+contained in the subgraph. One example is a subgraph representing a
+single tensor: this tensor is passthrough. By default a passthrough tensor is
+present both in the input and output tensors of the subgraph. It can however
+be remapped to only appear as an input (or output) only. <p></p> The input and output tensors can be remapped. For instance, some input tensor
+can be omitted. For instance, a subgraph representing an operation with two
+inputs can be remapped to only take one input. Note that this does not change
+at all the underlying <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a> (remember, it is a view). It means that
+the other input is being ignored, or is being treated as "given".
+The analogy with functions can be extended like this: F(x,y) is the original
+function. Remapping the inputs from [x, y] to just [x] means that the subgraph
+now represent the function F_y(x) (y is "given"). <p></p> The output tensors can also be remapped. For instance, some output tensor can
+be omitted. Other output tensor can be duplicated as well. As mentioned
+before, this does not change at all the underlying <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>.
+The analogy with functions can be extended like this: F(...)->x,y is the
+original function. Remapping the outputs from [x, y] to just [y,y] means that
+the subgraph now represent the function M(F(...)) where M is the function
+M(a,b)->b,b. <p></p> It is useful to describe three other kind of tensors: <p></p> * internal: an internal tensor is a tensor connecting operations contained
+in the subgraph. One example in the subgraph representing the two
+operations A and B connected sequentially: -> A -> B ->. The middle arrow
+is an internal tensor.
+* actual input: an input tensor of the subgraph, regardless of whether it is
+listed in "inputs" or not (masked-out).
+* actual output: an output tensor of the subgraph, regardless of whether it is
+listed in "outputs" or not (masked-out).
+* hidden input: an actual input which has been masked-out using an
+input remapping. In other word, a hidden input is a non-internal tensor
+not listed as a input tensor and one of whose consumers belongs to
+the subgraph.
+* hidden output: a actual output which has been masked-out using an output
+remapping. In other word, a hidden output is a non-internal tensor
+not listed as an output and one of whose generating operations belongs to
+the subgraph. <p></p> Here are some useful guarantees about an instance of a SubGraphView: <p></p> * the input (or output) tensors are not internal.
+* the input (or output) tensors are either "connected" or "passthrough".
+* the passthrough tensors are not connected to any of the operation of
+the subgraph. <p></p> Note that there is no guarantee that an operation in a subgraph contributes
+at all to its inputs or outputs. For instance, remapping both the inputs and
+outputs to empty lists will produce a subgraph which still contains all the
+original operations. However, the remove_unused_ops function can be used to
+make a new subgraph view whose operations are connected to at least one of
+the input or output tensors. <p></p> An instance of this class is meant to be a lightweight object which is not
+modified in-place by the user. Rather, the user can create new modified
+instances of a given subgraph. In that sense, the class SubGraphView is meant
+to be used like an immutable python object. <p></p> A common problem when using views is that they can get out-of-sync with the
+data they observe (in this case, a <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>). This is up to the user to
+ensure that this doesn't happen. To keep on the safe side, it is recommended
+that the life time of subgraph views are kept very short. One way to achieve
+this is to use subgraphs within a "with make_sgv(...) as sgv:" Python context. <p></p> To alleviate the out-of-sync problem, some functions are granted the right to
+modified subgraph in place. This is typically the case of graph manipulation
+functions which, given some subgraphs as arguments, can modify the underlying
+<a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>. Since this modification is likely to render the subgraph view
+invalid, those functions can modify the argument in place to reflect the
+change. For instance, calling the function swap_inputs(svg0, svg1) will modify
+svg0 and svg1 in place to reflect the fact that their inputs have now being
+swapped. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#copy_dyn">copy_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#find_op_by_name_dyn">find_op_by_name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#input_index_dyn">input_index_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#is_passthrough_dyn">is_passthrough_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#op_dyn">op_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#output_index_dyn">output_index_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap">remap</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_default">remap_default</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_default_dyn">remap_default_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_dyn">remap_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_inputs">remap_inputs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_inputs_dyn">remap_inputs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_outputs">remap_outputs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_outputs_dyn">remap_outputs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_outputs_make_unique">remap_outputs_make_unique</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_outputs_make_unique_dyn">remap_outputs_make_unique_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_outputs_to_consumers">remap_outputs_to_consumers</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remap_outputs_to_consumers_dyn">remap_outputs_to_consumers_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remove_unused_ops">remove_unused_ops</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#remove_unused_ops_dyn">remove_unused_ops_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#connected_inputs">connected_inputs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#connected_inputs_dyn">connected_inputs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#connected_outputs">connected_outputs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#connected_outputs_dyn">connected_outputs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#inputs">inputs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#inputs_dyn">inputs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#ops">ops</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#ops_dyn">ops_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#outputs">outputs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#outputs_dyn">outputs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#passthroughs">passthroughs</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#passthroughs_dyn">passthroughs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="copy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>copy_dyn</strong>()
+		</h4>
+		<div class="content">Return a copy of itself. <p></p> Note that this class is a "view", copying it only create another view and
+does not copy the underlying part of the tf.Graph. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new instance identical to the original one. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="find_op_by_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>find_op_by_name_dyn</strong>(<span title="System.object">object</span> op_name)
+		</h4>
+		<div class="content">Return the op named op_name. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> op_name
+						</dt>
+						<dd>the name to search for 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The op named op_name. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="input_index_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_index_dyn</strong>(<span title="System.object">object</span> t)
+		</h4>
+		<div class="content">Find the input index corresponding to the given input tensor t. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> t
+						</dt>
+						<dd>the input tensor of this subgraph view. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The index in the self.inputs list. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="is_passthrough_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_passthrough_dyn</strong>(<span title="System.object">object</span> t)
+		</h4>
+		<div class="content">Check whether a tensor is passthrough. 
+
+
+
+
+		</div>
+	</div>
+	<div id="op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>op_dyn</strong>(<span title="System.object">object</span> op_id)
+		</h4>
+		<div class="content">Get an op by its index. 
+
+
+
+
+		</div>
+	</div>
+	<div id="output_index_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_index_dyn</strong>(<span title="System.object">object</span> t)
+		</h4>
+		<div class="content">Find the output index corresponding to given output tensor t. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> t
+						</dt>
+						<dd>the output tensor of this subgraph view. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The index in the self.outputs list. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap</strong>(<span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> new_input_indices, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> new_output_indices)
+		</h4>
+		<div class="content">Remap the inputs and outputs of the subgraph. <p></p> Note that this is only modifying the view: the underlying tf.Graph is not
+affected. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> new_input_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old inputs and the new ones.
+Integers must be positive and smaller than the number of old inputs.
+tf.Tensors must belong to the old list of inputs.
+This mapping can be under-complete and must be without repetitions. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> new_output_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old outputs and the new ones.
+Integers must be positive and smaller than the number of old outputs.
+tf.Tensors must belong to the old list of outputs.
+This mapping can be under-complete and can have repetitions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with remapped
+inputs and outputs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_default" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_default</strong>(<span title="System.bool">bool</span> remove_input_map, <span title="System.bool">bool</span> remove_output_map)
+		</h4>
+		<div class="content">Remap the inputs and/or outputs to the default mapping. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.bool">bool</span></code> remove_input_map
+						</dt>
+						<dd>if True the input map is reset to the default one. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> remove_output_map
+						</dt>
+						<dd>if True the output map is reset to the default one. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with its
+input and/or output mapping reset to the default one. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_default_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_default_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> remove_input_map, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> remove_output_map)
+		</h4>
+		<div class="content">Remap the inputs and/or outputs to the default mapping. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> remove_input_map
+						</dt>
+						<dd>if True the input map is reset to the default one. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> remove_output_map
+						</dt>
+						<dd>if True the output map is reset to the default one. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with its
+input and/or output mapping reset to the default one. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_dyn</strong>(<span title="System.object">object</span> new_input_indices, <span title="System.object">object</span> new_output_indices)
+		</h4>
+		<div class="content">Remap the inputs and outputs of the subgraph. <p></p> Note that this is only modifying the view: the underlying tf.Graph is not
+affected. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> new_input_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old inputs and the new ones.
+Integers must be positive and smaller than the number of old inputs.
+tf.Tensors must belong to the old list of inputs.
+This mapping can be under-complete and must be without repetitions. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> new_output_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old outputs and the new ones.
+Integers must be positive and smaller than the number of old outputs.
+tf.Tensors must belong to the old list of outputs.
+This mapping can be under-complete and can have repetitions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with remapped
+inputs and outputs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_inputs" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_inputs</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> new_input_indices)
+		</h4>
+		<div class="content">Remap the inputs of the subgraph. <p></p> If the inputs of the original subgraph are [t0, t1, t2], remapping to [2,0]
+will create a new instance whose inputs is [t2, t0]. <p></p> Note that this is only modifying the view: the underlying <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a> is not
+affected. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> new_input_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old inputs and the new ones.
+Integers must be positive and smaller than the number of old inputs.
+tf.Tensors must belong to the old list of inputs.
+This mapping can be under-complete and must be without repetitions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with remapped
+inputs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_inputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_inputs_dyn</strong>(<span title="System.object">object</span> new_input_indices)
+		</h4>
+		<div class="content">Remap the inputs of the subgraph. <p></p> If the inputs of the original subgraph are [t0, t1, t2], remapping to [2,0]
+will create a new instance whose inputs is [t2, t0]. <p></p> Note that this is only modifying the view: the underlying <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a> is not
+affected. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> new_input_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old inputs and the new ones.
+Integers must be positive and smaller than the number of old inputs.
+tf.Tensors must belong to the old list of inputs.
+This mapping can be under-complete and must be without repetitions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with remapped
+inputs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_outputs" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_outputs</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> new_output_indices)
+		</h4>
+		<div class="content">Remap the output of the subgraph. <p></p> If the output of the original subgraph are [t0, t1, t2], remapping to
+[1,1,0] will create a new instance whose outputs is [t1, t1, t0]. <p></p> Note that this is only modifying the view: the underlying tf.Graph is not
+affected. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> new_output_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old outputs and the new ones.
+Integers must be positive and smaller than the number of old outputs.
+tf.Tensors must belong to the old list of outputs.
+This mapping can be under-complete and can have repetitions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with remapped
+outputs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_outputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_outputs_dyn</strong>(<span title="System.object">object</span> new_output_indices)
+		</h4>
+		<div class="content">Remap the output of the subgraph. <p></p> If the output of the original subgraph are [t0, t1, t2], remapping to
+[1,1,0] will create a new instance whose outputs is [t1, t1, t0]. <p></p> Note that this is only modifying the view: the underlying tf.Graph is not
+affected. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> new_output_indices
+						</dt>
+						<dd>an iterable of integers or tf.Tensors
+representing a mapping between the old outputs and the new ones.
+Integers must be positive and smaller than the number of old outputs.
+tf.Tensors must belong to the old list of outputs.
+This mapping can be under-complete and can have repetitions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new modified instance of the original subgraph view with remapped
+outputs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remap_outputs_make_unique" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_outputs_make_unique</strong>()
+		</h4>
+		<div class="content">Remap the outputs so that all the tensors appears only once. 
+
+
+
+
+		</div>
+	</div>
+	<div id="remap_outputs_make_unique_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_outputs_make_unique_dyn</strong>()
+		</h4>
+		<div class="content">Remap the outputs so that all the tensors appears only once. 
+
+
+
+
+		</div>
+	</div>
+	<div id="remap_outputs_to_consumers" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_outputs_to_consumers</strong>()
+		</h4>
+		<div class="content">Remap the outputs to match the number of consumers. 
+
+
+
+
+		</div>
+	</div>
+	<div id="remap_outputs_to_consumers_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remap_outputs_to_consumers_dyn</strong>()
+		</h4>
+		<div class="content">Remap the outputs to match the number of consumers. 
+
+
+
+
+		</div>
+	</div>
+	<div id="remove_unused_ops" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remove_unused_ops</strong>(<span title="System.bool">bool</span> control_inputs)
+		</h4>
+		<div class="content">Remove unused ops. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.bool">bool</span></code> control_inputs
+						</dt>
+						<dd>if True, control inputs are used to detect used ops. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new subgraph view which only contains used operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="remove_unused_ops_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remove_unused_ops_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> control_inputs)
+		</h4>
+		<div class="content">Remove unused ops. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> control_inputs
+						</dt>
+						<dd>if True, control inputs are used to detect used ops. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A new subgraph view which only contains used operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="connected_inputs" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>connected_inputs</strong> get; 
+		</h4>
+		<div class="content">The connected input tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="connected_inputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>connected_inputs_dyn</strong> get; 
+		</h4>
+		<div class="content">The connected input tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="connected_outputs" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>connected_outputs</strong> get; 
+		</h4>
+		<div class="content">The connected output tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="connected_outputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>connected_outputs_dyn</strong> get; 
+		</h4>
+		<div class="content">The connected output tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">The underlying <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>. 
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">The underlying <a href="..\..\..\tf\Graph.md"><code>tf.Graph</code></a>. 
+
+		</div>
+	</div>
+	<div id="inputs" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.graph_editor/ListView.htm">ListView</a> <strong>inputs</strong> get; 
+		</h4>
+		<div class="content">The input tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="inputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inputs_dyn</strong> get; 
+		</h4>
+		<div class="content">The input tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="ops" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ops</strong> get; 
+		</h4>
+		<div class="content">The operations in this subgraph view. 
+
+		</div>
+	</div>
+	<div id="ops_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ops_dyn</strong> get; 
+		</h4>
+		<div class="content">The operations in this subgraph view. 
+
+		</div>
+	</div>
+	<div id="outputs" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.graph_editor/ListView.htm">ListView</a> <strong>outputs</strong> get; 
+		</h4>
+		<div class="content">The output tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="outputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outputs_dyn</strong> get; 
+		</h4>
+		<div class="content">The output tensors of this subgraph view. 
+
+		</div>
+	</div>
+	<div id="passthroughs" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.graph_editor/ListView.htm">ListView</a> <strong>passthroughs</strong> get; 
+		</h4>
+		<div class="content">The passthrough tensors, going straight from input to output. 
+
+		</div>
+	</div>
+	<div id="passthroughs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>passthroughs_dyn</strong> get; 
+		</h4>
+		<div class="content">The passthrough tensors, going straight from input to output. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

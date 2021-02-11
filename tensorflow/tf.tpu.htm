@@ -1,0 +1,2547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>tf.tpu - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow/AggregationMethod.htm">AggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulator.htm">ConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulatorBase.htm">ConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/constant_initializer.htm">constant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/CriticalSection.htm">CriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DeviceSpec.htm">DeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Dimension.htm">Dimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DType.htm">DType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FIFOQueue.htm">FIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenFeature.htm">FixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLengthRecordReader.htm">FixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenSequenceFeature.htm">FixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_normal_initializer.htm">glorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_uniform_initializer.htm">glorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GradientTape.htm">GradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.htm">Graph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph._ControlDependenciesController.htm">Graph._ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.I_ControlDependenciesController.htm">Graph.I_ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GraphKeys.htm">GraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/HeadingAxes.htm">HeadingAxes</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IAggregationMethod.htm">IAggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulator.htm">IConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulatorBase.htm">IConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iconstant_initializer.htm">Iconstant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ICriticalSection.htm">ICriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IdentityReader.htm">IdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDeviceSpec.htm">IDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDimension.htm">IDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDType.htm">IDType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFIFOQueue.htm">IFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenFeature.htm">IFixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLengthRecordReader.htm">IFixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenSequenceFeature.htm">IFixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_normal_initializer.htm">Iglorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_uniform_initializer.htm">Iglorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGradientTape.htm">IGradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraph.htm">IGraph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraphKeys.htm">IGraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIdentityReader.htm">IIdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlices.htm">IIndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlicesSpec.htm">IIndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IInteractiveSession.htm">IInteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILazyLoader.htm">ILazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILMDBReader.htm">ILMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IModule.htm">IModule</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iname_scope.htm">Iname_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlicesSpec.htm">IndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/InteractiveSession.htm">InteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iones_initializer.htm">Iones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOperation.htm">IOperation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOpError.htm">IOpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOptionalSpec.htm">IOptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iorthogonal_initializer.htm">Iorthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPaddingFIFOQueue.htm">IPaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPriorityQueue.htm">IPriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IQueueBase.htm">IQueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensor.htm">IRaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensorSpec.htm">IRaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_normal_initializer.htm">Irandom_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_uniform_initializer.htm">Irandom_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRandomShuffleQueue.htm">IRandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IReaderBase.htm">IReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRegisterGradient.htm">IRegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISession.htm">ISession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseConditionalAccumulator.htm">ISparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseFeature.htm">ISparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensor.htm">ISparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorSpec.htm">ISparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorValue.htm">ISparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensor.htm">ITensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArray.htm">ITensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArraySpec.htm">ITensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorShape.htm">ITensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorSpec.htm">ITensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITextLineReader.htm">ITextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITFRecordReader.htm">ITFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Itruncated_normal_initializer.htm">Itruncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITypeSpec.htm">ITypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IUnconnectedGradients.htm">IUnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iuniform_unit_scaling_initializer.htm">Iuniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariable.htm">IVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariable_scope.htm">Ivariable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariableScope.htm">IVariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariance_scaling_initializer.htm">Ivariance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVarLenFeature.htm">IVarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IWholeFileReader.htm">IWholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Izeros_initializer.htm">Izeros_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LazyLoader.htm">LazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LMDBReader.htm">LMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Module.htm">Module</a>
+        </li>
+				<li>
+            <a href="../tensorflow/name_scope.htm">name_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ones_initializer.htm">ones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.htm">Operation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation._InputList.htm">Operation._InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.I_InputList.htm">Operation.I_InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OpError.htm">OpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OptionalSpec.htm">OptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/orthogonal_initializer.htm">orthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PaddingFIFOQueue.htm">PaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PriorityQueue.htm">PriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/QueueBase.htm">QueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensorSpec.htm">RaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_normal_initializer.htm">random_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_uniform_initializer.htm">random_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RandomShuffleQueue.htm">RandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ReaderBase.htm">ReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RegisterGradient.htm">RegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Session.htm">Session</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseConditionalAccumulator.htm">SparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseFeature.htm">SparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensor.htm">SparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorSpec.htm">SparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorValue.htm">SparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor.htm">Tensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor`1.htm">Tensor&lt;T&gt;</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArray.htm">TensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArraySpec.htm">TensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimension.htm">TensorDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimensionSlice.htm">TensorDimensionSlice</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorShape.htm">TensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorSpec.htm">TensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TextLineReader.htm">TextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.htm">tf</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.audio.htm">tf.audio</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.htm">tf.autograph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.experimental.htm">tf.autograph.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.bitwise.htm">tf.bitwise</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.compat.htm">tf.compat</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.htm">tf.config</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.experimental.htm">tf.config.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.optimizer.htm">tf.config.optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.threading.htm">tf.config.threading</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.htm">tf.data</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.experimental.htm">tf.data.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.debugging.htm">tf.debugging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distribute.htm">tf.distribute</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distributions.htm">tf.distributions</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.errors.htm">tf.errors</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.htm">tf.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.experimental.htm">tf.estimator.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.export.htm">tf.estimator.export</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.inputs.htm">tf.estimator.inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.experimental.htm">tf.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.feature_column.htm">tf.feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.gfile.htm">tf.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.graph_util.htm">tf.graph_util</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.image.htm">tf.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.initializers.htm">tf.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.htm">tf.io</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.gfile.htm">tf.io.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.htm">tf.keras</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.activations.htm">tf.keras.activations</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.htm">tf.keras.applications</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.densenet.htm">tf.keras.applications.densenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.imagenet_utils.htm">tf.keras.applications.imagenet_utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_resnet_v2.htm">tf.keras.applications.inception_resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_v3.htm">tf.keras.applications.inception_v3</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet.htm">tf.keras.applications.mobilenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet_v2.htm">tf.keras.applications.mobilenet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.nasnet.htm">tf.keras.applications.nasnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet.htm">tf.keras.applications.resnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet_v2.htm">tf.keras.applications.resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg16.htm">tf.keras.applications.vgg16</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg19.htm">tf.keras.applications.vgg19</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.xception.htm">tf.keras.applications.xception</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.backend.htm">tf.keras.backend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.constraints.htm">tf.keras.constraints</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.htm">tf.keras.datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.boston_housing.htm">tf.keras.datasets.boston_housing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar10.htm">tf.keras.datasets.cifar10</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar100.htm">tf.keras.datasets.cifar100</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.fashion_mnist.htm">tf.keras.datasets.fashion_mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.imdb.htm">tf.keras.datasets.imdb</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.mnist.htm">tf.keras.datasets.mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.reuters.htm">tf.keras.datasets.reuters</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.estimator.htm">tf.keras.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.experimental.htm">tf.keras.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.initializers.htm">tf.keras.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.layers.htm">tf.keras.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.losses.htm">tf.keras.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.metrics.htm">tf.keras.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.htm">tf.keras.mixed_precision</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.experimental.htm">tf.keras.mixed_precision.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.models.htm">tf.keras.models</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.htm">tf.keras.optimizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.schedules.htm">tf.keras.optimizers.schedules</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.htm">tf.keras.preprocessing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.image.htm">tf.keras.preprocessing.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.regularizers.htm">tf.keras.regularizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.utils.htm">tf.keras.utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.htm">tf.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.experimental.htm">tf.layers.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.linalg.htm">tf.linalg</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.htm">tf.lite</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.htm">tf.lite.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.htm">tf.lite.experimental.microfrontend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.htm">tf.lite.experimental.microfrontend.python</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.ops.htm">tf.lite.experimental.microfrontend.python.ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.nn.htm">tf.lite.experimental.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.logging.htm">tf.logging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.losses.htm">tf.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.math.htm">tf.math</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.metrics.htm">tf.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nest.htm">tf.nest</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nn.htm">tf.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.profiler.htm">tf.profiler</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.quantization.htm">tf.quantization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.ragged.htm">tf.ragged</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.htm">tf.random</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.experimental.htm">tf.random.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.resource_loader.htm">tf.resource_loader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.htm">tf.saved_model</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.main_op.htm">tf.saved_model.main_op</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sets.htm">tf.sets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.signal.htm">tf.signal</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sparse.htm">tf.sparse</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.strings.htm">tf.strings</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.htm">tf.summary</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.experimental.htm">tf.summary.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sysconfig.htm">tf.sysconfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.test.htm">tf.test</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.htm" class="current">tf.tpu</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.experimental.htm">tf.tpu.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.htm">tf.train</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.experimental.htm">tf.train.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.user_ops.htm">tf.user_ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.htm">tf.xla</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.experimental.htm">tf.xla.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TFRecordReader.htm">TFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/truncated_normal_initializer.htm">truncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TypeSpec.htm">TypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/UnconnectedGradients.htm">UnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/uniform_unit_scaling_initializer.htm">uniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Variable.htm">Variable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variable_scope.htm">variable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableAggregation.htm">VariableAggregation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableScope.htm">VariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variance_scaling_initializer.htm">variance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VarLenFeature.htm">VarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/WholeFileReader.htm">WholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/zeros_initializer.htm">zeros_initializer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> tf.tpu</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.tpu.htm#batch_parallel">batch_parallel</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#batch_parallel_dyn">batch_parallel_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#bfloat16_scope">bfloat16_scope</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#bfloat16_scope_dyn">bfloat16_scope_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#core">core</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#core_dyn">core_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum">cross_replica_sum</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum">cross_replica_sum</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum">cross_replica_sum</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum">cross_replica_sum</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum">cross_replica_sum</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum">cross_replica_sum</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#initialize_system">initialize_system</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#initialize_system_dyn">initialize_system_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#outside_compilation">outside_compilation</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#outside_compilation">outside_compilation</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#outside_compilation_dyn">outside_compilation_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#outside_compilation_dyn">outside_compilation_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate">replicate</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate">replicate</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate">replicate</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate">replicate</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate">replicate</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate_dyn">replicate_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#rewrite">rewrite</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#rewrite_dyn">rewrite_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#shard">shard</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#shard_dyn">shard_dyn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#shutdown_system">shutdown_system</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#shutdown_system_dyn">shutdown_system_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.tpu.htm#batch_parallel_fn">batch_parallel_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#bfloat16_scope_fn">bfloat16_scope_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#core_fn">core_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#cross_replica_sum_fn">cross_replica_sum_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#initialize_system_fn">initialize_system_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#outside_compilation_fn">outside_compilation_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#replicate_fn">replicate_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#rewrite_fn">rewrite_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#shard_fn">shard_fn</a></li>
+				<li><a href="../tensorflow/tf.tpu.htm#shutdown_system_fn">shutdown_system_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="batch_parallel" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>batch_parallel</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs, <span title="System.int">int</span> num_shards, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Shards `computation` along the batch dimension for parallel execution. <p></p> Convenience wrapper around shard(). <p></p> `inputs` must be a list of Tensors or None (equivalent to an empty list).
+Each input is split into `num_shards` pieces along the 0-th dimension, and
+computation is applied to each shard in parallel. <p></p> Tensors are broadcast to all shards if they are lexically captured by
+`computation`. e.g., <p></p> x = tf.constant(7)
+def computation():
+return x + 3
+... = shard(computation,...) <p></p> The outputs from all shards are concatenated back together along their 0-th
+dimension. <p></p> Inputs and outputs of the computation must be at least rank-1 Tensors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds a computation to apply to each
+shard of the input. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of input tensors or None (equivalent to an empty list). The
+0-th dimension of each Tensor must have size divisible by `num_shards`. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> num_shards
+						</dt>
+						<dd>The number of shards. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to `computation`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each shard of the computation uses
+only one core, and there is either only one shard, or the number of shards
+is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A list of output tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="batch_parallel_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_parallel_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_shards, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Shards `computation` along the batch dimension for parallel execution. <p></p> Convenience wrapper around shard(). <p></p> `inputs` must be a list of Tensors or None (equivalent to an empty list).
+Each input is split into `num_shards` pieces along the 0-th dimension, and
+computation is applied to each shard in parallel. <p></p> Tensors are broadcast to all shards if they are lexically captured by
+`computation`. e.g., <p></p> x = tf.constant(7)
+def computation():
+return x + 3
+... = shard(computation,...) <p></p> The outputs from all shards are concatenated back together along their 0-th
+dimension. <p></p> Inputs and outputs of the computation must be at least rank-1 Tensors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds a computation to apply to each
+shard of the input. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of input tensors or None (equivalent to an empty list). The
+0-th dimension of each Tensor must have size divisible by `num_shards`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_shards
+						</dt>
+						<dd>The number of shards. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to `computation`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each shard of the computation uses
+only one core, and there is either only one shard, or the number of shards
+is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of output tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="bfloat16_scope" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a> <strong>bfloat16_scope</strong>()
+		</h4>
+		<div class="content">Scope class for bfloat16 variables so that the model uses custom getter. <p></p> This enables variables to be read as bfloat16 type when using get_variable. 
+
+
+
+
+		</div>
+	</div>
+	<div id="bfloat16_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bfloat16_scope_dyn</strong>()
+		</h4>
+		<div class="content">Scope class for bfloat16 variables so that the model uses custom getter. <p></p> This enables variables to be read as bfloat16 type when using get_variable. 
+
+
+
+
+		</div>
+	</div>
+	<div id="core" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>core</strong>(<span title="System.int">int</span> num)
+		</h4>
+		<div class="content">Returns the device name for a core in a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> num
+						</dt>
+						<dd>the virtual core number within each replica to which operators should
+be assigned. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.int">int</span></code>
+					</dt>
+					<dd>A device name, suitable for passing to `tf.device()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="core_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>core_dyn</strong>(<span title="System.object">object</span> num)
+		</h4>
+		<div class="content">Returns the device name for a core in a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> num
+						</dt>
+						<dd>the virtual core number within each replica to which operators should
+be assigned. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A device name, suitable for passing to `tf.device()`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_replica_sum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cross_replica_sum</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> group_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Sum the input tensor across replicas according to group_assignment. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>The local tensor to the sum. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape [num_groups,
+num_replicas_per_group]. `group_assignment[i]` represents the replica
+ids in the ith subgroup. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional op name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` which is summed across replicas. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_replica_sum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cross_replica_sum</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> x, <span title="System.object">object</span> group_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Sum the input tensor across replicas according to group_assignment. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> x
+						</dt>
+						<dd>The local tensor to the sum. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape [num_groups,
+num_replicas_per_group]. `group_assignment[i]` represents the replica
+ids in the ith subgroup. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional op name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` which is summed across replicas. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_replica_sum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cross_replica_sum</strong>(<a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a> x, <span title="System.object">object</span> group_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Sum the input tensor across replicas according to group_assignment. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a></code> x
+						</dt>
+						<dd>The local tensor to the sum. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape [num_groups,
+num_replicas_per_group]. `group_assignment[i]` represents the replica
+ids in the ith subgroup. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional op name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` which is summed across replicas. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_replica_sum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cross_replica_sum</strong>(<span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> x, <span title="System.object">object</span> group_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Sum the input tensor across replicas according to group_assignment. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span></code> x
+						</dt>
+						<dd>The local tensor to the sum. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape [num_groups,
+num_replicas_per_group]. `group_assignment[i]` represents the replica
+ids in the ith subgroup. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional op name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` which is summed across replicas. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_replica_sum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cross_replica_sum</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> x, <span title="System.object">object</span> group_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Sum the input tensor across replicas according to group_assignment. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> x
+						</dt>
+						<dd>The local tensor to the sum. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape [num_groups,
+num_replicas_per_group]. `group_assignment[i]` represents the replica
+ids in the ith subgroup. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional op name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` which is summed across replicas. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_replica_sum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cross_replica_sum</strong>(<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> x, <span title="System.object">object</span> group_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Sum the input tensor across replicas according to group_assignment. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> x
+						</dt>
+						<dd>The local tensor to the sum. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> group_assignment
+						</dt>
+						<dd>Optional 2d int32 lists with shape [num_groups,
+num_replicas_per_group]. `group_assignment[i]` represents the replica
+ids in the ith subgroup. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional op name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A `Tensor` which is summed across replicas. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="initialize_system" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>initialize_system</strong>(<span title="System.object">object</span> embedding_config, <span title="System.string">string</span> job)
+		</h4>
+		<div class="content">Initializes a distributed TPU system for use with TensorFlow. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> embedding_config
+						</dt>
+						<dd>If not None, a `TPUEmbeddingConfiguration` proto
+describing the desired configuration of the hardware embedding lookup
+tables. If embedding_config is None, no hardware embeddings can be used. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> job
+						</dt>
+						<dd>The job (the XXX in TensorFlow device specification /job:XXX) that
+contains the TPU devices that will be initialized. If job=None it is
+assumed there is only one job in the TensorFlow flock, and an error will
+be returned if this assumption does not hold. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A serialized `TopologyProto` that describes the TPU system. Note:
+the topology must be evaluated using `Session.run` before it can be used. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="initialize_system_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_system_dyn</strong>(<span title="System.object">object</span> embedding_config, <span title="System.object">object</span> job)
+		</h4>
+		<div class="content">Initializes a distributed TPU system for use with TensorFlow. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> embedding_config
+						</dt>
+						<dd>If not None, a `TPUEmbeddingConfiguration` proto
+describing the desired configuration of the hardware embedding lookup
+tables. If embedding_config is None, no hardware embeddings can be used. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> job
+						</dt>
+						<dd>The job (the XXX in TensorFlow device specification /job:XXX) that
+contains the TPU devices that will be initialized. If job=None it is
+assumed there is only one job in the TensorFlow flock, and an error will
+be returned if this assumption does not hold. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A serialized `TopologyProto` that describes the TPU system. Note:
+the topology must be evaluated using `Session.run` before it can be used. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="outside_compilation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outside_compilation</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> computation, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Builds part of a computation outside any current TPU replicate scope. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to
+place on the host. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>the keyword arguments for the computation. 
+						</dd>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>the positional arguments for the computation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The Tensors returned by computation. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="outside_compilation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outside_compilation</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> computation, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Builds part of a computation outside any current TPU replicate scope. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to
+place on the host. 
+						</dd>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>the positional arguments for the computation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The Tensors returned by computation. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="outside_compilation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outside_compilation_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Builds part of a computation outside any current TPU replicate scope. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to
+place on the host. 
+						</dd>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>the positional arguments for the computation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The Tensors returned by computation. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="outside_compilation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outside_compilation_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Builds part of a computation outside any current TPU replicate scope. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to
+place on the host. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>the keyword arguments for the computation. 
+						</dd>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>the positional arguments for the computation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The Tensors returned by computation. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="replicate" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replicate</strong>(<span title="System.object">object</span> computation, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <span title="System.object">object</span> infeed_queue, <a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a> device_assignment, <span title="System.string">string</span> name, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> maximum_shapes)
+		</h4>
+		<div class="content">Builds a graph operator that runs a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to replicate. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> inputs
+						</dt>
+						<dd>A list of lists of input tensors or `None` (equivalent to
+`[[]]`), indexed by `[replica_num][input_num]`. All replicas must
+have the same number of inputs. Each input can be a nested structure
+containing values that are convertible to tensors. Note that passing an
+N-dimension list of compatible values will result in a N-dimension list of
+scalar tensors rather than a single Rank-N tensors. If you need different
+behavior, convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to computation. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each replica of the computation uses
+only one core, and there is either only one replica, or the number of
+replicas is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> maximum_shapes
+						</dt>
+						<dd>A nested structure of tf.TensorShape representing the shape
+to which the respective component of each input element in each replica
+should be padded. Any unknown dimensions (e.g.
+tf.compat.v1.Dimension(None) in a tf.TensorShape or -1 in a tensor-like
+object) will be padded to the maximum size of that dimension over all
+replicas. The structure of `maximum_shapes` needs to be the same as
+`inputs[0]`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of outputs, indexed by `[replica_num]` each output can be a nested
+structure same as what computation() returns with a few exceptions. <p></p> Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="replicate" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replicate</strong>(<span title="System.object">object</span> computation, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <span title="System.object">object</span> infeed_queue, <a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a> device_assignment, <span title="System.string">string</span> name, <span title="System.int">int</span> maximum_shapes)
+		</h4>
+		<div class="content">Builds a graph operator that runs a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to replicate. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> inputs
+						</dt>
+						<dd>A list of lists of input tensors or `None` (equivalent to
+`[[]]`), indexed by `[replica_num][input_num]`. All replicas must
+have the same number of inputs. Each input can be a nested structure
+containing values that are convertible to tensors. Note that passing an
+N-dimension list of compatible values will result in a N-dimension list of
+scalar tensors rather than a single Rank-N tensors. If you need different
+behavior, convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to computation. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each replica of the computation uses
+only one core, and there is either only one replica, or the number of
+replicas is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> maximum_shapes
+						</dt>
+						<dd>A nested structure of tf.TensorShape representing the shape
+to which the respective component of each input element in each replica
+should be padded. Any unknown dimensions (e.g.
+tf.compat.v1.Dimension(None) in a tf.TensorShape or -1 in a tensor-like
+object) will be padded to the maximum size of that dimension over all
+replicas. The structure of `maximum_shapes` needs to be the same as
+`inputs[0]`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of outputs, indexed by `[replica_num]` each output can be a nested
+structure same as what computation() returns with a few exceptions. <p></p> Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="replicate" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replicate</strong>(<span title="System.object">object</span> computation, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <span title="System.object">object</span> infeed_queue, <a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a> device_assignment, <span title="System.string">string</span> name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> maximum_shapes)
+		</h4>
+		<div class="content">Builds a graph operator that runs a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to replicate. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> inputs
+						</dt>
+						<dd>A list of lists of input tensors or `None` (equivalent to
+`[[]]`), indexed by `[replica_num][input_num]`. All replicas must
+have the same number of inputs. Each input can be a nested structure
+containing values that are convertible to tensors. Note that passing an
+N-dimension list of compatible values will result in a N-dimension list of
+scalar tensors rather than a single Rank-N tensors. If you need different
+behavior, convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to computation. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each replica of the computation uses
+only one core, and there is either only one replica, or the number of
+replicas is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/TensorShape.htm">TensorShape</a></code> maximum_shapes
+						</dt>
+						<dd>A nested structure of tf.TensorShape representing the shape
+to which the respective component of each input element in each replica
+should be padded. Any unknown dimensions (e.g.
+tf.compat.v1.Dimension(None) in a tf.TensorShape or -1 in a tensor-like
+object) will be padded to the maximum size of that dimension over all
+replicas. The structure of `maximum_shapes` needs to be the same as
+`inputs[0]`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of outputs, indexed by `[replica_num]` each output can be a nested
+structure same as what computation() returns with a few exceptions. <p></p> Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="replicate" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replicate</strong>(<span title="System.object">object</span> computation, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <span title="System.object">object</span> infeed_queue, <a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a> device_assignment, <span title="System.string">string</span> name, <a href="../tensorflow/Dimension.htm">Dimension</a> maximum_shapes)
+		</h4>
+		<div class="content">Builds a graph operator that runs a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to replicate. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> inputs
+						</dt>
+						<dd>A list of lists of input tensors or `None` (equivalent to
+`[[]]`), indexed by `[replica_num][input_num]`. All replicas must
+have the same number of inputs. Each input can be a nested structure
+containing values that are convertible to tensors. Note that passing an
+N-dimension list of compatible values will result in a N-dimension list of
+scalar tensors rather than a single Rank-N tensors. If you need different
+behavior, convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to computation. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each replica of the computation uses
+only one core, and there is either only one replica, or the number of
+replicas is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Dimension.htm">Dimension</a></code> maximum_shapes
+						</dt>
+						<dd>A nested structure of tf.TensorShape representing the shape
+to which the respective component of each input element in each replica
+should be padded. Any unknown dimensions (e.g.
+tf.compat.v1.Dimension(None) in a tf.TensorShape or -1 in a tensor-like
+object) will be padded to the maximum size of that dimension over all
+replicas. The structure of `maximum_shapes` needs to be the same as
+`inputs[0]`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of outputs, indexed by `[replica_num]` each output can be a nested
+structure same as what computation() returns with a few exceptions. <p></p> Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="replicate" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replicate</strong>(<span title="System.object">object</span> computation, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <span title="System.object">object</span> infeed_queue, <a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a> device_assignment, <span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<TensorShape>">IEnumerable&lt;TensorShape&gt;</span> maximum_shapes)
+		</h4>
+		<div class="content">Builds a graph operator that runs a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to replicate. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> inputs
+						</dt>
+						<dd>A list of lists of input tensors or `None` (equivalent to
+`[[]]`), indexed by `[replica_num][input_num]`. All replicas must
+have the same number of inputs. Each input can be a nested structure
+containing values that are convertible to tensors. Note that passing an
+N-dimension list of compatible values will result in a N-dimension list of
+scalar tensors rather than a single Rank-N tensors. If you need different
+behavior, convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to computation. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.tpu.experimental/DeviceAssignment.htm">DeviceAssignment</a></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each replica of the computation uses
+only one core, and there is either only one replica, or the number of
+replicas is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<TensorShape>">IEnumerable&lt;TensorShape&gt;</span></code> maximum_shapes
+						</dt>
+						<dd>A nested structure of tf.TensorShape representing the shape
+to which the respective component of each input element in each replica
+should be padded. Any unknown dimensions (e.g.
+tf.compat.v1.Dimension(None) in a tf.TensorShape or -1 in a tensor-like
+object) will be padded to the maximum size of that dimension over all
+replicas. The structure of `maximum_shapes` needs to be the same as
+`inputs[0]`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of outputs, indexed by `[replica_num]` each output can be a nested
+structure same as what computation() returns with a few exceptions. <p></p> Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="replicate_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>replicate_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.object">object</span> name, <span title="System.object">object</span> maximum_shapes)
+		</h4>
+		<div class="content">Builds a graph operator that runs a replicated TPU computation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds the computation to replicate. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of lists of input tensors or `None` (equivalent to
+`[[]]`), indexed by `[replica_num][input_num]`. All replicas must
+have the same number of inputs. Each input can be a nested structure
+containing values that are convertible to tensors. Note that passing an
+N-dimension list of compatible values will result in a N-dimension list of
+scalar tensors rather than a single Rank-N tensors. If you need different
+behavior, convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to computation. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each replica of the computation uses
+only one core, and there is either only one replica, or the number of
+replicas is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> maximum_shapes
+						</dt>
+						<dd>A nested structure of tf.TensorShape representing the shape
+to which the respective component of each input element in each replica
+should be padded. Any unknown dimensions (e.g.
+tf.compat.v1.Dimension(None) in a tf.TensorShape or -1 in a tensor-like
+object) will be padded to the maximum size of that dimension over all
+replicas. The structure of `maximum_shapes` needs to be the same as
+`inputs[0]`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of outputs, indexed by `[replica_num]` each output can be a nested
+structure same as what computation() returns with a few exceptions. <p></p> Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="rewrite" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rewrite</strong>(<span title="System.object">object</span> computation, <span title="System.Nullable<ValueTuple<object>>">Nullable&lt;ValueTuple&lt;object&gt;&gt;</span> inputs, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Rewrites `computation` for execution on a TPU system. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds a computation to apply to the
+input. If the function takes n inputs, 'inputs' should be a list of n
+tensors. <p></p> `computation` may return a list of operations and tensors. Tensors must
+come before operations in the returned list.  The return value of
+`rewrite` is a list of tensors corresponding to the tensors from the
+output of `computation`. <p></p> All `Operation`s constructed during `computation` will be executed when
+evaluating any of the returned output tensors, not just the ones returned. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple<object>>">Nullable&lt;ValueTuple&lt;object&gt;&gt;</span></code> inputs
+						</dt>
+						<dd>A list of input tensors or `None` (equivalent to an empty list).
+Each input can be a nested structure containing values that are
+convertible to tensors. Note that passing an N-dimension list of
+compatible values will result in a N-dimention list of scalar tensors
+rather than a single Rank-N tensors. If you need different behavior,
+convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to `computation`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>if not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. May be omitted for a single-core computation, in which
+case the core attached to task 0, TPU device 0 is used. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Same data structure as if computation(*inputs) is called directly with some
+exceptions for correctness. Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="rewrite_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rewrite_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Rewrites `computation` for execution on a TPU system. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds a computation to apply to the
+input. If the function takes n inputs, 'inputs' should be a list of n
+tensors. <p></p> `computation` may return a list of operations and tensors. Tensors must
+come before operations in the returned list.  The return value of
+`rewrite` is a list of tensors corresponding to the tensors from the
+output of `computation`. <p></p> All `Operation`s constructed during `computation` will be executed when
+evaluating any of the returned output tensors, not just the ones returned. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of input tensors or `None` (equivalent to an empty list).
+Each input can be a nested structure containing values that are
+convertible to tensors. Note that passing an N-dimension list of
+compatible values will result in a N-dimention list of scalar tensors
+rather than a single Rank-N tensors. If you need different behavior,
+convert part of inputs to tensors with <a href="..\..\tf\convert_to_tensor.md"><code>tf.convert_to_tensor</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` from which to append a tuple
+of arguments as inputs to `computation`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>if not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. May be omitted for a single-core computation, in which
+case the core attached to task 0, TPU device 0 is used. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Same data structure as if computation(*inputs) is called directly with some
+exceptions for correctness. Exceptions include:
+1) None output: a NoOp would be returned which control-depends on
+computation.
+2) Single value output: A tuple containing the value would be returned.
+3) Operation-only outputs: a NoOp would be returned which
+control-depends on computation.
+TODO(b/121383831): Investigate into removing these special cases. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="shard" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>shard</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs, <span title="System.int">int</span> num_shards, <span title="System.object">object</span> input_shard_axes, <span title="System.bool">bool</span> outputs_from_all_shards, <span title="System.object">object</span> output_shard_axes, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Shards `computation` for parallel execution. <p></p> `inputs` must be a list of Tensors or None (equivalent to an empty list), each
+of which has a corresponding split axis (from `input_shard_axes`). Each input
+is split into `num_shards` pieces along the corresponding axis, and
+computation is applied to each shard in parallel. <p></p> Tensors are broadcast to all shards if they are lexically captured by
+`computation`. e.g., <p></p> x = tf.constant(7)
+def computation():
+return x + 3
+... = shard(computation,...) <p></p> TODO(phawkins): consider adding support for broadcasting Tensors passed
+as inputs. <p></p> If `outputs_from_all_shards` is true, the outputs from all shards of
+`computation` are concatenated back together along their `output_shards_axes`.
+Otherwise, each output is taken from an arbitrary shard. <p></p> Inputs and outputs of the computation must be at least rank-1 Tensors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds a computation to apply to each
+shard of the input. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of input tensors or None (equivalent to an empty list). Each
+input tensor has a corresponding shard axes, given by `input_shard_axes`,
+which must have size divisible by `num_shards`. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> num_shards
+						</dt>
+						<dd>The number of shards. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> input_shard_axes
+						</dt>
+						<dd>A list of dimensions along which to shard `inputs`, or
+`None`. `None` means "shard all inputs along dimension 0". If not `None`,
+there must be one dimension per input. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> outputs_from_all_shards
+						</dt>
+						<dd>Boolean or list of boolean. For each output, if
+`True`, outputs from all shards are concatenated along the corresponding
+`output_shard_axes` entry. Otherwise, each output is taken
+from an arbitrary shard. If the argument is a boolean, the argument's
+value is used for each output. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> output_shard_axes
+						</dt>
+						<dd>A list of dimensions along which to concatenate the
+outputs of `computation`, or `None`. `None` means "concatenate all outputs
+along dimension 0". If not `None`, there must be one dimension per output.
+Ignored if `outputs_from_all_shards` is False. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` to use to augment the inputs
+of `computation`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each shard of the computation uses
+only one core, and there is either only one shard, or the number of shards
+is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A list of output tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="shard_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shard_dyn</strong>(<span title="System.object">object</span> computation, <span title="System.object">object</span> inputs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_shards, <span title="System.object">object</span> input_shard_axes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> outputs_from_all_shards, <span title="System.object">object</span> output_shard_axes, <span title="System.object">object</span> infeed_queue, <span title="System.object">object</span> device_assignment, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Shards `computation` for parallel execution. <p></p> `inputs` must be a list of Tensors or None (equivalent to an empty list), each
+of which has a corresponding split axis (from `input_shard_axes`). Each input
+is split into `num_shards` pieces along the corresponding axis, and
+computation is applied to each shard in parallel. <p></p> Tensors are broadcast to all shards if they are lexically captured by
+`computation`. e.g., <p></p> x = tf.constant(7)
+def computation():
+return x + 3
+... = shard(computation,...) <p></p> TODO(phawkins): consider adding support for broadcasting Tensors passed
+as inputs. <p></p> If `outputs_from_all_shards` is true, the outputs from all shards of
+`computation` are concatenated back together along their `output_shards_axes`.
+Otherwise, each output is taken from an arbitrary shard. <p></p> Inputs and outputs of the computation must be at least rank-1 Tensors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> computation
+						</dt>
+						<dd>A Python function that builds a computation to apply to each
+shard of the input. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of input tensors or None (equivalent to an empty list). Each
+input tensor has a corresponding shard axes, given by `input_shard_axes`,
+which must have size divisible by `num_shards`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_shards
+						</dt>
+						<dd>The number of shards. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> input_shard_axes
+						</dt>
+						<dd>A list of dimensions along which to shard `inputs`, or
+`None`. `None` means "shard all inputs along dimension 0". If not `None`,
+there must be one dimension per input. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> outputs_from_all_shards
+						</dt>
+						<dd>Boolean or list of boolean. For each output, if
+`True`, outputs from all shards are concatenated along the corresponding
+`output_shard_axes` entry. Otherwise, each output is taken
+from an arbitrary shard. If the argument is a boolean, the argument's
+value is used for each output. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> output_shard_axes
+						</dt>
+						<dd>A list of dimensions along which to concatenate the
+outputs of `computation`, or `None`. `None` means "concatenate all outputs
+along dimension 0". If not `None`, there must be one dimension per output.
+Ignored if `outputs_from_all_shards` is False. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> infeed_queue
+						</dt>
+						<dd>If not `None`, the `InfeedQueue` to use to augment the inputs
+of `computation`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_assignment
+						</dt>
+						<dd>If not `None`, a `DeviceAssignment` describing the
+mapping between logical cores in the computation with physical cores in
+the TPU topology. Uses a default device assignment if `None`. The
+`DeviceAssignment` may be omitted if each shard of the computation uses
+only one core, and there is either only one shard, or the number of shards
+is equal to the number of cores in the TPU system. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>(Deprecated) Does nothing. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of output tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="shutdown_system" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shutdown_system</strong>(<span title="System.object">object</span> job)
+		</h4>
+		<div class="content">Shuts down a running a distributed TPU system. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> job
+						</dt>
+						<dd>The job (the XXX in TensorFlow device specification /job:XXX) that
+contains the TPU devices that will be shutdown. If job=None it is
+assumed there is only one job in the TensorFlow flock, and an error will
+be returned if this assumption does not hold. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="shutdown_system_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shutdown_system_dyn</strong>(<span title="System.object">object</span> job)
+		</h4>
+		<div class="content">Shuts down a running a distributed TPU system. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> job
+						</dt>
+						<dd>The job (the XXX in TensorFlow device specification /job:XXX) that
+contains the TPU devices that will be shutdown. If job=None it is
+assumed there is only one job in the TensorFlow flock, and an error will
+be returned if this assumption does not hold. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="batch_parallel_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>batch_parallel_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bfloat16_scope_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>bfloat16_scope_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="core_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>core_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="cross_replica_sum_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>cross_replica_sum_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initialize_system_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>initialize_system_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outside_compilation_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>outside_compilation_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="replicate_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>replicate_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rewrite_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>rewrite_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shard_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>shard_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shutdown_system_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>shutdown_system_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

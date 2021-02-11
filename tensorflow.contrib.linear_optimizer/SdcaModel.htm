@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>SdcaModel - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.linear_optimizer</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.linear_optimizer/ISdcaModel.htm">ISdcaModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.linear_optimizer/ISDCAOptimizer.htm">ISDCAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.linear_optimizer/ISparseFeatureColumn.htm">ISparseFeatureColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.linear_optimizer/SdcaModel.htm" class="current">SdcaModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.linear_optimizer/SDCAOptimizer.htm">SDCAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.linear_optimizer/SparseFeatureColumn.htm">SparseFeatureColumn</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> SdcaModel</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.linear_optimizer</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.linear_optimizer/ISdcaModel.htm">ISdcaModel</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Stochastic dual coordinate ascent solver for linear models. <p></p> Loss functions supported: <p></p> * Binary logistic loss
+* Squared loss
+* Hinge loss
+* Smooth hinge loss
+* Poisson log loss <p></p> This class defines an optimizer API to train a linear model. <p></p> ### Usage
+In the training program you will just have to run the returned Op from
+minimize(). <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Create a solver with the desired parameters.
+            lr = tf.contrib.linear_optimizer.SdcaModel(examples, variables, options)
+            min_op = lr.minimize()
+            opt_op = lr.update_weights(min_op) <p></p> predictions = lr.predictions(examples)
+# Primal loss + L1 loss + L2 loss.
+regularized_loss = lr.regularized_loss(examples)
+# Primal loss only
+unregularized_loss = lr.unregularized_loss(examples) <p></p> examples: {
+  sparse_features: list of SparseFeatureColumn.
+  dense_features: list of dense tensors of type float32.
+  example_labels: a tensor of type float32 and shape [Num examples]
+  example_weights: a tensor of type float32 and shape [Num examples]
+  example_ids: a tensor of type string and shape [Num examples]
+}
+variables: {
+  sparse_features_weights: list of tensors of shape [vocab size]
+  dense_features_weights: list of tensors of shape [dense_feature_dimension]
+}
+options: {
+  symmetric_l1_regularization: 0.0
+  symmetric_l2_regularization: 1.0
+  loss_type: "logistic_loss"
+  num_loss_partitions: 1 (Optional, with default value of 1. Number of
+  partitions of the global loss function, 1 means single machine solver,
+  and >1 when we have more than one optimizer working concurrently.)
+  num_table_shards: 1 (Optional, with default value of 1. Number of shards
+  of the internal state table, typically set to match the number of
+  parameter servers for large data sets.
+} <p></p> </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.linear_optimizer/SdcaModel.htm#predictions">predictions</a></li>
+				<li><a href="../tensorflow.contrib.linear_optimizer/SdcaModel.htm#regularized_loss">regularized_loss</a></li>
+				<li><a href="../tensorflow.contrib.linear_optimizer/SdcaModel.htm#unregularized_loss">unregularized_loss</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.linear_optimizer/SdcaModel.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="predictions" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>predictions</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> examples)
+		</h4>
+		<div class="content">Add operations to compute predictions by the model. <p></p> If logistic_loss is being used, predicted probabilities are returned.
+If poisson_loss is being used, predictions are exponentiated.
+Otherwise, (raw) linear predictions (w*x) are returned. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> examples
+						</dt>
+						<dd>Examples to compute predictions on. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that computes the predictions for examples. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="regularized_loss" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>regularized_loss</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> examples)
+		</h4>
+		<div class="content">Add operations to compute the loss with regularization loss included. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> examples
+						</dt>
+						<dd>Examples to compute loss on. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that computes mean (regularized) loss for given set of
+examples. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="unregularized_loss" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>unregularized_loss</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> examples)
+		</h4>
+		<div class="content">Add operations to compute the loss (without the regularization loss). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> examples
+						</dt>
+						<dd>Examples to compute unregularized loss on. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that computes mean (unregularized) loss for given set of
+examples. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

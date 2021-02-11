@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>WALSMatrixFactorization - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.factorization</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_IncrementGlobalStepHook.htm">_IncrementGlobalStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_InitializeClustersOpFactory.htm">_InitializeClustersOpFactory</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_LossRelativeChangeHook.htm">_LossRelativeChangeHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_ModelFn.htm">_ModelFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_StopAtSweepHook.htm">_StopAtSweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_SweepHook.htm">_SweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/factorization.htm">factorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/GMM.htm">GMM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/GmmAlgorithm.htm">GmmAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_IncrementGlobalStepHook.htm">I_IncrementGlobalStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_InitializeClustersOpFactory.htm">I_InitializeClustersOpFactory</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_LossRelativeChangeHook.htm">I_LossRelativeChangeHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_ModelFn.htm">I_ModelFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_StopAtSweepHook.htm">I_StopAtSweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_SweepHook.htm">I_SweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IGMM.htm">IGMM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IGmmAlgorithm.htm">IGmmAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IKMeans.htm">IKMeans</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IKMeansClustering.htm">IKMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IWALSMatrixFactorization.htm">IWALSMatrixFactorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IWALSModel.htm">IWALSModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/KMeans.htm">KMeans</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/KMeansClustering.htm">KMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm" class="current">WALSMatrixFactorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/WALSModel.htm">WALSModel</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> WALSMatrixFactorization</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.factorization</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.contrib.learn/Estimator.htm">Estimator</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.factorization/IWALSMatrixFactorization.htm">IWALSMatrixFactorization</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">An Estimator for Weighted Matrix Factorization, using the WALS method. <p></p> WALS (Weighted Alternating Least Squares) is an algorithm for weighted matrix
+factorization. It computes a low-rank approximation of a given sparse (n x m)
+matrix `A`, by a product of two matrices, `U * V^T`, where `U` is a (n x k)
+matrix and `V` is a (m x k) matrix. Here k is the rank of the approximation,
+also called the embedding dimension. We refer to `U` as the row factors, and
+`V` as the column factors.
+See tensorflow/contrib/factorization/g3doc/wals.md for the precise problem
+formulation. <p></p> The training proceeds in sweeps: during a row_sweep, we fix `V` and solve for
+`U`. During a column sweep, we fix `U` and solve for `V`. Each one of these
+problems is an unconstrained quadratic minimization problem and can be solved
+exactly (it can also be solved in mini-batches, since the solution decouples
+across rows of each matrix).
+The alternating between sweeps is achieved by using a hook during training,
+which is responsible for keeping track of the sweeps and running preparation
+ops at the beginning of each sweep. It also updates the global_step variable,
+which keeps track of the number of batches processed since the beginning of
+training.
+The current implementation assumes that the training is run on a single
+machine, and will fail if `config.num_worker_replicas` is not equal to one.
+Training is done by calling `self.fit(input_fn=input_fn)`, where `input_fn`
+provides two tensors: one for rows of the input matrix, and one for rows of
+the transposed input matrix (i.e. columns of the original matrix). Note that
+during a row sweep, only row batches are processed (ignoring column batches)
+and vice-versa.
+Also note that every row (respectively every column) of the input matrix
+must be processed at least once for the sweep to be considered complete. In
+particular, training will not make progress if some rows are not generated by
+the `input_fn`. <p></p> For prediction, given a new set of input rows `A'`, we compute a corresponding
+set of row factors `U'`, such that `U' * V^T` is a good approximation of `A'`.
+We call this operation a row projection. A similar operation is defined for
+columns. Projection is done by calling
+`self.get_projections(input_fn=input_fn)`, where `input_fn` satisfies the
+constraints given below. <p></p> The input functions must satisfy the following constraints: Calling `input_fn`
+must return a tuple `(features, labels)` where `labels` is None, and
+`features` is a dict containing the following keys: <p></p> TRAIN:
+* `WALSMatrixFactorization.INPUT_ROWS`: float32 SparseTensor (matrix).
+Rows of the input matrix to process (or to project).
+* `WALSMatrixFactorization.INPUT_COLS`: float32 SparseTensor (matrix).
+Columns of the input matrix to process (or to project), transposed. <p></p> INFER:
+* `WALSMatrixFactorization.INPUT_ROWS`: float32 SparseTensor (matrix).
+Rows to project.
+* `WALSMatrixFactorization.INPUT_COLS`: float32 SparseTensor (matrix).
+Columns to project.
+* `WALSMatrixFactorization.PROJECT_ROW`: Boolean Tensor. Whether to project
+the rows or columns.
+* `WALSMatrixFactorization.PROJECTION_WEIGHTS` (Optional): float32 Tensor
+(vector). The weights to use in the projection. <p></p> EVAL:
+* `WALSMatrixFactorization.INPUT_ROWS`: float32 SparseTensor (matrix).
+Rows to project.
+* `WALSMatrixFactorization.INPUT_COLS`: float32 SparseTensor (matrix).
+Columns to project.
+* `WALSMatrixFactorization.PROJECT_ROW`: Boolean Tensor. Whether to project
+the rows or columns. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#get_col_factors">get_col_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#get_col_factors_dyn">get_col_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#get_projections">get_projections</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#get_projections_dyn">get_projections_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#get_row_factors">get_row_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#get_row_factors_dyn">get_row_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#COMPLETED_SWEEPS_dyn">COMPLETED_SWEEPS_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#config">config</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#config_dyn">config_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#INPUT_COLS_dyn">INPUT_COLS_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#INPUT_ROWS_dyn">INPUT_ROWS_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#LOSS_dyn">LOSS_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#model_dir">model_dir</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#model_dir_dyn">model_dir_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#model_fn">model_fn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#model_fn_dyn">model_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PROJECT_ROW_dyn">PROJECT_ROW_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PROJECTION_RESULT_dyn">PROJECTION_RESULT_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PROJECTION_WEIGHTS_dyn">PROJECTION_WEIGHTS_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#RWSE_dyn">RWSE_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PROJECT_ROW">PROJECT_ROW</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PROJECTION_WEIGHTS">PROJECTION_WEIGHTS</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#PROJECTION_RESULT">PROJECTION_RESULT</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#COMPLETED_SWEEPS">COMPLETED_SWEEPS</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#LOSS">LOSS</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#INPUT_ROWS">INPUT_ROWS</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#RWSE">RWSE</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm#INPUT_COLS">INPUT_COLS</a></li>
+			</ul>
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="get_col_factors" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_col_factors</strong>()
+		</h4>
+		<div class="content">Returns the column factors of the model, loading them from checkpoint. <p></p> Should only be run after training. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A list of the column factors of the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_col_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_col_factors_dyn</strong>()
+		</h4>
+		<div class="content">Returns the column factors of the model, loading them from checkpoint. <p></p> Should only be run after training. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of the column factors of the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_projections" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IEnumerator<object>">IEnumerator&lt;object&gt;</span> <strong>get_projections</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> input_fn)
+		</h4>
+		<div class="content">Computes the projections of the rows or columns given in input_fn. <p></p> Runs predict() with the given input_fn, and returns the results. Should only
+be run after training. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> input_fn
+						</dt>
+						<dd>Input function which specifies the rows or columns to project. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IEnumerator<object>">IEnumerator&lt;object&gt;</span></code>
+					</dt>
+					<dd>A generator of the projected factors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_projections_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_projections_dyn</strong>(<span title="System.object">object</span> input_fn)
+		</h4>
+		<div class="content">Computes the projections of the rows or columns given in input_fn. <p></p> Runs predict() with the given input_fn, and returns the results. Should only
+be run after training. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> input_fn
+						</dt>
+						<dd>Input function which specifies the rows or columns to project. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A generator of the projected factors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_row_factors" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_row_factors</strong>()
+		</h4>
+		<div class="content">Returns the row factors of the model, loading them from checkpoint. <p></p> Should only be run after training. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A list of the row factors of the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_row_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_row_factors_dyn</strong>()
+		</h4>
+		<div class="content">Returns the row factors of the model, loading them from checkpoint. <p></p> Should only be run after training. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of the row factors of the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm">WALSMatrixFactorization</a> <strong>NewDyn</strong>(<span title="System.object">object</span> num_rows, <span title="System.object">object</span> num_cols, <span title="System.object">object</span> embedding_dimension, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> unobserved_weight, <span title="System.object">object</span> regularization_coeff, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> row_init, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> col_init, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_row_shards, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_col_shards, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> row_weights, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> col_weights, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_factors_weights_cache_for_training, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_gramian_cache_for_training, <span title="System.object">object</span> max_sweeps, <span title="System.object">object</span> model_dir, <span title="System.object">object</span> config)
+		</h4>
+		<div class="content">Creates a model for matrix factorization using the WALS method. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> num_rows
+						</dt>
+						<dd>Total number of rows for input matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_cols
+						</dt>
+						<dd>Total number of cols for input matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> embedding_dimension
+						</dt>
+						<dd>Dimension to use for the factors. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> unobserved_weight
+						</dt>
+						<dd>Weight of the unobserved entries of matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> regularization_coeff
+						</dt>
+						<dd>Weight of the L2 regularization term. Defaults to
+None, in which case the problem is not regularized. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> row_init
+						</dt>
+						<dd>Initializer for row factor. Must be either:
+- A tensor: The row factor matrix is initialized to this tensor,
+- A numpy constant,
+- "random": The rows are initialized using a normal distribution. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> col_init
+						</dt>
+						<dd>Initializer for column factor. See row_init. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_row_shards
+						</dt>
+						<dd>Number of shards to use for the row factors. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_col_shards
+						</dt>
+						<dd>Number of shards to use for the column factors. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> row_weights
+						</dt>
+						<dd>Must be in one of the following three formats:
+- None: In this case, the weight of every entry is the unobserved_weight
+and the problem simplifies to ALS. Note that, in this case,
+col_weights must also be set to "None".
+- List of lists of non-negative scalars, of the form
+\\([[w_0, w_1,...], [w_k,... ], [...]]\\),
+where the number of inner lists equal to the number of row factor
+shards and the elements in each inner list are the weights for the
+rows of that shard. In this case,
+\\(w_ij = unonbserved_weight + row_weights[i] * col_weights[j]\\).
+- A non-negative scalar: This value is used for all row weights.
+Note that it is allowed to have row_weights as a list and col_weights
+as a scalar, or vice-versa. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> col_weights
+						</dt>
+						<dd>See row_weights. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_factors_weights_cache_for_training
+						</dt>
+						<dd>Boolean, whether the factors and
+weights will be cached on the workers before the updates start, during
+training. Defaults to True.
+Note that caching is disabled during prediction. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_gramian_cache_for_training
+						</dt>
+						<dd>Boolean, whether the Gramians will be
+cached on the workers before the updates start, during training.
+Defaults to True. Note that caching is disabled during prediction. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> max_sweeps
+						</dt>
+						<dd>integer, optional. Specifies the number of sweeps for which
+to train the model, where a sweep is defined as a full update of all the
+row factors (resp. column factors).
+If `steps` or `max_steps` is also specified in model.fit(), training
+stops when either of the steps condition or sweeps condition is met. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> model_dir
+						</dt>
+						<dd>The directory to save the model results and log files. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>A Configuration object. See Estimator. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="COMPLETED_SWEEPS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>COMPLETED_SWEEPS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="INPUT_COLS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>INPUT_COLS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="INPUT_ROWS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>INPUT_ROWS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="LOSS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>LOSS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>model_dir</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PROJECT_ROW_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PROJECT_ROW_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PROJECTION_RESULT_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PROJECTION_RESULT_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PROJECTION_WEIGHTS_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PROJECTION_WEIGHTS_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="RWSE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>RWSE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="PROJECT_ROW" class="method">
+    <h4>string <strong>PROJECT_ROW</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="PROJECTION_WEIGHTS" class="method">
+    <h4>string <strong>PROJECTION_WEIGHTS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="PROJECTION_RESULT" class="method">
+    <h4>string <strong>PROJECTION_RESULT</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="COMPLETED_SWEEPS" class="method">
+    <h4>string <strong>COMPLETED_SWEEPS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="LOSS" class="method">
+    <h4>string <strong>LOSS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="INPUT_ROWS" class="method">
+    <h4>string <strong>INPUT_ROWS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="RWSE" class="method">
+    <h4>string <strong>RWSE</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="INPUT_COLS" class="method">
+    <h4>string <strong>INPUT_COLS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

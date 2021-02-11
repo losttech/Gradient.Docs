@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>base - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.learn.datasets.base</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.learn.datasets.base/base.htm" class="current">base</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn.datasets.base/Dataset.htm">Dataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn.datasets.base/Datasets.htm">Datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn.datasets.base/IDataset.htm">IDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn.datasets.base/IDatasets.htm">IDatasets</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> base</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.learn.datasets.base</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_boston">load_boston</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_boston_dyn">load_boston_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_with_header">load_csv_with_header</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_with_header">load_csv_with_header</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_with_header_dyn">load_csv_with_header_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_without_header">load_csv_without_header</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_without_header_dyn">load_csv_without_header_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_iris">load_iris</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_iris_dyn">load_iris_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#maybe_download">maybe_download</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#maybe_download">maybe_download</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#maybe_download_dyn">maybe_download_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#retry">retry</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#retry_dyn">retry_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#shrink_csv">shrink_csv</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#shrink_csv_dyn">shrink_csv_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#urlretrieve_with_retry">urlretrieve_with_retry</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#urlretrieve_with_retry_dyn">urlretrieve_with_retry_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#Dataset_fn">Dataset_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#Datasets_fn">Datasets_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_boston_fn">load_boston_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_with_header_fn">load_csv_with_header_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_csv_without_header_fn">load_csv_without_header_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#load_iris_fn">load_iris_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#maybe_download_fn">maybe_download_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#retry_fn">retry_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#shrink_csv_fn">shrink_csv_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.datasets.base/base.htm#urlretrieve_with_retry_fn">urlretrieve_with_retry_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="load_boston" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_boston</strong>(<span title="System.object">object</span> data_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_boston_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_boston_dyn</strong>(<span title="System.object">object</span> data_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_csv_with_header" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_csv_with_header</strong>(<span title="System.object">object</span> filename, <span title="System.double">double</span> target_dtype, <span title="System.double">double</span> features_dtype, <span title="System.int">int</span> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_csv_with_header" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_csv_with_header</strong>(<span title="System.object">object</span> filename, <span title="System.int">int</span> target_dtype, <span title="System.double">double</span> features_dtype, <span title="System.int">int</span> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_csv_with_header_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_csv_with_header_dyn</strong>(<span title="System.object">object</span> filename, <span title="System.object">object</span> target_dtype, <span title="System.object">object</span> features_dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_csv_without_header" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_csv_without_header</strong>(<span title="System.object">object</span> filename, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> target_dtype, <span title="System.string">string</span> features_dtype, <span title="System.int">int</span> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_csv_without_header_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_csv_without_header_dyn</strong>(<span title="System.object">object</span> filename, <span title="System.object">object</span> target_dtype, <span title="System.object">object</span> features_dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> target_column)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_iris" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_iris</strong>(<span title="System.object">object</span> data_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_iris_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_iris_dyn</strong>(<span title="System.object">object</span> data_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="maybe_download" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>maybe_download</strong>(<span title="System.string">string</span> filename, <span title="System.Byte[]">Byte[]</span> work_directory, <span title="System.string">string</span> source_url)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="maybe_download" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>maybe_download</strong>(<span title="System.string">string</span> filename, <span title="System.string">string</span> work_directory, <span title="System.string">string</span> source_url)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="maybe_download_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>maybe_download_dyn</strong>(<span title="System.object">object</span> filename, <span title="System.object">object</span> work_directory, <span title="System.object">object</span> source_url)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="retry" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>retry</strong>(<span title="System.object">object</span> initial_delay, <span title="System.object">object</span> max_delay, <span title="System.double">double</span> factor, <span title="System.double">double</span> jitter, <span title="System.object">object</span> is_retriable)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="retry_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>retry_dyn</strong>(<span title="System.object">object</span> initial_delay, <span title="System.object">object</span> max_delay, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> factor, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> jitter, <span title="System.object">object</span> is_retriable)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="shrink_csv" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>shrink_csv</strong>(<span title="System.string">string</span> filename, <span title="System.int">int</span> ratio)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="shrink_csv_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shrink_csv_dyn</strong>(<span title="System.object">object</span> filename, <span title="System.object">object</span> ratio)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="urlretrieve_with_retry" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>urlretrieve_with_retry</strong>(<span title="System.string">string</span> url, <span title="System.string">string</span> filename)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="urlretrieve_with_retry_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>urlretrieve_with_retry_dyn</strong>(<span title="System.object">object</span> url, <span title="System.object">object</span> filename)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="Dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Datasets_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Datasets_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="load_boston_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>load_boston_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="load_csv_with_header_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>load_csv_with_header_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="load_csv_without_header_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>load_csv_without_header_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="load_iris_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>load_iris_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="maybe_download_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>maybe_download_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="retry_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>retry_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shrink_csv_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>shrink_csv_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="urlretrieve_with_retry_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>urlretrieve_with_retry_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

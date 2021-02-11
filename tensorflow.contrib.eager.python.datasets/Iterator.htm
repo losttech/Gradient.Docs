@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Iterator - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.eager.python.datasets</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.eager.python.datasets/datasets.htm">datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.eager.python.datasets/IIterator.htm">IIterator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm" class="current">Iterator</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Iterator</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.eager.python.datasets</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.data.ops.iterator_ops/IteratorV2.htm">IteratorV2</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.eager.python.datasets/IIterator.htm">IIterator</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#get_next">get_next</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#get_next_dyn">get_next_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#element_spec">element_spec</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#element_spec_dyn">element_spec_dyn</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#output_classes">output_classes</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#output_classes_dyn">output_classes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#output_shapes">output_shapes</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#output_shapes_dyn">output_shapes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#output_types">output_types</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#output_types_dyn">output_types_dyn</a></li>
+				<li><a href="../tensorflow.contrib.eager.python.datasets/Iterator.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="get_next" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_next</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Returns a nested structure of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>s representing the next element. <p></p> In graph mode, you should typically call this method *once* and use its
+result as the input to another computation. A typical loop will then call
+<a href="..\..\tf\InteractiveSession\run.md"><code>tf.Session.run</code></a> on the result of that computation. The loop will terminate
+when the `Iterator.get_next()` operation raises
+<a href="..\..\tf\errors\OutOfRangeError.md"><code>tf.errors.OutOfRangeError</code></a>. The following skeleton shows how to use
+this method when building a training loop:
+NOTE: It is legitimate to call `Iterator.get_next()` multiple times, e.g.
+when you are distributing different elements to multiple devices in a single
+step. However, a common pitfall arises when users call `Iterator.get_next()`
+in each iteration of their training loop. `Iterator.get_next()` adds ops to
+the graph, and executing each op allocates resources (including threads); as
+a consequence, invoking it in every iteration of a training loop causes
+slowdown and eventual resource exhaustion. To guard against this outcome, we
+log a warning when the number of uses crosses a fixed threshold of
+suspiciousness. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>(Optional.) A name for the created operation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A nested structure of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset =...  # A <a href="..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> object.
+            iterator = dataset.make_initializable_iterator()
+            next_element = iterator.get_next() <p></p> # Build a TensorFlow graph that does something with each element.
+loss = model_function(next_element)
+optimizer =...  # A `tf.compat.v1.train.Optimizer` object.
+train_op = optimizer.minimize(loss) <p></p> with tf.compat.v1.Session() as sess:
+  try:
+    while True:
+      sess.run(train_op)
+  except tf.errors.OutOfRangeError:
+    pass </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_next_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_next_dyn</strong>(<span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Returns a nested structure of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>s representing the next element. <p></p> In graph mode, you should typically call this method *once* and use its
+result as the input to another computation. A typical loop will then call
+<a href="..\..\tf\InteractiveSession\run.md"><code>tf.Session.run</code></a> on the result of that computation. The loop will terminate
+when the `Iterator.get_next()` operation raises
+<a href="..\..\tf\errors\OutOfRangeError.md"><code>tf.errors.OutOfRangeError</code></a>. The following skeleton shows how to use
+this method when building a training loop:
+NOTE: It is legitimate to call `Iterator.get_next()` multiple times, e.g.
+when you are distributing different elements to multiple devices in a single
+step. However, a common pitfall arises when users call `Iterator.get_next()`
+in each iteration of their training loop. `Iterator.get_next()` adds ops to
+the graph, and executing each op allocates resources (including threads); as
+a consequence, invoking it in every iteration of a training loop causes
+slowdown and eventual resource exhaustion. To guard against this outcome, we
+log a warning when the number of uses crosses a fixed threshold of
+suspiciousness. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>(Optional.) A name for the created operation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A nested structure of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset =...  # A <a href="..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> object.
+            iterator = dataset.make_initializable_iterator()
+            next_element = iterator.get_next() <p></p> # Build a TensorFlow graph that does something with each element.
+loss = model_function(next_element)
+optimizer =...  # A `tf.compat.v1.train.Optimizer` object.
+train_op = optimizer.minimize(loss) <p></p> with tf.compat.v1.Session() as sess:
+  try:
+    while True:
+      sess.run(train_op)
+  except tf.errors.OutOfRangeError:
+    pass </pre>
+</div>
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="element_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="element_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_classes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_classes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_classes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_classes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shapes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shapes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shapes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shapes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_types" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_types</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_types_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_types_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

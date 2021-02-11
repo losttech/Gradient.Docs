@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>feature_column - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.tpu.feature_column</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/_TPUBaseEmbeddingColumn.htm">_TPUBaseEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/_TPUEmbeddingColumn.htm">_TPUEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/_TPUSharedEmbeddingColumn.htm">_TPUSharedEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/feature_column.htm" class="current">feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/I_TPUBaseEmbeddingColumn.htm">I_TPUBaseEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/I_TPUEmbeddingColumn.htm">I_TPUEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.tpu.feature_column/I_TPUSharedEmbeddingColumn.htm">I_TPUSharedEmbeddingColumn</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> feature_column</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.tpu.feature_column</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#embedding_column">embedding_column</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#embedding_column">embedding_column</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#embedding_column_dyn">embedding_column_dyn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#get_sequence_length_feature_key_name_from_feature_key_name">get_sequence_length_feature_key_name_from_feature_key_name</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#get_sequence_length_feature_key_name_from_feature_key_name_dyn">get_sequence_length_feature_key_name_from_feature_key_name_dyn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#shared_embedding_columns">shared_embedding_columns</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#shared_embedding_columns_dyn">shared_embedding_columns_dyn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#split_sequence_columns">split_sequence_columns</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#split_sequence_columns_dyn">split_sequence_columns_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#_TPUBaseEmbeddingColumn_fn">_TPUBaseEmbeddingColumn_fn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#_TPUEmbeddingColumn_fn">_TPUEmbeddingColumn_fn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#_TPUSharedEmbeddingColumn_fn">_TPUSharedEmbeddingColumn_fn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#embedding_column_fn">embedding_column_fn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#get_sequence_length_feature_key_name_from_feature_key_name_fn">get_sequence_length_feature_key_name_from_feature_key_name_fn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#shared_embedding_columns_fn">shared_embedding_columns_fn</a></li>
+				<li><a href="../tensorflow.python.tpu.feature_column/feature_column.htm#split_sequence_columns_fn">split_sequence_columns_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="embedding_column" class="method">
+		<h4>
+			<a href="../tensorflow.python.tpu.feature_column/_TPUEmbeddingColumn.htm">_TPUEmbeddingColumn</a> <strong>embedding_column</strong>(<a href="../tensorflow.python.feature_column.feature_column_v2/IdentityCategoricalColumn.htm">IdentityCategoricalColumn</a> categorical_column, <span title="System.int">int</span> dimension, <span title="System.string">string</span> combiner, <a href="../tensorflow.keras.initializers/Initializer.htm">Initializer</a> initializer, <span title="System.int">int</span> max_sequence_length, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> learning_rate_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="embedding_column" class="method">
+		<h4>
+			<a href="../tensorflow.python.tpu.feature_column/_TPUEmbeddingColumn.htm">_TPUEmbeddingColumn</a> <strong>embedding_column</strong>(<a href="../tensorflow.python.feature_column.feature_column_v2/IdentityCategoricalColumn.htm">IdentityCategoricalColumn</a> categorical_column, <span title="System.int">int</span> dimension, <span title="System.string">string</span> combiner, <span title="System.object">object</span> initializer, <span title="System.int">int</span> max_sequence_length, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> learning_rate_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="embedding_column_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>embedding_column_dyn</strong>(<span title="System.object">object</span> categorical_column, <span title="System.object">object</span> dimension, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> combiner, <span title="System.object">object</span> initializer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_sequence_length, <span title="System.object">object</span> learning_rate_fn)
+		</h4>
+		<div class="content">TPU version of `tf.compat.v1.feature_column.embedding_column`. <p></p> Note that the interface for <a href="..\..\..\tf\tpu\experimental\embedding_column.md"><code>tf.tpu.experimental.embedding_column</code></a> is
+different from that of `tf.compat.v1.feature_column.embedding_column`: The
+following arguments are NOT supported: `ckpt_to_load_from`,
+`tensor_name_in_ckpt`, `max_norm` and `trainable`. <p></p> Use this function in place of `tf.compat.v1.feature_column.embedding_column`
+when you want to use the TPU to accelerate your embedding lookups via TPU
+embeddings. <p></p> ```
+column = tf.feature_column.categorical_column_with_identity(...)
+tpu_column = tf.tpu.experimental.embedding_column(column, 10)
+...
+def model_fn(features):
+dense_feature = tf.keras.layers.DenseFeature(tpu_column)
+embedded_feature = dense_feature(features)
+... <p></p> estimator = tf.estimator.tpu.TPUEstimator(
+model_fn=model_fn,
+...
+embedding_config_spec=tf.estimator.tpu.experimental.EmbeddingConfigSpec(
+column=[tpu_column],
+...))
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> categorical_column
+						</dt>
+						<dd>A categorical column returned from
+`categorical_column_with_identity`, `weighted_categorical_column`,
+`categorical_column_with_vocabulary_file`,
+`categorical_column_with_vocabulary_list`,
+`sequence_categorical_column_with_identity`,
+`sequence_categorical_column_with_vocabulary_file`,
+`sequence_categorical_column_with_vocabulary_list` 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dimension
+						</dt>
+						<dd>An integer specifying dimension of the embedding, must be > 0. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> combiner
+						</dt>
+						<dd>A string specifying how to reduce if there are multiple entries
+in a single row for a non-sequence column. For more information, see
+<a href="..\..\..\tf\feature_column\embedding_column.md"><code>tf.feature_column.embedding_column</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initializer
+						</dt>
+						<dd>A variable initializer function to be used in embedding
+variable initialization. If not specified, defaults to
+`tf.compat.v1.truncated_normal_initializer` with mean `0.0` and
+standard deviation `1/sqrt(dimension)`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_sequence_length
+						</dt>
+						<dd>An non-negative integer specifying the max sequence
+length. Any sequence shorter then this will be padded with 0 embeddings
+and any sequence longer will be truncated. This must be positive for
+sequence features and 0 for non-sequence features. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> learning_rate_fn
+						</dt>
+						<dd>A function that takes global step and returns learning
+rate for the embedding table. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A  `_TPUEmbeddingColumnV2`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_sequence_length_feature_key_name_from_feature_key_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>get_sequence_length_feature_key_name_from_feature_key_name</strong>(<span title="System.object">object</span> feature_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_sequence_length_feature_key_name_from_feature_key_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_sequence_length_feature_key_name_from_feature_key_name_dyn</strong>(<span title="System.object">object</span> feature_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="shared_embedding_columns" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<_TPUSharedEmbeddingColumn>">IList&lt;_TPUSharedEmbeddingColumn&gt;</span> <strong>shared_embedding_columns</strong>(<span title="System.Collections.Generic.IEnumerable<IdentityCategoricalColumn>">IEnumerable&lt;IdentityCategoricalColumn&gt;</span> categorical_columns, <span title="System.int">int</span> dimension, <span title="System.string">string</span> combiner, <span title="System.object">object</span> initializer, <span title="System.string">string</span> shared_embedding_collection_name, <span title="System.object">object</span> max_sequence_lengths, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> learning_rate_fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="shared_embedding_columns_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shared_embedding_columns_dyn</strong>(<span title="System.object">object</span> categorical_columns, <span title="System.object">object</span> dimension, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> combiner, <span title="System.object">object</span> initializer, <span title="System.object">object</span> shared_embedding_collection_name, <span title="System.object">object</span> max_sequence_lengths, <span title="System.object">object</span> learning_rate_fn)
+		</h4>
+		<div class="content">TPU version of `tf.compat.v1.feature_column.shared_embedding_columns`. <p></p> Note that the interface for <a href="..\..\..\tf\tpu\experimental\shared_embedding_columns.md"><code>tf.tpu.experimental.shared_embedding_columns</code></a> is
+different from that of `tf.compat.v1.feature_column.shared_embedding_columns`:
+The following arguments are NOT supported: `ckpt_to_load_from`,
+`tensor_name_in_ckpt`, `max_norm` and `trainable`. <p></p> Use this function in place of
+tf.compat.v1.feature_column.shared_embedding_columns` when you want to use the
+TPU to accelerate your embedding lookups via TPU embeddings. <p></p> ```
+column_a = tf.feature_column.categorical_column_with_identity(...)
+column_b = tf.feature_column.categorical_column_with_identity(...)
+tpu_columns = tf.tpu.experimental.shared_embedding_columns(
+[column_a, column_b], 10)
+...
+def model_fn(features):
+dense_feature = tf.keras.layers.DenseFeature(tpu_columns)
+embedded_feature = dense_feature(features)
+... <p></p> estimator = tf.estimator.tpu.TPUEstimator(
+model_fn=model_fn,
+...
+embedding_config_spec=tf.estimator.tpu.experimental.EmbeddingConfigSpec(
+column=tpu_columns,
+...))
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> categorical_columns
+						</dt>
+						<dd>A list of categorical columns returned from
+`categorical_column_with_identity`, `weighted_categorical_column`,
+`categorical_column_with_vocabulary_file`,
+`categorical_column_with_vocabulary_list`,
+`sequence_categorical_column_with_identity`,
+`sequence_categorical_column_with_vocabulary_file`,
+`sequence_categorical_column_with_vocabulary_list` 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dimension
+						</dt>
+						<dd>An integer specifying dimension of the embedding, must be > 0. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> combiner
+						</dt>
+						<dd>A string specifying how to reduce if there are multiple entries
+in a single row for a non-sequence column. For more information, see
+<a href="..\..\..\tf\feature_column\embedding_column.md"><code>tf.feature_column.embedding_column</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initializer
+						</dt>
+						<dd>A variable initializer function to be used in embedding
+variable initialization. If not specified, defaults to
+<a href="..\..\..\tf\initializers\truncated_normal.md"><code>tf.truncated_normal_initializer</code></a> with mean `0.0` and standard deviation
+`1/sqrt(dimension)`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> shared_embedding_collection_name
+						</dt>
+						<dd>Optional name of the collection where
+shared embedding weights are added. If not given, a reasonable name will
+be chosen based on the names of `categorical_columns`. This is also used
+in `variable_scope` when creating shared embedding weights. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> max_sequence_lengths
+						</dt>
+						<dd>An list of non-negative integers, either None or
+empty or the same length as the argument categorical_columns. Entries
+corresponding to non-sequence columns must be 0 and entries corresponding
+to sequence columns specify the max sequence length for the column. Any
+sequence shorter then this will be padded with 0 embeddings and any
+sequence longer will be truncated. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> learning_rate_fn
+						</dt>
+						<dd>A function that takes global step and returns learning
+rate for the embedding table. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A  list of `_TPUSharedEmbeddingColumnV2`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="split_sequence_columns" class="method">
+		<h4>
+			<span title="System.ValueTuple<IList<object>, object>">ValueTuple&lt;IList&lt;object&gt;, object&gt;</span> <strong>split_sequence_columns</strong>(<span title="System.object">object</span> feature_columns)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="split_sequence_columns_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>split_sequence_columns_dyn</strong>(<span title="System.object">object</span> feature_columns)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="_TPUBaseEmbeddingColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_TPUBaseEmbeddingColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_TPUEmbeddingColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_TPUEmbeddingColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_TPUSharedEmbeddingColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_TPUSharedEmbeddingColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="embedding_column_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>embedding_column_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_sequence_length_feature_key_name_from_feature_key_name_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_sequence_length_feature_key_name_from_feature_key_name_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shared_embedding_columns_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>shared_embedding_columns_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="split_sequence_columns_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>split_sequence_columns_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

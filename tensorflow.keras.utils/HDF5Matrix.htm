@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>HDF5Matrix - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.utils</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.utils/CustomObjectScope.htm">CustomObjectScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/GeneratorEnqueuer.htm">GeneratorEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/HDF5Matrix.htm" class="current">HDF5Matrix</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/ICustomObjectScope.htm">ICustomObjectScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IGeneratorEnqueuer.htm">IGeneratorEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IHDF5Matrix.htm">IHDF5Matrix</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IOrderedEnqueuer.htm">IOrderedEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/IProgbar.htm">IProgbar</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/ISequence.htm">ISequence</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/ISequenceEnqueuer.htm">ISequenceEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/OrderedEnqueuer.htm">OrderedEnqueuer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/Progbar.htm">Progbar</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/Sequence.htm">Sequence</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.utils/SequenceEnqueuer.htm">SequenceEnqueuer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> HDF5Matrix</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.utils</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.utils/IHDF5Matrix.htm">IHDF5Matrix</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Representation of HDF5 dataset to be used instead of a Numpy array. <p></p> Example:
+Providing `start` and `end` allows use of a slice of the dataset. <p></p> Optionally, a normalizer function (or lambda) can be given. This will
+be called on every slice of data retrieved. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>x_data = HDF5Matrix('input/file.hdf5', 'data')
+            model.predict(x_data) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#__getitem__">__getitem__</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#__getitem__">__getitem__</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#__getitem__">__getitem__</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#data">data</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#end">end</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#Item">Item</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#ndim">ndim</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#ndim_dyn">ndim_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#normalizer">normalizer</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#refs">refs</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#refs_dyn">refs_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#shape">shape</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#shape_dyn">shape_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#size">size</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#size_dyn">size_dyn</a></li>
+				<li><a href="../tensorflow.keras.utils/HDF5Matrix.htm#start">start</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="__getitem__" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>__getitem__</strong>(<a href="../numpy/ndarray.htm">ndarray</a> key)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="__getitem__" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>__getitem__</strong>(<span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> key)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="__getitem__" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>__getitem__</strong>(<span title="System.ValueTuple<int, PythonClassContainer>">ValueTuple&lt;int, PythonClassContainer&gt;</span> key)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.keras.utils/HDF5Matrix.htm">HDF5Matrix</a> <strong>NewDyn</strong>(<span title="System.object">object</span> datapath, <span title="System.object">object</span> dataset, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> start, <span title="System.object">object</span> end, <span title="System.object">object</span> normalizer)
+		</h4>
+		<div class="content">Initialize self.  See help(type(self)) for accurate signature. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="data" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>data</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">Gets the datatype of the dataset. 
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">Gets the datatype of the dataset. 
+
+		</div>
+	</div>
+	<div id="end" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>end</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Item" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>Item</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ndim" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ndim</strong> get; 
+		</h4>
+		<div class="content">Gets the number of dimensions (rank) of the dataset. 
+
+		</div>
+	</div>
+	<div id="ndim_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ndim_dyn</strong> get; 
+		</h4>
+		<div class="content">Gets the number of dimensions (rank) of the dataset. 
+
+		</div>
+	</div>
+	<div id="normalizer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>normalizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="refs" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> <strong>refs</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="refs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>refs_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shape</strong> get; 
+		</h4>
+		<div class="content">Gets a numpy-style shape tuple giving the dataset dimensions. 
+
+		</div>
+	</div>
+	<div id="shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shape_dyn</strong> get; 
+		</h4>
+		<div class="content">Gets a numpy-style shape tuple giving the dataset dimensions. 
+
+		</div>
+	</div>
+	<div id="size" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>size</strong> get; 
+		</h4>
+		<div class="content">Gets the total dataset size (number of elements). 
+
+		</div>
+	</div>
+	<div id="size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>size_dyn</strong> get; 
+		</h4>
+		<div class="content">Gets the total dataset size (number of elements). 
+
+		</div>
+	</div>
+	<div id="start" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>start</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

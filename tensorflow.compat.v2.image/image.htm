@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>image - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.compat.v2.image</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.compat.v2.image/image.htm" class="current">image</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.image/IResizeMethod.htm">IResizeMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.image/ResizeMethod.htm">ResizeMethod</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> image</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.compat.v2.image</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#crop_and_resize">crop_and_resize</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#crop_and_resize_dyn">crop_and_resize_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#draw_bounding_boxes">draw_bounding_boxes</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#draw_bounding_boxes_dyn">draw_bounding_boxes_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#extract_glimpse">extract_glimpse</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#extract_glimpse_dyn">extract_glimpse_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#resize">resize</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#resize">resize</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#resize_dyn">resize_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#sample_distorted_bounding_box">sample_distorted_bounding_box</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#sample_distorted_bounding_box_dyn">sample_distorted_bounding_box_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#crop_and_resize_fn_">crop_and_resize_fn_</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#draw_bounding_boxes_fn_">draw_bounding_boxes_fn_</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#extract_glimpse_fn_">extract_glimpse_fn_</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#resize_fn_">resize_fn_</a></li>
+				<li><a href="../tensorflow.compat.v2.image/image.htm#sample_distorted_bounding_box_fn_">sample_distorted_bounding_box_fn_</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="crop_and_resize" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>crop_and_resize</strong>(<span title="System.object">object</span> image, <span title="System.object">object</span> boxes, <span title="System.object">object</span> box_indices, <span title="System.object">object</span> crop_size, <span title="System.string">string</span> method, <span title="System.int">int</span> extrapolation_value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="crop_and_resize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>crop_and_resize_dyn</strong>(<span title="System.object">object</span> image, <span title="System.object">object</span> boxes, <span title="System.object">object</span> box_indices, <span title="System.object">object</span> crop_size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> method, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> extrapolation_value, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="draw_bounding_boxes" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>draw_bounding_boxes</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> images, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> boxes, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> colors, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="draw_bounding_boxes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>draw_bounding_boxes_dyn</strong>(<span title="System.object">object</span> images, <span title="System.object">object</span> boxes, <span title="System.object">object</span> colors, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Draw bounding boxes on a batch of images. <p></p> Outputs a copy of `images` but draws on top of the pixels zero or more
+bounding boxes specified by the locations in `boxes`. The coordinates of the
+each bounding box in `boxes` are encoded as `[y_min, x_min, y_max, x_max]`.
+The bounding box coordinates are floats in `[0.0, 1.0]` relative to the width
+and height of the underlying image. <p></p> For example, if an image is 100 x 200 pixels (height x width) and the bounding
+box is `[0.1, 0.2, 0.5, 0.9]`, the upper-left and bottom-right coordinates of
+the bounding box will be `(40, 10)` to `(180, 50)` (in (x,y) coordinates). <p></p> Parts of the bounding box may fall outside the image. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> images
+						</dt>
+						<dd>A `Tensor`. Must be one of the following types: `float32`, `half`.
+4-D with shape `[batch, height, width, depth]`. A batch of images. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> boxes
+						</dt>
+						<dd>A `Tensor` of type `float32`. 3-D with shape `[batch,
+num_bounding_boxes, 4]` containing bounding boxes. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> colors
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor`. Has the same type as `images`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="extract_glimpse" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>extract_glimpse</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> offsets, <span title="System.bool">bool</span> centered, <span title="System.bool">bool</span> normalized, <span title="System.string">string</span> noise, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="extract_glimpse_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>extract_glimpse_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> size, <span title="System.object">object</span> offsets, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> centered, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> normalized, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> noise, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Extracts a glimpse from the input tensor. <p></p> Returns a set of windows called glimpses extracted at location
+`offsets` from the input tensor. If the windows only partially
+overlaps the inputs, the non overlapping areas will be filled with
+random noise. <p></p> The result is a 4-D tensor of shape `[batch_size, glimpse_height,
+glimpse_width, channels]`. The channels and batch dimensions are the
+same as that of the input tensor. The height and width of the output
+windows are specified in the `size` parameter. <p></p> The argument `normalized` and `centered` controls how the windows are built: <p></p> * If the coordinates are normalized but not centered, 0.0 and 1.0
+correspond to the minimum and maximum of each height and width
+dimension.
+* If the coordinates are both normalized and centered, they range from
+-1.0 to 1.0. The coordinates (-1.0, -1.0) correspond to the upper
+left corner, the lower right corner is located at (1.0, 1.0) and the
+center is at (0, 0).
+* If the coordinates are not normalized they are interpreted as
+numbers of pixels. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> input
+						</dt>
+						<dd>A `Tensor` of type `float32`. A 4-D float tensor of shape
+`[batch_size, height, width, channels]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> size
+						</dt>
+						<dd>A `Tensor` of type `int32`. A 1-D tensor of 2 elements containing the
+size of the glimpses to extract.  The glimpse height must be specified
+first, following by the glimpse width. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> offsets
+						</dt>
+						<dd>A `Tensor` of type `float32`. A 2-D integer tensor of shape
+`[batch_size, 2]` containing the y, x locations of the center of each
+window. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> centered
+						</dt>
+						<dd>An optional `bool`. Defaults to `True`. indicates if the offset
+coordinates are centered relative to the image, in which case the (0, 0)
+offset is relative to the center of the input images. If false, the (0,0)
+offset corresponds to the upper left corner of the input images. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> normalized
+						</dt>
+						<dd>An optional `bool`. Defaults to `True`. indicates if the offset
+coordinates are normalized. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> noise
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Tensor` of type `float32`. <p></p> Usage Example:
+```python
+BATCH_SIZE = 1
+IMAGE_HEIGHT = 3
+IMAGE_WIDTH = 3
+CHANNELS = 1
+GLIMPSE_SIZE = (2, 2)
+image = tf.reshape(tf.range(9, delta=1, dtype=tf.float32),
+shape=(BATCH_SIZE, IMAGE_HEIGHT, IMAGE_WIDTH, CHANNELS))
+output = tf.image.extract_glimpse(image, size=GLIMPSE_SIZE,
+offsets=[[1, 1]], centered=False, normalized=False)
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="resize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> images, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> method, <span title="System.bool">bool</span> preserve_aspect_ratio, <span title="System.bool">bool</span> antialias, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Resize `images` to `size` using the specified `method`. <p></p> Resized images will be distorted if their original aspect ratio is not
+the same as `size`.  To avoid distortions see
+`tf.compat.v1.image.resize_image_with_pad`. <p></p> `method` can be one of: <p></p> *   <b>`ResizeMethod.BILINEAR`</b>: [Bilinear interpolation.](
+https://en.wikipedia.org/wiki/Bilinear_interpolation)
+*   <b>`ResizeMethod.NEAREST_NEIGHBOR`</b>: [Nearest neighbor interpolation.](
+https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
+*   <b>`ResizeMethod.BICUBIC`</b>: [Bicubic interpolation.](
+https://en.wikipedia.org/wiki/Bicubic_interpolation)
+*   <b>`ResizeMethod.AREA`</b>: Area interpolation. <p></p> The return value has the same type as `images` if `method` is
+`ResizeMethod.NEAREST_NEIGHBOR`. It will also have the same type as `images`
+if the size of `images` can be statically determined to be the same as `size`,
+because `images` is returned in this case. Otherwise, the return value has
+type `float32`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> images
+						</dt>
+						<dd>4-D Tensor of shape `[batch, height, width, channels]` or 3-D Tensor
+of shape `[height, width, channels]`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> size
+						</dt>
+						<dd>A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new
+size for the images. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> method
+						</dt>
+						<dd>ResizeMethod.  Defaults to `ResizeMethod.BILINEAR`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> preserve_aspect_ratio
+						</dt>
+						<dd>Whether to preserve the aspect ratio. If this is set,
+then `images` will be resized to a size that fits in `size` while
+preserving the aspect ratio of the original image. Scales up the image if
+`size` is bigger than the current size of the `image`. Defaults to False. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> antialias
+						</dt>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for this operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>If `images` was 4-D, a 4-D float Tensor of shape
+`[batch, new_height, new_width, channels]`.
+If `images` was 3-D, a 3-D float Tensor of shape
+`[new_height, new_width, channels]`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="resize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> images, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> method, <span title="System.bool">bool</span> preserve_aspect_ratio, <span title="System.bool">bool</span> antialias, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Resize `images` to `size` using the specified `method`. <p></p> Resized images will be distorted if their original aspect ratio is not
+the same as `size`.  To avoid distortions see
+`tf.compat.v1.image.resize_image_with_pad`. <p></p> `method` can be one of: <p></p> *   <b>`ResizeMethod.BILINEAR`</b>: [Bilinear interpolation.](
+https://en.wikipedia.org/wiki/Bilinear_interpolation)
+*   <b>`ResizeMethod.NEAREST_NEIGHBOR`</b>: [Nearest neighbor interpolation.](
+https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
+*   <b>`ResizeMethod.BICUBIC`</b>: [Bicubic interpolation.](
+https://en.wikipedia.org/wiki/Bicubic_interpolation)
+*   <b>`ResizeMethod.AREA`</b>: Area interpolation. <p></p> The return value has the same type as `images` if `method` is
+`ResizeMethod.NEAREST_NEIGHBOR`. It will also have the same type as `images`
+if the size of `images` can be statically determined to be the same as `size`,
+because `images` is returned in this case. Otherwise, the return value has
+type `float32`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> images
+						</dt>
+						<dd>4-D Tensor of shape `[batch, height, width, channels]` or 3-D Tensor
+of shape `[height, width, channels]`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> size
+						</dt>
+						<dd>A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new
+size for the images. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> method
+						</dt>
+						<dd>ResizeMethod.  Defaults to `ResizeMethod.BILINEAR`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> preserve_aspect_ratio
+						</dt>
+						<dd>Whether to preserve the aspect ratio. If this is set,
+then `images` will be resized to a size that fits in `size` while
+preserving the aspect ratio of the original image. Scales up the image if
+`size` is bigger than the current size of the `image`. Defaults to False. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> antialias
+						</dt>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for this operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>If `images` was 4-D, a 4-D float Tensor of shape
+`[batch, new_height, new_width, channels]`.
+If `images` was 3-D, a 3-D float Tensor of shape
+`[new_height, new_width, channels]`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="resize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resize_dyn</strong>(<span title="System.object">object</span> images, <span title="System.object">object</span> size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> method, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> preserve_aspect_ratio, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> antialias, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Resize `images` to `size` using the specified `method`. <p></p> Resized images will be distorted if their original aspect ratio is not
+the same as `size`.  To avoid distortions see
+`tf.compat.v1.image.resize_image_with_pad`. <p></p> `method` can be one of: <p></p> *   <b>`ResizeMethod.BILINEAR`</b>: [Bilinear interpolation.](
+https://en.wikipedia.org/wiki/Bilinear_interpolation)
+*   <b>`ResizeMethod.NEAREST_NEIGHBOR`</b>: [Nearest neighbor interpolation.](
+https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
+*   <b>`ResizeMethod.BICUBIC`</b>: [Bicubic interpolation.](
+https://en.wikipedia.org/wiki/Bicubic_interpolation)
+*   <b>`ResizeMethod.AREA`</b>: Area interpolation. <p></p> The return value has the same type as `images` if `method` is
+`ResizeMethod.NEAREST_NEIGHBOR`. It will also have the same type as `images`
+if the size of `images` can be statically determined to be the same as `size`,
+because `images` is returned in this case. Otherwise, the return value has
+type `float32`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> images
+						</dt>
+						<dd>4-D Tensor of shape `[batch, height, width, channels]` or 3-D Tensor
+of shape `[height, width, channels]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> size
+						</dt>
+						<dd>A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new
+size for the images. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> method
+						</dt>
+						<dd>ResizeMethod.  Defaults to `ResizeMethod.BILINEAR`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> preserve_aspect_ratio
+						</dt>
+						<dd>Whether to preserve the aspect ratio. If this is set,
+then `images` will be resized to a size that fits in `size` while
+preserving the aspect ratio of the original image. Scales up the image if
+`size` is bigger than the current size of the `image`. Defaults to False. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> antialias
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for this operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>If `images` was 4-D, a 4-D float Tensor of shape
+`[batch, new_height, new_width, channels]`.
+If `images` was 3-D, a 3-D float Tensor of shape
+`[new_height, new_width, channels]`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="sample_distorted_bounding_box" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sample_distorted_bounding_box</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> image_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> bounding_boxes, <span title="System.int">int</span> seed, <span title="System.double">double</span> min_object_covered, <span title="System.object">object</span> aspect_ratio_range, <span title="System.object">object</span> area_range, <span title="System.object">object</span> max_attempts, <span title="System.object">object</span> use_image_if_no_bounding_boxes, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sample_distorted_bounding_box_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sample_distorted_bounding_box_dyn</strong>(<span title="System.object">object</span> image_size, <span title="System.object">object</span> bounding_boxes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> seed, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_object_covered, <span title="System.object">object</span> aspect_ratio_range, <span title="System.object">object</span> area_range, <span title="System.object">object</span> max_attempts, <span title="System.object">object</span> use_image_if_no_bounding_boxes, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="crop_and_resize_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>crop_and_resize_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="draw_bounding_boxes_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>draw_bounding_boxes_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="extract_glimpse_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>extract_glimpse_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resize_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>resize_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sample_distorted_bounding_box_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>sample_distorted_bounding_box_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

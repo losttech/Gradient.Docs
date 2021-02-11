@@ -1,0 +1,1572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Supervisor - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.train</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.train/AdadeltaOptimizer.htm">AdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradDAOptimizer.htm">AdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradOptimizer.htm">AdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdamOptimizer.htm">AdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Checkpoint.htm">Checkpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointManager.htm">CheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverHook.htm">CheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverListener.htm">CheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ChiefSessionCreator.htm">ChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ClusterSpec.htm">ClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Coordinator.htm">Coordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ExponentialMovingAverage.htm">ExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FeedFnHook.htm">FeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FinalOpsHook.htm">FinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FtrlOptimizer.htm">FtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GlobalStepWaiterHook.htm">GlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GradientDescentOptimizer.htm">GradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdadeltaOptimizer.htm">IAdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradDAOptimizer.htm">IAdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradOptimizer.htm">IAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdamOptimizer.htm">IAdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpoint.htm">ICheckpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointManager.htm">ICheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverHook.htm">ICheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverListener.htm">ICheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IChiefSessionCreator.htm">IChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IClusterSpec.htm">IClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICoordinator.htm">ICoordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IExponentialMovingAverage.htm">IExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFeedFnHook.htm">IFeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFinalOpsHook.htm">IFinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFtrlOptimizer.htm">IFtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGlobalStepWaiterHook.htm">IGlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGradientDescentOptimizer.htm">IGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILoggingTensorHook.htm">ILoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILooperThread.htm">ILooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMomentumOptimizer.htm">IMomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMonitoredSession.htm">IMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanTensorHook.htm">INanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProfilerHook.htm">IProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalAdagradOptimizer.htm">IProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalGradientDescentOptimizer.htm">IProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IQueueRunner.htm">IQueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IRMSPropOptimizer.htm">IRMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISaver.htm">ISaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IScaffold.htm">IScaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISecondOrStepTimer.htm">ISecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IServer.htm">IServer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionCreator.htm">ISessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionManager.htm">ISessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunArgs.htm">ISessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunContext.htm">ISessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunHook.htm">ISessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunValues.htm">ISessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISingularMonitoredSession.htm">ISingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStepCounterHook.htm">IStepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStopAtStepHook.htm">IStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISummarySaverHook.htm">ISummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISupervisor.htm">ISupervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISyncReplicasOptimizer.htm">ISyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IVocabInfo.htm">IVocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IWorkerSessionCreator.htm">IWorkerSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LoggingTensorHook.htm">LoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LooperThread.htm">LooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MomentumOptimizer.htm">MomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MonitoredSession.htm">MonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanTensorHook.htm">NanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProfilerHook.htm">ProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalAdagradOptimizer.htm">ProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalGradientDescentOptimizer.htm">ProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/QueueRunner.htm">QueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/RMSPropOptimizer.htm">RMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Saver.htm">Saver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Scaffold.htm">Scaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SecondOrStepTimer.htm">SecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Server.htm">Server</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionCreator.htm">SessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionManager.htm">SessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunArgs.htm">SessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunContext.htm">SessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunHook.htm">SessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunValues.htm">SessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SingularMonitoredSession.htm">SingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StepCounterHook.htm">StepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StopAtStepHook.htm">StopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SummarySaverHook.htm">SummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Supervisor.htm" class="current">Supervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SyncReplicasOptimizer.htm">SyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/train.htm">train</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/VocabInfo.htm">VocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/WorkerSessionCreator.htm">WorkerSessionCreator</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Supervisor</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.train</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.train/ISupervisor.htm">ISupervisor</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A training helper that checkpoints models and computes summaries. <p></p> This class is deprecated. Please use
+`tf.compat.v1.train.MonitoredTrainingSession` instead. <p></p> The Supervisor is a small wrapper around a `Coordinator`, a `Saver`,
+and a `SessionManager` that takes care of common needs of TensorFlow
+training programs. <p></p> #### Use for a single program
+Within the `with sv.managed_session()` block all variables in the graph have
+been initialized.  In addition, a few services have been started to
+checkpoint the model and add summaries to the event log. <p></p> If the program crashes and is restarted, the managed session automatically
+reinitialize variables from the most recent checkpoint. <p></p> The supervisor is notified of any exception raised by one of the services.
+After an exception is raised, `should_stop()` returns `True`.  In that case
+the training loop should also stop.  This is why the training loop has to
+check for `sv.should_stop()`. <p></p> Exceptions that indicate that the training inputs have been exhausted,
+<a href="..\..\tf\errors\OutOfRangeError.md"><code>tf.errors.OutOfRangeError</code></a>, also cause `sv.should_stop()` to return `True`
+but are not re-raised from the `with` block: they indicate a normal
+termination. <p></p> #### Use for multiple replicas <p></p> To train with replicas you deploy the same program in a `Cluster`.
+One of the tasks must be identified as the *chief*: the task that handles
+initialization, checkpoints, summaries, and recovery.  The other tasks
+depend on the *chief* for these services. <p></p> The only change you have to do to the single program code is to indicate
+if the program is running as the *chief*.
+In the *chief* task, the `Supervisor` works exactly as in the first example
+above.  In the other tasks `sv.managed_session()` waits for the Model to have
+been initialized before returning a session to the training code.  The
+non-chief tasks depend on the chief task for initializing the model. <p></p> If one of the tasks crashes and restarts, `managed_session()`
+checks if the Model is initialized.  If yes, it just creates a session and
+returns it to the training code that proceeds normally.  If the model needs
+to be initialized, the chief task takes care of reinitializing it; the other
+tasks just wait for the model to have been initialized. <p></p> NOTE: This modified program still works fine as a single program.
+The single program marks itself as the chief. <p></p> #### What `master` string to use <p></p> Whether you are running on your machine or in the cluster you can use the
+following values for the --master flag: <p></p> * Specifying `''` requests an in-process session that does not use RPC. <p></p> * Specifying `'local'` requests a session that uses the RPC-based
+"Master interface" to run TensorFlow programs. See
+<a href="..\..\tf\distribute\Server\create_local_server.md"><code>tf.train.Server.create_local_server</code></a> for
+details. <p></p> * Specifying `'grpc://hostname:port'` requests a session that uses
+the RPC interface to a specific host, and also allows the in-process
+master to access remote tensorflow workers. Often, it is
+appropriate to pass `server.target` (for some <a href="..\..\tf\distribute\Server.md"><code>tf.distribute.Server</code></a>
+named `server). <p></p> #### Advanced use <p></p> ##### Launching additional services <p></p> `managed_session()` launches the Checkpoint and Summary services (threads).
+If you need more services to run you can simply launch them in the block
+controlled by `managed_session()`. <p></p> Example: Start a thread to print losses.  We want this thread to run
+every 60 seconds, so we launch it with `sv.loop()`.
+##### Launching fewer services <p></p> `managed_session()` launches the "summary" and "checkpoint" threads which use
+either the optionally `summary_op` and `saver` passed to the constructor, or
+default ones created automatically by the supervisor.  If you want to run
+your own summary and checkpointing logic, disable these services by passing
+`None` to the `summary_op` and `saver` parameters. <p></p> Example: Create summaries manually every 100 steps in the chief.
+##### Custom model initialization <p></p> `managed_session()` only supports initializing the model by running an
+`init_op` or restoring from the latest checkpoint.  If you have special
+initialization needs, see how to specify a `local_init_op` when creating the
+supervisor.  You can also use the `SessionManager` directly to create a
+session and check if it could be initialized automatically. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>with tf.Graph().as_default():
+             ...add operations to the graph...
+              # Create a Supervisor that will checkpoint the model in '/tmp/mydir'.
+              sv = Supervisor(logdir='/tmp/mydir')
+              # Get a TensorFlow session managed by the supervisor.
+              with sv.managed_session(FLAGS.master) as sess:
+                # Use the session to train the graph.
+                while not sv.should_stop():
+                  sess.run(<my_train_op>) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.train/Supervisor.htm#loop">loop</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#loop_dyn">loop_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#managed_session">managed_session</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#managed_session_dyn">managed_session_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#prepare_or_wait_for_session">prepare_or_wait_for_session</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#prepare_or_wait_for_session_dyn">prepare_or_wait_for_session_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#start_queue_runners">start_queue_runners</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#start_queue_runners_dyn">start_queue_runners_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#start_standard_services">start_standard_services</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#start_standard_services_dyn">start_standard_services_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#stop">stop</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#stop_dyn">stop_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#summary_computed">summary_computed</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#summary_computed_dyn">summary_computed_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#wait_for_stop_dyn">wait_for_stop_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.train/Supervisor.htm#coord">coord</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#coord_dyn">coord_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#global_step">global_step</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#global_step_dyn">global_step_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#init_feed_dict">init_feed_dict</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#init_feed_dict_dyn">init_feed_dict_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#init_op">init_op</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#init_op_dyn">init_op_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#is_chief">is_chief</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#is_chief_dyn">is_chief_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#ready_for_local_init_op">ready_for_local_init_op</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#ready_for_local_init_op_dyn">ready_for_local_init_op_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#ready_op">ready_op</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#ready_op_dyn">ready_op_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#save_model_secs">save_model_secs</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#save_model_secs_dyn">save_model_secs_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#save_path">save_path</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#save_path_dyn">save_path_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#save_summaries_secs">save_summaries_secs</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#save_summaries_secs_dyn">save_summaries_secs_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#saver">saver</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#saver_dyn">saver_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#session_manager">session_manager</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#session_manager_dyn">session_manager_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#summary_op">summary_op</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#summary_op_dyn">summary_op_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#summary_writer">summary_writer</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#summary_writer_dyn">summary_writer_dyn</a></li>
+				<li><a href="../tensorflow.train/Supervisor.htm#USE_DEFAULT_dyn">USE_DEFAULT_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow.train/Supervisor.htm#USE_DEFAULT">USE_DEFAULT</a></li>
+			</ul>
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="loop" class="method">
+		<h4>
+			<a href="../tensorflow.train/LooperThread.htm">LooperThread</a> <strong>loop</strong>(<span title="System.object">object</span> timer_interval_secs, <span title="System.object">object</span> target, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Start a LooperThread that calls a function periodically. <p></p> If `timer_interval_secs` is None the thread calls `target(*args, **kwargs)`
+repeatedly.  Otherwise it calls it every `timer_interval_secs`
+seconds.  The thread terminates when a stop is requested. <p></p> The started thread is added to the list of threads managed by the supervisor
+so it does not need to be passed to the `stop()` method. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> timer_interval_secs
+						</dt>
+						<dd>Number. Time boundaries at which to call `target`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> target
+						</dt>
+						<dd>A callable object. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> args
+						</dt>
+						<dd>Optional arguments to pass to `target` when calling it. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Optional keyword arguments to pass to `target` when calling it. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.train/LooperThread.htm">LooperThread</a></code>
+					</dt>
+					<dd>The started thread. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="loop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>loop_dyn</strong>(<span title="System.object">object</span> timer_interval_secs, <span title="System.object">object</span> target, <span title="System.object">object</span> args, <span title="System.object">object</span> kwargs)
+		</h4>
+		<div class="content">Start a LooperThread that calls a function periodically. <p></p> If `timer_interval_secs` is None the thread calls `target(*args, **kwargs)`
+repeatedly.  Otherwise it calls it every `timer_interval_secs`
+seconds.  The thread terminates when a stop is requested. <p></p> The started thread is added to the list of threads managed by the supervisor
+so it does not need to be passed to the `stop()` method. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> timer_interval_secs
+						</dt>
+						<dd>Number. Time boundaries at which to call `target`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> target
+						</dt>
+						<dd>A callable object. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> args
+						</dt>
+						<dd>Optional arguments to pass to `target` when calling it. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> kwargs
+						</dt>
+						<dd>Optional keyword arguments to pass to `target` when calling it. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The started thread. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="managed_session" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a> <strong>managed_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> config, <span title="System.bool">bool</span> start_standard_services, <span title="System.bool">bool</span> close_summary_writer)
+		</h4>
+		<div class="content">Returns a context manager for a managed session. <p></p> This context manager creates and automatically recovers a session.  It
+optionally starts the standard services that handle checkpoints and
+summaries.  It monitors exceptions raised from the `with` block or from the
+services and stops the supervisor as needed. <p></p> The context manager is typically used as follows:
+An exception raised from the `with` block or one of the service threads is
+raised again when the block exits.  This is done after stopping all threads
+and closing the session.  For example, an `AbortedError` exception, raised
+in case of preemption of one of the workers in a distributed model, is
+raised again when the block exits. <p></p> If you want to retry the training loop in case of preemption you can do it
+as follows:
+As a special case, exceptions used for control flow, such as
+`OutOfRangeError` which reports that input queues are exhausted, are not
+raised again from the `with` block: they indicate a clean termination of
+the training loop and are considered normal termination. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>name of the TensorFlow master to use.  See the
+`tf.compat.v1.Session` constructor for how this is interpreted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. Passed
+as-is to create the session. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> start_standard_services
+						</dt>
+						<dd>Whether to start the standard services, such as
+checkpoint, summary and step counter. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> close_summary_writer
+						</dt>
+						<dd>Whether to close the summary writer when closing the
+session.  Defaults to True. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a></code>
+					</dt>
+					<dd>A context manager that yields a `Session` restored from the latest
+checkpoint or initialized from scratch if not checkpoint exists.  The
+session is closed when the `with` block exits. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>def train():
+              sv = tf.compat.v1.train.Supervisor(...)
+              with sv.managed_session(<master>) as sess:
+                for step in xrange(..):
+                  if sv.should_stop():
+                    break
+                  sess.run(<my training op>)
+                 ...do other things needed at each training step... </pre>
+</div>
+		</div>
+	</div>
+	<div id="managed_session_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>managed_session_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> master, <span title="System.object">object</span> config, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> start_standard_services, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> close_summary_writer)
+		</h4>
+		<div class="content">Returns a context manager for a managed session. <p></p> This context manager creates and automatically recovers a session.  It
+optionally starts the standard services that handle checkpoints and
+summaries.  It monitors exceptions raised from the `with` block or from the
+services and stops the supervisor as needed. <p></p> The context manager is typically used as follows:
+An exception raised from the `with` block or one of the service threads is
+raised again when the block exits.  This is done after stopping all threads
+and closing the session.  For example, an `AbortedError` exception, raised
+in case of preemption of one of the workers in a distributed model, is
+raised again when the block exits. <p></p> If you want to retry the training loop in case of preemption you can do it
+as follows:
+As a special case, exceptions used for control flow, such as
+`OutOfRangeError` which reports that input queues are exhausted, are not
+raised again from the `with` block: they indicate a clean termination of
+the training loop and are considered normal termination. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> master
+						</dt>
+						<dd>name of the TensorFlow master to use.  See the
+`tf.compat.v1.Session` constructor for how this is interpreted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional `ConfigProto` proto used to configure the session. Passed
+as-is to create the session. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> start_standard_services
+						</dt>
+						<dd>Whether to start the standard services, such as
+checkpoint, summary and step counter. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> close_summary_writer
+						</dt>
+						<dd>Whether to close the summary writer when closing the
+session.  Defaults to True. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A context manager that yields a `Session` restored from the latest
+checkpoint or initialized from scratch if not checkpoint exists.  The
+session is closed when the `with` block exits. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>def train():
+              sv = tf.compat.v1.train.Supervisor(...)
+              with sv.managed_session(<master>) as sess:
+                for step in xrange(..):
+                  if sv.should_stop():
+                    break
+                  sess.run(<my training op>)
+                 ...do other things needed at each training step... </pre>
+</div>
+		</div>
+	</div>
+	<div id="prepare_or_wait_for_session" class="method">
+		<h4>
+			<a href="../tensorflow/Session.htm">Session</a> <strong>prepare_or_wait_for_session</strong>(<span title="System.string">string</span> master, <span title="System.object">object</span> config, <span title="System.bool">bool</span> wait_for_checkpoint, <span title="System.int">int</span> max_wait_secs, <span title="System.bool">bool</span> start_standard_services)
+		</h4>
+		<div class="content">Make sure the model is ready to be used. <p></p> Create a session on 'master', recovering or initializing the model as
+needed, or wait for a session to be ready.  If running as the chief
+and `start_standard_service` is set to True, also call the session
+manager to start the standard services. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> master
+						</dt>
+						<dd>name of the TensorFlow master to use.  See the
+`tf.compat.v1.Session` constructor for how this is interpreted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional ConfigProto proto used to configure the session, which is
+passed as-is to create the session. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether we should wait for the availability of a
+checkpoint before creating Session. Defaults to False. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for the session to become available. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> start_standard_services
+						</dt>
+						<dd>Whether to start the standard services and the
+queue runners. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Session.htm">Session</a></code>
+					</dt>
+					<dd>A Session object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prepare_or_wait_for_session_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>prepare_or_wait_for_session_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> master, <span title="System.object">object</span> config, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> wait_for_checkpoint, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_wait_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> start_standard_services)
+		</h4>
+		<div class="content">Make sure the model is ready to be used. <p></p> Create a session on 'master', recovering or initializing the model as
+needed, or wait for a session to be ready.  If running as the chief
+and `start_standard_service` is set to True, also call the session
+manager to start the standard services. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> master
+						</dt>
+						<dd>name of the TensorFlow master to use.  See the
+`tf.compat.v1.Session` constructor for how this is interpreted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>Optional ConfigProto proto used to configure the session, which is
+passed as-is to create the session. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> wait_for_checkpoint
+						</dt>
+						<dd>Whether we should wait for the availability of a
+checkpoint before creating Session. Defaults to False. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_wait_secs
+						</dt>
+						<dd>Maximum time to wait for the session to become available. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> start_standard_services
+						</dt>
+						<dd>Whether to start the standard services and the
+queue runners. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A Session object that can be used to drive the model. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="start_queue_runners" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>start_queue_runners</strong>(<a href="../tensorflow/Session.htm">Session</a> sess, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> queue_runners)
+		</h4>
+		<div class="content">Start threads for `QueueRunners`. <p></p> Note that the queue runners collected in the graph key `QUEUE_RUNNERS`
+are already started automatically when you create a session with the
+supervisor, so unless you have non-collected queue runners to start
+you do not need to call this explicitly. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/Session.htm">Session</a></code> sess
+						</dt>
+						<dd>A `Session`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> queue_runners
+						</dt>
+						<dd>A list of `QueueRunners`. If not specified, we'll use the
+list of queue runners gathered in the graph under the key
+`GraphKeys.QUEUE_RUNNERS`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>The list of threads started for the `QueueRunners`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="start_queue_runners_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>start_queue_runners_dyn</strong>(<span title="System.object">object</span> sess, <span title="System.object">object</span> queue_runners)
+		</h4>
+		<div class="content">Start threads for `QueueRunners`. <p></p> Note that the queue runners collected in the graph key `QUEUE_RUNNERS`
+are already started automatically when you create a session with the
+supervisor, so unless you have non-collected queue runners to start
+you do not need to call this explicitly. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sess
+						</dt>
+						<dd>A `Session`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> queue_runners
+						</dt>
+						<dd>A list of `QueueRunners`. If not specified, we'll use the
+list of queue runners gathered in the graph under the key
+`GraphKeys.QUEUE_RUNNERS`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>The list of threads started for the `QueueRunners`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="start_standard_services" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>start_standard_services</strong>(<a href="../tensorflow/Session.htm">Session</a> sess)
+		</h4>
+		<div class="content">Start the standard services for 'sess'. <p></p> This starts services in the background.  The services started depend
+on the parameters to the constructor and may include: <p></p> - A Summary thread computing summaries every save_summaries_secs.
+- A Checkpoint thread saving the model every save_model_secs.
+- A StepCounter thread measure step time. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/Session.htm">Session</a></code> sess
+						</dt>
+						<dd>A Session. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>A list of threads that are running the standard services.  You can use
+the Supervisor's Coordinator to join these threads with:
+sv.coord.Join(<list of threads>) 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="start_standard_services_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>start_standard_services_dyn</strong>(<span title="System.object">object</span> sess)
+		</h4>
+		<div class="content">Start the standard services for 'sess'. <p></p> This starts services in the background.  The services started depend
+on the parameters to the constructor and may include: <p></p> - A Summary thread computing summaries every save_summaries_secs.
+- A Checkpoint thread saving the model every save_model_secs.
+- A StepCounter thread measure step time. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sess
+						</dt>
+						<dd>A Session. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of threads that are running the standard services.  You can use
+the Supervisor's Coordinator to join these threads with:
+sv.coord.Join(<list of threads>) 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="stop" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>stop</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> threads, <span title="System.bool">bool</span> close_summary_writer, <span title="System.bool">bool</span> ignore_live_threads)
+		</h4>
+		<div class="content">Stop the services and the coordinator. <p></p> This does not close the session. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> threads
+						</dt>
+						<dd>Optional list of threads to join with the coordinator.  If
+`None`, defaults to the threads running the standard services, the
+threads started for `QueueRunners`, and the threads started by the
+`loop()` method.  To wait on additional threads, pass the list in this
+parameter. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> close_summary_writer
+						</dt>
+						<dd>Whether to close the `summary_writer`.  Defaults to
+`True` if the summary writer was created by the supervisor, `False`
+otherwise. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> ignore_live_threads
+						</dt>
+						<dd>If `True` ignores threads that remain running after a
+grace period when joining threads via the coordinator, instead of
+raising a RuntimeError. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>stop_dyn</strong>(<span title="System.object">object</span> threads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> close_summary_writer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ignore_live_threads)
+		</h4>
+		<div class="content">Stop the services and the coordinator. <p></p> This does not close the session. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> threads
+						</dt>
+						<dd>Optional list of threads to join with the coordinator.  If
+`None`, defaults to the threads running the standard services, the
+threads started for `QueueRunners`, and the threads started by the
+`loop()` method.  To wait on additional threads, pass the list in this
+parameter. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> close_summary_writer
+						</dt>
+						<dd>Whether to close the `summary_writer`.  Defaults to
+`True` if the summary writer was created by the supervisor, `False`
+otherwise. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> ignore_live_threads
+						</dt>
+						<dd>If `True` ignores threads that remain running after a
+grace period when joining threads via the coordinator, instead of
+raising a RuntimeError. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="summary_computed" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>summary_computed</strong>(<a href="../tensorflow/Session.htm">Session</a> sess, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> summary, <span title="System.object">object</span> global_step)
+		</h4>
+		<div class="content">Indicate that a summary was computed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/Session.htm">Session</a></code> sess
+						</dt>
+						<dd>A `Session` object. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> summary
+						</dt>
+						<dd>A Summary proto, or a string holding a serialized summary proto. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> global_step
+						</dt>
+						<dd>Int. global step this summary is associated with. If `None`,
+it will try to fetch the current step. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="summary_computed_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_computed_dyn</strong>(<span title="System.object">object</span> sess, <span title="System.object">object</span> summary, <span title="System.object">object</span> global_step)
+		</h4>
+		<div class="content">Indicate that a summary was computed. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sess
+						</dt>
+						<dd>A `Session` object. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> summary
+						</dt>
+						<dd>A Summary proto, or a string holding a serialized summary proto. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> global_step
+						</dt>
+						<dd>Int. global step this summary is associated with. If `None`,
+it will try to fetch the current step. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="wait_for_stop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>wait_for_stop_dyn</strong>()
+		</h4>
+		<div class="content">Block waiting for the coordinator to stop. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.train/Supervisor.htm">Supervisor</a> <strong>NewDyn</strong>(<span title="System.object">object</span> graph, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ready_op, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ready_for_local_init_op, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_chief, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> init_op, <span title="System.object">object</span> init_feed_dict, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> local_init_op, <span title="System.object">object</span> logdir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> summary_op, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> saver, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> global_step, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> save_summaries_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> save_model_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> recovery_wait_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> stop_grace_secs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> checkpoint_basename, <span title="System.object">object</span> session_manager, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> summary_writer, <span title="System.object">object</span> init_fn, <span title="System.object">object</span> local_init_run_options)
+		</h4>
+		<div class="content">Create a `Supervisor`. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> graph
+						</dt>
+						<dd>A `Graph`.  The graph that the model will use.  Defaults to the
+default `Graph`.  The supervisor may add operations to the graph before
+creating a session, but the graph should not be modified by the caller
+after passing it to the supervisor. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> ready_op
+						</dt>
+						<dd>1-D string `Tensor`.  This tensor is evaluated by supervisors in
+`prepare_or_wait_for_session()` to check if the model is ready to use.
+The model is considered ready if it returns an empty array.  Defaults to
+the tensor returned from `tf.compat.v1.report_uninitialized_variables()`
+If `None`, the model is not checked for readiness. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> ready_for_local_init_op
+						</dt>
+						<dd>1-D string `Tensor`.  This tensor is evaluated by
+supervisors in `prepare_or_wait_for_session()` to check if the model is
+ready to run the local_init_op. The model is considered ready if it
+returns an empty array. Defaults to `None`. If `None`, the model is not
+checked for readiness before running local_init_op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> is_chief
+						</dt>
+						<dd>If True, create a chief supervisor in charge of initializing and
+restoring the model.  If False, create a supervisor that relies on a
+chief supervisor for inits and restore. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> init_op
+						</dt>
+						<dd>`Operation`.  Used by chief supervisors to initialize the model
+when it can not be recovered.  Defaults to an `Operation` that
+initializes all global variables.  If `None`, no initialization is done
+automatically unless you pass a value for `init_fn`, see below. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_feed_dict
+						</dt>
+						<dd>A dictionary that maps `Tensor` objects to feed values.
+This feed dictionary will be used when `init_op` is evaluated. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> local_init_op
+						</dt>
+						<dd>`Operation`. Used by all supervisors to run initializations
+that should run for every new supervisor instance. By default these are
+table initializers and initializers for local variables. If `None`, no
+further per supervisor-instance initialization is done automatically. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> logdir
+						</dt>
+						<dd>A string.  Optional path to a directory where to checkpoint the
+model and log events for the visualizer.  Used by chief supervisors. The
+directory will be created if it does not exist. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> summary_op
+						</dt>
+						<dd>An `Operation` that returns a Summary for the event logs. Used
+by chief supervisors if a `logdir` was specified.  Defaults to the
+operation returned from summary.merge_all().  If `None`, summaries are
+not computed automatically. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> saver
+						</dt>
+						<dd>A Saver object.  Used by chief supervisors if a `logdir` was
+specified.  Defaults to the saved returned by Saver(). If `None`, the
+model is not saved automatically. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> global_step
+						</dt>
+						<dd>An integer Tensor of size 1 that counts steps.  The value
+from 'global_step' is used in summaries and checkpoint filenames.
+Default to the op named 'global_step' in the graph if it exists, is of
+rank 1, size 1, and of type tf.int32 or tf.int64.  If `None` the global
+step is not recorded in summaries and checkpoint files.  Used by chief
+supervisors if a `logdir` was specified. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> save_summaries_secs
+						</dt>
+						<dd>Number of seconds between the computation of
+summaries for the event log.  Defaults to 120 seconds.  Pass 0 to
+disable summaries. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> save_model_secs
+						</dt>
+						<dd>Number of seconds between the creation of model
+checkpoints.  Defaults to 600 seconds.  Pass 0 to disable checkpoints. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> recovery_wait_secs
+						</dt>
+						<dd>Number of seconds between checks that the model is
+ready.  Used by supervisors when waiting for a chief supervisor to
+initialize or restore the model.  Defaults to 30 seconds. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> stop_grace_secs
+						</dt>
+						<dd>Grace period, in seconds, given to running threads to
+stop when `stop()` is called.  Defaults to 120 seconds. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> checkpoint_basename
+						</dt>
+						<dd>The basename for checkpoint saving. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> session_manager
+						</dt>
+						<dd>`SessionManager`, which manages Session creation and
+recovery. If it is `None`, a default `SessionManager` will be created
+with the set of arguments passed in for backwards compatibility. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> summary_writer
+						</dt>
+						<dd>`SummaryWriter` to use or `USE_DEFAULT`.  Can be `None` to
+indicate that no summaries should be written. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> init_fn
+						</dt>
+						<dd>Optional callable used to initialize the model. Called after the
+optional `init_op` is called.  The callable must accept one argument,
+the session being initialized. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> local_init_run_options
+						</dt>
+						<dd>RunOptions to be passed as the SessionManager
+local_init_run_options parameter. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.train/Supervisor.htm">Supervisor</a></code>
+					</dt>
+					<dd>A `Supervisor`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="coord" class="method">
+		<h4>
+			<a href="../tensorflow.train/Coordinator.htm">Coordinator</a> <strong>coord</strong> get; 
+		</h4>
+		<div class="content">Return the Coordinator used by the Supervisor. <p></p> The Coordinator can be useful if you want to run multiple threads
+during your training. 
+
+		</div>
+	</div>
+	<div id="coord_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>coord_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the Coordinator used by the Supervisor. <p></p> The Coordinator can be useful if you want to run multiple threads
+during your training. 
+
+		</div>
+	</div>
+	<div id="global_step" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>global_step</strong> get; 
+		</h4>
+		<div class="content">Return the global_step Tensor used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="global_step_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>global_step_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the global_step Tensor used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="init_feed_dict" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>init_feed_dict</strong> get; 
+		</h4>
+		<div class="content">Return the feed dictionary used when evaluating the `init_op`. 
+
+		</div>
+	</div>
+	<div id="init_feed_dict_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>init_feed_dict_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the feed dictionary used when evaluating the `init_op`. 
+
+		</div>
+	</div>
+	<div id="init_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>init_op</strong> get; 
+		</h4>
+		<div class="content">Return the Init Op used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="init_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>init_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the Init Op used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="is_chief" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>is_chief</strong> get; 
+		</h4>
+		<div class="content">Return True if this is a chief supervisor. 
+
+		</div>
+	</div>
+	<div id="is_chief_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_chief_dyn</strong> get; 
+		</h4>
+		<div class="content">Return True if this is a chief supervisor. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ready_for_local_init_op" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>ready_for_local_init_op</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ready_for_local_init_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ready_for_local_init_op_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ready_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ready_op</strong> get; 
+		</h4>
+		<div class="content">Return the Ready Op used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="ready_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ready_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the Ready Op used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="save_model_secs" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>save_model_secs</strong> get; 
+		</h4>
+		<div class="content">Return the delay between checkpoints. 
+
+		</div>
+	</div>
+	<div id="save_model_secs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_model_secs_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the delay between checkpoints. 
+
+		</div>
+	</div>
+	<div id="save_path" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_path</strong> get; 
+		</h4>
+		<div class="content">Return the save path used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="save_path_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_path_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the save path used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="save_summaries_secs" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>save_summaries_secs</strong> get; 
+		</h4>
+		<div class="content">Return the delay between summary computations. 
+
+		</div>
+	</div>
+	<div id="save_summaries_secs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_summaries_secs_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the delay between summary computations. 
+
+		</div>
+	</div>
+	<div id="saver" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>saver</strong> get; 
+		</h4>
+		<div class="content">Return the Saver used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="saver_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>saver_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the Saver used by the supervisor. 
+
+		</div>
+	</div>
+	<div id="session_manager" class="method">
+		<h4>
+			<a href="../tensorflow.train/SessionManager.htm">SessionManager</a> <strong>session_manager</strong> get; 
+		</h4>
+		<div class="content">Return the SessionManager used by the Supervisor. 
+
+		</div>
+	</div>
+	<div id="session_manager_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>session_manager_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the SessionManager used by the Supervisor. 
+
+		</div>
+	</div>
+	<div id="summary_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_op</strong> get; 
+		</h4>
+		<div class="content">Return the Summary Tensor used by the chief supervisor. 
+
+		</div>
+	</div>
+	<div id="summary_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the Summary Tensor used by the chief supervisor. 
+
+		</div>
+	</div>
+	<div id="summary_writer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_writer</strong> get; 
+		</h4>
+		<div class="content">Return the SummaryWriter used by the chief supervisor. 
+
+		</div>
+	</div>
+	<div id="summary_writer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_writer_dyn</strong> get; 
+		</h4>
+		<div class="content">Return the SummaryWriter used by the chief supervisor. 
+
+		</div>
+	</div>
+	<div id="USE_DEFAULT_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>USE_DEFAULT_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="USE_DEFAULT" class="method">
+    <h4>int <strong>USE_DEFAULT</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

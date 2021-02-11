@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>stateful_random_ops - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.stateful_random_ops</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm" class="current">stateful_random_ops</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> stateful_random_ops</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.stateful_random_ops</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#non_deterministic_ints">non_deterministic_ints</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#non_deterministic_ints_dyn">non_deterministic_ints_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#ALGORITHM_TYPE_dyn">ALGORITHM_TYPE_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#DEFAULT_ALGORITHM_dyn">DEFAULT_ALGORITHM_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#Generator_fn">Generator_fn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#MAX_INT64">MAX_INT64</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#MAX_INT64_dyn">MAX_INT64_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#MIN_INT64">MIN_INT64</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#MIN_INT64_dyn">MIN_INT64_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#non_deterministic_ints_fn">non_deterministic_ints_fn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_MAX_dyn">SEED_MAX_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_MIN_dyn">SEED_MIN_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_UINT_SPAN_dyn">SEED_UINT_SPAN_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#STATE_TYPE_dyn">STATE_TYPE_dyn</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#UINT64_SPAN">UINT64_SPAN</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#UINT64_SPAN_dyn">UINT64_SPAN_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_BIT_MASK">SEED_BIT_MASK</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#global_generator">global_generator</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_TYPE">SEED_TYPE</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_TYPE_BITS">SEED_TYPE_BITS</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#SEED_SIZE">SEED_SIZE</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#RNG_ALG_PHILOX">RNG_ALG_PHILOX</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#RNG_ALG_THREEFRY">RNG_ALG_THREEFRY</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#PHILOX_STATE_SIZE">PHILOX_STATE_SIZE</a></li>
+				<li><a href="../tensorflow.python.stateful_random_ops/stateful_random_ops.htm#THREEFRY_STATE_SIZE">THREEFRY_STATE_SIZE</a></li>
+			</ul>
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="non_deterministic_ints" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>non_deterministic_ints</strong>(<span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> shape, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> dtype)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="non_deterministic_ints_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_deterministic_ints_dyn</strong>(<span title="System.object">object</span> shape, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> dtype)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="ALGORITHM_TYPE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ALGORITHM_TYPE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="DEFAULT_ALGORITHM_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>DEFAULT_ALGORITHM_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Generator_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Generator_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="MAX_INT64" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>MAX_INT64</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="MAX_INT64_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>MAX_INT64_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="MIN_INT64" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>MIN_INT64</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="MIN_INT64_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>MIN_INT64_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_deterministic_ints_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>non_deterministic_ints_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SEED_MAX_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SEED_MAX_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SEED_MIN_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SEED_MIN_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SEED_UINT_SPAN_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SEED_UINT_SPAN_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="STATE_TYPE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>STATE_TYPE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="UINT64_SPAN" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>UINT64_SPAN</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="UINT64_SPAN_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>UINT64_SPAN_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="SEED_BIT_MASK" class="method">
+    <h4>BigInteger <strong>SEED_BIT_MASK</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.Numerics.BigInteger">BigInteger</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="global_generator" class="method">
+    <h4>Generator <strong>global_generator</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <a href="../tensorflow.random.experimental/Generator.htm">Generator</a></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="SEED_TYPE" class="method">
+    <h4>string <strong>SEED_TYPE</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="SEED_TYPE_BITS" class="method">
+    <h4>int <strong>SEED_TYPE_BITS</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="SEED_SIZE" class="method">
+    <h4>int <strong>SEED_SIZE</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="RNG_ALG_PHILOX" class="method">
+    <h4>int <strong>RNG_ALG_PHILOX</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="RNG_ALG_THREEFRY" class="method">
+    <h4>int <strong>RNG_ALG_THREEFRY</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="PHILOX_STATE_SIZE" class="method">
+    <h4>int <strong>PHILOX_STATE_SIZE</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="THREEFRY_STATE_SIZE" class="method">
+    <h4>int <strong>THREEFRY_STATE_SIZE</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.int">int</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

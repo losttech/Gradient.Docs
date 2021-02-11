@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>RunConfig - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.learn</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.learn/BaseEstimator.htm">BaseEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ClusterConfig.htm">ClusterConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNClassifier.htm">DNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNEstimator.htm">DNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedClassifier.htm">DNNLinearCombinedClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedEstimator.htm">DNNLinearCombinedEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedRegressor.htm">DNNLinearCombinedRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNRegressor.htm">DNNRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm">DynamicRnnEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Environment.htm">Environment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Estimator.htm">Estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Evaluable.htm">Evaluable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Experiment.htm">Experiment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ExportStrategy.htm">ExportStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/GraphRewriteSpec.htm">GraphRewriteSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Head.htm">Head</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IBaseEstimator.htm">IBaseEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IClusterConfig.htm">IClusterConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNClassifier.htm">IDNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNEstimator.htm">IDNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedClassifier.htm">IDNNLinearCombinedClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedEstimator.htm">IDNNLinearCombinedEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedRegressor.htm">IDNNLinearCombinedRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNRegressor.htm">IDNNRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDynamicRnnEstimator.htm">IDynamicRnnEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEnvironment.htm">IEnvironment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEstimator.htm">IEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEvaluable.htm">IEvaluable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IExperiment.htm">IExperiment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IExportStrategy.htm">IExportStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IGraphRewriteSpec.htm">IGraphRewriteSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IHead.htm">IHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IInputFnOps.htm">IInputFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IKMeansClustering.htm">IKMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearClassifier.htm">ILinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearEstimator.htm">ILinearEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearRegressor.htm">ILinearRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IMetricKey.htm">IMetricKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IMetricSpec.htm">IMetricSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IModeKeys.htm">IModeKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IModelFnOps.htm">IModelFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/INotFittedError.htm">INotFittedError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/InputFnOps.htm">InputFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IPredictionKey.htm">IPredictionKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IPredictionType.htm">IPredictionType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IProblemType.htm">IProblemType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IRunConfig.htm">IRunConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ISKCompat.htm">ISKCompat</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ISVM.htm">ISVM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ITaskType.htm">ITaskType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ITrainable.htm">ITrainable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/KMeansClustering.htm">KMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/learn.htm">learn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearClassifier.htm">LinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearEstimator.htm">LinearEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearRegressor.htm">LinearRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/MetricKey.htm">MetricKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/MetricSpec.htm">MetricSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ModeKeys.htm">ModeKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ModelFnOps.htm">ModelFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/NotFittedError.htm">NotFittedError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/PredictionKey.htm">PredictionKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/PredictionType.htm">PredictionType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ProblemType.htm">ProblemType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/RunConfig.htm" class="current">RunConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/SKCompat.htm">SKCompat</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/SVM.htm">SVM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/TaskType.htm">TaskType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Trainable.htm">Trainable</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> RunConfig</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.learn</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.contrib.learn/ClusterConfig.htm">ClusterConfig</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.learn/IRunConfig.htm">IRunConfig</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">This class specifies the configurations for an `Estimator` run. <p></p> This class is a deprecated implementation of <a href="..\..\..\tf\estimator\RunConfig.md"><code>tf.estimator.RunConfig</code></a>
+interface. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#uid">uid</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#uid_dyn">uid_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#cluster_spec">cluster_spec</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#cluster_spec_dyn">cluster_spec_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#device_fn">device_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#device_fn_dyn">device_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#environment">environment</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#environment_dyn">environment_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#eval_distribute">eval_distribute</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#eval_distribute_dyn">eval_distribute_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#evaluation_master">evaluation_master</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#evaluation_master_dyn">evaluation_master_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#experimental_max_worker_delay_secs">experimental_max_worker_delay_secs</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#experimental_max_worker_delay_secs_dyn">experimental_max_worker_delay_secs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#global_id_in_cluster">global_id_in_cluster</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#global_id_in_cluster_dyn">global_id_in_cluster_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#is_chief">is_chief</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#is_chief_dyn">is_chief_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#keep_checkpoint_every_n_hours">keep_checkpoint_every_n_hours</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#keep_checkpoint_every_n_hours_dyn">keep_checkpoint_every_n_hours_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#keep_checkpoint_max">keep_checkpoint_max</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#keep_checkpoint_max_dyn">keep_checkpoint_max_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#log_step_count_steps">log_step_count_steps</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#log_step_count_steps_dyn">log_step_count_steps_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#master">master</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#master_dyn">master_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#model_dir">model_dir</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#model_dir_dyn">model_dir_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#num_ps_replicas">num_ps_replicas</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#num_ps_replicas_dyn">num_ps_replicas_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#num_worker_replicas">num_worker_replicas</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#num_worker_replicas_dyn">num_worker_replicas_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#protocol">protocol</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#protocol_dyn">protocol_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#save_checkpoints_secs">save_checkpoints_secs</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#save_checkpoints_secs_dyn">save_checkpoints_secs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#save_checkpoints_steps">save_checkpoints_steps</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#save_checkpoints_steps_dyn">save_checkpoints_steps_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#save_summary_steps">save_summary_steps</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#save_summary_steps_dyn">save_summary_steps_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#service">service</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#service_dyn">service_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#session_config">session_config</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#session_config_dyn">session_config_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#session_creation_timeout_secs">session_creation_timeout_secs</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#session_creation_timeout_secs_dyn">session_creation_timeout_secs_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#task_id">task_id</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#task_id_dyn">task_id_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#task_type">task_type</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#task_type_dyn">task_type_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#tf_config">tf_config</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#tf_config_dyn">tf_config_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#tf_random_seed">tf_random_seed</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#tf_random_seed_dyn">tf_random_seed_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#train_distribute">train_distribute</a></li>
+				<li><a href="../tensorflow.contrib.learn/RunConfig.htm#train_distribute_dyn">train_distribute_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="uid" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IEnumerator<string>">IEnumerator&lt;string&gt;</span> <strong>uid</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> whitelist)
+		</h4>
+		<div class="content">Generates a 'Unique Identifier' based on all internal fields. (experimental) <p></p> Warning: THIS FUNCTION IS EXPERIMENTAL. It may change or be removed at any time, and without warning. <p></p> Caller should use the uid string to check `RunConfig` instance integrity
+in one session use, but should not rely on the implementation details, which
+is subject to change. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> whitelist
+						</dt>
+						<dd>A list of the string names of the properties uid should not
+include. If `None`, defaults to `_DEFAULT_UID_WHITE_LIST`, which
+includes most properties user allowes to change. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IEnumerator<string>">IEnumerator&lt;string&gt;</span></code>
+					</dt>
+					<dd>A uid string. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="uid_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>uid_dyn</strong>(<span title="System.object">object</span> whitelist)
+		</h4>
+		<div class="content">Generates a 'Unique Identifier' based on all internal fields. (experimental) <p></p> Warning: THIS FUNCTION IS EXPERIMENTAL. It may change or be removed at any time, and without warning. <p></p> Caller should use the uid string to check `RunConfig` instance integrity
+in one session use, but should not rely on the implementation details, which
+is subject to change. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> whitelist
+						</dt>
+						<dd>A list of the string names of the properties uid should not
+include. If `None`, defaults to `_DEFAULT_UID_WHITE_LIST`, which
+includes most properties user allowes to change. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A uid string. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn/RunConfig.htm">RunConfig</a> <strong>NewDyn</strong>(<span title="System.object">object</span> master, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_cores, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> log_device_placement, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> gpu_memory_fraction, <span title="System.object">object</span> tf_random_seed, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> save_summary_steps, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> save_checkpoints_secs, <span title="System.object">object</span> save_checkpoints_steps, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> keep_checkpoint_max, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> keep_checkpoint_every_n_hours, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> log_step_count_steps, <span title="System.object">object</span> protocol, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> evaluation_master, <span title="System.object">object</span> model_dir, <span title="System.object">object</span> session_config, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> session_creation_timeout_secs)
+		</h4>
+		<div class="content">Constructor. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+When switching to tf.estimator.Estimator, use tf.estimator.RunConfig instead. <p></p> The superclass `ClusterConfig` may set properties like `cluster_spec`,
+`is_chief`, `master` (if `None` in the args), `num_ps_replicas`, `task_id`,
+and `task_type` based on the `TF_CONFIG` environment variable. See
+`ClusterConfig` for more details. <p></p> N.B.: If `save_checkpoints_steps` or `save_checkpoints_secs` is set,
+`keep_checkpoint_max` might need to be adjusted accordingly, especially in
+distributed training. For example, setting `save_checkpoints_secs` as 60
+without adjusting `keep_checkpoint_max` (defaults to 5) leads to situation
+that checkpoint would be garbage collected after 5 minutes. In distributed
+training, the evaluation job starts asynchronously and might fail to load or
+find the checkpoint due to race condition. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> master
+						</dt>
+						<dd>TensorFlow master. Defaults to empty string for local. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_cores
+						</dt>
+						<dd>Number of cores to be used. If 0, the system picks an
+appropriate number (default: 0). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> log_device_placement
+						</dt>
+						<dd>Log the op placement to devices (default: False). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> gpu_memory_fraction
+						</dt>
+						<dd>Fraction of GPU memory used by the process on
+each GPU uniformly on the same machine. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tf_random_seed
+						</dt>
+						<dd>Random seed for TensorFlow initializers.
+Setting this value allows consistency between reruns. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> save_summary_steps
+						</dt>
+						<dd>Save summaries every this many steps. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> save_checkpoints_secs
+						</dt>
+						<dd>Save checkpoints every this many seconds. Can not
+be specified with `save_checkpoints_steps`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> save_checkpoints_steps
+						</dt>
+						<dd>Save checkpoints every this many steps. Can not be
+specified with `save_checkpoints_secs`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> keep_checkpoint_max
+						</dt>
+						<dd>The maximum number of recent checkpoint files to
+keep. As new files are created, older files are deleted. If None or 0,
+all checkpoint files are kept. Defaults to 5 (that is, the 5 most recent
+checkpoint files are kept.) 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> keep_checkpoint_every_n_hours
+						</dt>
+						<dd>Number of hours between each checkpoint
+to be saved. The default value of 10,000 hours effectively disables
+the feature. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> log_step_count_steps
+						</dt>
+						<dd>The frequency, in number of global steps, that the
+global step/sec will be logged during training. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> protocol
+						</dt>
+						<dd>An optional argument which specifies the protocol used when
+starting server. None means default to grpc. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> evaluation_master
+						</dt>
+						<dd>the master on which to perform evaluation. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> model_dir
+						</dt>
+						<dd>directory where model parameters, graph etc are saved. If
+`None`, will use `model_dir` property in `TF_CONFIG` environment
+variable. If both are set, must have same value. If both are `None`, see
+`Estimator` about where the model will be saved. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> session_config
+						</dt>
+						<dd>a ConfigProto used to set session parameters, or None.
+Note - using this argument, it is easy to provide settings which break
+otherwise perfectly good models. Use with care. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> session_creation_timeout_secs
+						</dt>
+						<dd>Max time workers should wait for a session
+to become available (on initialization or when recovering a session)
+with MonitoredTrainingSession. Defaults to 7200 seconds, but users may
+want to set a lower value to detect problems with variable / session
+(re)-initialization more quickly. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="cluster_spec" class="method">
+		<h4>
+			<a href="../tensorflow.train/ClusterSpec.htm">ClusterSpec</a> <strong>cluster_spec</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="cluster_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>cluster_spec_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>device_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="environment" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>environment</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="environment_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>environment_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="eval_distribute" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>eval_distribute</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="eval_distribute_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>eval_distribute_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="evaluation_master" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>evaluation_master</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="evaluation_master_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>evaluation_master_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="experimental_max_worker_delay_secs" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_max_worker_delay_secs</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="experimental_max_worker_delay_secs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_max_worker_delay_secs_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="global_id_in_cluster" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>global_id_in_cluster</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="global_id_in_cluster_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>global_id_in_cluster_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_chief" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>is_chief</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_chief_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_chief_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="keep_checkpoint_every_n_hours" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>keep_checkpoint_every_n_hours</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="keep_checkpoint_every_n_hours_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>keep_checkpoint_every_n_hours_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="keep_checkpoint_max" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>keep_checkpoint_max</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="keep_checkpoint_max_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>keep_checkpoint_max_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="log_step_count_steps" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>log_step_count_steps</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="log_step_count_steps_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>log_step_count_steps_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="master" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>master</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="master_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>master_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>model_dir</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_ps_replicas" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_ps_replicas</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_ps_replicas_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_ps_replicas_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_worker_replicas" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_worker_replicas</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_worker_replicas_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_worker_replicas_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="protocol" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>protocol</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="protocol_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>protocol_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="save_checkpoints_secs" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>save_checkpoints_secs</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="save_checkpoints_secs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_checkpoints_secs_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="save_checkpoints_steps" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>save_checkpoints_steps</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="save_checkpoints_steps_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_checkpoints_steps_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="save_summary_steps" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>save_summary_steps</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="save_summary_steps_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>save_summary_steps_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="service" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>service</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="service_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>service_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="session_config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>session_config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="session_config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>session_config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="session_creation_timeout_secs" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>session_creation_timeout_secs</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="session_creation_timeout_secs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>session_creation_timeout_secs_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_id" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>task_id</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_id_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>task_id_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_type" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>task_type</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_type_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>task_type_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tf_config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tf_config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tf_config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tf_config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tf_random_seed" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>tf_random_seed</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tf_random_seed_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tf_random_seed_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="train_distribute" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>train_distribute</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="train_distribute_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>train_distribute_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

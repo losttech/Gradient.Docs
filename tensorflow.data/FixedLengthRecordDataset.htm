@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>FixedLengthRecordDataset - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.data</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.data/Dataset.htm">Dataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/DatasetSpec.htm">DatasetSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/FixedLengthRecordDataset.htm" class="current">FixedLengthRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IDataset.htm">IDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IDatasetSpec.htm">IDatasetSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IFixedLengthRecordDataset.htm">IFixedLengthRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IIterator.htm">IIterator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/IOptions.htm">IOptions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/Iterator.htm">Iterator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/ITextLineDataset.htm">ITextLineDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/ITFRecordDataset.htm">ITFRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/Options.htm">Options</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/TextLineDataset.htm">TextLineDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.data/TFRecordDataset.htm">TFRecordDataset</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> FixedLengthRecordDataset</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.data</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.data/IFixedLengthRecordDataset.htm">IFixedLengthRecordDataset</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A `Dataset` of fixed-length records from one or more binary files. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#cache">cache</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#cache_dyn">cache_dyn</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#shuffle_dyn">shuffle_dyn</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#take">take</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#element_spec">element_spec</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#element_spec_dyn">element_spec_dyn</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#output_classes">output_classes</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#output_classes_dyn">output_classes_dyn</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#output_shapes">output_shapes</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#output_shapes_dyn">output_shapes_dyn</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#output_types">output_types</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#output_types_dyn">output_types_dyn</a></li>
+				<li><a href="../tensorflow.data/FixedLengthRecordDataset.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="cache" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>cache</strong>(<span title="System.string">string</span> filename)
+		</h4>
+		<div class="content">Caches the elements in this dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> filename
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\string.md"><code>tf.string</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the name of a
+directory on the filesystem to use for caching elements in this Dataset.
+If a filename is not provided, the dataset will be cached in memory. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cache_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>cache_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> filename)
+		</h4>
+		<div class="content">Caches the elements in this dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> filename
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\string.md"><code>tf.string</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the name of a
+directory on the filesystem to use for caching elements in this Dataset.
+If a filename is not provided, the dataset will be cached in memory. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="shuffle_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shuffle_dyn</strong>(<span title="System.object">object</span> buffer_size, <span title="System.object">object</span> seed, <span title="System.object">object</span> reshuffle_each_iteration)
+		</h4>
+		<div class="content">Randomly shuffles the elements of this dataset. <p></p> This dataset fills a buffer with `buffer_size` elements, then randomly
+samples elements from this buffer, replacing the selected elements with new
+elements. For perfect shuffling, a buffer size greater than or equal to the
+full size of the dataset is required. <p></p> For instance, if your dataset contains 10,000 elements but `buffer_size` is
+set to 1,000, then `shuffle` will initially select a random element from
+only the first 1,000 elements in the buffer. Once an element is selected,
+its space in the buffer is replaced by the next (i.e. 1,001-st) element,
+maintaining the 1,000 element buffer. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> buffer_size
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+elements from this dataset from which the new dataset will sample. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> seed
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the random
+seed that will be used to create the distribution. See
+`tf.compat.v1.set_random_seed` for behavior. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> reshuffle_each_iteration
+						</dt>
+						<dd>(Optional.) A boolean, which if true indicates
+that the dataset should be pseudorandomly reshuffled each time it is
+iterated over. (Defaults to `True`.) 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="take" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>take</strong>(<span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> count)
+		</h4>
+		<div class="content">Creates a `Dataset` with at most `count` elements from this dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> count
+						</dt>
+						<dd>A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+elements of this dataset that should be taken to form the new dataset.
+If `count` is -1, or if `count` is greater than the size of this
+dataset, the new dataset will contain all elements of this dataset. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="element_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="element_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_classes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_classes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_classes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_classes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shapes" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shapes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shapes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shapes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_types" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_types</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_types_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_types_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

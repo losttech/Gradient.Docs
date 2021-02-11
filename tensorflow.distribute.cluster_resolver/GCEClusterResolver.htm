@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>GCEClusterResolver - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distribute.cluster_resolver</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ClusterResolver.htm">ClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm" class="current">GCEClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IClusterResolver.htm">IClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IGCEClusterResolver.htm">IGCEClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IKubernetesClusterResolver.htm">IKubernetesClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ISimpleClusterResolver.htm">ISimpleClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ISlurmClusterResolver.htm">ISlurmClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ITFConfigClusterResolver.htm">ITFConfigClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ITPUClusterResolver.htm">ITPUClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IUnionResolver.htm">IUnionResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/KubernetesClusterResolver.htm">KubernetesClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/SimpleClusterResolver.htm">SimpleClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm">SlurmClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/TFConfigClusterResolver.htm">TFConfigClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/TPUClusterResolver.htm">TPUClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/UnionResolver.htm">UnionResolver</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> GCEClusterResolver</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distribute.cluster_resolver</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distribute.cluster_resolver/ClusterResolver.htm">ClusterResolver</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distribute.cluster_resolver/IGCEClusterResolver.htm">IGCEClusterResolver</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">ClusterResolver for Google Compute Engine. <p></p> This is an implementation of cluster resolvers for the Google Compute Engine
+instance group platform. By specifying a project, zone, and instance group,
+this will retrieve the IP address of all the instances within the instance
+group and return a ClusterResolver object suitable for use for distributed
+TensorFlow. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#environment">environment</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#environment_dyn">environment_dyn</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#rpc_layer">rpc_layer</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#rpc_layer_dyn">rpc_layer_dyn</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#task_id">task_id</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#task_id_dyn">task_id_dyn</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#task_type">task_type</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm#task_type_dyn">task_type_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm">GCEClusterResolver</a> <strong>NewDyn</strong>(<span title="System.object">object</span> project, <span title="System.object">object</span> zone, <span title="System.object">object</span> instance_group, <span title="System.object">object</span> port, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> task_type, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> task_id, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> rpc_layer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> credentials, <span title="System.object">object</span> service)
+		</h4>
+		<div class="content">Creates a new GCEClusterResolver object. <p></p> This takes in a few parameters and creates a GCEClusterResolver project. It
+will then use these parameters to query the GCE API for the IP addresses of
+each instance in the instance group. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> project
+						</dt>
+						<dd>Name of the GCE project. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> zone
+						</dt>
+						<dd>Zone of the GCE instance group. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> instance_group
+						</dt>
+						<dd>Name of the GCE instance group. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> port
+						</dt>
+						<dd>Port of the listening TensorFlow server (default: 8470) 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> task_type
+						</dt>
+						<dd>Name of the TensorFlow job this GCE instance group of VM
+instances belong to. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> task_id
+						</dt>
+						<dd>The task index for this particular VM, within the GCE
+instance group. In particular, every single instance should be assigned
+a unique ordinal index within an instance group manually so that they
+can be distinguished from each other. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> rpc_layer
+						</dt>
+						<dd>The RPC layer TensorFlow should use to communicate across
+instances. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> credentials
+						</dt>
+						<dd>GCE Credentials. If nothing is specified, this defaults to
+GoogleCredentials.get_application_default(). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> service
+						</dt>
+						<dd>The GCE API object returned by the googleapiclient.discovery
+function. (Default: discovery.build('compute', 'v1')). If you specify a
+custom service object, then the credentials parameter will be ignored. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="environment" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>environment</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="environment_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>environment_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rpc_layer" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>rpc_layer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rpc_layer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rpc_layer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_id" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>task_id</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_id_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>task_id_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_type" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>task_type</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_type_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>task_type_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

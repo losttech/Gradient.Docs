@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Dataset - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.compat.v2.data</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.compat.v2.data/Dataset.htm" class="current">Dataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/FixedLengthRecordDataset.htm">FixedLengthRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/IDataset.htm">IDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/IFixedLengthRecordDataset.htm">IFixedLengthRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/ITextLineDataset.htm">ITextLineDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/ITFRecordDataset.htm">ITFRecordDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/TextLineDataset.htm">TextLineDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.compat.v2.data/TFRecordDataset.htm">TFRecordDataset</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Dataset</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.compat.v2.data</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.python.training.tracking.base/Trackable.htm">Trackable</a>, <a href="../tensorflow.python.framework.composite_tensor/CompositeTensor.htm">CompositeTensor</a>, <a href="../tensorflow.compat.v2.data/IDataset.htm">IDataset</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator">from_generator</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_generator_dyn">from_generator_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_tensor_slices">from_tensor_slices</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#from_tensors">from_tensors</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#list_files">list_files</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#list_files">list_files</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#list_files">list_files</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#list_files_dyn">list_files_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#range">range</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#range_dyn">range_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#zip">zip</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#zip_dyn">zip_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#element_spec">element_spec</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#element_spec_dyn">element_spec_dyn</a></li>
+				<li><a href="../tensorflow.compat.v2.data/Dataset.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <a href="../tensorflow/DType.htm">DType</a> output_types, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` whose elements are generated by `generator`. <p></p> The `generator` argument must be a callable object that returns
+an object that supports the `iter()` protocol (e.g. a generator function).
+The elements generated by `generator` must be compatible with the given
+`output_types` and (optional) `output_shapes` arguments.
+NOTE: The current implementation of `Dataset.from_generator()` uses
+<a href="..\..\tf\numpy_function.md"><code>tf.numpy_function</code></a> and inherits the same constraints. In particular, it
+requires the `Dataset`- and `Iterator`-related operations to be placed
+on a device in the same process as the Python program that called
+`Dataset.from_generator()`. The body of `generator` will not be
+serialized in a `GraphDef`, and you should not use this method if you
+need to serialize your model and restore it in a different environment. <p></p> NOTE: If `generator` depends on mutable global variables or other external
+state, be aware that the runtime may invoke `generator` multiple times
+(in order to support repeating the `Dataset`) and at any time
+between the call to `Dataset.from_generator()` and the production of the
+first element from the generator. Mutating global variables or external
+state can cause undefined behavior, and we recommend that you explicitly
+cache any external state in `generator` before calling
+`Dataset.from_generator()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> generator
+						</dt>
+						<dd>A callable object that returns an object that supports the
+`iter()` protocol. If `args` is not specified, `generator` must take no
+arguments; otherwise it must take as many arguments as there are values
+in `args`. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/DType.htm">DType</a></code> output_types
+						</dt>
+						<dd>A nested structure of <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> objects corresponding to
+each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> output_shapes
+						</dt>
+						<dd>(Optional.) A nested structure of <a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> objects
+corresponding to each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span></code> args
+						</dt>
+						<dd>(Optional.) A tuple of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects that will be evaluated
+and passed to `generator` as NumPy-array arguments. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import itertools
+            tf.compat.v1.enable_eager_execution() <p></p> def gen():
+  for i in itertools.count(1):
+    yield (i, [1] * i) <p></p> ds = tf.data.Dataset.from_generator(
+    gen, (tf.int64, tf.int64), (tf.TensorShape([]), tf.TensorShape([None]))) <p></p> for value in ds.take(2):
+  print value
+# (1, array([1]))
+# (2, array([1, 1])) </pre>
+</div>
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> output_types, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` whose elements are generated by `generator`. <p></p> The `generator` argument must be a callable object that returns
+an object that supports the `iter()` protocol (e.g. a generator function).
+The elements generated by `generator` must be compatible with the given
+`output_types` and (optional) `output_shapes` arguments.
+NOTE: The current implementation of `Dataset.from_generator()` uses
+<a href="..\..\tf\numpy_function.md"><code>tf.numpy_function</code></a> and inherits the same constraints. In particular, it
+requires the `Dataset`- and `Iterator`-related operations to be placed
+on a device in the same process as the Python program that called
+`Dataset.from_generator()`. The body of `generator` will not be
+serialized in a `GraphDef`, and you should not use this method if you
+need to serialize your model and restore it in a different environment. <p></p> NOTE: If `generator` depends on mutable global variables or other external
+state, be aware that the runtime may invoke `generator` multiple times
+(in order to support repeating the `Dataset`) and at any time
+between the call to `Dataset.from_generator()` and the production of the
+first element from the generator. Mutating global variables or external
+state can cause undefined behavior, and we recommend that you explicitly
+cache any external state in `generator` before calling
+`Dataset.from_generator()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> generator
+						</dt>
+						<dd>A callable object that returns an object that supports the
+`iter()` protocol. If `args` is not specified, `generator` must take no
+arguments; otherwise it must take as many arguments as there are values
+in `args`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> output_types
+						</dt>
+						<dd>A nested structure of <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> objects corresponding to
+each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> output_shapes
+						</dt>
+						<dd>(Optional.) A nested structure of <a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> objects
+corresponding to each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span></code> args
+						</dt>
+						<dd>(Optional.) A tuple of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects that will be evaluated
+and passed to `generator` as NumPy-array arguments. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import itertools
+            tf.compat.v1.enable_eager_execution() <p></p> def gen():
+  for i in itertools.count(1):
+    yield (i, [1] * i) <p></p> ds = tf.data.Dataset.from_generator(
+    gen, (tf.int64, tf.int64), (tf.TensorShape([]), tf.TensorShape([None]))) <p></p> for value in ds.take(2):
+  print value
+# (1, array([1]))
+# (2, array([1, 1])) </pre>
+</div>
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> output_types, <span title="System.int">int</span> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` whose elements are generated by `generator`. <p></p> The `generator` argument must be a callable object that returns
+an object that supports the `iter()` protocol (e.g. a generator function).
+The elements generated by `generator` must be compatible with the given
+`output_types` and (optional) `output_shapes` arguments.
+NOTE: The current implementation of `Dataset.from_generator()` uses
+<a href="..\..\tf\numpy_function.md"><code>tf.numpy_function</code></a> and inherits the same constraints. In particular, it
+requires the `Dataset`- and `Iterator`-related operations to be placed
+on a device in the same process as the Python program that called
+`Dataset.from_generator()`. The body of `generator` will not be
+serialized in a `GraphDef`, and you should not use this method if you
+need to serialize your model and restore it in a different environment. <p></p> NOTE: If `generator` depends on mutable global variables or other external
+state, be aware that the runtime may invoke `generator` multiple times
+(in order to support repeating the `Dataset`) and at any time
+between the call to `Dataset.from_generator()` and the production of the
+first element from the generator. Mutating global variables or external
+state can cause undefined behavior, and we recommend that you explicitly
+cache any external state in `generator` before calling
+`Dataset.from_generator()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> generator
+						</dt>
+						<dd>A callable object that returns an object that supports the
+`iter()` protocol. If `args` is not specified, `generator` must take no
+arguments; otherwise it must take as many arguments as there are values
+in `args`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> output_types
+						</dt>
+						<dd>A nested structure of <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> objects corresponding to
+each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> output_shapes
+						</dt>
+						<dd>(Optional.) A nested structure of <a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> objects
+corresponding to each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span></code> args
+						</dt>
+						<dd>(Optional.) A tuple of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects that will be evaluated
+and passed to `generator` as NumPy-array arguments. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import itertools
+            tf.compat.v1.enable_eager_execution() <p></p> def gen():
+  for i in itertools.count(1):
+    yield (i, [1] * i) <p></p> ds = tf.data.Dataset.from_generator(
+    gen, (tf.int64, tf.int64), (tf.TensorShape([]), tf.TensorShape([None]))) <p></p> for value in ds.take(2):
+  print value
+# (1, array([1]))
+# (2, array([1, 1])) </pre>
+</div>
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> output_types, <a href="../tensorflow/TensorShape.htm">TensorShape</a> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> output_types, <a href="../tensorflow/TensorShape.htm">TensorShape</a> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <a href="../tensorflow/DType.htm">DType</a> output_types, <a href="../tensorflow/TensorShape.htm">TensorShape</a> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> output_types, <a href="../tensorflow/TensorShape.htm">TensorShape</a> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="from_generator" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_generator</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generator, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> output_types, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> output_shapes, <span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` whose elements are generated by `generator`. <p></p> The `generator` argument must be a callable object that returns
+an object that supports the `iter()` protocol (e.g. a generator function).
+The elements generated by `generator` must be compatible with the given
+`output_types` and (optional) `output_shapes` arguments.
+NOTE: The current implementation of `Dataset.from_generator()` uses
+<a href="..\..\tf\numpy_function.md"><code>tf.numpy_function</code></a> and inherits the same constraints. In particular, it
+requires the `Dataset`- and `Iterator`-related operations to be placed
+on a device in the same process as the Python program that called
+`Dataset.from_generator()`. The body of `generator` will not be
+serialized in a `GraphDef`, and you should not use this method if you
+need to serialize your model and restore it in a different environment. <p></p> NOTE: If `generator` depends on mutable global variables or other external
+state, be aware that the runtime may invoke `generator` multiple times
+(in order to support repeating the `Dataset`) and at any time
+between the call to `Dataset.from_generator()` and the production of the
+first element from the generator. Mutating global variables or external
+state can cause undefined behavior, and we recommend that you explicitly
+cache any external state in `generator` before calling
+`Dataset.from_generator()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> generator
+						</dt>
+						<dd>A callable object that returns an object that supports the
+`iter()` protocol. If `args` is not specified, `generator` must take no
+arguments; otherwise it must take as many arguments as there are values
+in `args`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a></code> output_types
+						</dt>
+						<dd>A nested structure of <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> objects corresponding to
+each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> output_shapes
+						</dt>
+						<dd>(Optional.) A nested structure of <a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> objects
+corresponding to each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<ValueTuple>">Nullable&lt;ValueTuple&gt;</span></code> args
+						</dt>
+						<dd>(Optional.) A tuple of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects that will be evaluated
+and passed to `generator` as NumPy-array arguments. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import itertools
+            tf.compat.v1.enable_eager_execution() <p></p> def gen():
+  for i in itertools.count(1):
+    yield (i, [1] * i) <p></p> ds = tf.data.Dataset.from_generator(
+    gen, (tf.int64, tf.int64), (tf.TensorShape([]), tf.TensorShape([None]))) <p></p> for value in ds.take(2):
+  print value
+# (1, array([1]))
+# (2, array([1, 1])) </pre>
+</div>
+		</div>
+	</div>
+	<div id="from_generator_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>from_generator_dyn</strong>(<span title="System.object">object</span> generator, <span title="System.object">object</span> output_types, <span title="System.object">object</span> output_shapes, <span title="System.object">object</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` whose elements are generated by `generator`. <p></p> The `generator` argument must be a callable object that returns
+an object that supports the `iter()` protocol (e.g. a generator function).
+The elements generated by `generator` must be compatible with the given
+`output_types` and (optional) `output_shapes` arguments.
+NOTE: The current implementation of `Dataset.from_generator()` uses
+<a href="..\..\tf\numpy_function.md"><code>tf.numpy_function</code></a> and inherits the same constraints. In particular, it
+requires the `Dataset`- and `Iterator`-related operations to be placed
+on a device in the same process as the Python program that called
+`Dataset.from_generator()`. The body of `generator` will not be
+serialized in a `GraphDef`, and you should not use this method if you
+need to serialize your model and restore it in a different environment. <p></p> NOTE: If `generator` depends on mutable global variables or other external
+state, be aware that the runtime may invoke `generator` multiple times
+(in order to support repeating the `Dataset`) and at any time
+between the call to `Dataset.from_generator()` and the production of the
+first element from the generator. Mutating global variables or external
+state can cause undefined behavior, and we recommend that you explicitly
+cache any external state in `generator` before calling
+`Dataset.from_generator()`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> generator
+						</dt>
+						<dd>A callable object that returns an object that supports the
+`iter()` protocol. If `args` is not specified, `generator` must take no
+arguments; otherwise it must take as many arguments as there are values
+in `args`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> output_types
+						</dt>
+						<dd>A nested structure of <a href="..\..\tf\dtypes\DType.md"><code>tf.DType</code></a> objects corresponding to
+each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> output_shapes
+						</dt>
+						<dd>(Optional.) A nested structure of <a href="..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> objects
+corresponding to each component of an element yielded by `generator`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> args
+						</dt>
+						<dd>(Optional.) A tuple of <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects that will be evaluated
+and passed to `generator` as NumPy-array arguments. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import itertools
+            tf.compat.v1.enable_eager_execution() <p></p> def gen():
+  for i in itertools.count(1):
+    yield (i, [1] * i) <p></p> ds = tf.data.Dataset.from_generator(
+    gen, (tf.int64, tf.int64), (tf.TensorShape([]), tf.TensorShape([None]))) <p></p> for value in ds.take(2):
+  print value
+# (1, array([1]))
+# (2, array([1, 1])) </pre>
+</div>
+		</div>
+	</div>
+	<div id="from_tensor_slices" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_tensor_slices</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tensors)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="from_tensors" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>from_tensors</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tensors)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="list_files" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_files</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> file_pattern, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> shuffle, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> seed)
+		</h4>
+		<div class="content">A dataset of all files matching one or more glob patterns. <p></p> NOTE: The default behavior of this method is to return filenames in
+a non-deterministic random shuffled order. Pass a `seed` or `shuffle=False`
+to get results in a deterministic order. <p></p> Example:
+If we had the following files on our filesystem:
+- /path/to/dir/a.txt
+- /path/to/dir/b.py
+- /path/to/dir/c.py
+If we pass "/path/to/dir/*.py" as the directory, the dataset
+would produce:
+- /path/to/dir/b.py
+- /path/to/dir/c.py 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> file_pattern
+						</dt>
+						<dd>A string, a list of strings, or a <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> of string type
+(scalar or vector), representing the filename glob (i.e. shell wildcard)
+pattern(s) that will be matched. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span></code> shuffle
+						</dt>
+						<dd>(Optional.) If `True`, the file names will be shuffled randomly.
+Defaults to `True`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> seed
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the random
+seed that will be used to create the distribution. See
+`tf.compat.v1.set_random_seed` for behavior. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Dataset: A `Dataset` of strings corresponding to file names. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="list_files" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_files</strong>(<span title="System.string">string</span> file_pattern, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> shuffle, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> seed)
+		</h4>
+		<div class="content">A dataset of all files matching one or more glob patterns. <p></p> NOTE: The default behavior of this method is to return filenames in
+a non-deterministic random shuffled order. Pass a `seed` or `shuffle=False`
+to get results in a deterministic order. <p></p> Example:
+If we had the following files on our filesystem:
+- /path/to/dir/a.txt
+- /path/to/dir/b.py
+- /path/to/dir/c.py
+If we pass "/path/to/dir/*.py" as the directory, the dataset
+would produce:
+- /path/to/dir/b.py
+- /path/to/dir/c.py 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> file_pattern
+						</dt>
+						<dd>A string, a list of strings, or a <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> of string type
+(scalar or vector), representing the filename glob (i.e. shell wildcard)
+pattern(s) that will be matched. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span></code> shuffle
+						</dt>
+						<dd>(Optional.) If `True`, the file names will be shuffled randomly.
+Defaults to `True`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> seed
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the random
+seed that will be used to create the distribution. See
+`tf.compat.v1.set_random_seed` for behavior. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Dataset: A `Dataset` of strings corresponding to file names. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="list_files" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_files</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> file_pattern, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> shuffle, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="list_files_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_files_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> shuffle, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">A dataset of all files matching one or more glob patterns. <p></p> NOTE: The default behavior of this method is to return filenames in
+a non-deterministic random shuffled order. Pass a `seed` or `shuffle=False`
+to get results in a deterministic order. <p></p> Example:
+If we had the following files on our filesystem:
+- /path/to/dir/a.txt
+- /path/to/dir/b.py
+- /path/to/dir/c.py
+If we pass "/path/to/dir/*.py" as the directory, the dataset
+would produce:
+- /path/to/dir/b.py
+- /path/to/dir/c.py 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> file_pattern
+						</dt>
+						<dd>A string, a list of strings, or a <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a> of string type
+(scalar or vector), representing the filename glob (i.e. shell wildcard)
+pattern(s) that will be matched. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> shuffle
+						</dt>
+						<dd>(Optional.) If `True`, the file names will be shuffled randomly.
+Defaults to `True`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> seed
+						</dt>
+						<dd>(Optional.) A <a href="..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the random
+seed that will be used to create the distribution. See
+`tf.compat.v1.set_random_seed` for behavior. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Dataset: A `Dataset` of strings corresponding to file names. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="range" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>range</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` of a step-separated range of values. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>follows the same semantics as python's xrange.
+len(args) == 1 -> start = 0, stop = args[0], step = 1
+len(args) == 2 -> start = args[0], stop = args[1], step = 1
+len(args) == 3 -> start = args[0], stop = args[1, stop = args[2] 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>Dataset.range(5) == [0, 1, 2, 3, 4]
+            Dataset.range(2, 5) == [2, 3, 4]
+            Dataset.range(1, 5, 2) == [1, 3]
+            Dataset.range(1, 5, -2) == []
+            Dataset.range(5, 1) == []
+            Dataset.range(5, 1, -2) == [5, 3] </pre>
+</div>
+		</div>
+	</div>
+	<div id="range_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>range_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Creates a `Dataset` of a step-separated range of values. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>follows the same semantics as python's xrange.
+len(args) == 1 -> start = 0, stop = args[0], step = 1
+len(args) == 2 -> start = args[0], stop = args[1], step = 1
+len(args) == 3 -> start = args[0], stop = args[1, stop = args[2] 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>Dataset.range(5) == [0, 1, 2, 3, 4]
+            Dataset.range(2, 5) == [2, 3, 4]
+            Dataset.range(1, 5, 2) == [1, 3]
+            Dataset.range(1, 5, -2) == []
+            Dataset.range(5, 1) == []
+            Dataset.range(5, 1, -2) == [5, 3] </pre>
+</div>
+		</div>
+	</div>
+	<div id="zip" class="method">
+		<h4>
+			<a href="../tensorflow.data/Dataset.htm">Dataset</a> <strong>zip</strong>(<span title="System.Collections.Generic.IEnumerable<Dataset>">IEnumerable&lt;Dataset&gt;</span> datasets)
+		</h4>
+		<div class="content">Creates a `Dataset` by zipping together the given datasets. <p></p> This method has similar semantics to the built-in `zip()` function
+in Python, with the main difference being that the `datasets`
+argument can be an arbitrary nested structure of `Dataset` objects. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<Dataset>">IEnumerable&lt;Dataset&gt;</span></code> datasets
+						</dt>
+						<dd>A nested structure of datasets. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]
+            b = Dataset.range(4, 7)  # ==> [ 4, 5, 6 ]
+            c = Dataset.range(7, 13).batch(2)  # ==> [ [7, 8], [9, 10], [11, 12] ]
+            d = Dataset.range(13, 15)  # ==> [ 13, 14 ] <p></p> # The nested structure of the `datasets` argument determines the
+# structure of elements in the resulting dataset.
+Dataset.zip((a, b))  # ==> [ (1, 4), (2, 5), (3, 6) ]
+Dataset.zip((b, a))  # ==> [ (4, 1), (5, 2), (6, 3) ] <p></p> # The `datasets` argument may contain an arbitrary number of
+# datasets.
+Dataset.zip((a, b, c))  # ==> [ (1, 4, [7, 8]),
+                        #       (2, 5, [9, 10]),
+                        #       (3, 6, [11, 12]) ] <p></p> # The number of elements in the resulting dataset is the same as
+# the size of the smallest dataset in `datasets`.
+Dataset.zip((a, d))  # ==> [ (1, 13), (2, 14) ] </pre>
+</div>
+		</div>
+	</div>
+	<div id="zip_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>zip_dyn</strong>(<span title="System.object">object</span> datasets)
+		</h4>
+		<div class="content">Creates a `Dataset` by zipping together the given datasets. <p></p> This method has similar semantics to the built-in `zip()` function
+in Python, with the main difference being that the `datasets`
+argument can be an arbitrary nested structure of `Dataset` objects. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> datasets
+						</dt>
+						<dd>A nested structure of datasets. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>a = Dataset.range(1, 4)  # ==> [ 1, 2, 3 ]
+            b = Dataset.range(4, 7)  # ==> [ 4, 5, 6 ]
+            c = Dataset.range(7, 13).batch(2)  # ==> [ [7, 8], [9, 10], [11, 12] ]
+            d = Dataset.range(13, 15)  # ==> [ 13, 14 ] <p></p> # The nested structure of the `datasets` argument determines the
+# structure of elements in the resulting dataset.
+Dataset.zip((a, b))  # ==> [ (1, 4), (2, 5), (3, 6) ]
+Dataset.zip((b, a))  # ==> [ (4, 1), (5, 2), (6, 3) ] <p></p> # The `datasets` argument may contain an arbitrary number of
+# datasets.
+Dataset.zip((a, b, c))  # ==> [ (1, 4, [7, 8]),
+                        #       (2, 5, [9, 10]),
+                        #       (3, 6, [11, 12]) ] <p></p> # The number of elements in the resulting dataset is the same as
+# the size of the smallest dataset in `datasets`.
+Dataset.zip((a, d))  # ==> [ (1, 13), (2, 14) ] </pre>
+</div>
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="element_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="element_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>element_spec_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

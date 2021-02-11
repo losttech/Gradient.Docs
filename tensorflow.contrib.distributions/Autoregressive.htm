@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Autoregressive - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.distributions</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.distributions/_BaseDeterministic.htm">_BaseDeterministic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/_DistributionRegressionHead.htm">_DistributionRegressionHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/_WishartLinearOperator.htm">_WishartLinearOperator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Autoregressive.htm" class="current">Autoregressive</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/BatchReshape.htm">BatchReshape</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Binomial.htm">Binomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Cauchy.htm">Cauchy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Chi2.htm">Chi2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Chi2WithAbsDf.htm">Chi2WithAbsDf</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ConditionalDistribution.htm">ConditionalDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ConditionalTransformedDistribution.htm">ConditionalTransformedDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Deterministic.htm">Deterministic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/DiscreteScalarDistributionTestHelpers.htm">DiscreteScalarDistributionTestHelpers</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/distributions.htm">distributions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ExpRelaxedOneHotCategorical.htm">ExpRelaxedOneHotCategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Geometric.htm">Geometric</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/HalfNormal.htm">HalfNormal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/I_BaseDeterministic.htm">I_BaseDeterministic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/I_DistributionRegressionHead.htm">I_DistributionRegressionHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/I_WishartLinearOperator.htm">I_WishartLinearOperator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IAutoregressive.htm">IAutoregressive</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IBatchReshape.htm">IBatchReshape</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IBinomial.htm">IBinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ICauchy.htm">ICauchy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IChi2.htm">IChi2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IChi2WithAbsDf.htm">IChi2WithAbsDf</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IConditionalDistribution.htm">IConditionalDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IConditionalTransformedDistribution.htm">IConditionalTransformedDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IDeterministic.htm">IDeterministic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IDiscreteScalarDistributionTestHelpers.htm">IDiscreteScalarDistributionTestHelpers</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IExpRelaxedOneHotCategorical.htm">IExpRelaxedOneHotCategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IGeometric.htm">IGeometric</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IHalfNormal.htm">IHalfNormal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IIndependent.htm">IIndependent</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IInverseGamma.htm">IInverseGamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IInverseGammaWithSoftplusConcentrationRate.htm">IInverseGammaWithSoftplusConcentrationRate</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IKumaraswamy.htm">IKumaraswamy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ILogistic.htm">ILogistic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMixture.htm">IMixture</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMixtureSameFamily.htm">IMixtureSameFamily</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMultivariateNormalDiag.htm">IMultivariateNormalDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMultivariateNormalDiagPlusLowRank.htm">IMultivariateNormalDiagPlusLowRank</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMultivariateNormalDiagWithSoftplusScale.htm">IMultivariateNormalDiagWithSoftplusScale</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMultivariateNormalFullCovariance.htm">IMultivariateNormalFullCovariance</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IMultivariateNormalTriL.htm">IMultivariateNormalTriL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Independent.htm">Independent</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/INegativeBinomial.htm">INegativeBinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/InverseGamma.htm">InverseGamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/InverseGammaWithSoftplusConcentrationRate.htm">InverseGammaWithSoftplusConcentrationRate</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IOneHotCategorical.htm">IOneHotCategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IPoisson.htm">IPoisson</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IPoissonLogNormalQuadratureCompound.htm">IPoissonLogNormalQuadratureCompound</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IQuantizedDistribution.htm">IQuantizedDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IRelaxedBernoulli.htm">IRelaxedBernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IRelaxedOneHotCategorical.htm">IRelaxedOneHotCategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ISeedStream.htm">ISeedStream</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/ISinhArcsinh.htm">ISinhArcsinh</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IVectorDeterministic.htm">IVectorDeterministic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IVectorDiffeomixture.htm">IVectorDiffeomixture</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IVectorDistributionTestHelpers.htm">IVectorDistributionTestHelpers</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IVectorExponentialDiag.htm">IVectorExponentialDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IVectorLaplaceDiag.htm">IVectorLaplaceDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IVectorSinhArcsinhDiag.htm">IVectorSinhArcsinhDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IWishartCholesky.htm">IWishartCholesky</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/IWishartFull.htm">IWishartFull</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Kumaraswamy.htm">Kumaraswamy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Logistic.htm">Logistic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Mixture.htm">Mixture</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/MixtureSameFamily.htm">MixtureSameFamily</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/MultivariateNormalDiag.htm">MultivariateNormalDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/MultivariateNormalDiagPlusLowRank.htm">MultivariateNormalDiagPlusLowRank</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/MultivariateNormalDiagWithSoftplusScale.htm">MultivariateNormalDiagWithSoftplusScale</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/MultivariateNormalFullCovariance.htm">MultivariateNormalFullCovariance</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/MultivariateNormalTriL.htm">MultivariateNormalTriL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/NegativeBinomial.htm">NegativeBinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/OneHotCategorical.htm">OneHotCategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/Poisson.htm">Poisson</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/PoissonLogNormalQuadratureCompound.htm">PoissonLogNormalQuadratureCompound</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/QuantizedDistribution.htm">QuantizedDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/RelaxedBernoulli.htm">RelaxedBernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/RelaxedOneHotCategorical.htm">RelaxedOneHotCategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/SeedStream.htm">SeedStream</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/SinhArcsinh.htm">SinhArcsinh</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/VectorDeterministic.htm">VectorDeterministic</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/VectorDiffeomixture.htm">VectorDiffeomixture</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/VectorDistributionTestHelpers.htm">VectorDistributionTestHelpers</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/VectorExponentialDiag.htm">VectorExponentialDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/VectorLaplaceDiag.htm">VectorLaplaceDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/VectorSinhArcsinhDiag.htm">VectorSinhArcsinhDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/WishartCholesky.htm">WishartCholesky</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.distributions/WishartFull.htm">WishartFull</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Autoregressive</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.distributions</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distributions/Distribution.htm">Distribution</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.distributions/IAutoregressive.htm">IAutoregressive</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Autoregressive distributions. <p></p> The Autoregressive distribution enables learning (often) richer multivariate
+distributions by repeatedly applying a [diffeomorphic](
+https://en.wikipedia.org/wiki/Diffeomorphism) transformation (such as
+implemented by `Bijector`s). Regarding terminology, <p></p> "Autoregressive models decompose the joint density as a product of
+conditionals, and model each conditional in turn. Normalizing flows
+transform a base density (e.g. a standard Gaussian) into the target density
+by an invertible transformation with tractable Jacobian." [(Papamakarios et
+al., 2016)][1] <p></p> In other words, the "autoregressive property" is equivalent to the
+decomposition, `p(x) = prod{ p(x[i] | x[0:i]) : i=0,..., d }`. The provided
+`shift_and_log_scale_fn`, `masked_autoregressive_default_template`, achieves
+this property by zeroing out weights in its `masked_dense` layers. <p></p> Practically speaking the autoregressive property means that there exists a
+permutation of the event coordinates such that each coordinate is a
+diffeomorphic function of only preceding coordinates
+[(van den Oord et al., 2016)][2]. <p></p> #### Mathematical Details <p></p> The probability function is <p></p> ```none
+prob(x; fn, n) = fn(x).prob(x)
+``` <p></p> And a sample is generated by <p></p> ```none
+x = fn(...fn(fn(x0).sample()).sample()).sample()
+``` <p></p> where the ellipses (`...`) represent `n-2` composed calls to `fn`, `fn`
+constructs a `tfp.distributions.Distribution`-like instance, and `x0` is a
+fixed initializing `Tensor`. <p></p> #### Examples
+#### References <p></p> [1]: George Papamakarios, Theo Pavlakou, and Iain Murray. Masked
+Autoregressive Flow for Density Estimation. In _Neural Information
+Processing Systems_, 2017. https://arxiv.org/abs/1705.07057 <p></p> [2]: Aaron van den Oord, Nal Kalchbrenner, Oriol Vinyals, Lasse Espeholt,
+Alex Graves, and Koray Kavukcuoglu. Conditional Image Generation with
+PixelCNN Decoders. In _Neural Information Processing Systems_, 2016.
+https://arxiv.org/abs/1606.05328 <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import tensorflow_probability as tfp
+            tfd = tfp.distributions <p></p> def normal_fn(self, event_size):
+  n = event_size * (event_size + 1) / 2
+  p = tf.Variable(tfd.Normal(loc=0., scale=1.).sample(n))
+  affine = tfd.bijectors.Affine(
+      scale_tril=tfd.fill_triangular(0.25 * p))
+  def _fn(samples):
+    scale = math_ops.exp(affine.forward(samples)).eval()
+    return independent_lib.Independent(
+        normal_lib.Normal(loc=0., scale=scale, validate_args=True),
+        reinterpreted_batch_ndims=1)
+  return _fn <p></p> batch_and_event_shape = [3, 2, 4]
+sample0 = array_ops.zeros(batch_and_event_shape)
+ar = autoregressive_lib.Autoregressive(
+    self._normal_fn(batch_and_event_shape[-1]), sample0)
+x = ar.sample([6, 5])
+# ==> x.shape = [6, 5, 3, 2, 4]
+prob_x = ar.prob(x)
+# ==> x.shape = [6, 5, 3, 2] </pre>
+</div>
+			</div>
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#allow_nan_stats">allow_nan_stats</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#allow_nan_stats_dyn">allow_nan_stats_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#batch_shape">batch_shape</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#batch_shape_dyn">batch_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#distribution_fn">distribution_fn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#distribution_fn_dyn">distribution_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#distribution0">distribution0</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#distribution0_dyn">distribution0_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#event_shape">event_shape</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#event_shape_dyn">event_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#name">name</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#num_steps">num_steps</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#num_steps_dyn">num_steps_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#parameters">parameters</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#parameters_dyn">parameters_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#reparameterization_type">reparameterization_type</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#reparameterization_type_dyn">reparameterization_type_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#sample0">sample0</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#sample0_dyn">sample0_dyn</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#validate_args">validate_args</a></li>
+				<li><a href="../tensorflow.contrib.distributions/Autoregressive.htm#validate_args_dyn">validate_args_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="allow_nan_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="allow_nan_stats_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>batch_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="distribution_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>distribution_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="distribution_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>distribution_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="distribution0" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.distributions/Independent.htm">Independent</a> <strong>distribution0</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="distribution0_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>distribution0_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>event_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>event_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_steps" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>num_steps</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_steps_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_steps_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>parameters</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameters_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sample0" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>sample0</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sample0_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sample0_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="validate_args" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="validate_args_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

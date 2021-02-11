@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>SingularMonitoredSession - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.train</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.train/AdadeltaOptimizer.htm">AdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradDAOptimizer.htm">AdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradOptimizer.htm">AdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdamOptimizer.htm">AdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Checkpoint.htm">Checkpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointManager.htm">CheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverHook.htm">CheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverListener.htm">CheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ChiefSessionCreator.htm">ChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ClusterSpec.htm">ClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Coordinator.htm">Coordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ExponentialMovingAverage.htm">ExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FeedFnHook.htm">FeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FinalOpsHook.htm">FinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FtrlOptimizer.htm">FtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GlobalStepWaiterHook.htm">GlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GradientDescentOptimizer.htm">GradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdadeltaOptimizer.htm">IAdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradDAOptimizer.htm">IAdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradOptimizer.htm">IAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdamOptimizer.htm">IAdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpoint.htm">ICheckpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointManager.htm">ICheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverHook.htm">ICheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverListener.htm">ICheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IChiefSessionCreator.htm">IChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IClusterSpec.htm">IClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICoordinator.htm">ICoordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IExponentialMovingAverage.htm">IExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFeedFnHook.htm">IFeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFinalOpsHook.htm">IFinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFtrlOptimizer.htm">IFtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGlobalStepWaiterHook.htm">IGlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGradientDescentOptimizer.htm">IGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILoggingTensorHook.htm">ILoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILooperThread.htm">ILooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMomentumOptimizer.htm">IMomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMonitoredSession.htm">IMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanTensorHook.htm">INanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProfilerHook.htm">IProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalAdagradOptimizer.htm">IProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalGradientDescentOptimizer.htm">IProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IQueueRunner.htm">IQueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IRMSPropOptimizer.htm">IRMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISaver.htm">ISaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IScaffold.htm">IScaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISecondOrStepTimer.htm">ISecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IServer.htm">IServer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionCreator.htm">ISessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionManager.htm">ISessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunArgs.htm">ISessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunContext.htm">ISessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunHook.htm">ISessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunValues.htm">ISessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISingularMonitoredSession.htm">ISingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStepCounterHook.htm">IStepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStopAtStepHook.htm">IStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISummarySaverHook.htm">ISummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISupervisor.htm">ISupervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISyncReplicasOptimizer.htm">ISyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IVocabInfo.htm">IVocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IWorkerSessionCreator.htm">IWorkerSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LoggingTensorHook.htm">LoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LooperThread.htm">LooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MomentumOptimizer.htm">MomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MonitoredSession.htm">MonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanTensorHook.htm">NanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProfilerHook.htm">ProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalAdagradOptimizer.htm">ProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalGradientDescentOptimizer.htm">ProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/QueueRunner.htm">QueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/RMSPropOptimizer.htm">RMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Saver.htm">Saver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Scaffold.htm">Scaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SecondOrStepTimer.htm">SecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Server.htm">Server</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionCreator.htm">SessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionManager.htm">SessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunArgs.htm">SessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunContext.htm">SessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunHook.htm">SessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunValues.htm">SessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SingularMonitoredSession.htm" class="current">SingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StepCounterHook.htm">StepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StopAtStepHook.htm">StopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SummarySaverHook.htm">SummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Supervisor.htm">Supervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SyncReplicasOptimizer.htm">SyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/train.htm">train</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/VocabInfo.htm">VocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/WorkerSessionCreator.htm">WorkerSessionCreator</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> SingularMonitoredSession</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.train</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.training.monitored_session/_MonitoredSession.htm">_MonitoredSession</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.train/ISingularMonitoredSession.htm">ISingularMonitoredSession</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Session-like object that handles initialization, restoring, and hooks. <p></p> Please note that this utility is not recommended for distributed settings.
+For distributed settings, please use `tf.compat.v1.train.MonitoredSession`.
+The
+differences between `MonitoredSession` and `SingularMonitoredSession` are: <p></p> * `MonitoredSession` handles `AbortedError` and `UnavailableError` for
+distributed settings, but `SingularMonitoredSession` does not.
+* `MonitoredSession` can be created in `chief` or `worker` modes.
+`SingularMonitoredSession` is always created as `chief`.
+* You can access the raw `tf.compat.v1.Session` object used by
+`SingularMonitoredSession`, whereas in MonitoredSession the raw session is
+private. This can be used:
+- To `run` without hooks.
+- To save and restore.
+* All other functionality is identical. <p></p> Example usage:
+Initialization: At creation time the hooked session does following things
+in given order: <p></p> * calls `hook.begin()` for each given hook
+* finalizes the graph via `scaffold.finalize()`
+* create session
+* initializes the model via initialization ops provided by `Scaffold`
+* restores variables if a checkpoint exists
+* launches queue runners <p></p> Run: When `run()` is called, the hooked session does following things: <p></p> * calls `hook.before_run()`
+* calls TensorFlow `session.run()` with merged fetches and feed_dict
+* calls `hook.after_run()`
+* returns result of `session.run()` asked by user <p></p> Exit: At the `close()`, the hooked session does following things in order: <p></p> * calls `hook.end()`
+* closes the queue runners and the session
+* suppresses `OutOfRange` error which indicates that all inputs have been
+processed if the `SingularMonitoredSession` is used as a context. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>saver_hook = CheckpointSaverHook(...)
+            summary_hook = SummarySaverHook(...)
+            with SingularMonitoredSession(hooks=[saver_hook, summary_hook]) as sess:
+              while not sess.should_stop():
+                sess.run(train_op) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.train/SingularMonitoredSession.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.train/SingularMonitoredSession.htm#raw_session">raw_session</a></li>
+				<li><a href="../tensorflow.train/SingularMonitoredSession.htm#raw_session_dyn">raw_session_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.train/SingularMonitoredSession.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.train/SingularMonitoredSession.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.train/SingularMonitoredSession.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="raw_session" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>raw_session</strong>()
+		</h4>
+		<div class="content">Returns underlying `TensorFlow.Session` object. 
+
+
+
+
+		</div>
+	</div>
+	<div id="raw_session_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>raw_session_dyn</strong>()
+		</h4>
+		<div class="content">Returns underlying `TensorFlow.Session` object. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.train/SingularMonitoredSession.htm">SingularMonitoredSession</a> <strong>NewDyn</strong>(<span title="System.object">object</span> hooks, <span title="System.object">object</span> scaffold, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> master, <span title="System.object">object</span> config, <span title="System.object">object</span> checkpoint_dir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> stop_grace_period_secs, <span title="System.object">object</span> checkpoint_filename_with_path)
+		</h4>
+		<div class="content">Creates a SingularMonitoredSession. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> hooks
+						</dt>
+						<dd>An iterable of `SessionRunHook' objects. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> scaffold
+						</dt>
+						<dd>A `Scaffold` used for gathering or building supportive ops. If
+not specified a default one is created. It's used to finalize the graph. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> master
+						</dt>
+						<dd>`String` representation of the TensorFlow master to use. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>`ConfigProto` proto used to configure the session. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_dir
+						</dt>
+						<dd>A string.  Optional path to a directory where to restore
+variables. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> stop_grace_period_secs
+						</dt>
+						<dd>Number of seconds given to threads to stop after
+`close()` has been called. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> checkpoint_filename_with_path
+						</dt>
+						<dd>A string. Optional path to a checkpoint
+file from which to restore variables. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

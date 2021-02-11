@@ -1,0 +1,2975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>tf.summary - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow/AggregationMethod.htm">AggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulator.htm">ConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulatorBase.htm">ConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/constant_initializer.htm">constant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/CriticalSection.htm">CriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DeviceSpec.htm">DeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Dimension.htm">Dimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DType.htm">DType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FIFOQueue.htm">FIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenFeature.htm">FixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLengthRecordReader.htm">FixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenSequenceFeature.htm">FixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_normal_initializer.htm">glorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_uniform_initializer.htm">glorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GradientTape.htm">GradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.htm">Graph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph._ControlDependenciesController.htm">Graph._ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.I_ControlDependenciesController.htm">Graph.I_ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GraphKeys.htm">GraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/HeadingAxes.htm">HeadingAxes</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IAggregationMethod.htm">IAggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulator.htm">IConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulatorBase.htm">IConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iconstant_initializer.htm">Iconstant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ICriticalSection.htm">ICriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IdentityReader.htm">IdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDeviceSpec.htm">IDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDimension.htm">IDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDType.htm">IDType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFIFOQueue.htm">IFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenFeature.htm">IFixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLengthRecordReader.htm">IFixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenSequenceFeature.htm">IFixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_normal_initializer.htm">Iglorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_uniform_initializer.htm">Iglorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGradientTape.htm">IGradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraph.htm">IGraph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraphKeys.htm">IGraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIdentityReader.htm">IIdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlices.htm">IIndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlicesSpec.htm">IIndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IInteractiveSession.htm">IInteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILazyLoader.htm">ILazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILMDBReader.htm">ILMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IModule.htm">IModule</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iname_scope.htm">Iname_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlicesSpec.htm">IndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/InteractiveSession.htm">InteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iones_initializer.htm">Iones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOperation.htm">IOperation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOpError.htm">IOpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOptionalSpec.htm">IOptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iorthogonal_initializer.htm">Iorthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPaddingFIFOQueue.htm">IPaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPriorityQueue.htm">IPriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IQueueBase.htm">IQueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensor.htm">IRaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensorSpec.htm">IRaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_normal_initializer.htm">Irandom_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_uniform_initializer.htm">Irandom_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRandomShuffleQueue.htm">IRandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IReaderBase.htm">IReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRegisterGradient.htm">IRegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISession.htm">ISession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseConditionalAccumulator.htm">ISparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseFeature.htm">ISparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensor.htm">ISparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorSpec.htm">ISparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorValue.htm">ISparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensor.htm">ITensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArray.htm">ITensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArraySpec.htm">ITensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorShape.htm">ITensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorSpec.htm">ITensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITextLineReader.htm">ITextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITFRecordReader.htm">ITFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Itruncated_normal_initializer.htm">Itruncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITypeSpec.htm">ITypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IUnconnectedGradients.htm">IUnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iuniform_unit_scaling_initializer.htm">Iuniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariable.htm">IVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariable_scope.htm">Ivariable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariableScope.htm">IVariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariance_scaling_initializer.htm">Ivariance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVarLenFeature.htm">IVarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IWholeFileReader.htm">IWholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Izeros_initializer.htm">Izeros_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LazyLoader.htm">LazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LMDBReader.htm">LMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Module.htm">Module</a>
+        </li>
+				<li>
+            <a href="../tensorflow/name_scope.htm">name_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ones_initializer.htm">ones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.htm">Operation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation._InputList.htm">Operation._InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.I_InputList.htm">Operation.I_InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OpError.htm">OpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OptionalSpec.htm">OptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/orthogonal_initializer.htm">orthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PaddingFIFOQueue.htm">PaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PriorityQueue.htm">PriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/QueueBase.htm">QueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensorSpec.htm">RaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_normal_initializer.htm">random_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_uniform_initializer.htm">random_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RandomShuffleQueue.htm">RandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ReaderBase.htm">ReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RegisterGradient.htm">RegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Session.htm">Session</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseConditionalAccumulator.htm">SparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseFeature.htm">SparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensor.htm">SparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorSpec.htm">SparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorValue.htm">SparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor.htm">Tensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor`1.htm">Tensor&lt;T&gt;</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArray.htm">TensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArraySpec.htm">TensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimension.htm">TensorDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimensionSlice.htm">TensorDimensionSlice</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorShape.htm">TensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorSpec.htm">TensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TextLineReader.htm">TextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.htm">tf</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.audio.htm">tf.audio</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.htm">tf.autograph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.experimental.htm">tf.autograph.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.bitwise.htm">tf.bitwise</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.compat.htm">tf.compat</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.htm">tf.config</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.experimental.htm">tf.config.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.optimizer.htm">tf.config.optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.threading.htm">tf.config.threading</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.htm">tf.data</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.experimental.htm">tf.data.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.debugging.htm">tf.debugging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distribute.htm">tf.distribute</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distributions.htm">tf.distributions</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.errors.htm">tf.errors</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.htm">tf.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.experimental.htm">tf.estimator.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.export.htm">tf.estimator.export</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.inputs.htm">tf.estimator.inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.experimental.htm">tf.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.feature_column.htm">tf.feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.gfile.htm">tf.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.graph_util.htm">tf.graph_util</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.image.htm">tf.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.initializers.htm">tf.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.htm">tf.io</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.gfile.htm">tf.io.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.htm">tf.keras</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.activations.htm">tf.keras.activations</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.htm">tf.keras.applications</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.densenet.htm">tf.keras.applications.densenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.imagenet_utils.htm">tf.keras.applications.imagenet_utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_resnet_v2.htm">tf.keras.applications.inception_resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_v3.htm">tf.keras.applications.inception_v3</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet.htm">tf.keras.applications.mobilenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet_v2.htm">tf.keras.applications.mobilenet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.nasnet.htm">tf.keras.applications.nasnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet.htm">tf.keras.applications.resnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet_v2.htm">tf.keras.applications.resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg16.htm">tf.keras.applications.vgg16</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg19.htm">tf.keras.applications.vgg19</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.xception.htm">tf.keras.applications.xception</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.backend.htm">tf.keras.backend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.constraints.htm">tf.keras.constraints</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.htm">tf.keras.datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.boston_housing.htm">tf.keras.datasets.boston_housing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar10.htm">tf.keras.datasets.cifar10</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar100.htm">tf.keras.datasets.cifar100</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.fashion_mnist.htm">tf.keras.datasets.fashion_mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.imdb.htm">tf.keras.datasets.imdb</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.mnist.htm">tf.keras.datasets.mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.reuters.htm">tf.keras.datasets.reuters</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.estimator.htm">tf.keras.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.experimental.htm">tf.keras.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.initializers.htm">tf.keras.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.layers.htm">tf.keras.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.losses.htm">tf.keras.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.metrics.htm">tf.keras.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.htm">tf.keras.mixed_precision</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.experimental.htm">tf.keras.mixed_precision.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.models.htm">tf.keras.models</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.htm">tf.keras.optimizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.schedules.htm">tf.keras.optimizers.schedules</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.htm">tf.keras.preprocessing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.image.htm">tf.keras.preprocessing.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.regularizers.htm">tf.keras.regularizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.utils.htm">tf.keras.utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.htm">tf.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.experimental.htm">tf.layers.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.linalg.htm">tf.linalg</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.htm">tf.lite</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.htm">tf.lite.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.htm">tf.lite.experimental.microfrontend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.htm">tf.lite.experimental.microfrontend.python</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.ops.htm">tf.lite.experimental.microfrontend.python.ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.nn.htm">tf.lite.experimental.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.logging.htm">tf.logging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.losses.htm">tf.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.math.htm">tf.math</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.metrics.htm">tf.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nest.htm">tf.nest</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nn.htm">tf.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.profiler.htm">tf.profiler</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.quantization.htm">tf.quantization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.ragged.htm">tf.ragged</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.htm">tf.random</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.experimental.htm">tf.random.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.resource_loader.htm">tf.resource_loader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.htm">tf.saved_model</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.main_op.htm">tf.saved_model.main_op</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sets.htm">tf.sets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.signal.htm">tf.signal</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sparse.htm">tf.sparse</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.strings.htm">tf.strings</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.htm" class="current">tf.summary</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.experimental.htm">tf.summary.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sysconfig.htm">tf.sysconfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.test.htm">tf.test</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.htm">tf.tpu</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.experimental.htm">tf.tpu.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.htm">tf.train</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.experimental.htm">tf.train.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.user_ops.htm">tf.user_ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.htm">tf.xla</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.experimental.htm">tf.xla.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TFRecordReader.htm">TFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/truncated_normal_initializer.htm">truncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TypeSpec.htm">TypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/UnconnectedGradients.htm">UnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/uniform_unit_scaling_initializer.htm">uniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Variable.htm">Variable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variable_scope.htm">variable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableAggregation.htm">VariableAggregation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableScope.htm">VariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variance_scaling_initializer.htm">variance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VarLenFeature.htm">VarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/WholeFileReader.htm">WholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/zeros_initializer.htm">zeros_initializer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> tf.summary</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.summary.htm#all_v2_summary_ops">all_v2_summary_ops</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#all_v2_summary_ops_dyn">all_v2_summary_ops_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#audio">audio</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#audio">audio</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#audio_dyn">audio_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#create_file_writer">create_file_writer</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#create_noop_writer">create_noop_writer</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#create_noop_writer_dyn">create_noop_writer_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#flush">flush</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#flush">flush</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#get_summary_description">get_summary_description</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#get_summary_description_dyn">get_summary_description_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#histogram">histogram</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#histogram">histogram</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image">image</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image">image</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image">image</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image">image</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image">image</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image">image</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image_dyn">image_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#initialize">initialize</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#merge">merge</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#merge_all">merge_all</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#merge_all_dyn">merge_all_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#merge_dyn">merge_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#record_if">record_if</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#record_if">record_if</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#record_if">record_if</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#record_if_dyn">record_if_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#scalar">scalar</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#scalar">scalar</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#tensor_summary">tensor_summary</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#tensor_summary_dyn">tensor_summary_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#text">text</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#text_dyn">text_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_export">trace_export</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_export">trace_export</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_export_dyn">trace_export_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_off">trace_off</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_off_dyn">trace_off_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_on">trace_on</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_on_dyn">trace_on_dyn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write">write</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write_dyn">write_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.summary.htm#all_v2_summary_ops_fn">all_v2_summary_ops_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#audio_fn">audio_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#create_file_writer_fn_">create_file_writer_fn_</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#create_noop_writer_fn">create_noop_writer_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#flush_fn">flush_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#get_summary_description_fn">get_summary_description_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#histogram_fn">histogram_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#image_fn">image_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#initialize_fn">initialize_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#merge_all_fn">merge_all_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#merge_fn">merge_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#record_if_fn">record_if_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#scalar_fn">scalar_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#tensor_summary_fn">tensor_summary_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#text_fn">text_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_export_fn">trace_export_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_off_fn">trace_off_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#trace_on_fn">trace_on_fn</a></li>
+				<li><a href="../tensorflow/tf.summary.htm#write_fn">write_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="all_v2_summary_ops" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>all_v2_summary_ops</strong>()
+		</h4>
+		<div class="content">Returns all V2-style summary ops defined in the current default graph. <p></p> This includes ops from TF 2.0 tf.summary and TF 1.x tf.contrib.summary (except
+for <a href="..\..\tf\contrib\summary\graph.md"><code>tf.contrib.summary.graph</code></a> and <a href="..\..\tf\contrib\summary\import_event.md"><code>tf.contrib.summary.import_event</code></a>), but
+does *not* include TF 1.x tf.summary ops. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of summary ops, or None if called under eager execution. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="all_v2_summary_ops_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>all_v2_summary_ops_dyn</strong>()
+		</h4>
+		<div class="content">Returns all V2-style summary ops defined in the current default graph. <p></p> This includes ops from TF 2.0 tf.summary and TF 1.x tf.contrib.summary (except
+for <a href="..\..\tf\contrib\summary\graph.md"><code>tf.contrib.summary.graph</code></a> and <a href="..\..\tf\contrib\summary\import_event.md"><code>tf.contrib.summary.import_event</code></a>), but
+does *not* include TF 1.x tf.summary ops. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of summary ops, or None if called under eager execution. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="audio" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>audio</strong>(<span title="System.string">string</span> name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.int">int</span> sample_rate, <span title="System.int">int</span> max_outputs, <span title="System.object">object</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with audio. <p></p> The summary has up to `max_outputs` summary values containing audio. The
+audio is built from `tensor` which must be 3-D with shape `[batch_size,
+frames, channels]` or 2-D with shape `[batch_size, frames]`. The values are
+assumed to be in the range of `[-1.0, 1.0]` with a sample rate of
+`sample_rate`. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/audio'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/audio/0', '*name*/audio/1', etc 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>A 3-D `float32` `Tensor` of shape `[batch_size, frames, channels]`
+or a 2-D `float32` `Tensor` of shape `[batch_size, frames]`. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> sample_rate
+						</dt>
+						<dd>A Scalar `float32` `Tensor` indicating the sample rate of the
+signal in hertz. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate audio for. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="audio" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>audio</strong>(<span title="System.string">string</span> name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.double">double</span> sample_rate, <span title="System.int">int</span> max_outputs, <span title="System.object">object</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with audio. <p></p> The summary has up to `max_outputs` summary values containing audio. The
+audio is built from `tensor` which must be 3-D with shape `[batch_size,
+frames, channels]` or 2-D with shape `[batch_size, frames]`. The values are
+assumed to be in the range of `[-1.0, 1.0]` with a sample rate of
+`sample_rate`. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/audio'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/audio/0', '*name*/audio/1', etc 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>A 3-D `float32` `Tensor` of shape `[batch_size, frames, channels]`
+or a 2-D `float32` `Tensor` of shape `[batch_size, frames]`. 
+						</dd>
+						<dt>
+							<code><span title="System.double">double</span></code> sample_rate
+						</dt>
+						<dd>A Scalar `float32` `Tensor` indicating the sample rate of the
+signal in hertz. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate audio for. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="audio_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>audio_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> tensor, <span title="System.object">object</span> sample_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_outputs, <span title="System.object">object</span> collections, <span title="System.object">object</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with audio. <p></p> The summary has up to `max_outputs` summary values containing audio. The
+audio is built from `tensor` which must be 3-D with shape `[batch_size,
+frames, channels]` or 2-D with shape `[batch_size, frames]`. The values are
+assumed to be in the range of `[-1.0, 1.0]` with a sample rate of
+`sample_rate`. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/audio'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/audio/0', '*name*/audio/1', etc 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>A 3-D `float32` `Tensor` of shape `[batch_size, frames, channels]`
+or a 2-D `float32` `Tensor` of shape `[batch_size, frames]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> sample_rate
+						</dt>
+						<dd>A Scalar `float32` `Tensor` indicating the sample rate of the
+signal in hertz. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate audio for. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="create_file_writer" class="method">
+		<h4>
+			<a href="../tensorflow.python.ops.summary_ops_v2/ResourceSummaryWriter.htm">ResourceSummaryWriter</a> <strong>create_file_writer</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> logdir, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> max_queue, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> flush_millis, <span title="System.string">string</span> filename_suffix, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="create_noop_writer" class="method">
+		<h4>
+			<a href="../tensorflow.python.ops.summary_ops_v2/NoopSummaryWriter.htm">NoopSummaryWriter</a> <strong>create_noop_writer</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="create_noop_writer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>create_noop_writer_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="flush" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>flush</strong>(<a href="../tensorflow.summary/SummaryWriter.htm">SummaryWriter</a> writer, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="flush" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>flush</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> writer, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_summary_description" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_summary_description</strong>(<span title="System.object">object</span> node_def)
+		</h4>
+		<div class="content">Given a TensorSummary node_def, retrieve its SummaryDescription. <p></p> When a Summary op is instantiated, a SummaryDescription of associated
+metadata is stored in its NodeDef. This method retrieves the description. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> node_def
+						</dt>
+						<dd>the node_def_pb2.NodeDef of a TensorSummary op 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a summary_pb2.SummaryDescription 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_summary_description_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_summary_description_dyn</strong>(<span title="System.object">object</span> node_def)
+		</h4>
+		<div class="content">Given a TensorSummary node_def, retrieve its SummaryDescription. <p></p> When a Summary op is instantiated, a SummaryDescription of associated
+metadata is stored in its NodeDef. This method retrieves the description. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> node_def
+						</dt>
+						<dd>the node_def_pb2.NodeDef of a TensorSummary op 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>a summary_pb2.SummaryDescription 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="histogram" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>histogram</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> values, <span title="System.object">object</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with a histogram. <p></p> Adding a histogram summary makes it possible to visualize your data's
+distribution in TensorBoard. You can see a detailed explanation of the
+TensorBoard histogram dashboard
+[here](https://www.tensorflow.org/get_started/tensorboard_histograms). <p></p> The generated
+[`Summary`](https://www.tensorflow.org/code/tensorflow/core/framework/summary.proto)
+has one summary value containing a histogram for `values`. <p></p> This op reports an `InvalidArgument` error if any value is not finite. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span></code> values
+						</dt>
+						<dd>A real numeric `Tensor`. Any shape. Values to use to
+build the histogram. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[GraphKeys.SUMMARIES]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="histogram" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>histogram</strong>(<span title="System.string">string</span> name, <span title="System.object">object</span> values, <span title="System.object">object</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with a histogram. <p></p> Adding a histogram summary makes it possible to visualize your data's
+distribution in TensorBoard. You can see a detailed explanation of the
+TensorBoard histogram dashboard
+[here](https://www.tensorflow.org/get_started/tensorboard_histograms). <p></p> The generated
+[`Summary`](https://www.tensorflow.org/code/tensorflow/core/framework/summary.proto)
+has one summary value containing a histogram for `values`. <p></p> This op reports an `InvalidArgument` error if any value is not finite. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> values
+						</dt>
+						<dd>A real numeric `Tensor`. Any shape. Values to use to
+build the histogram. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[GraphKeys.SUMMARIES]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>image</strong>(<span title="System.int">int</span> name, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> tensor, <span title="System.int">int</span> max_outputs, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>image</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<SparseTensor>">IEnumerable&lt;SparseTensor&gt;</span> tensor, <span title="System.int">int</span> max_outputs, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<SparseTensor>">IEnumerable&lt;SparseTensor&gt;</span></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>image</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> tensor, <span title="System.int">int</span> max_outputs, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>image</strong>(<span title="System.int">int</span> name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.int">int</span> max_outputs, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>image</strong>(<span title="System.int">int</span> name, <span title="System.Collections.Generic.IEnumerable<SparseTensor>">IEnumerable&lt;SparseTensor&gt;</span> tensor, <span title="System.int">int</span> max_outputs, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<SparseTensor>">IEnumerable&lt;SparseTensor&gt;</span></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>image</strong>(<span title="System.string">string</span> name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.int">int</span> max_outputs, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="image_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>image_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> tensor, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_outputs, <span title="System.object">object</span> collections, <span title="System.object">object</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with images. <p></p> The summary has up to `max_outputs` summary values containing images. The
+images are built from `tensor` which must be 4-D with shape `[batch_size,
+height, width, channels]` and where `channels` can be: <p></p> *  1: `tensor` is interpreted as Grayscale.
+*  3: `tensor` is interpreted as RGB.
+*  4: `tensor` is interpreted as RGBA. <p></p> The images have the same number of channels as the input tensor. For float
+input, the values are normalized one image at a time to fit in the range
+`[0, 255]`.  `uint8` values are unchanged.  The op uses two different
+normalization algorithms: <p></p> *  If the input values are all positive, they are rescaled so the largest one
+is 255. <p></p> *  If any input value is negative, the values are shifted so input value 0.0
+is at 127.  They are then rescaled so that either the smallest value is 0,
+or the largest one is 255. <p></p> The `tag` in the outputted Summary.Value protobufs is generated based on the
+name, with a suffix depending on the max_outputs setting: <p></p> *  If `max_outputs` is 1, the summary value tag is '*name*/image'.
+*  If `max_outputs` is greater than 1, the summary value tags are
+generated sequentially as '*name*/image/0', '*name*/image/1', etc. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>A 4-D `uint8` or `float32` `Tensor` of shape `[batch_size, height,
+width, channels]` where `channels` is 1, 3, or 4. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> max_outputs
+						</dt>
+						<dd>Max number of batch elements to generate images for. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="initialize" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>initialize</strong>(<a href="../tensorflow/Graph.htm">Graph</a> graph, <span title="System.object">object</span> session)
+		</h4>
+		<div class="content">Initializes summary writing for graph execution mode. <p></p> This operation is a no-op when executing eagerly. <p></p> This helper method provides a higher-level alternative to using
+<a href="..\..\tf\contrib\summary\summary_writer_initializer_op.md"><code>tf.contrib.summary.summary_writer_initializer_op</code></a> and
+<a href="..\..\tf\contrib\summary\graph.md"><code>tf.contrib.summary.graph</code></a>. <p></p> Most users will also want to call `tf.compat.v1.train.create_global_step`
+which can happen before or after this function is called. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/Graph.htm">Graph</a></code> graph
+						</dt>
+						<dd>A <a href="..\..\tf\Graph.md"><code>tf.Graph</code></a> or `tf.compat.v1.GraphDef` to output to the writer.
+This function will not write the default graph by default. When
+writing to an event log file, the associated step will be zero. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> session
+						</dt>
+						<dd>So this method can call <a href="..\..\tf\InteractiveSession\run.md"><code>tf.Session.run</code></a>. This defaults
+to `tf.compat.v1.get_default_session`. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="merge" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>merge</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> collections, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Merges summaries. <p></p> This op creates a
+[`Summary`](https://www.tensorflow.org/code/tensorflow/core/framework/summary.proto)
+protocol buffer that contains the union of all the values in the input
+summaries. <p></p> When the Op is run, it reports an `InvalidArgument` error if multiple values
+in the summaries to merge use the same tag. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span></code> inputs
+						</dt>
+						<dd>A list of `string` `Tensor` objects containing serialized `Summary`
+protocol buffers. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer resulting from the merging. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="merge_all" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>merge_all</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> key, <span title="System.string">string</span> scope, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Merges all summaries collected in the default graph. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> key
+						</dt>
+						<dd>`GraphKey` used to collect the summaries.  Defaults to
+`GraphKeys.SUMMARIES`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> scope
+						</dt>
+						<dd>Optional scope used to filter the summary ops, using `re.match` 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>If no summaries were collected, returns None.  Otherwise returns a scalar
+`Tensor` of type `string` containing the serialized `Summary` protocol
+buffer resulting from the merging. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="merge_all_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>merge_all_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> key, <span title="System.object">object</span> scope, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Merges all summaries collected in the default graph. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> key
+						</dt>
+						<dd>`GraphKey` used to collect the summaries.  Defaults to
+`GraphKeys.SUMMARIES`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> scope
+						</dt>
+						<dd>Optional scope used to filter the summary ops, using `re.match` 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>If no summaries were collected, returns None.  Otherwise returns a scalar
+`Tensor` of type `string` containing the serialized `Summary` protocol
+buffer resulting from the merging. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="merge_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>merge_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> collections, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Merges summaries. <p></p> This op creates a
+[`Summary`](https://www.tensorflow.org/code/tensorflow/core/framework/summary.proto)
+protocol buffer that contains the union of all the values in the input
+summaries. <p></p> When the Op is run, it reports an `InvalidArgument` error if multiple values
+in the summaries to merge use the same tag. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> inputs
+						</dt>
+						<dd>A list of `string` `Tensor` objects containing serialized `Summary`
+protocol buffers. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the operation (optional). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer resulting from the merging. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="record_if" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a> <strong>record_if</strong>(<span title="System.bool">bool</span> condition)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="record_if" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a> <strong>record_if</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> condition)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="record_if" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a> <strong>record_if</strong>(<span title="System.object">object</span> condition)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="record_if_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>record_if_dyn</strong>(<span title="System.object">object</span> condition)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scalar" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>scalar</strong>(<span title="System.string">string</span> name, <span title="System.object">object</span> tensor, <span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer containing a single scalar value. <p></p> The generated Summary has a Tensor.proto containing the input Tensor. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as the series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>A real numeric Tensor containing a single value. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[GraphKeys.SUMMARIES]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. Which contains a `Summary` protobuf. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="scalar" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>scalar</strong>(<span title="System.string">string</span> name, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> tensor, <span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> collections, <span title="System.string">string</span> family)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer containing a single scalar value. <p></p> The generated Summary has a Tensor.proto containing the input Tensor. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as the series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> tensor
+						</dt>
+						<dd>A real numeric Tensor containing a single value. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[GraphKeys.SUMMARIES]`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag name,
+which controls the tab name used for display on Tensorboard. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. Which contains a `Summary` protobuf. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="tensor_summary" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>tensor_summary</strong>(<span title="System.string">string</span> name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.string">string</span> summary_description, <span title="System.object">object</span> collections, <span title="System.object">object</span> summary_metadata, <span title="System.object">object</span> family, <span title="System.string">string</span> display_name)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with a serialized tensor.proto. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. If display_name is not set, it will
+also serve as the tag name in TensorBoard. (In that case, the tag
+name will inherit tf name scopes.) 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>A tensor of any type and shape to serialize. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> summary_description
+						</dt>
+						<dd>A long description of the summary sequence. Markdown
+is supported. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[GraphKeys.SUMMARIES]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> summary_metadata
+						</dt>
+						<dd>Optional SummaryMetadata proto (which describes which
+plugins may use the summary value). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag,
+which controls the name used for display on TensorBoard when
+display_name is not set. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> display_name
+						</dt>
+						<dd>A string used to name this data in TensorBoard. If this is
+not set, then the node name will be used instead. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="tensor_summary_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tensor_summary_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> tensor, <span title="System.object">object</span> summary_description, <span title="System.object">object</span> collections, <span title="System.object">object</span> summary_metadata, <span title="System.object">object</span> family, <span title="System.object">object</span> display_name)
+		</h4>
+		<div class="content">Outputs a `Summary` protocol buffer with a serialized tensor.proto. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the generated node. If display_name is not set, it will
+also serve as the tag name in TensorBoard. (In that case, the tag
+name will inherit tf name scopes.) 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>A tensor of any type and shape to serialize. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> summary_description
+						</dt>
+						<dd>A long description of the summary sequence. Markdown
+is supported. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of graph collections keys. The new summary op is
+added to these collections. Defaults to `[GraphKeys.SUMMARIES]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> summary_metadata
+						</dt>
+						<dd>Optional SummaryMetadata proto (which describes which
+plugins may use the summary value). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> family
+						</dt>
+						<dd>Optional; if provided, used as the prefix of the summary tag,
+which controls the name used for display on TensorBoard when
+display_name is not set. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> display_name
+						</dt>
+						<dd>A string used to name this data in TensorBoard. If this is
+not set, then the node name will be used instead. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar `Tensor` of type `string`. The serialized `Summary` protocol
+buffer. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="text" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>text</strong>(<span title="System.string">string</span> name, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.object">object</span> collections)
+		</h4>
+		<div class="content">Summarizes textual data. <p></p> Text data summarized via this plugin will be visible in the Text Dashboard
+in TensorBoard. The standard TensorBoard Text Dashboard will render markdown
+in the strings, and will automatically organize 1d and 2d tensors into tables.
+If a tensor with more than 2 dimensions is provided, a 2d subarray will be
+displayed along with a warning message. (Note that this behavior is not
+intrinsic to the text summary api, but rather to the default TensorBoard text
+plugin.) 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>a string-type Tensor to summarize. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A TensorSummary op that is configured so that TensorBoard will recognize
+that it contains textual data. The TensorSummary is a scalar `Tensor` of
+type `string` which contains `Summary` protobufs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="text_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>text_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> tensor, <span title="System.object">object</span> collections)
+		</h4>
+		<div class="content">Summarizes textual data. <p></p> Text data summarized via this plugin will be visible in the Text Dashboard
+in TensorBoard. The standard TensorBoard Text Dashboard will render markdown
+in the strings, and will automatically organize 1d and 2d tensors into tables.
+If a tensor with more than 2 dimensions is provided, a 2d subarray will be
+displayed along with a warning message. (Note that this behavior is not
+intrinsic to the text summary api, but rather to the default TensorBoard text
+plugin.) 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>A name for the generated node. Will also serve as a series name in
+TensorBoard. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>a string-type Tensor to summarize. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> collections
+						</dt>
+						<dd>Optional list of ops.GraphKeys.  The collections to add the
+summary to.  Defaults to [_ops.GraphKeys.SUMMARIES] 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A TensorSummary op that is configured so that TensorBoard will recognize
+that it contains textual data. The TensorSummary is a scalar `Tensor` of
+type `string` which contains `Summary` protobufs. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="trace_export" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>trace_export</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <span title="System.object">object</span> profiler_outdir)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="trace_export" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>trace_export</strong>(<span title="System.string">string</span> name, <span title="System.int">int</span> step, <span title="System.object">object</span> profiler_outdir)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="trace_export_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trace_export_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> step, <span title="System.object">object</span> profiler_outdir)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="trace_off" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>trace_off</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="trace_off_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trace_off_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="trace_on" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>trace_on</strong>(<span title="System.bool">bool</span> graph, <span title="System.bool">bool</span> profiler)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="trace_on_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trace_on_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> graph, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> profiler)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.double">double</span> tensor, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tensor, <span title="System.object">object</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> tensor, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> tensor, <span title="System.int">int</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> tensor, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> tensor, <span title="System.object">object</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> tensor, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> tensor, <span title="System.int">int</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> tensor, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> tensor, <span title="System.object">object</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.int">int</span> tensor, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.int">int</span> tensor, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tensor, <span title="System.int">int</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.int">int</span> tensor, <span title="System.object">object</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.int">int</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.double">double</span> tensor, <span title="System.int">int</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.double">double</span> tensor, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.double">double</span> tensor, <span title="System.object">object</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.object">object</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tensor, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.int">int</span> tensor, <span title="System.int">int</span> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write</strong>(<span title="System.string">string</span> tag, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tensor, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> step, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> metadata, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="write_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>write_dyn</strong>(<span title="System.object">object</span> tag, <span title="System.object">object</span> tensor, <span title="System.object">object</span> step, <span title="System.object">object</span> metadata, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="all_v2_summary_ops_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>all_v2_summary_ops_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="audio_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>audio_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="create_file_writer_fn_" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>create_file_writer_fn_</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="create_noop_writer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>create_noop_writer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="flush_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>flush_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_summary_description_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_summary_description_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="histogram_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>histogram_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="image_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>image_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initialize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>initialize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="merge_all_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>merge_all_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="merge_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>merge_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="record_if_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>record_if_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scalar_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>scalar_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tensor_summary_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>tensor_summary_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="text_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>text_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trace_export_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>trace_export_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trace_off_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>trace_off_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trace_on_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>trace_on_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="write_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>write_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

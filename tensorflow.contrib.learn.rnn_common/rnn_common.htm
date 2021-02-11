@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>rnn_common - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.learn.rnn_common</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.learn.rnn_common/IRNNKeys.htm">IRNNKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm" class="current">rnn_common</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn.rnn_common/RNNKeys.htm">RNNKeys</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> rnn_common</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.learn.rnn_common</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#apply_dropout">apply_dropout</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#apply_dropout_dyn">apply_dropout_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#construct_rnn_cell">construct_rnn_cell</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#construct_rnn_cell">construct_rnn_cell</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#construct_rnn_cell_dyn">construct_rnn_cell_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#get_eval_metric_ops">get_eval_metric_ops</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#get_eval_metric_ops_dyn">get_eval_metric_ops_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#mask_activations_and_labels">mask_activations_and_labels</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#mask_activations_and_labels">mask_activations_and_labels</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#mask_activations_and_labels_dyn">mask_activations_and_labels_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#multi_value_predictions">multi_value_predictions</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#multi_value_predictions">multi_value_predictions</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#multi_value_predictions_dyn">multi_value_predictions_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#select_last_activations">select_last_activations</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#select_last_activations">select_last_activations</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#select_last_activations">select_last_activations</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#select_last_activations_dyn">select_last_activations_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#apply_dropout_fn">apply_dropout_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#construct_rnn_cell_fn">construct_rnn_cell_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#get_eval_metric_ops_fn">get_eval_metric_ops_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#mask_activations_and_labels_fn">mask_activations_and_labels_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#multi_value_predictions_fn">multi_value_predictions_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#PredictionType_fn">PredictionType_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#RNNKeys_fn">RNNKeys_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn.rnn_common/rnn_common.htm#select_last_activations_fn">select_last_activations_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="apply_dropout" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>apply_dropout</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> cells, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> dropout_keep_probabilities, <span title="System.object">object</span> random_seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_dropout_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_dropout_dyn</strong>(<span title="System.object">object</span> cells, <span title="System.object">object</span> dropout_keep_probabilities, <span title="System.object">object</span> random_seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="construct_rnn_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>construct_rnn_cell</strong>(<span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> num_units, <span title="System.string">string</span> cell_type, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> dropout_keep_probabilities)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="construct_rnn_cell" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>construct_rnn_cell</strong>(<span title="System.int">int</span> num_units, <span title="System.string">string</span> cell_type, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> dropout_keep_probabilities)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="construct_rnn_cell_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>construct_rnn_cell_dyn</strong>(<span title="System.object">object</span> num_units, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> cell_type, <span title="System.object">object</span> dropout_keep_probabilities)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_eval_metric_ops" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> <strong>get_eval_metric_ops</strong>(<span title="System.int">int</span> problem_type, <span title="System.int">int</span> prediction_type, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_length, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> prediction_dict, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_eval_metric_ops_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_eval_metric_ops_dyn</strong>(<span title="System.object">object</span> problem_type, <span title="System.object">object</span> prediction_type, <span title="System.object">object</span> sequence_length, <span title="System.object">object</span> prediction_dict, <span title="System.object">object</span> labels)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="mask_activations_and_labels" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object>">ValueTuple&lt;Tensor, object&gt;</span> <strong>mask_activations_and_labels</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> activations, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="mask_activations_and_labels" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object>">ValueTuple&lt;Tensor, object&gt;</span> <strong>mask_activations_and_labels</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> activations, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> labels, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="mask_activations_and_labels_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>mask_activations_and_labels_dyn</strong>(<span title="System.object">object</span> activations, <span title="System.object">object</span> labels, <span title="System.object">object</span> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_value_predictions" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, Tensor>">IDictionary&lt;string, Tensor&gt;</span> <strong>multi_value_predictions</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> activations, <a href="../tensorflow.contrib.slim/_TargetColumn.htm">_TargetColumn</a> target_column, <span title="System.int">int</span> problem_type, <span title="System.bool">bool</span> predict_probabilities)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_value_predictions" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, Tensor>">IDictionary&lt;string, Tensor&gt;</span> <strong>multi_value_predictions</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> activations, <a href="../tensorflow.contrib.slim/_TargetColumn.htm">_TargetColumn</a> target_column, <span title="System.int">int</span> problem_type, <span title="System.bool">bool</span> predict_probabilities)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="multi_value_predictions_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_value_predictions_dyn</strong>(<span title="System.object">object</span> activations, <span title="System.object">object</span> target_column, <span title="System.object">object</span> problem_type, <span title="System.object">object</span> predict_probabilities)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="select_last_activations" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>select_last_activations</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> activations, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="select_last_activations" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>select_last_activations</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> activations, <span title="System.ValueTuple<PythonClassContainer, PythonClassContainer>">ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;</span> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="select_last_activations" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>select_last_activations</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> activations, <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="select_last_activations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>select_last_activations_dyn</strong>(<span title="System.object">object</span> activations, <span title="System.object">object</span> sequence_lengths)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="apply_dropout_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>apply_dropout_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="construct_rnn_cell_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>construct_rnn_cell_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_eval_metric_ops_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_eval_metric_ops_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="mask_activations_and_labels_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>mask_activations_and_labels_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="multi_value_predictions_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>multi_value_predictions_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PredictionType_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>PredictionType_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="RNNKeys_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>RNNKeys_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="select_last_activations_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>select_last_activations_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

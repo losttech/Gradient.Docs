@@ -1,0 +1,1560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Context - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.eager.context</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.eager.context/_AtomicCounter.htm">_AtomicCounter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/_ContextSwitchStack.htm">_ContextSwitchStack</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/_EagerDeviceContext.htm">_EagerDeviceContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/_EagerTensorCache.htm">_EagerTensorCache</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/_TensorCacheDeleter.htm">_TensorCacheDeleter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/_TensorCaches.htm">_TensorCaches</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/_ThreadLocalData.htm">_ThreadLocalData</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/context.htm">context</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/Context.htm" class="current">Context</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/ContextSwitch.htm">ContextSwitch</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/FunctionCallOptions.htm">FunctionCallOptions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_AtomicCounter.htm">I_AtomicCounter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_ContextSwitchStack.htm">I_ContextSwitchStack</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_EagerDeviceContext.htm">I_EagerDeviceContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_EagerTensorCache.htm">I_EagerTensorCache</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_TensorCacheDeleter.htm">I_TensorCacheDeleter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_TensorCaches.htm">I_TensorCaches</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/I_ThreadLocalData.htm">I_ThreadLocalData</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/IContext.htm">IContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/IContextSwitch.htm">IContextSwitch</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/IFunctionCallOptions.htm">IFunctionCallOptions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/ILogicalDevice.htm">ILogicalDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/IPhysicalDevice.htm">IPhysicalDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/LogicalDevice.htm">LogicalDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Context</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.eager.context</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.python.eager.context/IContext.htm">IContext</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#add_function">add_function</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#add_function_def">add_function_def</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#add_function_def_dyn">add_function_def_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#add_function_dyn">add_function_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#add_post_execution_callback">add_post_execution_callback</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#add_post_execution_callback_dyn">add_post_execution_callback_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#clear_post_execution_callbacks">clear_post_execution_callbacks</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#clear_post_execution_callbacks_dyn">clear_post_execution_callbacks_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#configure_collective_ops">configure_collective_ops</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#configure_collective_ops_dyn">configure_collective_ops_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#devices">devices</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#devices_dyn">devices_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#enable_collective_ops">enable_collective_ops</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#enable_collective_ops_dyn">enable_collective_ops_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#end_step_dyn">end_step_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_memory_growth">get_memory_growth</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_memory_growth_dyn">get_memory_growth_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_optimizer_experimental_options_dyn">get_optimizer_experimental_options_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_virtual_device_configuration">get_virtual_device_configuration</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_virtual_device_configuration_dyn">get_virtual_device_configuration_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_visible_devices">get_visible_devices</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#get_visible_devices_dyn">get_visible_devices_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#has_function">has_function</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#has_function_dyn">has_function_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#list_logical_devices">list_logical_devices</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#list_logical_devices_dyn">list_logical_devices_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#list_physical_devices">list_physical_devices</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#list_physical_devices_dyn">list_physical_devices_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#num_gpus">num_gpus</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#num_gpus_dyn">num_gpus_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#ones_rank_cache">ones_rank_cache</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#ones_rank_cache_dyn">ones_rank_cache_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#remove_function">remove_function</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#remove_function_dyn">remove_function_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_memory_growth">set_memory_growth</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_memory_growth_dyn">set_memory_growth_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_optimizer_experimental_options">set_optimizer_experimental_options</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_optimizer_experimental_options_dyn">set_optimizer_experimental_options_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_server_def">set_server_def</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_server_def_dyn">set_server_def_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_virtual_device_configuration">set_virtual_device_configuration</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_virtual_device_configuration_dyn">set_virtual_device_configuration_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_visible_devices">set_visible_devices</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_visible_devices">set_visible_devices</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#set_visible_devices_dyn">set_visible_devices_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#start_step_dyn">start_step_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#zeros_cache">zeros_cache</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#zeros_cache_dyn">zeros_cache_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#config">config</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#config_dyn">config_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#context_switches">context_switches</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#context_switches_dyn">context_switches_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#device_name">device_name</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#device_name_dyn">device_name_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#device_policy">device_policy</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#device_policy_dyn">device_policy_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#device_spec">device_spec</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#device_spec_dyn">device_spec_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#execution_mode">execution_mode</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#execution_mode_dyn">execution_mode_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#executor">executor</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#executor_dyn">executor_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#function_call_options">function_call_options</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#function_call_options_dyn">function_call_options_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#inter_op_parallelism_threads">inter_op_parallelism_threads</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#inter_op_parallelism_threads_dyn">inter_op_parallelism_threads_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#intra_op_parallelism_threads">intra_op_parallelism_threads</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#intra_op_parallelism_threads_dyn">intra_op_parallelism_threads_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#log_device_placement">log_device_placement</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#log_device_placement_dyn">log_device_placement_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#mirroring_policy">mirroring_policy</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#mirroring_policy_dyn">mirroring_policy_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#optimizer_jit">optimizer_jit</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#optimizer_jit_dyn">optimizer_jit_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#post_execution_callbacks">post_execution_callbacks</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#post_execution_callbacks_dyn">post_execution_callbacks_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#scope_name">scope_name</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#scope_name_dyn">scope_name_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#soft_device_placement">soft_device_placement</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#soft_device_placement_dyn">soft_device_placement_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_recording">summary_recording</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_recording_distribution_strategy">summary_recording_distribution_strategy</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_recording_distribution_strategy_dyn">summary_recording_distribution_strategy_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_recording_dyn">summary_recording_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_step">summary_step</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_step_dyn">summary_step_dyn</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_writer">summary_writer</a></li>
+				<li><a href="../tensorflow.python.eager.context/Context.htm#summary_writer_dyn">summary_writer_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="add_function" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>add_function</strong>(<span title="System.object">object</span> fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_function_def" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>add_function_def</strong>(<span title="System.object">object</span> fdef)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_function_def_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_function_def_dyn</strong>(<span title="System.object">object</span> fdef)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_function_dyn</strong>(<span title="System.object">object</span> fn)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_post_execution_callback" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>add_post_execution_callback</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> callback)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_post_execution_callback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_post_execution_callback_dyn</strong>(<span title="System.object">object</span> callback)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="clear_post_execution_callbacks" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>clear_post_execution_callbacks</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="clear_post_execution_callbacks_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clear_post_execution_callbacks_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="configure_collective_ops" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>configure_collective_ops</strong>(<span title="System.string">string</span> collective_leader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> scoped_allocator_enabled_ops, <span title="System.bool">bool</span> use_nccl_communication, <span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> device_filters)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="configure_collective_ops_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>configure_collective_ops_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> collective_leader, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> scoped_allocator_enabled_ops, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_nccl_communication, <span title="System.object">object</span> device_filters)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="devices" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>devices</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>devices_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="enable_collective_ops" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>enable_collective_ops</strong>(<span title="System.object">object</span> server_def)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="enable_collective_ops_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>enable_collective_ops_dyn</strong>(<span title="System.object">object</span> server_def)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="end_step_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>end_step_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_memory_growth" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_memory_growth</strong>(<a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a> dev)
+		</h4>
+		<div class="content">Get if memory growth is enabled for a PhysicalDevice. <p></p> A PhysicalDevice with memory growth set will not allocate all memory on the
+device upfront. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Current memory growth setting. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            tf.config.experimental.set_memory_growth(physical_devices[0], True)
+            assert tf.config.experimental.get_memory_growth(physical_devices[0]) == True </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_memory_growth_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_memory_growth_dyn</strong>(<span title="System.object">object</span> dev)
+		</h4>
+		<div class="content">Get if memory growth is enabled for a PhysicalDevice. <p></p> A PhysicalDevice with memory growth set will not allocate all memory on the
+device upfront. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Current memory growth setting. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            tf.config.experimental.set_memory_growth(physical_devices[0], True)
+            assert tf.config.experimental.get_memory_growth(physical_devices[0]) == True </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_optimizer_experimental_options_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_optimizer_experimental_options_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_virtual_device_configuration" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<VirtualDeviceConfiguration>">IList&lt;VirtualDeviceConfiguration&gt;</span> <strong>get_virtual_device_configuration</strong>(<a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a> dev)
+		</h4>
+		<div class="content">Get the virtual device configuration for a PhysicalDevice. <p></p> Returns the list of VirtualDeviceConfiguration objects previously configured
+by a call to `tf.config.experimental.set_virtual_device_configuration()`. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<VirtualDeviceConfiguration>">IList&lt;VirtualDeviceConfiguration&gt;</span></code>
+					</dt>
+					<dd>List of <a href="..\..\..\tf\config\experimental\VirtualDeviceConfiguration.md"><code>tf.config.experimental.VirtualDeviceConfiguration</code></a> objects or
+`None` if no virtual device configuration has been set for this physical
+device. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('CPU')
+            assert len(physical_devices) == 1, "No CPUs found"
+            configs = tf.config.experimental.get_virtual_device_configuration(
+                physical_devices[0])
+            assert configs is None
+            tf.config.experimental.set_virtual_device_configuration(
+                physical_devices[0],
+                [tf.config.experimental.VirtualDeviceConfiguration(),
+                 tf.config.experimental.VirtualDeviceConfiguration()])
+            configs = tf.config.experimental.get_virtual_device_configuration(
+                physical_devices[0])
+            assert len(configs) == 2 </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_virtual_device_configuration_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_virtual_device_configuration_dyn</strong>(<span title="System.object">object</span> dev)
+		</h4>
+		<div class="content">Get the virtual device configuration for a PhysicalDevice. <p></p> Returns the list of VirtualDeviceConfiguration objects previously configured
+by a call to `tf.config.experimental.set_virtual_device_configuration()`. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of <a href="..\..\..\tf\config\experimental\VirtualDeviceConfiguration.md"><code>tf.config.experimental.VirtualDeviceConfiguration</code></a> objects or
+`None` if no virtual device configuration has been set for this physical
+device. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('CPU')
+            assert len(physical_devices) == 1, "No CPUs found"
+            configs = tf.config.experimental.get_virtual_device_configuration(
+                physical_devices[0])
+            assert configs is None
+            tf.config.experimental.set_virtual_device_configuration(
+                physical_devices[0],
+                [tf.config.experimental.VirtualDeviceConfiguration(),
+                 tf.config.experimental.VirtualDeviceConfiguration()])
+            configs = tf.config.experimental.get_virtual_device_configuration(
+                physical_devices[0])
+            assert len(configs) == 2 </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_visible_devices" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_visible_devices</strong>(<span title="System.string">string</span> device_type)
+		</h4>
+		<div class="content">Get the list of visible physical devices. <p></p> Returns a list of PhysicalDevice objects that are current marked as visible to
+the runtime. Any visible devices will have LogicalDevices assigned to them
+once the runtime is initialized. <p></p> The following example verifies all visible GPUs have been disabled: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> device_type
+						</dt>
+						<dd>(optional) Device types to limit query to. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>List of PhysicalDevice objects 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            # Disable all GPUS
+            tf.config.experimental.set_visible_devices([], 'GPU')
+            visible_devices = tf.config.experimental.get_visible_devices()
+            for device in visible_devices:
+              assert device.device_type != 'GPU' </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_visible_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_visible_devices_dyn</strong>(<span title="System.object">object</span> device_type)
+		</h4>
+		<div class="content">Get the list of visible physical devices. <p></p> Returns a list of PhysicalDevice objects that are current marked as visible to
+the runtime. Any visible devices will have LogicalDevices assigned to them
+once the runtime is initialized. <p></p> The following example verifies all visible GPUs have been disabled: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> device_type
+						</dt>
+						<dd>(optional) Device types to limit query to. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of PhysicalDevice objects 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            # Disable all GPUS
+            tf.config.experimental.set_visible_devices([], 'GPU')
+            visible_devices = tf.config.experimental.get_visible_devices()
+            for device in visible_devices:
+              assert device.device_type != 'GPU' </pre>
+</div>
+		</div>
+	</div>
+	<div id="has_function" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>has_function</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="has_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>has_function_dyn</strong>(<span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="list_logical_devices" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<LogicalDevice>">IList&lt;LogicalDevice&gt;</span> <strong>list_logical_devices</strong>(<span title="System.string">string</span> device_type)
+		</h4>
+		<div class="content">Return a list of logical devices created by runtime. <p></p> Logical devices may correspond to physical devices or remote devices in the
+cluster. Operations and tensors may be placed on these devices by using the
+`name` of the LogicalDevice. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> device_type
+						</dt>
+						<dd>(optional) Device type to filter by such as "CPU" or "GPU" 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<LogicalDevice>">IList&lt;LogicalDevice&gt;</span></code>
+					</dt>
+					<dd>List of LogicalDevice objects 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>logical_devices = tf.config.experimental.list_logical_devices('GPU')
+            # Allocate on GPU:0
+            with tf.device(logical_devices[0].name):
+              one = tf.constant(1)
+            # Allocate on GPU:1
+            with tf.device(logical_devices[1].name):
+              two = tf.constant(2) </pre>
+</div>
+		</div>
+	</div>
+	<div id="list_logical_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_logical_devices_dyn</strong>(<span title="System.object">object</span> device_type)
+		</h4>
+		<div class="content">Return a list of logical devices created by runtime. <p></p> Logical devices may correspond to physical devices or remote devices in the
+cluster. Operations and tensors may be placed on these devices by using the
+`name` of the LogicalDevice. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> device_type
+						</dt>
+						<dd>(optional) Device type to filter by such as "CPU" or "GPU" 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of LogicalDevice objects 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>logical_devices = tf.config.experimental.list_logical_devices('GPU')
+            # Allocate on GPU:0
+            with tf.device(logical_devices[0].name):
+              one = tf.constant(1)
+            # Allocate on GPU:1
+            with tf.device(logical_devices[1].name):
+              two = tf.constant(2) </pre>
+</div>
+		</div>
+	</div>
+	<div id="list_physical_devices" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<PhysicalDevice>">IList&lt;PhysicalDevice&gt;</span> <strong>list_physical_devices</strong>(<span title="System.string">string</span> device_type)
+		</h4>
+		<div class="content">Return a list of physical devices visible to the runtime. <p></p> Physical devices are hardware devices locally present on the current machine.
+By default all discovered CPU and GPU devices are considered visible. The
+`list_physical_devices` allows querying the hardware prior to runtime
+initialization. <p></p> The following example ensures the machine can see at least 1 GPU. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> device_type
+						</dt>
+						<dd>(optional) Device type to filter by such as "CPU" or "GPU" 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<PhysicalDevice>">IList&lt;PhysicalDevice&gt;</span></code>
+					</dt>
+					<dd>List of PhysicalDevice objects 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "No GPUs found." </pre>
+</div>
+		</div>
+	</div>
+	<div id="list_physical_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_physical_devices_dyn</strong>(<span title="System.object">object</span> device_type)
+		</h4>
+		<div class="content">Return a list of physical devices visible to the runtime. <p></p> Physical devices are hardware devices locally present on the current machine.
+By default all discovered CPU and GPU devices are considered visible. The
+`list_physical_devices` allows querying the hardware prior to runtime
+initialization. <p></p> The following example ensures the machine can see at least 1 GPU. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> device_type
+						</dt>
+						<dd>(optional) Device type to filter by such as "CPU" or "GPU" 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of PhysicalDevice objects 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "No GPUs found." </pre>
+</div>
+		</div>
+	</div>
+	<div id="num_gpus" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>num_gpus</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="num_gpus_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>num_gpus_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ones_rank_cache" class="method">
+		<h4>
+			<a href="../tensorflow.python.eager.context/_EagerTensorCache.htm">_EagerTensorCache</a> <strong>ones_rank_cache</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ones_rank_cache_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ones_rank_cache_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="remove_function" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>remove_function</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="remove_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remove_function_dyn</strong>(<span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_memory_growth" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_memory_growth</strong>(<a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a> dev, <span title="System.bool">bool</span> enable)
+		</h4>
+		<div class="content">Set if memory growth should be enabled for a PhysicalDevice. <p></p> A PhysicalDevice with memory growth set will not allocate all memory on the
+device upfront. Memory growth cannot be configured on a PhysicalDevice with
+virtual devices configured. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a></code> dev
+						</dt>
+						<dt>
+							<code><span title="System.bool">bool</span></code> enable
+						</dt>
+						<dd>Whether to enable or disable memory growth 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            tf.config.experimental.set_memory_growth(physical_devices[0], True) </pre>
+</div>
+		</div>
+	</div>
+	<div id="set_memory_growth_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_memory_growth_dyn</strong>(<span title="System.object">object</span> dev, <span title="System.object">object</span> enable)
+		</h4>
+		<div class="content">Set if memory growth should be enabled for a PhysicalDevice. <p></p> A PhysicalDevice with memory growth set will not allocate all memory on the
+device upfront. Memory growth cannot be configured on a PhysicalDevice with
+virtual devices configured. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dev
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> enable
+						</dt>
+						<dd>Whether to enable or disable memory growth 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            tf.config.experimental.set_memory_growth(physical_devices[0], True) </pre>
+</div>
+		</div>
+	</div>
+	<div id="set_optimizer_experimental_options" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_optimizer_experimental_options</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> options)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_optimizer_experimental_options_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_optimizer_experimental_options_dyn</strong>(<span title="System.object">object</span> options)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_server_def" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_server_def</strong>(<span title="System.object">object</span> server_def, <span title="System.int">int</span> keep_alive_secs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_server_def_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_server_def_dyn</strong>(<span title="System.object">object</span> server_def, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> keep_alive_secs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_virtual_device_configuration" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_virtual_device_configuration</strong>(<a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a> dev, <span title="System.Collections.Generic.IEnumerable<VirtualDeviceConfiguration>">IEnumerable&lt;VirtualDeviceConfiguration&gt;</span> virtual_devices)
+		</h4>
+		<div class="content">Set the virtual device configuration for a PhysicalDevice. <p></p> A PhysicalDevice marked as visible will by default have a single LogicalDevice
+allocated to it once the runtime is configured. Specifying a list of
+tf.config.experimental.VirtualDeviceConfiguration objects allows multiple
+devices to be configured that utilize the same PhysicalDevice. <p></p> The following example splits the CPU into 2 virtual devices:
+The following example splits the GPU into 2 virtual devices with 100 MB each: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a></code> dev
+						</dt>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<VirtualDeviceConfiguration>">IEnumerable&lt;VirtualDeviceConfiguration&gt;</span></code> virtual_devices
+						</dt>
+						<dd>(optional) Need to update 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('CPU')
+            assert len(physical_devices) == 1, "No CPUs found"
+            # Specify 2 virtual CPUs. Note currently memory limit is not supported.
+            tf.config.experimental.set_virtual_device_configuration(
+              physical_devices[0],
+              [tf.config.experimental.VirtualDeviceConfiguration(),
+               tf.config.experimental.VirtualDeviceConfiguration()])
+            logical_devices = tf.config.experimental.list_logical_devices('CPU')
+            assert len(logical_devices) == 2 <p></p> try:
+  tf.config.experimental.set_virtual_device_configuration(
+    physical_devices[0],
+    [tf.config.experimental.VirtualDeviceConfiguration(),
+     tf.config.experimental.VirtualDeviceConfiguration(),
+     tf.config.experimental.VirtualDeviceConfiguration(),
+     tf.config.experimental.VirtualDeviceConfiguration()])
+except:
+  print('Cannot modify the virtual devices once they have been initialized.') </pre>
+</div>
+		</div>
+	</div>
+	<div id="set_virtual_device_configuration_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_virtual_device_configuration_dyn</strong>(<span title="System.object">object</span> dev, <span title="System.object">object</span> virtual_devices)
+		</h4>
+		<div class="content">Set the virtual device configuration for a PhysicalDevice. <p></p> A PhysicalDevice marked as visible will by default have a single LogicalDevice
+allocated to it once the runtime is configured. Specifying a list of
+tf.config.experimental.VirtualDeviceConfiguration objects allows multiple
+devices to be configured that utilize the same PhysicalDevice. <p></p> The following example splits the CPU into 2 virtual devices:
+The following example splits the GPU into 2 virtual devices with 100 MB each: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dev
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> virtual_devices
+						</dt>
+						<dd>(optional) Need to update 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = tf.config.experimental.list_physical_devices('CPU')
+            assert len(physical_devices) == 1, "No CPUs found"
+            # Specify 2 virtual CPUs. Note currently memory limit is not supported.
+            tf.config.experimental.set_virtual_device_configuration(
+              physical_devices[0],
+              [tf.config.experimental.VirtualDeviceConfiguration(),
+               tf.config.experimental.VirtualDeviceConfiguration()])
+            logical_devices = tf.config.experimental.list_logical_devices('CPU')
+            assert len(logical_devices) == 2 <p></p> try:
+  tf.config.experimental.set_virtual_device_configuration(
+    physical_devices[0],
+    [tf.config.experimental.VirtualDeviceConfiguration(),
+     tf.config.experimental.VirtualDeviceConfiguration(),
+     tf.config.experimental.VirtualDeviceConfiguration(),
+     tf.config.experimental.VirtualDeviceConfiguration()])
+except:
+  print('Cannot modify the virtual devices once they have been initialized.') </pre>
+</div>
+		</div>
+	</div>
+	<div id="set_visible_devices" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_visible_devices</strong>(<a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a> devices, <span title="System.string">string</span> device_type)
+		</h4>
+		<div class="content">Set the list of visible devices. <p></p> Sets the list of PhysicalDevices to be marked as visible to the runtime. Any
+devices that are not marked as visible means TensorFlow will not allocate
+memory on it and will not be able to place any operations on it as no
+LogicalDevice will be created on it. By default all discovered devices are
+marked as visible. <p></p> The following example demonstrates disabling the first GPU on the machine. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.eager.context/PhysicalDevice.htm">PhysicalDevice</a></code> devices
+						</dt>
+						<dd>(optional) List of PhysicalDevice objects to make visible 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> device_type
+						</dt>
+						<dd>(optional) Device types to limit visibility configuration to.
+Other device types will be left unaltered. 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            # Disable first GPU
+            tf.config.experimental.set_visible_devices(physical_devices[1:], 'GPU')
+            logical_devices = config.experimental.list_logical_devices('GPU')
+            # Logical device was not created for first GPU
+            assert len(logical_devices) == len(physical_devices) - 1 </pre>
+</div>
+		</div>
+	</div>
+	<div id="set_visible_devices" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>set_visible_devices</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> devices, <span title="System.string">string</span> device_type)
+		</h4>
+		<div class="content">Set the list of visible devices. <p></p> Sets the list of PhysicalDevices to be marked as visible to the runtime. Any
+devices that are not marked as visible means TensorFlow will not allocate
+memory on it and will not be able to place any operations on it as no
+LogicalDevice will be created on it. By default all discovered devices are
+marked as visible. <p></p> The following example demonstrates disabling the first GPU on the machine. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> devices
+						</dt>
+						<dd>(optional) List of PhysicalDevice objects to make visible 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> device_type
+						</dt>
+						<dd>(optional) Device types to limit visibility configuration to.
+Other device types will be left unaltered. 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            # Disable first GPU
+            tf.config.experimental.set_visible_devices(physical_devices[1:], 'GPU')
+            logical_devices = config.experimental.list_logical_devices('GPU')
+            # Logical device was not created for first GPU
+            assert len(logical_devices) == len(physical_devices) - 1 </pre>
+</div>
+		</div>
+	</div>
+	<div id="set_visible_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_visible_devices_dyn</strong>(<span title="System.object">object</span> devices, <span title="System.object">object</span> device_type)
+		</h4>
+		<div class="content">Set the list of visible devices. <p></p> Sets the list of PhysicalDevices to be marked as visible to the runtime. Any
+devices that are not marked as visible means TensorFlow will not allocate
+memory on it and will not be able to place any operations on it as no
+LogicalDevice will be created on it. By default all discovered devices are
+marked as visible. <p></p> The following example demonstrates disabling the first GPU on the machine. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> devices
+						</dt>
+						<dd>(optional) List of PhysicalDevice objects to make visible 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> device_type
+						</dt>
+						<dd>(optional) Device types to limit visibility configuration to.
+Other device types will be left unaltered. 
+						</dd>
+				</dl>
+			</div>
+
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>physical_devices = config.experimental.list_physical_devices('GPU')
+            assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+            # Disable first GPU
+            tf.config.experimental.set_visible_devices(physical_devices[1:], 'GPU')
+            logical_devices = config.experimental.list_logical_devices('GPU')
+            # Logical device was not created for first GPU
+            assert len(logical_devices) == len(physical_devices) - 1 </pre>
+</div>
+		</div>
+	</div>
+	<div id="start_step_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>start_step_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="zeros_cache" class="method">
+		<h4>
+			<a href="../tensorflow.python.eager.context/_EagerTensorCache.htm">_EagerTensorCache</a> <strong>zeros_cache</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="zeros_cache_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>zeros_cache_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="context_switches" class="method">
+		<h4>
+			<a href="../tensorflow.python.eager.context/_ContextSwitchStack.htm">_ContextSwitchStack</a> <strong>context_switches</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="context_switches_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>context_switches_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>device_name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_policy" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_policy</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_policy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_policy_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_spec</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_spec_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="execution_mode" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>execution_mode</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="execution_mode_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>execution_mode_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="executor" class="method">
+		<h4>
+			<a href="../tensorflow.python.eager.executor/Executor.htm">Executor</a> <strong>executor</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="executor_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>executor_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="function_call_options" class="method">
+		<h4>
+			<a href="../tensorflow.python.eager.context/FunctionCallOptions.htm">FunctionCallOptions</a> <strong>function_call_options</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="function_call_options_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>function_call_options_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inter_op_parallelism_threads" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inter_op_parallelism_threads</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inter_op_parallelism_threads_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inter_op_parallelism_threads_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="intra_op_parallelism_threads" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>intra_op_parallelism_threads</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="intra_op_parallelism_threads_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>intra_op_parallelism_threads_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="log_device_placement" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>log_device_placement</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="log_device_placement_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>log_device_placement_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="mirroring_policy" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>mirroring_policy</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="mirroring_policy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>mirroring_policy_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="optimizer_jit" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>optimizer_jit</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="optimizer_jit_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>optimizer_jit_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="post_execution_callbacks" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>post_execution_callbacks</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="post_execution_callbacks_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>post_execution_callbacks_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>scope_name</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope_name_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="soft_device_placement" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>soft_device_placement</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="soft_device_placement_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>soft_device_placement_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_recording" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_recording</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_recording_distribution_strategy" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>summary_recording_distribution_strategy</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_recording_distribution_strategy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_recording_distribution_strategy_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_recording_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_recording_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_step" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_step</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_step_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_step_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_writer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_writer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summary_writer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summary_writer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

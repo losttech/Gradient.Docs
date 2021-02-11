@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>CheckpointInputPipelineHook - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.data</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.data/CheckpointInputPipelineHook.htm" class="current">CheckpointInputPipelineHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/CsvDataset.htm">CsvDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/data.htm">data</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ICheckpointInputPipelineHook.htm">ICheckpointInputPipelineHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ICsvDataset.htm">ICsvDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ILMDBDataset.htm">ILMDBDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/IRandomDataset.htm">IRandomDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/IReducer.htm">IReducer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ISqlDataset.htm">ISqlDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ITFRecordWriter.htm">ITFRecordWriter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/LMDBDataset.htm">LMDBDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/RandomDataset.htm">RandomDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/Reducer.htm">Reducer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/SqlDataset.htm">SqlDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/TFRecordWriter.htm">TFRecordWriter</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> CheckpointInputPipelineHook</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.data</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.data.experimental/CheckpointInputPipelineHook.htm">CheckpointInputPipelineHook</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.data/ICheckpointInputPipelineHook.htm">ICheckpointInputPipelineHook</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Checkpoints input pipeline state every N steps or seconds. <p></p> This hook saves the state of the iterators in the `Graph` so that when
+training is resumed the input pipeline continues from where it left off.
+This could potentially avoid overfitting in certain pipelines where the
+number of training steps per eval are small compared to the dataset
+size or if the training pipeline is pre-empted. <p></p> Differences from `CheckpointSaverHook`:
+1. Saves only the input pipelines in the "iterators" collection and not the
+global variables or other saveable objects.
+2. Does not write the `GraphDef` and `MetaGraphDef` to the summary. <p></p> Example of checkpointing the training pipeline:
+This hook should be used if the input pipeline state needs to be saved
+separate from the model checkpoint. Doing so may be useful for a few reasons:
+1. The input pipeline checkpoint may be large, if there are large shuffle
+or prefetch buffers for instance, and may bloat the checkpoint size.
+2. If the input pipeline is shared between training and validation, restoring
+the checkpoint during validation may override the validation input
+pipeline. <p></p> For saving the input pipeline checkpoint alongside the model weights use
+<a href="..\..\..\tf\data\experimental\make_saveable_from_iterator.md"><code>tf.data.experimental.make_saveable_from_iterator</code></a> directly to create a
+`SaveableObject` and add to the `SAVEABLE_OBJECTS` collection. Note, however,
+that you will need to be careful not to restore the training iterator during
+eval. You can do that by not adding the iterator to the SAVEABLE_OBJECTS
+collector when building the eval graph. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>est = tf.estimator.Estimator(model_fn)
+            while True:
+              est.train(
+                  train_input_fn,
+                  hooks=[tf.data.experimental.CheckpointInputPipelineHook(est)],
+                  steps=train_steps_per_eval)
+              # Note: We do not pass the hook here.
+              metrics = est.evaluate(eval_input_fn)
+              if should_stop_the_training(metrics):
+                break </pre>
+</div>
+			</div>
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.data/CheckpointInputPipelineHook.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

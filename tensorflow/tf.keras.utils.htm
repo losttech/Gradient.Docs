@@ -1,0 +1,2440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>tf.keras.utils - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow/AggregationMethod.htm">AggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulator.htm">ConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulatorBase.htm">ConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/constant_initializer.htm">constant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/CriticalSection.htm">CriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DeviceSpec.htm">DeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Dimension.htm">Dimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DType.htm">DType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FIFOQueue.htm">FIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenFeature.htm">FixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLengthRecordReader.htm">FixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenSequenceFeature.htm">FixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_normal_initializer.htm">glorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_uniform_initializer.htm">glorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GradientTape.htm">GradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.htm">Graph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph._ControlDependenciesController.htm">Graph._ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.I_ControlDependenciesController.htm">Graph.I_ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GraphKeys.htm">GraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/HeadingAxes.htm">HeadingAxes</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IAggregationMethod.htm">IAggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulator.htm">IConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulatorBase.htm">IConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iconstant_initializer.htm">Iconstant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ICriticalSection.htm">ICriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IdentityReader.htm">IdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDeviceSpec.htm">IDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDimension.htm">IDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDType.htm">IDType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFIFOQueue.htm">IFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenFeature.htm">IFixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLengthRecordReader.htm">IFixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenSequenceFeature.htm">IFixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_normal_initializer.htm">Iglorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_uniform_initializer.htm">Iglorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGradientTape.htm">IGradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraph.htm">IGraph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraphKeys.htm">IGraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIdentityReader.htm">IIdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlices.htm">IIndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlicesSpec.htm">IIndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IInteractiveSession.htm">IInteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILazyLoader.htm">ILazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILMDBReader.htm">ILMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IModule.htm">IModule</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iname_scope.htm">Iname_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlicesSpec.htm">IndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/InteractiveSession.htm">InteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iones_initializer.htm">Iones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOperation.htm">IOperation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOpError.htm">IOpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOptionalSpec.htm">IOptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iorthogonal_initializer.htm">Iorthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPaddingFIFOQueue.htm">IPaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPriorityQueue.htm">IPriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IQueueBase.htm">IQueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensor.htm">IRaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensorSpec.htm">IRaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_normal_initializer.htm">Irandom_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_uniform_initializer.htm">Irandom_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRandomShuffleQueue.htm">IRandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IReaderBase.htm">IReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRegisterGradient.htm">IRegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISession.htm">ISession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseConditionalAccumulator.htm">ISparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseFeature.htm">ISparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensor.htm">ISparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorSpec.htm">ISparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorValue.htm">ISparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensor.htm">ITensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArray.htm">ITensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArraySpec.htm">ITensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorShape.htm">ITensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorSpec.htm">ITensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITextLineReader.htm">ITextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITFRecordReader.htm">ITFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Itruncated_normal_initializer.htm">Itruncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITypeSpec.htm">ITypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IUnconnectedGradients.htm">IUnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iuniform_unit_scaling_initializer.htm">Iuniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariable.htm">IVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariable_scope.htm">Ivariable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariableScope.htm">IVariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariance_scaling_initializer.htm">Ivariance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVarLenFeature.htm">IVarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IWholeFileReader.htm">IWholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Izeros_initializer.htm">Izeros_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LazyLoader.htm">LazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LMDBReader.htm">LMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Module.htm">Module</a>
+        </li>
+				<li>
+            <a href="../tensorflow/name_scope.htm">name_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ones_initializer.htm">ones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.htm">Operation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation._InputList.htm">Operation._InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.I_InputList.htm">Operation.I_InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OpError.htm">OpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OptionalSpec.htm">OptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/orthogonal_initializer.htm">orthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PaddingFIFOQueue.htm">PaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PriorityQueue.htm">PriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/QueueBase.htm">QueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensorSpec.htm">RaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_normal_initializer.htm">random_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_uniform_initializer.htm">random_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RandomShuffleQueue.htm">RandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ReaderBase.htm">ReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RegisterGradient.htm">RegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Session.htm">Session</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseConditionalAccumulator.htm">SparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseFeature.htm">SparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensor.htm">SparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorSpec.htm">SparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorValue.htm">SparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor.htm">Tensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor`1.htm">Tensor&lt;T&gt;</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArray.htm">TensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArraySpec.htm">TensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimension.htm">TensorDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimensionSlice.htm">TensorDimensionSlice</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorShape.htm">TensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorSpec.htm">TensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TextLineReader.htm">TextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.htm">tf</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.audio.htm">tf.audio</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.htm">tf.autograph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.experimental.htm">tf.autograph.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.bitwise.htm">tf.bitwise</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.compat.htm">tf.compat</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.htm">tf.config</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.experimental.htm">tf.config.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.optimizer.htm">tf.config.optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.threading.htm">tf.config.threading</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.htm">tf.data</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.experimental.htm">tf.data.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.debugging.htm">tf.debugging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distribute.htm">tf.distribute</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distributions.htm">tf.distributions</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.errors.htm">tf.errors</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.htm">tf.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.experimental.htm">tf.estimator.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.export.htm">tf.estimator.export</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.inputs.htm">tf.estimator.inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.experimental.htm">tf.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.feature_column.htm">tf.feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.gfile.htm">tf.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.graph_util.htm">tf.graph_util</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.image.htm">tf.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.initializers.htm">tf.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.htm">tf.io</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.gfile.htm">tf.io.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.htm">tf.keras</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.activations.htm">tf.keras.activations</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.htm">tf.keras.applications</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.densenet.htm">tf.keras.applications.densenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.imagenet_utils.htm">tf.keras.applications.imagenet_utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_resnet_v2.htm">tf.keras.applications.inception_resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_v3.htm">tf.keras.applications.inception_v3</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet.htm">tf.keras.applications.mobilenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet_v2.htm">tf.keras.applications.mobilenet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.nasnet.htm">tf.keras.applications.nasnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet.htm">tf.keras.applications.resnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet_v2.htm">tf.keras.applications.resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg16.htm">tf.keras.applications.vgg16</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg19.htm">tf.keras.applications.vgg19</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.xception.htm">tf.keras.applications.xception</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.backend.htm">tf.keras.backend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.constraints.htm">tf.keras.constraints</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.htm">tf.keras.datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.boston_housing.htm">tf.keras.datasets.boston_housing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar10.htm">tf.keras.datasets.cifar10</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar100.htm">tf.keras.datasets.cifar100</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.fashion_mnist.htm">tf.keras.datasets.fashion_mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.imdb.htm">tf.keras.datasets.imdb</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.mnist.htm">tf.keras.datasets.mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.reuters.htm">tf.keras.datasets.reuters</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.estimator.htm">tf.keras.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.experimental.htm">tf.keras.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.initializers.htm">tf.keras.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.layers.htm">tf.keras.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.losses.htm">tf.keras.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.metrics.htm">tf.keras.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.htm">tf.keras.mixed_precision</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.experimental.htm">tf.keras.mixed_precision.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.models.htm">tf.keras.models</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.htm">tf.keras.optimizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.schedules.htm">tf.keras.optimizers.schedules</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.htm">tf.keras.preprocessing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.image.htm">tf.keras.preprocessing.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.regularizers.htm">tf.keras.regularizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.utils.htm" class="current">tf.keras.utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.htm">tf.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.experimental.htm">tf.layers.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.linalg.htm">tf.linalg</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.htm">tf.lite</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.htm">tf.lite.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.htm">tf.lite.experimental.microfrontend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.htm">tf.lite.experimental.microfrontend.python</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.ops.htm">tf.lite.experimental.microfrontend.python.ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.nn.htm">tf.lite.experimental.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.logging.htm">tf.logging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.losses.htm">tf.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.math.htm">tf.math</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.metrics.htm">tf.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nest.htm">tf.nest</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nn.htm">tf.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.profiler.htm">tf.profiler</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.quantization.htm">tf.quantization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.ragged.htm">tf.ragged</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.htm">tf.random</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.experimental.htm">tf.random.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.resource_loader.htm">tf.resource_loader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.htm">tf.saved_model</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.main_op.htm">tf.saved_model.main_op</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sets.htm">tf.sets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.signal.htm">tf.signal</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sparse.htm">tf.sparse</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.strings.htm">tf.strings</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.htm">tf.summary</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.experimental.htm">tf.summary.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sysconfig.htm">tf.sysconfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.test.htm">tf.test</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.htm">tf.tpu</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.experimental.htm">tf.tpu.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.htm">tf.train</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.experimental.htm">tf.train.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.user_ops.htm">tf.user_ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.htm">tf.xla</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.experimental.htm">tf.xla.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TFRecordReader.htm">TFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/truncated_normal_initializer.htm">truncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TypeSpec.htm">TypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/UnconnectedGradients.htm">UnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/uniform_unit_scaling_initializer.htm">uniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Variable.htm">Variable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variable_scope.htm">variable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableAggregation.htm">VariableAggregation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableScope.htm">VariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variance_scaling_initializer.htm">variance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VarLenFeature.htm">VarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/WholeFileReader.htm">WholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/zeros_initializer.htm">zeros_initializer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> tf.keras.utils</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.keras.utils.htm#convert_all_kernels_in_model">convert_all_kernels_in_model</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#convert_all_kernels_in_model_dyn">convert_all_kernels_in_model_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#custom_object_scope">custom_object_scope</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#custom_object_scope_dyn">custom_object_scope_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#deserialize_keras_object">deserialize_keras_object</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#deserialize_keras_object">deserialize_keras_object</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#deserialize_keras_object_dyn">deserialize_keras_object_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_custom_objects">get_custom_objects</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_custom_objects_dyn">get_custom_objects_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_file">get_file</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_file_dyn">get_file_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_source_inputs">get_source_inputs</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_source_inputs">get_source_inputs</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_source_inputs_dyn">get_source_inputs_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#model_to_dot">model_to_dot</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#model_to_dot">model_to_dot</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#model_to_dot_dyn">model_to_dot_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#multi_gpu_model">multi_gpu_model</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#multi_gpu_model">multi_gpu_model</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#multi_gpu_model">multi_gpu_model</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#multi_gpu_model_dyn">multi_gpu_model_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#normalize">normalize</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#normalize_dyn">normalize_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#plot_model">plot_model</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#plot_model_dyn">plot_model_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#serialize_keras_object">serialize_keras_object</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#serialize_keras_object">serialize_keras_object</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#serialize_keras_object_dyn">serialize_keras_object_dyn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#to_categorical">to_categorical</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#to_categorical_dyn">to_categorical_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.keras.utils.htm#convert_all_kernels_in_model_fn">convert_all_kernels_in_model_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#custom_object_scope_fn">custom_object_scope_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#deserialize_keras_object_fn">deserialize_keras_object_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_custom_objects_fn">get_custom_objects_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_file_fn">get_file_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#get_source_inputs_fn">get_source_inputs_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#model_to_dot_fn">model_to_dot_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#multi_gpu_model_fn">multi_gpu_model_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#normalize_fn">normalize_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#plot_model_fn">plot_model_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#serialize_keras_object_fn">serialize_keras_object_fn</a></li>
+				<li><a href="../tensorflow/tf.keras.utils.htm#to_categorical_fn">to_categorical_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="convert_all_kernels_in_model" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>convert_all_kernels_in_model</strong>(<span title="System.object">object</span> model)
+		</h4>
+		<div class="content">Converts all convolution kernels in a model from Theano to TensorFlow. <p></p> Also works from TensorFlow to Theano. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> model
+						</dt>
+						<dd>target model for the conversion. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="convert_all_kernels_in_model_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>convert_all_kernels_in_model_dyn</strong>(<span title="System.object">object</span> model)
+		</h4>
+		<div class="content">Converts all convolution kernels in a model from Theano to TensorFlow. <p></p> Also works from TensorFlow to Theano. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> model
+						</dt>
+						<dd>target model for the conversion. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="custom_object_scope" class="method">
+		<h4>
+			<a href="../tensorflow.keras.utils/CustomObjectScope.htm">CustomObjectScope</a> <strong>custom_object_scope</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Provides a scope that changes to `_GLOBAL_CUSTOM_OBJECTS` cannot escape. <p></p> Convenience wrapper for `CustomObjectScope`.
+Code within a `with` statement will be able to access custom objects
+by name. Changes to global custom objects persist
+within the enclosing `with` statement. At end of the `with` statement,
+global custom objects are reverted to state
+at beginning of the `with` statement. <p></p> Example: <p></p> Consider a custom object `MyObject` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>Variable length list of dictionaries of name,
+class pairs to add to custom objects. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.keras.utils/CustomObjectScope.htm">CustomObjectScope</a></code>
+					</dt>
+					<dd>Object of type `CustomObjectScope`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>with custom_object_scope({'MyObject':MyObject}):
+                layer = Dense(..., kernel_regularizer='MyObject')
+                # save, load, etc. will recognize custom object by name </pre>
+</div>
+		</div>
+	</div>
+	<div id="custom_object_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>custom_object_scope_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Provides a scope that changes to `_GLOBAL_CUSTOM_OBJECTS` cannot escape. <p></p> Convenience wrapper for `CustomObjectScope`.
+Code within a `with` statement will be able to access custom objects
+by name. Changes to global custom objects persist
+within the enclosing `with` statement. At end of the `with` statement,
+global custom objects are reverted to state
+at beginning of the `with` statement. <p></p> Example: <p></p> Consider a custom object `MyObject` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+						<dd>Variable length list of dictionaries of name,
+class pairs to add to custom objects. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Object of type `CustomObjectScope`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>with custom_object_scope({'MyObject':MyObject}):
+                layer = Dense(..., kernel_regularizer='MyObject')
+                # save, load, etc. will recognize custom object by name </pre>
+</div>
+		</div>
+	</div>
+	<div id="deserialize_keras_object" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>deserialize_keras_object</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> identifier, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> module_objects, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> custom_objects, <span title="System.string">string</span> printable_module_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="deserialize_keras_object" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>deserialize_keras_object</strong>(<span title="System.object">object</span> identifier, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> module_objects, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> custom_objects, <span title="System.string">string</span> printable_module_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="deserialize_keras_object_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>deserialize_keras_object_dyn</strong>(<span title="System.object">object</span> identifier, <span title="System.object">object</span> module_objects, <span title="System.object">object</span> custom_objects, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> printable_module_name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_custom_objects" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>get_custom_objects</strong>()
+		</h4>
+		<div class="content">Retrieves a live reference to the global dictionary of custom objects. <p></p> Updating and clearing custom objects using `custom_object_scope`
+is preferred, but `get_custom_objects` can
+be used to directly access `_GLOBAL_CUSTOM_OBJECTS`. <p></p> Example: 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span></code>
+					</dt>
+					<dd>Global dictionary of names to classes (`_GLOBAL_CUSTOM_OBJECTS`). 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>get_custom_objects().clear()
+            get_custom_objects()['MyObject'] = MyObject </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_custom_objects_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_custom_objects_dyn</strong>()
+		</h4>
+		<div class="content">Retrieves a live reference to the global dictionary of custom objects. <p></p> Updating and clearing custom objects using `custom_object_scope`
+is preferred, but `get_custom_objects` can
+be used to directly access `_GLOBAL_CUSTOM_OBJECTS`. <p></p> Example: 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Global dictionary of names to classes (`_GLOBAL_CUSTOM_OBJECTS`). 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>get_custom_objects().clear()
+            get_custom_objects()['MyObject'] = MyObject </pre>
+</div>
+		</div>
+	</div>
+	<div id="get_file" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_file</strong>(<span title="System.string">string</span> fname, <span title="System.string">string</span> origin, <span title="System.bool">bool</span> untar, <span title="System.string">string</span> md5_hash, <span title="System.string">string</span> file_hash, <span title="System.string">string</span> cache_subdir, <span title="System.string">string</span> hash_algorithm, <span title="System.bool">bool</span> extract, <span title="System.string">string</span> archive_format, <span title="System.object">object</span> cache_dir)
+		</h4>
+		<div class="content">Downloads a file from a URL if it not already in the cache. <p></p> By default the file at the url `origin` is downloaded to the
+cache_dir `~/.keras`, placed in the cache_subdir `datasets`,
+and given the filename `fname`. The final location of a file
+`example.txt` would therefore be `~/.keras/datasets/example.txt`. <p></p> Files in tar, tar.gz, tar.bz, and zip formats can also be extracted.
+Passing a hash will verify the file after download. The command line
+programs `shasum` and `sha256sum` can compute the hash. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> fname
+						</dt>
+						<dd>Name of the file. If an absolute path `/path/to/file.txt` is
+specified the file will be saved at that location. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> origin
+						</dt>
+						<dd>Original URL of the file. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> untar
+						</dt>
+						<dd>Deprecated in favor of 'extract'.
+boolean, whether the file should be decompressed 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> md5_hash
+						</dt>
+						<dd>Deprecated in favor of 'file_hash'.
+md5 hash of the file for verification 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> file_hash
+						</dt>
+						<dd>The expected hash string of the file after download.
+The sha256 and md5 hash algorithms are both supported. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> cache_subdir
+						</dt>
+						<dd>Subdirectory under the Keras cache dir where the file is
+saved. If an absolute path `/path/to/folder` is
+specified the file will be saved at that location. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> hash_algorithm
+						</dt>
+						<dd>Select the hash algorithm to verify the file.
+options are 'md5', 'sha256', and 'auto'.
+The default 'auto' detects the hash algorithm in use. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> extract
+						</dt>
+						<dd>True tries extracting the file as an Archive, like tar or zip. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> archive_format
+						</dt>
+						<dd>Archive format to try for extracting the file.
+Options are 'auto', 'tar', 'zip', and None.
+'tar' includes tar, tar.gz, and tar.bz files.
+The default 'auto' is ['tar', 'zip'].
+None or an empty list will return no matches found. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> cache_dir
+						</dt>
+						<dd>Location to store cached files, when None it
+defaults to the [Keras
+Directory](/faq/#where-is-the-keras-configuration-filed-stored). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Path to the downloaded file 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_file_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_file_dyn</strong>(<span title="System.object">object</span> fname, <span title="System.object">object</span> origin, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> untar, <span title="System.object">object</span> md5_hash, <span title="System.object">object</span> file_hash, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> cache_subdir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> hash_algorithm, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> extract, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> archive_format, <span title="System.object">object</span> cache_dir)
+		</h4>
+		<div class="content">Downloads a file from a URL if it not already in the cache. <p></p> By default the file at the url `origin` is downloaded to the
+cache_dir `~/.keras`, placed in the cache_subdir `datasets`,
+and given the filename `fname`. The final location of a file
+`example.txt` would therefore be `~/.keras/datasets/example.txt`. <p></p> Files in tar, tar.gz, tar.bz, and zip formats can also be extracted.
+Passing a hash will verify the file after download. The command line
+programs `shasum` and `sha256sum` can compute the hash. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fname
+						</dt>
+						<dd>Name of the file. If an absolute path `/path/to/file.txt` is
+specified the file will be saved at that location. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> origin
+						</dt>
+						<dd>Original URL of the file. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> untar
+						</dt>
+						<dd>Deprecated in favor of 'extract'.
+boolean, whether the file should be decompressed 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> md5_hash
+						</dt>
+						<dd>Deprecated in favor of 'file_hash'.
+md5 hash of the file for verification 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> file_hash
+						</dt>
+						<dd>The expected hash string of the file after download.
+The sha256 and md5 hash algorithms are both supported. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> cache_subdir
+						</dt>
+						<dd>Subdirectory under the Keras cache dir where the file is
+saved. If an absolute path `/path/to/folder` is
+specified the file will be saved at that location. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> hash_algorithm
+						</dt>
+						<dd>Select the hash algorithm to verify the file.
+options are 'md5', 'sha256', and 'auto'.
+The default 'auto' detects the hash algorithm in use. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> extract
+						</dt>
+						<dd>True tries extracting the file as an Archive, like tar or zip. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> archive_format
+						</dt>
+						<dd>Archive format to try for extracting the file.
+Options are 'auto', 'tar', 'zip', and None.
+'tar' includes tar, tar.gz, and tar.bz files.
+The default 'auto' is ['tar', 'zip'].
+None or an empty list will return no matches found. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> cache_dir
+						</dt>
+						<dd>Location to store cached files, when None it
+defaults to the [Keras
+Directory](/faq/#where-is-the-keras-configuration-filed-stored). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Path to the downloaded file 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_source_inputs" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_source_inputs</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.object">object</span> layer, <span title="System.object">object</span> node_index)
+		</h4>
+		<div class="content">Returns the list of input tensors necessary to compute `tensor`. <p></p> Output will always be a list of tensors
+(potentially with 1 element). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> tensor
+						</dt>
+						<dd>The tensor to start from. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> layer
+						</dt>
+						<dd>Origin layer of the tensor. Will be
+determined via tensor._keras_history if not provided. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> node_index
+						</dt>
+						<dd>Origin node index of the tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of input tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_source_inputs" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_source_inputs</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> tensor, <span title="System.object">object</span> layer, <span title="System.object">object</span> node_index)
+		</h4>
+		<div class="content">Returns the list of input tensors necessary to compute `tensor`. <p></p> Output will always be a list of tensors
+(potentially with 1 element). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span></code> tensor
+						</dt>
+						<dd>The tensor to start from. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> layer
+						</dt>
+						<dd>Origin layer of the tensor. Will be
+determined via tensor._keras_history if not provided. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> node_index
+						</dt>
+						<dd>Origin node index of the tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of input tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_source_inputs_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_source_inputs_dyn</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> layer, <span title="System.object">object</span> node_index)
+		</h4>
+		<div class="content">Returns the list of input tensors necessary to compute `tensor`. <p></p> Output will always be a list of tensors
+(potentially with 1 element). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>The tensor to start from. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> layer
+						</dt>
+						<dd>Origin layer of the tensor. Will be
+determined via tensor._keras_history if not provided. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> node_index
+						</dt>
+						<dd>Origin node index of the tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of input tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="model_to_dot" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_to_dot</strong>(<a href="../tensorflow.keras.layers/Layer.htm">Layer</a> model, <span title="System.bool">bool</span> show_shapes, <span title="System.bool">bool</span> show_layer_names, <span title="System.string">string</span> rankdir, <span title="System.bool">bool</span> expand_nested, <span title="System.int">int</span> dpi, <span title="System.bool">bool</span> subgraph)
+		</h4>
+		<div class="content">Convert a Keras model to dot format. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.keras.layers/Layer.htm">Layer</a></code> model
+						</dt>
+						<dd>A Keras model instance. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> show_shapes
+						</dt>
+						<dd>whether to display shape information. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> show_layer_names
+						</dt>
+						<dd>whether to display layer names. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> rankdir
+						</dt>
+						<dd>`rankdir` argument passed to PyDot,
+a string specifying the format of the plot:
+'TB' creates a vertical plot;
+'LR' creates a horizontal plot. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> expand_nested
+						</dt>
+						<dd>whether to expand nested models into clusters. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> dpi
+						</dt>
+						<dd>Dots per inch. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> subgraph
+						</dt>
+						<dd>whether to return a `pydot.Cluster` instance. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `pydot.Dot` instance representing the Keras model or
+a `pydot.Cluster` instance representing nested model if
+`subgraph=True`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="model_to_dot" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_to_dot</strong>(<a href="../tensorflow.python.keras.engine.network/Network.htm">Network</a> model, <span title="System.bool">bool</span> show_shapes, <span title="System.bool">bool</span> show_layer_names, <span title="System.string">string</span> rankdir, <span title="System.bool">bool</span> expand_nested, <span title="System.int">int</span> dpi, <span title="System.bool">bool</span> subgraph)
+		</h4>
+		<div class="content">Convert a Keras model to dot format. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.keras.engine.network/Network.htm">Network</a></code> model
+						</dt>
+						<dd>A Keras model instance. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> show_shapes
+						</dt>
+						<dd>whether to display shape information. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> show_layer_names
+						</dt>
+						<dd>whether to display layer names. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> rankdir
+						</dt>
+						<dd>`rankdir` argument passed to PyDot,
+a string specifying the format of the plot:
+'TB' creates a vertical plot;
+'LR' creates a horizontal plot. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> expand_nested
+						</dt>
+						<dd>whether to expand nested models into clusters. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> dpi
+						</dt>
+						<dd>Dots per inch. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> subgraph
+						</dt>
+						<dd>whether to return a `pydot.Cluster` instance. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `pydot.Dot` instance representing the Keras model or
+a `pydot.Cluster` instance representing nested model if
+`subgraph=True`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="model_to_dot_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_to_dot_dyn</strong>(<span title="System.object">object</span> model, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> show_shapes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> show_layer_names, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> rankdir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> expand_nested, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> dpi, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> subgraph)
+		</h4>
+		<div class="content">Convert a Keras model to dot format. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> model
+						</dt>
+						<dd>A Keras model instance. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> show_shapes
+						</dt>
+						<dd>whether to display shape information. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> show_layer_names
+						</dt>
+						<dd>whether to display layer names. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> rankdir
+						</dt>
+						<dd>`rankdir` argument passed to PyDot,
+a string specifying the format of the plot:
+'TB' creates a vertical plot;
+'LR' creates a horizontal plot. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> expand_nested
+						</dt>
+						<dd>whether to expand nested models into clusters. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> dpi
+						</dt>
+						<dd>Dots per inch. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> subgraph
+						</dt>
+						<dd>whether to return a `pydot.Cluster` instance. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `pydot.Dot` instance representing the Keras model or
+a `pydot.Cluster` instance representing nested model if
+`subgraph=True`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="multi_gpu_model" class="method">
+		<h4>
+			<a href="../tensorflow.keras/Model.htm">Model</a> <strong>multi_gpu_model</strong>(<a href="../tensorflow.keras/Model.htm">Model</a> model, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> gpus, <span title="System.bool">bool</span> cpu_merge, <span title="System.bool">bool</span> cpu_relocation)
+		</h4>
+		<div class="content">Replicates a model on different GPUs. <p></p> Specifically, this function implements single-machine
+multi-GPU data parallelism. It works in the following way: <p></p> - Divide the model's input(s) into multiple sub-batches.
+- Apply a model copy on each sub-batch. Every model copy
+is executed on a dedicated GPU.
+- Concatenate the results (on CPU) into one big batch. <p></p> E.g. if your `batch_size` is 64 and you use `gpus=2`,
+then we will divide the input into 2 sub-batches of 32 samples,
+process each sub-batch on one GPU, then return the full
+batch of 64 processed samples. <p></p> This induces quasi-linear speedup on up to 8 GPUs. <p></p> This function is only available with the TensorFlow backend
+for the time being. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.keras/Model.htm">Model</a></code> model
+						</dt>
+						<dd>A Keras model instance. To avoid OOM errors,
+this model could have been built on CPU, for instance
+(see usage example below). 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> gpus
+						</dt>
+						<dd>Integer >= 2, number of on GPUs on which to create
+model replicas. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> cpu_merge
+						</dt>
+						<dd>A boolean value to identify whether to force
+merging model weights under the scope of the CPU or not. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> cpu_relocation
+						</dt>
+						<dd>A boolean value to identify whether to
+create the model's weights under the scope of the CPU.
+If the model is not defined under any preceding device
+scope, you can still rescue it by activating this option. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.keras/Model.htm">Model</a></code>
+					</dt>
+					<dd>A Keras `Model` instance which can be used just like the initial
+`model` argument, but which distributes its workload on multiple GPUs. <p></p> Example 1: Training models with weights merge on CPU <p></p> ```python
+import tensorflow as tf
+from keras.applications import Xception
+from keras.utils import multi_gpu_model
+import numpy as np <p></p> num_samples = 1000
+height = 224
+width = 224
+num_classes = 1000 <p></p> # Instantiate the base model (or "template" model).
+# We recommend doing this with under a CPU device scope,
+# so that the model's weights are hosted on CPU memory.
+# Otherwise they may end up hosted on a GPU, which would
+# complicate weight sharing.
+with tf.device('/cpu:0'):
+model = Xception(weights=None,
+input_shape=(height, width, 3),
+classes=num_classes) <p></p> # Replicates the model on 8 GPUs.
+# This assumes that your machine has 8 available GPUs.
+parallel_model = multi_gpu_model(model, gpus=8)
+parallel_model.compile(loss='categorical_crossentropy',
+optimizer='rmsprop') <p></p> # Generate dummy data.
+x = np.random.random((num_samples, height, width, 3))
+y = np.random.random((num_samples, num_classes)) <p></p> # This `fit` call will be distributed on 8 GPUs.
+# Since the batch size is 256, each GPU will process 32 samples.
+parallel_model.fit(x, y, epochs=20, batch_size=256) <p></p> # Save model via the template model (which shares the same weights):
+model.save('my_model.h5')
+``` <p></p> Example 2: Training models with weights merge on CPU using cpu_relocation <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_relocation=True)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..") <p></p> model.compile(..)
+..
+``` <p></p> Example 3: Training models with weights merge on GPU (recommended for NV-link) <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_merge=False)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..")
+model.compile(..)
+..
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="multi_gpu_model" class="method">
+		<h4>
+			<a href="../tensorflow.keras/Model.htm">Model</a> <strong>multi_gpu_model</strong>(<a href="../tensorflow.keras/Model.htm">Model</a> model, <span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> gpus, <span title="System.bool">bool</span> cpu_merge, <span title="System.bool">bool</span> cpu_relocation)
+		</h4>
+		<div class="content">Replicates a model on different GPUs. <p></p> Specifically, this function implements single-machine
+multi-GPU data parallelism. It works in the following way: <p></p> - Divide the model's input(s) into multiple sub-batches.
+- Apply a model copy on each sub-batch. Every model copy
+is executed on a dedicated GPU.
+- Concatenate the results (on CPU) into one big batch. <p></p> E.g. if your `batch_size` is 64 and you use `gpus=2`,
+then we will divide the input into 2 sub-batches of 32 samples,
+process each sub-batch on one GPU, then return the full
+batch of 64 processed samples. <p></p> This induces quasi-linear speedup on up to 8 GPUs. <p></p> This function is only available with the TensorFlow backend
+for the time being. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.keras/Model.htm">Model</a></code> model
+						</dt>
+						<dd>A Keras model instance. To avoid OOM errors,
+this model could have been built on CPU, for instance
+(see usage example below). 
+						</dd>
+						<dt>
+							<code><span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span></code> gpus
+						</dt>
+						<dd>Integer >= 2, number of on GPUs on which to create
+model replicas. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> cpu_merge
+						</dt>
+						<dd>A boolean value to identify whether to force
+merging model weights under the scope of the CPU or not. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> cpu_relocation
+						</dt>
+						<dd>A boolean value to identify whether to
+create the model's weights under the scope of the CPU.
+If the model is not defined under any preceding device
+scope, you can still rescue it by activating this option. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.keras/Model.htm">Model</a></code>
+					</dt>
+					<dd>A Keras `Model` instance which can be used just like the initial
+`model` argument, but which distributes its workload on multiple GPUs. <p></p> Example 1: Training models with weights merge on CPU <p></p> ```python
+import tensorflow as tf
+from keras.applications import Xception
+from keras.utils import multi_gpu_model
+import numpy as np <p></p> num_samples = 1000
+height = 224
+width = 224
+num_classes = 1000 <p></p> # Instantiate the base model (or "template" model).
+# We recommend doing this with under a CPU device scope,
+# so that the model's weights are hosted on CPU memory.
+# Otherwise they may end up hosted on a GPU, which would
+# complicate weight sharing.
+with tf.device('/cpu:0'):
+model = Xception(weights=None,
+input_shape=(height, width, 3),
+classes=num_classes) <p></p> # Replicates the model on 8 GPUs.
+# This assumes that your machine has 8 available GPUs.
+parallel_model = multi_gpu_model(model, gpus=8)
+parallel_model.compile(loss='categorical_crossentropy',
+optimizer='rmsprop') <p></p> # Generate dummy data.
+x = np.random.random((num_samples, height, width, 3))
+y = np.random.random((num_samples, num_classes)) <p></p> # This `fit` call will be distributed on 8 GPUs.
+# Since the batch size is 256, each GPU will process 32 samples.
+parallel_model.fit(x, y, epochs=20, batch_size=256) <p></p> # Save model via the template model (which shares the same weights):
+model.save('my_model.h5')
+``` <p></p> Example 2: Training models with weights merge on CPU using cpu_relocation <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_relocation=True)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..") <p></p> model.compile(..)
+..
+``` <p></p> Example 3: Training models with weights merge on GPU (recommended for NV-link) <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_merge=False)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..")
+model.compile(..)
+..
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="multi_gpu_model" class="method">
+		<h4>
+			<a href="../tensorflow.keras/Model.htm">Model</a> <strong>multi_gpu_model</strong>(<a href="../tensorflow.keras/Model.htm">Model</a> model, <span title="System.int">int</span> gpus, <span title="System.bool">bool</span> cpu_merge, <span title="System.bool">bool</span> cpu_relocation)
+		</h4>
+		<div class="content">Replicates a model on different GPUs. <p></p> Specifically, this function implements single-machine
+multi-GPU data parallelism. It works in the following way: <p></p> - Divide the model's input(s) into multiple sub-batches.
+- Apply a model copy on each sub-batch. Every model copy
+is executed on a dedicated GPU.
+- Concatenate the results (on CPU) into one big batch. <p></p> E.g. if your `batch_size` is 64 and you use `gpus=2`,
+then we will divide the input into 2 sub-batches of 32 samples,
+process each sub-batch on one GPU, then return the full
+batch of 64 processed samples. <p></p> This induces quasi-linear speedup on up to 8 GPUs. <p></p> This function is only available with the TensorFlow backend
+for the time being. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.keras/Model.htm">Model</a></code> model
+						</dt>
+						<dd>A Keras model instance. To avoid OOM errors,
+this model could have been built on CPU, for instance
+(see usage example below). 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> gpus
+						</dt>
+						<dd>Integer >= 2, number of on GPUs on which to create
+model replicas. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> cpu_merge
+						</dt>
+						<dd>A boolean value to identify whether to force
+merging model weights under the scope of the CPU or not. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> cpu_relocation
+						</dt>
+						<dd>A boolean value to identify whether to
+create the model's weights under the scope of the CPU.
+If the model is not defined under any preceding device
+scope, you can still rescue it by activating this option. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.keras/Model.htm">Model</a></code>
+					</dt>
+					<dd>A Keras `Model` instance which can be used just like the initial
+`model` argument, but which distributes its workload on multiple GPUs. <p></p> Example 1: Training models with weights merge on CPU <p></p> ```python
+import tensorflow as tf
+from keras.applications import Xception
+from keras.utils import multi_gpu_model
+import numpy as np <p></p> num_samples = 1000
+height = 224
+width = 224
+num_classes = 1000 <p></p> # Instantiate the base model (or "template" model).
+# We recommend doing this with under a CPU device scope,
+# so that the model's weights are hosted on CPU memory.
+# Otherwise they may end up hosted on a GPU, which would
+# complicate weight sharing.
+with tf.device('/cpu:0'):
+model = Xception(weights=None,
+input_shape=(height, width, 3),
+classes=num_classes) <p></p> # Replicates the model on 8 GPUs.
+# This assumes that your machine has 8 available GPUs.
+parallel_model = multi_gpu_model(model, gpus=8)
+parallel_model.compile(loss='categorical_crossentropy',
+optimizer='rmsprop') <p></p> # Generate dummy data.
+x = np.random.random((num_samples, height, width, 3))
+y = np.random.random((num_samples, num_classes)) <p></p> # This `fit` call will be distributed on 8 GPUs.
+# Since the batch size is 256, each GPU will process 32 samples.
+parallel_model.fit(x, y, epochs=20, batch_size=256) <p></p> # Save model via the template model (which shares the same weights):
+model.save('my_model.h5')
+``` <p></p> Example 2: Training models with weights merge on CPU using cpu_relocation <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_relocation=True)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..") <p></p> model.compile(..)
+..
+``` <p></p> Example 3: Training models with weights merge on GPU (recommended for NV-link) <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_merge=False)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..")
+model.compile(..)
+..
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="multi_gpu_model_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>multi_gpu_model_dyn</strong>(<span title="System.object">object</span> model, <span title="System.object">object</span> gpus, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> cpu_merge, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> cpu_relocation)
+		</h4>
+		<div class="content">Replicates a model on different GPUs. <p></p> Specifically, this function implements single-machine
+multi-GPU data parallelism. It works in the following way: <p></p> - Divide the model's input(s) into multiple sub-batches.
+- Apply a model copy on each sub-batch. Every model copy
+is executed on a dedicated GPU.
+- Concatenate the results (on CPU) into one big batch. <p></p> E.g. if your `batch_size` is 64 and you use `gpus=2`,
+then we will divide the input into 2 sub-batches of 32 samples,
+process each sub-batch on one GPU, then return the full
+batch of 64 processed samples. <p></p> This induces quasi-linear speedup on up to 8 GPUs. <p></p> This function is only available with the TensorFlow backend
+for the time being. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> model
+						</dt>
+						<dd>A Keras model instance. To avoid OOM errors,
+this model could have been built on CPU, for instance
+(see usage example below). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> gpus
+						</dt>
+						<dd>Integer >= 2, number of on GPUs on which to create
+model replicas. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> cpu_merge
+						</dt>
+						<dd>A boolean value to identify whether to force
+merging model weights under the scope of the CPU or not. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> cpu_relocation
+						</dt>
+						<dd>A boolean value to identify whether to
+create the model's weights under the scope of the CPU.
+If the model is not defined under any preceding device
+scope, you can still rescue it by activating this option. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A Keras `Model` instance which can be used just like the initial
+`model` argument, but which distributes its workload on multiple GPUs. <p></p> Example 1: Training models with weights merge on CPU <p></p> ```python
+import tensorflow as tf
+from keras.applications import Xception
+from keras.utils import multi_gpu_model
+import numpy as np <p></p> num_samples = 1000
+height = 224
+width = 224
+num_classes = 1000 <p></p> # Instantiate the base model (or "template" model).
+# We recommend doing this with under a CPU device scope,
+# so that the model's weights are hosted on CPU memory.
+# Otherwise they may end up hosted on a GPU, which would
+# complicate weight sharing.
+with tf.device('/cpu:0'):
+model = Xception(weights=None,
+input_shape=(height, width, 3),
+classes=num_classes) <p></p> # Replicates the model on 8 GPUs.
+# This assumes that your machine has 8 available GPUs.
+parallel_model = multi_gpu_model(model, gpus=8)
+parallel_model.compile(loss='categorical_crossentropy',
+optimizer='rmsprop') <p></p> # Generate dummy data.
+x = np.random.random((num_samples, height, width, 3))
+y = np.random.random((num_samples, num_classes)) <p></p> # This `fit` call will be distributed on 8 GPUs.
+# Since the batch size is 256, each GPU will process 32 samples.
+parallel_model.fit(x, y, epochs=20, batch_size=256) <p></p> # Save model via the template model (which shares the same weights):
+model.save('my_model.h5')
+``` <p></p> Example 2: Training models with weights merge on CPU using cpu_relocation <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_relocation=True)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..") <p></p> model.compile(..)
+..
+``` <p></p> Example 3: Training models with weights merge on GPU (recommended for NV-link) <p></p> ```python
+..
+# Not needed to change the device scope for model definition:
+model = Xception(weights=None,..) <p></p> try:
+model = multi_gpu_model(model, cpu_merge=False)
+print("Training using multiple GPUs..")
+except:
+print("Training using single GPU or CPU..")
+model.compile(..)
+..
+``` 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>normalize</strong>(<span title="System.object">object</span> x, <span title="System.int">int</span> axis, <span title="System.int">int</span> order)
+		</h4>
+		<div class="content">Normalizes a Numpy array. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>Numpy array to normalize. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> axis
+						</dt>
+						<dd>axis along which to normalize. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> order
+						</dt>
+						<dd>Normalization order (e.g. 2 for L2 norm). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A normalized copy of the array. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="normalize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>normalize_dyn</strong>(<span title="System.object">object</span> x, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> axis, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> order)
+		</h4>
+		<div class="content">Normalizes a Numpy array. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>Numpy array to normalize. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> axis
+						</dt>
+						<dd>axis along which to normalize. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> order
+						</dt>
+						<dd>Normalization order (e.g. 2 for L2 norm). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A normalized copy of the array. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="plot_model" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>plot_model</strong>(<a href="../tensorflow.keras/Model.htm">Model</a> model, <span title="System.string">string</span> to_file, <span title="System.bool">bool</span> show_shapes, <span title="System.bool">bool</span> show_layer_names, <span title="System.string">string</span> rankdir, <span title="System.bool">bool</span> expand_nested, <span title="System.int">int</span> dpi)
+		</h4>
+		<div class="content">Converts a Keras model to dot format and save to a file. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.keras/Model.htm">Model</a></code> model
+						</dt>
+						<dd>A Keras model instance 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> to_file
+						</dt>
+						<dd>File name of the plot image. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> show_shapes
+						</dt>
+						<dd>whether to display shape information. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> show_layer_names
+						</dt>
+						<dd>whether to display layer names. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> rankdir
+						</dt>
+						<dd>`rankdir` argument passed to PyDot,
+a string specifying the format of the plot:
+'TB' creates a vertical plot;
+'LR' creates a horizontal plot. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> expand_nested
+						</dt>
+						<dd>Whether to expand nested models into clusters. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> dpi
+						</dt>
+						<dd>Dots per inch. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.void">void</span></code>
+					</dt>
+					<dd>A Jupyter notebook Image object if Jupyter is installed.
+This enables in-line display of the model plots in notebooks. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="plot_model_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>plot_model_dyn</strong>(<span title="System.object">object</span> model, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> to_file, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> show_shapes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> show_layer_names, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> rankdir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> expand_nested, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> dpi)
+		</h4>
+		<div class="content">Converts a Keras model to dot format and save to a file. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> model
+						</dt>
+						<dd>A Keras model instance 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> to_file
+						</dt>
+						<dd>File name of the plot image. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> show_shapes
+						</dt>
+						<dd>whether to display shape information. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> show_layer_names
+						</dt>
+						<dd>whether to display layer names. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> rankdir
+						</dt>
+						<dd>`rankdir` argument passed to PyDot,
+a string specifying the format of the plot:
+'TB' creates a vertical plot;
+'LR' creates a horizontal plot. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> expand_nested
+						</dt>
+						<dd>Whether to expand nested models into clusters. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> dpi
+						</dt>
+						<dd>Dots per inch. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A Jupyter notebook Image object if Jupyter is installed.
+This enables in-line display of the model plots in notebooks. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="serialize_keras_object" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>serialize_keras_object</strong>(<span title="System.object">object</span> instance)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="serialize_keras_object" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>serialize_keras_object</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> instance)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="serialize_keras_object_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>serialize_keras_object_dyn</strong>(<span title="System.object">object</span> instance)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="to_categorical" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>to_categorical</strong>(<a href="../numpy/ndarray.htm">ndarray</a> y, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_classes, <span title="System.string">string</span> dtype)
+		</h4>
+		<div class="content">Converts a class vector (integers) to binary class matrix. <p></p> E.g. for use with categorical_crossentropy. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../numpy/ndarray.htm">ndarray</a></code> y
+						</dt>
+						<dd>class vector to be converted into a matrix
+(integers from 0 to num_classes). 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> num_classes
+						</dt>
+						<dd>total number of classes. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> dtype
+						</dt>
+						<dd>The data type expected by the input. Default: `'float32'`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A binary matrix representation of the input. The classes axis is placed
+last. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="to_categorical_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>to_categorical_dyn</strong>(<span title="System.object">object</span> y, <span title="System.object">object</span> num_classes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> dtype)
+		</h4>
+		<div class="content">Converts a class vector (integers) to binary class matrix. <p></p> E.g. for use with categorical_crossentropy. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> y
+						</dt>
+						<dd>class vector to be converted into a matrix
+(integers from 0 to num_classes). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_classes
+						</dt>
+						<dd>total number of classes. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> dtype
+						</dt>
+						<dd>The data type expected by the input. Default: `'float32'`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A binary matrix representation of the input. The classes axis is placed
+last. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="convert_all_kernels_in_model_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>convert_all_kernels_in_model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="custom_object_scope_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>custom_object_scope_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="deserialize_keras_object_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>deserialize_keras_object_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_custom_objects_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_custom_objects_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_file_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_file_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_source_inputs_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_source_inputs_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_to_dot_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>model_to_dot_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="multi_gpu_model_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>multi_gpu_model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="normalize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>normalize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="plot_model_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>plot_model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="serialize_keras_object_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>serialize_keras_object_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="to_categorical_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>to_categorical_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

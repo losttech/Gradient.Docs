@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>TowerOptimizer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow_estimator.contrib.estimator</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/_MultiHead.htm">_MultiHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/_MultiLabelHead.htm">_MultiLabelHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/_TransformGradients.htm">_TransformGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/_VariableDistributionMode.htm">_VariableDistributionMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/estimator.htm">estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/I_MultiHead.htm">I_MultiHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/I_MultiLabelHead.htm">I_MultiLabelHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/I_TransformGradients.htm">I_TransformGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/I_VariableDistributionMode.htm">I_VariableDistributionMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/ILayerAnnotationsCollectionNames.htm">ILayerAnnotationsCollectionNames</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/IRNNClassifier.htm">IRNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/IRNNEstimator.htm">IRNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/IServingInputReceiver.htm">IServingInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/ISupervisedInputReceiver.htm">ISupervisedInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/ITensorServingInputReceiver.htm">ITensorServingInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/ITowerOptimizer.htm">ITowerOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/IUnsupervisedInputReceiver.htm">IUnsupervisedInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/LayerAnnotationsCollectionNames.htm">LayerAnnotationsCollectionNames</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/multi_head.htm">multi_head</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/RNNClassifier.htm">RNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/RNNEstimator.htm">RNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/ServingInputReceiver.htm">ServingInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/SupervisedInputReceiver.htm">SupervisedInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/TensorServingInputReceiver.htm">TensorServingInputReceiver</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm" class="current">TowerOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer._PerGraphState.htm">TowerOptimizer._PerGraphState</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.I_PerGraphState.htm">TowerOptimizer.I_PerGraphState</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.contrib.estimator/UnsupervisedInputReceiver.htm">UnsupervisedInputReceiver</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> TowerOptimizer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow_estimator.contrib.estimator</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.train/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow_estimator.contrib.estimator/ITowerOptimizer.htm">ITowerOptimizer</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#apply_gradients_dyn">apply_gradients_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#compute_gradients">compute_gradients</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#compute_gradients_dyn">compute_gradients_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#compute_gradients_dyn">compute_gradients_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#compute_gradients_dyn">compute_gradients_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#get_name">get_name</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#get_name">get_name</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#get_name_dyn">get_name_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#get_name_dyn">get_name_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#has_been_used">has_been_used</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#has_been_used_dyn">has_been_used_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#variables">variables</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#variables">variables</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#variables_dyn">variables_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#COLLECTION_FOR_GRAPH_STATES_dyn">COLLECTION_FOR_GRAPH_STATES_dyn</a></li>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm#COLLECTION_FOR_GRAPH_STATES">COLLECTION_FOR_GRAPH_STATES</a></li>
+			</ul>
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> global_step, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs as returned by
+`compute_gradients()`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> global_step
+						</dt>
+						<dd>Optional `Variable` to increment by one after the
+variables have been updated. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the
+name passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. If `global_step`
+was not None, that operation also increments `global_step`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <span title="System.int">int</span> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <span title="System.int">int</span> global_step, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs as returned by
+`compute_gradients()`. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> global_step
+						</dt>
+						<dd>Optional `Variable` to increment by one after the
+variables have been updated. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the
+name passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. If `global_step`
+was not None, that operation also increments `global_step`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <span title="System.int">int</span> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <span title="System.int">int</span> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> global_step, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs as returned by
+`compute_gradients()`. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a></code> global_step
+						</dt>
+						<dd>Optional `Variable` to increment by one after the
+variables have been updated. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the
+name passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. If `global_step`
+was not None, that operation also increments `global_step`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients_dyn</strong>(<span title="System.object">object</span> grads_and_vars, <span title="System.object">object</span> global_step, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Compute gradients of `loss` for the variables in `var_list`. <p></p> This is the first part of `minimize()`.  It returns a list
+of (gradient, variable) pairs where "gradient" is the gradient
+for "variable".  Note that "gradient" can be a `Tensor`, an
+`IndexedSlices`, or `None` if there is no gradient for the
+given variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize or a callable taking
+no arguments which returns the value to minimize. When eager execution
+is enabled it must be a callable. 
+						</dd>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. Variable is always present, but
+gradient can be `None`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<span title="System.object">object</span> loss, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> var_list, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> gate_gradients, <span title="System.object">object</span> aggregation_method, <span title="System.bool">bool</span> colocate_gradients_with_ops, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> grad_loss)
+		</h4>
+		<div class="content">Compute gradients of `loss` for the variables in `var_list`. <p></p> This is the first part of `minimize()`.  It returns a list
+of (gradient, variable) pairs where "gradient" is the gradient
+for "variable".  Note that "gradient" can be a `Tensor`, an
+`IndexedSlices`, or `None` if there is no gradient for the
+given variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize or a callable taking
+no arguments which returns the value to minimize. When eager execution
+is enabled it must be a callable. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKeys.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> gate_gradients
+						</dt>
+						<dd>How to gate the computation of gradients.  Can be
+`GATE_NONE`, `GATE_OP`, or `GATE_GRAPH`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> aggregation_method
+						</dt>
+						<dd>Specifies the method used to combine gradient terms.
+Valid values are defined in the class `AggregationMethod`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> colocate_gradients_with_ops
+						</dt>
+						<dd>If True, try colocating gradients with
+the corresponding op. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> grad_loss
+						</dt>
+						<dd>Optional. A `Tensor` holding the gradient computed for `loss`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. Variable is always present, but
+gradient can be `None`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> loss, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Compute gradients of `loss` for the variables in `var_list`. <p></p> This is the first part of `minimize()`.  It returns a list
+of (gradient, variable) pairs where "gradient" is the gradient
+for "variable".  Note that "gradient" can be a `Tensor`, an
+`IndexedSlices`, or `None` if there is no gradient for the
+given variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize or a callable taking
+no arguments which returns the value to minimize. When eager execution
+is enabled it must be a callable. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. Variable is always present, but
+gradient can be `None`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.object">object</span> var_list, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> gate_gradients, <span title="System.object">object</span> aggregation_method, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> colocate_gradients_with_ops, <span title="System.object">object</span> grad_loss)
+		</h4>
+		<div class="content">Compute gradients of `loss` for the variables in `var_list`. <p></p> This is the first part of `minimize()`.  It returns a list
+of (gradient, variable) pairs where "gradient" is the gradient
+for "variable".  Note that "gradient" can be a `Tensor`, an
+`IndexedSlices`, or `None` if there is no gradient for the
+given variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize or a callable taking
+no arguments which returns the value to minimize. When eager execution
+is enabled it must be a callable. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> var_list
+						</dt>
+						<dd>Optional list or tuple of <a href="..\..\tf\Variable.md"><code>tf.Variable</code></a> to update to minimize
+`loss`.  Defaults to the list of variables collected in the graph
+under the key `GraphKeys.TRAINABLE_VARIABLES`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> gate_gradients
+						</dt>
+						<dd>How to gate the computation of gradients.  Can be
+`GATE_NONE`, `GATE_OP`, or `GATE_GRAPH`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> aggregation_method
+						</dt>
+						<dd>Specifies the method used to combine gradient terms.
+Valid values are defined in the class `AggregationMethod`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> colocate_gradients_with_ops
+						</dt>
+						<dd>If True, try colocating gradients with
+the corresponding op. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> grad_loss
+						</dt>
+						<dd>Optional. A `Tensor` holding the gradient computed for `loss`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. Variable is always present, but
+gradient can be `None`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Compute gradients of `loss` for the variables in `var_list`. <p></p> This is the first part of `minimize()`.  It returns a list
+of (gradient, variable) pairs where "gradient" is the gradient
+for "variable".  Note that "gradient" can be a `Tensor`, an
+`IndexedSlices`, or `None` if there is no gradient for the
+given variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize or a callable taking
+no arguments which returns the value to minimize. When eager execution
+is enabled it must be a callable. 
+						</dd>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. Variable is always present, but
+gradient can be `None`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="compute_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>compute_gradients_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">Compute gradients of `loss` for the variables in `var_list`. <p></p> This is the first part of `minimize()`.  It returns a list
+of (gradient, variable) pairs where "gradient" is the gradient
+for "variable".  Note that "gradient" can be a `Tensor`, an
+`IndexedSlices`, or `None` if there is no gradient for the
+given variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A Tensor containing the value to minimize or a callable taking
+no arguments which returns the value to minimize. When eager execution
+is enabled it must be a callable. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dt>
+							<code><span title="System.Object[]">Object[]</span></code> args
+						</dt>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A list of (gradient, variable) pairs. Variable is always present, but
+gradient can be `None`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>get_name</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>get_name</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_name_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_name_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="has_been_used" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>has_been_used</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="has_been_used_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>has_been_used_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow_estimator.contrib.estimator/TowerOptimizer.htm">TowerOptimizer</a> <strong>NewDyn</strong>(<span title="System.object">object</span> optimizer_or_optimizer_fn)
+		</h4>
+		<div class="content">Creates a `ClusterSpec`. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="COLLECTION_FOR_GRAPH_STATES_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>COLLECTION_FOR_GRAPH_STATES_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="COLLECTION_FOR_GRAPH_STATES" class="method">
+    <h4>string <strong>COLLECTION_FOR_GRAPH_STATES</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

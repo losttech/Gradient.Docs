@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>ExponentialMovingAverage - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.train</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.train/AdadeltaOptimizer.htm">AdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradDAOptimizer.htm">AdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdagradOptimizer.htm">AdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/AdamOptimizer.htm">AdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Checkpoint.htm">Checkpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointManager.htm">CheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverHook.htm">CheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/CheckpointSaverListener.htm">CheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ChiefSessionCreator.htm">ChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ClusterSpec.htm">ClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Coordinator.htm">Coordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ExponentialMovingAverage.htm" class="current">ExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FeedFnHook.htm">FeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FinalOpsHook.htm">FinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/FtrlOptimizer.htm">FtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GlobalStepWaiterHook.htm">GlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/GradientDescentOptimizer.htm">GradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdadeltaOptimizer.htm">IAdadeltaOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradDAOptimizer.htm">IAdagradDAOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdagradOptimizer.htm">IAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IAdamOptimizer.htm">IAdamOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpoint.htm">ICheckpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointManager.htm">ICheckpointManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverHook.htm">ICheckpointSaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICheckpointSaverListener.htm">ICheckpointSaverListener</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IChiefSessionCreator.htm">IChiefSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IClusterSpec.htm">IClusterSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ICoordinator.htm">ICoordinator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IExponentialMovingAverage.htm">IExponentialMovingAverage</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFeedFnHook.htm">IFeedFnHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFinalOpsHook.htm">IFinalOpsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IFtrlOptimizer.htm">IFtrlOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGlobalStepWaiterHook.htm">IGlobalStepWaiterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IGradientDescentOptimizer.htm">IGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILoggingTensorHook.htm">ILoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ILooperThread.htm">ILooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMomentumOptimizer.htm">IMomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IMonitoredSession.htm">IMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/INanTensorHook.htm">INanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProfilerHook.htm">IProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalAdagradOptimizer.htm">IProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IProximalGradientDescentOptimizer.htm">IProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IQueueRunner.htm">IQueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IRMSPropOptimizer.htm">IRMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISaver.htm">ISaver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IScaffold.htm">IScaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISecondOrStepTimer.htm">ISecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IServer.htm">IServer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionCreator.htm">ISessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionManager.htm">ISessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunArgs.htm">ISessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunContext.htm">ISessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunHook.htm">ISessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISessionRunValues.htm">ISessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISingularMonitoredSession.htm">ISingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStepCounterHook.htm">IStepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IStopAtStepHook.htm">IStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISummarySaverHook.htm">ISummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISupervisor.htm">ISupervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ISyncReplicasOptimizer.htm">ISyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IVocabInfo.htm">IVocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/IWorkerSessionCreator.htm">IWorkerSessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LoggingTensorHook.htm">LoggingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/LooperThread.htm">LooperThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MomentumOptimizer.htm">MomentumOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/MonitoredSession.htm">MonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/NanTensorHook.htm">NanTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProfilerHook.htm">ProfilerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalAdagradOptimizer.htm">ProximalAdagradOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/ProximalGradientDescentOptimizer.htm">ProximalGradientDescentOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/QueueRunner.htm">QueueRunner</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/RMSPropOptimizer.htm">RMSPropOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Saver.htm">Saver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Scaffold.htm">Scaffold</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SecondOrStepTimer.htm">SecondOrStepTimer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Server.htm">Server</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionCreator.htm">SessionCreator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionManager.htm">SessionManager</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunArgs.htm">SessionRunArgs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunContext.htm">SessionRunContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunHook.htm">SessionRunHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SessionRunValues.htm">SessionRunValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SingularMonitoredSession.htm">SingularMonitoredSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StepCounterHook.htm">StepCounterHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/StopAtStepHook.htm">StopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SummarySaverHook.htm">SummarySaverHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/Supervisor.htm">Supervisor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/SyncReplicasOptimizer.htm">SyncReplicasOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/train.htm">train</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/VocabInfo.htm">VocabInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.train/WorkerSessionCreator.htm">WorkerSessionCreator</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> ExponentialMovingAverage</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.train</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.train/IExponentialMovingAverage.htm">IExponentialMovingAverage</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Maintains moving averages of variables by employing an exponential decay. <p></p> When training a model, it is often beneficial to maintain moving averages of
+the trained parameters.  Evaluations that use averaged parameters sometimes
+produce significantly better results than the final trained values. <p></p> The `apply()` method adds shadow copies of trained variables and add ops that
+maintain a moving average of the trained variables in their shadow copies.
+It is used when building the training model.  The ops that maintain moving
+averages are typically run after each training step.
+The `average()` and `average_name()` methods give access to the shadow
+variables and their names.  They are useful when building an evaluation
+model, or when restoring a model from a checkpoint file.  They help use the
+moving averages in place of the last trained values for evaluations. <p></p> The moving averages are computed using exponential decay.  You specify the
+decay value when creating the `ExponentialMovingAverage` object.  The shadow
+variables are initialized with the same initial values as the trained
+variables.  When you run the ops to maintain the moving averages, each
+shadow variable is updated with the formula: <p></p> `shadow_variable -= (1 - decay) * (shadow_variable - variable)` <p></p> This is mathematically equivalent to the classic formula below, but the use
+of an `assign_sub` op (the `"-="` in the formula) allows concurrent lockless
+updates to the variables: <p></p> `shadow_variable = decay * shadow_variable + (1 - decay) * variable` <p></p> Reasonable values for `decay` are close to 1.0, typically in the
+multiple-nines range: 0.999, 0.9999, etc. <p></p> Example usage when creating a training model:
+There are two ways to use the moving averages for evaluations: <p></p> *  Build a model that uses the shadow variables instead of the variables.
+For this, use the `average()` method which returns the shadow variable
+for a given variable.
+*  Build a model normally but load the checkpoint files to evaluate by using
+the shadow variable names.  For this use the `average_name()` method.  See
+the `tf.compat.v1.train.Saver` for more
+information on restoring saved variables. <p></p> Example of restoring the shadow variable values: <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Create variables.
+            var0 = tf.Variable(...)
+            var1 = tf.Variable(...)
+            #... use the variables to build a training model...
+           ...
+            # Create an op that applies the optimizer.  This is what we usually
+            # would use as a training op.
+            opt_op = opt.minimize(my_loss, [var0, var1]) <p></p> # Create an ExponentialMovingAverage object
+ema = tf.train.ExponentialMovingAverage(decay=0.9999) <p></p> with tf.control_dependencies([opt_op]):
+    # Create the shadow variables, and add ops to maintain moving averages
+    # of var0 and var1. This also creates an op that will update the moving
+    # averages after each training step.  This is what we will use in place
+    # of the usual training op.
+    training_op = ema.apply([var0, var1]) <p></p>...train the model by running training_op... </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#apply">apply</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#apply_dyn">apply_dyn</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#average">average</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#average_dyn">average_dyn</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#average_name">average_name</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#average_name_dyn">average_name_dyn</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#variables_to_restore">variables_to_restore</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#variables_to_restore_dyn">variables_to_restore_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#name">name</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.train/ExponentialMovingAverage.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="apply" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply</strong>(<span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span> var_list)
+		</h4>
+		<div class="content">Maintains moving averages of variables. <p></p> `var_list` must be a list of `Variable` or `Tensor` objects.  This method
+creates shadow variables for all elements of `var_list`.  Shadow variables
+for `Variable` objects are initialized to the variable's initial value.
+They will be added to the `GraphKeys.MOVING_AVERAGE_VARIABLES` collection.
+For `Tensor` objects, the shadow variables are initialized to 0 and zero
+debiased (see docstring in `assign_moving_average` for more details). <p></p> shadow variables are created with `trainable=False` and added to the
+`GraphKeys.ALL_VARIABLES` collection.  They will be returned by calls to
+`tf.compat.v1.global_variables()`. <p></p> Returns an op that updates all shadow variables from the current value of
+their associated variables. <p></p> Note that `apply()` can be called multiple times. When eager execution is
+enabled each call to apply will update the variables once, so this needs to
+be called in a loop. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span></code> var_list
+						</dt>
+						<dd>A list of Variable or Tensor objects. The variables and Tensors
+must be of types bfloat16, float16, float32, or float64. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that updates the moving averages. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_dyn</strong>(<span title="System.object">object</span> var_list)
+		</h4>
+		<div class="content">Maintains moving averages of variables. <p></p> `var_list` must be a list of `Variable` or `Tensor` objects.  This method
+creates shadow variables for all elements of `var_list`.  Shadow variables
+for `Variable` objects are initialized to the variable's initial value.
+They will be added to the `GraphKeys.MOVING_AVERAGE_VARIABLES` collection.
+For `Tensor` objects, the shadow variables are initialized to 0 and zero
+debiased (see docstring in `assign_moving_average` for more details). <p></p> shadow variables are created with `trainable=False` and added to the
+`GraphKeys.ALL_VARIABLES` collection.  They will be returned by calls to
+`tf.compat.v1.global_variables()`. <p></p> Returns an op that updates all shadow variables from the current value of
+their associated variables. <p></p> Note that `apply()` can be called multiple times. When eager execution is
+enabled each call to apply will update the variables once, so this needs to
+be called in a loop. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> var_list
+						</dt>
+						<dd>A list of Variable or Tensor objects. The variables and Tensors
+must be of types bfloat16, float16, float32, or float64. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that updates the moving averages. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="average" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>average</strong>(<a href="../tensorflow.compat.v2/Variable.htm">Variable</a> var)
+		</h4>
+		<div class="content">Returns the `Variable` holding the average of `var`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.compat.v2/Variable.htm">Variable</a></code> var
+						</dt>
+						<dd>A `Variable` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Variable` object or `None` if the moving average of `var`
+is not maintained. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="average_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>average_dyn</strong>(<span title="System.object">object</span> var)
+		</h4>
+		<div class="content">Returns the `Variable` holding the average of `var`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> var
+						</dt>
+						<dd>A `Variable` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Variable` object or `None` if the moving average of `var`
+is not maintained. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="average_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>average_name</strong>(<a href="../tensorflow.compat.v2/Variable.htm">Variable</a> var)
+		</h4>
+		<div class="content">Returns the name of the `Variable` holding the average for `var`. <p></p> The typical scenario for `ExponentialMovingAverage` is to compute moving
+averages of variables during training, and restore the variables from the
+computed moving averages during evaluations. <p></p> To restore variables, you have to know the name of the shadow variables.
+That name and the original variable can then be passed to a `Saver()` object
+to restore the variable from the moving average value with:
+`saver = tf.compat.v1.train.Saver({ema.average_name(var): var})` <p></p> `average_name()` can be called whether or not `apply()` has been called. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.compat.v2/Variable.htm">Variable</a></code> var
+						</dt>
+						<dd>A `Variable` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.string">string</span></code>
+					</dt>
+					<dd>A string: The name of the variable that will be used or was used
+by the `ExponentialMovingAverage class` to hold the moving average of
+`var`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="average_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>average_name_dyn</strong>(<span title="System.object">object</span> var)
+		</h4>
+		<div class="content">Returns the name of the `Variable` holding the average for `var`. <p></p> The typical scenario for `ExponentialMovingAverage` is to compute moving
+averages of variables during training, and restore the variables from the
+computed moving averages during evaluations. <p></p> To restore variables, you have to know the name of the shadow variables.
+That name and the original variable can then be passed to a `Saver()` object
+to restore the variable from the moving average value with:
+`saver = tf.compat.v1.train.Saver({ema.average_name(var): var})` <p></p> `average_name()` can be called whether or not `apply()` has been called. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> var
+						</dt>
+						<dd>A `Variable` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A string: The name of the variable that will be used or was used
+by the `ExponentialMovingAverage class` to hold the moving average of
+`var`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="variables_to_restore" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, Variable>">IDictionary&lt;object, Variable&gt;</span> <strong>variables_to_restore</strong>(<span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span> moving_avg_variables)
+		</h4>
+		<div class="content">Returns a map of names to `Variables` to restore. <p></p> If a variable has a moving average, use the moving average variable name as
+the restore name; otherwise, use the variable name. <p></p> For example,
+Below is an example of such mapping: <p></p> ```
+conv/batchnorm/gamma/ExponentialMovingAverage: conv/batchnorm/gamma,
+conv_4/conv2d_params/ExponentialMovingAverage: conv_4/conv2d_params,
+global_step: global_step
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span></code> moving_avg_variables
+						</dt>
+						<dd>a list of variables that require to use of the
+moving average variable name to be restored. If None, it will default to
+variables.moving_average_variables() + variables.trainable_variables() 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IDictionary<object, Variable>">IDictionary&lt;object, Variable&gt;</span></code>
+					</dt>
+					<dd>A map from restore_names to variables. The restore_name is either the
+original or the moving average version of the variable name, depending
+on whether the variable name is in the `moving_avg_variables`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>variables_to_restore = ema.variables_to_restore()
+            saver = tf.compat.v1.train.Saver(variables_to_restore) </pre>
+</div>
+		</div>
+	</div>
+	<div id="variables_to_restore_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_to_restore_dyn</strong>(<span title="System.object">object</span> moving_avg_variables)
+		</h4>
+		<div class="content">Returns a map of names to `Variables` to restore. <p></p> If a variable has a moving average, use the moving average variable name as
+the restore name; otherwise, use the variable name. <p></p> For example,
+Below is an example of such mapping: <p></p> ```
+conv/batchnorm/gamma/ExponentialMovingAverage: conv/batchnorm/gamma,
+conv_4/conv2d_params/ExponentialMovingAverage: conv_4/conv2d_params,
+global_step: global_step
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> moving_avg_variables
+						</dt>
+						<dd>a list of variables that require to use of the
+moving average variable name to be restored. If None, it will default to
+variables.moving_average_variables() + variables.trainable_variables() 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A map from restore_names to variables. The restore_name is either the
+original or the moving average version of the variable name, depending
+on whether the variable name is in the `moving_avg_variables`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>variables_to_restore = ema.variables_to_restore()
+            saver = tf.compat.v1.train.Saver(variables_to_restore) </pre>
+</div>
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">The name of this ExponentialMovingAverage object. 
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">The name of this ExponentialMovingAverage object. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

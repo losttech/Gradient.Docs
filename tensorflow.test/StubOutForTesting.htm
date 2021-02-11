@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>StubOutForTesting - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.test</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.test/Benchmark.htm">Benchmark</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/IBenchmark.htm">IBenchmark</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/IStubOutForTesting.htm">IStubOutForTesting</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/ITestCase.htm">ITestCase</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/StubOutForTesting.htm" class="current">StubOutForTesting</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/TestCase.htm">TestCase</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/TestCase._CheckedThread.htm">TestCase._CheckedThread</a>
+        </li>
+				<li>
+            <a href="../tensorflow.test/TestCase.I_CheckedThread.htm">TestCase.I_CheckedThread</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> StubOutForTesting</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.test</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.test/IStubOutForTesting.htm">IStubOutForTesting</a>, <a href="../LostTech.Gradient/IContextManager`1.htm">IContextManager&lt;T&gt;</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Support class for stubbing methods out for unit testing. <p></p> Sample Usage: <p></p> You want os.path.exists() to always return true during testing. <p></p> stubs = StubOutForTesting()
+stubs.Set(os.path, 'exists', lambda x: 1)
+...
+stubs.CleanUp() <p></p> The above changes os.path.exists into a lambda that returns 1.  Once
+the... part of the code finishes, the CleanUp() looks up the old
+value of os.path.exists and restores it. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#CleanUp">CleanUp</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#CleanUp_dyn">CleanUp_dyn</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#Set">Set</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#Set_dyn">Set_dyn</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#SmartSet">SmartSet</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#SmartSet_dyn">SmartSet_dyn</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#SmartUnsetAll">SmartUnsetAll</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#SmartUnsetAll_dyn">SmartUnsetAll_dyn</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#UnsetAll">UnsetAll</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#UnsetAll_dyn">UnsetAll_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#cache">cache</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.test/StubOutForTesting.htm#stubs">stubs</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="CleanUp" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>CleanUp</strong>()
+		</h4>
+		<div class="content">Undoes all SmartSet() & Set() calls, restoring original definitions. 
+
+
+
+
+		</div>
+	</div>
+	<div id="CleanUp_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>CleanUp_dyn</strong>()
+		</h4>
+		<div class="content">Undoes all SmartSet() & Set() calls, restoring original definitions. 
+
+
+
+
+		</div>
+	</div>
+	<div id="Set" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>Set</strong>(<span title="System.object">object</span> parent, <span title="System.object">object</span> child_name, <span title="System.object">object</span> new_child)
+		</h4>
+		<div class="content">In parent, replace child_name's old definition with new_child. <p></p> The parent could be a module when the child is a function at
+module scope.  Or the parent could be a class when a class' method
+is being replaced.  The named child is set to new_child, while the
+prior definition is saved away for later, when UnsetAll() is
+called. <p></p> This method supports the case where child_name is a staticmethod or a
+classmethod of parent. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> parent
+						</dt>
+						<dd>The context in which the attribute child_name is to be changed. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> child_name
+						</dt>
+						<dd>The name of the attribute to change. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> new_child
+						</dt>
+						<dd>The new value of the attribute. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="Set_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Set_dyn</strong>(<span title="System.object">object</span> parent, <span title="System.object">object</span> child_name, <span title="System.object">object</span> new_child)
+		</h4>
+		<div class="content">In parent, replace child_name's old definition with new_child. <p></p> The parent could be a module when the child is a function at
+module scope.  Or the parent could be a class when a class' method
+is being replaced.  The named child is set to new_child, while the
+prior definition is saved away for later, when UnsetAll() is
+called. <p></p> This method supports the case where child_name is a staticmethod or a
+classmethod of parent. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> parent
+						</dt>
+						<dd>The context in which the attribute child_name is to be changed. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> child_name
+						</dt>
+						<dd>The name of the attribute to change. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> new_child
+						</dt>
+						<dd>The new value of the attribute. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="SmartSet" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>SmartSet</strong>(<span title="System.object">object</span> obj, <span title="System.object">object</span> attr_name, <span title="System.object">object</span> new_attr)
+		</h4>
+		<div class="content">Replace obj.attr_name with new_attr. <p></p> This method is smart and works at the module, class, and instance level
+while preserving proper inheritance. It will not stub out C types however
+unless that has been explicitly allowed by the type. <p></p> This method supports the case where attr_name is a staticmethod or a
+classmethod of obj. <p></p> Notes:
+- If obj is an instance, then it is its class that will actually be
+stubbed. Note that the method Set() does not do that: if obj is
+an instance, it (and not its class) will be stubbed.
+- The stubbing is using the builtin getattr and setattr. So, the __get__
+and __set__ will be called when stubbing (TODO: A better idea would
+probably be to manipulate obj.__dict__ instead of getattr() and
+setattr()). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> obj
+						</dt>
+						<dd>The object whose attributes we want to modify. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> attr_name
+						</dt>
+						<dd>The name of the attribute to modify. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> new_attr
+						</dt>
+						<dd>The new value for the attribute. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="SmartSet_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SmartSet_dyn</strong>(<span title="System.object">object</span> obj, <span title="System.object">object</span> attr_name, <span title="System.object">object</span> new_attr)
+		</h4>
+		<div class="content">Replace obj.attr_name with new_attr. <p></p> This method is smart and works at the module, class, and instance level
+while preserving proper inheritance. It will not stub out C types however
+unless that has been explicitly allowed by the type. <p></p> This method supports the case where attr_name is a staticmethod or a
+classmethod of obj. <p></p> Notes:
+- If obj is an instance, then it is its class that will actually be
+stubbed. Note that the method Set() does not do that: if obj is
+an instance, it (and not its class) will be stubbed.
+- The stubbing is using the builtin getattr and setattr. So, the __get__
+and __set__ will be called when stubbing (TODO: A better idea would
+probably be to manipulate obj.__dict__ instead of getattr() and
+setattr()). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> obj
+						</dt>
+						<dd>The object whose attributes we want to modify. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> attr_name
+						</dt>
+						<dd>The name of the attribute to modify. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> new_attr
+						</dt>
+						<dd>The new value for the attribute. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="SmartUnsetAll" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>SmartUnsetAll</strong>()
+		</h4>
+		<div class="content">Reverses SmartSet() calls, restoring things to original definitions. <p></p> This method is automatically called when the StubOutForTesting()
+object is deleted; there is no need to call it explicitly. <p></p> It is okay to call SmartUnsetAll() repeatedly, as later calls have
+no effect if no SmartSet() calls have been made. 
+
+
+
+
+		</div>
+	</div>
+	<div id="SmartUnsetAll_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SmartUnsetAll_dyn</strong>()
+		</h4>
+		<div class="content">Reverses SmartSet() calls, restoring things to original definitions. <p></p> This method is automatically called when the StubOutForTesting()
+object is deleted; there is no need to call it explicitly. <p></p> It is okay to call SmartUnsetAll() repeatedly, as later calls have
+no effect if no SmartSet() calls have been made. 
+
+
+
+
+		</div>
+	</div>
+	<div id="UnsetAll" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>UnsetAll</strong>()
+		</h4>
+		<div class="content">Reverses Set() calls, restoring things to their original definitions. <p></p> This method is automatically called when the StubOutForTesting()
+object is deleted; there is no need to call it explicitly. <p></p> It is okay to call UnsetAll() repeatedly, as later calls have no
+effect if no Set() calls have been made. 
+
+
+
+
+		</div>
+	</div>
+	<div id="UnsetAll_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>UnsetAll_dyn</strong>()
+		</h4>
+		<div class="content">Reverses Set() calls, restoring things to their original definitions. <p></p> This method is automatically called when the StubOutForTesting()
+object is deleted; there is no need to call it explicitly. <p></p> It is okay to call UnsetAll() repeatedly, as later calls have no
+effect if no Set() calls have been made. 
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="cache" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<ValueTuple<object, PythonFunctionContainer, object>>">IList&lt;ValueTuple&lt;object, PythonFunctionContainer, object&gt;&gt;</span> <strong>cache</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="stubs" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<ValueTuple<object, object, PythonFunctionContainer>>">IList&lt;ValueTuple&lt;object, object, PythonFunctionContainer&gt;&gt;</span> <strong>stubs</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

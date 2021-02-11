@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>LSTMCell - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.nn.rnn_cell</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/_LSTMStateTuple.htm">_LSTMStateTuple</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/_RNNCellWrapperV1.htm">_RNNCellWrapperV1</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/BasicLSTMCell.htm">BasicLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/BasicRNNCell.htm">BasicRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/DeviceWrapper.htm">DeviceWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/DropoutWrapper.htm">DropoutWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/GRUCell.htm">GRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/I_LSTMStateTuple.htm">I_LSTMStateTuple</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/I_RNNCellWrapperV1.htm">I_RNNCellWrapperV1</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IBasicLSTMCell.htm">IBasicLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IBasicRNNCell.htm">IBasicRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IDeviceWrapper.htm">IDeviceWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IDropoutWrapper.htm">IDropoutWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IGRUCell.htm">IGRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/ILayerRNNCell.htm">ILayerRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/ILSTMCell.htm">ILSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/ILSTMStateTuple.htm">ILSTMStateTuple</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IMultiRNNCell.htm">IMultiRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IResidualWrapper.htm">IResidualWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/IRNNCell.htm">IRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/LayerRNNCell.htm">LayerRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/LSTMCell.htm" class="current">LSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/LSTMStateTuple.htm">LSTMStateTuple</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/MultiRNNCell.htm">MultiRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/ResidualWrapper.htm">ResidualWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/rnn_cell.htm">rnn_cell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.nn.rnn_cell/RNNCell.htm">RNNCell</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> LSTMCell</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.nn.rnn_cell</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.nn.rnn_cell/LayerRNNCell.htm">LayerRNNCell</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.nn.rnn_cell/ILSTMCell.htm">ILSTMCell</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Long short-term memory unit (LSTM) recurrent network cell. <p></p> The default non-peephole implementation is based on: <p></p> https://pdfs.semanticscholar.org/1154/0131eae85b2e11d53df7f1360eeb6476e7f4.pdf <p></p> Felix Gers, Jurgen Schmidhuber, and Fred Cummins.
+"Learning to forget: Continual prediction with LSTM." IET, 850-855, 1999. <p></p> The peephole implementation is based on: <p></p> https://research.google.com/pubs/archive/43905.pdf <p></p> Hasim Sak, Andrew Senior, and Francoise Beaufays.
+"Long short-term memory recurrent neural network architectures for
+large scale acoustic modeling." INTERSPEECH, 2014. <p></p> The class uses optional peep-hole connections, optional cell clipping, and
+an optional projection layer. <p></p> Note that this cell is not optimized for performance. Please use
+<a href="..\..\..\tf\contrib\cudnn_rnn\CudnnLSTM.md"><code>tf.contrib.cudnn_rnn.CudnnLSTM</code></a> for better performance on GPU, or
+<a href="..\..\..\tf\contrib\rnn\LSTMBlockCell.md"><code>tf.contrib.rnn.LSTMBlockCell</code></a> and <a href="..\..\..\tf\contrib\rnn\LSTMBlockFusedCell.md"><code>tf.contrib.rnn.LSTMBlockFusedCell</code></a> for
+better performance on CPU. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#activity_regularizer">activity_regularizer</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#activity_regularizer_dyn">activity_regularizer_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#built">built</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#dynamic">dynamic</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#dynamic_dyn">dynamic_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#inbound_nodes">inbound_nodes</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#inbound_nodes_dyn">inbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input">input</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_dyn">input_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_mask">input_mask</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_mask_dyn">input_mask_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_shape">input_shape</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_shape_dyn">input_shape_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_spec">input_spec</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#input_spec_dyn">input_spec_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#metrics">metrics</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#metrics_dyn">metrics_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#name">name</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#outbound_nodes">outbound_nodes</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#outbound_nodes_dyn">outbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output">output</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_dyn">output_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_mask">output_mask</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_mask_dyn">output_mask_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_shape">output_shape</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_shape_dyn">output_shape_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_size">output_size</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#output_size_dyn">output_size_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#rnncell_scope">rnncell_scope</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#scope_name">scope_name</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#scope_name_dyn">scope_name_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#state_size">state_size</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#state_size_dyn">state_size_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#stateful">stateful</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#supports_masking">supports_masking</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.nn.rnn_cell/LSTMCell.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.nn.rnn_cell/LSTMCell.htm">LSTMCell</a> <strong>NewDyn</strong>(<span title="System.object">object</span> num_units, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_peepholes, <span title="System.object">object</span> cell_clip, <span title="System.object">object</span> initializer, <span title="System.object">object</span> num_proj, <span title="System.object">object</span> proj_clip, <span title="System.object">object</span> num_unit_shards, <span title="System.object">object</span> num_proj_shards, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> forget_bias, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> state_is_tuple, <span title="System.object">object</span> activation, <span title="System.object">object</span> reuse, <span title="System.object">object</span> name, <span title="System.object">object</span> dtype, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Initialize the parameters for an LSTM cell. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> num_units
+						</dt>
+						<dd>int, The number of units in the LSTM cell. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_peepholes
+						</dt>
+						<dd>bool, set True to enable diagonal/peephole connections. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> cell_clip
+						</dt>
+						<dd>(optional) A float value, if provided the cell state is clipped
+by this value prior to the cell output activation. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initializer
+						</dt>
+						<dd>(optional) The initializer to use for the weight and
+projection matrices. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_proj
+						</dt>
+						<dd>(optional) int, The output dimensionality for the projection
+matrices.  If None, no projection is performed. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> proj_clip
+						</dt>
+						<dd>(optional) A float value.  If `num_proj > 0` and `proj_clip` is
+provided, then the projected values are clipped elementwise to within
+`[-proj_clip, proj_clip]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_unit_shards
+						</dt>
+						<dd>Deprecated, will be removed by Jan. 2017. Use a
+variable_scope partitioner instead. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_proj_shards
+						</dt>
+						<dd>Deprecated, will be removed by Jan. 2017. Use a
+variable_scope partitioner instead. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> forget_bias
+						</dt>
+						<dd>Biases of the forget gate are initialized by default to 1 in
+order to reduce the scale of forgetting at the beginning of the
+training. Must set it manually to `0.0` when restoring from CudnnLSTM
+trained checkpoints. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> state_is_tuple
+						</dt>
+						<dd>If True, accepted and returned states are 2-tuples of the
+`c_state` and `m_state`.  If False, they are concatenated along the
+column axis.  This latter behavior will soon be deprecated. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> activation
+						</dt>
+						<dd>Activation function of the inner states.  Default: `tanh`. It
+could also be string that is within Keras activation function names. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> reuse
+						</dt>
+						<dd>(optional) Python boolean describing whether to reuse variables in
+an existing scope.  If not `True`, and the existing scope already has
+the given variables, an error is raised. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>String, the name of the layer. Layers with the same name will share
+weights, but to avoid mistakes we require reuse=True in such cases. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dtype
+						</dt>
+						<dd>Default dtype of the layer (default of `None` means use the type of
+the first input). Required when `build` is called before `call`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Dict, keyword named properties for common layer attributes, like
+`trainable` etc when constructing the cell from configs of get_config().
+When restoring from CudnnLSTM-trained checkpoints, use
+`CudnnCompatibleLSTMCell` instead. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="activity_regularizer" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>activity_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activity_regularizer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="built" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>built</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>dynamic</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dynamic_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Node>">IList&lt;Node&gt;</span> <strong>inbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>metrics</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>metrics_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>outbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>output</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_size" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_size</strong> get; 
+		</h4>
+		<div class="content">Integer or TensorShape: size of outputs produced by this cell. 
+
+		</div>
+	</div>
+	<div id="output_size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_size_dyn</strong> get; 
+		</h4>
+		<div class="content">Integer or TensorShape: size of outputs produced by this cell. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rnncell_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rnncell_scope</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>scope_name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope_name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="state_size" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>state_size</strong> get; 
+		</h4>
+		<div class="content">size(s) of state(s) used by this cell. <p></p> It can be represented by an Integer, a TensorShape or a tuple of Integers
+or TensorShapes. 
+
+		</div>
+	</div>
+	<div id="state_size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>state_size_dyn</strong> get; 
+		</h4>
+		<div class="content">size(s) of state(s) used by this cell. <p></p> It can be represented by an Integer, a TensorShape or a tuple of Integers
+or TensorShapes. 
+
+		</div>
+	</div>
+	<div id="stateful" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>stateful</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="supports_masking" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>supports_masking</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

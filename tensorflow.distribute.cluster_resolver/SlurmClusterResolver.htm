@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>SlurmClusterResolver - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distribute.cluster_resolver</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ClusterResolver.htm">ClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/GCEClusterResolver.htm">GCEClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IClusterResolver.htm">IClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IGCEClusterResolver.htm">IGCEClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IKubernetesClusterResolver.htm">IKubernetesClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ISimpleClusterResolver.htm">ISimpleClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ISlurmClusterResolver.htm">ISlurmClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ITFConfigClusterResolver.htm">ITFConfigClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/ITPUClusterResolver.htm">ITPUClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/IUnionResolver.htm">IUnionResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/KubernetesClusterResolver.htm">KubernetesClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/SimpleClusterResolver.htm">SimpleClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm" class="current">SlurmClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/TFConfigClusterResolver.htm">TFConfigClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/TPUClusterResolver.htm">TPUClusterResolver</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute.cluster_resolver/UnionResolver.htm">UnionResolver</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> SlurmClusterResolver</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distribute.cluster_resolver</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distribute.cluster_resolver/ClusterResolver.htm">ClusterResolver</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distribute.cluster_resolver/ISlurmClusterResolver.htm">ISlurmClusterResolver</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">ClusterResolver for system with Slurm workload manager. <p></p> This is an implementation of cluster resolvers for Slurm clusters. This allows
+the specification of jobs and task counts, number of tasks per node, number of
+GPUs on each node and number of GPUs for each task. It retrieves system
+attributes by Slurm environment variables, resolves allocated computing node
+names, constructs a cluster and returns a ClusterResolver object which can be
+use for distributed TensorFlow. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#get_task_info">get_task_info</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#get_task_info_dyn">get_task_info_dyn</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#environment">environment</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#environment_dyn">environment_dyn</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#rpc_layer">rpc_layer</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#task_id">task_id</a></li>
+				<li><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm#task_type">task_type</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="get_task_info" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span> <strong>get_task_info</strong>()
+		</h4>
+		<div class="content">Returns job name and task_id for the process which calls this. <p></p> This returns the job name and task index for the process which calls this
+function according to its rank and cluster specification. The job name and
+task index are set after a cluster is constructed by cluster_spec otherwise
+defaults to None. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, object>">ValueTuple&lt;object, object&gt;</span></code>
+					</dt>
+					<dd>A string specifying job name the process belongs to and an integner
+specifying the task index the process belongs to in that job. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_task_info_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_task_info_dyn</strong>()
+		</h4>
+		<div class="content">Returns job name and task_id for the process which calls this. <p></p> This returns the job name and task index for the process which calls this
+function according to its rank and cluster specification. The job name and
+task index are set after a cluster is constructed by cluster_spec otherwise
+defaults to None. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A string specifying job name the process belongs to and an integner
+specifying the task index the process belongs to in that job. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm">SlurmClusterResolver</a> <strong>NewDyn</strong>(<span title="System.object">object</span> jobs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> port_base, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> gpus_per_node, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> gpus_per_task, <span title="System.object">object</span> tasks_per_node, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> auto_set_gpu, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> rpc_layer)
+		</h4>
+		<div class="content">Creates a new SlurmClusterResolver object. <p></p> This takes in parameters and creates a SlurmClusterResolver object. It uses
+those parameters to check which nodes will processes reside on and resolves
+their hostnames. With the number of the GPUs on each node and number of GPUs
+for each task it offsets the port number for each process and allocates
+GPUs to tasks by setting environment variables. The resolver currently
+supports homogeneous tasks and default Slurm process allocation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> jobs
+						</dt>
+						<dd>Dictionary with job names as key and number of tasks in the job as
+value. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> port_base
+						</dt>
+						<dd>The first port number to start with for processes on a node. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> gpus_per_node
+						</dt>
+						<dd>Number of GPUs available on each node. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> gpus_per_task
+						</dt>
+						<dd>Number of GPUs to be used for each task. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> tasks_per_node
+						</dt>
+						<dd>Number of tasks to run on each node, if not set defaults
+to Slurm's output environment variable SLURM_NTASKS_PER_NODE. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> auto_set_gpu
+						</dt>
+						<dd>Set the visible CUDA devices automatically while resolving
+the cluster by setting CUDA_VISIBLE_DEVICES environment variable.
+Defaults to True. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> rpc_layer
+						</dt>
+						<dd>(Optional) The protocol TensorFlow uses to communicate between
+nodes. Defaults to 'grpc'. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.distribute.cluster_resolver/SlurmClusterResolver.htm">SlurmClusterResolver</a></code>
+					</dt>
+					<dd>A ClusterResolver object which can be used with distributed TensorFlow. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="environment" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>environment</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="environment_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>environment_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rpc_layer" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>rpc_layer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_id" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>task_id</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="task_type" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>task_type</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>text - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.text</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.text/text.htm" class="current">text</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> text</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.text</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.text/text.htm#skip_gram_sample">skip_gram_sample</a></li>
+				<li><a href="../tensorflow.contrib.text/text.htm#skip_gram_sample_dyn">skip_gram_sample_dyn</a></li>
+				<li><a href="../tensorflow.contrib.text/text.htm#skip_gram_sample_with_text_vocab">skip_gram_sample_with_text_vocab</a></li>
+				<li><a href="../tensorflow.contrib.text/text.htm#skip_gram_sample_with_text_vocab_dyn">skip_gram_sample_with_text_vocab_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.text/text.htm#skip_gram_sample_fn">skip_gram_sample_fn</a></li>
+				<li><a href="../tensorflow.contrib.text/text.htm#skip_gram_sample_with_text_vocab_fn">skip_gram_sample_with_text_vocab_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="skip_gram_sample" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>skip_gram_sample</strong>(<span title="System.object">object</span> input_tensor, <span title="System.int">int</span> min_skips, <span title="System.int">int</span> max_skips, <span title="System.int">int</span> start, <span title="System.int">int</span> limit, <span title="System.bool">bool</span> emit_self_as_target, <a href="../tensorflow.contrib.lookup/HashTable.htm">HashTable</a> vocab_freq_table, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> vocab_min_count, <span title="System.object">object</span> vocab_subsampling, <span title="System.Nullable<double>">Nullable&lt;double&gt;</span> corpus_size, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> batch_capacity, <span title="System.object">object</span> seed, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="skip_gram_sample_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>skip_gram_sample_dyn</strong>(<span title="System.object">object</span> input_tensor, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_skips, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_skips, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> start, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> limit, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> emit_self_as_target, <span title="System.object">object</span> vocab_freq_table, <span title="System.object">object</span> vocab_min_count, <span title="System.object">object</span> vocab_subsampling, <span title="System.object">object</span> corpus_size, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> batch_capacity, <span title="System.object">object</span> seed, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="skip_gram_sample_with_text_vocab" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>skip_gram_sample_with_text_vocab</strong>(<span title="System.object">object</span> input_tensor, <span title="System.object">object</span> vocab_freq_file, <span title="System.int">int</span> vocab_token_index, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_token_dtype, <span title="System.int">int</span> vocab_freq_index, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_freq_dtype, <span title="System.string">string</span> vocab_delimiter, <span title="System.int">int</span> vocab_min_count, <span title="System.object">object</span> vocab_subsampling, <span title="System.object">object</span> corpus_size, <span title="System.int">int</span> min_skips, <span title="System.int">int</span> max_skips, <span title="System.int">int</span> start, <span title="System.int">int</span> limit, <span title="System.bool">bool</span> emit_self_as_target, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> batch_capacity, <span title="System.object">object</span> seed, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="skip_gram_sample_with_text_vocab_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>skip_gram_sample_with_text_vocab_dyn</strong>(<span title="System.object">object</span> input_tensor, <span title="System.object">object</span> vocab_freq_file, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_token_index, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_token_dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_freq_index, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_freq_dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_delimiter, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> vocab_min_count, <span title="System.object">object</span> vocab_subsampling, <span title="System.object">object</span> corpus_size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> min_skips, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> max_skips, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> start, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> limit, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> emit_self_as_target, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> batch_capacity, <span title="System.object">object</span> seed, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="skip_gram_sample_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>skip_gram_sample_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="skip_gram_sample_with_text_vocab_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>skip_gram_sample_with_text_vocab_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

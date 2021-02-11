@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>KMeansClustering - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.factorization</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_IncrementGlobalStepHook.htm">_IncrementGlobalStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_InitializeClustersOpFactory.htm">_InitializeClustersOpFactory</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_LossRelativeChangeHook.htm">_LossRelativeChangeHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_ModelFn.htm">_ModelFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_StopAtSweepHook.htm">_StopAtSweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_SweepHook.htm">_SweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/factorization.htm">factorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/GMM.htm">GMM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/GmmAlgorithm.htm">GmmAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_IncrementGlobalStepHook.htm">I_IncrementGlobalStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_InitializeClustersOpFactory.htm">I_InitializeClustersOpFactory</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_LossRelativeChangeHook.htm">I_LossRelativeChangeHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_ModelFn.htm">I_ModelFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_StopAtSweepHook.htm">I_StopAtSweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_SweepHook.htm">I_SweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IGMM.htm">IGMM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IGmmAlgorithm.htm">IGmmAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IKMeans.htm">IKMeans</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IKMeansClustering.htm">IKMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IWALSMatrixFactorization.htm">IWALSMatrixFactorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IWALSModel.htm">IWALSModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/KMeans.htm">KMeans</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/KMeansClustering.htm" class="current">KMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm">WALSMatrixFactorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/WALSModel.htm">WALSModel</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> KMeansClustering</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.factorization</p>
+		<p><strong>Parent</strong> <a href="../tensorflow_estimator.python.estimator.estimator/Estimator.htm">Estimator</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.factorization/IKMeansClustering.htm">IKMeansClustering</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">An Estimator for K-Means clustering. <p></p> Example:
+```
+import numpy as np
+import tensorflow as tf <p></p> num_points = 100
+dimensions = 2
+points = np.random.uniform(0, 1000, [num_points, dimensions]) <p></p> def input_fn():
+return tf.compat.v1.train.limit_epochs(
+tf.convert_to_tensor(points, dtype=tf.float32), num_epochs=1) <p></p> num_clusters = 5
+kmeans = tf.contrib.factorization.KMeansClustering(
+num_clusters=num_clusters, use_mini_batch=False) <p></p> # train
+num_iterations = 10
+previous_centers = None
+for _ in xrange(num_iterations):
+kmeans.train(input_fn)
+cluster_centers = kmeans.cluster_centers()
+if previous_centers is not None:
+print 'delta:', cluster_centers - previous_centers
+previous_centers = cluster_centers
+print 'score:', kmeans.score(input_fn)
+print 'cluster centers:', cluster_centers <p></p> # map the input points to their clusters
+cluster_indices = list(kmeans.predict_cluster_index(input_fn))
+for i, point in enumerate(points):
+cluster_index = cluster_indices[i]
+center = cluster_centers[cluster_index]
+print 'point:', point, 'is in cluster', cluster_index, 'centered at', center
+``` <p></p> The `SavedModel` saved by the `export_savedmodel` method does not include the
+cluster centers. However, the cluster centers may be retrieved by the
+latest checkpoint saved during training. Specifically,
+```
+kmeans.cluster_centers()
+```
+is equivalent to
+```
+tf.train.load_variable(
+kmeans.model_dir, KMeansClustering.CLUSTER_CENTERS_VAR_NAME)
+``` 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#ALL_DISTANCES_dyn">ALL_DISTANCES_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#CLUSTER_CENTERS_VAR_NAME_dyn">CLUSTER_CENTERS_VAR_NAME_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#CLUSTER_INDEX_dyn">CLUSTER_INDEX_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#config">config</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#config_dyn">config_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#COSINE_DISTANCE_dyn">COSINE_DISTANCE_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#KMEANS_PLUS_PLUS_INIT_dyn">KMEANS_PLUS_PLUS_INIT_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#model_dir">model_dir</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#model_dir_dyn">model_dir_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#model_fn">model_fn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#model_fn_dyn">model_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#params">params</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#params_dyn">params_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#RANDOM_INIT_dyn">RANDOM_INIT_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#SCORE_dyn">SCORE_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#SQUARED_EUCLIDEAN_DISTANCE_dyn">SQUARED_EUCLIDEAN_DISTANCE_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#SCORE">SCORE</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#CLUSTER_INDEX">CLUSTER_INDEX</a></li>
+				<li><a href="../tensorflow.contrib.factorization/KMeansClustering.htm#ALL_DISTANCES">ALL_DISTANCES</a></li>
+			</ul>
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.factorization/KMeansClustering.htm">KMeansClustering</a> <strong>NewDyn</strong>(<span title="System.object">object</span> num_clusters, <span title="System.object">object</span> model_dir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initial_clusters, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> distance_metric, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> random_seed, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_mini_batch, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> mini_batch_steps_per_iteration, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> kmeans_plus_plus_num_retries, <span title="System.object">object</span> relative_tolerance, <span title="System.object">object</span> config, <span title="System.object">object</span> feature_columns)
+		</h4>
+		<div class="content">Creates an Estimator for running KMeans training and inference. <p></p> This Estimator implements the following variants of the K-means algorithm: <p></p> If `use_mini_batch` is False, it runs standard full batch K-means. Each
+training step runs a single iteration of K-Means and must process the full
+input at once. To run in this mode, the `input_fn` passed to `train` must
+return the entire input dataset. <p></p> If `use_mini_batch` is True, it runs a generalization of the mini-batch
+K-means algorithm. It runs multiple iterations, where each iteration is
+composed of `mini_batch_steps_per_iteration` steps. Each training step
+accumulates the contribution from one mini-batch into temporary storage.
+Every `mini_batch_steps_per_iteration` steps, the cluster centers are
+updated and the temporary storage cleared for the next iteration. Note
+that:
+* If `mini_batch_steps_per_iteration=1`, the algorithm reduces to the
+standard K-means mini-batch algorithm.
+* If `mini_batch_steps_per_iteration = num_inputs / batch_size`, the
+algorithm becomes an asynchronous version of the full-batch algorithm.
+However, there is no guarantee by this implementation that each input
+is seen exactly once per iteration. Also, different updates are applied
+asynchronously without locking. So this asynchronous version may not
+behave exactly like a full-batch version. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> num_clusters
+						</dt>
+						<dd>An integer tensor specifying the number of clusters. This
+argument is ignored if `initial_clusters` is a tensor or numpy array. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> model_dir
+						</dt>
+						<dd>The directory to save the model results and log files. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> initial_clusters
+						</dt>
+						<dd>Specifies how the initial cluster centers are chosen.
+One of the following: * a tensor or numpy array with the initial cluster
+centers. * a callable `f(inputs, k)` that selects and returns up to
+`k` centers from an input batch. `f` is free to return any number of
+centers from `0` to `k`. It will be invoked on successive input
+batches as necessary until all `num_clusters` centers are chosen.
+* `KMeansClustering.RANDOM_INIT`: Choose centers randomly from an input
+batch. If the batch size is less than `num_clusters` then the entire
+batch is chosen to be initial cluster centers and the remaining
+centers are chosen from successive input batches.
+* `KMeansClustering.KMEANS_PLUS_PLUS_INIT`: Use kmeans++ to choose
+centers from the first input batch. If the batch size is less than
+`num_clusters`, a TensorFlow runtime error occurs. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> distance_metric
+						</dt>
+						<dd>The distance metric used for clustering. One of:
+* `KMeansClustering.SQUARED_EUCLIDEAN_DISTANCE`: Euclidean distance
+between vectors `u` and `v` is defined as \(||u - v||_2\) which is
+the square root of the sum of the absolute squares of the elements'
+difference.
+* `KMeansClustering.COSINE_DISTANCE`: Cosine distance between vectors
+`u` and `v` is defined as \(1 - (u. v) / (||u||_2 ||v||_2)\). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> random_seed
+						</dt>
+						<dd>Python integer. Seed for PRNG used to initialize centers. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_mini_batch
+						</dt>
+						<dd>A boolean specifying whether to use the mini-batch k-means
+algorithm. See explanation above. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> mini_batch_steps_per_iteration
+						</dt>
+						<dd>The number of steps after which the
+updated cluster centers are synced back to a master copy. Used only if
+`use_mini_batch=True`. See explanation above. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> kmeans_plus_plus_num_retries
+						</dt>
+						<dd>For each point that is sampled during
+kmeans++ initialization, this parameter specifies the number of
+additional points to draw from the current distribution before selecting
+the best. If a negative value is specified, a heuristic is used to
+sample `O(log(num_to_sample))` additional points. Used only if
+`initial_clusters=KMeansClustering.KMEANS_PLUS_PLUS_INIT`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> relative_tolerance
+						</dt>
+						<dd>A relative tolerance of change in the loss between
+iterations. Stops learning if the loss changes less than this amount.
+This may not work correctly if `use_mini_batch=True`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>See <a href="..\..\..\tf\estimator\Estimator.md"><code>tf.estimator.Estimator</code></a>. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> feature_columns
+						</dt>
+						<dd>An optionable iterable containing all the feature columns
+used by the model. All items in the set should be feature column
+instances that can be passed to
+`tf.compat.v1.feature_column.input_layer`. If this is None, all features
+will be used. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="ALL_DISTANCES_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ALL_DISTANCES_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="CLUSTER_CENTERS_VAR_NAME_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>CLUSTER_CENTERS_VAR_NAME_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="CLUSTER_INDEX_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>CLUSTER_INDEX_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="COSINE_DISTANCE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>COSINE_DISTANCE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="KMEANS_PLUS_PLUS_INIT_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>KMEANS_PLUS_PLUS_INIT_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="params" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>params</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="params_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>params_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="RANDOM_INIT_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>RANDOM_INIT_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SCORE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SCORE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SQUARED_EUCLIDEAN_DISTANCE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>SQUARED_EUCLIDEAN_DISTANCE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="SCORE" class="method">
+    <h4>string <strong>SCORE</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="CLUSTER_INDEX" class="method">
+    <h4>string <strong>CLUSTER_INDEX</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="ALL_DISTANCES" class="method">
+    <h4>string <strong>ALL_DISTANCES</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

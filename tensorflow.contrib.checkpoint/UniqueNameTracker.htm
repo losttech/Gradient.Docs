@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>UniqueNameTracker - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.checkpoint</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.checkpoint/checkpoint.htm">checkpoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.checkpoint/INumpyState.htm">INumpyState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.checkpoint/IUniqueNameTracker.htm">IUniqueNameTracker</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.checkpoint/NumpyState.htm">NumpyState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm" class="current">UniqueNameTracker</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> UniqueNameTracker</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.checkpoint</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.training.tracking.data_structures/TrackableDataStructure.htm">TrackableDataStructure</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.checkpoint/IUniqueNameTracker.htm">IUniqueNameTracker</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Adds dependencies on trackable objects with name hints. <p></p> Useful for creating dependencies with locally unique names. <p></p> Example usage: <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>class SlotManager(tf.contrib.checkpoint.Checkpointable): <p></p> def __init__(self):
+  # Create a dependency named "slotdeps" on the container.
+  self.slotdeps = tf.contrib.checkpoint.UniqueNameTracker()
+  slotdeps = self.slotdeps
+  slots = []
+  slots.append(slotdeps.track(tf.Variable(3.), "x"))  # Named "x"
+  slots.append(slotdeps.track(tf.Variable(4.), "y"))
+  slots.append(slotdeps.track(tf.Variable(5.), "x"))  # Named "x_1" </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#track">track</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#track">track</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#track_dyn">track_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#layers">layers</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#layers_dyn">layers_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.contrib.checkpoint/UniqueNameTracker.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="track" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>track</strong>(<a href="../tensorflow.keras.layers/Dense.htm">Dense</a> trackable, <span title="System.string">string</span> base_name)
+		</h4>
+		<div class="content">Add a dependency on `trackable`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.keras.layers/Dense.htm">Dense</a></code> trackable
+						</dt>
+						<dd>An object to add a checkpoint dependency on. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> base_name
+						</dt>
+						<dd>A name hint, which is uniquified to determine the dependency
+name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`trackable`, for chaining. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="track" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>track</strong>(<a href="../tensorflow.python.ops.resource_variable_ops/ResourceVariable.htm">ResourceVariable</a> trackable, <span title="System.string">string</span> base_name)
+		</h4>
+		<div class="content">Add a dependency on `trackable`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.ops.resource_variable_ops/ResourceVariable.htm">ResourceVariable</a></code> trackable
+						</dt>
+						<dd>An object to add a checkpoint dependency on. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> base_name
+						</dt>
+						<dd>A name hint, which is uniquified to determine the dependency
+name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`trackable`, for chaining. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="track_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>track_dyn</strong>(<span title="System.object">object</span> trackable, <span title="System.object">object</span> base_name)
+		</h4>
+		<div class="content">Add a dependency on `trackable`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> trackable
+						</dt>
+						<dd>An object to add a checkpoint dependency on. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> base_name
+						</dt>
+						<dd>A name hint, which is uniquified to determine the dependency
+name. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`trackable`, for chaining. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="layers" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Layer>">IList&lt;Layer&gt;</span> <strong>layers</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="layers_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>layers_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>factorization_ops_test_utils - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm" class="current">factorization_ops_test_utils</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> factorization_ops_test_utils</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#calculate_loss">calculate_loss</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#calculate_loss_dyn">calculate_loss_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#np_matrix_to_tf_sparse">np_matrix_to_tf_sparse</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#np_matrix_to_tf_sparse_dyn">np_matrix_to_tf_sparse_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#remove_empty_rows_columns">remove_empty_rows_columns</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#remove_empty_rows_columns_dyn">remove_empty_rows_columns_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#calculate_loss_fn">calculate_loss_fn</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#INPUT_MATRIX">INPUT_MATRIX</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#INPUT_MATRIX_dyn">INPUT_MATRIX_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#np_matrix_to_tf_sparse_fn">np_matrix_to_tf_sparse_fn</a></li>
+				<li><a href="../tensorflow.contrib.factorization.python.ops.factorization_ops_test_utils/factorization_ops_test_utils.htm#remove_empty_rows_columns_fn">remove_empty_rows_columns_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="calculate_loss" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>calculate_loss</strong>(<span title="System.object">object</span> input_mat, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> row_factors, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> col_factors, <span title="System.Nullable<double>">Nullable&lt;double&gt;</span> regularization, <span title="System.double">double</span> w0, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> row_weights, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> col_weights)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="calculate_loss_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>calculate_loss_dyn</strong>(<span title="System.object">object</span> input_mat, <span title="System.object">object</span> row_factors, <span title="System.object">object</span> col_factors, <span title="System.object">object</span> regularization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> w0, <span title="System.object">object</span> row_weights, <span title="System.object">object</span> col_weights)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="np_matrix_to_tf_sparse" class="method">
+		<h4>
+			<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> <strong>np_matrix_to_tf_sparse</strong>(<span title="System.object">object</span> np_matrix, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> row_slices, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> col_slices, <span title="System.bool">bool</span> transpose, <span title="System.bool">bool</span> shuffle)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="np_matrix_to_tf_sparse_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>np_matrix_to_tf_sparse_dyn</strong>(<span title="System.object">object</span> np_matrix, <span title="System.object">object</span> row_slices, <span title="System.object">object</span> col_slices, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> shuffle)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="remove_empty_rows_columns" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, object, object>">ValueTuple&lt;object, object, object&gt;</span> <strong>remove_empty_rows_columns</strong>(<span title="System.object">object</span> np_matrix)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="remove_empty_rows_columns_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>remove_empty_rows_columns_dyn</strong>(<span title="System.object">object</span> np_matrix)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="calculate_loss_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>calculate_loss_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="INPUT_MATRIX" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>INPUT_MATRIX</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="INPUT_MATRIX_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>INPUT_MATRIX_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="np_matrix_to_tf_sparse_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>np_matrix_to_tf_sparse_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="remove_empty_rows_columns_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>remove_empty_rows_columns_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

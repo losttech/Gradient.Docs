@@ -1,0 +1,1657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>data - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.data</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.data/CheckpointInputPipelineHook.htm">CheckpointInputPipelineHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/CsvDataset.htm">CsvDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/data.htm" class="current">data</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ICheckpointInputPipelineHook.htm">ICheckpointInputPipelineHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ICsvDataset.htm">ICsvDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ILMDBDataset.htm">ILMDBDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/IRandomDataset.htm">IRandomDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/IReducer.htm">IReducer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ISqlDataset.htm">ISqlDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/ITFRecordWriter.htm">ITFRecordWriter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/LMDBDataset.htm">LMDBDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/RandomDataset.htm">RandomDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/Reducer.htm">Reducer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/SqlDataset.htm">SqlDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.data/TFRecordWriter.htm">TFRecordWriter</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> data</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.data</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.data/data.htm#assert_element_shape">assert_element_shape</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#assert_element_shape_dyn">assert_element_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#batch_and_drop_remainder">batch_and_drop_remainder</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#batch_and_drop_remainder_dyn">batch_and_drop_remainder_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#bucket_by_sequence_length">bucket_by_sequence_length</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#bucket_by_sequence_length_dyn">bucket_by_sequence_length_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#choose_from_datasets">choose_from_datasets</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#copy_to_device">copy_to_device</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#copy_to_device_dyn">copy_to_device_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#dense_to_sparse_batch">dense_to_sparse_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#dense_to_sparse_batch_dyn">dense_to_sparse_batch_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#enumerate_dataset">enumerate_dataset</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#enumerate_dataset_dyn">enumerate_dataset_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#get_single_element">get_single_element</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#get_single_element_dyn">get_single_element_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#group_by_reducer">group_by_reducer</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#group_by_reducer_dyn">group_by_reducer_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#group_by_window">group_by_window</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#group_by_window_dyn">group_by_window_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#ignore_errors">ignore_errors</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#ignore_errors_dyn">ignore_errors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_batched_features_dataset">make_batched_features_dataset</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_csv_dataset">make_csv_dataset</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_csv_dataset_dyn">make_csv_dataset_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_saveable_from_iterator">make_saveable_from_iterator</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_saveable_from_iterator_dyn">make_saveable_from_iterator_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#map_and_batch">map_and_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#map_and_batch_dyn">map_and_batch_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#padded_batch_and_drop_remainder">padded_batch_and_drop_remainder</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#padded_batch_and_drop_remainder_dyn">padded_batch_and_drop_remainder_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#parallel_interleave">parallel_interleave</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#parallel_interleave_dyn">parallel_interleave_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#parse_example_dataset">parse_example_dataset</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#parse_example_dataset_dyn">parse_example_dataset_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#prefetch_to_device">prefetch_to_device</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#prefetch_to_device_dyn">prefetch_to_device_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#read_batch_features">read_batch_features</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#read_batch_features_dyn">read_batch_features_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#reduce_dataset">reduce_dataset</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#reduce_dataset">reduce_dataset</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#reduce_dataset_dyn">reduce_dataset_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#rejection_resample">rejection_resample</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#rejection_resample_dyn">rejection_resample_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sample_from_datasets">sample_from_datasets</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#scan">scan</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#scan_dyn">scan_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#shuffle_and_repeat">shuffle_and_repeat</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#shuffle_and_repeat_dyn">shuffle_and_repeat_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch">sliding_window_batch</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch_dyn">sliding_window_batch_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sloppy_interleave">sloppy_interleave</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sloppy_interleave_dyn">sloppy_interleave_dyn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#unique">unique</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#unique_dyn">unique_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.data/data.htm#assert_element_shape_fn">assert_element_shape_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#batch_and_drop_remainder_fn">batch_and_drop_remainder_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#bucket_by_sequence_length_fn">bucket_by_sequence_length_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#choose_from_datasets_fn">choose_from_datasets_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#copy_to_device_fn">copy_to_device_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#Counter_fn">Counter_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#dense_to_sparse_batch_fn">dense_to_sparse_batch_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#enumerate_dataset_fn">enumerate_dataset_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#get_single_element_fn">get_single_element_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#group_by_reducer_fn">group_by_reducer_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#group_by_window_fn">group_by_window_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#ignore_errors_fn">ignore_errors_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_batched_features_dataset_fn">make_batched_features_dataset_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_csv_dataset_fn">make_csv_dataset_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#make_saveable_from_iterator_fn">make_saveable_from_iterator_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#map_and_batch_fn">map_and_batch_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#padded_batch_and_drop_remainder_fn">padded_batch_and_drop_remainder_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#parallel_interleave_fn">parallel_interleave_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#parse_example_dataset_fn">parse_example_dataset_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#prefetch_to_device_fn">prefetch_to_device_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#read_batch_features_fn">read_batch_features_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#reduce_dataset_fn">reduce_dataset_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#rejection_resample_fn">rejection_resample_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sample_from_datasets_fn">sample_from_datasets_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#scan_fn">scan_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#shuffle_and_repeat_fn">shuffle_and_repeat_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sliding_window_batch_fn">sliding_window_batch_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#sloppy_interleave_fn">sloppy_interleave_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#unbatch_fn">unbatch_fn</a></li>
+				<li><a href="../tensorflow.contrib.data/data.htm#unique_fn">unique_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="assert_element_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assert_element_shape</strong>(<span title="System.ValueTuple<TensorShape, object>">ValueTuple&lt;TensorShape, object&gt;</span> expected_shapes)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assert_element_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assert_element_shape_dyn</strong>(<span title="System.object">object</span> expected_shapes)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="batch_and_drop_remainder" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_and_drop_remainder</strong>(<span title="System.object">object</span> batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="batch_and_drop_remainder_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_and_drop_remainder_dyn</strong>(<span title="System.object">object</span> batch_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="bucket_by_sequence_length" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bucket_by_sequence_length</strong>(<span title="System.object">object</span> element_length_func, <span title="System.object">object</span> bucket_boundaries, <span title="System.object">object</span> bucket_batch_sizes, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values, <span title="System.bool">bool</span> pad_to_bucket_boundary, <span title="System.bool">bool</span> no_padding)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="bucket_by_sequence_length_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bucket_by_sequence_length_dyn</strong>(<span title="System.object">object</span> element_length_func, <span title="System.object">object</span> bucket_boundaries, <span title="System.object">object</span> bucket_batch_sizes, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> pad_to_bucket_boundary, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> no_padding)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="choose_from_datasets" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>choose_from_datasets</strong>(<span title="System.object">object</span> datasets, <span title="System.object">object</span> choice_dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="copy_to_device" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>copy_to_device</strong>(<span title="System.object">object</span> target_device, <span title="System.string">string</span> source_device)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="copy_to_device_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>copy_to_device_dyn</strong>(<span title="System.object">object</span> target_device, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> source_device)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_to_sparse_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dense_to_sparse_batch</strong>(<span title="System.object">object</span> batch_size, <span title="System.object">object</span> row_shape)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="dense_to_sparse_batch_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dense_to_sparse_batch_dyn</strong>(<span title="System.object">object</span> batch_size, <span title="System.object">object</span> row_shape)
+		</h4>
+		<div class="content">A transformation that batches ragged elements into <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>s. <p></p> Like `Dataset.padded_batch()`, this transformation combines multiple
+consecutive elements of the dataset, which might have different
+shapes, into a single element. The resulting element has three
+components (`indices`, `values`, and `dense_shape`), which
+comprise a <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a> that represents the same data. The
+`row_shape` represents the dense shape of each row in the
+resulting <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>, to which the effective batch size is
+prepended. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> batch_size
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+consecutive elements of this dataset to combine in a single batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> row_shape
+						</dt>
+						<dd>A <a href="..\..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> or <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> vector tensor-like object
+representing the equivalent dense shape of a row in the resulting
+<a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>. Each element of this dataset must have the same rank as
+`row_shape`, and must have size less than or equal to `row_shape` in each
+dimension. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># NOTE: The following examples use `{... }` to represent the
+            # contents of a dataset.
+            a = { ['a', 'b', 'c'], ['a', 'b'], ['a', 'b', 'c', 'd'] } <p></p> a.apply(tf.data.experimental.dense_to_sparse_batch(
+    batch_size=2, row_shape=[6])) ==
+{
+    ([[0, 0], [0, 1], [0, 2], [1, 0], [1, 1]],  # indices
+     ['a', 'b', 'c', 'a', 'b'],                 # values
+     [2, 6]),                                   # dense_shape
+    ([[0, 0], [0, 1], [0, 2], [0, 3]],
+     ['a', 'b', 'c', 'd'],
+     [1, 6])
+} </pre>
+</div>
+		</div>
+	</div>
+	<div id="enumerate_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>enumerate_dataset</strong>(<span title="System.int">int</span> start)
+		</h4>
+		<div class="content">A transformation that enumerates the elements of a dataset. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.enumerate() <p></p> It is similar to python's `enumerate`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> start
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the start value for
+enumeration. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># NOTE: The following examples use `{... }` to represent the
+            # contents of a dataset.
+            a = { 1, 2, 3 }
+            b = { (7, 8), (9, 10) } <p></p> # The nested structure of the `datasets` argument determines the
+# structure of elements in the resulting dataset.
+a.apply(tf.data.experimental.enumerate_dataset(start=5))
+=> { (5, 1), (6, 2), (7, 3) }
+b.apply(tf.data.experimental.enumerate_dataset())
+=> { (0, (7, 8)), (1, (9, 10)) } </pre>
+</div>
+		</div>
+	</div>
+	<div id="enumerate_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>enumerate_dataset_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> start)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_single_element" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_single_element</strong>(<span title="System.object">object</span> dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_single_element_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_single_element_dyn</strong>(<span title="System.object">object</span> dataset)
+		</h4>
+		<div class="content">Returns the single element in `dataset` as a nested structure of tensors. <p></p> This function enables you to use a <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> in a stateless
+"tensor-in tensor-out" expression, without creating a
+`tf.compat.v1.data.Iterator`.
+This can be useful when your preprocessing transformations are expressed
+as a `Dataset`, and you want to use the transformation at serving time. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dataset
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> object containing a single element. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A nested structure of <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a> objects, corresponding to the single
+element of `dataset`. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>input_batch = tf.compat.v1.placeholder(tf.string, shape=[BATCH_SIZE]) <p></p> def preprocessing_fn(input_str):
+  #...
+  return image, label <p></p> dataset = (tf.data.Dataset.from_tensor_slices(input_batch)
+          .map(preprocessing_fn, num_parallel_calls=BATCH_SIZE)
+          .batch(BATCH_SIZE)) <p></p> image_batch, label_batch = tf.data.experimental.get_single_element(dataset) </pre>
+</div>
+		</div>
+	</div>
+	<div id="group_by_reducer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_by_reducer</strong>(<span title="System.object">object</span> key_func, <span title="System.object">object</span> reducer)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="group_by_reducer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_by_reducer_dyn</strong>(<span title="System.object">object</span> key_func, <span title="System.object">object</span> reducer)
+		</h4>
+		<div class="content">A transformation that groups elements and performs a reduction. <p></p> This transformation maps element of a dataset to a key using `key_func` and
+groups the elements by key. The `reducer` is used to process each group; its
+`init_func` is used to initialize state for each group when it is created, the
+`reduce_func` is used to update the state every time an element is mapped to
+the matching group, and the `finalize_func` is used to map the final state to
+an output value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> key_func
+						</dt>
+						<dd>A function mapping a nested structure of tensors
+(having shapes and types defined by `self.output_shapes` and
+`self.output_types`) to a scalar <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> reducer
+						</dt>
+						<dd>An instance of `Reducer`, which captures the reduction logic using
+the `init_func`, `reduce_func`, and `finalize_func` functions. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="group_by_window" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_by_window</strong>(<span title="System.object">object</span> key_func, <span title="System.object">object</span> reduce_func, <span title="System.object">object</span> window_size, <span title="System.object">object</span> window_size_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="group_by_window_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_by_window_dyn</strong>(<span title="System.object">object</span> key_func, <span title="System.object">object</span> reduce_func, <span title="System.object">object</span> window_size, <span title="System.object">object</span> window_size_func)
+		</h4>
+		<div class="content">A transformation that groups windows of elements by key and reduces them. <p></p> This transformation maps each consecutive element in a dataset to a key
+using `key_func` and groups the elements by key. It then applies
+`reduce_func` to at most `window_size_func(key)` elements matching the same
+key. All except the final window for each key will contain
+`window_size_func(key)` elements; the final window may be smaller. <p></p> You may provide either a constant `window_size` or a window size determined by
+the key through `window_size_func`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> key_func
+						</dt>
+						<dd>A function mapping a nested structure of tensors
+(having shapes and types defined by `self.output_shapes` and
+`self.output_types`) to a scalar <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> reduce_func
+						</dt>
+						<dd>A function mapping a key and a dataset of up to `window_size`
+consecutive elements matching that key to another dataset. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> window_size
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+consecutive elements matching the same key to combine in a single
+batch, which will be passed to `reduce_func`. Mutually exclusive with
+`window_size_func`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> window_size_func
+						</dt>
+						<dd>A function mapping a key to a <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar
+<a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of consecutive elements matching
+the same key to combine in a single batch, which will be passed to
+`reduce_func`. Mutually exclusive with `window_size`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="ignore_errors" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ignore_errors</strong>()
+		</h4>
+		<div class="content">Creates a `Dataset` from another `Dataset` and silently ignores any errors. <p></p> Use this transformation to produce a dataset that contains the same elements
+as the input, but silently drops any elements that caused an error. For
+example: 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset = tf.data.Dataset.from_tensor_slices([1., 2., 0., 4.]) <p></p> # Computing `tf.debugging.check_numerics(1. / 0.)` will raise an
+InvalidArgumentError.
+dataset = dataset.map(lambda x: tf.debugging.check_numerics(1. / x, "error")) <p></p> # Using `ignore_errors()` will drop the element that causes an error.
+dataset =
+    dataset.apply(tf.data.experimental.ignore_errors())  # ==> {1., 0.5, 0.2} </pre>
+</div>
+		</div>
+	</div>
+	<div id="ignore_errors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ignore_errors_dyn</strong>()
+		</h4>
+		<div class="content">Creates a `Dataset` from another `Dataset` and silently ignores any errors. <p></p> Use this transformation to produce a dataset that contains the same elements
+as the input, but silently drops any elements that caused an error. For
+example: 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset = tf.data.Dataset.from_tensor_slices([1., 2., 0., 4.]) <p></p> # Computing `tf.debugging.check_numerics(1. / 0.)` will raise an
+InvalidArgumentError.
+dataset = dataset.map(lambda x: tf.debugging.check_numerics(1. / x, "error")) <p></p> # Using `ignore_errors()` will drop the element that causes an error.
+dataset =
+    dataset.apply(tf.data.experimental.ignore_errors())  # ==> {1., 0.5, 0.2} </pre>
+</div>
+		</div>
+	</div>
+	<div id="make_batched_features_dataset" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>make_batched_features_dataset</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader, <span title="System.object">object</span> label_key, <span title="System.object">object</span> reader_args, <span title="System.object">object</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> shuffle_buffer_size, <span title="System.object">object</span> shuffle_seed, <span title="System.object">object</span> prefetch_buffer_size, <span title="System.object">object</span> reader_num_threads, <span title="System.object">object</span> parser_num_threads, <span title="System.bool">bool</span> sloppy_ordering, <span title="System.bool">bool</span> drop_final_batch)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_csv_dataset" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>make_csv_dataset</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> column_names, <span title="System.object">object</span> column_defaults, <span title="System.object">object</span> label_name, <span title="System.object">object</span> select_columns, <span title="System.string">string</span> field_delim, <span title="System.bool">bool</span> use_quote_delim, <span title="System.string">string</span> na_value, <span title="System.bool">bool</span> header, <span title="System.object">object</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> shuffle_buffer_size, <span title="System.object">object</span> shuffle_seed, <span title="System.object">object</span> prefetch_buffer_size, <span title="System.object">object</span> num_parallel_reads, <span title="System.bool">bool</span> sloppy, <span title="System.int">int</span> num_rows_for_inference, <span title="System.object">object</span> compression_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_csv_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>make_csv_dataset_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> column_names, <span title="System.object">object</span> column_defaults, <span title="System.object">object</span> label_name, <span title="System.object">object</span> select_columns, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> field_delim, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_quote_delim, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> na_value, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> header, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> shuffle, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> shuffle_buffer_size, <span title="System.object">object</span> shuffle_seed, <span title="System.object">object</span> prefetch_buffer_size, <span title="System.object">object</span> num_parallel_reads, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> sloppy, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_rows_for_inference, <span title="System.object">object</span> compression_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_saveable_from_iterator" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.experimental.ops.iterator_ops/_Saveable.htm">_Saveable</a> <strong>make_saveable_from_iterator</strong>(<span title="System.object">object</span> iterator)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_saveable_from_iterator_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>make_saveable_from_iterator_dyn</strong>(<span title="System.object">object</span> iterator)
+		</h4>
+		<div class="content">Returns a SaveableObject for saving/restoring iterator state using Saver. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> iterator
+						</dt>
+						<dd>Iterator. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A SaveableObject for saving/restoring iterator state using Saver. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="map_and_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_and_batch</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> batch_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_parallel_batches, <span title="System.bool">bool</span> drop_remainder, <span title="System.object">object</span> num_parallel_calls)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="map_and_batch_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_and_batch_dyn</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> num_parallel_batches, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> drop_remainder, <span title="System.object">object</span> num_parallel_calls)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="padded_batch_and_drop_remainder" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>padded_batch_and_drop_remainder</strong>(<span title="System.object">object</span> batch_size, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="padded_batch_and_drop_remainder_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>padded_batch_and_drop_remainder_dyn</strong>(<span title="System.object">object</span> batch_size, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parallel_interleave" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parallel_interleave</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> cycle_length, <span title="System.int">int</span> block_length, <span title="System.bool">bool</span> sloppy, <span title="System.object">object</span> buffer_output_elements, <span title="System.object">object</span> prefetch_input_elements)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parallel_interleave_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parallel_interleave_dyn</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> cycle_length, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> block_length, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> sloppy, <span title="System.object">object</span> buffer_output_elements, <span title="System.object">object</span> prefetch_input_elements)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parse_example_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parse_example_dataset</strong>(<span title="System.object">object</span> features, <span title="System.int">int</span> num_parallel_calls)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parse_example_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parse_example_dataset_dyn</strong>(<span title="System.object">object</span> features, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_parallel_calls)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="prefetch_to_device" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>prefetch_to_device</strong>(<span title="System.object">object</span> device, <span title="System.object">object</span> buffer_size)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="prefetch_to_device_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>prefetch_to_device_dyn</strong>(<span title="System.object">object</span> device, <span title="System.object">object</span> buffer_size)
+		</h4>
+		<div class="content">A transformation that prefetches dataset values to the given `device`. <p></p> NOTE: Although the transformation creates a <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a>, the
+transformation must be the final `Dataset` in the input pipeline. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> device
+						</dt>
+						<dd>A string. The name of a device to which elements will be prefetched. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> buffer_size
+						</dt>
+						<dd>(Optional.) The number of elements to buffer on `device`.
+Defaults to an automatically chosen value. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="read_batch_features" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>read_batch_features</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader, <span title="System.object">object</span> reader_args, <span title="System.bool">bool</span> randomize_input, <span title="System.object">object</span> num_epochs, <span title="System.int">int</span> capacity)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_batch_features_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_batch_features_dyn</strong>(<span title="System.object">object</span> file_pattern, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> features, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader, <span title="System.object">object</span> reader_args, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> randomize_input, <span title="System.object">object</span> num_epochs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> capacity)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reduce_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_dataset</strong>(<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> dataset, <a href="../tensorflow.contrib.data/Reducer.htm">Reducer</a> reducer)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reduce_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_dataset</strong>(<a href="../tensorflow.data/Dataset.htm">Dataset</a> dataset, <a href="../tensorflow.contrib.data/Reducer.htm">Reducer</a> reducer)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reduce_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_dataset_dyn</strong>(<span title="System.object">object</span> dataset, <span title="System.object">object</span> reducer)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="rejection_resample" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rejection_resample</strong>(<span title="System.object">object</span> class_func, <span title="System.object">object</span> target_dist, <span title="System.object">object</span> initial_dist, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="rejection_resample_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rejection_resample_dyn</strong>(<span title="System.object">object</span> class_func, <span title="System.object">object</span> target_dist, <span title="System.object">object</span> initial_dist, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">A transformation that resamples a dataset to achieve a target distribution. <p></p> **NOTE** Resampling is performed via rejection sampling; some fraction
+of the input values will be dropped. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> class_func
+						</dt>
+						<dd>A function mapping an element of the input dataset to a scalar
+<a href="..\..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> tensor. Values should be in `[0, num_classes)`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> target_dist
+						</dt>
+						<dd>A floating point type tensor, shaped `[num_classes]`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initial_dist
+						</dt>
+						<dd>(Optional.)  A floating point type tensor, shaped
+`[num_classes]`.  If not provided, the true class distribution is
+estimated live in a streaming fashion. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> seed
+						</dt>
+						<dd>(Optional.) Python integer seed for the resampler. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="sample_from_datasets" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>sample_from_datasets</strong>(<span title="System.object">object</span> datasets, <span title="System.object">object</span> weights, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<span title="System.object">object</span> initial_state, <span title="System.object">object</span> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan_dyn</strong>(<span title="System.object">object</span> initial_state, <span title="System.object">object</span> scan_func)
+		</h4>
+		<div class="content">A transformation that scans a function across an input dataset. <p></p> This transformation is a stateful relative of <a href="..\..\..\tf\data\Dataset\map.md"><code>tf.data.Dataset.map</code></a>.
+In addition to mapping `scan_func` across the elements of the input dataset,
+`scan()` accumulates one or more state tensors, whose initial values are
+`initial_state`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> initial_state
+						</dt>
+						<dd>A nested structure of tensors, representing the initial state
+of the accumulator. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> scan_func
+						</dt>
+						<dd>A function that maps `(old_state, input_element)` to
+`(new_state, output_element). It must take two arguments and return a
+pair of nested structures of tensors. The `new_state` must match the
+structure of `initial_state`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="shuffle_and_repeat" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shuffle_and_repeat</strong>(<span title="System.object">object</span> buffer_size, <span title="System.object">object</span> count, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="shuffle_and_repeat_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shuffle_and_repeat_dyn</strong>(<span title="System.object">object</span> buffer_size, <span title="System.object">object</span> count, <span title="System.object">object</span> seed)
+		</h4>
+		<div class="content">Shuffles and repeats a Dataset returning a new permutation for each epoch. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation. <p></p> `dataset.apply(tf.data.experimental.shuffle_and_repeat(buffer_size, count))` <p></p> is equivalent to <p></p> `dataset.shuffle(buffer_size, reshuffle_each_iteration=True).repeat(count)` <p></p> The difference is that the latter dataset is not serializable. So,
+if you need to checkpoint an input pipeline with reshuffling you must use
+this implementation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> buffer_size
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the
+maximum number elements that will be buffered when prefetching. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> count
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the
+number of times the dataset should be repeated. The default behavior
+(if `count` is `None` or `-1`) is for the dataset be repeated
+indefinitely. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> seed
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the
+random seed that will be used to create the distribution. See
+`tf.compat.v1.set_random_seed` for behavior. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <span title="System.int">int</span> stride, <span title="System.int">int</span> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <span title="System.int">int</span> stride, <span title="System.int">int</span> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <span title="System.int">int</span> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <span title="System.int">int</span> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <span title="System.int">int</span> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <span title="System.int">int</span> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <span title="System.int">int</span> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <span title="System.int">int</span> stride, <span title="System.int">int</span> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <span title="System.int">int</span> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <span title="System.int">int</span> window_shift, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<span title="System.int">int</span> window_size, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> stride, <span title="System.int">int</span> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_size, <span title="System.int">int</span> stride, <span title="System.int">int</span> window_shift, <span title="System.int">int</span> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sliding_window_batch_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sliding_window_batch_dyn</strong>(<span title="System.object">object</span> window_size, <span title="System.object">object</span> stride, <span title="System.object">object</span> window_shift, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> window_stride)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sloppy_interleave" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sloppy_interleave</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> cycle_length, <span title="System.int">int</span> block_length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="sloppy_interleave_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>sloppy_interleave_dyn</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> cycle_length, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> block_length)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="unique" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>unique</strong>()
+		</h4>
+		<div class="content">Creates a `Dataset` from another `Dataset`, discarding duplicates. <p></p> Use this transformation to produce a dataset that contains one instance of
+each unique element in the input. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset = tf.data.Dataset.from_tensor_slices([1, 37, 2, 37, 2, 1]) <p></p> # Using `unique()` will drop the duplicate elements.
+dataset = dataset.apply(tf.data.experimental.unique())  # ==> { 1, 37, 2 } </pre>
+</div>
+		</div>
+	</div>
+	<div id="unique_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>unique_dyn</strong>()
+		</h4>
+		<div class="content">Creates a `Dataset` from another `Dataset`, discarding duplicates. <p></p> Use this transformation to produce a dataset that contains one instance of
+each unique element in the input. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>dataset = tf.data.Dataset.from_tensor_slices([1, 37, 2, 37, 2, 1]) <p></p> # Using `unique()` will drop the duplicate elements.
+dataset = dataset.apply(tf.data.experimental.unique())  # ==> { 1, 37, 2 } </pre>
+</div>
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="assert_element_shape_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>assert_element_shape_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_and_drop_remainder_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>batch_and_drop_remainder_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bucket_by_sequence_length_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>bucket_by_sequence_length_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="choose_from_datasets_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>choose_from_datasets_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="copy_to_device_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>copy_to_device_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Counter_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Counter_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dense_to_sparse_batch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>dense_to_sparse_batch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="enumerate_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>enumerate_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_single_element_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_single_element_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="group_by_reducer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>group_by_reducer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="group_by_window_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>group_by_window_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ignore_errors_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ignore_errors_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_batched_features_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_batched_features_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_csv_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_csv_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_saveable_from_iterator_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_saveable_from_iterator_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="map_and_batch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>map_and_batch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="padded_batch_and_drop_remainder_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>padded_batch_and_drop_remainder_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parallel_interleave_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>parallel_interleave_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parse_example_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>parse_example_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="prefetch_to_device_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>prefetch_to_device_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="read_batch_features_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>read_batch_features_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reduce_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>reduce_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rejection_resample_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>rejection_resample_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sample_from_datasets_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>sample_from_datasets_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scan_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>scan_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shuffle_and_repeat_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>shuffle_and_repeat_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sliding_window_batch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>sliding_window_batch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sloppy_interleave_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>sloppy_interleave_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="unbatch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>unbatch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="unique_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>unique_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

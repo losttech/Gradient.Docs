@@ -1,0 +1,2890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>tf.data.experimental - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow/AggregationMethod.htm">AggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulator.htm">ConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ConditionalAccumulatorBase.htm">ConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/constant_initializer.htm">constant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/CriticalSection.htm">CriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DeviceSpec.htm">DeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Dimension.htm">Dimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/DType.htm">DType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FIFOQueue.htm">FIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenFeature.htm">FixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLengthRecordReader.htm">FixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/FixedLenSequenceFeature.htm">FixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_normal_initializer.htm">glorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/glorot_uniform_initializer.htm">glorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GradientTape.htm">GradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.htm">Graph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph._ControlDependenciesController.htm">Graph._ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Graph.I_ControlDependenciesController.htm">Graph.I_ControlDependenciesController</a>
+        </li>
+				<li>
+            <a href="../tensorflow/GraphKeys.htm">GraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/HeadingAxes.htm">HeadingAxes</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IAggregationMethod.htm">IAggregationMethod</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulator.htm">IConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IConditionalAccumulatorBase.htm">IConditionalAccumulatorBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iconstant_initializer.htm">Iconstant_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ICriticalSection.htm">ICriticalSection</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IdentityReader.htm">IdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDeviceSpec.htm">IDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDimension.htm">IDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IDType.htm">IDType</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFIFOQueue.htm">IFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenFeature.htm">IFixedLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLengthRecordReader.htm">IFixedLengthRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IFixedLenSequenceFeature.htm">IFixedLenSequenceFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_normal_initializer.htm">Iglorot_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iglorot_uniform_initializer.htm">Iglorot_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGradientTape.htm">IGradientTape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraph.htm">IGraph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IGraphKeys.htm">IGraphKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIdentityReader.htm">IIdentityReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlices.htm">IIndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IIndexedSlicesSpec.htm">IIndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IInteractiveSession.htm">IInteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILazyLoader.htm">ILazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ILMDBReader.htm">ILMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IModule.htm">IModule</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iname_scope.htm">Iname_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlices.htm">IndexedSlices</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IndexedSlicesSpec.htm">IndexedSlicesSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/InteractiveSession.htm">InteractiveSession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iones_initializer.htm">Iones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOperation.htm">IOperation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOpError.htm">IOpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IOptionalSpec.htm">IOptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iorthogonal_initializer.htm">Iorthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPaddingFIFOQueue.htm">IPaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IPriorityQueue.htm">IPriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IQueueBase.htm">IQueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensor.htm">IRaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRaggedTensorSpec.htm">IRaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_normal_initializer.htm">Irandom_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Irandom_uniform_initializer.htm">Irandom_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRandomShuffleQueue.htm">IRandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IReaderBase.htm">IReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IRegisterGradient.htm">IRegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISession.htm">ISession</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseConditionalAccumulator.htm">ISparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseFeature.htm">ISparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensor.htm">ISparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorSpec.htm">ISparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ISparseTensorValue.htm">ISparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensor.htm">ITensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArray.htm">ITensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorArraySpec.htm">ITensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorShape.htm">ITensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITensorSpec.htm">ITensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITextLineReader.htm">ITextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITFRecordReader.htm">ITFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Itruncated_normal_initializer.htm">Itruncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ITypeSpec.htm">ITypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IUnconnectedGradients.htm">IUnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Iuniform_unit_scaling_initializer.htm">Iuniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariable.htm">IVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariable_scope.htm">Ivariable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVariableScope.htm">IVariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Ivariance_scaling_initializer.htm">Ivariance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IVarLenFeature.htm">IVarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/IWholeFileReader.htm">IWholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Izeros_initializer.htm">Izeros_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LazyLoader.htm">LazyLoader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/LMDBReader.htm">LMDBReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Module.htm">Module</a>
+        </li>
+				<li>
+            <a href="../tensorflow/name_scope.htm">name_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ones_initializer.htm">ones_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.htm">Operation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation._InputList.htm">Operation._InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Operation.I_InputList.htm">Operation.I_InputList</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OpError.htm">OpError</a>
+        </li>
+				<li>
+            <a href="../tensorflow/OptionalSpec.htm">OptionalSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/orthogonal_initializer.htm">orthogonal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PaddingFIFOQueue.htm">PaddingFIFOQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/PriorityQueue.htm">PriorityQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/QueueBase.htm">QueueBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensor.htm">RaggedTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RaggedTensorSpec.htm">RaggedTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_normal_initializer.htm">random_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/random_uniform_initializer.htm">random_uniform_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RandomShuffleQueue.htm">RandomShuffleQueue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/ReaderBase.htm">ReaderBase</a>
+        </li>
+				<li>
+            <a href="../tensorflow/RegisterGradient.htm">RegisterGradient</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Session.htm">Session</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseConditionalAccumulator.htm">SparseConditionalAccumulator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseFeature.htm">SparseFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensor.htm">SparseTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorSpec.htm">SparseTensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/SparseTensorValue.htm">SparseTensorValue</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor.htm">Tensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Tensor`1.htm">Tensor&lt;T&gt;</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArray.htm">TensorArray</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorArraySpec.htm">TensorArraySpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimension.htm">TensorDimension</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorDimensionSlice.htm">TensorDimensionSlice</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorShape.htm">TensorShape</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TensorSpec.htm">TensorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TextLineReader.htm">TextLineReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.htm">tf</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.audio.htm">tf.audio</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.htm">tf.autograph</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.autograph.experimental.htm">tf.autograph.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.bitwise.htm">tf.bitwise</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.compat.htm">tf.compat</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.htm">tf.config</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.experimental.htm">tf.config.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.optimizer.htm">tf.config.optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.config.threading.htm">tf.config.threading</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.htm">tf.data</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.data.experimental.htm" class="current">tf.data.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.debugging.htm">tf.debugging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distribute.htm">tf.distribute</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.distributions.htm">tf.distributions</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.errors.htm">tf.errors</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.htm">tf.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.experimental.htm">tf.estimator.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.export.htm">tf.estimator.export</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.estimator.inputs.htm">tf.estimator.inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.experimental.htm">tf.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.feature_column.htm">tf.feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.gfile.htm">tf.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.graph_util.htm">tf.graph_util</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.image.htm">tf.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.initializers.htm">tf.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.htm">tf.io</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.io.gfile.htm">tf.io.gfile</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.htm">tf.keras</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.activations.htm">tf.keras.activations</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.htm">tf.keras.applications</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.densenet.htm">tf.keras.applications.densenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.imagenet_utils.htm">tf.keras.applications.imagenet_utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_resnet_v2.htm">tf.keras.applications.inception_resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.inception_v3.htm">tf.keras.applications.inception_v3</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet.htm">tf.keras.applications.mobilenet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.mobilenet_v2.htm">tf.keras.applications.mobilenet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.nasnet.htm">tf.keras.applications.nasnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet.htm">tf.keras.applications.resnet</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.resnet_v2.htm">tf.keras.applications.resnet_v2</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg16.htm">tf.keras.applications.vgg16</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.vgg19.htm">tf.keras.applications.vgg19</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.applications.xception.htm">tf.keras.applications.xception</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.backend.htm">tf.keras.backend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.constraints.htm">tf.keras.constraints</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.htm">tf.keras.datasets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.boston_housing.htm">tf.keras.datasets.boston_housing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar10.htm">tf.keras.datasets.cifar10</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.cifar100.htm">tf.keras.datasets.cifar100</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.fashion_mnist.htm">tf.keras.datasets.fashion_mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.imdb.htm">tf.keras.datasets.imdb</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.mnist.htm">tf.keras.datasets.mnist</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.datasets.reuters.htm">tf.keras.datasets.reuters</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.estimator.htm">tf.keras.estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.experimental.htm">tf.keras.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.initializers.htm">tf.keras.initializers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.layers.htm">tf.keras.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.losses.htm">tf.keras.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.metrics.htm">tf.keras.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.htm">tf.keras.mixed_precision</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.mixed_precision.experimental.htm">tf.keras.mixed_precision.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.models.htm">tf.keras.models</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.htm">tf.keras.optimizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.optimizers.schedules.htm">tf.keras.optimizers.schedules</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.htm">tf.keras.preprocessing</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.preprocessing.image.htm">tf.keras.preprocessing.image</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.regularizers.htm">tf.keras.regularizers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.keras.utils.htm">tf.keras.utils</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.htm">tf.layers</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.layers.experimental.htm">tf.layers.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.linalg.htm">tf.linalg</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.htm">tf.lite</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.htm">tf.lite.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.htm">tf.lite.experimental.microfrontend</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.htm">tf.lite.experimental.microfrontend.python</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.microfrontend.python.ops.htm">tf.lite.experimental.microfrontend.python.ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.lite.experimental.nn.htm">tf.lite.experimental.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.logging.htm">tf.logging</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.losses.htm">tf.losses</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.math.htm">tf.math</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.metrics.htm">tf.metrics</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nest.htm">tf.nest</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.nn.htm">tf.nn</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.profiler.htm">tf.profiler</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.quantization.htm">tf.quantization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.ragged.htm">tf.ragged</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.htm">tf.random</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.random.experimental.htm">tf.random.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.resource_loader.htm">tf.resource_loader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.htm">tf.saved_model</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.saved_model.main_op.htm">tf.saved_model.main_op</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sets.htm">tf.sets</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.signal.htm">tf.signal</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sparse.htm">tf.sparse</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.strings.htm">tf.strings</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.htm">tf.summary</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.summary.experimental.htm">tf.summary.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.sysconfig.htm">tf.sysconfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.test.htm">tf.test</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.htm">tf.tpu</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.tpu.experimental.htm">tf.tpu.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.htm">tf.train</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.train.experimental.htm">tf.train.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.user_ops.htm">tf.user_ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.htm">tf.xla</a>
+        </li>
+				<li>
+            <a href="../tensorflow/tf.xla.experimental.htm">tf.xla.experimental</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TFRecordReader.htm">TFRecordReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/truncated_normal_initializer.htm">truncated_normal_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/TypeSpec.htm">TypeSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow/UnconnectedGradients.htm">UnconnectedGradients</a>
+        </li>
+				<li>
+            <a href="../tensorflow/uniform_unit_scaling_initializer.htm">uniform_unit_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/Variable.htm">Variable</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variable_scope.htm">variable_scope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableAggregation.htm">VariableAggregation</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableScope.htm">VariableScope</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a>
+        </li>
+				<li>
+            <a href="../tensorflow/variance_scaling_initializer.htm">variance_scaling_initializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow/VarLenFeature.htm">VarLenFeature</a>
+        </li>
+				<li>
+            <a href="../tensorflow/WholeFileReader.htm">WholeFileReader</a>
+        </li>
+				<li>
+            <a href="../tensorflow/zeros_initializer.htm">zeros_initializer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> tf.data.experimental</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bucket_by_sequence_length">bucket_by_sequence_length</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bucket_by_sequence_length_dyn">bucket_by_sequence_length_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bytes_produced_stats">bytes_produced_stats</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bytes_produced_stats">bytes_produced_stats</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bytes_produced_stats_dyn">bytes_produced_stats_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#cardinality">cardinality</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#cardinality">cardinality</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#cardinality_dyn">cardinality_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#copy_to_device">copy_to_device</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#dense_to_sparse_batch">dense_to_sparse_batch</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#from_variant">from_variant</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#from_variant">from_variant</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#from_variant_dyn">from_variant_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional">get_next_as_optional</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional">get_next_as_optional</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional">get_next_as_optional</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional">get_next_as_optional</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional">get_next_as_optional</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional_dyn">get_next_as_optional_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_single_element">get_single_element</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_structure">get_structure</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_structure">get_structure</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_structure_dyn">get_structure_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#group_by_reducer">group_by_reducer</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#group_by_window">group_by_window</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#latency_stats">latency_stats</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#latency_stats">latency_stats</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#latency_stats_dyn">latency_stats_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_batched_features_dataset">make_batched_features_dataset</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_batched_features_dataset">make_batched_features_dataset</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_csv_dataset">make_csv_dataset</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_saveable_from_iterator">make_saveable_from_iterator</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#map_and_batch">map_and_batch</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#map_and_batch_with_legacy_function">map_and_batch_with_legacy_function</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#map_and_batch_with_legacy_function_dyn">map_and_batch_with_legacy_function_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#parallel_interleave">parallel_interleave</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#parallel_interleave">parallel_interleave</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#parse_example_dataset">parse_example_dataset</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#prefetch_to_device">prefetch_to_device</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#rejection_resample">rejection_resample</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan">scan</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan">scan</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan">scan</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan">scan</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan">scan</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan">scan</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#shuffle_and_repeat">shuffle_and_repeat</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#take_while">take_while</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#take_while_dyn">take_while_dyn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#to_variant">to_variant</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#to_variant">to_variant</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#to_variant_dyn">to_variant_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow/tf.data.experimental.htm#AUTOTUNE">AUTOTUNE</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bucket_by_sequence_length_fn">bucket_by_sequence_length_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#bytes_produced_stats_fn">bytes_produced_stats_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#cardinality_fn">cardinality_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#choose_from_datasets_fn">choose_from_datasets_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#copy_to_device_fn">copy_to_device_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#Counter_fn">Counter_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#dense_to_sparse_batch_fn">dense_to_sparse_batch_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#enumerate_dataset_fn">enumerate_dataset_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#from_variant_fn">from_variant_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_next_as_optional_fn">get_next_as_optional_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_single_element_fn">get_single_element_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#get_structure_fn">get_structure_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#group_by_reducer_fn">group_by_reducer_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#group_by_window_fn">group_by_window_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#ignore_errors_fn">ignore_errors_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#INFINITE_CARDINALITY">INFINITE_CARDINALITY</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#latency_stats_fn">latency_stats_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_batched_features_dataset_fn">make_batched_features_dataset_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_csv_dataset_fn">make_csv_dataset_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#make_saveable_from_iterator_fn">make_saveable_from_iterator_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#map_and_batch_fn">map_and_batch_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#map_and_batch_with_legacy_function_fn">map_and_batch_with_legacy_function_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#parallel_interleave_fn">parallel_interleave_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#parse_example_dataset_fn">parse_example_dataset_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#prefetch_to_device_fn">prefetch_to_device_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#rejection_resample_fn">rejection_resample_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#sample_from_datasets_fn">sample_from_datasets_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#scan_fn">scan_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#shuffle_and_repeat_fn">shuffle_and_repeat_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#take_while_fn">take_while_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#to_variant_fn">to_variant_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#unbatch_fn">unbatch_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#unique_fn">unique_fn</a></li>
+				<li><a href="../tensorflow/tf.data.experimental.htm#UNKNOWN_CARDINALITY">UNKNOWN_CARDINALITY</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="bucket_by_sequence_length" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bucket_by_sequence_length</strong>(<span title="System.object">object</span> element_length_func, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> bucket_boundaries, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> bucket_batch_sizes, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values, <span title="System.bool">bool</span> pad_to_bucket_boundary, <span title="System.bool">bool</span> no_padding, <span title="System.bool">bool</span> drop_remainder)
+		</h4>
+		<div class="content">A transformation that buckets elements in a `Dataset` by length. <p></p> Elements of the `Dataset` are grouped together by length and then are padded
+and batched. <p></p> This is useful for sequence tasks in which the elements have variable length.
+Grouping together elements that have similar lengths reduces the total
+fraction of padding in a batch which increases training step efficiency. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> element_length_func
+						</dt>
+						<dd>function from element in `Dataset` to <a href="..\..\..\tf\dtypes\int32.md"><code>tf.int32</code></a>,
+determines the length of the element, which will determine the bucket it
+goes into. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> bucket_boundaries
+						</dt>
+						<dd>`list<int>`, upper length boundaries of the buckets. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> bucket_batch_sizes
+						</dt>
+						<dd>`list<int>`, batch size per bucket. Length should be
+`len(bucket_boundaries) + 1`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> padded_shapes
+						</dt>
+						<dd>Nested structure of <a href="..\..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> to pass to
+<a href="..\..\..\tf\data\Dataset\padded_batch.md"><code>tf.data.Dataset.padded_batch</code></a>. If not provided, will use
+`dataset.output_shapes`, which will result in variable length dimensions
+being padded out to the maximum length in each batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> padding_values
+						</dt>
+						<dd>Values to pad with, passed to
+<a href="..\..\..\tf\data\Dataset\padded_batch.md"><code>tf.data.Dataset.padded_batch</code></a>. Defaults to padding with 0. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> pad_to_bucket_boundary
+						</dt>
+						<dd>bool, if `False`, will pad dimensions with unknown
+size to maximum length in batch. If `True`, will pad dimensions with
+unknown size to bucket boundary minus 1 (i.e., the maximum length in each
+bucket), and caller must ensure that the source `Dataset` does not contain
+any elements with length longer than `max(bucket_boundaries)`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> no_padding
+						</dt>
+						<dd>`bool`, indicates whether to pad the batch features (features
+need to be either of type <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a> or of same shape). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> drop_remainder
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\bool.md"><code>tf.bool</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing
+whether the last batch should be dropped in the case it has fewer than
+`batch_size` elements; the default behavior is not to drop the smaller
+batch. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="bucket_by_sequence_length_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bucket_by_sequence_length_dyn</strong>(<span title="System.object">object</span> element_length_func, <span title="System.object">object</span> bucket_boundaries, <span title="System.object">object</span> bucket_batch_sizes, <span title="System.object">object</span> padded_shapes, <span title="System.object">object</span> padding_values, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> pad_to_bucket_boundary, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> no_padding, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> drop_remainder)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="bytes_produced_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bytes_produced_stats</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> tag)
+		</h4>
+		<div class="content">Records the number of bytes produced by each element of the input dataset. <p></p> To consume the statistics, associate a `StatsAggregator` with the output
+dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> tag
+						</dt>
+						<dd>String. All statistics recorded by the returned transformation will
+be associated with the given `tag`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="bytes_produced_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bytes_produced_stats</strong>(<span title="System.string">string</span> tag)
+		</h4>
+		<div class="content">Records the number of bytes produced by each element of the input dataset. <p></p> To consume the statistics, associate a `StatsAggregator` with the output
+dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> tag
+						</dt>
+						<dd>String. All statistics recorded by the returned transformation will
+be associated with the given `tag`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="bytes_produced_stats_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>bytes_produced_stats_dyn</strong>(<span title="System.object">object</span> tag)
+		</h4>
+		<div class="content">Records the number of bytes produced by each element of the input dataset. <p></p> To consume the statistics, associate a `StatsAggregator` with the output
+dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tag
+						</dt>
+						<dd>String. All statistics recorded by the returned transformation will
+be associated with the given `tag`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cardinality" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cardinality</strong>(<a href="../tensorflow.data/Dataset.htm">Dataset</a> dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="cardinality" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>cardinality</strong>(<a href="../tensorflow.compat.v2.data/Dataset.htm">Dataset</a> dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="cardinality_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>cardinality_dyn</strong>(<span title="System.object">object</span> dataset)
+		</h4>
+		<div class="content">Returns the cardinality of `dataset`, if known. <p></p> The operation returns the cardinality of `dataset`. The operation may return
+<a href="..\..\..\tf\data\experimental\INFINITE_CARDINALITY.md"><code>tf.data.experimental.INFINITE_CARDINALITY</code></a> if `dataset` contains an infinite
+number of elements or <a href="..\..\..\tf\data\experimental\UNKNOWN_CARDINALITY.md"><code>tf.data.experimental.UNKNOWN_CARDINALITY</code></a> if the
+analysis fails to determine the number of elements in `dataset` (e.g. when the
+dataset source is a file). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dataset
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> for which to determine cardinality. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> `Tensor` representing the cardinality of `dataset`. If
+the cardinality is infinite or unknown, the operation returns the named
+constant `INFINITE_CARDINALITY` and `UNKNOWN_CARDINALITY` respectively. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="copy_to_device" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>copy_to_device</strong>(<span title="System.string">string</span> target_device, <span title="System.string">string</span> source_device)
+		</h4>
+		<div class="content">A transformation that copies dataset elements to the given `target_device`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> target_device
+						</dt>
+						<dd>The name of a device to which elements will be copied. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> source_device
+						</dt>
+						<dd>The original device on which `input_dataset` will be placed. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="dense_to_sparse_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dense_to_sparse_batch</strong>(<span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> row_shape)
+		</h4>
+		<div class="content">A transformation that batches ragged elements into <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>s. <p></p> Like `Dataset.padded_batch()`, this transformation combines multiple
+consecutive elements of the dataset, which might have different
+shapes, into a single element. The resulting element has three
+components (`indices`, `values`, and `dense_shape`), which
+comprise a <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a> that represents the same data. The
+`row_shape` represents the dense shape of each row in the
+resulting <a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>, to which the effective batch size is
+prepended. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.int">int</span></code> batch_size
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+consecutive elements of this dataset to combine in a single batch. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span></code> row_shape
+						</dt>
+						<dd>A <a href="..\..\..\tf\TensorShape.md"><code>tf.TensorShape</code></a> or <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> vector tensor-like object
+representing the equivalent dense shape of a row in the resulting
+<a href="..\..\..\tf\sparse\SparseTensor.md"><code>tf.SparseTensor</code></a>. Each element of this dataset must have the same rank as
+`row_shape`, and must have size less than or equal to `row_shape` in each
+dimension. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># NOTE: The following examples use `{... }` to represent the
+            # contents of a dataset.
+            a = { ['a', 'b', 'c'], ['a', 'b'], ['a', 'b', 'c', 'd'] } <p></p> a.apply(tf.data.experimental.dense_to_sparse_batch(
+    batch_size=2, row_shape=[6])) ==
+{
+    ([[0, 0], [0, 1], [0, 2], [1, 0], [1, 1]],  # indices
+     ['a', 'b', 'c', 'a', 'b'],                 # values
+     [2, 6]),                                   # dense_shape
+    ([[0, 0], [0, 1], [0, 2], [0, 3]],
+     ['a', 'b', 'c', 'd'],
+     [1, 6])
+} </pre>
+</div>
+		</div>
+	</div>
+	<div id="from_variant" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/_VariantDataset.htm">_VariantDataset</a> <strong>from_variant</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> variant, <a href="../tensorflow/TensorSpec.htm">TensorSpec</a> structure)
+		</h4>
+		<div class="content">Constructs a dataset from the given variant and structure. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> variant
+						</dt>
+						<dd>A scalar <a href="..\..\..\tf\dtypes\variant.md"><code>tf.variant</code></a> tensor representing a dataset. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/TensorSpec.htm">TensorSpec</a></code> structure
+						</dt>
+						<dd>A <a href="..\..\..\tf\TypeSpec.md"><code>tf.data.experimental.Structure</code></a> object representing the
+structure of each element in the dataset. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.dataset_ops/_VariantDataset.htm">_VariantDataset</a></code>
+					</dt>
+					<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> instance. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="from_variant" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/_VariantDataset.htm">_VariantDataset</a> <strong>from_variant</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> variant, <span title="System.ValueTuple<TensorSpec, object, object>">ValueTuple&lt;TensorSpec, object, object&gt;</span> structure)
+		</h4>
+		<div class="content">Constructs a dataset from the given variant and structure. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> variant
+						</dt>
+						<dd>A scalar <a href="..\..\..\tf\dtypes\variant.md"><code>tf.variant</code></a> tensor representing a dataset. 
+						</dd>
+						<dt>
+							<code><span title="System.ValueTuple<TensorSpec, object, object>">ValueTuple&lt;TensorSpec, object, object&gt;</span></code> structure
+						</dt>
+						<dd>A <a href="..\..\..\tf\TypeSpec.md"><code>tf.data.experimental.Structure</code></a> object representing the
+structure of each element in the dataset. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.dataset_ops/_VariantDataset.htm">_VariantDataset</a></code>
+					</dt>
+					<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> instance. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="from_variant_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>from_variant_dyn</strong>(<span title="System.object">object</span> variant, <span title="System.object">object</span> structure)
+		</h4>
+		<div class="content">Constructs a dataset from the given variant and structure. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> variant
+						</dt>
+						<dd>A scalar <a href="..\..\..\tf\dtypes\variant.md"><code>tf.variant</code></a> tensor representing a dataset. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> structure
+						</dt>
+						<dd>A <a href="..\..\..\tf\TypeSpec.md"><code>tf.data.experimental.Structure</code></a> object representing the
+structure of each element in the dataset. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> instance. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_next_as_optional" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a> <strong>get_next_as_optional</strong>(<a href="../tensorflow.python.training.tracking.base/Trackable.htm">Trackable</a> iterator)
+		</h4>
+		<div class="content">Returns an `Optional` that contains the next value from the iterator. <p></p> If `iterator` has reached the end of the sequence, the returned `Optional`
+will have no value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.training.tracking.base/Trackable.htm">Trackable</a></code> iterator
+						</dt>
+						<dd>A `tf.compat.v1.data.Iterator` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a></code>
+					</dt>
+					<dd>An `Optional` object representing the next value from the iterator (if it
+has one) or no value. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_next_as_optional" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a> <strong>get_next_as_optional</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> iterator)
+		</h4>
+		<div class="content">Returns an `Optional` that contains the next value from the iterator. <p></p> If `iterator` has reached the end of the sequence, the returned `Optional`
+will have no value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> iterator
+						</dt>
+						<dd>A `tf.compat.v1.data.Iterator` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a></code>
+					</dt>
+					<dd>An `Optional` object representing the next value from the iterator (if it
+has one) or no value. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_next_as_optional" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a> <strong>get_next_as_optional</strong>(<span title="System.Collections.Generic.IEnumerator<object>">IEnumerator&lt;object&gt;</span> iterator)
+		</h4>
+		<div class="content">Returns an `Optional` that contains the next value from the iterator. <p></p> If `iterator` has reached the end of the sequence, the returned `Optional`
+will have no value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerator<object>">IEnumerator&lt;object&gt;</span></code> iterator
+						</dt>
+						<dd>A `tf.compat.v1.data.Iterator` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a></code>
+					</dt>
+					<dd>An `Optional` object representing the next value from the iterator (if it
+has one) or no value. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_next_as_optional" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a> <strong>get_next_as_optional</strong>(<a href="../tensorflow.python.data.ops.multi_device_iterator_ops/MultiDeviceIteratorV2.htm">MultiDeviceIteratorV2</a> iterator)
+		</h4>
+		<div class="content">Returns an `Optional` that contains the next value from the iterator. <p></p> If `iterator` has reached the end of the sequence, the returned `Optional`
+will have no value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.data.ops.multi_device_iterator_ops/MultiDeviceIteratorV2.htm">MultiDeviceIteratorV2</a></code> iterator
+						</dt>
+						<dd>A `tf.compat.v1.data.Iterator` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a></code>
+					</dt>
+					<dd>An `Optional` object representing the next value from the iterator (if it
+has one) or no value. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_next_as_optional" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a> <strong>get_next_as_optional</strong>(<span title="System.object">object</span> iterator)
+		</h4>
+		<div class="content">Returns an `Optional` that contains the next value from the iterator. <p></p> If `iterator` has reached the end of the sequence, the returned `Optional`
+will have no value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> iterator
+						</dt>
+						<dd>A `tf.compat.v1.data.Iterator` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.optional_ops/_OptionalImpl.htm">_OptionalImpl</a></code>
+					</dt>
+					<dd>An `Optional` object representing the next value from the iterator (if it
+has one) or no value. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_next_as_optional_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_next_as_optional_dyn</strong>(<span title="System.object">object</span> iterator)
+		</h4>
+		<div class="content">Returns an `Optional` that contains the next value from the iterator. <p></p> If `iterator` has reached the end of the sequence, the returned `Optional`
+will have no value. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> iterator
+						</dt>
+						<dd>A `tf.compat.v1.data.Iterator` object. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Optional` object representing the next value from the iterator (if it
+has one) or no value. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_single_element" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_single_element</strong>(<a href="../tensorflow.compat.v2.data/Dataset.htm">Dataset</a> dataset)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_structure" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_structure</strong>(<span title="System.object">object</span> dataset_or_iterator)
+		</h4>
+		<div class="content">Returns the type specification of an element of a `Dataset` or `Iterator`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dataset_or_iterator
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> or <a href="..\..\..\tf\data\Iterator.md"><code>tf.data.Iterator</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A nested structure of <a href="..\..\..\tf\TypeSpec.md"><code>tf.TypeSpec</code></a> objects matching the structure of an
+element of `dataset_or_iterator` and spacifying the type of individal
+components. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_structure" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_structure</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> dataset_or_iterator)
+		</h4>
+		<div class="content">Returns the type specification of an element of a `Dataset` or `Iterator`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span></code> dataset_or_iterator
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> or <a href="..\..\..\tf\data\Iterator.md"><code>tf.data.Iterator</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A nested structure of <a href="..\..\..\tf\TypeSpec.md"><code>tf.TypeSpec</code></a> objects matching the structure of an
+element of `dataset_or_iterator` and spacifying the type of individal
+components. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_structure_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_structure_dyn</strong>(<span title="System.object">object</span> dataset_or_iterator)
+		</h4>
+		<div class="content">Returns the type specification of an element of a `Dataset` or `Iterator`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dataset_or_iterator
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> or <a href="..\..\..\tf\data\Iterator.md"><code>tf.data.Iterator</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A nested structure of <a href="..\..\..\tf\TypeSpec.md"><code>tf.TypeSpec</code></a> objects matching the structure of an
+element of `dataset_or_iterator` and spacifying the type of individal
+components. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="group_by_reducer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_by_reducer</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> key_func, <a href="../tensorflow.data.experimental/Reducer.htm">Reducer</a> reducer)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="group_by_window" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>group_by_window</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> key_func, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> reduce_func, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> window_size, <span title="System.object">object</span> window_size_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="latency_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>latency_stats</strong>(<span title="System.string">string</span> tag)
+		</h4>
+		<div class="content">Records the latency of producing each element of the input dataset. <p></p> To consume the statistics, associate a `StatsAggregator` with the output
+dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> tag
+						</dt>
+						<dd>String. All statistics recorded by the returned transformation will
+be associated with the given `tag`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="latency_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>latency_stats</strong>(<span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span> tag)
+		</h4>
+		<div class="content">Records the latency of producing each element of the input dataset. <p></p> To consume the statistics, associate a `StatsAggregator` with the output
+dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<string>">IEnumerable&lt;string&gt;</span></code> tag
+						</dt>
+						<dd>String. All statistics recorded by the returned transformation will
+be associated with the given `tag`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="latency_stats_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>latency_stats_dyn</strong>(<span title="System.object">object</span> tag)
+		</h4>
+		<div class="content">Records the latency of producing each element of the input dataset. <p></p> To consume the statistics, associate a `StatsAggregator` with the output
+dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tag
+						</dt>
+						<dd>String. All statistics recorded by the returned transformation will
+be associated with the given `tag`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="make_batched_features_dataset" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>make_batched_features_dataset</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reader, <span title="System.string">string</span> label_key, <span title="System.object">object</span> reader_args, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> shuffle_buffer_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> shuffle_seed, <span title="System.object">object</span> prefetch_buffer_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> reader_num_threads, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> parser_num_threads, <span title="System.bool">bool</span> sloppy_ordering, <span title="System.bool">bool</span> drop_final_batch)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_batched_features_dataset" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>make_batched_features_dataset</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> reader, <span title="System.string">string</span> label_key, <span title="System.object">object</span> reader_args, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> shuffle_buffer_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> shuffle_seed, <span title="System.object">object</span> prefetch_buffer_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> reader_num_threads, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> parser_num_threads, <span title="System.bool">bool</span> sloppy_ordering, <span title="System.bool">bool</span> drop_final_batch)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="make_csv_dataset" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a> <strong>make_csv_dataset</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> file_pattern, <span title="System.int">int</span> batch_size, <span title="System.object">object</span> column_names, <span title="System.object">object</span> column_defaults, <span title="System.object">object</span> label_name, <span title="System.object">object</span> select_columns, <span title="System.string">string</span> field_delim, <span title="System.bool">bool</span> use_quote_delim, <span title="System.string">string</span> na_value, <span title="System.bool">bool</span> header, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_epochs, <span title="System.bool">bool</span> shuffle, <span title="System.int">int</span> shuffle_buffer_size, <span title="System.object">object</span> shuffle_seed, <span title="System.object">object</span> prefetch_buffer_size, <span title="System.object">object</span> num_parallel_reads, <span title="System.bool">bool</span> sloppy, <span title="System.int">int</span> num_rows_for_inference, <span title="System.object">object</span> compression_type, <span title="System.bool">bool</span> ignore_errors)
+		</h4>
+		<div class="content">Reads CSV files into a dataset. <p></p> Reads CSV files into a dataset, where each element is a (features, labels)
+tuple that corresponds to a batch of CSV rows. The features dictionary
+maps feature column names to `Tensor`s containing the corresponding
+feature data, and labels is a `Tensor` containing the batch's label data. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> file_pattern
+						</dt>
+						<dd>List of files or patterns of file paths containing CSV
+records. See <a href="..\..\..\tf\io\gfile\glob.md"><code>tf.io.gfile.glob</code></a> for pattern rules. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> batch_size
+						</dt>
+						<dd>An int representing the number of records to combine
+in a single batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> column_names
+						</dt>
+						<dd>An optional list of strings that corresponds to the CSV
+columns, in order. One per column of the input record. If this is not
+provided, infers the column names from the first row of the records.
+These names will be the keys of the features dict of each dataset element. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> column_defaults
+						</dt>
+						<dd>A optional list of default values for the CSV fields. One
+item per selected column of the input record. Each item in the list is
+either a valid CSV dtype (float32, float64, int32, int64, or string), or a
+`Tensor` with one of the aforementioned types. The tensor can either be
+a scalar default value (if the column is optional), or an empty tensor (if
+the column is required). If a dtype is provided instead of a tensor, the
+column is also treated as required. If this list is not provided, tries
+to infer types based on reading the first num_rows_for_inference rows of
+files specified, and assumes all columns are optional, defaulting to `0`
+for numeric values and `""` for string values. If both this and
+`select_columns` are specified, these must have the same lengths, and
+`column_defaults` is assumed to be sorted in order of increasing column
+index. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> label_name
+						</dt>
+						<dd>A optional string corresponding to the label column. If
+provided, the data for this column is returned as a separate `Tensor` from
+the features dictionary, so that the dataset complies with the format
+expected by a `tf.Estimator.train` or `tf.Estimator.evaluate` input
+function. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> select_columns
+						</dt>
+						<dd>An optional list of integer indices or string column
+names, that specifies a subset of columns of CSV data to select. If
+column names are provided, these must correspond to names provided in
+`column_names` or inferred from the file header lines. When this argument
+is specified, only a subset of CSV columns will be parsed and returned,
+corresponding to the columns specified. Using this results in faster
+parsing and lower memory usage. If both this and `column_defaults` are
+specified, these must have the same lengths, and `column_defaults` is
+assumed to be sorted in order of increasing column index. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> field_delim
+						</dt>
+						<dd>An optional `string`. Defaults to `","`. Char delimiter to
+separate fields in a record. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> use_quote_delim
+						</dt>
+						<dd>An optional bool. Defaults to `True`. If false, treats
+double quotation marks as regular characters inside of the string fields. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> na_value
+						</dt>
+						<dd>Additional string to recognize as NA/NaN. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> header
+						</dt>
+						<dd>A bool that indicates whether the first rows of provided CSV files
+correspond to header lines with column names, and should not be included
+in the data. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> num_epochs
+						</dt>
+						<dd>An int specifying the number of times this dataset is repeated.
+If None, cycles through the dataset forever. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> shuffle
+						</dt>
+						<dd>A bool that indicates whether the input should be shuffled. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> shuffle_buffer_size
+						</dt>
+						<dd>Buffer size to use for shuffling. A large buffer size
+ensures better shuffling, but increases memory usage and startup time. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> shuffle_seed
+						</dt>
+						<dd>Randomization seed to use for shuffling. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> prefetch_buffer_size
+						</dt>
+						<dd>An int specifying the number of feature
+batches to prefetch for performance improvement. Recommended value is the
+number of batches consumed per training step. Defaults to auto-tune. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_parallel_reads
+						</dt>
+						<dd>Number of threads used to read CSV records from files.
+If >1, the results will be interleaved. Defaults to `1`. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> sloppy
+						</dt>
+						<dd>If `True`, reading performance will be improved at
+the cost of non-deterministic ordering. If `False`, the order of elements
+produced is deterministic prior to shuffling (elements are still
+randomized if `shuffle=True`. Note that if the seed is set, then order
+of elements after shuffling is deterministic). Defaults to `False`. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> num_rows_for_inference
+						</dt>
+						<dd>Number of rows of a file to use for type inference
+if record_defaults is not provided. If None, reads all the rows of all
+the files. Defaults to 100. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> compression_type
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\string.md"><code>tf.string</code></a> scalar evaluating to one of
+`""` (no compression), `"ZLIB"`, or `"GZIP"`. Defaults to no compression. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> ignore_errors
+						</dt>
+						<dd>(Optional.) If `True`, ignores errors with CSV file parsing,
+such as malformed data or empty lines, and moves on to the next valid
+CSV record. Otherwise, the dataset raises an error and stops processing
+when encountering any invalid records. Defaults to `False`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a></code>
+					</dt>
+					<dd>A dataset, where each element is a (features, labels) tuple that corresponds
+to a batch of `batch_size` CSV rows. The features dictionary maps feature
+column names to `Tensor`s containing the corresponding column data, and
+labels is a `Tensor` containing the column data for the label column
+specified by `label_name`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="make_saveable_from_iterator" class="method">
+		<h4>
+			<a href="../tensorflow.python.data.experimental.ops.iterator_ops/_Saveable.htm">_Saveable</a> <strong>make_saveable_from_iterator</strong>(<a href="../tensorflow.data/Iterator.htm">Iterator</a> iterator)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="map_and_batch" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_and_batch</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> map_func, <span title="System.int">int</span> batch_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_parallel_batches, <span title="System.bool">bool</span> drop_remainder, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_parallel_calls)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="map_and_batch_with_legacy_function" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_and_batch_with_legacy_function</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> num_parallel_batches, <span title="System.bool">bool</span> drop_remainder, <span title="System.object">object</span> num_parallel_calls)
+		</h4>
+		<div class="content">Fused implementation of `map` and `batch`. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch() <p></p> NOTE: This is an escape hatch for existing uses of `map_and_batch` that do not
+work with V2 functions. New uses are strongly discouraged and existing uses
+should migrate to `map_and_batch` as this method will not be removed in V2. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> map_func
+						</dt>
+						<dd>A function mapping a nested structure of tensors to another
+nested structure of tensors. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> batch_size
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the number of
+consecutive elements of this dataset to combine in a single batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_parallel_batches
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>,
+representing the number of batches to create in parallel. On one hand,
+higher values can help mitigate the effect of stragglers. On the other
+hand, higher values can increase contention if CPU is scarce. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> drop_remainder
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\bool.md"><code>tf.bool</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing
+whether the last batch should be dropped in case its size is smaller than
+desired; the default behavior is not to drop the smaller batch. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_parallel_calls
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>,
+representing the number of elements to process in parallel. If not
+specified, `batch_size * num_parallel_batches` elements will be processed
+in parallel. If the value <a href="..\..\..\tf\data\experimental\AUTOTUNE.md"><code>tf.data.experimental.AUTOTUNE</code></a> is used, then
+the number of parallel calls is set dynamically based on available CPU. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="map_and_batch_with_legacy_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>map_and_batch_with_legacy_function_dyn</strong>(<span title="System.object">object</span> map_func, <span title="System.object">object</span> batch_size, <span title="System.object">object</span> num_parallel_batches, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> drop_remainder, <span title="System.object">object</span> num_parallel_calls)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parallel_interleave" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parallel_interleave</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> map_func, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> cycle_length, <span title="System.int">int</span> block_length, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> sloppy, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> buffer_output_elements, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> prefetch_input_elements)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parallel_interleave" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parallel_interleave</strong>(<span title="System.object">object</span> map_func, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> cycle_length, <span title="System.int">int</span> block_length, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> sloppy, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> buffer_output_elements, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> prefetch_input_elements)
+		</h4>
+		<div class="content">A parallel version of the `Dataset.interleave()` transformation. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`. <p></p> `parallel_interleave()` maps `map_func` across its input to produce nested
+datasets, and outputs their elements interleaved. Unlike
+<a href="..\..\..\tf\data\Dataset\interleave.md"><code>tf.data.Dataset.interleave</code></a>, it gets elements from `cycle_length` nested
+datasets in parallel, which increases the throughput, especially in the
+presence of stragglers. Furthermore, the `sloppy` argument can be used to
+improve performance, by relaxing the requirement that the outputs are produced
+in a deterministic order, and allowing the implementation to skip over nested
+datasets whose elements are not readily available when requested. <p></p> Example usage:
+WARNING: If `sloppy` is `True`, the order of produced elements is not
+deterministic. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> map_func
+						</dt>
+						<dd>A function mapping a nested structure of tensors to a `Dataset`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> cycle_length
+						</dt>
+						<dd>The number of input `Dataset`s to interleave from in parallel. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> block_length
+						</dt>
+						<dd>The number of consecutive elements to pull from an input
+`Dataset` before advancing to the next input `Dataset`. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span></code> sloppy
+						</dt>
+						<dd>If false, elements are produced in deterministic order. Otherwise,
+the implementation is allowed, for the sake of expediency, to produce
+elements in a non-deterministic order. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> buffer_output_elements
+						</dt>
+						<dd>The number of elements each iterator being
+interleaved should buffer (similar to the `.prefetch()` transformation for
+each interleaved iterator). 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> prefetch_input_elements
+						</dt>
+						<dd>The number of input elements to transform to
+iterators before they are needed for interleaving. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Preprocess 4 files concurrently.
+            filenames = tf.data.Dataset.list_files("/path/to/data/train*.tfrecords")
+            dataset = filenames.apply(
+                tf.data.experimental.parallel_interleave(
+                    lambda filename: tf.data.TFRecordDataset(filename),
+                    cycle_length=4)) </pre>
+</div>
+		</div>
+	</div>
+	<div id="parse_example_dataset" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parse_example_dataset</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> features, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> num_parallel_calls)
+		</h4>
+		<div class="content">A transformation that parses `Example` protos into a `dict` of tensors. <p></p> Parses a number of serialized `Example` protos given in `serialized`. We refer
+to `serialized` as a batch with `batch_size` many entries of individual
+`Example` protos. <p></p> This op parses serialized examples into a dictionary mapping keys to `Tensor`
+and `SparseTensor` objects. `features` is a dict from keys to `VarLenFeature`,
+`SparseFeature`, and `FixedLenFeature` objects. Each `VarLenFeature`
+and `SparseFeature` is mapped to a `SparseTensor`, and each
+`FixedLenFeature` is mapped to a `Tensor`. See <a href="..\..\..\tf\io\parse_example.md"><code>tf.io.parse_example</code></a> for more
+details about feature dictionaries. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A dataset transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="prefetch_to_device" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>prefetch_to_device</strong>(<span title="System.string">string</span> device, <span title="System.object">object</span> buffer_size)
+		</h4>
+		<div class="content">A transformation that prefetches dataset values to the given `device`. <p></p> NOTE: Although the transformation creates a <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a>, the
+transformation must be the final `Dataset` in the input pipeline. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> device
+						</dt>
+						<dd>A string. The name of a device to which elements will be prefetched. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> buffer_size
+						</dt>
+						<dd>(Optional.) The number of elements to buffer on `device`.
+Defaults to an automatically chosen value. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="rejection_resample" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rejection_resample</strong>(<span title="System.object">object</span> class_func, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> target_dist, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> initial_dist, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> seed)
+		</h4>
+		<div class="content">A transformation that resamples a dataset to achieve a target distribution. <p></p> **NOTE** Resampling is performed via rejection sampling; some fraction
+of the input values will be dropped. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> class_func
+						</dt>
+						<dd>A function mapping an element of the input dataset to a scalar
+<a href="..\..\..\tf\dtypes\int32.md"><code>tf.int32</code></a> tensor. Values should be in `[0, num_classes)`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span></code> target_dist
+						</dt>
+						<dd>A floating point type tensor, shaped `[num_classes]`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span></code> initial_dist
+						</dt>
+						<dd>(Optional.)  A floating point type tensor, shaped
+`[num_classes]`.  If not provided, the true class distribution is
+estimated live in a streaming fashion. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> seed
+						</dt>
+						<dd>(Optional.) Python integer seed for the resampler. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<a href="../numpy/int64.htm">int64</a> initial_state, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<span title="System.ValueTuple<IEnumerable<int>, int>">ValueTuple&lt;IEnumerable&lt;int&gt;, int&gt;</span> initial_state, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> initial_state, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<a href="../tensorflow/TensorArray.htm">TensorArray</a> initial_state, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<span title="System.int">int</span> initial_state, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="scan" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scan</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> initial_state, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> scan_func)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="shuffle_and_repeat" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shuffle_and_repeat</strong>(<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> buffer_size, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> count, <span title="System.Nullable<int>">Nullable&lt;int&gt;</span> seed)
+		</h4>
+		<div class="content">Shuffles and repeats a Dataset returning a new permutation for each epoch. (deprecated) <p></p> Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation. <p></p> `dataset.apply(tf.data.experimental.shuffle_and_repeat(buffer_size, count))` <p></p> is equivalent to <p></p> `dataset.shuffle(buffer_size, reshuffle_each_iteration=True).repeat(count)` <p></p> The difference is that the latter dataset is not serializable. So,
+if you need to checkpoint an input pipeline with reshuffling you must use
+this implementation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> buffer_size
+						</dt>
+						<dd>A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the
+maximum number elements that will be buffered when prefetching. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> count
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the
+number of times the dataset should be repeated. The default behavior
+(if `count` is `None` or `-1`) is for the dataset be repeated
+indefinitely. 
+						</dd>
+						<dt>
+							<code><span title="System.Nullable<int>">Nullable&lt;int&gt;</span></code> seed
+						</dt>
+						<dd>(Optional.) A <a href="..\..\..\tf\dtypes\int64.md"><code>tf.int64</code></a> scalar <a href="..\..\..\tf\Tensor.md"><code>tf.Tensor</code></a>, representing the
+random seed that will be used to create the distribution. See
+`tf.compat.v1.set_random_seed` for behavior. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="take_while" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>take_while</strong>(<span title="System.object">object</span> predicate)
+		</h4>
+		<div class="content">A transformation that stops dataset iteration based on a `predicate`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> predicate
+						</dt>
+						<dd>A function that maps a nested structure of tensors (having shapes
+and types defined by `self.output_shapes` and `self.output_types`) to a
+scalar <a href="..\..\..\tf\dtypes\bool.md"><code>tf.bool</code></a> tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="take_while_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>take_while_dyn</strong>(<span title="System.object">object</span> predicate)
+		</h4>
+		<div class="content">A transformation that stops dataset iteration based on a `predicate`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> predicate
+						</dt>
+						<dd>A function that maps a nested structure of tensors (having shapes
+and types defined by `self.output_shapes` and `self.output_types`) to a
+scalar <a href="..\..\..\tf\dtypes\bool.md"><code>tf.bool</code></a> tensor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A `Dataset` transformation function, which can be passed to
+<a href="..\..\..\tf\data\Dataset\apply.md"><code>tf.data.Dataset.apply</code></a>. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="to_variant" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>to_variant</strong>(<a href="../tensorflow.compat.v2.data/Dataset.htm">Dataset</a> dataset)
+		</h4>
+		<div class="content">Returns a variant representing the given dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.compat.v2.data/Dataset.htm">Dataset</a></code> dataset
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar <a href="..\..\..\tf\dtypes\variant.md"><code>tf.variant</code></a> tensor representing the given dataset. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="to_variant" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>to_variant</strong>(<a href="../tensorflow.data/Dataset.htm">Dataset</a> dataset)
+		</h4>
+		<div class="content">Returns a variant representing the given dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.data/Dataset.htm">Dataset</a></code> dataset
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar <a href="..\..\..\tf\dtypes\variant.md"><code>tf.variant</code></a> tensor representing the given dataset. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="to_variant_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>to_variant_dyn</strong>(<span title="System.object">object</span> dataset)
+		</h4>
+		<div class="content">Returns a variant representing the given dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> dataset
+						</dt>
+						<dd>A <a href="..\..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A scalar <a href="..\..\..\tf\dtypes\variant.md"><code>tf.variant</code></a> tensor representing the given dataset. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="AUTOTUNE" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>AUTOTUNE</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bucket_by_sequence_length_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>bucket_by_sequence_length_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="bytes_produced_stats_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>bytes_produced_stats_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="cardinality_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>cardinality_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="choose_from_datasets_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>choose_from_datasets_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="copy_to_device_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>copy_to_device_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Counter_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Counter_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dense_to_sparse_batch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>dense_to_sparse_batch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="enumerate_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>enumerate_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="from_variant_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>from_variant_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_next_as_optional_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_next_as_optional_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_single_element_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_single_element_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="get_structure_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>get_structure_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="group_by_reducer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>group_by_reducer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="group_by_window_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>group_by_window_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ignore_errors_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ignore_errors_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="INFINITE_CARDINALITY" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>INFINITE_CARDINALITY</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="latency_stats_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>latency_stats_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_batched_features_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_batched_features_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_csv_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_csv_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="make_saveable_from_iterator_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>make_saveable_from_iterator_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="map_and_batch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>map_and_batch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="map_and_batch_with_legacy_function_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>map_and_batch_with_legacy_function_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parallel_interleave_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>parallel_interleave_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parse_example_dataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>parse_example_dataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="prefetch_to_device_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>prefetch_to_device_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rejection_resample_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>rejection_resample_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sample_from_datasets_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>sample_from_datasets_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scan_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>scan_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shuffle_and_repeat_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>shuffle_and_repeat_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="take_while_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>take_while_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="to_variant_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>to_variant_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="unbatch_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>unbatch_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="unique_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>unique_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="UNKNOWN_CARDINALITY" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>UNKNOWN_CARDINALITY</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

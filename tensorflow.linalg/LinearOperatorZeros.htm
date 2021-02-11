@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>LinearOperatorZeros - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.linalg</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperator.htm">ILinearOperator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorAdjoint.htm">ILinearOperatorAdjoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorBlockDiag.htm">ILinearOperatorBlockDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorCirculant.htm">ILinearOperatorCirculant</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorCirculant2D.htm">ILinearOperatorCirculant2D</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorCirculant3D.htm">ILinearOperatorCirculant3D</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorComposition.htm">ILinearOperatorComposition</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorDiag.htm">ILinearOperatorDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorFullMatrix.htm">ILinearOperatorFullMatrix</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorHouseholder.htm">ILinearOperatorHouseholder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorIdentity.htm">ILinearOperatorIdentity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorInversion.htm">ILinearOperatorInversion</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorKronecker.htm">ILinearOperatorKronecker</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorLowerTriangular.htm">ILinearOperatorLowerTriangular</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorLowRankUpdate.htm">ILinearOperatorLowRankUpdate</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorScaledIdentity.htm">ILinearOperatorScaledIdentity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorToeplitz.htm">ILinearOperatorToeplitz</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/ILinearOperatorZeros.htm">ILinearOperatorZeros</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/linalg.htm">linalg</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperator.htm">LinearOperator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorAdjoint.htm">LinearOperatorAdjoint</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorBlockDiag.htm">LinearOperatorBlockDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorCirculant.htm">LinearOperatorCirculant</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorCirculant2D.htm">LinearOperatorCirculant2D</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorCirculant3D.htm">LinearOperatorCirculant3D</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorComposition.htm">LinearOperatorComposition</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorDiag.htm">LinearOperatorDiag</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorFullMatrix.htm">LinearOperatorFullMatrix</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorHouseholder.htm">LinearOperatorHouseholder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorIdentity.htm">LinearOperatorIdentity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorInversion.htm">LinearOperatorInversion</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorKronecker.htm">LinearOperatorKronecker</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorLowerTriangular.htm">LinearOperatorLowerTriangular</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorLowRankUpdate.htm">LinearOperatorLowRankUpdate</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorScaledIdentity.htm">LinearOperatorScaledIdentity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorToeplitz.htm">LinearOperatorToeplitz</a>
+        </li>
+				<li>
+            <a href="../tensorflow.linalg/LinearOperatorZeros.htm" class="current">LinearOperatorZeros</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> LinearOperatorZeros</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.linalg</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.linalg/LinearOperator.htm">LinearOperator</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.linalg/ILinearOperatorZeros.htm">ILinearOperatorZeros</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">`LinearOperator` acting like a [batch] zero matrix. <p></p> This operator acts like a [batch] zero matrix `A` with shape
+`[B1,...,Bb, N, M]` for some `b >= 0`.  The first `b` indices index a
+batch member.  For every batch index `(i1,...,ib)`, `A[i1,...,ib, : :]` is
+an `N x M` matrix.  This matrix `A` is not materialized, but for
+purposes of broadcasting this shape will be relevant. <p></p> `LinearOperatorZeros` is initialized with `num_rows`, and optionally
+`num_columns, `batch_shape`, and `dtype` arguments.  If `num_columns` is
+`None`, then this operator will be initialized as a square matrix. If
+`batch_shape` is `None`, this operator efficiently passes through all
+arguments.  If `batch_shape` is provided, broadcasting may occur, which will
+require making copies.
+### Shape compatibility <p></p> This operator acts on [batch] matrix with compatible shape.
+`x` is a batch matrix with compatible shape for `matmul` and `solve` if <p></p> ```
+operator.shape = [B1,...,Bb] + [N, M],  with b >= 0
+x.shape =   [C1,...,Cc] + [M, R],
+and [C1,...,Cc] broadcasts with [B1,...,Bb] to [D1,...,Dd]
+``` <p></p> #### Matrix property hints <p></p> This `LinearOperator` is initialized with boolean flags of the form `is_X`,
+for `X = non_singular, self_adjoint, positive_definite, square`.
+These have the following meaning: <p></p> * If `is_X == True`, callers should expect the operator to have the
+property `X`.  This is a promise that should be fulfilled, but is *not* a
+runtime assert.  For example, finite floating point precision may result
+in these promises being violated.
+* If `is_X == False`, callers should expect the operator to not have `X`.
+* If `is_X == None` (the default), callers should have no expectation either
+way. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Create a 2 x 2 zero matrix.
+            operator = LinearOperatorZero(num_rows=2, dtype=tf.float32) <p></p> operator.to_dense()
+==> [[0., 0.]
+     [0., 0.]] <p></p> operator.shape
+==> [2, 2] <p></p> operator.determinant()
+==> 0. <p></p> x =... Shape [2, 4] Tensor
+operator.matmul(x)
+==> Shape [2, 4] Tensor, same as x. <p></p> # Create a 2-batch of 2x2 zero matrices
+operator = LinearOperatorZeros(num_rows=2, batch_shape=[2])
+operator.to_dense()
+==> [[[0., 0.]
+      [0., 0.]],
+     [[0., 0.]
+      [0., 0.]]] <p></p> # Here, even though the operator has a batch shape, the input is the same as
+# the output, so x can be passed through without a copy.  The operator is able
+# to detect that no broadcast is necessary because both x and the operator
+# have statically defined shape.
+x =... Shape [2, 2, 3]
+operator.matmul(x)
+==> Shape [2, 2, 3] Tensor, same as tf.zeros_like(x) <p></p> # Here the operator and x have different batch_shape, and are broadcast.
+# This requires a copy, since the output is different size than the input.
+x =... Shape [1, 2, 3]
+operator.matmul(x)
+==> Shape [2, 2, 3] Tensor, equal to tf.zeros_like([x, x]) </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#batch_shape">batch_shape</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#batch_shape_dyn">batch_shape_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#domain_dimension">domain_dimension</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#domain_dimension_dyn">domain_dimension_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#graph_parents">graph_parents</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#graph_parents_dyn">graph_parents_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_non_singular">is_non_singular</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_non_singular_dyn">is_non_singular_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_positive_definite">is_positive_definite</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_positive_definite_dyn">is_positive_definite_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_self_adjoint">is_self_adjoint</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_self_adjoint_dyn">is_self_adjoint_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_square">is_square</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#is_square_dyn">is_square_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#name">name</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#range_dimension">range_dimension</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#range_dimension_dyn">range_dimension_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#shape">shape</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#shape_dyn">shape_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#tensor_rank">tensor_rank</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#tensor_rank_dyn">tensor_rank_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.linalg/LinearOperatorZeros.htm#variables_dyn">variables_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.linalg/LinearOperatorZeros.htm">LinearOperatorZeros</a> <strong>NewDyn</strong>(<span title="System.object">object</span> num_rows, <span title="System.object">object</span> num_columns, <span title="System.object">object</span> batch_shape, <span title="System.object">object</span> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_non_singular, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_self_adjoint, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_positive_definite, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> is_square, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> assert_proper_shapes, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Initialize a `LinearOperatorZeros`. <p></p> The `LinearOperatorZeros` is initialized with arguments defining `dtype`
+and shape. <p></p> This operator is able to broadcast the leading (batch) dimensions, which
+sometimes requires copying data.  If `batch_shape` is `None`, the operator
+can take arguments of any batch shape without copying.  See examples. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> num_rows
+						</dt>
+						<dd>Scalar non-negative integer `Tensor`.  Number of rows in the
+corresponding zero matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_columns
+						</dt>
+						<dd>Scalar non-negative integer `Tensor`.  Number of columns in
+the corresponding zero matrix. If `None`, defaults to the value of
+`num_rows`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> batch_shape
+						</dt>
+						<dd>Optional `1-D` integer `Tensor`.  The shape of the leading
+dimensions.  If `None`, this operator has no leading dimensions. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dtype
+						</dt>
+						<dd>Data type of the matrix that this operator represents. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> is_non_singular
+						</dt>
+						<dd>Expect that this operator is non-singular. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> is_self_adjoint
+						</dt>
+						<dd>Expect that this operator is equal to its hermitian
+transpose. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> is_positive_definite
+						</dt>
+						<dd>Expect that this operator is positive definite,
+meaning the quadratic form `x^H A x` has positive real part for all
+nonzero `x`.  Note that we do not require the operator to be
+self-adjoint to be positive-definite.  See:
+https://en.wikipedia.org/wiki/Positive-definite_matrix#Extension_for_non-symmetric_matrices 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> is_square
+						</dt>
+						<dd>Expect that this operator acts like square [batch] matrices. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> assert_proper_shapes
+						</dt>
+						<dd>Python `bool`.  If `False`, only perform static
+checks that initialization and method arguments have proper shape.
+If `True`, and static checks are inconclusive, add asserts to the graph. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>A name for this `LinearOperator` 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="batch_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="domain_dimension" class="method">
+		<h4>
+			<a href="../tensorflow/Dimension.htm">Dimension</a> <strong>domain_dimension</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="domain_dimension_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>domain_dimension_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_parents" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>graph_parents</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_parents_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_parents_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_non_singular" class="method">
+		<h4>
+			<span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> <strong>is_non_singular</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_non_singular_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_non_singular_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_positive_definite" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_positive_definite</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_positive_definite_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_positive_definite_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_self_adjoint" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_self_adjoint</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_self_adjoint_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_self_adjoint_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_square" class="method">
+		<h4>
+			<span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> <strong>is_square</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_square_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_square_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="range_dimension" class="method">
+		<h4>
+			<a href="../tensorflow/Dimension.htm">Dimension</a> <strong>range_dimension</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="range_dimension_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>range_dimension_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tensor_rank" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>tensor_rank</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="tensor_rank_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>tensor_rank_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

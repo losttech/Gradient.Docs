@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>functional_ops - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.ops.functional_ops</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.ops.functional_ops/functional_ops.htm" class="current">functional_ops</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> functional_ops</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.ops.functional_ops</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#For">For</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#For">For</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#For_dyn">For_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#Gradient">Gradient</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#Gradient">Gradient</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#Gradient">Gradient</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#Gradient_dyn">Gradient_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If">If</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If_dyn">If_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#partitioned_call">partitioned_call</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#partitioned_call">partitioned_call</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#partitioned_call">partitioned_call</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#partitioned_call">partitioned_call</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#partitioned_call_dyn">partitioned_call_dyn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#While">While</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#While">While</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#While">While</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#While">While</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#While_dyn">While_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#For_fn">For_fn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#Gradient_fn">Gradient_fn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#If_fn">If_fn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#partitioned_call_fn">partitioned_call_fn</a></li>
+				<li><a href="../tensorflow.python.ops.functional_ops/functional_ops.htm#While_fn">While_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="For" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>For</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> start, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> limit, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> delta, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> inputs, <span title="System.object">object</span> body, <span title="System.string">string</span> name, <span title="System.object">object</span> hostmem, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> rewrite_with_while)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="For" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>For</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> start, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> limit, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> delta, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> inputs, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> body, <span title="System.string">string</span> name, <span title="System.object">object</span> hostmem, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> rewrite_with_while)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="For_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>For_dyn</strong>(<span title="System.object">object</span> start, <span title="System.object">object</span> limit, <span title="System.object">object</span> delta, <span title="System.object">object</span> inputs, <span title="System.object">object</span> body, <span title="System.object">object</span> name, <span title="System.object">object</span> hostmem, <span title="System.object">object</span> rewrite_with_while)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Gradient" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Gradient</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <span title="System.object">object</span> f, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Gradient" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Gradient</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> f, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Gradient" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Gradient</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> f, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Gradient_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Gradient_dyn</strong>(<span title="System.object">object</span> inputs, <span title="System.object">object</span> f, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> then_branch, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> then_branch, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> then_branch, <span title="System.object">object</span> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> then_branch, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <span title="System.object">object</span> then_branch, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> then_branch, <span title="System.object">object</span> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> then_branch, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> then_branch, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>If</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> inputs, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> then_branch, <span title="System.object">object</span> else_branch, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="If_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>If_dyn</strong>(<span title="System.object">object</span> cond, <span title="System.object">object</span> inputs, <span title="System.object">object</span> then_branch, <span title="System.object">object</span> else_branch, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="partitioned_call" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>partitioned_call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> args, <span title="System.object">object</span> f, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tout, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> executing_eagerly, <span title="System.string">string</span> config, <span title="System.string">string</span> executor_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="partitioned_call" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>partitioned_call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> args, <span title="System.object">object</span> f, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tout, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> executing_eagerly, <span title="System.object">object</span> config, <span title="System.string">string</span> executor_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="partitioned_call" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>partitioned_call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> args, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> f, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tout, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> executing_eagerly, <span title="System.string">string</span> config, <span title="System.string">string</span> executor_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="partitioned_call" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>partitioned_call</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> args, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> f, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> tout, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> executing_eagerly, <span title="System.object">object</span> config, <span title="System.string">string</span> executor_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="partitioned_call_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>partitioned_call_dyn</strong>(<span title="System.object">object</span> args, <span title="System.object">object</span> f, <span title="System.object">object</span> tout, <span title="System.object">object</span> executing_eagerly, <span title="System.object">object</span> config, <span title="System.object">object</span> executor_type)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="While" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>While</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input_, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> cond, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> body, <span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> hostmem)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="While" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>While</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input_, <span title="System.object">object</span> cond, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> body, <span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> hostmem)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="While" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>While</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input_, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> cond, <span title="System.object">object</span> body, <span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> hostmem)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="While" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>While</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input_, <span title="System.object">object</span> cond, <span title="System.object">object</span> body, <span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> hostmem)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="While_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>While_dyn</strong>(<span title="System.object">object</span> input_, <span title="System.object">object</span> cond, <span title="System.object">object</span> body, <span title="System.object">object</span> name, <span title="System.object">object</span> hostmem)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="For_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>For_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Gradient_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Gradient_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="If_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>If_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="partitioned_call_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>partitioned_call_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="While_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>While_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

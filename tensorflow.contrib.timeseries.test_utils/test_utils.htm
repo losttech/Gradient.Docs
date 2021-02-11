@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>test_utils - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.timeseries.test_utils</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.timeseries.test_utils/_SavingTensorHook.htm">_SavingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.timeseries.test_utils/AllWindowInputFn.htm">AllWindowInputFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.timeseries.test_utils/I_SavingTensorHook.htm">I_SavingTensorHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.timeseries.test_utils/IAllWindowInputFn.htm">IAllWindowInputFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm" class="current">test_utils</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> test_utils</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.timeseries.test_utils</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#parameter_recovery_dry_run">parameter_recovery_dry_run</a></li>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#parameter_recovery_dry_run_dyn">parameter_recovery_dry_run_dyn</a></li>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#test_parameter_recovery">test_parameter_recovery</a></li>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#test_parameter_recovery_dyn">test_parameter_recovery_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#_SavingTensorHook_fn">_SavingTensorHook_fn</a></li>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#AllWindowInputFn_fn">AllWindowInputFn_fn</a></li>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#parameter_recovery_dry_run_fn">parameter_recovery_dry_run_fn</a></li>
+				<li><a href="../tensorflow.contrib.timeseries.test_utils/test_utils.htm#test_parameter_recovery_fn">test_parameter_recovery_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="parameter_recovery_dry_run" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>parameter_recovery_dry_run</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generate_fn, <span title="System.object">object</span> generative_model, <span title="System.object">object</span> seed, <span title="System.double">double</span> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_input_fn_type, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_state_manager)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="parameter_recovery_dry_run_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameter_recovery_dry_run_dyn</strong>(<span title="System.object">object</span> generate_fn, <span title="System.object">object</span> generative_model, <span title="System.object">object</span> seed, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_input_fn_type, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_state_manager)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="test_parameter_recovery" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>test_parameter_recovery</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> generate_fn, <span title="System.object">object</span> generative_model, <span title="System.object">object</span> train_iterations, <span title="System.object">object</span> test_case, <span title="System.object">object</span> seed, <span title="System.double">double</span> learning_rate, <span title="System.double">double</span> rtol, <span title="System.double">double</span> atol, <span title="System.double">double</span> train_loss_tolerance_coeff, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ignore_params_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> derived_param_test_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_input_fn_type, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_state_manager)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="test_parameter_recovery_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>test_parameter_recovery_dyn</strong>(<span title="System.object">object</span> generate_fn, <span title="System.object">object</span> generative_model, <span title="System.object">object</span> train_iterations, <span title="System.object">object</span> test_case, <span title="System.object">object</span> seed, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> rtol, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> atol, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_loss_tolerance_coeff, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> ignore_params_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> derived_param_test_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_input_fn_type, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> train_state_manager)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="_SavingTensorHook_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SavingTensorHook_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="AllWindowInputFn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>AllWindowInputFn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameter_recovery_dry_run_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>parameter_recovery_dry_run_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="test_parameter_recovery_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>test_parameter_recovery_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

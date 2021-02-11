@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>LSTMAutoRegressor - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow_estimator.python.estimator.canned.timeseries.estimators</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/estimators.htm">estimators</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/ILSTMAutoRegressor.htm">ILSTMAutoRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/ITimeSeriesRegressor.htm">ITimeSeriesRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm" class="current">LSTMAutoRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/TimeSeriesRegressor.htm">TimeSeriesRegressor</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> LSTMAutoRegressor</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow_estimator.python.estimator.canned.timeseries.estimators</p>
+		<p><strong>Parent</strong> <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/TimeSeriesRegressor.htm">TimeSeriesRegressor</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/ILSTMAutoRegressor.htm">ILSTMAutoRegressor</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#build_one_shot_parsing_serving_input_receiver_fn">build_one_shot_parsing_serving_input_receiver_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#build_one_shot_parsing_serving_input_receiver_fn_dyn">build_one_shot_parsing_serving_input_receiver_fn_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#build_raw_serving_input_receiver_fn">build_raw_serving_input_receiver_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#build_raw_serving_input_receiver_fn_dyn">build_raw_serving_input_receiver_fn_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#config">config</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#config_dyn">config_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#model_dir">model_dir</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#model_dir_dyn">model_dir_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#model_fn">model_fn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#model_fn_dyn">model_fn_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#params">params</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#params_dyn">params_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="build_one_shot_parsing_serving_input_receiver_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_one_shot_parsing_serving_input_receiver_fn</strong>(<span title="System.object">object</span> filtering_length, <span title="System.object">object</span> prediction_length, <span title="System.object">object</span> default_batch_size, <a href="../tensorflow/DType.htm">DType</a> values_input_dtype, <span title="System.bool">bool</span> truncate_values)
+		</h4>
+		<div class="content">Build an input_receiver_fn for export_savedmodel accepting tf.Examples. <p></p> Only compatible with `OneShotPredictionHead` (see `head`). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> filtering_length
+						</dt>
+						<dd>The number of time steps used as input to the model, for
+which values are provided. If more than `filtering_length` values are
+provided (via `truncate_values`), only the first `filtering_length`
+values are used. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> prediction_length
+						</dt>
+						<dd>The number of time steps requested as predictions from
+the model. Times and all exogenous features must be provided for these
+steps. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> default_batch_size
+						</dt>
+						<dd>If specified, must be a scalar integer. Sets the batch
+size in the static shape information of all feature Tensors, which means
+only this batch size will be accepted by the exported model. If None
+(default), static shape information for batch sizes is omitted. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/DType.htm">DType</a></code> values_input_dtype
+						</dt>
+						<dd>An optional dtype specification for values in the
+tf.Example protos (either float32 or int64, since these are the numeric
+types supported by tf.Example). After parsing, values are cast to the
+model's dtype (float32 or float64). 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> truncate_values
+						</dt>
+						<dd>If True, expects `filtering_length + prediction_length`
+values to be provided, but only uses the first `filtering_length`. If
+False (default), exactly `filtering_length` values must be provided. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An input_receiver_fn which may be passed to the Estimator's
+export_savedmodel. <p></p> Expects features contained in a vector of serialized tf.Examples with
+shape [batch size] (dtype <a href="..\..\..\tf\dtypes\string.md"><code>tf.string</code></a>), each tf.Example containing
+features with the following shapes: 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="build_one_shot_parsing_serving_input_receiver_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_one_shot_parsing_serving_input_receiver_fn_dyn</strong>(<span title="System.object">object</span> filtering_length, <span title="System.object">object</span> prediction_length, <span title="System.object">object</span> default_batch_size, <span title="System.object">object</span> values_input_dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> truncate_values)
+		</h4>
+		<div class="content">Build an input_receiver_fn for export_savedmodel accepting tf.Examples. <p></p> Only compatible with `OneShotPredictionHead` (see `head`). 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> filtering_length
+						</dt>
+						<dd>The number of time steps used as input to the model, for
+which values are provided. If more than `filtering_length` values are
+provided (via `truncate_values`), only the first `filtering_length`
+values are used. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> prediction_length
+						</dt>
+						<dd>The number of time steps requested as predictions from
+the model. Times and all exogenous features must be provided for these
+steps. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> default_batch_size
+						</dt>
+						<dd>If specified, must be a scalar integer. Sets the batch
+size in the static shape information of all feature Tensors, which means
+only this batch size will be accepted by the exported model. If None
+(default), static shape information for batch sizes is omitted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> values_input_dtype
+						</dt>
+						<dd>An optional dtype specification for values in the
+tf.Example protos (either float32 or int64, since these are the numeric
+types supported by tf.Example). After parsing, values are cast to the
+model's dtype (float32 or float64). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> truncate_values
+						</dt>
+						<dd>If True, expects `filtering_length + prediction_length`
+values to be provided, but only uses the first `filtering_length`. If
+False (default), exactly `filtering_length` values must be provided. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An input_receiver_fn which may be passed to the Estimator's
+export_savedmodel. <p></p> Expects features contained in a vector of serialized tf.Examples with
+shape [batch size] (dtype <a href="..\..\..\tf\dtypes\string.md"><code>tf.string</code></a>), each tf.Example containing
+features with the following shapes: 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="build_raw_serving_input_receiver_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_raw_serving_input_receiver_fn</strong>(<span title="System.object">object</span> default_batch_size, <span title="System.object">object</span> default_series_length)
+		</h4>
+		<div class="content">Build an input_receiver_fn for export_savedmodel which accepts arrays. <p></p> Automatically creates placeholders for exogenous `FeatureColumn`s passed to
+the model. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> default_batch_size
+						</dt>
+						<dd>If specified, must be a scalar integer. Sets the batch
+size in the static shape information of all feature Tensors, which means
+only this batch size will be accepted by the exported model. If None
+(default), static shape information for batch sizes is omitted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> default_series_length
+						</dt>
+						<dd>If specified, must be a scalar integer. Sets the
+series length in the static shape information of all feature Tensors,
+which means only this series length will be accepted by the exported
+model. If None (default), static shape information for series length is
+omitted. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An input_receiver_fn which may be passed to the Estimator's
+export_savedmodel. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="build_raw_serving_input_receiver_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_raw_serving_input_receiver_fn_dyn</strong>(<span title="System.object">object</span> default_batch_size, <span title="System.object">object</span> default_series_length)
+		</h4>
+		<div class="content">Build an input_receiver_fn for export_savedmodel which accepts arrays. <p></p> Automatically creates placeholders for exogenous `FeatureColumn`s passed to
+the model. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> default_batch_size
+						</dt>
+						<dd>If specified, must be a scalar integer. Sets the batch
+size in the static shape information of all feature Tensors, which means
+only this batch size will be accepted by the exported model. If None
+(default), static shape information for batch sizes is omitted. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> default_series_length
+						</dt>
+						<dd>If specified, must be a scalar integer. Sets the
+series length in the static shape information of all feature Tensors,
+which means only this series length will be accepted by the exported
+model. If None (default), static shape information for series length is
+omitted. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An input_receiver_fn which may be passed to the Estimator's
+export_savedmodel. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow_estimator.python.estimator.canned.timeseries.estimators/LSTMAutoRegressor.htm">LSTMAutoRegressor</a> <strong>NewDyn</strong>(<span title="System.object">object</span> periodicities, <span title="System.object">object</span> input_window_size, <span title="System.object">object</span> output_window_size, <span title="System.object">object</span> model_dir, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_features, <span title="System.object">object</span> extra_feature_columns, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_timesteps, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> loss, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_units, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> optimizer, <span title="System.object">object</span> config)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="params" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>params</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="params_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>params_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>feature_column - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.feature_column.feature_column</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_BiasLayer.htm">_BiasLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_BucketizedColumn.htm">_BucketizedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_CategoricalColumn.htm">_CategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_CrossedColumn.htm">_CrossedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_DenseColumn.htm">_DenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumn.htm">_EmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_EmbeddingColumnLayer.htm">_EmbeddingColumnLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_FCLinearWrapper.htm">_FCLinearWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_FeatureColumn.htm">_FeatureColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_HashedCategoricalColumn.htm">_HashedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_IdentityCategoricalColumn.htm">_IdentityCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_IndicatorColumn.htm">_IndicatorColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_LazyBuilder.htm">_LazyBuilder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_LinearModel.htm">_LinearModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_NumericColumn.htm">_NumericColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_SequenceCategoricalColumn.htm">_SequenceCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_SequenceDenseColumn.htm">_SequenceDenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_SharedEmbeddingColumn.htm">_SharedEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_VocabularyFileCategoricalColumn.htm">_VocabularyFileCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_VocabularyListCategoricalColumn.htm">_VocabularyListCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/_WeightedCategoricalColumn.htm">_WeightedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/feature_column.htm" class="current">feature_column</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_BiasLayer.htm">I_BiasLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_BucketizedColumn.htm">I_BucketizedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_CategoricalColumn.htm">I_CategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_CrossedColumn.htm">I_CrossedColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_DenseColumn.htm">I_DenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_EmbeddingColumn.htm">I_EmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_EmbeddingColumnLayer.htm">I_EmbeddingColumnLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_FCLinearWrapper.htm">I_FCLinearWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_FeatureColumn.htm">I_FeatureColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_HashedCategoricalColumn.htm">I_HashedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_IdentityCategoricalColumn.htm">I_IdentityCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_IndicatorColumn.htm">I_IndicatorColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_LazyBuilder.htm">I_LazyBuilder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_LinearModel.htm">I_LinearModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_NumericColumn.htm">I_NumericColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_SequenceCategoricalColumn.htm">I_SequenceCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_SequenceDenseColumn.htm">I_SequenceDenseColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_SharedEmbeddingColumn.htm">I_SharedEmbeddingColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_VocabularyFileCategoricalColumn.htm">I_VocabularyFileCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_VocabularyListCategoricalColumn.htm">I_VocabularyListCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/I_WeightedCategoricalColumn.htm">I_WeightedCategoricalColumn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/IInputLayer.htm">IInputLayer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.feature_column.feature_column/InputLayer.htm">InputLayer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> feature_column</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.feature_column.feature_column</p>
+		</header>
+    <div class="sub-header">
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_BiasLayer_fn">_BiasLayer_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_BucketizedColumn_fn">_BucketizedColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_CategoricalColumn_fn">_CategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_CrossedColumn_fn">_CrossedColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_DenseColumn_fn">_DenseColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_EmbeddingColumn_fn">_EmbeddingColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_EmbeddingColumnLayer_fn">_EmbeddingColumnLayer_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_FCLinearWrapper_fn">_FCLinearWrapper_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_FeatureColumn_fn">_FeatureColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_HashedCategoricalColumn_fn">_HashedCategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_IdentityCategoricalColumn_fn">_IdentityCategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_IndicatorColumn_fn">_IndicatorColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_LazyBuilder_fn">_LazyBuilder_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_LinearModel_fn">_LinearModel_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_NumericColumn_fn">_NumericColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_SequenceCategoricalColumn_fn">_SequenceCategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_SequenceDenseColumn_fn">_SequenceDenseColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_SharedEmbeddingColumn_fn">_SharedEmbeddingColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_VocabularyFileCategoricalColumn_fn">_VocabularyFileCategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_VocabularyListCategoricalColumn_fn">_VocabularyListCategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#_WeightedCategoricalColumn_fn">_WeightedCategoricalColumn_fn</a></li>
+				<li><a href="../tensorflow.python.feature_column.feature_column/feature_column.htm#InputLayer_fn">InputLayer_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="_BiasLayer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_BiasLayer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_BucketizedColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_BucketizedColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_CategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_CategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_CrossedColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_CrossedColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_DenseColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_DenseColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_EmbeddingColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_EmbeddingColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_EmbeddingColumnLayer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_EmbeddingColumnLayer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_FCLinearWrapper_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_FCLinearWrapper_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_FeatureColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_FeatureColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_HashedCategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_HashedCategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_IdentityCategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_IdentityCategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_IndicatorColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_IndicatorColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_LazyBuilder_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_LazyBuilder_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_LinearModel_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_LinearModel_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_NumericColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_NumericColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_SequenceCategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SequenceCategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_SequenceDenseColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SequenceDenseColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_SharedEmbeddingColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SharedEmbeddingColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_VocabularyFileCategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_VocabularyFileCategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_VocabularyListCategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_VocabularyListCategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_WeightedCategoricalColumn_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_WeightedCategoricalColumn_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="InputLayer_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>InputLayer_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

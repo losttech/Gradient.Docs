@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>IBidirectionalGridLSTMCell - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.rnn</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.rnn/AttentionCellWrapper.htm">AttentionCellWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/BidirectionalGridLSTMCell.htm">BidirectionalGridLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/CFNCell.htm">CFNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/CompiledWrapper.htm">CompiledWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/Conv1DLSTMCell.htm">Conv1DLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/Conv2DLSTMCell.htm">Conv2DLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/Conv3DLSTMCell.htm">Conv3DLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ConvLSTMCell.htm">ConvLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/CoupledInputForgetGateLSTMCell.htm">CoupledInputForgetGateLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/EmbeddingWrapper.htm">EmbeddingWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/FusedRNNCell.htm">FusedRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/FusedRNNCellAdaptor.htm">FusedRNNCellAdaptor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/GLSTMCell.htm">GLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/GridLSTMCell.htm">GridLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/GRUBlockCell.htm">GRUBlockCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/GRUBlockCellV2.htm">GRUBlockCellV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/HighwayWrapper.htm">HighwayWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IAttentionCellWrapper.htm">IAttentionCellWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IBidirectionalGridLSTMCell.htm" class="current">IBidirectionalGridLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ICFNCell.htm">ICFNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ICompiledWrapper.htm">ICompiledWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IConv1DLSTMCell.htm">IConv1DLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IConv2DLSTMCell.htm">IConv2DLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IConv3DLSTMCell.htm">IConv3DLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IConvLSTMCell.htm">IConvLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ICoupledInputForgetGateLSTMCell.htm">ICoupledInputForgetGateLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IEmbeddingWrapper.htm">IEmbeddingWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IFusedRNNCell.htm">IFusedRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IFusedRNNCellAdaptor.htm">IFusedRNNCellAdaptor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IGLSTMCell.htm">IGLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IGridLSTMCell.htm">IGridLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IGRUBlockCell.htm">IGRUBlockCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IGRUBlockCellV2.htm">IGRUBlockCellV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IHighwayWrapper.htm">IHighwayWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IIndRNNCell.htm">IIndRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IIndyGRUCell.htm">IIndyGRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IIndyLSTMCell.htm">IIndyLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IInputProjectionWrapper.htm">IInputProjectionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IIntersectionRNNCell.htm">IIntersectionRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ILayerNormBasicLSTMCell.htm">ILayerNormBasicLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ILayerNormLSTMCell.htm">ILayerNormLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ILSTMBlockCell.htm">ILSTMBlockCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ILSTMBlockFusedCell.htm">ILSTMBlockFusedCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ILSTMBlockWrapper.htm">ILSTMBlockWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IMinimalRNNCell.htm">IMinimalRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/INASCell.htm">INASCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IndRNNCell.htm">IndRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IndyGRUCell.htm">IndyGRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IndyLSTMCell.htm">IndyLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/InputProjectionWrapper.htm">InputProjectionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IntersectionRNNCell.htm">IntersectionRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/INTMCell.htm">INTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/INTMControllerState.htm">INTMControllerState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IOutputProjectionWrapper.htm">IOutputProjectionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IPhasedLSTMCell.htm">IPhasedLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ISRUCell.htm">ISRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ITimeFreqLSTMCell.htm">ITimeFreqLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/ITimeReversedFusedRNN.htm">ITimeReversedFusedRNN</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IUGRNNCell.htm">IUGRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/IWeightNormLSTMCell.htm">IWeightNormLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/LayerNormBasicLSTMCell.htm">LayerNormBasicLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/LayerNormLSTMCell.htm">LayerNormLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/LSTMBlockCell.htm">LSTMBlockCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/LSTMBlockFusedCell.htm">LSTMBlockFusedCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/LSTMBlockWrapper.htm">LSTMBlockWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/MinimalRNNCell.htm">MinimalRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/NASCell.htm">NASCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/NTMCell.htm">NTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/NTMControllerState.htm">NTMControllerState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/OutputProjectionWrapper.htm">OutputProjectionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/PhasedLSTMCell.htm">PhasedLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/rnn.htm">rnn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/SRUCell.htm">SRUCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/TimeFreqLSTMCell.htm">TimeFreqLSTMCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/TimeReversedFusedRNN.htm">TimeReversedFusedRNN</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/UGRNNCell.htm">UGRNNCell</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.rnn/WeightNormLSTMCell.htm">WeightNormLSTMCell</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> IBidirectionalGridLSTMCell</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.rnn</p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.rnn/IGridLSTMCell.htm">IGridLSTMCell</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+		
+		
+	</div>
+	
+	
+	
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>DynamicRnnEstimator - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.learn</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.learn/BaseEstimator.htm">BaseEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ClusterConfig.htm">ClusterConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNClassifier.htm">DNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNEstimator.htm">DNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedClassifier.htm">DNNLinearCombinedClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedEstimator.htm">DNNLinearCombinedEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNLinearCombinedRegressor.htm">DNNLinearCombinedRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DNNRegressor.htm">DNNRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm" class="current">DynamicRnnEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Environment.htm">Environment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Estimator.htm">Estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Evaluable.htm">Evaluable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Experiment.htm">Experiment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ExportStrategy.htm">ExportStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/GraphRewriteSpec.htm">GraphRewriteSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Head.htm">Head</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IBaseEstimator.htm">IBaseEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IClusterConfig.htm">IClusterConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNClassifier.htm">IDNNClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNEstimator.htm">IDNNEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedClassifier.htm">IDNNLinearCombinedClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedEstimator.htm">IDNNLinearCombinedEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNLinearCombinedRegressor.htm">IDNNLinearCombinedRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDNNRegressor.htm">IDNNRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IDynamicRnnEstimator.htm">IDynamicRnnEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEnvironment.htm">IEnvironment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEstimator.htm">IEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IEvaluable.htm">IEvaluable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IExperiment.htm">IExperiment</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IExportStrategy.htm">IExportStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IGraphRewriteSpec.htm">IGraphRewriteSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IHead.htm">IHead</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IInputFnOps.htm">IInputFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IKMeansClustering.htm">IKMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearClassifier.htm">ILinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearEstimator.htm">ILinearEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ILinearRegressor.htm">ILinearRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IMetricKey.htm">IMetricKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IMetricSpec.htm">IMetricSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IModeKeys.htm">IModeKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IModelFnOps.htm">IModelFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/INanLossDuringTrainingError.htm">INanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/INotFittedError.htm">INotFittedError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/InputFnOps.htm">InputFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IPredictionKey.htm">IPredictionKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IPredictionType.htm">IPredictionType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IProblemType.htm">IProblemType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/IRunConfig.htm">IRunConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ISKCompat.htm">ISKCompat</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ISVM.htm">ISVM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ITaskType.htm">ITaskType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ITrainable.htm">ITrainable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/KMeansClustering.htm">KMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/learn.htm">learn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearClassifier.htm">LinearClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearEstimator.htm">LinearEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/LinearRegressor.htm">LinearRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/MetricKey.htm">MetricKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/MetricSpec.htm">MetricSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ModeKeys.htm">ModeKeys</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ModelFnOps.htm">ModelFnOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/NanLossDuringTrainingError.htm">NanLossDuringTrainingError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/NotFittedError.htm">NotFittedError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/PredictionKey.htm">PredictionKey</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/PredictionType.htm">PredictionType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/ProblemType.htm">ProblemType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/RunConfig.htm">RunConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/SKCompat.htm">SKCompat</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/SVM.htm">SVM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/TaskType.htm">TaskType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.learn/Trainable.htm">Trainable</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> DynamicRnnEstimator</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.learn</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.contrib.learn/Estimator.htm">Estimator</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.learn/IDynamicRnnEstimator.htm">IDynamicRnnEstimator</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Dynamically unrolled RNN (deprecated). <p></p> THIS CLASS IS DEPRECATED. See
+[contrib/learn/README.md](https://www.tensorflow.org/code/tensorflow/contrib/learn/README.md)
+for general migration instructions. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#config">config</a></li>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#config_dyn">config_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#model_dir">model_dir</a></li>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#model_dir_dyn">model_dir_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#model_fn">model_fn</a></li>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#model_fn_dyn">model_fn_dyn</a></li>
+				<li><a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.learn/DynamicRnnEstimator.htm">DynamicRnnEstimator</a> <strong>NewDyn</strong>(<span title="System.object">object</span> problem_type, <span title="System.object">object</span> prediction_type, <span title="System.object">object</span> sequence_feature_columns, <span title="System.object">object</span> context_feature_columns, <span title="System.object">object</span> num_classes, <span title="System.object">object</span> num_units, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> cell_type, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> optimizer, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> predict_probabilities, <span title="System.object">object</span> momentum, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> gradient_clipping_norm, <span title="System.object">object</span> dropout_keep_probabilities, <span title="System.object">object</span> model_dir, <span title="System.object">object</span> feature_engineering_fn, <span title="System.object">object</span> config)
+		</h4>
+		<div class="content">Initializes a `DynamicRnnEstimator`. <p></p> The input function passed to this `Estimator` optionally contains keys
+`RNNKeys.SEQUENCE_LENGTH_KEY`. The value corresponding to
+`RNNKeys.SEQUENCE_LENGTH_KEY` must be vector of size `batch_size` where
+entry `n` corresponds to the length of the `n`th sequence in the batch. The
+sequence length feature is required for batches of varying sizes. It will be
+used to calculate loss and evaluation metrics. If
+`RNNKeys.SEQUENCE_LENGTH_KEY` is not included, all sequences are assumed to
+have length equal to the size of dimension 1 of the input to the RNN. <p></p> In order to specify an initial state, the input function must include keys
+`STATE_PREFIX_i` for all `0 <= i < n` where `n` is the number of nested
+elements in `cell.state_size`. The input function must contain values for
+all state components or none of them. If none are included, then the default
+(zero) state is used as an initial state. See the documentation for
+`dict_to_state_tuple` and `state_tuple_to_dict` for further details.
+The input function can call rnn_common.construct_rnn_cell() to obtain the
+same cell type that this class will select from arguments to __init__. <p></p> The `predict()` method of the `Estimator` returns a dictionary with keys
+`STATE_PREFIX_i` for `0 <= i < n` where `n` is the number of nested elements
+in `cell.state_size`, along with `PredictionKey.CLASSES` for problem type
+`CLASSIFICATION` or `PredictionKey.SCORES` for problem type
+`LINEAR_REGRESSION`.  The value keyed by
+`PredictionKey.CLASSES` or `PredictionKey.SCORES` has shape
+`[batch_size, padded_length]` in the multi-value case and shape
+`[batch_size]` in the single-value case.  Here, `padded_length` is the
+largest value in the `RNNKeys.SEQUENCE_LENGTH` `Tensor` passed as input.
+Entry `[i, j]` is the prediction associated with sequence `i` and time step
+`j`. If the problem type is `CLASSIFICATION` and `predict_probabilities` is
+`True`, it will also include key`PredictionKey.PROBABILITIES`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> problem_type
+						</dt>
+						<dd>whether the `Estimator` is intended for a regression or
+classification problem. Value must be one of
+`ProblemType.CLASSIFICATION` or `ProblemType.LINEAR_REGRESSION`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> prediction_type
+						</dt>
+						<dd>whether the `Estimator` should return a value for each
+step in the sequence, or just a single value for the final time step.
+Must be one of `PredictionType.SINGLE_VALUE` or
+`PredictionType.MULTIPLE_VALUE`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> sequence_feature_columns
+						</dt>
+						<dd>An iterable containing all the feature columns
+describing sequence features. All items in the iterable should be
+instances of classes derived from `FeatureColumn`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> context_feature_columns
+						</dt>
+						<dd>An iterable containing all the feature columns
+describing context features, i.e., features that apply across all time
+steps. All items in the set should be instances of classes derived from
+`FeatureColumn`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_classes
+						</dt>
+						<dd>the number of classes for a classification problem. Only
+used when `problem_type=ProblemType.CLASSIFICATION`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> num_units
+						</dt>
+						<dd>A list of integers indicating the number of units in the
+`RNNCell`s in each layer. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> cell_type
+						</dt>
+						<dd>A subclass of `RNNCell` or one of 'basic_rnn,' 'lstm' or 'gru'. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> optimizer
+						</dt>
+						<dd>The type of optimizer to use. Either a subclass of
+`Optimizer`, an instance of an `Optimizer`, a callback that returns an
+optimizer, or a string. Strings must be one of 'Adagrad', 'Adam',
+'Ftrl', 'Momentum', 'RMSProp' or 'SGD'. See `layers.optimize_loss` for
+more details. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> learning_rate
+						</dt>
+						<dd>Learning rate. This argument has no effect if `optimizer`
+is an instance of an `Optimizer`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> predict_probabilities
+						</dt>
+						<dd>A boolean indicating whether to predict
+probabilities for all classes. Used only if `problem_type` is
+`ProblemType.CLASSIFICATION` 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> momentum
+						</dt>
+						<dd>Momentum value. Only used if `optimizer` is 'Momentum'. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> gradient_clipping_norm
+						</dt>
+						<dd>Parameter used for gradient clipping. If `None`,
+then no clipping is performed. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dropout_keep_probabilities
+						</dt>
+						<dd>a list of dropout probabilities or `None`.
+If a list is given, it must have length `len(num_units) + 1`. If
+`None`, then no dropout is applied. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> model_dir
+						</dt>
+						<dd>The directory in which to save and restore the model graph,
+parameters, etc. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> feature_engineering_fn
+						</dt>
+						<dd>Takes features and labels which are the output of
+`input_fn` and returns features and labels which will be fed into
+`model_fn`. Please check `model_fn` for a definition of features and
+labels. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> config
+						</dt>
+						<dd>A `RunConfig` instance. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="config" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="config_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>config_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>model_dir</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_dir_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_dir_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model_fn_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>model_fn_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

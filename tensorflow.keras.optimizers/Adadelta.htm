@@ -1,0 +1,1348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Adadelta - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.optimizers</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adadelta.htm" class="current">Adadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adagrad.htm">Adagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adam.htm">Adam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adamax.htm">Adamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Ftrl.htm">Ftrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdadelta.htm">IAdadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdagrad.htm">IAdagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdam.htm">IAdam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdamax.htm">IAdamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IFtrl.htm">IFtrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/INadam.htm">INadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IRMSprop.htm">IRMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/ISGD.htm">ISGD</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Nadam.htm">Nadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/OptimizerExtensions.htm">OptimizerExtensions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/RMSprop.htm">RMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/SGD.htm">SGD</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Adadelta</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.optimizers</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.optimizers/IAdadelta.htm">IAdadelta</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Optimizer that implements the Adadelta algorithm. <p></p> Adadelta optimization is a stochastic gradient descent method that is based on
+adaptive learning rate per dimension to address two drawbacks:
+1) the continual decay of learning rates throughout training
+2) the need for a manually selected global learning rate <p></p> Two accumulation steps are required:
+1) the accumulation of gradients squared,
+2) the accumulation of updates squared. <p></p> Initialization: <p></p> $$E[g^2]_0 := 0 \text{(Initialize gradient 2nd order moment vector)}$$
+$$E[\Delta x^2]_0 := 0 \text{(Initialize 2nd order variable update)}$$ <p></p> $$t := t + 1$$
+$$E[g^2]_t := \rho * E[g^2]_{t-1} + (1 - \rho) * g^2$$
+$$\Delta x_t = -RMS[\Delta x]_{t-1} * g_t / RMS[g]_t$$
+$$E[\Delta x^2]_t := \rho * E[\Delta x^2]_{t-1} + (1 - \rho) * \Delta x_t^2$$
+$$x_t := x_{t-1} + \Delta x_{t}$$ <p></p> References
+See [M. D. Zeiler](http://arxiv.org/abs/1212.5701)
+([pdf](http://arxiv.org/pdf/1212.5701v1.pdf)) 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_slot">add_slot</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_slot">add_slot</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_slot">add_slot</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_slot">add_slot</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_slot_dyn">add_slot_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight">add_weight</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#add_weight_dyn">add_weight_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients">apply_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#apply_gradients_dyn">apply_gradients_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#get_gradients">get_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#get_gradients">get_gradients</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#get_gradients_dyn">get_gradients_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#get_updates">get_updates</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#get_updates_dyn">get_updates_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#minimize">minimize</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#minimize_dyn">minimize_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#clipnorm">clipnorm</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#clipvalue">clipvalue</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#epsilon">epsilon</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#iterations">iterations</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#iterations_dyn">iterations_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Adadelta.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="add_slot" class="method">
+		<h4>
+			<a href="../tensorflow.compat.v2/Variable.htm">Variable</a> <strong>add_slot</strong>(<span title="System.object">object</span> var, <span title="System.string">string</span> slot_name, <a href="../tensorflow/constant_initializer.htm">constant_initializer</a> initializer)
+		</h4>
+		<div class="content">Add a new slot variable for `var`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="add_slot" class="method">
+		<h4>
+			<a href="../tensorflow.compat.v2/Variable.htm">Variable</a> <strong>add_slot</strong>(<span title="System.object">object</span> var, <span title="System.string">string</span> slot_name, <a href="../tensorflow.python.training.tracking.base/CheckpointInitialValue.htm">CheckpointInitialValue</a> initializer)
+		</h4>
+		<div class="content">Add a new slot variable for `var`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="add_slot" class="method">
+		<h4>
+			<a href="../tensorflow.compat.v2/Variable.htm">Variable</a> <strong>add_slot</strong>(<span title="System.object">object</span> var, <span title="System.string">string</span> slot_name, <span title="System.object">object</span> initializer)
+		</h4>
+		<div class="content">Add a new slot variable for `var`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="add_slot" class="method">
+		<h4>
+			<a href="../tensorflow.compat.v2/Variable.htm">Variable</a> <strong>add_slot</strong>(<span title="System.object">object</span> var, <span title="System.string">string</span> slot_name, <span title="System.string">string</span> initializer)
+		</h4>
+		<div class="content">Add a new slot variable for `var`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="add_slot_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_slot_dyn</strong>(<span title="System.object">object</span> var, <span title="System.object">object</span> slot_name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer)
+		</h4>
+		<div class="content">Add a new slot variable for `var`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.int">int</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.int">int</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.int">int</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.int">int</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/Dimension.htm">Dimension</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/Dimension.htm">Dimension</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/Dimension.htm">Dimension</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <a href="../tensorflow/Dimension.htm">Dimension</a> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.ValueTuple">ValueTuple</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.ValueTuple">ValueTuple</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.ValueTuple">ValueTuple</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight</strong>(<span title="System.string">string</span> name, <span title="System.ValueTuple">ValueTuple</span> shape, <a href="../tensorflow/DType.htm">DType</a> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <a href="../tensorflow/VariableSynchronization.htm">VariableSynchronization</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="add_weight_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>add_weight_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> shape, <span title="System.object">object</span> dtype, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initializer, <span title="System.object">object</span> trainable, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> synchronization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> aggregation)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <span title="System.int">int</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <span title="System.int">int</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span> grads_and_vars, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.ValueTuple<IEnumerable<object>, object>">ValueTuple&lt;IEnumerable&lt;object&gt;, object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> grads_and_vars, <span title="System.int">int</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients</strong>(<span title="System.object">object</span> grads_and_vars, <a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow.python.ops.resource_variable_ops/BaseResourceVariable.htm">BaseResourceVariable</a></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="apply_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>apply_gradients_dyn</strong>(<span title="System.object">object</span> grads_and_vars, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Apply gradients to variables. <p></p> This is the second part of `minimize()`. It returns an `Operation` that
+applies gradients. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> grads_and_vars
+						</dt>
+						<dd>List of (gradient, variable) pairs. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation.  Default to the name
+passed to the `Optimizer` constructor. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An `Operation` that applies the specified gradients. The `iterations`
+will be automatically increased by 1. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_gradients" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_gradients</strong>(<span title="System.object">object</span> loss, <span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span> params)
+		</h4>
+		<div class="content">Returns gradients of `loss` with respect to `params`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>Loss tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span></code> params
+						</dt>
+						<dd>List of variables. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>List of gradient tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_gradients" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_gradients</strong>(<span title="System.double">double</span> loss, <span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span> params)
+		</h4>
+		<div class="content">Returns gradients of `loss` with respect to `params`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.double">double</span></code> loss
+						</dt>
+						<dd>Loss tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span></code> params
+						</dt>
+						<dd>List of variables. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span></code>
+					</dt>
+					<dd>List of gradient tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_gradients_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_gradients_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.object">object</span> params)
+		</h4>
+		<div class="content">Returns gradients of `loss` with respect to `params`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>Loss tensor. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> params
+						</dt>
+						<dd>List of variables. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>List of gradient tensors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>get_updates</strong>(<span title="System.Nullable<double>">Nullable&lt;double&gt;</span> loss, <span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_updates_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.object">object</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="minimize" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>minimize</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> loss, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> var_list, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> grad_loss, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Minimize `loss` by updating `var_list`. <p></p> This method simply computes gradient using <a href="..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a> and calls
+`apply_gradients()`. If you want to process the gradient before applying
+then call <a href="..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a> and `apply_gradients()` explicitly instead
+of using this function. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> loss
+						</dt>
+						<dd>A callable taking no arguments which returns the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> var_list
+						</dt>
+						<dd>list or tuple of `Variable` objects to update to minimize
+`loss`, or a callable returning the list or tuple of `Variable` objects.
+Use callable when the variable list would otherwise be incomplete before
+`minimize` since the variables are created at the first time `loss` is
+called. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> grad_loss
+						</dt>
+						<dd>Optional. A `Tensor` holding the gradient computed for `loss`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that updates the variables in `var_list`.  If `global_step`
+was not `None`, that operation also increments `global_step`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="minimize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>minimize_dyn</strong>(<span title="System.object">object</span> loss, <span title="System.object">object</span> var_list, <span title="System.object">object</span> grad_loss, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Minimize `loss` by updating `var_list`. <p></p> This method simply computes gradient using <a href="..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a> and calls
+`apply_gradients()`. If you want to process the gradient before applying
+then call <a href="..\..\..\tf\GradientTape.md"><code>tf.GradientTape</code></a> and `apply_gradients()` explicitly instead
+of using this function. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> loss
+						</dt>
+						<dd>A callable taking no arguments which returns the value to minimize. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> var_list
+						</dt>
+						<dd>list or tuple of `Variable` objects to update to minimize
+`loss`, or a callable returning the list or tuple of `Variable` objects.
+Use callable when the variable list would otherwise be incomplete before
+`minimize` since the variables are created at the first time `loss` is
+called. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> grad_loss
+						</dt>
+						<dd>Optional. A `Tensor` holding the gradient computed for `loss`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>Optional name for the returned operation. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>An Operation that updates the variables in `var_list`.  If `global_step`
+was not `None`, that operation also increments `global_step`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.keras.optimizers/Adadelta.htm">Adadelta</a> <strong>NewDyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> rho, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> epsilon, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Construct a new Stochastic Gradient Descent or Momentum optimizer. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> learning_rate
+						</dt>
+						<dd>float hyperparameter >= 0. Learning rate. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> rho
+						</dt>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> epsilon
+						</dt>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Optional name prefix for the operations created when applying
+gradients.  Defaults to 'SGD'. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>keyword arguments. Allowed to be {`clipnorm`, `clipvalue`, `lr`,
+`decay`}. `clipnorm` is clip gradients by norm; `clipvalue` is clip
+gradients by value, `decay` is included for backward compatibility to
+allow time inverse decay of learning rate. `lr` is included for backward
+compatibility, recommended to use `learning_rate` instead. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="clipnorm" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipnorm</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="clipvalue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipvalue</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="epsilon" class="method">
+		<h4>
+			<span title="System.Nullable<double>">Nullable&lt;double&gt;</span> <strong>epsilon</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

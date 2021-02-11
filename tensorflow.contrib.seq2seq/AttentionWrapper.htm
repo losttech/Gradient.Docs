@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>AttentionWrapper - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.seq2seq</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/_BaseAttentionMechanism.htm">_BaseAttentionMechanism</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/_BaseAttentionMechanismV2.htm">_BaseAttentionMechanismV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/_BaseMonotonicAttentionMechanism.htm">_BaseMonotonicAttentionMechanism</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/_BaseMonotonicAttentionMechanismV2.htm">_BaseMonotonicAttentionMechanismV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/AttentionMechanism.htm">AttentionMechanism</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm" class="current">AttentionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/AttentionWrapperState.htm">AttentionWrapperState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BahdanauAttention.htm">BahdanauAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BahdanauAttentionV2.htm">BahdanauAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BahdanauMonotonicAttention.htm">BahdanauMonotonicAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BahdanauMonotonicAttentionV2.htm">BahdanauMonotonicAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BaseDecoder.htm">BaseDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BasicDecoder.htm">BasicDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BasicDecoderOutput.htm">BasicDecoderOutput</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BasicDecoderV2.htm">BasicDecoderV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BeamSearchDecoder.htm">BeamSearchDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BeamSearchDecoderMixin.htm">BeamSearchDecoderMixin</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BeamSearchDecoderOutput.htm">BeamSearchDecoderOutput</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BeamSearchDecoderState.htm">BeamSearchDecoderState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/BeamSearchDecoderV2.htm">BeamSearchDecoderV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/CustomHelper.htm">CustomHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/Decoder.htm">Decoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/FinalBeamSearchDecoderOutput.htm">FinalBeamSearchDecoderOutput</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/GreedyEmbeddingHelper.htm">GreedyEmbeddingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/Helper.htm">Helper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/I_BaseAttentionMechanism.htm">I_BaseAttentionMechanism</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/I_BaseAttentionMechanismV2.htm">I_BaseAttentionMechanismV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/I_BaseMonotonicAttentionMechanism.htm">I_BaseMonotonicAttentionMechanism</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/I_BaseMonotonicAttentionMechanismV2.htm">I_BaseMonotonicAttentionMechanismV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IAttentionMechanism.htm">IAttentionMechanism</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IAttentionWrapper.htm">IAttentionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IAttentionWrapperState.htm">IAttentionWrapperState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBahdanauAttention.htm">IBahdanauAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBahdanauAttentionV2.htm">IBahdanauAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBahdanauMonotonicAttention.htm">IBahdanauMonotonicAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBahdanauMonotonicAttentionV2.htm">IBahdanauMonotonicAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBaseDecoder.htm">IBaseDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBasicDecoder.htm">IBasicDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBasicDecoderOutput.htm">IBasicDecoderOutput</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBasicDecoderV2.htm">IBasicDecoderV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBeamSearchDecoder.htm">IBeamSearchDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBeamSearchDecoderMixin.htm">IBeamSearchDecoderMixin</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBeamSearchDecoderOutput.htm">IBeamSearchDecoderOutput</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBeamSearchDecoderState.htm">IBeamSearchDecoderState</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IBeamSearchDecoderV2.htm">IBeamSearchDecoderV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ICustomHelper.htm">ICustomHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IDecoder.htm">IDecoder</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IFinalBeamSearchDecoderOutput.htm">IFinalBeamSearchDecoderOutput</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IGreedyEmbeddingHelper.htm">IGreedyEmbeddingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IHelper.htm">IHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IInferenceHelper.htm">IInferenceHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ILuongAttention.htm">ILuongAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ILuongAttentionV2.htm">ILuongAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ILuongMonotonicAttention.htm">ILuongMonotonicAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ILuongMonotonicAttentionV2.htm">ILuongMonotonicAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/InferenceHelper.htm">InferenceHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ISampleEmbeddingHelper.htm">ISampleEmbeddingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IScheduledEmbeddingTrainingHelper.htm">IScheduledEmbeddingTrainingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/IScheduledOutputTrainingHelper.htm">IScheduledOutputTrainingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ISequenceLoss.htm">ISequenceLoss</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ITrainingHelper.htm">ITrainingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/LuongAttention.htm">LuongAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/LuongAttentionV2.htm">LuongAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/LuongMonotonicAttention.htm">LuongMonotonicAttention</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/LuongMonotonicAttentionV2.htm">LuongMonotonicAttentionV2</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/SampleEmbeddingHelper.htm">SampleEmbeddingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ScheduledEmbeddingTrainingHelper.htm">ScheduledEmbeddingTrainingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/ScheduledOutputTrainingHelper.htm">ScheduledOutputTrainingHelper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/seq2seq.htm">seq2seq</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/SequenceLoss.htm">SequenceLoss</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.seq2seq/TrainingHelper.htm">TrainingHelper</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> AttentionWrapper</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.seq2seq</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.nn.rnn_cell/RNNCell.htm">RNNCell</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.seq2seq/IAttentionWrapper.htm">IAttentionWrapper</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Wraps another `RNNCell` with attention. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#activity_regularizer">activity_regularizer</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#activity_regularizer_dyn">activity_regularizer_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#built">built</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#dynamic">dynamic</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#dynamic_dyn">dynamic_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#inbound_nodes">inbound_nodes</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#inbound_nodes_dyn">inbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input">input</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_dyn">input_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_mask">input_mask</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_mask_dyn">input_mask_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_shape">input_shape</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_shape_dyn">input_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_spec">input_spec</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#input_spec_dyn">input_spec_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#metrics">metrics</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#metrics_dyn">metrics_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#name">name</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#outbound_nodes">outbound_nodes</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#outbound_nodes_dyn">outbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output">output</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_dyn">output_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_mask">output_mask</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_mask_dyn">output_mask_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_shape">output_shape</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_shape_dyn">output_shape_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_size">output_size</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#output_size_dyn">output_size_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#rnncell_scope">rnncell_scope</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#scope_name">scope_name</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#scope_name_dyn">scope_name_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#state_size">state_size</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#state_size_dyn">state_size_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#stateful">stateful</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#supports_masking">supports_masking</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.seq2seq/AttentionWrapper.htm">AttentionWrapper</a> <strong>NewDyn</strong>(<span title="System.object">object</span> cell, <span title="System.object">object</span> attention_mechanism, <span title="System.object">object</span> attention_layer_size, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> alignment_history, <span title="System.object">object</span> cell_input_fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> output_attention, <span title="System.object">object</span> initial_cell_state, <span title="System.object">object</span> name, <span title="System.object">object</span> attention_layer, <span title="System.object">object</span> attention_fn, <span title="System.object">object</span> dtype)
+		</h4>
+		<div class="content">Construct the `AttentionWrapper`. <p></p> **NOTE** If you are using the `BeamSearchDecoder` with a cell wrapped in
+`AttentionWrapper`, then you must ensure that: <p></p> - The encoder output has been tiled to `beam_width` via
+<a href="..\..\..\tf\contrib\seq2seq\tile_batch.md"><code>tf.contrib.seq2seq.tile_batch</code></a> (NOT <a href="..\..\..\tf\tile.md"><code>tf.tile</code></a>).
+- The `batch_size` argument passed to the `zero_state` method of this
+wrapper is equal to `true_batch_size * beam_width`.
+- The initial state created with `zero_state` above contains a
+`cell_state` value containing properly tiled final state from the
+encoder. <p></p> An example: <p></p> ```
+tiled_encoder_outputs = tf.contrib.seq2seq.tile_batch(
+encoder_outputs, multiplier=beam_width)
+tiled_encoder_final_state = tf.conrib.seq2seq.tile_batch(
+encoder_final_state, multiplier=beam_width)
+tiled_sequence_length = tf.contrib.seq2seq.tile_batch(
+sequence_length, multiplier=beam_width)
+attention_mechanism = MyFavoriteAttentionMechanism(
+num_units=attention_depth,
+memory=tiled_inputs,
+memory_sequence_length=tiled_sequence_length)
+attention_cell = AttentionWrapper(cell, attention_mechanism,...)
+decoder_initial_state = attention_cell.zero_state(
+dtype, batch_size=true_batch_size * beam_width)
+decoder_initial_state = decoder_initial_state.clone(
+cell_state=tiled_encoder_final_state)
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> cell
+						</dt>
+						<dd>An instance of `RNNCell`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> attention_mechanism
+						</dt>
+						<dd>A list of `AttentionMechanism` instances or a single
+instance. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> attention_layer_size
+						</dt>
+						<dd>A list of Python integers or a single Python
+integer, the depth of the attention (output) layer(s). If None
+(default), use the context as attention at each time step. Otherwise,
+feed the context and cell output into the attention layer to generate
+attention at each time step. If attention_mechanism is a list,
+attention_layer_size must be a list of the same length. If
+attention_layer is set, this must be None. If attention_fn is set, it
+must guaranteed that the outputs of attention_fn also meet the above
+requirements. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> alignment_history
+						</dt>
+						<dd>Python boolean, whether to store alignment history from
+all time steps in the final output state (currently stored as a time
+major `TensorArray` on which you must call `stack()`). 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> cell_input_fn
+						</dt>
+						<dd>(optional) A `callable`.  The default is:
+`lambda inputs, attention: array_ops.concat([inputs, attention], -1)`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> output_attention
+						</dt>
+						<dd>Python bool.  If `True` (default), the output at each
+time step is the attention value.  This is the behavior of Luong-style
+attention mechanisms.  If `False`, the output at each time step is the
+output of `cell`.  This is the behavior of Bhadanau-style attention
+mechanisms.  In both cases, the `attention` tensor is propagated to the
+next time step via the state and is used there. This flag only controls
+whether the attention mechanism is propagated up to the next cell in an
+RNN stack or to the top RNN output. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initial_cell_state
+						</dt>
+						<dd>The initial state value to use for the cell when the
+user calls `zero_state()`.  Note that if this value is provided now, and
+the user uses a `batch_size` argument of `zero_state` which does not
+match the batch size of `initial_cell_state`, proper behavior is not
+guaranteed. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>Name to use when creating ops. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> attention_layer
+						</dt>
+						<dd>A list of `tf.compat.v1.layers.Layer` instances or a
+single `tf.compat.v1.layers.Layer` instance taking the context and cell
+output as inputs to generate attention at each time step. If None
+(default), use the context as attention at each time step. If
+attention_mechanism is a list, attention_layer must be a list of the
+same length. If attention_layers_size is set, this must be None. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> attention_fn
+						</dt>
+						<dd>An optional callable function that allows users to provide
+their own customized attention function, which takes input
+(attention_mechanism, cell_output, attention_state, attention_layer) and
+outputs (attention, alignments, next_attention_state). If provided, the
+attention_layer_size should be the size of the outputs of attention_fn. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dtype
+						</dt>
+						<dd>The cell dtype 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="activity_regularizer" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>activity_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activity_regularizer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="built" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>built</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>dynamic</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dynamic_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Node>">IList&lt;Node&gt;</span> <strong>inbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>metrics</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>metrics_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>outbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>output</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_size" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_size</strong> get; 
+		</h4>
+		<div class="content">Integer or TensorShape: size of outputs produced by this cell. 
+
+		</div>
+	</div>
+	<div id="output_size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_size_dyn</strong> get; 
+		</h4>
+		<div class="content">Integer or TensorShape: size of outputs produced by this cell. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="rnncell_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>rnncell_scope</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>scope_name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="scope_name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scope_name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="state_size" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>state_size</strong> get; 
+		</h4>
+		<div class="content">The `state_size` property of `AttentionWrapper`. 
+
+		</div>
+	</div>
+	<div id="state_size_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>state_size_dyn</strong> get; 
+		</h4>
+		<div class="content">The `state_size` property of `AttentionWrapper`. 
+
+		</div>
+	</div>
+	<div id="stateful" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>stateful</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="supports_masking" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>supports_masking</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

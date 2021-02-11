@@ -1,0 +1,1339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Beta - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distributions</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distributions/Bernoulli.htm">Bernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Beta.htm" class="current">Beta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Categorical.htm">Categorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Dirichlet.htm">Dirichlet</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/DirichletMultinomial.htm">DirichletMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Distribution.htm">Distribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Exponential.htm">Exponential</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Gamma.htm">Gamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IBernoulli.htm">IBernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IBeta.htm">IBeta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ICategorical.htm">ICategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDirichlet.htm">IDirichlet</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDirichletMultinomial.htm">IDirichletMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDistribution.htm">IDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IExponential.htm">IExponential</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IGamma.htm">IGamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ILaplace.htm">ILaplace</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IMultinomial.htm">IMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/INormal.htm">INormal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IRegisterKL.htm">IRegisterKL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IReparameterizationType.htm">IReparameterizationType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IStudentT.htm">IStudentT</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IUniform.htm">IUniform</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Laplace.htm">Laplace</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Multinomial.htm">Multinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Normal.htm">Normal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/RegisterKL.htm">RegisterKL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ReparameterizationType.htm">ReparameterizationType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/StudentT.htm">StudentT</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Uniform.htm">Uniform</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Beta</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distributions</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distributions/Distribution.htm">Distribution</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distributions/IBeta.htm">IBeta</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Beta distribution. <p></p> The Beta distribution is defined over the `(0, 1)` interval using parameters
+`concentration1` (aka "alpha") and `concentration0` (aka "beta"). <p></p> #### Mathematical Details <p></p> The probability density function (pdf) is, <p></p> ```none
+pdf(x; alpha, beta) = x**(alpha - 1) (1 - x)**(beta - 1) / Z
+Z = Gamma(alpha) Gamma(beta) / Gamma(alpha + beta)
+``` <p></p> where: <p></p> * `concentration1 = alpha`,
+* `concentration0 = beta`,
+* `Z` is the normalization constant, and,
+* `Gamma` is the [gamma function](
+https://en.wikipedia.org/wiki/Gamma_function). <p></p> The concentration parameters represent mean total counts of a `1` or a `0`,
+i.e., <p></p> ```none
+concentration1 = alpha = mean * total_concentration
+concentration0 = beta  = (1. - mean) * total_concentration
+``` <p></p> where `mean` in `(0, 1)` and `total_concentration` is a positive real number
+representing a mean `total_count = concentration1 + concentration0`. <p></p> Distribution parameters are automatically broadcast in all functions; see
+examples for details. <p></p> Warning: The samples can be zero due to finite precision.
+This happens more often when some of the concentrations are very small.
+Make sure to round the samples to `np.finfo(dtype).tiny` before computing the
+density. <p></p> Samples of this distribution are reparameterized (pathwise differentiable).
+The derivatives are computed using the approach described in the paper <p></p> [Michael Figurnov, Shakir Mohamed, Andriy Mnih.
+Implicit Reparameterization Gradients, 2018](https://arxiv.org/abs/1805.08498) <p></p> #### Examples <p></p> Compute the gradients of samples w.r.t. the parameters: <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>import tensorflow_probability as tfp
+            tfd = tfp.distributions <p></p> # Create a batch of three Beta distributions.
+alpha = [1, 2, 3]
+beta = [1, 2, 3]
+dist = tfd.Beta(alpha, beta) <p></p> dist.sample([4, 5])  # Shape [4, 5, 3] <p></p> # `x` has three batch entries, each with two samples.
+x = [[.1,.4,.5],
+     [.2,.3,.5]]
+# Calculate the probability of each pair of samples under the corresponding
+# distribution in `dist`.
+dist.prob(x)         # Shape [2, 3] </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distributions/Beta.htm#covariance">covariance</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#covariance_dyn">covariance_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#cross_entropy">cross_entropy</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#cross_entropy_dyn">cross_entropy_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#entropy">entropy</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#entropy_dyn">entropy_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#kl_divergence">kl_divergence</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#kl_divergence_dyn">kl_divergence_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#log_survival_function">log_survival_function</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#log_survival_function">log_survival_function</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#log_survival_function_dyn">log_survival_function_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#mean">mean</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#mean_dyn">mean_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#mode">mode</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#mode_dyn">mode_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#quantile">quantile</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#quantile">quantile</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#quantile">quantile</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#quantile_dyn">quantile_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#stddev">stddev</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#stddev_dyn">stddev_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#survival_function">survival_function</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#survival_function">survival_function</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#survival_function">survival_function</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#survival_function_dyn">survival_function_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#variance">variance</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#variance_dyn">variance_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distributions/Beta.htm#allow_nan_stats">allow_nan_stats</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#allow_nan_stats_dyn">allow_nan_stats_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#batch_shape">batch_shape</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#batch_shape_dyn">batch_shape_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#concentration0">concentration0</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#concentration0_dyn">concentration0_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#concentration1">concentration1</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#concentration1_dyn">concentration1_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#event_shape">event_shape</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#event_shape_dyn">event_shape_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#name">name</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#parameters">parameters</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#parameters_dyn">parameters_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#reparameterization_type">reparameterization_type</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#reparameterization_type_dyn">reparameterization_type_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#total_concentration">total_concentration</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#total_concentration_dyn">total_concentration_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#validate_args">validate_args</a></li>
+				<li><a href="../tensorflow.distributions/Beta.htm#validate_args_dyn">validate_args_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="covariance" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>covariance</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Covariance. <p></p> Covariance is (possibly) defined only for non-scalar-event distributions. <p></p> For example, for a length-`k`, vector-valued distribution, it is calculated
+as, <p></p> ```none
+Cov[i, j] = Covariance(X_i, X_j) = E[(X_i - E[X_i]) (X_j - E[X_j])]
+``` <p></p> where `Cov` is a (batch of) `k x k` matrix, `0 <= (i, j) < k`, and `E`
+denotes expectation. <p></p> Alternatively, for non-vector, multivariate distributions (e.g.,
+matrix-valued, Wishart), `Covariance` shall return a (batch of) matrices
+under some vectorization of the events, i.e., <p></p> ```none
+Cov[i, j] = Covariance(Vec(X)_i, Vec(X)_j) = [as above]
+``` <p></p> where `Cov` is a (batch of) `k' x k'` matrices,
+`0 <= (i, j) < k' = reduce_prod(event_shape)`, and `Vec` is some function
+mapping indices of this distribution's event dimensions to indices of a
+length-`k'` vector. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="covariance_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>covariance_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Covariance. <p></p> Covariance is (possibly) defined only for non-scalar-event distributions. <p></p> For example, for a length-`k`, vector-valued distribution, it is calculated
+as, <p></p> ```none
+Cov[i, j] = Covariance(X_i, X_j) = E[(X_i - E[X_i]) (X_j - E[X_j])]
+``` <p></p> where `Cov` is a (batch of) `k x k` matrix, `0 <= (i, j) < k`, and `E`
+denotes expectation. <p></p> Alternatively, for non-vector, multivariate distributions (e.g.,
+matrix-valued, Wishart), `Covariance` shall return a (batch of) matrices
+under some vectorization of the events, i.e., <p></p> ```none
+Cov[i, j] = Covariance(Vec(X)_i, Vec(X)_j) = [as above]
+``` <p></p> where `Cov` is a (batch of) `k' x k'` matrices,
+`0 <= (i, j) < k' = reduce_prod(event_shape)`, and `Vec` is some function
+mapping indices of this distribution's event dimensions to indices of a
+length-`k'` vector. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_entropy" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>cross_entropy</strong>(<span title="System.object">object</span> other, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Computes the (Shannon) cross entropy. <p></p> Denote this distribution (`self`) by `P` and the `other` distribution by
+`Q`. Assuming `P, Q` are absolutely continuous with respect to
+one another and permit densities `p(x) dr(x)` and `q(x) dr(x)`, (Shanon)
+cross entropy is defined as: <p></p> ```none
+H[P, Q] = E_p[-log q(X)] = -int_F p(x) log q(x) dr(x)
+``` <p></p> where `F` denotes the support of the random variable `X ~ P`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> other
+						</dt>
+						<dd>`tfp.distributions.Distribution` instance. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="cross_entropy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>cross_entropy_dyn</strong>(<span title="System.object">object</span> other, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Computes the (Shannon) cross entropy. <p></p> Denote this distribution (`self`) by `P` and the `other` distribution by
+`Q`. Assuming `P, Q` are absolutely continuous with respect to
+one another and permit densities `p(x) dr(x)` and `q(x) dr(x)`, (Shanon)
+cross entropy is defined as: <p></p> ```none
+H[P, Q] = E_p[-log q(X)] = -int_F p(x) log q(x) dr(x)
+``` <p></p> where `F` denotes the support of the random variable `X ~ P`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> other
+						</dt>
+						<dd>`tfp.distributions.Distribution` instance. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="entropy" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>entropy</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Shannon entropy in nats. 
+
+
+
+
+		</div>
+	</div>
+	<div id="entropy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>entropy_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Shannon entropy in nats. 
+
+
+
+
+		</div>
+	</div>
+	<div id="kl_divergence" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>kl_divergence</strong>(<span title="System.object">object</span> other, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Computes the Kullback--Leibler divergence. <p></p> Denote this distribution (`self`) by `p` and the `other` distribution by
+`q`. Assuming `p, q` are absolutely continuous with respect to reference
+measure `r`, the KL divergence is defined as: <p></p> ```none
+KL[p, q] = E_p[log(p(X)/q(X))]
+= -int_F p(x) log q(x) dr(x) + int_F p(x) log p(x) dr(x)
+= H[p, q] - H[p]
+``` <p></p> where `F` denotes the support of the random variable `X ~ p`, `H[.,.]`
+denotes (Shanon) cross entropy, and `H[.]` denotes (Shanon) entropy. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> other
+						</dt>
+						<dd>`tfp.distributions.Distribution` instance. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="kl_divergence_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>kl_divergence_dyn</strong>(<span title="System.object">object</span> other, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Computes the Kullback--Leibler divergence. <p></p> Denote this distribution (`self`) by `p` and the `other` distribution by
+`q`. Assuming `p, q` are absolutely continuous with respect to reference
+measure `r`, the KL divergence is defined as: <p></p> ```none
+KL[p, q] = E_p[log(p(X)/q(X))]
+= -int_F p(x) log q(x) dr(x) + int_F p(x) log p(x) dr(x)
+= H[p, q] - H[p]
+``` <p></p> where `F` denotes the support of the random variable `X ~ p`, `H[.,.]`
+denotes (Shanon) cross entropy, and `H[.]` denotes (Shanon) entropy. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> other
+						</dt>
+						<dd>`tfp.distributions.Distribution` instance. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="log_survival_function" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>log_survival_function</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Log survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+log_survival_function(x) = Log[ P[X > x] ]
+= Log[ 1 - P[X <= x] ]
+= Log[ 1 - cdf(x) ]
+``` <p></p> Typically, different numerical approximations can be used for the log
+survival function, which are more accurate than `1 - cdf(x)` when `x >> 1`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="log_survival_function" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>log_survival_function</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Log survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+log_survival_function(x) = Log[ P[X > x] ]
+= Log[ 1 - P[X <= x] ]
+= Log[ 1 - cdf(x) ]
+``` <p></p> Typically, different numerical approximations can be used for the log
+survival function, which are more accurate than `1 - cdf(x)` when `x >> 1`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="log_survival_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>log_survival_function_dyn</strong>(<span title="System.object">object</span> value, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Log survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+log_survival_function(x) = Log[ P[X > x] ]
+= Log[ 1 - P[X <= x] ]
+= Log[ 1 - cdf(x) ]
+``` <p></p> Typically, different numerical approximations can be used for the log
+survival function, which are more accurate than `1 - cdf(x)` when `x >> 1`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="mean" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>mean</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Mean. 
+
+
+
+
+		</div>
+	</div>
+	<div id="mean_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>mean_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Mean. 
+
+
+
+
+		</div>
+	</div>
+	<div id="mode" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>mode</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Mode. 
+
+
+
+
+		</div>
+	</div>
+	<div id="mode_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>mode_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Mode. 
+
+
+
+
+		</div>
+	</div>
+	<div id="quantile" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>quantile</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Quantile function. Aka "inverse cdf" or "percent point function". <p></p> Given random variable `X` and `p in [0, 1]`, the `quantile` is: <p></p> ```none
+quantile(p) := x such that P[X <= x] == p
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="quantile" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>quantile</strong>(<span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Quantile function. Aka "inverse cdf" or "percent point function". <p></p> Given random variable `X` and `p in [0, 1]`, the `quantile` is: <p></p> ```none
+quantile(p) := x such that P[X <= x] == p
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="quantile" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>quantile</strong>(<span title="System.double">double</span> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Quantile function. Aka "inverse cdf" or "percent point function". <p></p> Given random variable `X` and `p in [0, 1]`, the `quantile` is: <p></p> ```none
+quantile(p) := x such that P[X <= x] == p
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.double">double</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="quantile_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>quantile_dyn</strong>(<span title="System.object">object</span> value, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Quantile function. Aka "inverse cdf" or "percent point function". <p></p> Given random variable `X` and `p in [0, 1]`, the `quantile` is: <p></p> ```none
+quantile(p) := x such that P[X <= x] == p
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="stddev" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>stddev</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Standard deviation. <p></p> Standard deviation is defined as, <p></p> ```none
+stddev = E[(X - E[X])**2]**0.5
+``` <p></p> where `X` is the random variable associated with this distribution, `E`
+denotes expectation, and `stddev.shape = batch_shape + event_shape`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="stddev_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>stddev_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Standard deviation. <p></p> Standard deviation is defined as, <p></p> ```none
+stddev = E[(X - E[X])**2]**0.5
+``` <p></p> where `X` is the random variable associated with this distribution, `E`
+denotes expectation, and `stddev.shape = batch_shape + event_shape`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="survival_function" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>survival_function</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+survival_function(x) = P[X > x]
+= 1 - P[X <= x]
+= 1 - cdf(x).
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="survival_function" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>survival_function</strong>(<a href="../numpy/ndarray.htm">ndarray</a> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+survival_function(x) = P[X > x]
+= 1 - P[X <= x]
+= 1 - cdf(x).
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../numpy/ndarray.htm">ndarray</a></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="survival_function" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>survival_function</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> value, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+survival_function(x) = P[X > x]
+= 1 - P[X <= x]
+= 1 - cdf(x).
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="survival_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>survival_function_dyn</strong>(<span title="System.object">object</span> value, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Survival function. <p></p> Given random variable `X`, the survival function is defined: <p></p> ```none
+survival_function(x) = P[X > x]
+= 1 - P[X <= x]
+= 1 - cdf(x).
+``` 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> value
+						</dt>
+						<dd>`float` or `double` `Tensor`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>`Tensor` of shape `sample_shape(x) + self.batch_shape` with values of type
+`self.dtype`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="variance" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variance</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Variance. <p></p> Variance is defined as, <p></p> ```none
+Var = E[(X - E[X])**2]
+``` <p></p> where `X` is the random variable associated with this distribution, `E`
+denotes expectation, and `Var.shape = batch_shape + event_shape`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.string">string</span></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="variance_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variance_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">Variance. <p></p> Variance is defined as, <p></p> ```none
+Var = E[(X - E[X])**2]
+``` <p></p> where `X` is the random variable associated with this distribution, `E`
+denotes expectation, and `Var.shape = batch_shape + event_shape`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Python `str` prepended to names of ops created by this function. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="allow_nan_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="allow_nan_stats_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>batch_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="concentration0" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>concentration0</strong> get; 
+		</h4>
+		<div class="content">Concentration parameter associated with a `0` outcome. 
+
+		</div>
+	</div>
+	<div id="concentration0_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>concentration0_dyn</strong> get; 
+		</h4>
+		<div class="content">Concentration parameter associated with a `0` outcome. 
+
+		</div>
+	</div>
+	<div id="concentration1" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>concentration1</strong> get; 
+		</h4>
+		<div class="content">Concentration parameter associated with a `1` outcome. 
+
+		</div>
+	</div>
+	<div id="concentration1_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>concentration1_dyn</strong> get; 
+		</h4>
+		<div class="content">Concentration parameter associated with a `1` outcome. 
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>event_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>event_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>parameters</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameters_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="total_concentration" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>total_concentration</strong> get; 
+		</h4>
+		<div class="content">Sum of concentration parameters. 
+
+		</div>
+	</div>
+	<div id="total_concentration_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>total_concentration_dyn</strong> get; 
+		</h4>
+		<div class="content">Sum of concentration parameters. 
+
+		</div>
+	</div>
+	<div id="validate_args" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="validate_args_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

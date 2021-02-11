@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Ftrl - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.optimizers</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adadelta.htm">Adadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adagrad.htm">Adagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adam.htm">Adam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adamax.htm">Adamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Ftrl.htm" class="current">Ftrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdadelta.htm">IAdadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdagrad.htm">IAdagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdam.htm">IAdam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdamax.htm">IAdamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IFtrl.htm">IFtrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/INadam.htm">INadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IRMSprop.htm">IRMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/ISGD.htm">ISGD</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Nadam.htm">Nadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/OptimizerExtensions.htm">OptimizerExtensions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/RMSprop.htm">RMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/SGD.htm">SGD</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Ftrl</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.optimizers</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.optimizers/IFtrl.htm">IFtrl</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Optimizer that implements the FTRL algorithm. <p></p> See Algorithm 1 of this [paper](
+https://www.eecs.tufts.edu/~dsculley/papers/ad-click-prediction.pdf).
+This version has support for both online L2 (the L2 penalty given in the paper
+above) and shrinkage-type L2 (which is the addition of an L2 penalty to the
+loss function). <p></p> Initialization:
+$$t = 0$$
+$$n_{0} = 0$$
+$$\sigma_{0} = 0$$
+$$z_{0} = 0$$ <p></p> Update ($$i$$ is variable index):
+$$t = t + 1$$
+$$n_{t,i} = n_{t-1,i} + g_{t,i}^{2}$$
+$$\sigma_{t,i} = (\sqrt{n_{t,i}} - \sqrt{n_{t-1,i}}) / \alpha$$
+$$z_{t,i} = z_{t-1,i} + g_{t,i} - \sigma_{t,i} * w_{t,i}$$
+$$w_{t,i} = - ((\beta+\sqrt{n+{t}}) / \alpha + \lambda_{2})^{-1} * (z_{i} -
+sgn(z_{i}) * \lambda_{1}) if \abs{z_{i}} > \lambda_{i} else 0$$ <p></p> Check the documentation for the l2_shrinkage_regularization_strength
+parameter for more details when shrinkage is enabled, where gradient is
+replaced with gradient_with_shrinkage. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#clipnorm">clipnorm</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#clipvalue">clipvalue</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#iterations">iterations</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#iterations_dyn">iterations_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.optimizers/Ftrl.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.keras.optimizers/Ftrl.htm">Ftrl</a> <strong>NewDyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> learning_rate_power, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> initial_accumulator_value, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> l1_regularization_strength, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> l2_regularization_strength, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> l2_shrinkage_regularization_strength, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Construct a new FTRL optimizer. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> learning_rate
+						</dt>
+						<dd>A float value or a constant float `Tensor`. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> learning_rate_power
+						</dt>
+						<dd>A float value, must be less or equal to zero.
+Controls how the learning rate decreases during training. Use zero for
+a fixed learning rate. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> initial_accumulator_value
+						</dt>
+						<dd>The starting value for accumulators.
+Only zero or positive values are allowed. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> l1_regularization_strength
+						</dt>
+						<dd>A float value, must be greater than or
+equal to zero. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> l2_regularization_strength
+						</dt>
+						<dd>A float value, must be greater than or
+equal to zero. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> name
+						</dt>
+						<dd>Optional name prefix for the operations created when applying
+gradients.  Defaults to "Ftrl". 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> l2_shrinkage_regularization_strength
+						</dt>
+						<dd>A float value, must be greater than
+or equal to zero. This differs from L2 above in that the L2 above is a
+stabilization penalty, whereas this L2 shrinkage is a magnitude penalty.
+The FTRL formulation can be written as:
+w_{t+1} = argmin_w(\hat{g}_{1:t}w + L1*||w||_1 + L2*||w||_2^2), where
+\hat{g} = g + (2*L2_shrinkage*w), and g is the gradient of the loss
+function w.r.t. the weights w.
+Specifically, in the absence of L1 regularization, it is equivalent to
+the following update rule:
+w_{t+1} = w_t - lr_t / (1 + 2*L2*lr_t) * g_t -
+2*L2_shrinkage*lr_t / (1 + 2*L2*lr_t) * w_t
+where lr_t is the learning rate at t.
+When input is sparse shrinkage will only happen on the active weights.\ 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>keyword arguments. Allowed to be {`clipnorm`, `clipvalue`, `lr`,
+`decay`}. `clipnorm` is clip gradients by norm; `clipvalue` is clip
+gradients by value, `decay` is included for backward compatibility to
+allow time inverse decay of learning rate. `lr` is included for backward
+compatibility, recommended to use `learning_rate` instead. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="clipnorm" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipnorm</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="clipvalue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipvalue</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

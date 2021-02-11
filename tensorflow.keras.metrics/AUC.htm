@@ -1,0 +1,990 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>AUC - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.metrics</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.metrics/Accuracy.htm">Accuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/AUC.htm" class="current">AUC</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/BinaryAccuracy.htm">BinaryAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/BinaryCrossentropy.htm">BinaryCrossentropy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/CategoricalAccuracy.htm">CategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/CategoricalCrossentropy.htm">CategoricalCrossentropy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/CategoricalHinge.htm">CategoricalHinge</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/CosineSimilarity.htm">CosineSimilarity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/FalseNegatives.htm">FalseNegatives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/FalsePositives.htm">FalsePositives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Hinge.htm">Hinge</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IAccuracy.htm">IAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IAUC.htm">IAUC</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IBinaryAccuracy.htm">IBinaryAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IBinaryCrossentropy.htm">IBinaryCrossentropy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ICategoricalAccuracy.htm">ICategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ICategoricalCrossentropy.htm">ICategoricalCrossentropy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ICategoricalHinge.htm">ICategoricalHinge</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ICosineSimilarity.htm">ICosineSimilarity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IFalseNegatives.htm">IFalseNegatives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IFalsePositives.htm">IFalsePositives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IHinge.htm">IHinge</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IKLDivergence.htm">IKLDivergence</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ILogCoshError.htm">ILogCoshError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMean.htm">IMean</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanAbsoluteError.htm">IMeanAbsoluteError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanAbsolutePercentageError.htm">IMeanAbsolutePercentageError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanIoU.htm">IMeanIoU</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanRelativeError.htm">IMeanRelativeError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanSquaredError.htm">IMeanSquaredError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanSquaredLogarithmicError.htm">IMeanSquaredLogarithmicError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMeanTensor.htm">IMeanTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IMetric.htm">IMetric</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IPoisson.htm">IPoisson</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IPrecision.htm">IPrecision</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IRecall.htm">IRecall</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/IRootMeanSquaredError.htm">IRootMeanSquaredError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISensitivityAtSpecificity.htm">ISensitivityAtSpecificity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISparseCategoricalAccuracy.htm">ISparseCategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISparseCategoricalCrossentropy.htm">ISparseCategoricalCrossentropy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISparseTopKCategoricalAccuracy.htm">ISparseTopKCategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISpecificityAtSensitivity.htm">ISpecificityAtSensitivity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISquaredHinge.htm">ISquaredHinge</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ISum.htm">ISum</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ITopKCategoricalAccuracy.htm">ITopKCategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ITrueNegatives.htm">ITrueNegatives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/ITruePositives.htm">ITruePositives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/KLDivergence.htm">KLDivergence</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/LogCoshError.htm">LogCoshError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Mean.htm">Mean</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanAbsoluteError.htm">MeanAbsoluteError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanAbsolutePercentageError.htm">MeanAbsolutePercentageError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanIoU.htm">MeanIoU</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanRelativeError.htm">MeanRelativeError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanSquaredError.htm">MeanSquaredError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanSquaredLogarithmicError.htm">MeanSquaredLogarithmicError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/MeanTensor.htm">MeanTensor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Metric.htm">Metric</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Poisson.htm">Poisson</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Precision.htm">Precision</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Recall.htm">Recall</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/RootMeanSquaredError.htm">RootMeanSquaredError</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/SensitivityAtSpecificity.htm">SensitivityAtSpecificity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/SparseCategoricalAccuracy.htm">SparseCategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/SparseCategoricalCrossentropy.htm">SparseCategoricalCrossentropy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/SparseTopKCategoricalAccuracy.htm">SparseTopKCategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/SpecificityAtSensitivity.htm">SpecificityAtSensitivity</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/SquaredHinge.htm">SquaredHinge</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/Sum.htm">Sum</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/TopKCategoricalAccuracy.htm">TopKCategoricalAccuracy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/TrueNegatives.htm">TrueNegatives</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.metrics/TruePositives.htm">TruePositives</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> AUC</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.metrics</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.metrics/Metric.htm">Metric</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.metrics/IAUC.htm">IAUC</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Computes the approximate AUC (Area under the curve) via a Riemann sum. <p></p> This metric creates four local variables, `true_positives`, `true_negatives`,
+`false_positives` and `false_negatives` that are used to compute the AUC.
+To discretize the AUC curve, a linearly spaced set of thresholds is used to
+compute pairs of recall and precision values. The area under the ROC-curve is
+therefore computed using the height of the recall values by the false positive
+rate, while the area under the PR-curve is the computed using the height of
+the precision values by the recall. <p></p> This value is ultimately returned as `auc`, an idempotent operation that
+computes the area under a discretized curve of precision versus recall values
+(computed using the aforementioned variables). The `num_thresholds` variable
+controls the degree of discretization with larger numbers of thresholds more
+closely approximating the true AUC. The quality of the approximation may vary
+dramatically depending on `num_thresholds`. The `thresholds` parameter can be
+used to manually specify thresholds which split the predictions more evenly. <p></p> For best results, `predictions` should be distributed approximately uniformly
+in the range [0, 1] and not peaked around 0 or 1. The quality of the AUC
+approximation may be poor if this is not the case. Setting `summation_method`
+to 'minoring' or 'majoring' can help quantify the error in the approximation
+by providing lower or upper bound estimate of the AUC. <p></p> If `sample_weight` is `None`, weights default to 1.
+Use `sample_weight` of 0 to mask values. <p></p> Usage:
+Usage with tf.keras API: <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>m = tf.keras.metrics.AUC(num_thresholds=3)
+            m.update_state([0, 0, 1, 1], [0, 0.5, 0.3, 0.9]) <p></p> # threshold values are [0 - 1e-7, 0.5, 1 + 1e-7]
+# tp = [2, 1, 0], fp = [2, 0, 0], fn = [0, 1, 2], tn = [0, 2, 2]
+# recall = [1, 0.5, 0], fp_rate = [1, 0, 0]
+# auc = ((((1+0.5)/2)*(1-0))+ (((0.5+0)/2)*(0-0))) = 0.75 <p></p> print('Final result: ', m.result().numpy())  # Final result: 0.75 </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#interpolate_pr_auc">interpolate_pr_auc</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#interpolate_pr_auc_dyn">interpolate_pr_auc_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#NewDyn">NewDyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#activity_regularizer">activity_regularizer</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#activity_regularizer_dyn">activity_regularizer_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#built">built</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#curve">curve</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#dynamic">dynamic</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#dynamic_dyn">dynamic_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#false_negatives">false_negatives</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#false_positives">false_positives</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#inbound_nodes">inbound_nodes</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#inbound_nodes_dyn">inbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input">input</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_dyn">input_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_mask">input_mask</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_mask_dyn">input_mask_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_shape">input_shape</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_shape_dyn">input_shape_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_spec">input_spec</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#input_spec_dyn">input_spec_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#losses">losses</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#losses_dyn">losses_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#metrics">metrics</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#metrics_dyn">metrics_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#name">name</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#name_scope">name_scope</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#name_scope_dyn">name_scope_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#non_trainable_variables">non_trainable_variables</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#non_trainable_variables_dyn">non_trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#non_trainable_weights">non_trainable_weights</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#non_trainable_weights_dyn">non_trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#num_thresholds">num_thresholds</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#outbound_nodes">outbound_nodes</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#outbound_nodes_dyn">outbound_nodes_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#output">output</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#output_dyn">output_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#output_mask">output_mask</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#output_mask_dyn">output_mask_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#output_shape">output_shape</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#output_shape_dyn">output_shape_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#stateful">stateful</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#submodules">submodules</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#submodules_dyn">submodules_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#summation_method">summation_method</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#supports_masking">supports_masking</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#thresholds">thresholds</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#trainable_variables">trainable_variables</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#trainable_variables_dyn">trainable_variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#trainable_weights">trainable_weights</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#trainable_weights_dyn">trainable_weights_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#true_negatives">true_negatives</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#true_positives">true_positives</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#updates">updates</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#updates_dyn">updates_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#variables">variables</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#variables_dyn">variables_dyn</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.metrics/AUC.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="interpolate_pr_auc" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>interpolate_pr_auc</strong>()
+		</h4>
+		<div class="content">Interpolation formula inspired by section 4 of Davis & Goadrich 2006. <p></p> https://www.biostat.wisc.edu/~page/rocpr.pdf <p></p> Note here we derive & use a closed formula not present in the paper
+as follows: <p></p> Precision = TP / (TP + FP) = TP / P <p></p> Modeling all of TP (true positive), FP (false positive) and their sum
+P = TP + FP (predicted positive) as varying linearly within each interval
+[A, B] between successive thresholds, we get <p></p> Precision slope = dTP / dP
+= (TP_B - TP_A) / (P_B - P_A)
+= (TP - TP_A) / (P - P_A)
+Precision = (TP_A + slope * (P - P_A)) / P <p></p> The area within the interval is (slope / total_pos_weight) times <p></p> int_A^B{Precision.dP} = int_A^B{(TP_A + slope * (P - P_A)) * dP / P}
+int_A^B{Precision.dP} = int_A^B{slope * dP + intercept * dP / P} <p></p> where intercept = TP_A - slope * P_A = TP_B - slope * P_B, resulting in <p></p> int_A^B{Precision.dP} = TP_B - TP_A + intercept * log(P_B / P_A) <p></p> Bringing back the factor (slope / total_pos_weight) we'd put aside, we get <p></p> slope * [dTP + intercept *  log(P_B / P_A)] / total_pos_weight <p></p> where dTP == TP_B - TP_A. <p></p> Note that when P_A == 0 the above calculation simplifies into <p></p> int_A^B{Precision.dTP} = int_A^B{slope * dTP} = slope * (TP_B - TP_A) <p></p> which is really equivalent to imputing constant precision throughout the
+first bucket having >0 true positives. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="interpolate_pr_auc_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>interpolate_pr_auc_dyn</strong>()
+		</h4>
+		<div class="content">Interpolation formula inspired by section 4 of Davis & Goadrich 2006. <p></p> https://www.biostat.wisc.edu/~page/rocpr.pdf <p></p> Note here we derive & use a closed formula not present in the paper
+as follows: <p></p> Precision = TP / (TP + FP) = TP / P <p></p> Modeling all of TP (true positive), FP (false positive) and their sum
+P = TP + FP (predicted positive) as varying linearly within each interval
+[A, B] between successive thresholds, we get <p></p> Precision slope = dTP / dP
+= (TP_B - TP_A) / (P_B - P_A)
+= (TP - TP_A) / (P - P_A)
+Precision = (TP_A + slope * (P - P_A)) / P <p></p> The area within the interval is (slope / total_pos_weight) times <p></p> int_A^B{Precision.dP} = int_A^B{(TP_A + slope * (P - P_A)) * dP / P}
+int_A^B{Precision.dP} = int_A^B{slope * dP + intercept * dP / P} <p></p> where intercept = TP_A - slope * P_A = TP_B - slope * P_B, resulting in <p></p> int_A^B{Precision.dP} = TP_B - TP_A + intercept * log(P_B / P_A) <p></p> Bringing back the factor (slope / total_pos_weight) we'd put aside, we get <p></p> slope * [dTP + intercept *  log(P_B / P_A)] / total_pos_weight <p></p> where dTP == TP_B - TP_A. <p></p> Note that when P_A == 0 the above calculation simplifies into <p></p> int_A^B{Precision.dTP} = int_A^B{slope * dTP} = slope * (TP_B - TP_A) <p></p> which is really equivalent to imputing constant precision throughout the
+first bucket having >0 true positives. 
+
+
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.keras.metrics/AUC.htm">AUC</a> <strong>NewDyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_thresholds, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> curve, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> summation_method, <span title="System.object">object</span> name, <span title="System.object">object</span> dtype, <span title="System.object">object</span> thresholds)
+		</h4>
+		<div class="content">Creates an `AUC` instance. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_thresholds
+						</dt>
+						<dd>(Optional) Defaults to 200. The number of thresholds to
+use when discretizing the roc curve. Values must be > 1. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> curve
+						</dt>
+						<dd>(Optional) Specifies the name of the curve to be computed, 'ROC'
+[default] or 'PR' for the Precision-Recall-curve. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> summation_method
+						</dt>
+						<dd>(Optional) Specifies the Riemann summation method used
+(https://en.wikipedia.org/wiki/Riemann_sum): 'interpolation' [default],
+applies mid-point summation scheme for `ROC`. For PR-AUC, interpolates
+(true/false) positives but not the ratio that is precision (see Davis
+& Goadrich 2006 for details); 'minoring' that applies left summation
+for increasing intervals and right summation for decreasing intervals;
+'majoring' that does the opposite. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> name
+						</dt>
+						<dd>(Optional) string name of the metric instance. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dtype
+						</dt>
+						<dd>(Optional) data type of the metric result. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> thresholds
+						</dt>
+						<dd>(Optional) A list of floating point values to use as the
+thresholds for discretizing the curve. If set, the `num_thresholds`
+parameter is ignored. Values should be in [0, 1]. Endpoint thresholds
+equal to {-epsilon, 1+epsilon} for a small positive epsilon value will
+be automatically included with these to correctly handle predictions
+equal to exactly 0 or 1. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="activity_regularizer" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>activity_regularizer</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="activity_regularizer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>activity_regularizer_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="built" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>built</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="curve" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>curve</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>dynamic</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dynamic_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dynamic_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="false_negatives" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>false_negatives</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="false_positives" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>false_positives</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Node>">IList&lt;Node&gt;</span> <strong>inbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="inbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>inbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>input_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="input_spec_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>input_spec_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>losses</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="losses_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>losses_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>metrics</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="metrics_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>metrics_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_scope_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>non_trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="non_trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="num_thresholds" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>num_thresholds</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>outbound_nodes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outbound_nodes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outbound_nodes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>output</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_mask_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_mask_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="output_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>output_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="stateful" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>stateful</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules" class="method">
+		<h4>
+			<span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> <strong>submodules</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="submodules_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>submodules_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="summation_method" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>summation_method</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="supports_masking" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>supports_masking</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="thresholds" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>thresholds</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>trainable</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>trainable_weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="true_negatives" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>true_negatives</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="true_positives" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>true_positives</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>updates</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="updates_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>updates_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="variables_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variables_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

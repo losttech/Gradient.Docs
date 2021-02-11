@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>CatchInvalidHostcallFunctions - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow_estimator.python.estimator.tpu.tpu_estimator</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_CapturedObject.htm">_CapturedObject</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_CapturingContext.htm">_CapturingContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.htm">_InputPipeline</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.IInputsStructureRecorder.htm">_InputPipeline.IInputsStructureRecorder</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputPipeline.InputsStructureRecorder.htm">_InputPipeline.InputsStructureRecorder</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_Inputs.htm">_Inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_InputsWithStoppingSignals.htm">_InputsWithStoppingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_ModelFnWrapper.htm">_ModelFnWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OpQueueContext.htm">_OpQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OpSignalOnceQueueContext.htm">_OpSignalOnceQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OutfeedHostCall.htm">_OutfeedHostCall</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_OutfeedHostCallHook.htm">_OutfeedHostCallHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_PaddingSignals.htm">_PaddingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_SetEvalIterationsHook.htm">_SetEvalIterationsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_SIGNAL.htm">_SIGNAL</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_StoppingPredictHook.htm">_StoppingPredictHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_StopSignals.htm">_StopSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/_TPUStopAtStepHook.htm">_TPUStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/BatchConfig.htm">BatchConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm" class="current">CatchInvalidHostcallFunctions</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ExamplesPerSecondHook.htm">ExamplesPerSecondHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ExportSavedModelApiVersion.htm">ExportSavedModelApiVersion</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_CapturedObject.htm">I_CapturedObject</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_CapturingContext.htm">I_CapturingContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_InputPipeline.htm">I_InputPipeline</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_Inputs.htm">I_Inputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_InputsWithStoppingSignals.htm">I_InputsWithStoppingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_ModelFnWrapper.htm">I_ModelFnWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OpQueueContext.htm">I_OpQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OpSignalOnceQueueContext.htm">I_OpSignalOnceQueueContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OutfeedHostCall.htm">I_OutfeedHostCall</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_OutfeedHostCallHook.htm">I_OutfeedHostCallHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_PaddingSignals.htm">I_PaddingSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_SetEvalIterationsHook.htm">I_SetEvalIterationsHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_SIGNAL.htm">I_SIGNAL</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_StoppingPredictHook.htm">I_StoppingPredictHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_StopSignals.htm">I_StopSignals</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/I_TPUStopAtStepHook.htm">I_TPUStopAtStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IBatchConfig.htm">IBatchConfig</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ICatchInvalidHostcallFunctions.htm">ICatchInvalidHostcallFunctions</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IExamplesPerSecondHook.htm">IExamplesPerSecondHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IInstallSignalHandlerHook.htm">IInstallSignalHandlerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/InstallSignalHandlerHook.htm">InstallSignalHandlerHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/IPeriodicLogger.htm">IPeriodicLogger</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITensorPacker.htm">ITensorPacker</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUEstimator.htm">ITPUEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUEstimatorSpec.htm">ITPUEstimatorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUInfeedOutfeedSessionHook.htm">ITPUInfeedOutfeedSessionHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ITPUInfeedOutfeedSessionHookForPrediction.htm">ITPUInfeedOutfeedSessionHookForPrediction</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/PeriodicLogger.htm">PeriodicLogger</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TensorPacker.htm">TensorPacker</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/tpu_estimator.htm">tpu_estimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUEstimator.htm">TPUEstimator</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUEstimatorSpec.htm">TPUEstimatorSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUInfeedOutfeedSessionHook.htm">TPUInfeedOutfeedSessionHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/TPUInfeedOutfeedSessionHookForPrediction.htm">TPUInfeedOutfeedSessionHookForPrediction</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> CatchInvalidHostcallFunctions</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow_estimator.python.estimator.tpu.tpu_estimator</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.ops.control_flow_ops/XLAControlFlowContext.htm">XLAControlFlowContext</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/ICatchInvalidHostcallFunctions.htm">ICatchInvalidHostcallFunctions</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#__str___dyn">__str___dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddInnerOp">AddInnerOp</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddInnerOp_dyn">AddInnerOp_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddName">AddName</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddName_dyn">AddName_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddOp">AddOp</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddOp_dyn">AddOp_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddValue">AddValue</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddValue">AddValue</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#AddValue_dyn">AddValue_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#Enter">Enter</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#Enter_dyn">Enter_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#EnterGradientColocation">EnterGradientColocation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#EnterGradientColocation">EnterGradientColocation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#EnterGradientColocation">EnterGradientColocation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#EnterGradientColocation_dyn">EnterGradientColocation_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#Exit">Exit</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#Exit_dyn">Exit_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitGradientColocation">ExitGradientColocation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitGradientColocation">ExitGradientColocation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitGradientColocation">ExitGradientColocation</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitGradientColocation_dyn">ExitGradientColocation_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitResult">ExitResult</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitResult">ExitResult</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitResult">ExitResult</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitResult">ExitResult</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitResult">ExitResult</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#ExitResult_dyn">ExitResult_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#GetControlPivot">GetControlPivot</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#GetControlPivot_dyn">GetControlPivot_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#GetWhileContext">GetWhileContext</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#GetWhileContext_dyn">GetWhileContext_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#IsCondContext">IsCondContext</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#IsCondContext_dyn">IsCondContext_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#IsWhileContext">IsWhileContext</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#IsWhileContext_dyn">IsWhileContext_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#IsXLAContext">IsXLAContext</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#IsXLAContext_dyn">IsXLAContext_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#to_control_flow_context_def">to_control_flow_context_def</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#to_control_flow_context_def_dyn">to_control_flow_context_def_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#back_prop">back_prop</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#back_prop_dyn">back_prop_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#grad_state">grad_state</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#grad_state_dyn">grad_state_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#name">name</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#outer_context">outer_context</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#outer_context_dyn">outer_context_dyn</a></li>
+				<li><a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm#PythonObject">PythonObject</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="__str___dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>__str___dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddInnerOp" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>AddInnerOp</strong>(<span title="System.object">object</span> op)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddInnerOp_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AddInnerOp_dyn</strong>(<span title="System.object">object</span> op)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddName" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>AddName</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddName_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AddName_dyn</strong>(<span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddOp" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>AddOp</strong>(<span title="System.object">object</span> op)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddOp_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AddOp_dyn</strong>(<span title="System.object">object</span> op)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddValue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AddValue</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> x)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddValue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AddValue</strong>(<span title="System.object">object</span> x)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="AddValue_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AddValue_dyn</strong>(<span title="System.object">object</span> x)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Enter" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>Enter</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Enter_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Enter_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="EnterGradientColocation" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>EnterGradientColocation</strong>(<span title="System.object">object</span> op, <span title="System.string">string</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="EnterGradientColocation" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>EnterGradientColocation</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> op, <span title="System.string">string</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="EnterGradientColocation" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>EnterGradientColocation</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> op, <span title="System.string">string</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="EnterGradientColocation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>EnterGradientColocation_dyn</strong>(<span title="System.object">object</span> op, <span title="System.object">object</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Exit" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>Exit</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="Exit_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Exit_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitGradientColocation" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitGradientColocation</strong>(<span title="System.object">object</span> op, <span title="System.string">string</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitGradientColocation" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitGradientColocation</strong>(<a href="../LostTech.Gradient/PythonClassContainer.htm">PythonClassContainer</a> op, <span title="System.string">string</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitGradientColocation" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitGradientColocation</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> op, <span title="System.string">string</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitGradientColocation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ExitGradientColocation_dyn</strong>(<span title="System.object">object</span> op, <span title="System.object">object</span> gradient_uid)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitResult" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitResult</strong>(<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> result)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitResult" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitResult</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> result)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitResult" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitResult</strong>(<a href="../tensorflow/Operation.htm">Operation</a> result)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitResult" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitResult</strong>(<span title="System.object">object</span> result)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitResult" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>ExitResult</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> result)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="ExitResult_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>ExitResult_dyn</strong>(<span title="System.object">object</span> result)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="GetControlPivot" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>GetControlPivot</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="GetControlPivot_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>GetControlPivot_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="GetWhileContext" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>GetWhileContext</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="GetWhileContext_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>GetWhileContext_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="IsCondContext" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>IsCondContext</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="IsCondContext_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>IsCondContext_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="IsWhileContext" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>IsWhileContext</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="IsWhileContext_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>IsWhileContext_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="IsXLAContext" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>IsXLAContext</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="IsXLAContext_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>IsXLAContext_dyn</strong>()
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="to_control_flow_context_def" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>to_control_flow_context_def</strong>(<span title="System.object">object</span> context_def, <span title="System.object">object</span> export_scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="to_control_flow_context_def_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>to_control_flow_context_def_dyn</strong>(<span title="System.object">object</span> context_def, <span title="System.object">object</span> export_scope)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow_estimator.python.estimator.tpu.tpu_estimator/CatchInvalidHostcallFunctions.htm">CatchInvalidHostcallFunctions</a> <strong>NewDyn</strong>()
+		</h4>
+		<div class="content">Initialize self.  See help(type(self)) for accurate signature. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="back_prop" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>back_prop</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="back_prop_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>back_prop_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="grad_state" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>grad_state</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="grad_state_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>grad_state_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outer_context" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outer_context</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="outer_context_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>outer_context_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

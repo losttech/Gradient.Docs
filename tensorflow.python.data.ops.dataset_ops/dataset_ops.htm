@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>dataset_ops - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.data.ops.dataset_ops</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_GeneratorDataset.htm">_GeneratorDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_MaxIntraOpParallelismDataset.htm">_MaxIntraOpParallelismDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_MemoryCache.htm">_MemoryCache</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_MemoryCacheDeleter.htm">_MemoryCacheDeleter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_ModelDataset.htm">_ModelDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_NestedVariant.htm">_NestedVariant</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_OptimizeDataset.htm">_OptimizeDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_OptionsDataset.htm">_OptionsDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_PrivateThreadPoolDataset.htm">_PrivateThreadPoolDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_RandomSeedGenerator.htm">_RandomSeedGenerator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_RandomSeedGeneratorDeleter.htm">_RandomSeedGeneratorDeleter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_RestructuredDataset.htm">_RestructuredDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_SetStatsAggregatorDataset.htm">_SetStatsAggregatorDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_UnbatchDataset.htm">_UnbatchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_VariantDataset.htm">_VariantDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/_VariantTracker.htm">_VariantTracker</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/AutotuneAlgorithm.htm">AutotuneAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/BatchDataset.htm">BatchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/CacheDataset.htm">CacheDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ConcatenateDataset.htm">ConcatenateDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm" class="current">dataset_ops</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/DatasetSource.htm">DatasetSource</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/DatasetV1Adapter.htm">DatasetV1Adapter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/FilterDataset.htm">FilterDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/FlatMapDataset.htm">FlatMapDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_GeneratorDataset.htm">I_GeneratorDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_MaxIntraOpParallelismDataset.htm">I_MaxIntraOpParallelismDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_MemoryCache.htm">I_MemoryCache</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_MemoryCacheDeleter.htm">I_MemoryCacheDeleter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_ModelDataset.htm">I_ModelDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_NestedVariant.htm">I_NestedVariant</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_OptimizeDataset.htm">I_OptimizeDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_OptionsDataset.htm">I_OptionsDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_PrivateThreadPoolDataset.htm">I_PrivateThreadPoolDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_RandomSeedGenerator.htm">I_RandomSeedGenerator</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_RandomSeedGeneratorDeleter.htm">I_RandomSeedGeneratorDeleter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_RestructuredDataset.htm">I_RestructuredDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_SetStatsAggregatorDataset.htm">I_SetStatsAggregatorDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_UnbatchDataset.htm">I_UnbatchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_VariantDataset.htm">I_VariantDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/I_VariantTracker.htm">I_VariantTracker</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IBatchDataset.htm">IBatchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ICacheDataset.htm">ICacheDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IConcatenateDataset.htm">IConcatenateDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IDatasetSource.htm">IDatasetSource</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IDatasetV1Adapter.htm">IDatasetV1Adapter</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IFilterDataset.htm">IFilterDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IFlatMapDataset.htm">IFlatMapDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IInterleaveDataset.htm">IInterleaveDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IMapDataset.htm">IMapDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/InterleaveDataset.htm">InterleaveDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IPaddedBatchDataset.htm">IPaddedBatchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IParallelInterleaveDataset.htm">IParallelInterleaveDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IParallelMapDataset.htm">IParallelMapDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IPrefetchDataset.htm">IPrefetchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IRangeDataset.htm">IRangeDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IRepeatDataset.htm">IRepeatDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IShardDataset.htm">IShardDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IShuffleDataset.htm">IShuffleDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ISkipDataset.htm">ISkipDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ISparseTensorSliceDataset.htm">ISparseTensorSliceDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IStructuredFunctionWrapper.htm">IStructuredFunctionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ITakeDataset.htm">ITakeDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ITensorDataset.htm">ITensorDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ITensorSliceDataset.htm">ITensorSliceDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IUnaryDataset.htm">IUnaryDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IUnaryUnchangedStructureDataset.htm">IUnaryUnchangedStructureDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IWindowDataset.htm">IWindowDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/IZipDataset.htm">IZipDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/MapDataset.htm">MapDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/PaddedBatchDataset.htm">PaddedBatchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ParallelInterleaveDataset.htm">ParallelInterleaveDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ParallelMapDataset.htm">ParallelMapDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/PrefetchDataset.htm">PrefetchDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/RangeDataset.htm">RangeDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/RepeatDataset.htm">RepeatDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ShardDataset.htm">ShardDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ShuffleDataset.htm">ShuffleDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/SkipDataset.htm">SkipDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/SparseTensorSliceDataset.htm">SparseTensorSliceDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/StructuredFunctionWrapper.htm">StructuredFunctionWrapper</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/TakeDataset.htm">TakeDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/TensorDataset.htm">TensorDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/TensorSliceDataset.htm">TensorSliceDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/UnaryDataset.htm">UnaryDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/UnaryUnchangedStructureDataset.htm">UnaryUnchangedStructureDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/WindowDataset.htm">WindowDataset</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.data.ops.dataset_ops/ZipDataset.htm">ZipDataset</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> dataset_ops</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.data.ops.dataset_ops</p>
+		</header>
+    <div class="sub-header">
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_GeneratorDataset_fn">_GeneratorDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_MaxIntraOpParallelismDataset_fn">_MaxIntraOpParallelismDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_MemoryCache_fn">_MemoryCache_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_MemoryCacheDeleter_fn">_MemoryCacheDeleter_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_ModelDataset_fn">_ModelDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_NestedVariant_fn">_NestedVariant_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_OptimizeDataset_fn">_OptimizeDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_OptionsDataset_fn">_OptionsDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_PrivateThreadPoolDataset_fn">_PrivateThreadPoolDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_RandomSeedGenerator_fn">_RandomSeedGenerator_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_RandomSeedGeneratorDeleter_fn">_RandomSeedGeneratorDeleter_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_RestructuredDataset_fn">_RestructuredDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_SetStatsAggregatorDataset_fn">_SetStatsAggregatorDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_UnbatchDataset_fn">_UnbatchDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_VariantDataset_fn">_VariantDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#_VariantTracker_fn">_VariantTracker_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#autograph">autograph</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#autograph_ctx">autograph_ctx</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#autograph_ctx_dyn">autograph_ctx_dyn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#autograph_dyn">autograph_dyn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#AUTOTUNE_dyn">AUTOTUNE_dyn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#AutotuneAlgorithm_fn">AutotuneAlgorithm_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#BatchDataset_fn">BatchDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#CacheDataset_fn">CacheDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#ConcatenateDataset_fn">ConcatenateDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#DatasetSource_fn">DatasetSource_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#DatasetSpec_fn">DatasetSpec_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#DatasetV1_fn">DatasetV1_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#DatasetV1Adapter_fn">DatasetV1Adapter_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#DatasetV2_fn">DatasetV2_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#FilterDataset_fn">FilterDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#FlatMapDataset_fn">FlatMapDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#InterleaveDataset_fn">InterleaveDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#MapDataset_fn">MapDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#Options_fn">Options_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#PaddedBatchDataset_fn">PaddedBatchDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#ParallelInterleaveDataset_fn">ParallelInterleaveDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#ParallelMapDataset_fn">ParallelMapDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#PrefetchDataset_fn">PrefetchDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#RangeDataset_fn">RangeDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#RepeatDataset_fn">RepeatDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#ShardDataset_fn">ShardDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#ShuffleDataset_fn">ShuffleDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#SkipDataset_fn">SkipDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#SparseTensorSliceDataset_fn">SparseTensorSliceDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#StructuredFunctionWrapper_fn">StructuredFunctionWrapper_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#TakeDataset_fn">TakeDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#TensorDataset_fn">TensorDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#TensorSliceDataset_fn">TensorSliceDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#UnaryDataset_fn">UnaryDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#UnaryUnchangedStructureDataset_fn">UnaryUnchangedStructureDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#WindowDataset_fn">WindowDataset_fn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#wrap_function">wrap_function</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#wrap_function_dyn">wrap_function_dyn</a></li>
+				<li><a href="../tensorflow.python.data.ops.dataset_ops/dataset_ops.htm#ZipDataset_fn">ZipDataset_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="_GeneratorDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_GeneratorDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_MaxIntraOpParallelismDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_MaxIntraOpParallelismDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_MemoryCache_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_MemoryCache_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_MemoryCacheDeleter_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_MemoryCacheDeleter_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_ModelDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_ModelDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_NestedVariant_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_NestedVariant_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_OptimizeDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_OptimizeDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_OptionsDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_OptionsDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_PrivateThreadPoolDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_PrivateThreadPoolDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_RandomSeedGenerator_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_RandomSeedGenerator_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_RandomSeedGeneratorDeleter_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_RandomSeedGeneratorDeleter_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_RestructuredDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_RestructuredDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_SetStatsAggregatorDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_SetStatsAggregatorDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_UnbatchDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_UnbatchDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_VariantDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_VariantDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="_VariantTracker_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>_VariantTracker_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="autograph" class="method">
+		<h4>
+			<a href="../tensorflow/LazyLoader.htm">LazyLoader</a> <strong>autograph</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="autograph_ctx" class="method">
+		<h4>
+			<a href="../tensorflow/LazyLoader.htm">LazyLoader</a> <strong>autograph_ctx</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="autograph_ctx_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>autograph_ctx_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="autograph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>autograph_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="AUTOTUNE_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>AUTOTUNE_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="AutotuneAlgorithm_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>AutotuneAlgorithm_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="BatchDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>BatchDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="CacheDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>CacheDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ConcatenateDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ConcatenateDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="DatasetSource_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>DatasetSource_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="DatasetSpec_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>DatasetSpec_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="DatasetV1_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>DatasetV1_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="DatasetV1Adapter_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>DatasetV1Adapter_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="DatasetV2_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>DatasetV2_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="FilterDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>FilterDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="FlatMapDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>FlatMapDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="InterleaveDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>InterleaveDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="MapDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>MapDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Options_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>Options_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PaddedBatchDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>PaddedBatchDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ParallelInterleaveDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ParallelInterleaveDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ParallelMapDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ParallelMapDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PrefetchDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>PrefetchDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="RangeDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>RangeDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="RepeatDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>RepeatDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ShardDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ShardDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ShuffleDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ShuffleDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SkipDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>SkipDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="SparseTensorSliceDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>SparseTensorSliceDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="StructuredFunctionWrapper_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>StructuredFunctionWrapper_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TakeDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TakeDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TensorDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TensorDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="TensorSliceDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>TensorSliceDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="UnaryDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>UnaryDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="UnaryUnchangedStructureDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>UnaryUnchangedStructureDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="WindowDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>WindowDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="wrap_function" class="method">
+		<h4>
+			<a href="../tensorflow/LazyLoader.htm">LazyLoader</a> <strong>wrap_function</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="wrap_function_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>wrap_function_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="ZipDataset_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>ZipDataset_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

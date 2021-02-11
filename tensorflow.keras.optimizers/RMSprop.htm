@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>RMSprop - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.optimizers</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adadelta.htm">Adadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adagrad.htm">Adagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adam.htm">Adam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Adamax.htm">Adamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Ftrl.htm">Ftrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdadelta.htm">IAdadelta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdagrad.htm">IAdagrad</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdam.htm">IAdam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IAdamax.htm">IAdamax</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IFtrl.htm">IFtrl</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/INadam.htm">INadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IOptimizer.htm">IOptimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/IRMSprop.htm">IRMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/ISGD.htm">ISGD</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Nadam.htm">Nadam</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/OptimizerExtensions.htm">OptimizerExtensions</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/RMSprop.htm" class="current">RMSprop</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.optimizers/SGD.htm">SGD</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> RMSprop</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.optimizers</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.keras.optimizers/Optimizer.htm">Optimizer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.optimizers/IRMSprop.htm">IRMSprop</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Optimizer that implements the RMSprop algorithm. <p></p> A detailed description of rmsprop. <p></p> - maintain a moving (discounted) average of the square of gradients
+- divide gradient by the root of this average <p></p> $$mean_square_t = rho * mean_square{t-1} + (1-rho) * gradient ** 2$$
+$$mom_t = momentum * mom_{t-1} + learning_rate * gradient / \sqrt{ /
+mean_square_t + \epsilon}$$
+$$variable_t := variable_{t-1} - mom_t$$ <p></p> This implementation of RMSprop uses plain momentum, not Nesterov momentum. <p></p> The centered version additionally maintains a moving average of the
+gradients, and uses that average to estimate the variance: <p></p> $$mean_grad_t = rho * mean_grad_{t-1} + (1-rho) * gradient$$
+$$mean_square_t = rho * mean_square_{t-1} + (1-rho) * gradient ** 2$$
+$$mom_t = momentum * mom_{t-1} + learning_rate * gradient /
+sqrt(mean_square_t - mean_grad_t**2 + epsilon)$$
+$$variable_t := variable_{t-1} - mom_t$$ <p></p> References
+See ([pdf]
+http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf). 
+			</div>
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#centered">centered</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#clipnorm">clipnorm</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#clipvalue">clipvalue</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#epsilon">epsilon</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#iterations">iterations</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#iterations_dyn">iterations_dyn</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#weights">weights</a></li>
+				<li><a href="../tensorflow.keras.optimizers/RMSprop.htm#weights_dyn">weights_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="centered" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>centered</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="clipnorm" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipnorm</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="clipvalue" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>clipvalue</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="epsilon" class="method">
+		<h4>
+			<span title="System.double">double</span> <strong>epsilon</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="iterations_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>iterations_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>weights</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>weights_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

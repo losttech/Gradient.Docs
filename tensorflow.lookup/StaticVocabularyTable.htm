@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>StaticVocabularyTable - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.lookup</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.lookup/IKeyValueTensorInitializer.htm">IKeyValueTensorInitializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/IStaticHashTable.htm">IStaticHashTable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/IStaticVocabularyTable.htm">IStaticVocabularyTable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/ITextFileIndex.htm">ITextFileIndex</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/ITextFileInitializer.htm">ITextFileInitializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/KeyValueTensorInitializer.htm">KeyValueTensorInitializer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/StaticHashTable.htm">StaticHashTable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/StaticVocabularyTable.htm" class="current">StaticVocabularyTable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/TextFileIndex.htm">TextFileIndex</a>
+        </li>
+				<li>
+            <a href="../tensorflow.lookup/TextFileInitializer.htm">TextFileInitializer</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> StaticVocabularyTable</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.lookup</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.compat.v2.lookup/StaticVocabularyTable.htm">StaticVocabularyTable</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.lookup/IStaticVocabularyTable.htm">IStaticVocabularyTable</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">String to Id table wrapper that assigns out-of-vocabulary keys to buckets. <p></p> For example, if an instance of `StaticVocabularyTable` is initialized with a
+string-to-id initializer that maps: <p></p> * `emerson -> 0`
+* `lake -> 1`
+* `palmer -> 2` <p></p> The `Vocabulary` object will performs the following mapping: <p></p> * `emerson -> 0`
+* `lake -> 1`
+* `palmer -> 2`
+* `<other term> -> bucket_id`, where bucket_id will be between `3` and
+`3 + num_oov_buckets - 1`, calculated by:
+`hash(<term>) % num_oov_buckets + vocab_size` <p></p> If input_tensor is `["emerson", "lake", "palmer", "king", "crimson"]`,
+the lookup result is `[0, 1, 2, 4, 7]`. <p></p> If `initializer` is None, only out-of-vocabulary buckets are used. <p></p> Example usage:
+The hash function used for generating out-of-vocabulary buckets ID is
+Fingerprint64. <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre>num_oov_buckets = 3
+            input_tensor = tf.constant(["emerson", "lake", "palmer", "king", "crimnson"])
+            table = tf.lookup.StaticVocabularyTable(
+                tf.TextFileIdTableInitializer(filename), num_oov_buckets)
+            out = table.lookup(input_tensor).
+            table.init.run()
+            print(out.eval()) </pre>
+</div>
+			</div>
+		
+		
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#initializer">initializer</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#initializer_dyn">initializer_dyn</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#key_dtype">key_dtype</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#key_dtype_dyn">key_dtype_dyn</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#name">name</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#resource_handle">resource_handle</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#resource_handle_dyn">resource_handle_dyn</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#value_dtype">value_dtype</a></li>
+				<li><a href="../tensorflow.lookup/StaticVocabularyTable.htm#value_dtype_dyn">value_dtype_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="initializer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initializer</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initializer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initializer_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="key_dtype" class="method">
+		<h4>
+			<a href="../tensorflow/DType.htm">DType</a> <strong>key_dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="key_dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>key_dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resource_handle" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>resource_handle</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="resource_handle_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>resource_handle_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="value_dtype" class="method">
+		<h4>
+			<a href="../tensorflow/DType.htm">DType</a> <strong>value_dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="value_dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>value_dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

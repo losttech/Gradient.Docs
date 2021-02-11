@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Uniform - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distributions</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distributions/Bernoulli.htm">Bernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Beta.htm">Beta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Categorical.htm">Categorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Dirichlet.htm">Dirichlet</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/DirichletMultinomial.htm">DirichletMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Distribution.htm">Distribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Exponential.htm">Exponential</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Gamma.htm">Gamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IBernoulli.htm">IBernoulli</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IBeta.htm">IBeta</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ICategorical.htm">ICategorical</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDirichlet.htm">IDirichlet</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDirichletMultinomial.htm">IDirichletMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IDistribution.htm">IDistribution</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IExponential.htm">IExponential</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IGamma.htm">IGamma</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ILaplace.htm">ILaplace</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IMultinomial.htm">IMultinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/INormal.htm">INormal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IRegisterKL.htm">IRegisterKL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IReparameterizationType.htm">IReparameterizationType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IStudentT.htm">IStudentT</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/IUniform.htm">IUniform</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Laplace.htm">Laplace</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Multinomial.htm">Multinomial</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Normal.htm">Normal</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/RegisterKL.htm">RegisterKL</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/ReparameterizationType.htm">ReparameterizationType</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/StudentT.htm">StudentT</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distributions/Uniform.htm" class="current">Uniform</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Uniform</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distributions</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.distributions/Distribution.htm">Distribution</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distributions/IUniform.htm">IUniform</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Uniform distribution with `low` and `high` parameters. <p></p> #### Mathematical Details <p></p> The probability density function (pdf) is, <p></p> ```none
+pdf(x; a, b) = I[a <= x < b] / Z
+Z = b - a
+``` <p></p> where <p></p> - `low = a`,
+- `high = b`,
+- `Z` is the normalizing constant, and
+- `I[predicate]` is the [indicator function](
+https://en.wikipedia.org/wiki/Indicator_function) for `predicate`. <p></p> The parameters `low` and `high` must be shaped in a way that supports
+broadcasting (e.g., `high - low` is a valid operation). <p></p> #### Examples <p></p> <div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Without broadcasting:
+            u1 = Uniform(low=3.0, high=4.0)  # a single uniform distribution [3, 4]
+            u2 = Uniform(low=[1.0, 2.0],
+                         high=[3.0, 4.0])  # 2 distributions [1, 3], [2, 4]
+            u3 = Uniform(low=[[1.0, 2.0],
+                              [3.0, 4.0]],
+                         high=[[1.5, 2.5],
+                               [3.5, 4.5]])  # 4 distributions </pre>
+</div>
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distributions/Uniform.htm#range">range</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#range_dyn">range_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distributions/Uniform.htm#allow_nan_stats">allow_nan_stats</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#allow_nan_stats_dyn">allow_nan_stats_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#batch_shape">batch_shape</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#batch_shape_dyn">batch_shape_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#event_shape">event_shape</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#event_shape_dyn">event_shape_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#high">high</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#high_dyn">high_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#low">low</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#low_dyn">low_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#name">name</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#parameters">parameters</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#parameters_dyn">parameters_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#reparameterization_type">reparameterization_type</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#reparameterization_type_dyn">reparameterization_type_dyn</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#validate_args">validate_args</a></li>
+				<li><a href="../tensorflow.distributions/Uniform.htm#validate_args_dyn">validate_args_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="range" class="method">
+		<h4>
+			<span title="System.double">double</span> <strong>range</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">`high - low`. 
+
+
+
+
+		</div>
+	</div>
+	<div id="range_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>range_dyn</strong>(<a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> name)
+		</h4>
+		<div class="content">`high - low`. 
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="allow_nan_stats" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="allow_nan_stats_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>allow_nan_stats_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>batch_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="batch_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>event_shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="event_shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>event_shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="high" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>high</strong> get; 
+		</h4>
+		<div class="content">Upper boundary of the output interval. 
+
+		</div>
+	</div>
+	<div id="high_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>high_dyn</strong> get; 
+		</h4>
+		<div class="content">Upper boundary of the output interval. 
+
+		</div>
+	</div>
+	<div id="low" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>low</strong> get; 
+		</h4>
+		<div class="content">Lower boundary of the output interval. 
+
+		</div>
+	</div>
+	<div id="low_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>low_dyn</strong> get; 
+		</h4>
+		<div class="content">Lower boundary of the output interval. 
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.string">string</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>parameters</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameters_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameters_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="reparameterization_type_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reparameterization_type_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="validate_args" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="validate_args_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>validate_args_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

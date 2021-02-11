@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>WALSModel - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.factorization</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_IncrementGlobalStepHook.htm">_IncrementGlobalStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_InitializeClustersOpFactory.htm">_InitializeClustersOpFactory</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_LossRelativeChangeHook.htm">_LossRelativeChangeHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_ModelFn.htm">_ModelFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_StopAtSweepHook.htm">_StopAtSweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/_SweepHook.htm">_SweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/factorization.htm">factorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/GMM.htm">GMM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/GmmAlgorithm.htm">GmmAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_IncrementGlobalStepHook.htm">I_IncrementGlobalStepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_InitializeClustersOpFactory.htm">I_InitializeClustersOpFactory</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_LossRelativeChangeHook.htm">I_LossRelativeChangeHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_ModelFn.htm">I_ModelFn</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_StopAtSweepHook.htm">I_StopAtSweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/I_SweepHook.htm">I_SweepHook</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IGMM.htm">IGMM</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IGmmAlgorithm.htm">IGmmAlgorithm</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IKMeans.htm">IKMeans</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IKMeansClustering.htm">IKMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IWALSMatrixFactorization.htm">IWALSMatrixFactorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/IWALSModel.htm">IWALSModel</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/KMeans.htm">KMeans</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/KMeansClustering.htm">KMeansClustering</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/WALSMatrixFactorization.htm">WALSMatrixFactorization</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.factorization/WALSModel.htm" class="current">WALSModel</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> WALSModel</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.factorization</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.factorization/IWALSModel.htm">IWALSModel</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">A model for Weighted Alternating Least Squares matrix factorization. <p></p> It minimizes the following loss function over U, V:
+$$
+\|\sqrt W \odot (A - U V^T)\|_F^2 + \lambda (\|U\|_F^2 + \|V\|_F^2)
+$$
+where,
+A: input matrix,
+W: weight matrix. Note that the (element-wise) square root of the weights
+is used in the objective function.
+U, V: row_factors and column_factors matrices,
+\\(\lambda)\\: regularization.
+Also we assume that W is of the following special form:
+\\( W_{ij} = W_0 + R_i * C_j \\)  if \\(A_{ij} \ne 0\\),
+\\(W_{ij} = W_0\\) otherwise.
+where,
+\\(W_0\\): unobserved_weight,
+\\(R_i\\): row_weights,
+\\(C_j\\): col_weights. <p></p> Note that the current implementation supports two operation modes: The default
+mode is for the condition where row_factors and col_factors can individually
+fit into the memory of each worker and these will be cached. When this
+condition can't be met, setting use_factors_weights_cache to False allows the
+larger problem sizes with slight performance penalty as this will avoid
+creating the worker caches and instead the relevant weight and factor values
+are looked up from parameter servers at each step. <p></p> Loss computation: The loss can be computed efficiently by decomposing it into
+a sparse term and a Gramian term, see wals.md.
+The loss is returned by the update_{col, row}_factors(sp_input), and is
+normalized as follows:
+_, _, unregularized_loss, regularization, sum_weights =
+update_row_factors(sp_input)
+if sp_input contains the rows \\({A_i, i \in I}\\), and the input matrix A
+has n total rows, then the minibatch loss = unregularized_loss +
+regularization is
+$$
+(\|\sqrt W_I \odot (A_I - U_I V^T)\|_F^2 + \lambda \|U_I\|_F^2) * n / |I| +
+\lambda \|V\|_F^2
+$$
+The sum_weights tensor contains the normalized sum of weights
+\\(sum(W_I) * n / |I|\\). <p></p> A typical usage example (pseudocode): <p></p> with tf.Graph().as_default():
+# Set up the model object.
+model = tf.contrib.factorization.WALSModel(....) <p></p> # To be run only once as part of session initialization. In distributed
+# training setting, this should only be run by the chief trainer and all
+# other trainers should block until this is done.
+model_init_op = model.initialize_op <p></p> # To be run once per worker after session is available, prior to
+# the prep_gramian_op for row(column) can be run.
+worker_init_op = model.worker_init <p></p> # To be run once per iteration sweep before the row(column) update
+# initialize ops can be run. Note that in the distributed training
+# situations, this should only be run by the chief trainer. All other
+# trainers need to block until this is done.
+row_update_prep_gramian_op = model.row_update_prep_gramian_op
+col_update_prep_gramian_op = model.col_update_prep_gramian_op <p></p> # To be run once per worker per iteration sweep. Must be run before
+# any actual update ops can be run.
+init_row_update_op = model.initialize_row_update_op
+init_col_update_op = model.initialize_col_update_op <p></p> # Ops to update row(column). This can either take the entire sparse
+# tensor or slices of sparse tensor. For distributed trainer, each
+# trainer handles just part of the matrix.
+_, row_update_op, unreg_row_loss, row_reg, _ = model.update_row_factors(
+sp_input=matrix_slices_from_queue_for_worker_shard)
+row_loss = unreg_row_loss + row_reg
+_, col_update_op, unreg_col_loss, col_reg, _ = model.update_col_factors(
+sp_input=transposed_matrix_slices_from_queue_for_worker_shard,
+transpose_input=True)
+col_loss = unreg_col_loss + col_reg <p></p>... <p></p> # model_init_op is passed to Supervisor. Chief trainer runs it. Other
+# trainers wait.
+sv = tf.compat.v1.train.Supervisor(is_chief=is_chief,
+...,
+init_op=tf.group(..., model_init_op,...),...)
+... <p></p> with sv.managed_session(...) as sess:
+# All workers/trainers run it after session becomes available.
+worker_init_op.run(session=sess) <p></p>... <p></p> while i in iterations: <p></p> # All trainers need to sync up here.
+while not_all_ready:
+wait <p></p> # Row update sweep.
+if is_chief:
+row_update_prep_gramian_op.run(session=sess)
+else:
+wait_for_chief <p></p> # All workers run upate initialization.
+init_row_update_op.run(session=sess) <p></p> # Go through the matrix.
+reset_matrix_slices_queue_for_worker_shard
+while_matrix_slices:
+row_update_op.run(session=sess) <p></p> # All trainers need to sync up here.
+while not_all_ready:
+wait <p></p> # Column update sweep.
+if is_chief:
+col_update_prep_gramian_op.run(session=sess)
+else:
+wait_for_chief <p></p> # All workers run upate initialization.
+init_col_update_op.run(session=sess) <p></p> # Go through the matrix.
+reset_transposed_matrix_slices_queue_for_worker_shard
+while_transposed_matrix_slices:
+col_update_op.run(session=sess) 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#NewDyn">NewDyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#project_col_factors">project_col_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#project_col_factors_dyn">project_col_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#project_row_factors">project_row_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#project_row_factors_dyn">project_row_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#scatter_update_dyn``1">scatter_update_dyn&lt;TClass&gt;</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#scatter_update``1">scatter_update&lt;TClass&gt;</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#update_col_factors">update_col_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#update_col_factors_dyn">update_col_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#update_row_factors">update_row_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#update_row_factors_dyn">update_row_factors_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#col_factors">col_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#col_factors_dyn">col_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#col_update_prep_gramian_op">col_update_prep_gramian_op</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#col_update_prep_gramian_op_dyn">col_update_prep_gramian_op_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#col_weights">col_weights</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#col_weights_dyn">col_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#initialize_col_update_op">initialize_col_update_op</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#initialize_col_update_op_dyn">initialize_col_update_op_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#initialize_op">initialize_op</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#initialize_op_dyn">initialize_op_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#initialize_row_update_op">initialize_row_update_op</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#initialize_row_update_op_dyn">initialize_row_update_op_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#row_factors">row_factors</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#row_factors_dyn">row_factors_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#row_update_prep_gramian_op">row_update_prep_gramian_op</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#row_update_prep_gramian_op_dyn">row_update_prep_gramian_op_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#row_weights">row_weights</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#row_weights_dyn">row_weights_dyn</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#worker_init">worker_init</a></li>
+				<li><a href="../tensorflow.contrib.factorization/WALSModel.htm#worker_init_dyn">worker_init_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="project_col_factors" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>project_col_factors</strong>(<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> sp_input, <span title="System.bool">bool</span> transpose_input, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> projection_weights)
+		</h4>
+		<div class="content">Projects the column factors. <p></p> This computes the column embedding \(v_j\) for an observed column
+\(a_j\) by solving one iteration of the update equations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/SparseTensor.htm">SparseTensor</a></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a set of columns. Please note that
+the row indices of this SparseTensor must match the model row feature
+indexing while the column indices are ignored. The returned results will
+be in the same ordering as the input columns. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+columns corresponding to the transposed input are projected. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span></code> projection_weights
+						</dt>
+						<dd>The column weights to be used for the projection. If
+None then 1.0 is used. This can be either a scaler or a rank-1 tensor
+with the number of elements matching the number of columns to be
+projected. Note that the row weights will be determined by the
+underlying WALS model. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>Projected column factors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="project_col_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>project_col_factors_dyn</strong>(<span title="System.object">object</span> sp_input, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose_input, <span title="System.object">object</span> projection_weights)
+		</h4>
+		<div class="content">Projects the column factors. <p></p> This computes the column embedding \(v_j\) for an observed column
+\(a_j\) by solving one iteration of the update equations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a set of columns. Please note that
+the row indices of this SparseTensor must match the model row feature
+indexing while the column indices are ignored. The returned results will
+be in the same ordering as the input columns. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+columns corresponding to the transposed input are projected. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> projection_weights
+						</dt>
+						<dd>The column weights to be used for the projection. If
+None then 1.0 is used. This can be either a scaler or a rank-1 tensor
+with the number of elements matching the number of columns to be
+projected. Note that the row weights will be determined by the
+underlying WALS model. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Projected column factors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="project_row_factors" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>project_row_factors</strong>(<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> sp_input, <span title="System.bool">bool</span> transpose_input, <span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span> projection_weights)
+		</h4>
+		<div class="content">Projects the row factors. <p></p> This computes the row embedding \(u_i\) for an observed row \(a_i\) by
+solving one iteration of the update equations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/SparseTensor.htm">SparseTensor</a></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a set of rows. Please note that the
+column indices of this SparseTensor must match the model column feature
+indexing while the row indices are ignored. The returned results will be
+in the same ordering as the input rows. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+rows corresponding to the transposed input are projected. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<double>">IEnumerable&lt;double&gt;</span></code> projection_weights
+						</dt>
+						<dd>The row weights to be used for the projection. If None
+then 1.0 is used. This can be either a scaler or a rank-1 tensor with
+the number of elements matching the number of rows to be projected.
+Note that the column weights will be determined by the underlying WALS
+model. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>Projected row factors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="project_row_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>project_row_factors_dyn</strong>(<span title="System.object">object</span> sp_input, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose_input, <span title="System.object">object</span> projection_weights)
+		</h4>
+		<div class="content">Projects the row factors. <p></p> This computes the row embedding \(u_i\) for an observed row \(a_i\) by
+solving one iteration of the update equations. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a set of rows. Please note that the
+column indices of this SparseTensor must match the model column feature
+indexing while the row indices are ignored. The returned results will be
+in the same ordering as the input rows. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+rows corresponding to the transposed input are projected. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> projection_weights
+						</dt>
+						<dd>The row weights to be used for the projection. If None
+then 1.0 is used. This can be either a scaler or a rank-1 tensor with
+the number of elements matching the number of rows to be projected.
+Note that the column weights will be determined by the underlying WALS
+model. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Projected row factors. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="update_col_factors" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object, object, object, double>">ValueTuple&lt;Tensor, object, object, object, double&gt;</span> <strong>update_col_factors</strong>(<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> sp_input, <span title="System.bool">bool</span> transpose_input)
+		</h4>
+		<div class="content">Updates the column factors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/SparseTensor.htm">SparseTensor</a></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a subset of columns of the full
+input. Please refer to comments for update_row_factors for
+restrictions. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+columns corresponding to the transposed input are updated. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<Tensor, object, object, object, double>">ValueTuple&lt;Tensor, object, object, object, double&gt;</span></code>
+					</dt>
+					<dd>A tuple consisting of the following elements: 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="update_col_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_col_factors_dyn</strong>(<span title="System.object">object</span> sp_input, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose_input)
+		</h4>
+		<div class="content">Updates the column factors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a subset of columns of the full
+input. Please refer to comments for update_row_factors for
+restrictions. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+columns corresponding to the transposed input are updated. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A tuple consisting of the following elements: 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="update_row_factors" class="method">
+		<h4>
+			<span title="System.ValueTuple<Tensor, object, object, object, double>">ValueTuple&lt;Tensor, object, object, object, double&gt;</span> <strong>update_row_factors</strong>(<a href="../tensorflow/SparseTensor.htm">SparseTensor</a> sp_input, <span title="System.bool">bool</span> transpose_input)
+		</h4>
+		<div class="content">Updates the row factors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/SparseTensor.htm">SparseTensor</a></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a subset of rows of the full input
+in any order. Please note that this SparseTensor must retain the
+indexing as the original input. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+rows corresponding to the transposed input are updated. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<Tensor, object, object, object, double>">ValueTuple&lt;Tensor, object, object, object, double&gt;</span></code>
+					</dt>
+					<dd>A tuple consisting of the following elements: 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="update_row_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_row_factors_dyn</strong>(<span title="System.object">object</span> sp_input, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> transpose_input)
+		</h4>
+		<div class="content">Updates the row factors. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sp_input
+						</dt>
+						<dd>A SparseTensor representing a subset of rows of the full input
+in any order. Please note that this SparseTensor must retain the
+indexing as the original input. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> transpose_input
+						</dt>
+						<dd>If true, the input will be logically transposed and the
+rows corresponding to the transposed input are updated. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A tuple consisting of the following elements: 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="NewDyn" class="method">
+		<h4>
+			<a href="../tensorflow.contrib.factorization/WALSModel.htm">WALSModel</a> <strong>NewDyn</strong>(<span title="System.object">object</span> input_rows, <span title="System.object">object</span> input_cols, <span title="System.object">object</span> n_components, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> unobserved_weight, <span title="System.object">object</span> regularization, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> row_init, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> col_init, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_row_shards, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> num_col_shards, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> row_weights, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> col_weights, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_factors_weights_cache, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_gramian_cache, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> use_scoped_vars)
+		</h4>
+		<div class="content">Creates model for WALS matrix factorization. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> input_rows
+						</dt>
+						<dd>total number of rows for input matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> input_cols
+						</dt>
+						<dd>total number of cols for input matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> n_components
+						</dt>
+						<dd>number of dimensions to use for the factors. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> unobserved_weight
+						</dt>
+						<dd>weight given to unobserved entries of matrix. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> regularization
+						</dt>
+						<dd>weight of L2 regularization term. If None, no
+regularization is done. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> row_init
+						</dt>
+						<dd>initializer for row factor. Can be a tensor or numpy constant.
+If set to "random", the value is initialized randomly. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> col_init
+						</dt>
+						<dd>initializer for column factor. See row_init for details. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_row_shards
+						</dt>
+						<dd>number of shards to use for row factors. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> num_col_shards
+						</dt>
+						<dd>number of shards to use for column factors. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> row_weights
+						</dt>
+						<dd>Must be in one of the following three formats: None, a list
+of lists of non-negative real numbers (or equivalent iterables) or a
+single non-negative real number.
+- When set to None, w_ij = unobserved_weight, which simplifies to ALS.
+Note that col_weights must also be set to "None" in this case.
+- If it is a list of lists of non-negative real numbers, it needs to be
+in the form of [[w_0, w_1,...], [w_k,... ], [...]], with the number of
+inner lists matching the number of row factor shards and the elements in
+each inner list are the weights for the rows of the corresponding row
+factor shard. In this case,  w_ij = unobserved_weight +
+row_weights[i] * col_weights[j].
+- If this is a single non-negative real number, this value is used for
+all row weights and \(w_ij\) = unobserved_weight + row_weights *
+col_weights[j].
+Note that it is allowed to have row_weights as a list while col_weights
+a single number or vice versa. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> col_weights
+						</dt>
+						<dd>See row_weights. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_factors_weights_cache
+						</dt>
+						<dd>When True, the factors and weights will be
+cached on the workers before the updates start. Defaults to True. Note
+that the weights cache is initialized through `worker_init`, and the
+row/col factors cache is initialized through
+`initialize_{col/row}_update_op`. In the case where the weights are
+computed outside and set before the training iterations start, it is
+important to ensure the `worker_init` op is run afterwards for the
+weights cache to take effect. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_gramian_cache
+						</dt>
+						<dd>When True, the Gramians will be cached on the workers
+before the updates start. Defaults to True. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> use_scoped_vars
+						</dt>
+						<dd>When True, the factor and weight vars will also be nested
+in a tf.name_scope. 
+						</dd>
+				</dl>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="scatter_update_dyn``1" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>scatter_update_dyn&lt;TClass&gt;</strong>(<span title="System.object">object</span> factor, <span title="System.object">object</span> indices, <span title="System.object">object</span> values, <span title="System.object">object</span> sharding_func, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">Helper function for doing sharded scatter update. 
+
+
+
+
+		</div>
+	</div>
+	<div id="scatter_update``1" class="method">
+		<h4>
+			<span title="tensorflow.contrib.factorization.TClass">TClass</span> <strong>scatter_update&lt;TClass&gt;</strong>(<span title="System.Collections.Generic.IEnumerable<Variable>">IEnumerable&lt;Variable&gt;</span> factor, <span title="System.object">object</span> indices, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> values, <span title="System.object">object</span> sharding_func, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">Helper function for doing sharded scatter update. 
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="col_factors" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Variable>">IList&lt;Variable&gt;</span> <strong>col_factors</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to column factor shards. 
+
+		</div>
+	</div>
+	<div id="col_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>col_factors_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to column factor shards. 
+
+		</div>
+	</div>
+	<div id="col_update_prep_gramian_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>col_update_prep_gramian_op</strong> get; 
+		</h4>
+		<div class="content">Op to form the gramian before starting col updates. <p></p> Must be run before initialize_col_update_op and should only be run by one
+trainer (usually the chief) when doing distributed training. 
+
+		</div>
+	</div>
+	<div id="col_update_prep_gramian_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>col_update_prep_gramian_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Op to form the gramian before starting col updates. <p></p> Must be run before initialize_col_update_op and should only be run by one
+trainer (usually the chief) when doing distributed training. 
+
+		</div>
+	</div>
+	<div id="col_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Variable>">IList&lt;Variable&gt;</span> <strong>col_weights</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to col weight shards. 
+
+		</div>
+	</div>
+	<div id="col_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>col_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to col weight shards. 
+
+		</div>
+	</div>
+	<div id="initialize_col_update_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_col_update_op</strong> get; 
+		</h4>
+		<div class="content">Op to initialize worker state before starting column updates. 
+
+		</div>
+	</div>
+	<div id="initialize_col_update_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_col_update_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Op to initialize worker state before starting column updates. 
+
+		</div>
+	</div>
+	<div id="initialize_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_op</strong> get; 
+		</h4>
+		<div class="content">Returns an op for initializing tensorflow variables. 
+
+		</div>
+	</div>
+	<div id="initialize_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns an op for initializing tensorflow variables. 
+
+		</div>
+	</div>
+	<div id="initialize_row_update_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_row_update_op</strong> get; 
+		</h4>
+		<div class="content">Op to initialize worker state before starting row updates. 
+
+		</div>
+	</div>
+	<div id="initialize_row_update_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initialize_row_update_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Op to initialize worker state before starting row updates. 
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="row_factors" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Variable>">IList&lt;Variable&gt;</span> <strong>row_factors</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to row factor shards. 
+
+		</div>
+	</div>
+	<div id="row_factors_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>row_factors_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to row factor shards. 
+
+		</div>
+	</div>
+	<div id="row_update_prep_gramian_op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>row_update_prep_gramian_op</strong> get; 
+		</h4>
+		<div class="content">Op to form the gramian before starting row updates. <p></p> Must be run before initialize_row_update_op and should only be run by one
+trainer (usually the chief) when doing distributed training. 
+
+		</div>
+	</div>
+	<div id="row_update_prep_gramian_op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>row_update_prep_gramian_op_dyn</strong> get; 
+		</h4>
+		<div class="content">Op to form the gramian before starting row updates. <p></p> Must be run before initialize_row_update_op and should only be run by one
+trainer (usually the chief) when doing distributed training. 
+
+		</div>
+	</div>
+	<div id="row_weights" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<Variable>">IList&lt;Variable&gt;</span> <strong>row_weights</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to row weight shards. 
+
+		</div>
+	</div>
+	<div id="row_weights_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>row_weights_dyn</strong> get; 
+		</h4>
+		<div class="content">Returns a list of tensors corresponding to row weight shards. 
+
+		</div>
+	</div>
+	<div id="worker_init" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>worker_init</strong> get; 
+		</h4>
+		<div class="content">Op to initialize worker state once before starting any updates. <p></p> Note that specifically this initializes the cache of the row and column
+weights on workers when `use_factors_weights_cache` is True. In this case,
+if these weights are being calculated and reset after the object is created,
+it is important to ensure this ops is run afterwards so the cache reflects
+the correct values. 
+
+		</div>
+	</div>
+	<div id="worker_init_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>worker_init_dyn</strong> get; 
+		</h4>
+		<div class="content">Op to initialize worker state once before starting any updates. <p></p> Note that specifically this initializes the cache of the row and column
+weights on workers when `use_factors_weights_cache` is True. In this case,
+if these weights are being calculated and reset after the object is created,
+it is important to ensure this ops is run afterwards so the cache reflects
+the correct values. 
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

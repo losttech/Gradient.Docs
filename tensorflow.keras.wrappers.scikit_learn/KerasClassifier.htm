@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>KerasClassifier - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.keras.wrappers.scikit_learn</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.keras.wrappers.scikit_learn/IKerasClassifier.htm">IKerasClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.wrappers.scikit_learn/IKerasRegressor.htm">IKerasRegressor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm" class="current">KerasClassifier</a>
+        </li>
+				<li>
+            <a href="../tensorflow.keras.wrappers.scikit_learn/KerasRegressor.htm">KerasRegressor</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> KerasClassifier</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.keras.wrappers.scikit_learn</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.keras.wrappers.scikit_learn/BaseWrapper.htm">BaseWrapper</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.keras.wrappers.scikit_learn/IKerasClassifier.htm">IKerasClassifier</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Implementation of the scikit-learn classifier API for Keras. <p></p> 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#check_params">check_params</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#check_params_dyn">check_params_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#filter_sk_params">filter_sk_params</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#filter_sk_params">filter_sk_params</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#filter_sk_params_dyn">filter_sk_params_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#fit">fit</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#fit_dyn">fit_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#get_params">get_params</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#get_params_dyn">get_params_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#predict">predict</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#predict_dyn">predict_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#predict_proba">predict_proba</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#predict_proba_dyn">predict_proba_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#score">score</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#score_dyn">score_dyn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#set_params">set_params</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#set_params_dyn">set_params_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#build_fn">build_fn</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#classes_">classes_</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#model">model</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#n_classes_">n_classes_</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.keras.wrappers.scikit_learn/KerasClassifier.htm#sk_params">sk_params</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="check_params" class="method">
+		<h4>
+			<span title="System.void">void</span> <strong>check_params</strong>(<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="check_params_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>check_params_dyn</strong>(<span title="System.object">object</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="filter_sk_params" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>filter_sk_params</strong>(<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> fn, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> override)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="filter_sk_params" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>filter_sk_params</strong>(<span title="System.object">object</span> fn, <span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> override)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="filter_sk_params_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>filter_sk_params_dyn</strong>(<span title="System.object">object</span> fn, <span title="System.object">object</span> override)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="fit" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>fit</strong>(<span title="System.object">object</span> x, <a href="../numpy/ndarray.htm">ndarray</a> y, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Constructs a new model with `build_fn` & fit the model to `(x, y)`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dt>
+							<code><a href="../numpy/ndarray.htm">ndarray</a></code> y
+						</dt>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments of `Sequential.fit` 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="fit_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>fit_dyn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Constructs a new model with `build_fn` & fit the model to `(x, y)`. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dt>
+							<code><span title="System.object">object</span></code> y
+						</dt>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments of `Sequential.fit` 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="get_params" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_params</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="get_params_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>get_params_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="predict" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>predict</strong>(<span title="System.object">object</span> x, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Returns predictions for the given test data. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>array-like, shape `(n_samples, n_features)`
+Test samples where `n_samples` is the number of samples
+and `n_features` is the number of features. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments of `Sequential.predict`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="predict_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>predict_dyn</strong>(<span title="System.object">object</span> x, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Returns predictions for the given test data. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>array-like, shape `(n_samples, n_features)`
+Test samples where `n_samples` is the number of samples
+and `n_features` is the number of features. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments of `Sequential.predict`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="predict_proba" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>predict_proba</strong>(<span title="System.object">object</span> x, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Returns class probability estimates for the given test data. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>array-like, shape `(n_samples, n_features)`
+Test samples where `n_samples` is the number of samples
+and `n_features` is the number of features. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments
+of `Sequential.predict_classes`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="predict_proba_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>predict_proba_dyn</strong>(<span title="System.object">object</span> x, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Returns class probability estimates for the given test data. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>array-like, shape `(n_samples, n_features)`
+Test samples where `n_samples` is the number of samples
+and `n_features` is the number of features. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments
+of `Sequential.predict_classes`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="score" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>score</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Returns the mean loss on the given test data and labels. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>array-like, shape `(n_samples, n_features)`
+Test samples where `n_samples` is the number of samples
+and `n_features` is the number of features. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> y
+						</dt>
+						<dd>array-like, shape `(n_samples,)`
+True labels for `x`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments of `Sequential.evaluate`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="score_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>score_dyn</strong>(<span title="System.object">object</span> x, <span title="System.object">object</span> y, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Returns the mean loss on the given test data and labels. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> x
+						</dt>
+						<dd>array-like, shape `(n_samples, n_features)`
+Test samples where `n_samples` is the number of samples
+and `n_features` is the number of features. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> y
+						</dt>
+						<dd>array-like, shape `(n_samples,)`
+True labels for `x`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>dictionary arguments
+Legal arguments are the arguments of `Sequential.evaluate`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd><p></p> 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="set_params" class="method">
+		<h4>
+			<a href="../tensorflow.python.keras.wrappers.scikit_learn/BaseWrapper.htm">BaseWrapper</a> <strong>set_params</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="set_params_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>set_params_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> params)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="build_fn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>build_fn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="classes_" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>classes_</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="model" class="method">
+		<h4>
+			<a href="../tensorflow.keras/Sequential.htm">Sequential</a> <strong>model</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="n_classes_" class="method">
+		<h4>
+			<span title="System.int">int</span> <strong>n_classes_</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="sk_params" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<string, int>">IDictionary&lt;string, int&gt;</span> <strong>sk_params</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

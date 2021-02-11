@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>Transformer - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.contrib.graph_editor</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/_RerouteMode.htm">_RerouteMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/_TmpInfo.htm">_TmpInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ControlOutputs.htm">ControlOutputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/graph_editor.htm">graph_editor</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/I_RerouteMode.htm">I_RerouteMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/I_TmpInfo.htm">I_TmpInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/IControlOutputs.htm">IControlOutputs</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/IListView.htm">IListView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ISubGraphView.htm">ISubGraphView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ITransformer.htm">ITransformer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ITransformerInfo.htm">ITransformerInfo</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/ListView.htm">ListView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/SubGraphView.htm">SubGraphView</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/Transformer.htm" class="current">Transformer</a>
+        </li>
+				<li>
+            <a href="../tensorflow.contrib.graph_editor/TransformerInfo.htm">TransformerInfo</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> Transformer</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.contrib.graph_editor</p>
+		<p><strong>Parent</strong> <a href="../LostTech.Gradient/PythonObjectContainer.htm">PythonObjectContainer</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.contrib.graph_editor/ITransformer.htm">ITransformer</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Transform a subgraph into another one. <p></p> By default, the constructor create a transform which copy a subgraph and
+replaces inputs with placeholders. This behavior can be modified by changing
+the handlers. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#__call__">__call__</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#__call__">__call__</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#__call__">__call__</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#__call__">__call__</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#__call___dyn">__call___dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#assign_collections_handler">assign_collections_handler</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#transform_control_input_handler">transform_control_input_handler</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#transform_external_hidden_input_handler">transform_external_hidden_input_handler</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#transform_external_input_handler">transform_external_input_handler</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#transform_op_handler">transform_op_handler</a></li>
+				<li><a href="../tensorflow.contrib.graph_editor/Transformer.htm#transform_original_op_handler">transform_original_op_handler</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="__call__" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span> <strong>__call__</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> sgv, <a href="../tensorflow/Graph.htm">Graph</a> dst_graph, <span title="System.string">string</span> dst_scope, <span title="System.string">string</span> src_scope, <span title="System.bool">bool</span> reuse_dst_scope)
+		</h4>
+		<div class="content">Execute the transformation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span></code> sgv
+						</dt>
+						<dd>the source subgraph-view. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Graph.htm">Graph</a></code> dst_graph
+						</dt>
+						<dd>the destination graph. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> dst_scope
+						</dt>
+						<dd>the destination scope. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> src_scope
+						</dt>
+						<dd>the source scope, which specify the path from which the
+relative path of the transformed nodes are computed. For instance, if
+src_scope is a/ and dst_scoped is b/, then the node a/x/y will have a
+relative path of x/y and will be transformed into b/x/y. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> reuse_dst_scope
+						</dt>
+						<dd>if True the dst_scope is re-used if it already exists.
+Otherwise, the scope is given a unique name based on the one given
+by appending an underscore followed by a digit (default). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span></code>
+					</dt>
+					<dd>A tuple `(sgv, info)` where:
+`sgv` is the transformed subgraph view;
+`info` is an instance of TransformerInfo containing
+information about the transform, including mapping between
+original and transformed tensors and operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="__call__" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span> <strong>__call__</strong>(<a href="../tensorflow.contrib.graph_editor/SubGraphView.htm">SubGraphView</a> sgv, <a href="../tensorflow/Graph.htm">Graph</a> dst_graph, <span title="System.string">string</span> dst_scope, <span title="System.string">string</span> src_scope, <span title="System.bool">bool</span> reuse_dst_scope)
+		</h4>
+		<div class="content">Execute the transformation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.contrib.graph_editor/SubGraphView.htm">SubGraphView</a></code> sgv
+						</dt>
+						<dd>the source subgraph-view. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Graph.htm">Graph</a></code> dst_graph
+						</dt>
+						<dd>the destination graph. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> dst_scope
+						</dt>
+						<dd>the destination scope. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> src_scope
+						</dt>
+						<dd>the source scope, which specify the path from which the
+relative path of the transformed nodes are computed. For instance, if
+src_scope is a/ and dst_scoped is b/, then the node a/x/y will have a
+relative path of x/y and will be transformed into b/x/y. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> reuse_dst_scope
+						</dt>
+						<dd>if True the dst_scope is re-used if it already exists.
+Otherwise, the scope is given a unique name based on the one given
+by appending an underscore followed by a digit (default). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span></code>
+					</dt>
+					<dd>A tuple `(sgv, info)` where:
+`sgv` is the transformed subgraph view;
+`info` is an instance of TransformerInfo containing
+information about the transform, including mapping between
+original and transformed tensors and operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="__call__" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span> <strong>__call__</strong>(<a href="../tensorflow/Graph.htm">Graph</a> sgv, <a href="../tensorflow/Graph.htm">Graph</a> dst_graph, <span title="System.string">string</span> dst_scope, <span title="System.string">string</span> src_scope, <span title="System.bool">bool</span> reuse_dst_scope)
+		</h4>
+		<div class="content">Execute the transformation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow/Graph.htm">Graph</a></code> sgv
+						</dt>
+						<dd>the source subgraph-view. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Graph.htm">Graph</a></code> dst_graph
+						</dt>
+						<dd>the destination graph. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> dst_scope
+						</dt>
+						<dd>the destination scope. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> src_scope
+						</dt>
+						<dd>the source scope, which specify the path from which the
+relative path of the transformed nodes are computed. For instance, if
+src_scope is a/ and dst_scoped is b/, then the node a/x/y will have a
+relative path of x/y and will be transformed into b/x/y. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> reuse_dst_scope
+						</dt>
+						<dd>if True the dst_scope is re-used if it already exists.
+Otherwise, the scope is given a unique name based on the one given
+by appending an underscore followed by a digit (default). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span></code>
+					</dt>
+					<dd>A tuple `(sgv, info)` where:
+`sgv` is the transformed subgraph view;
+`info` is an instance of TransformerInfo containing
+information about the transform, including mapping between
+original and transformed tensors and operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="__call__" class="method">
+		<h4>
+			<span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span> <strong>__call__</strong>(<span title="System.object">object</span> sgv, <a href="../tensorflow/Graph.htm">Graph</a> dst_graph, <span title="System.string">string</span> dst_scope, <span title="System.string">string</span> src_scope, <span title="System.bool">bool</span> reuse_dst_scope)
+		</h4>
+		<div class="content">Execute the transformation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sgv
+						</dt>
+						<dd>the source subgraph-view. 
+						</dd>
+						<dt>
+							<code><a href="../tensorflow/Graph.htm">Graph</a></code> dst_graph
+						</dt>
+						<dd>the destination graph. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> dst_scope
+						</dt>
+						<dd>the destination scope. 
+						</dd>
+						<dt>
+							<code><span title="System.string">string</span></code> src_scope
+						</dt>
+						<dd>the source scope, which specify the path from which the
+relative path of the transformed nodes are computed. For instance, if
+src_scope is a/ and dst_scoped is b/, then the node a/x/y will have a
+relative path of x/y and will be transformed into b/x/y. 
+						</dd>
+						<dt>
+							<code><span title="System.bool">bool</span></code> reuse_dst_scope
+						</dt>
+						<dd>if True the dst_scope is re-used if it already exists.
+Otherwise, the scope is given a unique name based on the one given
+by appending an underscore followed by a digit (default). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.ValueTuple<object, TransformerInfo>">ValueTuple&lt;object, TransformerInfo&gt;</span></code>
+					</dt>
+					<dd>A tuple `(sgv, info)` where:
+`sgv` is the transformed subgraph view;
+`info` is an instance of TransformerInfo containing
+information about the transform, including mapping between
+original and transformed tensors and operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="__call___dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>__call___dyn</strong>(<span title="System.object">object</span> sgv, <span title="System.object">object</span> dst_graph, <span title="System.object">object</span> dst_scope, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> src_scope, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> reuse_dst_scope)
+		</h4>
+		<div class="content">Execute the transformation. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> sgv
+						</dt>
+						<dd>the source subgraph-view. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dst_graph
+						</dt>
+						<dd>the destination graph. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> dst_scope
+						</dt>
+						<dd>the destination scope. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> src_scope
+						</dt>
+						<dd>the source scope, which specify the path from which the
+relative path of the transformed nodes are computed. For instance, if
+src_scope is a/ and dst_scoped is b/, then the node a/x/y will have a
+relative path of x/y and will be transformed into b/x/y. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> reuse_dst_scope
+						</dt>
+						<dd>if True the dst_scope is re-used if it already exists.
+Otherwise, the scope is given a unique name based on the one given
+by appending an underscore followed by a digit (default). 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A tuple `(sgv, info)` where:
+`sgv` is the transformed subgraph view;
+`info` is an instance of TransformerInfo containing
+information about the transform, including mapping between
+original and transformed tensors and operations. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="assign_collections_handler" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_collections_handler</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="transform_control_input_handler" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>transform_control_input_handler</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="transform_external_hidden_input_handler" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>transform_external_hidden_input_handler</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="transform_external_input_handler" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>transform_external_input_handler</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="transform_op_handler" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>transform_op_handler</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="transform_original_op_handler" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>transform_original_op_handler</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

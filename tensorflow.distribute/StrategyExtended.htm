@@ -1,0 +1,1170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>StrategyExtended - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.distribute</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.distribute/CrossDeviceOps.htm">CrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/HierarchicalCopyAllReduce.htm">HierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ICrossDeviceOps.htm">ICrossDeviceOps</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IHierarchicalCopyAllReduce.htm">IHierarchicalCopyAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputContext.htm">IInputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IInputReplicationMode.htm">IInputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IMirroredStrategy.htm">IMirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/INcclAllReduce.htm">INcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputContext.htm">InputContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/InputReplicationMode.htm">InputReplicationMode</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IOneDeviceStrategy.htm">IOneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReduceOp.htm">IReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReductionToOneDevice.htm">IReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IReplicaContext.htm">IReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategy.htm">IStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/IStrategyExtended.htm">IStrategyExtended</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/MirroredStrategy.htm">MirroredStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/NcclAllReduce.htm">NcclAllReduce</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/OneDeviceStrategy.htm">OneDeviceStrategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReductionToOneDevice.htm">ReductionToOneDevice</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/ReplicaContext.htm">ReplicaContext</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/Strategy.htm">Strategy</a>
+        </li>
+				<li>
+            <a href="../tensorflow.distribute/StrategyExtended.htm" class="current">StrategyExtended</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> StrategyExtended</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.distribute</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.compat.v2.distribute/StrategyExtended.htm">StrategyExtended</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.distribute/IStrategyExtended.htm">IStrategyExtended</a></p>
+		</header>
+    <div class="sub-header">
+			<div id="summary">Additional APIs for algorithms that need to be distribution-aware. <p></p> Note: For most usage of <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a>, there should be no need to
+call these methods, since TensorFlow libraries (such as optimizers) already
+call these methods when needed on your behalf. <p></p> Lower-level concepts: <p></p> * Wrapped values: In order to represent values parallel across devices
+(either replicas or the devices associated with a particular value), we
+wrap them in a "PerReplica" or "Mirrored" object that contains a map
+from replica id to values. "PerReplica" is used when the value may be
+different across replicas, and "Mirrored" when the value are the same.
+* Unwrapping and merging: Consider calling a function `fn` on multiple
+replicas, like `experimental_run_v2(fn, args=[w])` with an
+argument `w` that is a wrapped value. This means `w` will have a map taking
+replica id `0` to `w0`, replica id `11` to `w1`, etc.
+`experimental_run_v2()` unwraps `w` before calling `fn`, so
+it calls `fn(w0)` on `d0`, `fn(w1)` on `d1`, etc.  It then merges the return
+values from `fn()`, which can possibly result in wrapped values. For
+example, let's say `fn()` returns a tuple with three components: `(x, a,
+v0)` from replica 0, `(x, b, v1)` on replica 1, etc. If the first component
+is the same object `x` from every replica, then the first component of the
+merged result will also be `x`. If the second component is different (`a`,
+`b`,...)  from each replica, then the merged value will have a wrapped map
+from replica device to the different values. If the third component is the
+members of a mirrored variable (`v` maps `d0` to `v0`, `d1` to `v1`, etc.),
+then the merged result will be that mirrored variable (`v`).
+* Worker devices vs. parameter devices: Most replica computations will
+happen on worker devices. Since we don't yet support model
+parallelism, there will be one worker device per replica. When using
+parameter servers or central storage, the set of devices holding
+variables may be different, otherwise the parameter devices might
+match the worker devices. <p></p> *Replica context vs. Cross-replica context* <p></p> _replica context_ is when we are in some function that is being called once
+for each replica.  Otherwise we are in cross-replica context, which is
+useful for calling <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> methods which operate across the
+replicas (like `reduce_to()`). By default you start in a replica context
+(the "default single replica context") and then some methods can switch you
+back and forth. There is a third mode you can be in called _update context_
+used when updating variables. <p></p> * <a href="..\..\tf\distribute\MirroredStrategy\scope.md"><code>tf.distribute.Strategy.scope</code></a>: enters cross-replica context when
+no other strategy is in scope.
+* <a href="..\..\tf\distribute\MirroredStrategy\experimental_run_v2.md"><code>tf.distribute.Strategy.experimental_run_v2</code></a>: calls a function in
+replica context.
+* <a href="..\..\tf\distribute\ReplicaContext\merge_call.md"><code>tf.distribute.ReplicaContext.merge_call</code></a>: transitions from replica
+context to cross-replica context.
+* <a href="..\..\tf\distribute\StrategyExtended\update.md"><code>tf.distribute.StrategyExtended.update</code></a>: calls a function in an update
+context from a cross-replica context. <p></p> In a replica context, you may freely read the values of variables, but
+you may only update their value if they specify a way to aggregate the
+update using the `aggregation` parameter in the variable's constructor.
+In a cross-replica context, you may read or write variables (writes may
+need to be broadcast to all copies of the variable if it is mirrored). <p></p> *Sync on read variables* <p></p> In some cases, such as a metric, we want to accumulate a bunch of updates on
+each replica independently and only aggregate when reading. This can be a big
+performance win when the value is read only rarely (maybe the value is only
+read at the end of an epoch or when checkpointing).  These are variables
+created by passing `synchronization=ON_READ` to the variable's constructor
+(and some value for `aggregation`). <p></p> The strategy may choose to put the variable on multiple devices, like mirrored
+variables, but unlike mirrored variables we don't synchronize the updates to
+them to make sure they have the same value. Instead, the synchronization is
+performed when reading in cross-replica context.  In a replica context, reads
+and writes are performed on the local copy (we allow reads so you can write
+code like `v = 0.9*v + 0.1*update`).  We don't allow operations like
+`v.assign_add` in a cross-replica context for sync on read variables; right
+now we don't have a use case for such updates and depending on the aggregation
+mode such updates may not be sensible. <p></p> *Locality* <p></p> Depending on how a value is produced, it will have a type that will determine
+how it may be used. <p></p> "Per-replica" values exist on the worker devices, with a different value for
+each replica. They are produced by iterating through a "distributed `Dataset`"
+returned by <a href="..\..\tf\distribute\MirroredStrategy\experimental_distribute_dataset.md"><code>tf.distribute.Strategy.experimental_distribute_dataset</code></a> and
+<a href="..\..\tf\distribute\MirroredStrategy\experimental_distribute_datasets_from_function.md"><code>tf.distribute.Strategy.experimental_distribute_datasets_from_function</code></a>.  They
+are also the typical result returned by
+<a href="..\..\tf\distribute\MirroredStrategy\experimental_run_v2.md"><code>tf.distribute.Strategy.experimental_run_v2</code></a>. You typically can't use a
+per-replica value directly in a cross-replica context, without first resolving
+how to aggregate the values across replicas, for instance by using
+<a href="..\..\tf\distribute\Strategy\reduce.md"><code>tf.distribute.Strategy.reduce</code></a>. <p></p> "Mirrored" values are like per-replica values, except we know that the value
+on all replicas are the same. We can safely read a mirrored value in a
+cross-replica context by using the value on any replica. You can convert
+a per-replica value into a mirrored value by using
+<a href="..\..\tf\distribute\ReplicaContext\all_reduce.md"><code>tf.distribute.ReplicaContext.all_reduce</code></a>. <p></p> Values can also have the same locality as a variable, which is a mirrored
+value but residing on the same devices as the variable (as opposed to the
+compute devices). Such values may be passed to a call to
+<a href="..\..\tf\distribute\StrategyExtended\update.md"><code>tf.distribute.StrategyExtended.update</code></a> to update the value of a variable.
+You may use <a href="..\..\tf\distribute\StrategyExtended\colocate_vars_with.md"><code>tf.distribute.StrategyExtended.colocate_vars_with</code></a> to give a
+variable the same locality as another variable. This is useful, for example,
+for "slot" variables used by an optimizer for keeping track of statistics
+used to update a primary/model variable. You may convert a per-replica
+value to a variable's locality by using
+<a href="..\..\tf\distribute\StrategyExtended\reduce_to.md"><code>tf.distribute.StrategyExtended.reduce_to</code></a> or
+<a href="..\..\tf\distribute\StrategyExtended\batch_reduce_to.md"><code>tf.distribute.StrategyExtended.batch_reduce_to</code></a>. <p></p> In addition to slot variables which should be colocated with their primary
+variables, optimizers also define non-slot variables. These can be things like
+"number of step updates performed" or "beta1^t" and "beta2^t".  Each strategy
+has some policy for which devices those variables should be copied too, called
+the "non-slot devices" (some subset of the parameter devices). We require that
+all non-slot variables are allocated on the same device, or mirrored across
+the same set of devices. You can use
+<a href="..\..\tf\distribute\StrategyExtended\non_slot_devices.md"><code>tf.distribute.StrategyExtended.non_slot_devices</code></a> to pick a consistent set of
+devices to pass to both <a href="..\..\tf\distribute\StrategyExtended\colocate_vars_with.md"><code>tf.distribute.StrategyExtended.colocate_vars_with</code></a>
+and <a href="..\..\tf\distribute\StrategyExtended\update_non_slot.md"><code>tf.distribute.StrategyExtended.update_non_slot</code></a>. <p></p> *How to update a variable* <p></p> The standard pattern for updating variables is to: <p></p> 1. In your function passed to <a href="..\..\tf\distribute\MirroredStrategy\experimental_run_v2.md"><code>tf.distribute.Strategy.experimental_run_v2</code></a>,
+compute a list of (update, variable) pairs. For example, the update might
+be a the gradient of the loss with respect to the variable.
+2. Switch to cross-replica mode by calling
+`tf.distribute.get_replica_context().merge_call()` with the updates and
+variables as arguments.
+3. Call
+`tf.distribute.StrategyExtended.reduce_to(VariableAggregation.SUM, t, v)`
+(for one variable) or <a href="..\..\tf\distribute\StrategyExtended\batch_reduce_to.md"><code>tf.distribute.StrategyExtended.batch_reduce_to</code></a>
+(for a list of variables) to sum the updates.
+and broadcast the result to the variable's devices.
+4. Call `tf.distribute.StrategyExtended.update(v)` for each variable to update
+its value. <p></p> Steps 2 through 4 are done automatically by class
+<a href="..\..\tf\keras\optimizers\Optimizer.md"><code>tf.keras.optimizers.Optimizer</code></a> if you call its
+<a href="..\..\tf\keras\optimizers\Optimizer\apply_gradients.md"><code>tf.keras.optimizers.Optimizer.apply_gradients</code></a> method in a replica context.
+They are also done automatically if you call an `assign*` method on a (non
+sync-on-read) variable that was constructed with an aggregation method (which
+is used to determine the reduction used in step 3). <p></p> *Distribute-aware layers* <p></p> Layers are generally called in a replica context, except when defining a
+functional model. <a href="..\..\tf\distribute\in_cross_replica_context.md"><code>tf.distribute.in_cross_replica_context</code></a> will let you
+determine which case you are in. If in a replica context,
+the <a href="..\..\tf\distribute\get_replica_context.md"><code>tf.distribute.get_replica_context</code></a> function will return a
+<a href="..\..\tf\distribute\ReplicaContext.md"><code>tf.distribute.ReplicaContext</code></a> object. The `ReplicaContext` object has an
+`all_reduce` method for aggregating across all replicas. Alternatively, you
+can update variables following steps 2-4 above. <p></p> Note: For new <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> implementations, please put all logic
+in a subclass of <a href="..\..\tf\distribute\StrategyExtended.md"><code>tf.distribute.StrategyExtended</code></a>. The only code needed for
+the <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a> subclass is for instantiating your subclass of
+<a href="..\..\tf\distribute\StrategyExtended.md"><code>tf.distribute.StrategyExtended</code></a> in the `__init__` method. 
+			</div>
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#batch_reduce_to">batch_reduce_to</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#batch_reduce_to_dyn">batch_reduce_to_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#broadcast_to">broadcast_to</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#broadcast_to_dyn">broadcast_to_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#call_for_each_replica">call_for_each_replica</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#call_for_each_replica">call_for_each_replica</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#call_for_each_replica">call_for_each_replica</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#call_for_each_replica_dyn">call_for_each_replica_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_make_numpy_dataset_dyn">experimental_make_numpy_dataset_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_run_steps_on_iterator">experimental_run_steps_on_iterator</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_run_steps_on_iterator_dyn">experimental_run_steps_on_iterator_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#non_slot_devices">non_slot_devices</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#non_slot_devices_dyn">non_slot_devices_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#read_var">read_var</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#read_var_dyn">read_var_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#reduce_to">reduce_to</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#reduce_to">reduce_to</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#reduce_to_dyn">reduce_to_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#update">update</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#update_dyn">update_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#update_non_slot">update_non_slot</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#update_non_slot_dyn">update_non_slot_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#value_container">value_container</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#value_container_dyn">value_container_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#variable_created_in_scope">variable_created_in_scope</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#variable_created_in_scope_dyn">variable_created_in_scope_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_between_graph">experimental_between_graph</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_between_graph_dyn">experimental_between_graph_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_require_static_shapes">experimental_require_static_shapes</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_require_static_shapes_dyn">experimental_require_static_shapes_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_should_init">experimental_should_init</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#experimental_should_init_dyn">experimental_should_init_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#parameter_devices">parameter_devices</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#parameter_devices_dyn">parameter_devices_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#should_checkpoint">should_checkpoint</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#should_checkpoint_dyn">should_checkpoint_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#should_save_summary">should_save_summary</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#should_save_summary_dyn">should_save_summary_dyn</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#worker_devices">worker_devices</a></li>
+				<li><a href="../tensorflow.distribute/StrategyExtended.htm#worker_devices_dyn">worker_devices_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="batch_reduce_to" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>batch_reduce_to</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="batch_reduce_to_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>batch_reduce_to_dyn</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value_destination_pairs)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="broadcast_to" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast_to</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Mirror a tensor on one device to all worker devices. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>A Tensor value to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>A mirrored variable or device string specifying the
+destination devices to copy `tensor` to. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A value mirrored to `destinations` devices. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="broadcast_to_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>broadcast_to_dyn</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">Mirror a tensor on one device to all worker devices. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> tensor
+						</dt>
+						<dd>A Tensor value to broadcast. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> destinations
+						</dt>
+						<dd>A mirrored variable or device string specifying the
+destination devices to copy `tensor` to. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A value mirrored to `destinations` devices. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="call_for_each_replica" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>call_for_each_replica</strong>(<a href="../tensorflow.python.ops.template/Template.htm">Template</a> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Run `fn` once per replica. <p></p> `fn` may call `tf.get_replica_context()` to access methods such as
+`replica_id_in_sync_group` and `merge_call()`. <p></p> `merge_call()` is used to communicate between the replicas and
+re-enter the cross-replica context. All replicas pause their execution
+having encountered a `merge_call()` call. After that the
+`merge_fn`-function is executed. Its results are then unwrapped and
+given back to each replica call. After that execution resumes until
+`fn` is complete or encounters another `merge_call()`.  Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.ops.template/Template.htm">Template</a></code> fn
+						</dt>
+						<dd>function to run (will be run once per replica). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> args
+						</dt>
+						<dd>Tuple or list with positional arguments for `fn`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Dict with keyword arguments for `fn`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across all replicas. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Called once in "cross-replica" context.
+            def merge_fn(distribution, three_plus_replica_id):
+              # sum the values across replicas
+              return sum(distribution.experimental_local_results(three_plus_replica_id)) <p></p> # Called once per replica in `distribution`, in a "replica" context.
+def fn(three):
+  replica_ctx = tf.get_replica_context()
+  v = three + replica_ctx.replica_id_in_sync_group
+  # Computes the sum of the `v` values across all replicas.
+  s = replica_ctx.merge_call(merge_fn, args=(v,))
+  return s + v <p></p> with distribution.scope():
+  # in "cross-replica" context
+ ...
+  merged_results = distribution.experimental_run_v2(fn, args=[3])
+  # merged_results has the values from every replica execution of `fn`.
+  # This statement prints a list:
+  print(distribution.experimental_local_results(merged_results)) </pre>
+</div>
+		</div>
+	</div>
+	<div id="call_for_each_replica" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>call_for_each_replica</strong>(<a href="../tensorflow.python.util.tf_decorator/TFDecorator.htm">TFDecorator</a> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Run `fn` once per replica. <p></p> `fn` may call `tf.get_replica_context()` to access methods such as
+`replica_id_in_sync_group` and `merge_call()`. <p></p> `merge_call()` is used to communicate between the replicas and
+re-enter the cross-replica context. All replicas pause their execution
+having encountered a `merge_call()` call. After that the
+`merge_fn`-function is executed. Its results are then unwrapped and
+given back to each replica call. After that execution resumes until
+`fn` is complete or encounters another `merge_call()`.  Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><a href="../tensorflow.python.util.tf_decorator/TFDecorator.htm">TFDecorator</a></code> fn
+						</dt>
+						<dd>function to run (will be run once per replica). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> args
+						</dt>
+						<dd>Tuple or list with positional arguments for `fn`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Dict with keyword arguments for `fn`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across all replicas. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Called once in "cross-replica" context.
+            def merge_fn(distribution, three_plus_replica_id):
+              # sum the values across replicas
+              return sum(distribution.experimental_local_results(three_plus_replica_id)) <p></p> # Called once per replica in `distribution`, in a "replica" context.
+def fn(three):
+  replica_ctx = tf.get_replica_context()
+  v = three + replica_ctx.replica_id_in_sync_group
+  # Computes the sum of the `v` values across all replicas.
+  s = replica_ctx.merge_call(merge_fn, args=(v,))
+  return s + v <p></p> with distribution.scope():
+  # in "cross-replica" context
+ ...
+  merged_results = distribution.experimental_run_v2(fn, args=[3])
+  # merged_results has the values from every replica execution of `fn`.
+  # This statement prints a list:
+  print(distribution.experimental_local_results(merged_results)) </pre>
+</div>
+		</div>
+	</div>
+	<div id="call_for_each_replica" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>call_for_each_replica</strong>(<span title="System.object">object</span> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs)
+		</h4>
+		<div class="content">Run `fn` once per replica. <p></p> `fn` may call `tf.get_replica_context()` to access methods such as
+`replica_id_in_sync_group` and `merge_call()`. <p></p> `merge_call()` is used to communicate between the replicas and
+re-enter the cross-replica context. All replicas pause their execution
+having encountered a `merge_call()` call. After that the
+`merge_fn`-function is executed. Its results are then unwrapped and
+given back to each replica call. After that execution resumes until
+`fn` is complete or encounters another `merge_call()`.  Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>function to run (will be run once per replica). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> args
+						</dt>
+						<dd>Tuple or list with positional arguments for `fn`. 
+						</dd>
+						<dt>
+							<code><span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span></code> kwargs
+						</dt>
+						<dd>Dict with keyword arguments for `fn`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across all replicas. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Called once in "cross-replica" context.
+            def merge_fn(distribution, three_plus_replica_id):
+              # sum the values across replicas
+              return sum(distribution.experimental_local_results(three_plus_replica_id)) <p></p> # Called once per replica in `distribution`, in a "replica" context.
+def fn(three):
+  replica_ctx = tf.get_replica_context()
+  v = three + replica_ctx.replica_id_in_sync_group
+  # Computes the sum of the `v` values across all replicas.
+  s = replica_ctx.merge_call(merge_fn, args=(v,))
+  return s + v <p></p> with distribution.scope():
+  # in "cross-replica" context
+ ...
+  merged_results = distribution.experimental_run_v2(fn, args=[3])
+  # merged_results has the values from every replica execution of `fn`.
+  # This statement prints a list:
+  print(distribution.experimental_local_results(merged_results)) </pre>
+</div>
+		</div>
+	</div>
+	<div id="call_for_each_replica_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>call_for_each_replica_dyn</strong>(<span title="System.object">object</span> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.object">object</span> kwargs)
+		</h4>
+		<div class="content">Run `fn` once per replica. <p></p> `fn` may call `tf.get_replica_context()` to access methods such as
+`replica_id_in_sync_group` and `merge_call()`. <p></p> `merge_call()` is used to communicate between the replicas and
+re-enter the cross-replica context. All replicas pause their execution
+having encountered a `merge_call()` call. After that the
+`merge_fn`-function is executed. Its results are then unwrapped and
+given back to each replica call. After that execution resumes until
+`fn` is complete or encounters another `merge_call()`.  Example: 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>function to run (will be run once per replica). 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> args
+						</dt>
+						<dd>Tuple or list with positional arguments for `fn`. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> kwargs
+						</dt>
+						<dd>Dict with keyword arguments for `fn`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Merged return value of `fn` across all replicas. 
+					</dd>
+				</dl>
+			</div>
+<div class="example">
+  <a href="javascript:void(0)">Show Example</a>
+  <pre># Called once in "cross-replica" context.
+            def merge_fn(distribution, three_plus_replica_id):
+              # sum the values across replicas
+              return sum(distribution.experimental_local_results(three_plus_replica_id)) <p></p> # Called once per replica in `distribution`, in a "replica" context.
+def fn(three):
+  replica_ctx = tf.get_replica_context()
+  v = three + replica_ctx.replica_id_in_sync_group
+  # Computes the sum of the `v` values across all replicas.
+  s = replica_ctx.merge_call(merge_fn, args=(v,))
+  return s + v <p></p> with distribution.scope():
+  # in "cross-replica" context
+ ...
+  merged_results = distribution.experimental_run_v2(fn, args=[3])
+  # merged_results has the values from every replica execution of `fn`.
+  # This statement prints a list:
+  print(distribution.experimental_local_results(merged_results)) </pre>
+</div>
+		</div>
+	</div>
+	<div id="experimental_make_numpy_dataset_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_make_numpy_dataset_dyn</strong>(<span title="System.object">object</span> numpy_input, <span title="System.object">object</span> session)
+		</h4>
+		<div class="content">Makes a dataset for input provided via a numpy array. <p></p> This avoids adding `numpy_input` as a large constant in the graph,
+and copies the data to the machine or machines that will be processing
+the input. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> numpy_input
+						</dt>
+						<dd>A nest of NumPy input arrays that will be distributed evenly
+across all replicas. Note that lists of Numpy arrays are stacked, as
+that is normal <a href="..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> behavior. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> session
+						</dt>
+						<dd>(TensorFlow v1.x graph execution only) A session used for
+initialization. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A <a href="..\..\tf\data\Dataset.md"><code>tf.data.Dataset</code></a> representing `numpy_input`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_run_steps_on_iterator" class="method">
+		<h4>
+			<a href="../tensorflow.python.distribute.input_lib/MultiStepContext.htm">MultiStepContext</a> <strong>experimental_run_steps_on_iterator</strong>(<span title="System.object">object</span> fn, <span title="System.object">object</span> iterator, <span title="System.int">int</span> iterations, <span title="System.object">object</span> initial_loop_values)
+		</h4>
+		<div class="content">DEPRECATED: please use `experimental_run_v2` instead. <p></p> Run `fn` with input from `iterator` for `iterations` times. <p></p> This method can be used to run a step function for training a number of
+times using input from a dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>function to run using this distribution strategy. The function must
+have the following signature: `def fn(context, inputs)`. `context` is an
+instance of `MultiStepContext` that will be passed when `fn` is run.
+`context` can be used to specify the outputs to be returned from `fn`
+by calling `context.set_last_step_output`. It can also be used to
+capture non tensor outputs by `context.set_non_tensor_output`. See
+`MultiStepContext` documentation for more information. `inputs` will
+have same type/structure as `iterator.get_next()`. Typically, `fn`
+will use `call_for_each_replica` method of the strategy to distribute
+the computation over multiple replicas. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> iterator
+						</dt>
+						<dd>Iterator of a dataset that represents the input for `fn`. The
+caller is responsible for initializing the iterator as needed. 
+						</dd>
+						<dt>
+							<code><span title="System.int">int</span></code> iterations
+						</dt>
+						<dd>(Optional) Number of iterations that `fn` should be run.
+Defaults to 1. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initial_loop_values
+						</dt>
+						<dd>(Optional) Initial values to be passed into the
+loop that runs `fn`. Defaults to `None`. # TODO(priyag): Remove
+initial_loop_values argument when we have a mechanism to infer the
+outputs of `fn`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow.python.distribute.input_lib/MultiStepContext.htm">MultiStepContext</a></code>
+					</dt>
+					<dd>Returns the `MultiStepContext` object which has the following properties,
+among other things:
+- run_op: An op that runs `fn` `iterations` times.
+- last_step_outputs: A dictionary containing tensors set using
+`context.set_last_step_output`. Evaluating this returns the value of
+the tensors after the last iteration.
+- non_tensor_outputs: A dictionatry containing anything that was set by
+`fn` by calling `context.set_non_tensor_output`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="experimental_run_steps_on_iterator_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_run_steps_on_iterator_dyn</strong>(<span title="System.object">object</span> fn, <span title="System.object">object</span> iterator, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> iterations, <span title="System.object">object</span> initial_loop_values)
+		</h4>
+		<div class="content">DEPRECATED: please use `experimental_run_v2` instead. <p></p> Run `fn` with input from `iterator` for `iterations` times. <p></p> This method can be used to run a step function for training a number of
+times using input from a dataset. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> fn
+						</dt>
+						<dd>function to run using this distribution strategy. The function must
+have the following signature: `def fn(context, inputs)`. `context` is an
+instance of `MultiStepContext` that will be passed when `fn` is run.
+`context` can be used to specify the outputs to be returned from `fn`
+by calling `context.set_last_step_output`. It can also be used to
+capture non tensor outputs by `context.set_non_tensor_output`. See
+`MultiStepContext` documentation for more information. `inputs` will
+have same type/structure as `iterator.get_next()`. Typically, `fn`
+will use `call_for_each_replica` method of the strategy to distribute
+the computation over multiple replicas. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> iterator
+						</dt>
+						<dd>Iterator of a dataset that represents the input for `fn`. The
+caller is responsible for initializing the iterator as needed. 
+						</dd>
+						<dt>
+							<code><a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a></code> iterations
+						</dt>
+						<dd>(Optional) Number of iterations that `fn` should be run.
+Defaults to 1. 
+						</dd>
+						<dt>
+							<code><span title="System.object">object</span></code> initial_loop_values
+						</dt>
+						<dd>(Optional) Initial values to be passed into the
+loop that runs `fn`. Defaults to `None`. # TODO(priyag): Remove
+initial_loop_values argument when we have a mechanism to infer the
+outputs of `fn`. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>Returns the `MultiStepContext` object which has the following properties,
+among other things:
+- run_op: An op that runs `fn` `iterations` times.
+- last_step_outputs: A dictionary containing tensors set using
+`context.set_last_step_output`. Evaluating this returns the value of
+the tensors after the last iteration.
+- non_tensor_outputs: A dictionatry containing anything that was set by
+`fn` by calling `context.set_non_tensor_output`. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="non_slot_devices" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_slot_devices</strong>(<span title="System.object">object</span> var_list)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="non_slot_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>non_slot_devices_dyn</strong>(<span title="System.object">object</span> var_list)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="read_var" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>read_var</strong>(<span title="System.object">object</span> v)
+		</h4>
+		<div class="content">Reads the value of a variable. <p></p> Returns the aggregate value of a replica-local variable, or the
+(read-only) value of any other variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> v
+						</dt>
+						<dd>A variable allocated within the scope of this <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><a href="../tensorflow/Tensor.htm">Tensor</a></code>
+					</dt>
+					<dd>A tensor representing the value of `v`, aggregated across replicas if
+necessary. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="read_var_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>read_var_dyn</strong>(<span title="System.object">object</span> v)
+		</h4>
+		<div class="content">Reads the value of a variable. <p></p> Returns the aggregate value of a replica-local variable, or the
+(read-only) value of any other variable. 
+
+
+			<div class="parameters">
+				<h5>Parameters</h5>
+				<dl>
+						<dt>
+							<code><span title="System.object">object</span></code> v
+						</dt>
+						<dd>A variable allocated within the scope of this <a href="..\..\tf\distribute\Strategy.md"><code>tf.distribute.Strategy</code></a>. 
+						</dd>
+				</dl>
+			</div>
+
+			<div class="return">
+
+				<h5>Returns</h5>
+				<dl>
+					<dt>
+						<code><span title="System.object">object</span></code>
+					</dt>
+					<dd>A tensor representing the value of `v`, aggregated across replicas if
+necessary. 
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	<div id="reduce_to" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_to</strong>(<a href="../tensorflow.distribute/ReduceOp.htm">ReduceOp</a> reduce_op, <span title="System.object">object</span> value, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reduce_to" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_to</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="reduce_to_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>reduce_to_dyn</strong>(<span title="System.object">object</span> reduce_op, <span title="System.object">object</span> value, <span title="System.object">object</span> destinations)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="update" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update</strong>(<span title="System.object">object</span> var, <span title="System.object">object</span> fn, <span title="System.ValueTuple<object>">ValueTuple&lt;object&gt;</span> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.bool">bool</span> group)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="update_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_dyn</strong>(<span title="System.object">object</span> var, <span title="System.object">object</span> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.object">object</span> kwargs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> group)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="update_non_slot" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_non_slot</strong>(<span title="System.object">object</span> colocate_with, <span title="System.object">object</span> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.bool">bool</span> group)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="update_non_slot_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>update_non_slot_dyn</strong>(<span title="System.object">object</span> colocate_with, <span title="System.object">object</span> fn, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> args, <span title="System.object">object</span> kwargs, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> group)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="value_container" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>value_container</strong>(<span title="System.object">object</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="value_container_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>value_container_dyn</strong>(<span title="System.object">object</span> value)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="variable_created_in_scope" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>variable_created_in_scope</strong>(<span title="System.object">object</span> v)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="variable_created_in_scope_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>variable_created_in_scope_dyn</strong>(<span title="System.object">object</span> v)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="experimental_between_graph" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>experimental_between_graph</strong> get; 
+		</h4>
+		<div class="content">Whether the strategy uses between-graph replication or not. <p></p> This is expected to return a constant value that will not be changed
+throughout its life cycle. 
+
+		</div>
+	</div>
+	<div id="experimental_between_graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_between_graph_dyn</strong> get; 
+		</h4>
+		<div class="content">Whether the strategy uses between-graph replication or not. <p></p> This is expected to return a constant value that will not be changed
+throughout its life cycle. 
+
+		</div>
+	</div>
+	<div id="experimental_require_static_shapes" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>experimental_require_static_shapes</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="experimental_require_static_shapes_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_require_static_shapes_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="experimental_should_init" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>experimental_should_init</strong> get; 
+		</h4>
+		<div class="content">Whether initialization is needed. 
+
+		</div>
+	</div>
+	<div id="experimental_should_init_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>experimental_should_init_dyn</strong> get; 
+		</h4>
+		<div class="content">Whether initialization is needed. 
+
+		</div>
+	</div>
+	<div id="parameter_devices" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameter_devices</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="parameter_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>parameter_devices_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="should_checkpoint" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>should_checkpoint</strong> get; 
+		</h4>
+		<div class="content">Whether checkpointing is needed. 
+
+		</div>
+	</div>
+	<div id="should_checkpoint_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>should_checkpoint_dyn</strong> get; 
+		</h4>
+		<div class="content">Whether checkpointing is needed. 
+
+		</div>
+	</div>
+	<div id="should_save_summary" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>should_save_summary</strong> get; 
+		</h4>
+		<div class="content">Whether saving summaries is needed. 
+
+		</div>
+	</div>
+	<div id="should_save_summary_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>should_save_summary_dyn</strong> get; 
+		</h4>
+		<div class="content">Whether saving summaries is needed. 
+
+		</div>
+	</div>
+	<div id="worker_devices" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>worker_devices</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="worker_devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>worker_devices_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

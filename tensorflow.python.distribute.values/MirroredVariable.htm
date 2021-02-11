@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>MirroredVariable - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.distribute.values</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.distribute.values/_MirroredSaveable.htm">_MirroredSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/_SyncOnReadSaveable.htm">_SyncOnReadSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/AggregatingVariable.htm">AggregatingVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/DeviceMap.htm">DeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/DistributedDelegate.htm">DistributedDelegate</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/DistributedValues.htm">DistributedValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/DistributedVariable.htm">DistributedVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/DistributedVarOp.htm">DistributedVarOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/I_MirroredSaveable.htm">I_MirroredSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/I_SyncOnReadSaveable.htm">I_SyncOnReadSaveable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IAggregatingVariable.htm">IAggregatingVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IDeviceMap.htm">IDeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IDistributedDelegate.htm">IDistributedDelegate</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IDistributedValues.htm">IDistributedValues</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IDistributedVariable.htm">IDistributedVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IDistributedVarOp.htm">IDistributedVarOp</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ILogicalDeviceSpec.htm">ILogicalDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IMirrored.htm">IMirrored</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IMirroredVariable.htm">IMirroredVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IPerReplica.htm">IPerReplica</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IPerReplicaSpec.htm">IPerReplicaSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IReplicaDeviceMap.htm">IReplicaDeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ISingleDeviceMap.htm">ISingleDeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ISyncOnReadVariable.htm">ISyncOnReadVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ITPUMirroredVariable.htm">ITPUMirroredVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ITPUSyncOnReadVariable.htm">ITPUSyncOnReadVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ITPUVariableMixin.htm">ITPUVariableMixin</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/IWorkerDeviceMap.htm">IWorkerDeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/LogicalDeviceSpec.htm">LogicalDeviceSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/Mirrored.htm">Mirrored</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/MirroredVariable.htm" class="current">MirroredVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/PerReplica.htm">PerReplica</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/PerReplicaSpec.htm">PerReplicaSpec</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/ReplicaDeviceMap.htm">ReplicaDeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/SingleDeviceMap.htm">SingleDeviceMap</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/SyncOnReadVariable.htm">SyncOnReadVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/TPUMirroredVariable.htm">TPUMirroredVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/TPUSyncOnReadVariable.htm">TPUSyncOnReadVariable</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/TPUVariableMixin.htm">TPUVariableMixin</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/values.htm">values</a>
+        </li>
+				<li>
+            <a href="../tensorflow.python.distribute.values/WorkerDeviceMap.htm">WorkerDeviceMap</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> MirroredVariable</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.distribute.values</p>
+		<p><strong>Parent</strong> <a href="../tensorflow.python.distribute.values/DistributedVariable.htm">DistributedVariable</a></p>
+		<p><strong>Interfaces</strong> <a href="../tensorflow.python.distribute.values/IMirroredVariable.htm">IMirroredVariable</a></p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#__add__">__add__</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#__mul__">__mul__</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#__sub__">__sub__</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign">assign</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign">assign</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_add">assign_add</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_add">assign_add</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_add">assign_add</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_add">assign_add</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_add_dyn">assign_add_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_add_dyn">assign_add_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_dyn">assign_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_dyn">assign_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_sub">assign_sub</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_sub">assign_sub</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_sub_dyn">assign_sub_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#assign_sub_dyn">assign_sub_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#aggregation">aggregation</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#aggregation_dyn">aggregation_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#constraint">constraint</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#constraint_dyn">constraint_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#device">device</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#device_dyn">device_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#device_map">device_map</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#device_map_dyn">device_map_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#devices">devices</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#devices_dyn">devices_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#distribute_strategy">distribute_strategy</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#distribute_strategy_dyn">distribute_strategy_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#dtype">dtype</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#dtype_dyn">dtype_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#graph">graph</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#graph_dyn">graph_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#handle">handle</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#handle_dyn">handle_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#initial_value">initial_value</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#initial_value_dyn">initial_value_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#initializer">initializer</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#initializer_dyn">initializer_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#is_tensor_like">is_tensor_like</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#is_tensor_like_dyn">is_tensor_like_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#Item">Item</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#logical_device">logical_device</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#logical_device_dyn">logical_device_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#name">name</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#name_dyn">name_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#op">op</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#op_dyn">op_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#primary">primary</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#primary_dyn">primary_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#PythonObject">PythonObject</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#shape">shape</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#shape_dyn">shape_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#synchronization">synchronization</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#synchronization_dyn">synchronization_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#trainable">trainable</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#trainable_dyn">trainable_dyn</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#values">values</a></li>
+				<li><a href="../tensorflow.python.distribute.values/MirroredVariable.htm#values_dyn">values_dyn</a></li>
+			</ul>
+		
+	</div>
+	
+	<h3 class="section">Public instance methods</h3>
+
+	<div id="__add__" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>__add__</strong>(<a href="../tensorflow.python.distribute.values/MirroredVariable.htm">MirroredVariable</a> o)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="__mul__" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>__mul__</strong>(<a href="../tensorflow.python.distribute.values/MirroredVariable.htm">MirroredVariable</a> o)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="__sub__" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>__sub__</strong>(<a href="../tensorflow.python.distribute.values/MirroredVariable.htm">MirroredVariable</a> o)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_add" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign_add</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="LostTech.Gradient.ManualWrappers.IGraphNodeBase[]">IGraphNodeBase[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_add" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign_add</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_add" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign_add</strong>(<span title="LostTech.Gradient.ManualWrappers.IGraphNodeBase[]">IGraphNodeBase[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_add" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign_add</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_add_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_add_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_add_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_add_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_sub" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign_sub</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_sub" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>assign_sub</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_sub_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_sub_dyn</strong>(<span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="assign_sub_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>assign_sub_dyn</strong>(<span title="System.Collections.Generic.IDictionary<string, object>">IDictionary&lt;string, object&gt;</span> kwargs, <span title="System.Object[]">Object[]</span> args)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="aggregation" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>aggregation</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="aggregation_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>aggregation_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="constraint" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>constraint</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="constraint_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>constraint_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_map" class="method">
+		<h4>
+			<a href="../tensorflow.python.distribute.values/DeviceMap.htm">DeviceMap</a> <strong>device_map</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="device_map_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>device_map_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="devices" class="method">
+		<h4>
+			<span title="System.ValueTuple<IList<string>>">ValueTuple&lt;IList&lt;string&gt;&gt;</span> <strong>devices</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="devices_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>devices_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="distribute_strategy" class="method">
+		<h4>
+			<span title="System.Nullable<ValueTuple<PythonClassContainer, PythonClassContainer>>">Nullable&lt;ValueTuple&lt;PythonClassContainer, PythonClassContainer&gt;&gt;</span> <strong>distribute_strategy</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="distribute_strategy_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>distribute_strategy_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="dtype_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>dtype_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="graph_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>graph_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="handle" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>handle</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="handle_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>handle_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initial_value" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>initial_value</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initial_value_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initial_value_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initializer" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initializer</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="initializer_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>initializer_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_tensor_like" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>is_tensor_like</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_tensor_like_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_tensor_like_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="Item" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>Item</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="logical_device" class="method">
+		<h4>
+			<span title="System.Nullable<int>">Nullable&lt;int&gt;</span> <strong>logical_device</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="logical_device_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>logical_device_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="name_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>name_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="op" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>op</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="op_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>op_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="primary" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>primary</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="primary_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>primary_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="PythonObject" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>PythonObject</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shape" class="method">
+		<h4>
+			<a href="../tensorflow/TensorShape.htm">TensorShape</a> <strong>shape</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="shape_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>shape_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="synchronization" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>synchronization</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="synchronization_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>synchronization_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable" class="method">
+		<h4>
+			<span title="System.Nullable<bool>">Nullable&lt;bool&gt;</span> <strong>trainable</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="trainable_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>trainable_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="values" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>values</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="values_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>values_dyn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

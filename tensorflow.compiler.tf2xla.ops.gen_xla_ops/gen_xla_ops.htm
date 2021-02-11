@@ -1,0 +1,1602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>gen_xla_ops - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.compiler.tf2xla.ops.gen_xla_ops</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm" class="current">gen_xla_ops</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> gen_xla_ops</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.compiler.tf2xla.ops.gen_xla_ops</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_broadcast_helper_eager_fallback">xla_broadcast_helper_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_broadcast_helper_eager_fallback_dyn">xla_broadcast_helper_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_conv_eager_fallback">xla_conv_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_conv_eager_fallback_dyn">xla_conv_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dequantize_eager_fallback">xla_dequantize_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dequantize_eager_fallback_dyn">xla_dequantize_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dot_eager_fallback">xla_dot_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dot_eager_fallback_dyn">xla_dot_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dynamic_slice_eager_fallback">xla_dynamic_slice_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dynamic_slice_eager_fallback_dyn">xla_dynamic_slice_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dynamic_update_slice_eager_fallback">xla_dynamic_update_slice_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dynamic_update_slice_eager_fallback_dyn">xla_dynamic_update_slice_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_einsum_eager_fallback">xla_einsum_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_einsum_eager_fallback_dyn">xla_einsum_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_if_eager_fallback">xla_if_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_if_eager_fallback_dyn">xla_if_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_key_value_sort_eager_fallback">xla_key_value_sort_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_key_value_sort_eager_fallback_dyn">xla_key_value_sort_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_pad_eager_fallback">xla_pad_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_pad_eager_fallback_dyn">xla_pad_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_recv_eager_fallback">xla_recv_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_recv_eager_fallback_dyn">xla_recv_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_eager_fallback">xla_reduce_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_eager_fallback">xla_reduce_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_eager_fallback">xla_reduce_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_eager_fallback_dyn">xla_reduce_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_window_eager_fallback">xla_reduce_window_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_window_eager_fallback_dyn">xla_reduce_window_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_replica_id_eager_fallback">xla_replica_id_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_replica_id_eager_fallback_dyn">xla_replica_id_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback">xla_select_and_scatter_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback_dyn">xla_select_and_scatter_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_self_adjoint_eig_eager_fallback">xla_self_adjoint_eig_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_self_adjoint_eig_eager_fallback_dyn">xla_self_adjoint_eig_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_send_eager_fallback">xla_send_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_send_eager_fallback_dyn">xla_send_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_sort_eager_fallback">xla_sort_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_sort_eager_fallback_dyn">xla_sort_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_svd_eager_fallback">xla_svd_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_svd_eager_fallback_dyn">xla_svd_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback">xla_while_eager_fallback</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback_dyn">xla_while_eager_fallback_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaBroadcastHelper">XlaBroadcastHelper</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaBroadcastHelper_dyn">XlaBroadcastHelper_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaConv">XlaConv</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaConv_dyn">XlaConv_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDequantize">XlaDequantize</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDequantize_dyn">XlaDequantize_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDot">XlaDot</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDot_dyn">XlaDot_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDynamicSlice">XlaDynamicSlice</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDynamicSlice_dyn">XlaDynamicSlice_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDynamicUpdateSlice">XlaDynamicUpdateSlice</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDynamicUpdateSlice_dyn">XlaDynamicUpdateSlice_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaEinsum">XlaEinsum</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaEinsum_dyn">XlaEinsum_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaIf">XlaIf</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaIf_dyn">XlaIf_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaKeyValueSort">XlaKeyValueSort</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaKeyValueSort_dyn">XlaKeyValueSort_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaPad">XlaPad</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaPad_dyn">XlaPad_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaRecv">XlaRecv</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaRecv_dyn">XlaRecv_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReduce">XlaReduce</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReduce_dyn">XlaReduce_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReduceWindow">XlaReduceWindow</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReduceWindow_dyn">XlaReduceWindow_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReplicaId">XlaReplicaId</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReplicaId_dyn">XlaReplicaId_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSelectAndScatter">XlaSelectAndScatter</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSelectAndScatter_dyn">XlaSelectAndScatter_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSelfAdjointEig">XlaSelfAdjointEig</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSelfAdjointEig_dyn">XlaSelfAdjointEig_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSend">XlaSend</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSend_dyn">XlaSend_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSort">XlaSort</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSort_dyn">XlaSort_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSvd">XlaSvd</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSvd_dyn">XlaSvd_dyn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaWhile">XlaWhile</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaWhile_dyn">XlaWhile_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_broadcast_helper_eager_fallback_fn">xla_broadcast_helper_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_conv_eager_fallback_fn">xla_conv_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dequantize_eager_fallback_fn">xla_dequantize_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dot_eager_fallback_fn">xla_dot_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dynamic_slice_eager_fallback_fn">xla_dynamic_slice_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_dynamic_update_slice_eager_fallback_fn">xla_dynamic_update_slice_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_einsum_eager_fallback_fn">xla_einsum_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_if_eager_fallback_fn">xla_if_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_key_value_sort_eager_fallback_fn">xla_key_value_sort_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_pad_eager_fallback_fn">xla_pad_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_recv_eager_fallback_fn">xla_recv_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_eager_fallback_fn">xla_reduce_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_reduce_window_eager_fallback_fn">xla_reduce_window_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_replica_id_eager_fallback_fn">xla_replica_id_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_select_and_scatter_eager_fallback_fn">xla_select_and_scatter_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_self_adjoint_eig_eager_fallback_fn">xla_self_adjoint_eig_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_send_eager_fallback_fn">xla_send_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_sort_eager_fallback_fn">xla_sort_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_svd_eager_fallback_fn">xla_svd_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#xla_while_eager_fallback_fn">xla_while_eager_fallback_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaBroadcastHelper_fn">XlaBroadcastHelper_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaConv_fn">XlaConv_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDequantize_fn">XlaDequantize_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDot_fn">XlaDot_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDynamicSlice_fn">XlaDynamicSlice_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaDynamicUpdateSlice_fn">XlaDynamicUpdateSlice_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaEinsum_fn">XlaEinsum_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaIf_fn">XlaIf_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaKeyValueSort_fn">XlaKeyValueSort_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaPad_fn">XlaPad_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaRecv_fn">XlaRecv_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReduce_fn">XlaReduce_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReduceWindow_fn">XlaReduceWindow_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaReplicaId_fn">XlaReplicaId_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSelectAndScatter_fn">XlaSelectAndScatter_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSelfAdjointEig_fn">XlaSelfAdjointEig_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSend_fn">XlaSend_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSort_fn">XlaSort_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaSvd_fn">XlaSvd_fn</a></li>
+				<li><a href="../tensorflow.compiler.tf2xla.ops.gen_xla_ops/gen_xla_ops.htm#XlaWhile_fn">XlaWhile_fn</a></li>
+			</ul>
+		
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="xla_broadcast_helper_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_broadcast_helper_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> lhs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> broadcast_dims, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_broadcast_helper_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_broadcast_helper_eager_fallback_dyn</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> broadcast_dims, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_conv_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_conv_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> lhs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> lhs_dilation, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs_dilation, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> feature_group_count, <span title="System.object">object</span> dimension_numbers, <span title="System.string">string</span> precision_config, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_conv_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_conv_eager_fallback_dyn</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> padding, <span title="System.object">object</span> lhs_dilation, <span title="System.object">object</span> rhs_dilation, <span title="System.object">object</span> feature_group_count, <span title="System.object">object</span> dimension_numbers, <span title="System.object">object</span> precision_config, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dequantize_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dequantize_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <span title="System.double">double</span> min_range, <span title="System.double">double</span> max_range, <span title="System.string">string</span> mode, <span title="System.bool">bool</span> transpose_output, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dequantize_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dequantize_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> min_range, <span title="System.object">object</span> max_range, <span title="System.object">object</span> mode, <span title="System.object">object</span> transpose_output, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dot_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dot_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> lhs, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> rhs, <span title="System.object">object</span> dimension_numbers, <span title="System.string">string</span> precision_config, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dot_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dot_eager_fallback_dyn</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> dimension_numbers, <span title="System.object">object</span> precision_config, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dynamic_slice_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dynamic_slice_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> start_indices, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> size_indices, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dynamic_slice_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dynamic_slice_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> start_indices, <span title="System.object">object</span> size_indices, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dynamic_update_slice_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dynamic_update_slice_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> update, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> indices, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_dynamic_update_slice_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_dynamic_update_slice_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> update, <span title="System.object">object</span> indices, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_einsum_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_einsum_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> a, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> b, <span title="System.object">object</span> equation, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_einsum_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_einsum_eager_fallback_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> b, <span title="System.object">object</span> equation, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_if_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_if_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> cond, <span title="System.object">object</span> inputs, <span title="System.object">object</span> then_branch, <span title="System.object">object</span> else_branch, <span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> Tout, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_if_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_if_eager_fallback_dyn</strong>(<span title="System.object">object</span> cond, <span title="System.object">object</span> inputs, <span title="System.object">object</span> then_branch, <span title="System.object">object</span> else_branch, <span title="System.object">object</span> Tout, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_key_value_sort_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_key_value_sort_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> keys, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> values, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_key_value_sort_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_key_value_sort_eager_fallback_dyn</strong>(<span title="System.object">object</span> keys, <span title="System.object">object</span> values, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_pad_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_pad_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding_value, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding_low, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding_high, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding_interior, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_pad_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_pad_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> padding_value, <span title="System.object">object</span> padding_low, <span title="System.object">object</span> padding_high, <span title="System.object">object</span> padding_interior, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_recv_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_recv_eager_fallback</strong>(<a href="../tensorflow/DType.htm">DType</a> dtype, <span title="System.object">object</span> tensor_name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> shape, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_recv_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_recv_eager_fallback_dyn</strong>(<span title="System.object">object</span> dtype, <span title="System.object">object</span> tensor_name, <span title="System.object">object</span> shape, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_reduce_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_reduce_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> dimensions_to_reduce, <span title="System.object">object</span> reducer, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_reduce_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_reduce_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> dimensions_to_reduce, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> reducer, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_reduce_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_reduce_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <span title="System.Collections.Generic.IEnumerable<int>">IEnumerable&lt;int&gt;</span> dimensions_to_reduce, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> reducer, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_reduce_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_reduce_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> init_value, <span title="System.object">object</span> dimensions_to_reduce, <span title="System.object">object</span> reducer, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_reduce_window_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_reduce_window_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> base_dilations, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dilations, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <span title="System.object">object</span> computation, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_reduce_window_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_reduce_window_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> init_value, <span title="System.object">object</span> window_dimensions, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> base_dilations, <span title="System.object">object</span> window_dilations, <span title="System.object">object</span> padding, <span title="System.object">object</span> computation, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_replica_id_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_replica_id_eager_fallback</strong>(<span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_replica_id_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_replica_id_eager_fallback_dyn</strong>(<span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> select, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> select, <span title="System.object">object</span> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> select, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> select, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> select, <span title="System.object">object</span> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <span title="System.object">object</span> select, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <span title="System.object">object</span> select, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <span title="System.object">object</span> select, <span title="System.object">object</span> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> operand, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_dimensions, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> window_strides, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> padding, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> source, <a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> init_value, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> select, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> scatter, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_select_and_scatter_eager_fallback_dyn</strong>(<span title="System.object">object</span> operand, <span title="System.object">object</span> window_dimensions, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> padding, <span title="System.object">object</span> source, <span title="System.object">object</span> init_value, <span title="System.object">object</span> select, <span title="System.object">object</span> scatter, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_self_adjoint_eig_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_self_adjoint_eig_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> a, <span title="System.object">object</span> lower, <span title="System.int">int</span> max_iter, <span title="System.double">double</span> epsilon, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_self_adjoint_eig_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_self_adjoint_eig_eager_fallback_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> lower, <span title="System.object">object</span> max_iter, <span title="System.object">object</span> epsilon, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_send_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_send_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> tensor, <span title="System.object">object</span> tensor_name, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_send_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_send_eager_fallback_dyn</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> tensor_name, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_sort_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_sort_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> input, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_sort_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_sort_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_svd_eager_fallback" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_svd_eager_fallback</strong>(<a href="../LostTech.Gradient.ManualWrappers/IGraphNodeBase.htm">IGraphNodeBase</a> a, <span title="System.int">int</span> max_iter, <span title="System.double">double</span> epsilon, <span title="System.string">string</span> precision_config, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_svd_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_svd_eager_fallback_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> max_iter, <span title="System.object">object</span> epsilon, <span title="System.object">object</span> precision_config, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> cond, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <span title="System.object">object</span> cond, <span title="System.object">object</span> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> cond, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> cond, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> cond, <span title="System.object">object</span> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> cond, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <span title="System.object">object</span> cond, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <a href="../tensorflow.python.framework.function/_OverloadedFunction.htm">_OverloadedFunction</a> cond, <span title="System.object">object</span> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>xla_while_eager_fallback</strong>(<span title="System.Collections.Generic.IEnumerable<IGraphNodeBase>">IEnumerable&lt;IGraphNodeBase&gt;</span> input, <span title="System.object">object</span> cond, <a href="../tensorflow.python.framework.function/_DefinedFunction.htm">_DefinedFunction</a> body, <span title="System.string">string</span> name, <a href="../tensorflow.python.eager.context/Context.htm">Context</a> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>xla_while_eager_fallback_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> cond, <span title="System.object">object</span> body, <span title="System.object">object</span> name, <span title="System.object">object</span> ctx)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaBroadcastHelper" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaBroadcastHelper</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> broadcast_dims, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaBroadcastHelper_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaBroadcastHelper_dyn</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> broadcast_dims, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaConv" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaConv</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> padding, <span title="System.object">object</span> lhs_dilation, <span title="System.object">object</span> rhs_dilation, <span title="System.object">object</span> feature_group_count, <span title="System.object">object</span> dimension_numbers, <span title="System.object">object</span> precision_config, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaConv_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaConv_dyn</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> padding, <span title="System.object">object</span> lhs_dilation, <span title="System.object">object</span> rhs_dilation, <span title="System.object">object</span> feature_group_count, <span title="System.object">object</span> dimension_numbers, <span title="System.object">object</span> precision_config, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDequantize" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaDequantize</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> min_range, <span title="System.object">object</span> max_range, <span title="System.object">object</span> mode, <span title="System.object">object</span> transpose_output, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDequantize_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaDequantize_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> min_range, <span title="System.object">object</span> max_range, <span title="System.object">object</span> mode, <span title="System.object">object</span> transpose_output, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDot" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaDot</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> dimension_numbers, <span title="System.object">object</span> precision_config, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDot_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaDot_dyn</strong>(<span title="System.object">object</span> lhs, <span title="System.object">object</span> rhs, <span title="System.object">object</span> dimension_numbers, <span title="System.object">object</span> precision_config, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDynamicSlice" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaDynamicSlice</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> start_indices, <span title="System.object">object</span> size_indices, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDynamicSlice_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaDynamicSlice_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> start_indices, <span title="System.object">object</span> size_indices, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDynamicUpdateSlice" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaDynamicUpdateSlice</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> update, <span title="System.object">object</span> indices, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaDynamicUpdateSlice_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaDynamicUpdateSlice_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> update, <span title="System.object">object</span> indices, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaEinsum" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaEinsum</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> b, <span title="System.object">object</span> equation, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaEinsum_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaEinsum_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> b, <span title="System.object">object</span> equation, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaIf" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaIf</strong>(<span title="System.object">object</span> cond, <span title="System.object">object</span> inputs, <span title="System.object">object</span> then_branch, <span title="System.object">object</span> else_branch, <span title="System.object">object</span> Tout, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaIf_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaIf_dyn</strong>(<span title="System.object">object</span> cond, <span title="System.object">object</span> inputs, <span title="System.object">object</span> then_branch, <span title="System.object">object</span> else_branch, <span title="System.object">object</span> Tout, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaKeyValueSort" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaKeyValueSort</strong>(<span title="System.object">object</span> keys, <span title="System.object">object</span> values, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaKeyValueSort_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaKeyValueSort_dyn</strong>(<span title="System.object">object</span> keys, <span title="System.object">object</span> values, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaPad" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaPad</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> padding_value, <span title="System.object">object</span> padding_low, <span title="System.object">object</span> padding_high, <span title="System.object">object</span> padding_interior, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaPad_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaPad_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> padding_value, <span title="System.object">object</span> padding_low, <span title="System.object">object</span> padding_high, <span title="System.object">object</span> padding_interior, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaRecv" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaRecv</strong>(<a href="../tensorflow/DType.htm">DType</a> dtype, <span title="System.object">object</span> tensor_name, <a href="../tensorflow/TensorShape.htm">TensorShape</a> shape, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaRecv_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaRecv_dyn</strong>(<span title="System.object">object</span> dtype, <span title="System.object">object</span> tensor_name, <span title="System.object">object</span> shape, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaReduce" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaReduce</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> init_value, <span title="System.object">object</span> dimensions_to_reduce, <span title="System.object">object</span> reducer, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaReduce_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaReduce_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> init_value, <span title="System.object">object</span> dimensions_to_reduce, <span title="System.object">object</span> reducer, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaReduceWindow" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaReduceWindow</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> init_value, <span title="System.object">object</span> window_dimensions, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> base_dilations, <span title="System.object">object</span> window_dilations, <span title="System.object">object</span> padding, <span title="System.object">object</span> computation, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaReduceWindow_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaReduceWindow_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> init_value, <span title="System.object">object</span> window_dimensions, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> base_dilations, <span title="System.object">object</span> window_dilations, <span title="System.object">object</span> padding, <span title="System.object">object</span> computation, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaReplicaId" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaReplicaId</strong>(<span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaReplicaId_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaReplicaId_dyn</strong>(<span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSelectAndScatter" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaSelectAndScatter</strong>(<span title="System.object">object</span> operand, <span title="System.object">object</span> window_dimensions, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> padding, <span title="System.object">object</span> source, <span title="System.object">object</span> init_value, <span title="System.object">object</span> select, <span title="System.object">object</span> scatter, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSelectAndScatter_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSelectAndScatter_dyn</strong>(<span title="System.object">object</span> operand, <span title="System.object">object</span> window_dimensions, <span title="System.object">object</span> window_strides, <span title="System.object">object</span> padding, <span title="System.object">object</span> source, <span title="System.object">object</span> init_value, <span title="System.object">object</span> select, <span title="System.object">object</span> scatter, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSelfAdjointEig" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSelfAdjointEig</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> lower, <span title="System.object">object</span> max_iter, <span title="System.object">object</span> epsilon, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSelfAdjointEig_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSelfAdjointEig_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> lower, <span title="System.object">object</span> max_iter, <span title="System.object">object</span> epsilon, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSend" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSend</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> tensor_name, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSend_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSend_dyn</strong>(<span title="System.object">object</span> tensor, <span title="System.object">object</span> tensor_name, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSort" class="method">
+		<h4>
+			<a href="../tensorflow/Tensor.htm">Tensor</a> <strong>XlaSort</strong>(<span title="System.object">object</span> input, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSort_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSort_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSvd" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSvd</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> max_iter, <span title="System.object">object</span> epsilon, <span title="System.object">object</span> precision_config, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaSvd_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaSvd_dyn</strong>(<span title="System.object">object</span> a, <span title="System.object">object</span> max_iter, <span title="System.object">object</span> epsilon, <span title="System.object">object</span> precision_config, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaWhile" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaWhile</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> cond, <span title="System.object">object</span> body, <span title="System.string">string</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="XlaWhile_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>XlaWhile_dyn</strong>(<span title="System.object">object</span> input, <span title="System.object">object</span> cond, <span title="System.object">object</span> body, <span title="System.object">object</span> name)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="xla_broadcast_helper_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_broadcast_helper_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_conv_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_conv_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_dequantize_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_dequantize_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_dot_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_dot_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_dynamic_slice_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_dynamic_slice_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_dynamic_update_slice_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_dynamic_update_slice_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_einsum_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_einsum_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_if_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_if_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_key_value_sort_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_key_value_sort_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_pad_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_pad_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_recv_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_recv_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_reduce_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_reduce_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_reduce_window_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_reduce_window_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_replica_id_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_replica_id_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_select_and_scatter_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_select_and_scatter_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_self_adjoint_eig_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_self_adjoint_eig_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_send_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_send_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_sort_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_sort_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_svd_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_svd_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="xla_while_eager_fallback_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>xla_while_eager_fallback_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaBroadcastHelper_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaBroadcastHelper_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaConv_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaConv_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaDequantize_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaDequantize_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaDot_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaDot_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaDynamicSlice_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaDynamicSlice_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaDynamicUpdateSlice_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaDynamicUpdateSlice_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaEinsum_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaEinsum_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaIf_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaIf_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaKeyValueSort_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaKeyValueSort_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaPad_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaPad_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaRecv_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaRecv_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaReduce_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaReduce_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaReduceWindow_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaReduceWindow_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaReplicaId_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaReplicaId_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaSelectAndScatter_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaSelectAndScatter_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaSelfAdjointEig_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaSelfAdjointEig_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaSend_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaSend_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaSort_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaSort_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaSvd_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaSvd_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="XlaWhile_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>XlaWhile_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>

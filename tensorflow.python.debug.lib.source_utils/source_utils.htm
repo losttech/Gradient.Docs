@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <title>source_utils - LostTech.TensorFlow Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link type="text/css" rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    <script type="text/javascript" src="../js/example.js"></script>
+  </head>
+  <body>
+  	<header><h1>LostTech.TensorFlow : API Documentation</h1>
+	</header>
+
+    <nav id="namespaces">
+      <iframe src="../namespaces.htm"></iframe>
+    </nav><nav id="types">
+  <h2 class="fixed">Types in tensorflow.python.debug.lib.source_utils</h2>
+	<div class="scroll">
+		<ul>
+				<li>
+            <a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm" class="current">source_utils</a>
+        </li>
+		</ul>
+	</div>
+</nav>
+	<article>
+    <header>
+		<p class="class"><strong>Type</strong> source_utils</p>
+	</header>
+	<section>
+		<header>
+		<p><strong>Namespace</strong> tensorflow.python.debug.lib.source_utils</p>
+		</header>
+    <div class="sub-header">
+		
+		
+			<h3 class="section">Methods</h3>
+			<ul>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source">annotate_source</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source">annotate_source</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source_against_profile">annotate_source_against_profile</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source_against_profile_dyn">annotate_source_against_profile_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source_dyn">annotate_source_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#guess_is_tensorflow_py_library">guess_is_tensorflow_py_library</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#guess_is_tensorflow_py_library_dyn">guess_is_tensorflow_py_library_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#is_extension_compiled_python_source">is_extension_compiled_python_source</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#is_extension_compiled_python_source_dyn">is_extension_compiled_python_source_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#is_extension_uncompiled_python_source">is_extension_uncompiled_python_source</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#is_extension_uncompiled_python_source_dyn">is_extension_uncompiled_python_source_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#list_source_files_against_dump">list_source_files_against_dump</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#list_source_files_against_dump_dyn">list_source_files_against_dump_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#load_source">load_source</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#load_source_dyn">load_source_dyn</a></li>
+			</ul>
+		
+			<h3 class="section">Properties</h3>
+			<ul>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source_against_profile_fn">annotate_source_against_profile_fn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#annotate_source_fn">annotate_source_fn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#COMPILED_SOURCE_SUFFIXES">COMPILED_SOURCE_SUFFIXES</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#COMPILED_SOURCE_SUFFIXES_dyn">COMPILED_SOURCE_SUFFIXES_dyn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#guess_is_tensorflow_py_library_fn">guess_is_tensorflow_py_library_fn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#is_extension_compiled_python_source_fn">is_extension_compiled_python_source_fn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#is_extension_uncompiled_python_source_fn">is_extension_uncompiled_python_source_fn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#list_source_files_against_dump_fn">list_source_files_against_dump_fn</a></li>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#load_source_fn">load_source_fn</a></li>
+			</ul>
+		
+			<h3 class="section">Fields</h3>
+			<ul>
+				<li><a href="../tensorflow.python.debug.lib.source_utils/source_utils.htm#UNCOMPILED_SOURCE_SUFFIXES">UNCOMPILED_SOURCE_SUFFIXES</a></li>
+			</ul>
+	</div>
+	
+	
+	<h3 class="section">Public static methods</h3>
+
+	<div id="annotate_source" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>annotate_source</strong>(<a href="../tensorflow.python.debug/DebugDumpDir.htm">DebugDumpDir</a> dump, <span title="System.Byte[]">Byte[]</span> source_file_path, <span title="System.bool">bool</span> do_dumped_tensors, <span title="System.bool">bool</span> file_stack_top, <span title="System.object">object</span> min_line, <span title="System.object">object</span> max_line)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="annotate_source" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, object>">IDictionary&lt;object, object&gt;</span> <strong>annotate_source</strong>(<a href="../tensorflow.python.debug/DebugDumpDir.htm">DebugDumpDir</a> dump, <span title="System.string">string</span> source_file_path, <span title="System.bool">bool</span> do_dumped_tensors, <span title="System.bool">bool</span> file_stack_top, <span title="System.object">object</span> min_line, <span title="System.object">object</span> max_line)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="annotate_source_against_profile" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IDictionary<object, AggregateProfile>">IDictionary&lt;object, AggregateProfile&gt;</span> <strong>annotate_source_against_profile</strong>(<span title="System.Collections.Generic.IEnumerable<object>">IEnumerable&lt;object&gt;</span> profile_data, <span title="System.object">object</span> source_file_path, <span title="System.object">object</span> node_name_filter, <span title="System.object">object</span> op_type_filter, <span title="System.object">object</span> min_line, <span title="System.object">object</span> max_line)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="annotate_source_against_profile_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>annotate_source_against_profile_dyn</strong>(<span title="System.object">object</span> profile_data, <span title="System.object">object</span> source_file_path, <span title="System.object">object</span> node_name_filter, <span title="System.object">object</span> op_type_filter, <span title="System.object">object</span> min_line, <span title="System.object">object</span> max_line)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="annotate_source_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>annotate_source_dyn</strong>(<span title="System.object">object</span> dump, <span title="System.object">object</span> source_file_path, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> do_dumped_tensors, <a href="../LostTech.Gradient/ImplicitContainer`1.htm">ImplicitContainer&lt;T&gt;</a> file_stack_top, <span title="System.object">object</span> min_line, <span title="System.object">object</span> max_line)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="guess_is_tensorflow_py_library" class="method">
+		<h4>
+			<span title="System.bool">bool</span> <strong>guess_is_tensorflow_py_library</strong>(<span title="System.string">string</span> py_file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="guess_is_tensorflow_py_library_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>guess_is_tensorflow_py_library_dyn</strong>(<span title="System.object">object</span> py_file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="is_extension_compiled_python_source" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_extension_compiled_python_source</strong>(<span title="System.string">string</span> file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="is_extension_compiled_python_source_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_extension_compiled_python_source_dyn</strong>(<span title="System.object">object</span> file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="is_extension_uncompiled_python_source" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_extension_uncompiled_python_source</strong>(<span title="System.string">string</span> file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="is_extension_uncompiled_python_source_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>is_extension_uncompiled_python_source_dyn</strong>(<span title="System.object">object</span> file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="list_source_files_against_dump" class="method">
+		<h4>
+			<span title="System.Collections.Generic.IList<object>">IList&lt;object&gt;</span> <strong>list_source_files_against_dump</strong>(<a href="../tensorflow.python.debug/DebugDumpDir.htm">DebugDumpDir</a> dump, <span title="System.object">object</span> path_regex_whitelist, <span title="System.string">string</span> node_name_regex_whitelist)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="list_source_files_against_dump_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>list_source_files_against_dump_dyn</strong>(<span title="System.object">object</span> dump, <span title="System.object">object</span> path_regex_whitelist, <span title="System.object">object</span> node_name_regex_whitelist)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_source" class="method">
+		<h4>
+			<span title="System.ValueTuple<IList<object>, int>">ValueTuple&lt;IList&lt;object&gt;, int&gt;</span> <strong>load_source</strong>(<span title="System.object">object</span> source_file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	<div id="load_source_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>load_source_dyn</strong>(<span title="System.object">object</span> source_file_path)
+		</h4>
+		<div class="content">
+
+
+
+
+		</div>
+	</div>
+	
+	<h3 class="section">Public properties</h3>
+
+	<div id="annotate_source_against_profile_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>annotate_source_against_profile_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="annotate_source_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>annotate_source_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="COMPILED_SOURCE_SUFFIXES" class="method">
+		<h4>
+			<span title="System.ValueTuple<string, string>">ValueTuple&lt;string, string&gt;</span> <strong>COMPILED_SOURCE_SUFFIXES</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="COMPILED_SOURCE_SUFFIXES_dyn" class="method">
+		<h4>
+			<span title="System.object">object</span> <strong>COMPILED_SOURCE_SUFFIXES_dyn</strong> get; set;
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="guess_is_tensorflow_py_library_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>guess_is_tensorflow_py_library_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_extension_compiled_python_source_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>is_extension_compiled_python_source_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="is_extension_uncompiled_python_source_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>is_extension_uncompiled_python_source_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="list_source_files_against_dump_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>list_source_files_against_dump_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+	<div id="load_source_fn" class="method">
+		<h4>
+			<a href="../LostTech.Gradient/PythonFunctionContainer.htm">PythonFunctionContainer</a> <strong>load_source_fn</strong> get; 
+		</h4>
+		<div class="content">
+
+		</div>
+	</div>
+  <h3 class="section">Public fields</h3>
+
+  <div id="UNCOMPILED_SOURCE_SUFFIXES" class="method">
+    <h4>string <strong>UNCOMPILED_SOURCE_SUFFIXES</strong></h4>
+    <div class="content">
+      <table>
+        <tr>
+          <td>
+            <code>return <span title="System.string">string</span></code>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	</section>
+	</article><footer>
+	<span id="version">Built from v1.15.0.0 of LostTech.TensorFlow</span>
+	<span id="docu-link">
+		Generated by <a href="http://docu.jagregory.com">docu</a>
+	</span>
+</footer>
+  </body>
+</html>
